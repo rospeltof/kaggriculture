@@ -1,0 +1,277 @@
+"""Chasis compartido de bots arquetipo.
+
+Un arquetipo = configuración (qué plantar, qué animales, cuántos peones,
+política de venta). El chasis resuelve cada turno: generación de tareas con
+prioridades, asignación greedy unidad-más-cercana, logística de wheat para
+FEED, órdenes de mercado y cierre de temporada.
+
+Constantes verificadas contra el motor (docs/RULES.md S3.9, S4.x).
+"""
+
+CROP = {
+    "WHEAT":      dict(seed=10,  first=2,  peak=4,  win=(2, 4),  last_plant=25, ongoing=False),
+    "CARROT":     dict(seed=20,  first=2,  peak=3,  win=(2, 3),  last_plant=26, ongoing=False),
+    "MELON":      dict(seed=80,  first=10, peak=10, win=(6, 12), last_plant=19, ongoing=False),
+    "TOMATO":     dict(seed=50,  first=8,  peak=None, iv=1, last_plant=21, ongoing=True),
+    "STRAWBERRY": dict(seed=100, first=10, peak=None, iv=2, last_plant=19, ongoing=True),
+}
+ANIMAL = {
+    "GOOSE": dict(cost=300, structure="COOP",    first=4, iv=1, cap=4, prod="EGG"),
+    "COW":   dict(cost=400, structure="PASTURE", first=8, iv=2, cap=6, prod="MILK"),
+    "SHEEP": dict(cost=500, structure="PASTURE", first=6, iv=3, cap=6, prod="WOOL"),
+}
+SELLABLE = ["WOOL", "MILK", "MELON", "STRAWBERRY", "EGG", "TOMATO", "CARROT", "WHEAT", "FERTILIZER"]
+SHED = (4, 4)
+LAST_DAY = 29
+
+
+def _dist(a, b):
+    return abs(a[0] - b[0]) + abs(a[1] - b[1])
+
+
+def _step_toward(pos, target):
+    dx, dy = target[0] - pos[0], target[1] - pos[1]
+    if dx == 0 and dy == 0:
+        return None
+    if abs(dx) >= abs(dy):
+        return "EAST" if dx > 0 else "WEST"
+    return "SOUTH" if dy > 0 else "NORTH"
+
+
+def make_agent(cfg):
+    def agent(obs):
+        return decide(obs, cfg)
+    return agent
+
+
+def decide(obs, cfg):
+    p = obs["player"]
+    farm = obs["farms"][p]
+    tiles = farm["tiles"]
+    day, hour = obs["day"], obs["hour"]
+    priv = obs["private"]
+    shed = priv.get("shed", {}) or {}
+    seeds = priv.get("seeds", {}) or {}
+    money = farm["money"]
+
+    unit_pos = [tuple(farm["farmer"])] + [tuple(h) for h in farm["hands"]]
+    invs = list(priv.get("inventories", [{}]))
+    while len(invs) < len(unit_pos):
+        invs.append({})
+    n_units = len(unit_pos)
+
+    # ---- escaneo del tablero -> tareas (prio, (x, y), op) ----
+    tasks = []
+    hungry = 0            # animales sin alimentar hoy
+    empty_tiles = []
+    my_structures = {"COOP": 0, "PASTURE": 0}   # incluye ocupadas
+    empty_structs = []    # (x, y, kind)
+    planted_count = {}
+
+    for y, row in enumerate(tiles):
+        for x, tile in enumerate(row):
+            if tile == "LOCKED":
+                continue
+            if tile is None:
+                empty_tiles.append((x, y))
+                continue
+            kind = tile.get("kind")
+            if kind == "WEED":
+                tasks.append((8, (x, y), ["DIG"]))
+                continue
+            if kind == "PLANT":
+                crop = tile["crop"]
+                c = CROP[crop]
+                planted_count[crop] = planted_count.get(crop, 0) + 1
+                age = day - tile["planted_day"]
+                watered = tile["watered_today"]
+                yu = tile.get("yield_units", 0)
+                urgency = 25 if hour >= 16 else 0
+                if not c["ongoing"]:
+                    ready = age >= c["peak"]
+                    overdue = age > c["peak"]
+                    if ready:
+                        if not watered and not overdue and day <= LAST_DAY:
+                            tasks.append((78, (x, y), ["WATER"]))     # riego pre-cosecha (bonus del día pico)
+                        elif yu > 0 and age >= c["first"]:
+                            tasks.append((85 if overdue else 62, (x, y), ["HARVEST"]))
+                    elif not watered:
+                        in_win = c["win"][0] <= age <= c["win"][1]
+                        prio = 50 + (12 if in_win else 0) + urgency
+                        if tile.get("consecutive_unwatered", 0) >= 1:
+                            prio += 20
+                        if day == LAST_DAY and not (age >= c["first"] and yu > 0):
+                            continue  # día final: no regar lo que no se cosecha hoy
+                        tasks.append((prio, (x, y), ["WATER"]))
+                else:
+                    if not watered and day < LAST_DAY:
+                        prio = 50 + urgency + (20 if tile.get("consecutive_unwatered", 0) >= 1 else 0)
+                        tasks.append((prio, (x, y), ["WATER"]))
+                    if yu > 0 and age >= c["first"]:
+                        if yu >= 3 or day >= 28:
+                            tasks.append((72, (x, y), ["HARVEST"]))
+                        elif yu >= 2:
+                            tasks.append((52, (x, y), ["HARVEST"]))
+                continue
+            if kind in ("COOP", "PASTURE"):
+                my_structures[kind] += 1
+                animal = tile.get("animal")
+                if not animal:
+                    empty_structs.append((x, y, kind))
+                    continue
+                a = ANIMAL[animal]
+                yu = tile.get("yield_units", 0)
+                if not tile.get("fed_today") and day <= 28:
+                    hungry += 1
+                    tasks.append((88 + (6 if hour >= 16 else 0), (x, y), ["FEED"]))
+                if cfg.get("care") and tile.get("fed_today") and not tile.get("cared_today") and day <= 27:
+                    tasks.append((46, (x, y), ["CARE"]))
+                if yu >= a["cap"] - 1:
+                    tasks.append((74, (x, y), ["HARVEST"]))
+                elif yu >= 2 or (yu >= 1 and day >= 28):
+                    tasks.append((54, (x, y), ["HARVEST"]))
+                if cfg.get("collect_fert") and tile.get("fertilizer_available"):
+                    tasks.append((18, (x, y), ["COLLECT_FERTILIZER"]))
+
+    # ---- construcción de estructuras pendientes del plan ----
+    want_structs = {"COOP": 0, "PASTURE": 0}
+    for animal, count in cfg.get("animals", []):
+        want_structs[ANIMAL[animal]["structure"]] += count
+    for kind in ("COOP", "PASTURE"):
+        deficit = want_structs[kind] - my_structures[kind]
+        if deficit > 0 and empty_tiles and day <= 24:
+            spots = sorted(empty_tiles, key=lambda t: _dist(t, SHED))[:deficit]
+            for s in spots:
+                tasks.append((64, s, ["BUILD_COOP" if kind == "COOP" else "BUILD_PASTURE"]))
+                empty_tiles.remove(s)
+
+    # ---- colocar animales comprados (están en el shed) ----
+    carriers = {i for i in range(n_units) if any(k in ANIMAL for k in invs[i])}
+    if empty_structs:
+        for x, y, kind in empty_structs:
+            match = next((an for an in shed if an in ANIMAL and ANIMAL[an]["structure"] == kind and shed[an] > 0), None)
+            carrier_has = next((i for i in carriers if any(ANIMAL.get(k, {}).get("structure") == kind for k in invs[i])), None)
+            if carrier_has is not None:
+                an = next(k for k in invs[carrier_has] if k in ANIMAL)
+                tasks.append((66, (x, y), ["PLACE", an, 1]))
+            elif match:
+                tasks.append((65, SHED, ["PICKUP", match, 1]))
+
+    # ---- plantar según plan ----
+    plant_claims = {}
+    for crop, target in cfg.get("plants", {}).items():
+        c = CROP[crop]
+        if day > c["last_plant"]:
+            continue
+        deficit = target - planted_count.get(crop, 0)
+        avail_seeds = seeds.get(crop, 0)
+        n = min(deficit, avail_seeds, len(empty_tiles))
+        for _ in range(max(0, n)):
+            spot = max(empty_tiles, key=lambda t: _dist(t, SHED))  # cultivos lejos, animales cerca
+            empty_tiles.remove(spot)
+            prio = 44 if crop == "WHEAT" else 40
+            tasks.append((prio, spot, ["PLANT", crop]))
+            plant_claims[crop] = plant_claims.get(crop, 0) + 1
+
+    # ---- asignación greedy: tarea de mayor prioridad -> unidad más cercana ----
+    tasks.sort(key=lambda t: -t[0])
+    actions = [None] * n_units
+    used_tiles = set()
+    wheat_needed = hungry  # unidades de FEED sin wheat encima haran fetch
+
+    for prio, pos, op in tasks:
+        if pos in used_tiles and op[0] not in ("PICKUP",):
+            continue
+        need_wheat = op[0] == "FEED"
+        cands = []
+        for i in range(n_units):
+            if actions[i] is not None:
+                continue
+            if need_wheat and invs[i].get("WHEAT", 0) <= 0:
+                continue
+            cands.append((_dist(unit_pos[i], pos), i))
+        if not cands and need_wheat and shed.get("WHEAT", 0) > 0:
+            # nadie carga wheat: la unidad libre más cercana al shed va a buscarlo
+            free = [(_dist(unit_pos[i], SHED), i) for i in range(n_units) if actions[i] is None]
+            if free:
+                _, i = min(free)
+                if unit_pos[i] == SHED or _dist(unit_pos[i], SHED) == 0:
+                    actions[i] = ["PICKUP", "WHEAT", max(1, min(wheat_needed, shed.get("WHEAT", 0)))]
+                else:
+                    actions[i] = [_step_toward(unit_pos[i], SHED)]
+                used_tiles.add(pos)
+            continue
+        if not cands:
+            continue
+        _, i = min(cands)
+        if unit_pos[i] == pos:
+            actions[i] = list(op)
+        else:
+            actions[i] = [_step_toward(unit_pos[i], pos)]
+        used_tiles.add(pos)
+
+    for i in range(n_units):
+        if actions[i] is None:
+            actions[i] = ["PASS"]
+
+    # ---- órdenes de mercado (max 10; las ventas primero financian compras) ----
+    orders = []
+    wheat_buffer = 0
+    if day <= 28:
+        placed = sum(1 for row in tiles for t in row
+                     if isinstance(t, dict) and t.get("animal"))
+        wheat_buffer = min(2 * placed, 20)
+    sellable = [(it, shed.get(it, 0) - (wheat_buffer if it == "WHEAT" else 0)) for it in SELLABLE]
+    sellable = [(it, n) for it, n in sellable if n > 0]
+    sellable.sort(key=lambda kv: -kv[1])
+    for it, n in sellable[:4]:
+        orders.append(["SELL", it, n])
+
+    if hour == 0 and day <= 27:
+        for _ in range(cfg.get("hands", 0)):
+            orders.append(["HIRE"])
+
+    if day <= 27:
+        # semillas para el deficit del plan (2 ordenes max)
+        seed_orders = []
+        for crop, target in cfg.get("plants", {}).items():
+            c = CROP[crop]
+            if day > c["last_plant"]:
+                continue
+            deficit = target - planted_count.get(crop, 0) - seeds.get(crop, 0)
+            if deficit > 0 and money > c["seed"] * deficit + 100:
+                seed_orders.append(["BUY_SEED", crop, deficit])
+        orders.extend(seed_orders[:2])
+
+        # siguiente animal del plan (1 por turno)
+        owned = {}
+        for row in tiles:
+            for t in row:
+                if isinstance(t, dict) and t.get("animal"):
+                    owned[t["animal"]] = owned.get(t["animal"], 0) + 1
+        for an in shed:
+            if an in ANIMAL:
+                owned[an] = owned.get(an, 0) + shed[an]
+        for i in range(n_units):
+            for k in invs[i]:
+                if k in ANIMAL:
+                    owned[k] = owned.get(k, 0) + invs[i][k]
+        for animal, count in cfg.get("animals", []):
+            a = ANIMAL[animal]
+            if owned.get(animal, 0) < count and day <= a.get("last_buy", 22) and money > a["cost"] + cfg.get("cash_buffer", 200):
+                orders.append(["BUY_ANIMAL", animal, 1])
+                break
+
+        # puente de wheat para alimentar
+        total_wheat = shed.get("WHEAT", 0) + sum(inv.get("WHEAT", 0) for inv in invs)
+        if hungry > 0 and total_wheat < hungry and money > 30 * (hungry - total_wheat) + 100:
+            orders.append(["BUY_PRODUCT", "WHEAT", hungry - total_wheat])
+
+        # tierra
+        if cfg.get("buy_land") and len(farm["unlocked_quadrants"]) < cfg.get("max_quadrants", 2):
+            n_extra = len(farm["unlocked_quadrants"]) - 1
+            price = [1000, 2000, 4000][n_extra] if n_extra < 3 else None
+            if price and money > price + 600 and len(empty_tiles) < 6 and day <= 20:
+                orders.append(["BUY_LAND"])
+
+    return {"farmer": actions[0], "hands": actions[1:], "market": orders[:10]}

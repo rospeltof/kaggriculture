@@ -31,12 +31,23 @@ BUILTINS = {"starter", "random", "pass"}
 
 
 def resolve_agent(spec):
-    if spec in BUILTINS:
+    if spec in BUILTINS or ":" in spec:
         return spec
     path = os.path.abspath(spec)
     if not os.path.exists(path):
         raise FileNotFoundError(f"Agente no encontrado: {spec}")
     return path
+
+
+def materialize(spec):
+    """Convierte un spec en algo que env.run acepte. 'mod.sub:func' se importa
+    aquí (dentro del worker) porque las closures no se picklean entre procesos."""
+    if isinstance(spec, str) and ":" in spec and not os.path.exists(spec):
+        import importlib
+
+        mod, fn = spec.split(":", 1)
+        return getattr(importlib.import_module(mod), fn)
+    return spec
 
 
 def run_episode(job):
@@ -46,7 +57,7 @@ def run_episode(job):
 
     t0 = time.time()
     env = make("kaggriculture", configuration={"episodeSteps": steps, "seed": seed})
-    env.run([a0, a1])
+    env.run([materialize(a0), materialize(a1)])
     elapsed = time.time() - t0
 
     final = env.steps[-1]
