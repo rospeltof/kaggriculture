@@ -41,7 +41,21 @@ WRITEUP = dict(
     max_quadrants=2,
 )
 
+# Campeón de la generación 1 de búsqueda en masa (evolucion.py, config g1_02
+# encontrada por muestreo aleatorio): vacas escaladas + premium crops + fertilizer.
+VACAS_MELON = dict(
+    hands=4,
+    animals=[("COW", 5)],
+    plants={"WHEAT": 5, "MELON": 8, "STRAWBERRY": 3},
+    care=True,
+    collect_fert=True,
+    fert_prio=45,
+    buy_land=True,
+    max_quadrants=2,
+)
+
 control = make_agent(CONTROL)
 gansos = make_agent(GANSOS)
 ovejas_vacas = make_agent(OVEJAS_VACAS)
 writeup = make_agent(WRITEUP)
+vacas_melon = make_agent(VACAS_MELON)

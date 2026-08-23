@@ -131,7 +131,7 @@ def decide(obs, cfg):
                 elif yu >= 2 or (yu >= 1 and day >= 28):
                     tasks.append((54, (x, y), ["HARVEST"]))
                 if cfg.get("collect_fert") and tile.get("fertilizer_available"):
-                    tasks.append((18, (x, y), ["COLLECT_FERTILIZER"]))
+                    tasks.append((cfg.get("fert_prio", 18), (x, y), ["COLLECT_FERTILIZER"]))
 
     # ---- construcción de estructuras pendientes del plan ----
     want_structs = {"COOP": 0, "PASTURE": 0}

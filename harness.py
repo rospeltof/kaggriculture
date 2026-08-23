@@ -41,12 +41,24 @@ def resolve_agent(spec):
 
 def materialize(spec):
     """Convierte un spec en algo que env.run acepte. 'mod.sub:func' se importa
-    aquí (dentro del worker) porque las closures no se picklean entre procesos."""
+    aquí (dentro del worker) porque las closures no se picklean entre procesos.
+    ("cfg", nombre, dict) construye un agente del chasis con esa config —
+    permite evaluar estrategias generadas dinámicamente (evolucion.py)."""
+    if isinstance(spec, (tuple, list)) and spec and spec[0] == "cfg":
+        from bots.chassis import make_agent
+
+        return make_agent(spec[2])
     if isinstance(spec, str) and ":" in spec and not os.path.exists(spec):
         import importlib
 
         mod, fn = spec.split(":", 1)
         return getattr(importlib.import_module(mod), fn)
+    return spec
+
+
+def spec_name(spec):
+    if isinstance(spec, (tuple, list)) and spec and spec[0] == "cfg":
+        return spec[1]
     return spec
 
 
