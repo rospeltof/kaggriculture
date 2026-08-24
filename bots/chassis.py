@@ -21,6 +21,7 @@ ANIMAL = {
     "SHEEP": dict(cost=500, structure="PASTURE", first=6, iv=3, cap=6, prod="WOOL"),
 }
 SELLABLE = ["WOOL", "MILK", "MELON", "STRAWBERRY", "EGG", "TOMATO", "CARROT", "WHEAT", "FERTILIZER"]
+PREMIUM = {"WOOL", "MILK", "MELON", "STRAWBERRY"}
 SHED = (4, 4)
 LAST_DAY = 29
 
@@ -126,9 +127,10 @@ def decide(obs, cfg):
                     tasks.append((88 + (6 if hour >= 16 else 0), (x, y), ["FEED"]))
                 if cfg.get("care") and tile.get("fed_today") and not tile.get("cared_today") and day <= 27:
                     tasks.append((46, (x, y), ["CARE"]))
+                h_at = cfg.get("animal_harvest_at", 2)
                 if yu >= a["cap"] - 1:
                     tasks.append((74, (x, y), ["HARVEST"]))
-                elif yu >= 2 or (yu >= 1 and day >= 28):
+                elif yu >= h_at or (yu >= 1 and day >= 28):
                     tasks.append((54, (x, y), ["HARVEST"]))
                 if cfg.get("collect_fert") and tile.get("fertilizer_available"):
                     tasks.append((cfg.get("fert_prio", 18), (x, y), ["COLLECT_FERTILIZER"]))
@@ -221,8 +223,15 @@ def decide(obs, cfg):
         placed = sum(1 for row in tiles for t in row
                      if isinstance(t, dict) and t.get("animal"))
         wheat_buffer = min(2 * placed, 20)
-    sellable = [(it, shed.get(it, 0) - (wheat_buffer if it == "WHEAT" else 0)) for it in SELLABLE]
-    sellable = [(it, n) for it, n in sellable if n > 0]
+    hold_day = cfg.get("premium_hold_day", 0)   # aguantar premium hasta este día
+    shed_load = sum(shed.values())
+    sellable = []
+    for it in SELLABLE:
+        n = shed.get(it, 0) - (wheat_buffer if it == "WHEAT" else 0)
+        if it in PREMIUM and day < hold_day and day < 28 and shed_load < 85:
+            continue  # hold; con el shed casi lleno (>=85) se vende igual para no perder por overflow
+        if n > 0:
+            sellable.append((it, n))
     sellable.sort(key=lambda kv: -kv[1])
     for it, n in sellable[:4]:
         orders.append(["SELL", it, n])
