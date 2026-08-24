@@ -54,8 +54,25 @@ VACAS_MELON = dict(
     max_quadrants=2,
 )
 
+# Campeón de la evolución multi-generacional (evolucion2.py, mutante g11m_11):
+# rebaño mixto + melón pesado + 8 peones (el máximo permitido) + cosecha inmediata.
+# Confirmado 50-0 vs vacas_melon en seeds vírgenes ($53.4k vs $34.6k).
+OCHO_MANOS = dict(
+    hands=8,
+    animals=[("COW", 4), ("SHEEP", 2)],
+    plants={"MELON": 12, "WHEAT": 9, "STRAWBERRY": 3, "CARROT": 1},
+    care=True,
+    collect_fert=True,
+    fert_prio=45,
+    animal_harvest_at=1,
+    premium_hold_day=8,
+    buy_land=True,
+    max_quadrants=2,
+)
+
 control = make_agent(CONTROL)
 gansos = make_agent(GANSOS)
 ovejas_vacas = make_agent(OVEJAS_VACAS)
 writeup = make_agent(WRITEUP)
 vacas_melon = make_agent(VACAS_MELON)
+ocho_manos = make_agent(OCHO_MANOS)

@@ -1,5 +1,21 @@
 # Bitácora de experimentos
 
+## 2026-08-17 — Evolución 2: 14 generaciones, 6,990 episodios, nuevo campeón `ocho_manos`
+
+**Setup:** `evolucion2.py` — 14 generaciones × 40 configs (6 élites + 22 mutantes + 12 inmigrantes), registro de firmas anti-repetición (incluida gen 1), seeds rotativos por generación, panel coevolutivo. Perillas nuevas: `animal_harvest_at`, `premium_hold_day`. 33 minutos de cómputo.
+
+**Nuevo campeón: `ocho_manos` (mutante g11m_11):** 8 peones, 4 vacas + 2 ovejas, 12 melones + 3 fresas + 9 wheat, fert_prio 45, cosecha animal inmediata, NE comprado. Final: 43/54. **Confirmación seeds vírgenes: 50–0 vs vacas_melon ($53.4k vs $34.6k).** El excampeón sacó **0.0 puntos** en la final — una ronda de evolución dirigida lo demolió.
+
+**Convergencias del top 9 (todas las líneas ganadoras comparten):**
+1. **7–8 peones** (el máximo muestreado — la evolución chocó contra nuestro propio techo; probar hands>8).
+2. **Rebaño mixto vacas+ovejas** — diversifica ventas entre las curvas de leche y lana en vez de estrellar una sola.
+3. **Melón pesado (9–12 tiles)** + `fert_prio 45` unánime + `animal_harvest_at 1` (7/9 — no acumular, evita pérdidas por cap).
+4. `premium_hold_day 8` frecuente pero señal débil (el hold expira antes de que casi exista producción premium); holds largos (20) rankean peor — **aguantar inventario es veneno**.
+
+**Autopsia del campeón:** limpia en muertes/decay, pero: 63% de acciones siguen siendo movimiento, 12% PASS (9 unidades se quedan sin tareas), 8 producciones capadas ($1,280) — parte inherente a la rampa de CARE (una vaca colocada d0 banca 7 noches pero el cap 6 solo paga 5+1: **cuidar solo 5 de las 7 noches de rampa** es micro-optimización pendiente del planner real).
+
+**Decisiones:** `ocho_manos` promovido a referencia. Fronteras claras para el planner v1: zonificación (movimiento), asignación con 9 unidades (idle), care-ramp exacto, hands>8.
+
 ## 2026-08-17 — Evolución gen 1: búsqueda en masa sobre el espacio de estrategias
 
 **Setup:** `evolucion.py` — 48 configs (42 aleatorias + 6 dirigidas), criba de 288 episodios vs campeón (fitness = dinero propio, espejado), final round-robin de 224 episodios (top 6 + campeón + gansos). Luego confirmación del ganador en 50 episodios con seeds vírgenes (4000–4024).
