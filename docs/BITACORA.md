@@ -1,5 +1,21 @@
 # Bitácora de experimentos
 
+## 2026-08-27 (2) — Inteligencia del meta: perfil de rivales y el experimento del clon
+
+**Estado del ladder:** mimada v2 = 641.8 (+42, subiendo); v1 = 601.5. Top 1 global: 3,097.
+
+**Método:** el MCP sigue sin auth del lado cliente; ruta alternativa — como toda submission nueva arranca en 600, los bots fuertes pasan por nuestra banda. Bajamos 14 replays propios, perfilamos cada rival (`perfilar_rivales.py`) y cruzamos contra el leaderboard completo.
+
+**Perfil del meta (6 rivales más fuertes, composición día 25):**
+- **Fresas a escala en 5 de 6** (19–42 tiles) — el cultivo del meta: 3 tipos de tienda las demandan, el déficit sostiene el precio premium.
+- Wheat como columna vertebral (16–41 tiles): alimenta rebaños grandes Y vende a prueba de gluts.
+- Rebaños de 11–15 animales; **3 cuadrantes** comprados día 7–13; ocio 2–6% en los mejores.
+- El tiburón: **"ln" (rank 862, score 1794) nos ganó con $161.7k** — 41 wheat + 19 fresas + 11 vacas + 4 ovejas, tierra día 7, 5% ocio. 3× nuestro nivel.
+
+**Experimento del clon — el hallazgo central:** LN_CLONE (la build de "ln" sobre NUESTRO chasis) pierde 16–0 contra mimada_v4 con **$13.0k** — la misma composición que al "ln" real le da $161.7k. Conclusión: **el foso del meta no es la receta, es la capacidad de ejecución**. Nuestro chasis se satura ~30 tiles activas + 8 animales (la vieja frontera de movimiento/ocio, ahora cuantificada como EL bloqueador); el de "ln" opera 75 tiles + 15 animales al 5% de ocio.
+
+**Implicación:** más evolución de configs no cierra la brecha. Siguiente frente = mecánica de chasis que escale: logística de wheat para rebaños grandes, rutas de riego para 3 cuadrantes, bundling por tile. Luego evolución 5 con techos altos (crop_tiles 60, rebaños 15+) y clon mejorado en el panel. Nota metodológica: nuestra ecología de fitness es endogámica (evolucionamos contra gemelos); el panel necesita representantes del meta.
+
 ## 2026-08-27 — Evolución 4: la planificación adaptativa al mercado GANA (mimada_v4)
 
 **Pregunta:** ¿capa adaptativa (score $/tile-día con espejo de la curva de precios + pipeline propio) o mix fijo evolucionado? 4,590 episodios, 10 generaciones, adaptativo y fijo compitiendo en igualdad (mutación podía encender/apagar `adaptive`).

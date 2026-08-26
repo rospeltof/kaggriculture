@@ -143,6 +143,25 @@ MIMADA_V4 = {
     "mkt_opp_factor": 1,
 }
 
+# Clon aproximado de "ln" (rank 862, score 1794, nos ganó con $161.7k): wheat
+# masivo como columna vertebral (alimenta el rebaño Y vende a prueba de gluts),
+# fresas a escala (demanda del town), 11 vacas + 4 ovejas, 3 cuadrantes día 7.
+# Sirve como oponente de panel representativo del meta real (perfilar_rivales.py).
+LN_CLONE = dict(
+    hands=10,
+    animals=[("COW", 11), ("SHEEP", 4)],
+    plants={"STRAWBERRY": 19, "WHEAT": 41},
+    care=True,
+    collect_fert=True,
+    fert_prio=45,
+    animal_harvest_at=2,
+    buy_land=True,
+    max_quadrants=3,
+    prio_care=70,
+    plant_near=True,
+    endgame=True,
+)
+
 control = make_agent(CONTROL)
 gansos = make_agent(GANSOS)
 ovejas_vacas = make_agent(OVEJAS_VACAS)
@@ -153,3 +172,4 @@ mimada = make_agent(MIMADA)
 mimada_v2 = make_agent(MIMADA_V2)
 mimada_v3 = make_agent(MIMADA_V3)
 mimada_v4 = make_agent(MIMADA_V4)
+ln_clone = make_agent(LN_CLONE)
