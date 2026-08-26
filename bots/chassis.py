@@ -61,6 +61,15 @@ def decide(obs, cfg):
         invs.append({})
     n_units = len(unit_pos)
 
+    # Perillas de política ("el cerebro" es buscable): prioridades del scheduler.
+    ph = cfg.get("prio_harvest", 62)
+    pw = cfg.get("prio_water", 50)
+    p_urg = cfg.get("prio_urgency", 25)
+    p_win = cfg.get("prio_win_bonus", 12)
+    p_feed = cfg.get("prio_feed", 88)
+    p_care = cfg.get("prio_care", 46)
+    p_plant = cfg.get("prio_plant", 40)
+
     # ---- escaneo del tablero -> tareas (prio, (x, y), op) ----
     tasks = []
     hungry = 0            # animales sin alimentar hoy
@@ -87,7 +96,7 @@ def decide(obs, cfg):
                 age = day - tile["planted_day"]
                 watered = tile["watered_today"]
                 yu = tile.get("yield_units", 0)
-                urgency = 25 if hour >= 16 else 0
+                urgency = p_urg if hour >= 16 else 0
                 if not c["ongoing"]:
                     ready = age >= c["peak"]
                     overdue = age > c["peak"]
@@ -95,10 +104,10 @@ def decide(obs, cfg):
                         if not watered and not overdue and day <= LAST_DAY:
                             tasks.append((78, (x, y), ["WATER"]))     # riego pre-cosecha (bonus del día pico)
                         elif yu > 0 and age >= c["first"]:
-                            tasks.append((85 if overdue else 62, (x, y), ["HARVEST"]))
+                            tasks.append((85 if overdue else ph, (x, y), ["HARVEST"]))
                     elif not watered:
                         in_win = c["win"][0] <= age <= c["win"][1]
-                        prio = 50 + (12 if in_win else 0) + urgency
+                        prio = pw + (p_win if in_win else 0) + urgency
                         if tile.get("consecutive_unwatered", 0) >= 1:
                             prio += 20
                         if day == LAST_DAY and not (age >= c["first"] and yu > 0):
@@ -106,13 +115,13 @@ def decide(obs, cfg):
                         tasks.append((prio, (x, y), ["WATER"]))
                 else:
                     if not watered and day < LAST_DAY:
-                        prio = 50 + urgency + (20 if tile.get("consecutive_unwatered", 0) >= 1 else 0)
+                        prio = pw + urgency + (20 if tile.get("consecutive_unwatered", 0) >= 1 else 0)
                         tasks.append((prio, (x, y), ["WATER"]))
                     if yu > 0 and age >= c["first"]:
                         if yu >= 3 or day >= 28:
-                            tasks.append((72, (x, y), ["HARVEST"]))
+                            tasks.append((ph + 10, (x, y), ["HARVEST"]))
                         elif yu >= 2:
-                            tasks.append((52, (x, y), ["HARVEST"]))
+                            tasks.append((ph - 10, (x, y), ["HARVEST"]))
                 continue
             if kind in ("COOP", "PASTURE"):
                 my_structures[kind] += 1
@@ -124,14 +133,14 @@ def decide(obs, cfg):
                 yu = tile.get("yield_units", 0)
                 if not tile.get("fed_today") and day <= 28:
                     hungry += 1
-                    tasks.append((88 + (6 if hour >= 16 else 0), (x, y), ["FEED"]))
+                    tasks.append((p_feed + (6 if hour >= 16 else 0), (x, y), ["FEED"]))
                 if cfg.get("care") and tile.get("fed_today") and not tile.get("cared_today") and day <= 27:
-                    tasks.append((46, (x, y), ["CARE"]))
+                    tasks.append((p_care, (x, y), ["CARE"]))
                 h_at = cfg.get("animal_harvest_at", 2)
                 if yu >= a["cap"] - 1:
-                    tasks.append((74, (x, y), ["HARVEST"]))
+                    tasks.append((ph + 12, (x, y), ["HARVEST"]))
                 elif yu >= h_at or (yu >= 1 and day >= 28):
-                    tasks.append((54, (x, y), ["HARVEST"]))
+                    tasks.append((ph - 8, (x, y), ["HARVEST"]))
                 if cfg.get("collect_fert") and tile.get("fertilizer_available"):
                     tasks.append((cfg.get("fert_prio", 18), (x, y), ["COLLECT_FERTILIZER"]))
 
@@ -171,11 +180,21 @@ def decide(obs, cfg):
         for _ in range(max(0, n)):
             spot = max(empty_tiles, key=lambda t: _dist(t, SHED))  # cultivos lejos, animales cerca
             empty_tiles.remove(spot)
-            prio = 44 if crop == "WHEAT" else 40
-            tasks.append((prio, spot, ["PLANT", crop]))
+            tasks.append((p_plant + (4 if crop == "WHEAT" else 0), spot, ["PLANT", crop]))
             plant_claims[crop] = plant_claims.get(crop, 0) + 1
 
-    # ---- asignación greedy: tarea de mayor prioridad -> unidad más cercana ----
+    # ---- asignación: greedy global, o zonificada si cfg["zoning"] ----
+    # Zonificación: las tiles activas (no LOCKED) se parten en bloques contiguos,
+    # uno por unidad; cada unidad atiende primero su bloque. Tareas cuya zona
+    # está ocupada solo escalan a cualquier unidad si prio >= zone_fallback_prio.
+    zone_owner = {}
+    if cfg.get("zoning"):
+        active = [(x, y) for y in range(len(tiles)) for x in range(len(tiles[y])) if tiles[y][x] != "LOCKED"]
+        block = max(1, -(-len(active) // n_units))
+        for idx, t in enumerate(active):
+            zone_owner[t] = min(n_units - 1, idx // block)
+    zone_fallback = cfg.get("zone_fallback_prio", 70)
+
     tasks.sort(key=lambda t: -t[0])
     actions = [None] * n_units
     used_tiles = set()
@@ -192,6 +211,12 @@ def decide(obs, cfg):
             if need_wheat and invs[i].get("WHEAT", 0) <= 0:
                 continue
             cands.append((_dist(unit_pos[i], pos), i))
+        if zone_owner and cands:
+            zoned = [c for c in cands if zone_owner.get(pos, -1) == c[1]]
+            if zoned:
+                cands = zoned
+            elif prio < zone_fallback:
+                continue  # la zona está ocupada y la tarea no amerita sacar a nadie de la suya
         if not cands and need_wheat and shed.get("WHEAT", 0) > 0:
             # nadie carga wheat: la unidad libre más cercana al shed va a buscarlo
             free = [(_dist(unit_pos[i], SHED), i) for i in range(n_units) if actions[i] is None]
