@@ -101,6 +101,15 @@ MIMADA_V2 = dict(
     endgame=True,
 )
 
+# v3: v2 + planificación de cultivos adaptativa al mercado — score $/tile-día
+# con el precio evaluado en inventario + pipeline propio (espejo verificado de
+# la curva del motor). Nunca inunda su propio mercado; explota escaseces (hinge).
+MIMADA_V3 = dict(
+    MIMADA_V2,
+    adaptive=True,
+    crop_tiles=22,
+)
+
 control = make_agent(CONTROL)
 gansos = make_agent(GANSOS)
 ovejas_vacas = make_agent(OVEJAS_VACAS)
@@ -109,3 +118,4 @@ vacas_melon = make_agent(VACAS_MELON)
 ocho_manos = make_agent(OCHO_MANOS)
 mimada = make_agent(MIMADA)
 mimada_v2 = make_agent(MIMADA_V2)
+mimada_v3 = make_agent(MIMADA_V3)
