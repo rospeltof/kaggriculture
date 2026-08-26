@@ -1,5 +1,21 @@
 # Bitácora de experimentos
 
+## 2026-08-18 — Evolución 3 (policy search): nuevo campeón `mimada`; la zonificación PIERDE
+
+**Setup:** `evolucion3.py` — el cerebro como perillas: 9 prioridades del scheduler + zonificación + peones hasta 10, buscados junto con la config de granja. 14 generaciones × 40, registro anti-repetición con las 530 firmas de gens 1–2. 6,990 episodios, 27 min.
+
+**Nuevo campeón: `mimada` (h7m_10):** 8 peones, 4 vacas + 4 ovejas, 9 melones + 3 fresas + 9 wheat, `prio_care=70`, `animal_harvest_at=4`, sin zonificación. Final 45/54; **confirmación seeds vírgenes 50–0 vs ocho_manos ($59.4k vs $49.9k)**. Tercer destronamiento consecutivo; el excampeón volvió a sacar 0 pts.
+
+**Hallazgos de política (lo importante):**
+1. **La zonificación PIERDE — rechazo unánime**: los 9 finalistas tienen `zoning: false`, pese a semillas dirigidas y 50% de inmigrantes con zoning. La implementación (bloques contiguos estáticos + escalamiento por umbral) no supera al greedy. Resultado negativo valioso: un mecanismo plausible, muerto por evidencia antes de complicar el código.
+2. **La urgencia horaria también pierde**: `prio_urgency 0` en 8/9 finalistas — el bump de pánico a las 16h distorsionaba el orden y quitaba valor.
+3. **CARE con prioridad alta gana** (70 vs 46 default) y los rebaños mixtos crecen (4+4 a 7+5).
+4. `animal_harvest_at`: señal mixta (campeón usa 4 = acumular; otros 1–2).
+
+**Meseta y frontera:** el espacio config+perillas se aplanó (~$55–60k de fitness). El desperdicio restante del campeón: 3,771 acciones de movimiento, 10% PASS, fertilizer sin recoger $5.9k. Próximos avances = mecanismos nuevos en el chasis, p.ej. *bundling por tile* (terminar todas las tareas de la tile donde estás parado antes de moverte; recoger fertilizer en el mismo viaje del FEED).
+
+**Nota:** con 3 rondas de evolución encima, `mimada` es candidata razonable a primera submission real a Kaggle (empaquetar chasis+config en main.py).
+
 ## 2026-08-17 — Evolución 2: 14 generaciones, 6,990 episodios, nuevo campeón `ocho_manos`
 
 **Setup:** `evolucion2.py` — 14 generaciones × 40 configs (6 élites + 22 mutantes + 12 inmigrantes), registro de firmas anti-repetición (incluida gen 1), seeds rotativos por generación, panel coevolutivo. Perillas nuevas: `animal_harvest_at`, `premium_hold_day`. 33 minutos de cómputo.

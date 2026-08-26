@@ -70,9 +70,29 @@ OCHO_MANOS = dict(
     max_quadrants=2,
 )
 
+# Campeón de la evolución 3 (policy search, mutante h7m_10): rebaño mixto 4+4,
+# CARE con prioridad alta (70), cosecha animal acumulada (harvest_at=4), sin
+# urgencia horaria y SIN zonificación (la evolución la rechazó unánimemente).
+# Confirmado 50-0 vs ocho_manos en seeds vírgenes ($59.4k vs $49.9k).
+MIMADA = dict(
+    hands=8,
+    animals=[("COW", 4), ("SHEEP", 4)],
+    plants={"MELON": 9, "WHEAT": 9, "STRAWBERRY": 3, "CARROT": 1},
+    care=True,
+    collect_fert=True,
+    fert_prio=45,
+    animal_harvest_at=4,
+    premium_hold_day=8,
+    buy_land=True,
+    max_quadrants=2,
+    prio_care=70,
+    prio_urgency=25,
+)
+
 control = make_agent(CONTROL)
 gansos = make_agent(GANSOS)
 ovejas_vacas = make_agent(OVEJAS_VACAS)
 writeup = make_agent(WRITEUP)
 vacas_melon = make_agent(VACAS_MELON)
 ocho_manos = make_agent(OCHO_MANOS)
+mimada = make_agent(MIMADA)
