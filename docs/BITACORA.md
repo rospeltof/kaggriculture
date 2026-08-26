@@ -1,5 +1,9 @@
 # Bitácora de experimentos
 
+## 2026-08-26 — PRIMERA SUBMISSION REAL 🚀
+
+Submission **55782540**: `submission/main.py` (mimada v1, campeón de la evolución 3, ~21k episodios de búsqueda local). Auth por `kaggle auth login` (OAuth); el usuario ya estaba inscrito. Estado inicial: PENDING (episodio de validación self-play en servidores de Kaggle). Quedan 4 submissions del cupo diario. Monitoreo: `kaggle competitions submissions kaggriculture` y `kaggle competitions episodes 55782540`.
+
 ## 2026-08-19 — Empaquetado de submission + bug del orden de dict como ADN estratégico
 
 **Verificación del MCP de Kaggle:** endpoints públicos OK (metadatos: 6,367 equipos, 5 subs/día, deadline 2026-09-30; páginas completas). Endpoints autenticados (leaderboard, submit, episodios) devuelven `Unauthenticated`: el usuario debe conectar el connector de Kaggle en el cliente, o generar token de API para el CLI (`kaggle` 2.2.4 ya instalado en el venv). Falta también aceptar las reglas ("Join Competition") en la web.
