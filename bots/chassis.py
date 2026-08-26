@@ -193,6 +193,15 @@ def decide(obs, cfg):
         want_structs[ANIMAL[animal]["structure"]] += count
     for kind in ("COOP", "PASTURE"):
         deficit = want_structs[kind] - my_structures[kind]
+        if cfg.get("phased") and deficit > 0:
+            # construir solo con el animal a la vista: animales ya adquiridos de este
+            # tipo de estructura + 2 de margen — no gastar tiles en pastures vacías
+            acquired = sum(1 for row in tiles for t in row
+                           if isinstance(t, dict) and t.get("animal")
+                           and ANIMAL[t["animal"]]["structure"] == kind)
+            acquired += sum(n for an, n in shed.items()
+                            if an in ANIMAL and ANIMAL[an]["structure"] == kind)
+            deficit = min(deficit, max(0, acquired + 2 - my_structures[kind]))
         if deficit > 0 and empty_tiles and day <= 24:
             spots = sorted(empty_tiles, key=lambda t: _dist(t, SHED))[:deficit]
             for s in spots:
@@ -215,6 +224,10 @@ def decide(obs, cfg):
     plant_claims = {}
     adaptive_best, adaptive_need = None, 0
     far = not cfg.get("plant_near")
+    # regla de oro (phased): nunca plantar más de lo que la plantilla puede regar
+    plant_cap = 10 ** 9
+    if cfg.get("phased"):
+        plant_cap = n_units * cfg.get("tiles_per_unit", 5)
     if cfg.get("adaptive"):
         # score = $/tile-día esperado, con el precio evaluado en el inventario
         # actual MÁS nuestro propio pipeline sin vender (no inundar el mercado).
@@ -260,7 +273,8 @@ def decide(obs, cfg):
                 continue
             deficit = target - planted_count.get(crop, 0)
             avail_seeds = seeds.get(crop, 0)
-            n = min(deficit, avail_seeds, len(empty_tiles))
+            room = plant_cap - sum(planted_count.values()) - sum(plant_claims.values())
+            n = min(deficit, avail_seeds, len(empty_tiles), max(0, room))
             for _ in range(max(0, n)):
                 spot = (max if far else min)(empty_tiles, key=lambda t: _dist(t, SHED))
                 empty_tiles.remove(spot)
@@ -306,6 +320,25 @@ def decide(obs, cfg):
                     actions[i] = ["DROP"]
                 else:
                     actions[i] = [_step_toward(unit_pos[i], SHED)]
+
+    # ---- logística matinal multi-feeder: repartir el wheat del shed entre varios
+    # alimentadores en paralelo. Con rebaños grandes, un solo feeder cargando todo
+    # el wheat tarda más de un día en alimentar 15 animales (causa de los escapes
+    # del writeup y del colapso del clon de "ln"). Al alba todos están en el shed.
+    if cfg.get("multi_feeder") and hungry > 3 and hour <= 2:
+        mf_shed_tiles = {(4, 4), (5, 4), (4, 5), (5, 5)}
+        shed_wheat = shed.get("WHEAT", 0)
+        n_feeders = min(max(1, -(-hungry // 5)), n_units)
+        share = max(1, -(-hungry // n_feeders))
+        assigned = 0
+        for i in range(n_units):
+            if assigned >= n_feeders or shed_wheat <= 0:
+                break
+            if actions[i] is None and invs[i].get("WHEAT", 0) == 0 and unit_pos[i] in mf_shed_tiles:
+                take = min(share, shed_wheat)
+                actions[i] = ["PICKUP", "WHEAT", take]
+                shed_wheat -= take
+                assigned += 1
 
     for prio, pos, op in tasks:
         if pos in used_tiles and op[0] not in ("PICKUP",):
@@ -387,8 +420,24 @@ def decide(obs, cfg):
                 if day > c["last_plant"]:
                     continue
                 deficit = target - planted_count.get(crop, 0) - seeds.get(crop, 0)
-                if deficit > 0 and money > c["seed"] * deficit + 100:
+                if deficit <= 0:
+                    continue
+                if cfg.get("phased"):
+                    # baratas-primero con tope de gasto: nunca fundir la caja en semillas
                     seed_orders.append(["BUY_SEED", crop, deficit])
+                elif money > c["seed"] * deficit + 100:
+                    seed_orders.append(["BUY_SEED", crop, deficit])
+            if cfg.get("phased"):
+                seed_orders.sort(key=lambda o: CROP[o[1]]["seed"])
+                budget_seeds = max(150, money * 0.35)
+                capped = []
+                for op in seed_orders:
+                    unit_cost = CROP[op[1]]["seed"]
+                    n = min(op[2], int(budget_seeds // unit_cost))
+                    if n > 0:
+                        capped.append([op[0], op[1], n])
+                        budget_seeds -= n * unit_cost
+                seed_orders = capped
             orders.extend(seed_orders[:2])
 
         # semillas para el modo grow: cubrir las tiles vacías con el mejor cultivo
@@ -415,9 +464,13 @@ def decide(obs, cfg):
             for k in invs[i]:
                 if k in ANIMAL:
                     owned[k] = owned.get(k, 0) + invs[i][k]
+        owned_total = sum(owned.values())
+        feed_secure = (not cfg.get("phased")) or (
+            planted_count.get("WHEAT", 0) + shed.get("WHEAT", 0) >= owned_total + 1)
         for animal, count in cfg.get("animals", []):
             a = ANIMAL[animal]
-            if owned.get(animal, 0) < count and day <= a.get("last_buy", 22) and money > a["cost"] + cfg.get("cash_buffer", 200):
+            if (owned.get(animal, 0) < count and day <= a.get("last_buy", 22) and feed_secure
+                    and money > a["cost"] + cfg.get("cash_buffer", 200)):
                 orders.append(["BUY_ANIMAL", animal, 1])
                 break
 
@@ -430,7 +483,8 @@ def decide(obs, cfg):
         if cfg.get("buy_land") and len(farm["unlocked_quadrants"]) < cfg.get("max_quadrants", 2):
             n_extra = len(farm["unlocked_quadrants"]) - 1
             price = [1000, 2000, 4000][n_extra] if n_extra < 3 else None
-            if price and money > price + 600 and len(empty_tiles) < 6 and day <= 20:
+            land_buffer = 1500 if cfg.get("phased") else 600
+            if price and money > price + land_buffer and len(empty_tiles) < 6 and day <= 20:
                 orders.append(["BUY_LAND"])
 
     return {"farmer": actions[0], "hands": actions[1:], "market": orders[:10]}

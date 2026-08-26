@@ -173,3 +173,20 @@ mimada_v2 = make_agent(MIMADA_V2)
 mimada_v3 = make_agent(MIMADA_V3)
 mimada_v4 = make_agent(MIMADA_V4)
 ln_clone = make_agent(LN_CLONE)
+
+# Iteración de fidelidad del clon: multi_feeder (logística matinal en paralelo)
+# y variante con zonificación — a gran escala la asignación greedy se ahoga.
+LN_CLONE_V2 = dict(LN_CLONE, multi_feeder=True)
+LN_CLONE_V2Z = dict(LN_CLONE, multi_feeder=True, zoning=True, zone_fallback_prio=80)
+ln_clone_v2 = make_agent(LN_CLONE_V2)
+ln_clone_v2z = make_agent(LN_CLONE_V2Z)
+
+# Fase de capital (phased): semillas baratas-primero con tope de gasto,
+# estructuras solo con animal a la vista, ningún animal sin pipeline de comida.
+LN_CLONE_V3 = dict(LN_CLONE, multi_feeder=True, phased=True)
+ln_clone_v3 = make_agent(LN_CLONE_V3)
+
+# v4 del clon: WHEAT primero en el dict (pipeline de comida y caja antes que
+# fresas), y DIG alto para reciclar las tumbas de fresas cosechadas.
+LN_CLONE_V4 = dict(LN_CLONE_V3, plants={"WHEAT": 41, "STRAWBERRY": 19}, prio_dig=45)
+ln_clone_v4 = make_agent(LN_CLONE_V4)
