@@ -1,5 +1,19 @@
 # Bitácora de experimentos
 
+## 2026-08-28 — Evolución 5 (panel del meta): v4 retiene; nace mimada_xl y la tensión dinero-vs-winrate
+
+**Setup:** panel des-endogamizado [mimada_v4 + clon de "ln"], techos altos, mecánicas de ejecución como genes. 4,590 episodios.
+
+**Resultado:** `mimada_v4` retiene el título (53/54 en la final). Pero el subcampeón **`mimada_xl` (m8m_08)** es la v4 escalada — 12 animales (6+6), 3er cuadrante, 9 peones, `multi_feeder` — y fue **el mejor del campo en dinero medio ($64.2k vs $56.6k de v4)** pese a perder el cara-a-cara.
+
+**Hallazgos:**
+1. **`multi_feeder` adoptado por 8/9 finalistas evolucionados** — la mecánica desbloqueó rebaños de 12 sin escapes. La frontera de escala se movió.
+2. `phased` = False en todos: la fase de capital solo importa en builds extremos (rescató al clon), no a escala moderada.
+3. **Tensión dinero-vs-winrate**: contra el gemelo v4, el volumen de XL estrella los mercados compartidos (leche/lana) y pierde por poco; contra oponentes *distintos* produce más. El ladder ES diverso → el dinero medio contra panel variado puede predecir mejor el Elo que el head-to-head contra nuestro propio campeón. Candidata seria a submission junto a v4.
+4. El clon sigue débil ($18.7k, 0 pts) — sparring direccional, no benchmark.
+
+**Pendiente decisión del usuario:** subir v4 + xl al ladder (reemplazarían a v1/v2; v2 iba en 641.8).
+
 ## 2026-08-27 (2) — Inteligencia del meta: perfil de rivales y el experimento del clon
 
 **Estado del ladder:** mimada v2 = 641.8 (+42, subiendo); v1 = 601.5. Top 1 global: 3,097.

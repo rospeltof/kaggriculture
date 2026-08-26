@@ -190,3 +190,41 @@ ln_clone_v3 = make_agent(LN_CLONE_V3)
 # fresas), y DIG alto para reciclar las tumbas de fresas cosechadas.
 LN_CLONE_V4 = dict(LN_CLONE_V3, plants={"WHEAT": 41, "STRAWBERRY": 19}, prio_dig=45)
 ln_clone_v4 = make_agent(LN_CLONE_V4)
+
+# Subcampeón de la evolución 5 (m8m_08): la v4 ESCALADA — 12 animales + 3er
+# cuadrante + multi_feeder (adoptado por 8/9 finalistas evolucionados). Perdió
+# el cara-a-cara vs v4 (45/54) pero fue el MEJOR en dinero medio del campo
+# ($64.2k vs $56.6k de v4): contra oponentes diversos (= el ladder) produce más;
+# contra el gemelo, su volumen estrella los mercados compartidos. VERBATIM.
+MIMADA_XL = {
+    "hands": 9,
+    "animals": [("COW", 6), ("SHEEP", 6)],
+    "plants": {"CARROT": 1, "MELON": 11, "STRAWBERRY": 3, "WHEAT": 12},
+    "care": True,
+    "collect_fert": True,
+    "fert_prio": 45,
+    "animal_harvest_at": 4,
+    "premium_hold_day": 8,
+    "buy_land": True,
+    "max_quadrants": 3,
+    "prio_care": 70,
+    "prio_urgency": 25,
+    "plant_near": True,
+    "endgame": True,
+    "adaptive": True,
+    "crop_tiles": 22,
+    "zoning": False,
+    "zone_fallback_prio": 70,
+    "prio_feed": 88,
+    "prio_water": 44,
+    "prio_win_bonus": 12,
+    "prio_harvest": 78,
+    "prio_plant": 40,
+    "grow": False,
+    "prio_dig": 8,
+    "mkt_opp_factor": 1,
+    "multi_feeder": True,
+    "phased": False,
+    "tiles_per_unit": 5,
+}
+mimada_xl = make_agent(MIMADA_XL)
