@@ -92,6 +92,15 @@ MIMADA = dict(
     prio_urgency=25,
 )
 
+# v2 tras análisis de replays reales + ablación (BITACORA 2026-08-26): SOLO los
+# dos fixes que ganaron 16/16 aislados — plantar cerca del shed y protocolo de
+# cierre (cosechar/cargar/DROP/vender). grow y land3 resultaron venenos; dig30 neutro.
+MIMADA_V2 = dict(
+    MIMADA,
+    plant_near=True,
+    endgame=True,
+)
+
 control = make_agent(CONTROL)
 gansos = make_agent(GANSOS)
 ovejas_vacas = make_agent(OVEJAS_VACAS)
@@ -99,3 +108,4 @@ writeup = make_agent(WRITEUP)
 vacas_melon = make_agent(VACAS_MELON)
 ocho_manos = make_agent(OCHO_MANOS)
 mimada = make_agent(MIMADA)
+mimada_v2 = make_agent(MIMADA_V2)

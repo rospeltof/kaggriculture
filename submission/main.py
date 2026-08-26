@@ -1,6 +1,6 @@
 """Kaggriculture submission — generada por empaquetar.py.
 
-Config: MIMADA (campeón vigente de la evolución local; ver docs/BITACORA.md).
+Config: MIMADA_V2 (campeón vigente de la evolución local; ver docs/BITACORA.md).
 Chasis: bots/chassis.py inline (Python puro, sin dependencias).
 """
 
@@ -93,7 +93,7 @@ def decide(obs, cfg):
                 continue
             kind = tile.get("kind")
             if kind == "WEED":
-                tasks.append((8, (x, y), ["DIG"]))
+                tasks.append((cfg.get("prio_dig", 8), (x, y), ["DIG"]))
                 continue
             if kind == "PLANT":
                 crop = tile["crop"]
@@ -143,6 +143,8 @@ def decide(obs, cfg):
                 if cfg.get("care") and tile.get("fed_today") and not tile.get("cared_today") and day <= 27:
                     tasks.append((p_care, (x, y), ["CARE"]))
                 h_at = cfg.get("animal_harvest_at", 2)
+                if cfg.get("endgame") and day >= 26:
+                    h_at = 1  # cierre: no acumular producto en el animal
                 if yu >= a["cap"] - 1:
                     tasks.append((ph + 12, (x, y), ["HARVEST"]))
                 elif yu >= h_at or (yu >= 1 and day >= 28):
@@ -184,10 +186,22 @@ def decide(obs, cfg):
         avail_seeds = seeds.get(crop, 0)
         n = min(deficit, avail_seeds, len(empty_tiles))
         for _ in range(max(0, n)):
-            spot = max(empty_tiles, key=lambda t: _dist(t, SHED))  # cultivos lejos, animales cerca
+            far = not cfg.get("plant_near")
+            spot = (max if far else min)(empty_tiles, key=lambda t: _dist(t, SHED))
             empty_tiles.remove(spot)
             tasks.append((p_plant + (4 if crop == "WHEAT" else 0), spot, ["PLANT", crop]))
             plant_claims[crop] = plant_claims.get(crop, 0) + 1
+
+    # ---- reinversión ("grow"): plantar toda tile vacía con el mejor cultivo vigente ----
+    if cfg.get("grow") and day <= 26 and empty_tiles:
+        best = next((c for c in ("MELON", "STRAWBERRY", "CARROT", "WHEAT") if day <= CROP[c]["last_plant"]), None)
+        if best:
+            avail = seeds.get(best, 0) - plant_claims.get(best, 0)
+            for _ in range(min(avail, len(empty_tiles))):
+                spot = min(empty_tiles, key=lambda t: _dist(t, SHED))
+                empty_tiles.remove(spot)
+                tasks.append((cfg.get("prio_plant", 40) - 2, spot, ["PLANT", best]))
+                plant_claims[best] = plant_claims.get(best, 0) + 1
 
     # ---- asignación: greedy global, o zonificada si cfg["zoning"] ----
     # Zonificación: las tiles activas (no LOCKED) se parten en bloques contiguos,
@@ -205,6 +219,18 @@ def decide(obs, cfg):
     actions = [None] * n_units
     used_tiles = set()
     wheat_needed = hungry  # unidades de FEED sin wheat encima haran fetch
+
+    # ---- cierre de temporada: llevar la carga al shed ANTES de que acabe el juego ----
+    # (el auto-drop nocturno del día 29 es inútil: ya no hay turnos para vender)
+    if cfg.get("endgame") and day >= 28:
+        shed_tiles = {(4, 4), (5, 4), (4, 5), (5, 5)}
+        for i in range(n_units):
+            tot = sum(invs[i].values())
+            if tot >= 3 or (day == 29 and hour >= 16 and tot > 0):
+                if unit_pos[i] in shed_tiles:
+                    actions[i] = ["DROP"]
+                else:
+                    actions[i] = [_step_toward(unit_pos[i], SHED)]
 
     for prio, pos, op in tasks:
         if pos in used_tiles and op[0] not in ("PICKUP",):
@@ -264,7 +290,8 @@ def decide(obs, cfg):
         if n > 0:
             sellable.append((it, n))
     sellable.sort(key=lambda kv: -kv[1])
-    for it, n in sellable[:4]:
+    sell_cap = 8 if (cfg.get("endgame") and day >= 28) else 4
+    for it, n in sellable[:sell_cap]:
         orders.append(["SELL", it, n])
 
     if hour == 0 and day <= 27:
@@ -282,6 +309,17 @@ def decide(obs, cfg):
             if deficit > 0 and money > c["seed"] * deficit + 100:
                 seed_orders.append(["BUY_SEED", crop, deficit])
         orders.extend(seed_orders[:2])
+
+        # semillas para el modo grow: cubrir las tiles vacías con el mejor cultivo
+        if cfg.get("grow"):
+            best = next((c for c in ("MELON", "STRAWBERRY", "CARROT", "WHEAT") if day <= CROP[c]["last_plant"]), None)
+            if best:
+                n_empty = sum(1 for row in tiles for t in row if t is None)
+                need = n_empty - seeds.get(best, 0)
+                afford = max(0, int((money - 400) // CROP[best]["seed"]))
+                n = min(need, afford, 12)
+                if n > 0:
+                    orders.append(["BUY_SEED", best, n])
 
         # siguiente animal del plan (1 por turno)
         owned = {}
@@ -328,7 +366,9 @@ CONFIG = {'hands': 8,
  'buy_land': True,
  'max_quadrants': 2,
  'prio_care': 70,
- 'prio_urgency': 25}
+ 'prio_urgency': 25,
+ 'plant_near': True,
+ 'endgame': True}
 
 
 def agent(obs):

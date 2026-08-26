@@ -1,5 +1,19 @@
 # Bitácora de experimentos
 
+## 2026-08-26 (2) — Análisis de replays reales → mimada v2 al ladder
+
+**Diagnóstico del ladder (rating 599 tras ~18 episodios; 3 replays analizados con `analizar_replay.py`):**
+1. Ocio confirmado: 32–36 turnos TODO-PASS/partida sin órdenes de mercado (rival top: 1); 8–10% unidades-PASS vs 2–3% de rivales.
+2. Weeds tras comprar NE (día 9): 2→6→12–15 al día 20–25; casi todos espontáneos sin DIG (prio 8), no plantas muertas (3–5).
+3. Fuga de cierre: **$10–16k sin vender al step 719** (producto en animales + plantas maduras + inventarios de unidades). Rivales: ~$0. Causas: `animal_harvest_at=4` acumula y el auto-drop del día 29 llega sin turnos de venta restantes.
+4. Causa raíz: granja ESTÁTICA (plan fijo completo al día 10, banco sin reinvertir) vs meta que escala (9–13 vacas, 20–30 fresas, 3er cuadrante, $78–106k).
+
+**Lección doble de método:**
+- Los 5 fixes "obvios" juntos (grow, endgame, dig30, plant_near, land3) perdieron **0–30** vs v1. La ablación individual (16 eps c/u) los separó: `plant_near` 16/16 ($58.8k) y `endgame` 16/16 ($52.6k) ganan; `dig30` neutro (8/16); `land3` 1/16 y `grow` 0/16 **venenos** (el grow melón-primero estrella su propio precio y drena capital animal).
+- Incidente ops: la primera ablación se lanzó sin `if __name__ == "__main__"` → tormenta de spawns de multiprocessing en macOS, 4.9 GB de tracebacks. Guard SIEMPRE.
+
+**mimada v2** = mimada + `plant_near` + `endgame`: **30–0 vs v1** ($58.1k vs $49.2k) en seeds frescos; self-play $74k (vs $46k de v1). Enviada como segunda submission (quedan 3 hoy). Pendiente: mecanismo de escalado inteligente (el meta lo exige, el grow ingenuo no sirve) — candidato para evolución 4 con el chasis v2.
+
 ## 2026-08-26 — PRIMERA SUBMISSION REAL 🚀
 
 Submission **55782540**: `submission/main.py` (mimada v1, campeón de la evolución 3, ~21k episodios de búsqueda local). Auth por `kaggle auth login` (OAuth); el usuario ya estaba inscrito. Estado inicial: PENDING (episodio de validación self-play en servidores de Kaggle). Quedan 4 submissions del cupo diario. Monitoreo: `kaggle competitions submissions kaggriculture` y `kaggle competitions episodes 55782540`.
