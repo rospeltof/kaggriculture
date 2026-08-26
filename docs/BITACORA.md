@@ -1,5 +1,15 @@
 # Bitácora de experimentos
 
+## 2026-08-27 — Evolución 4: la planificación adaptativa al mercado GANA (mimada_v4)
+
+**Pregunta:** ¿capa adaptativa (score $/tile-día con espejo de la curva de precios + pipeline propio) o mix fijo evolucionado? 4,590 episodios, 10 generaciones, adaptativo y fijo compitiendo en igualdad (mutación podía encender/apagar `adaptive`).
+
+**Contexto:** la v3 adaptativa a mano perdió 5–25 y luego 10–20 vs v2 (dos fixes: wheat_floor = demanda interna del rebaño; pricing marginal con factor de oponente). El ajuste manual se detuvo ahí y las perillas fueron a evolución.
+
+**Veredicto: `mimada_v4` (k8m_22, adaptativa) — final 52/54, confirmación 50–0 vs mimada_v2 en seeds vírgenes ($59.4k vs $56.0k).** La evolución corrigió mi calibración: `mkt_opp_factor=1` (mi 2 sobre-amortiguaba el melón) y `wheat_floor` auto (= rebaño, 8). La carrera fue reñida (gens 3–7 lideraron configs fijas; la 8 la volteó), pero final y confirmación fueron inapelables. Autopsia v4: la más limpia hasta hoy (1 planta muerta, $50 decay); frontera intacta: 63% movimiento, 13% PASS.
+
+**Sin submission** (decisión del usuario: mejoras locales primero). `mimada_v4` transcrita VERBATIM a arquetipos.py y verificada (10–0 vs v2, mismos números que la confirmación). Lista para subir cuando el usuario dé el go.
+
 ## 2026-08-26 (2) — Análisis de replays reales → mimada v2 al ladder
 
 **Diagnóstico del ladder (rating 599 tras ~18 episodios; 3 replays analizados con `analizar_replay.py`):**

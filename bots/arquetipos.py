@@ -110,6 +110,39 @@ MIMADA_V3 = dict(
     crop_tiles=22,
 )
 
+# Campeón de la evolución 4 (k8m_22): la planificación ADAPTATIVA al mercado
+# gana con mkt_opp_factor=1 (menos pesimista que el ajuste manual) y wheat_floor
+# auto (= rebaño). Final 52/54; confirmado 50-0 vs mimada_v2 en seeds vírgenes.
+# Transcripción VERBATIM del output normalizado (el orden de dicts es ADN).
+MIMADA_V4 = {
+    "hands": 8,
+    "animals": [("COW", 4), ("SHEEP", 4)],
+    "plants": {"CARROT": 1, "MELON": 11, "STRAWBERRY": 3, "WHEAT": 8},
+    "care": True,
+    "collect_fert": True,
+    "fert_prio": 45,
+    "animal_harvest_at": 4,
+    "premium_hold_day": 8,
+    "buy_land": True,
+    "max_quadrants": 2,
+    "prio_care": 70,
+    "prio_urgency": 25,
+    "plant_near": True,
+    "endgame": True,
+    "adaptive": True,
+    "crop_tiles": 22,
+    "zoning": False,
+    "zone_fallback_prio": 70,
+    "prio_feed": 88,
+    "prio_water": 44,
+    "prio_win_bonus": 12,
+    "prio_harvest": 62,
+    "prio_plant": 40,
+    "grow": False,
+    "prio_dig": 8,
+    "mkt_opp_factor": 1,
+}
+
 control = make_agent(CONTROL)
 gansos = make_agent(GANSOS)
 ovejas_vacas = make_agent(OVEJAS_VACAS)
@@ -119,3 +152,4 @@ ocho_manos = make_agent(OCHO_MANOS)
 mimada = make_agent(MIMADA)
 mimada_v2 = make_agent(MIMADA_V2)
 mimada_v3 = make_agent(MIMADA_V3)
+mimada_v4 = make_agent(MIMADA_V4)
