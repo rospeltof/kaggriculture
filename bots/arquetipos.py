@@ -60,7 +60,7 @@ VACAS_MELON = dict(
 OCHO_MANOS = dict(
     hands=8,
     animals=[("COW", 4), ("SHEEP", 2)],
-    plants={"MELON": 12, "WHEAT": 9, "STRAWBERRY": 3, "CARROT": 1},
+    plants={"CARROT": 1, "MELON": 12, "STRAWBERRY": 3, "WHEAT": 9},
     care=True,
     collect_fert=True,
     fert_prio=45,
@@ -77,7 +77,10 @@ OCHO_MANOS = dict(
 MIMADA = dict(
     hands=8,
     animals=[("COW", 4), ("SHEEP", 4)],
-    plants={"MELON": 9, "WHEAT": 9, "STRAWBERRY": 3, "CARROT": 1},
+    # OJO: el ORDEN del dict de plantas es parte de la estrategia (el chasis
+    # compra/planta iterando en orden de inserción). h7m_10 usaba orden
+    # alfabético; transcribir en otro orden lo debilita (ver BITACORA 2026-08-19).
+    plants={"CARROT": 1, "MELON": 9, "STRAWBERRY": 3, "WHEAT": 9},
     care=True,
     collect_fert=True,
     fert_prio=45,

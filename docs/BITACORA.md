@@ -1,5 +1,15 @@
 # Bitácora de experimentos
 
+## 2026-08-19 — Empaquetado de submission + bug del orden de dict como ADN estratégico
+
+**Verificación del MCP de Kaggle:** endpoints públicos OK (metadatos: 6,367 equipos, 5 subs/día, deadline 2026-09-30; páginas completas). Endpoints autenticados (leaderboard, submit, episodios) devuelven `Unauthenticated`: el usuario debe conectar el connector de Kaggle en el cliente, o generar token de API para el CLI (`kaggle` 2.2.4 ya instalado en el venv). Falta también aceptar las reglas ("Join Competition") en la web.
+
+**Submission empaquetada:** `empaquetar.py` genera `submission/main.py` autocontenido (chasis inline + config campeona). Validación self-play 720 turnos OK.
+
+**Bug descubierto por la disciplina del espejo:** main.py vs módulo `mimada` dio 8–0 — imposible para agentes idénticos (espejo fuerza empate). Causa raíz: **el orden de inserción del dict `plants` es parte de la estrategia** (el chasis compra semillas y planta iterando `plants.items()`), y había dos transformaciones silenciosas: (1) al transcribir h7m_10/g11m_11 a `arquetipos.py` se reordenó el dict, debilitando a los campeones; (2) `pprint` alfabetizaba al empaquetar — deshaciendo por accidente el error (1). Corregido: transcripciones en el orden alfabético original de los mutantes + `sort_dicts=False`. Verificación: 0/719 decisiones distintas, espejo 3–3 con dinero idéntico al centavo.
+
+**Implicaciones:** (a) el orden de plantas es una dimensión de búsqueda NO explorada — y hay un confound conocido: `sample()` genera orden WHEAT-primero y `mutate()` alfabetiza vía normalize; (b) toda transcripción de configs debe ser byte-fiel; el espejo del harness es el detector.
+
 ## 2026-08-18 — Evolución 3 (policy search): nuevo campeón `mimada`; la zonificación PIERDE
 
 **Setup:** `evolucion3.py` — el cerebro como perillas: 9 prioridades del scheduler + zonificación + peones hasta 10, buscados junto con la config de granja. 14 generaciones × 40, registro anti-repetición con las 530 firmas de gens 1–2. 6,990 episodios, 27 min.

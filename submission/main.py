@@ -317,16 +317,16 @@ def decide(obs, cfg):
     return {"farmer": actions[0], "hands": actions[1:], "market": orders[:10]}
 
 
-CONFIG = {'animal_harvest_at': 4,
+CONFIG = {'hands': 8,
  'animals': [('COW', 4), ('SHEEP', 4)],
- 'buy_land': True,
+ 'plants': {'CARROT': 1, 'MELON': 9, 'STRAWBERRY': 3, 'WHEAT': 9},
  'care': True,
  'collect_fert': True,
  'fert_prio': 45,
- 'hands': 8,
- 'max_quadrants': 2,
- 'plants': {'CARROT': 1, 'MELON': 9, 'STRAWBERRY': 3, 'WHEAT': 9},
+ 'animal_harvest_at': 4,
  'premium_hold_day': 8,
+ 'buy_land': True,
+ 'max_quadrants': 2,
  'prio_care': 70,
  'prio_urgency': 25}
 

@@ -28,7 +28,7 @@ Chasis: bots/chassis.py inline (Python puro, sin dependencias).
 
 {chassis_src}
 
-CONFIG = {pprint.pformat(cfg, indent=1, width=100)}
+CONFIG = {pprint.pformat(cfg, indent=1, width=100, sort_dicts=False)}
 
 
 def agent(obs):
