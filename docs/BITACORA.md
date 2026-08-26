@@ -143,3 +143,7 @@ Final: 49/56 episodios ganados, $46.9k medio. **Confirmación en seeds vírgenes
 1. El núcleo económico del agente real: ovejas/vacas con care diario. Gansos como candidato secundario.
 2. Cambios de estrategia sugeridos por el desperdicio: recolección de fertilizer como línea de ingreso de primera clase; zonificación de unidades para reducir movimiento; cosecha deadline-aware; no plantar más de lo que se puede regar.
 3. Pendiente: probar un arquetipo "ovejas_vacas + recolección disciplinada de fertilizer" para medir el delta real (el $11k nominal se degrada con la curva del fertilizer al venderlo).
+
+## 2026-08-28 (2) — v4 y XL al ladder
+
+Submissions **55803139** (mimada v4, adaptativa) y **55803144** (mimada xl, 12 animales + multi_feeder) enviadas y en validación. Pasan a ser las 2 activas (reemplazan a v1/601.5 y v2/618.8 en matchmaking). Experimento en vivo: ¿predice mejor el Elo el head-to-head (v4) o el dinero medio contra campo diverso (XL)? Revisión: mañana — ratings, episodios, y replays de derrotas para la siguiente iteración.

@@ -1,6 +1,6 @@
 """Kaggriculture submission — generada por empaquetar.py.
 
-Config: MIMADA_V2 (campeón vigente de la evolución local; ver docs/BITACORA.md).
+Config: MIMADA_XL (campeón vigente de la evolución local; ver docs/BITACORA.md).
 Chasis: bots/chassis.py inline (Python puro, sin dependencias).
 """
 
@@ -13,6 +13,7 @@ FEED, órdenes de mercado y cierre de temporada.
 
 Constantes verificadas contra el motor (docs/RULES.md S3.9, S4.x).
 """
+import math
 
 CROP = {
     "WHEAT":      dict(seed=10,  first=2,  peak=4,  win=(2, 4),  last_plant=25, ongoing=False),
@@ -28,6 +29,45 @@ ANIMAL = {
 }
 SELLABLE = ["WOOL", "MILK", "MELON", "STRAWBERRY", "EGG", "TOMATO", "CARROT", "WHEAT", "FERTILIZER"]
 PREMIUM = {"WOOL", "MILK", "MELON", "STRAWBERRY"}
+
+# Espejo verificado de la curva de precios del motor (RULES.md S5.1, motor v1.32.7):
+# (base, T, below_func, below_target, above_func, above_target)
+MKT = {
+    "WHEAT":      (25, 400, "sqrt", 0.80, "log", 0.20),
+    "CARROT":     (35, 450, "hinge", 1.00, "sqrt", 0.70),
+    "TOMATO":     (60, 200, "hinge", 0.40, "sqrt", 0.60),
+    "STRAWBERRY": (120, 100, "sqrt", 0.70, "linear", 1.60),
+    "MELON":      (250, 300, "log", 0.20, "sq", 3.60),
+}
+# (unidades al pico sin fert, días de ocupación de la tile aprox)
+CROP_ECON = {"WHEAT": (4, 5), "CARROT": (3, 4), "MELON": (6, 11), "TOMATO": (4, 13), "STRAWBERRY": (4, 18)}
+
+
+def _fshape(f, x, T):
+    if f == "linear":
+        return x
+    if f == "sq":
+        return x * x
+    if f == "sqrt":
+        return math.sqrt(x)
+    if f == "log":
+        return math.log(1.0 + x)
+    if f == "hinge":
+        u = x / T
+        return u + 8.0 * max(0.0, u - 1.0) ** 2
+    return x
+
+
+def _price_at(crop, inv):
+    """Precio del motor si el inventario de mercado fuera `inv` (floor $1)."""
+    base, T, bf, bt, af, at_ = MKT[crop]
+    if inv < 10000:
+        amp = bt * base / _fshape(bf, T, T)
+        p = base + amp * _fshape(bf, 10000 - inv, T)
+    else:
+        amp = at_ * base / _fshape(af, T, T)
+        p = base - amp * _fshape(af, inv - 10000, T)
+    return max(1.0, p)
 SHED = (4, 4)
 LAST_DAY = 29
 
@@ -60,6 +100,7 @@ def decide(obs, cfg):
     shed = priv.get("shed", {}) or {}
     seeds = priv.get("seeds", {}) or {}
     money = farm["money"]
+    market_inv = obs["market"]["inventory"]
 
     unit_pos = [tuple(farm["farmer"])] + [tuple(h) for h in farm["hands"]]
     invs = list(priv.get("inventories", [{}]))
@@ -158,6 +199,15 @@ def decide(obs, cfg):
         want_structs[ANIMAL[animal]["structure"]] += count
     for kind in ("COOP", "PASTURE"):
         deficit = want_structs[kind] - my_structures[kind]
+        if cfg.get("phased") and deficit > 0:
+            # construir solo con el animal a la vista: animales ya adquiridos de este
+            # tipo de estructura + 2 de margen — no gastar tiles en pastures vacías
+            acquired = sum(1 for row in tiles for t in row
+                           if isinstance(t, dict) and t.get("animal")
+                           and ANIMAL[t["animal"]]["structure"] == kind)
+            acquired += sum(n for an, n in shed.items()
+                            if an in ANIMAL and ANIMAL[an]["structure"] == kind)
+            deficit = min(deficit, max(0, acquired + 2 - my_structures[kind]))
         if deficit > 0 and empty_tiles and day <= 24:
             spots = sorted(empty_tiles, key=lambda t: _dist(t, SHED))[:deficit]
             for s in spots:
@@ -176,21 +226,66 @@ def decide(obs, cfg):
             elif match:
                 tasks.append((65, SHED, ["PICKUP", match, 1]))
 
-    # ---- plantar según plan ----
+    # ---- plantar: plan fijo, o adaptativo a los precios del mercado ----
     plant_claims = {}
-    for crop, target in cfg.get("plants", {}).items():
-        c = CROP[crop]
-        if day > c["last_plant"]:
-            continue
-        deficit = target - planted_count.get(crop, 0)
-        avail_seeds = seeds.get(crop, 0)
-        n = min(deficit, avail_seeds, len(empty_tiles))
-        for _ in range(max(0, n)):
-            far = not cfg.get("plant_near")
-            spot = (max if far else min)(empty_tiles, key=lambda t: _dist(t, SHED))
-            empty_tiles.remove(spot)
-            tasks.append((p_plant + (4 if crop == "WHEAT" else 0), spot, ["PLANT", crop]))
-            plant_claims[crop] = plant_claims.get(crop, 0) + 1
+    adaptive_best, adaptive_need = None, 0
+    far = not cfg.get("plant_near")
+    # regla de oro (phased): nunca plantar más de lo que la plantilla puede regar
+    plant_cap = 10 ** 9
+    if cfg.get("phased"):
+        plant_cap = n_units * cfg.get("tiles_per_unit", 5)
+    if cfg.get("adaptive"):
+        # score = $/tile-día esperado, con el precio evaluado en el inventario
+        # actual MÁS nuestro propio pipeline sin vender (no inundar el mercado).
+        budget = cfg.get("crop_tiles", sum(cfg.get("plants", {}).values()))
+        deficit = budget - sum(planted_count.values())
+        # 1) piso de wheat: el rebaño come 1 wheat/día/animal; comprarlo cuesta
+        #    ~10x más que cultivarlo. Cubrir la demanda interna antes de especular.
+        herd = sum(n for _, n in cfg.get("animals", []))
+        wheat_floor = min(cfg.get("wheat_floor", herd), max(0, budget // 3))
+        wheat_gap = 0
+        if day <= CROP["WHEAT"]["last_plant"]:
+            wheat_gap = max(0, wheat_floor - planted_count.get("WHEAT", 0))
+        # 2) resto del budget: mejor $/tile-día, precio evaluado al MARGEN —
+        #    inventario + 2x nuestro pipeline (el rival vende parecido) + esta tile.
+        best, best_s = None, -1e9
+        for crop, (u, occ) in CROP_ECON.items():
+            if day > CROP[crop]["last_plant"]:
+                continue
+            pipeline = planted_count.get(crop, 0) * u + shed.get(crop, 0)
+            opp = cfg.get("mkt_opp_factor", 2)
+            price = _price_at(crop, market_inv.get(crop, 10000) + int(opp * pipeline) + u)
+            s = (u * price - CROP[crop]["seed"]) / occ
+            if s > best_s:
+                best, best_s = crop, s
+        adaptive_best = best
+        for crop, n_want in (("WHEAT", min(wheat_gap, deficit)), (best, deficit - min(wheat_gap, deficit))):
+            if not crop or n_want <= 0:
+                continue
+            n = min(n_want, seeds.get(crop, 0) - plant_claims.get(crop, 0), len(empty_tiles))
+            for _ in range(max(0, n)):
+                spot = (max if far else min)(empty_tiles, key=lambda t: _dist(t, SHED))
+                empty_tiles.remove(spot)
+                tasks.append((p_plant + (4 if crop == "WHEAT" else 0), spot, ["PLANT", crop]))
+                plant_claims[crop] = plant_claims.get(crop, 0) + 1
+        adaptive_need = max(0, wheat_gap - seeds.get("WHEAT", 0)) if wheat_gap else (
+            max(0, deficit - seeds.get(best, 0)) if best else 0)
+        if wheat_gap:
+            adaptive_best = "WHEAT"
+    else:
+        for crop, target in cfg.get("plants", {}).items():
+            c = CROP[crop]
+            if day > c["last_plant"]:
+                continue
+            deficit = target - planted_count.get(crop, 0)
+            avail_seeds = seeds.get(crop, 0)
+            room = plant_cap - sum(planted_count.values()) - sum(plant_claims.values())
+            n = min(deficit, avail_seeds, len(empty_tiles), max(0, room))
+            for _ in range(max(0, n)):
+                spot = (max if far else min)(empty_tiles, key=lambda t: _dist(t, SHED))
+                empty_tiles.remove(spot)
+                tasks.append((p_plant + (4 if crop == "WHEAT" else 0), spot, ["PLANT", crop]))
+                plant_claims[crop] = plant_claims.get(crop, 0) + 1
 
     # ---- reinversión ("grow"): plantar toda tile vacía con el mejor cultivo vigente ----
     if cfg.get("grow") and day <= 26 and empty_tiles:
@@ -231,6 +326,25 @@ def decide(obs, cfg):
                     actions[i] = ["DROP"]
                 else:
                     actions[i] = [_step_toward(unit_pos[i], SHED)]
+
+    # ---- logística matinal multi-feeder: repartir el wheat del shed entre varios
+    # alimentadores en paralelo. Con rebaños grandes, un solo feeder cargando todo
+    # el wheat tarda más de un día en alimentar 15 animales (causa de los escapes
+    # del writeup y del colapso del clon de "ln"). Al alba todos están en el shed.
+    if cfg.get("multi_feeder") and hungry > 3 and hour <= 2:
+        mf_shed_tiles = {(4, 4), (5, 4), (4, 5), (5, 5)}
+        shed_wheat = shed.get("WHEAT", 0)
+        n_feeders = min(max(1, -(-hungry // 5)), n_units)
+        share = max(1, -(-hungry // n_feeders))
+        assigned = 0
+        for i in range(n_units):
+            if assigned >= n_feeders or shed_wheat <= 0:
+                break
+            if actions[i] is None and invs[i].get("WHEAT", 0) == 0 and unit_pos[i] in mf_shed_tiles:
+                take = min(share, shed_wheat)
+                actions[i] = ["PICKUP", "WHEAT", take]
+                shed_wheat -= take
+                assigned += 1
 
     for prio, pos, op in tasks:
         if pos in used_tiles and op[0] not in ("PICKUP",):
@@ -299,16 +413,38 @@ def decide(obs, cfg):
             orders.append(["HIRE"])
 
     if day <= 27:
-        # semillas para el deficit del plan (2 ordenes max)
-        seed_orders = []
-        for crop, target in cfg.get("plants", {}).items():
-            c = CROP[crop]
-            if day > c["last_plant"]:
-                continue
-            deficit = target - planted_count.get(crop, 0) - seeds.get(crop, 0)
-            if deficit > 0 and money > c["seed"] * deficit + 100:
-                seed_orders.append(["BUY_SEED", crop, deficit])
-        orders.extend(seed_orders[:2])
+        # semillas: para el mejor cultivo del mercado (adaptive) o el deficit del plan
+        if cfg.get("adaptive"):
+            if adaptive_best and adaptive_need > 0:
+                n = min(adaptive_need, 6)
+                if money > CROP[adaptive_best]["seed"] * n + 100:
+                    orders.append(["BUY_SEED", adaptive_best, n])
+        else:
+            seed_orders = []
+            for crop, target in cfg.get("plants", {}).items():
+                c = CROP[crop]
+                if day > c["last_plant"]:
+                    continue
+                deficit = target - planted_count.get(crop, 0) - seeds.get(crop, 0)
+                if deficit <= 0:
+                    continue
+                if cfg.get("phased"):
+                    # baratas-primero con tope de gasto: nunca fundir la caja en semillas
+                    seed_orders.append(["BUY_SEED", crop, deficit])
+                elif money > c["seed"] * deficit + 100:
+                    seed_orders.append(["BUY_SEED", crop, deficit])
+            if cfg.get("phased"):
+                seed_orders.sort(key=lambda o: CROP[o[1]]["seed"])
+                budget_seeds = max(150, money * 0.35)
+                capped = []
+                for op in seed_orders:
+                    unit_cost = CROP[op[1]]["seed"]
+                    n = min(op[2], int(budget_seeds // unit_cost))
+                    if n > 0:
+                        capped.append([op[0], op[1], n])
+                        budget_seeds -= n * unit_cost
+                seed_orders = capped
+            orders.extend(seed_orders[:2])
 
         # semillas para el modo grow: cubrir las tiles vacías con el mejor cultivo
         if cfg.get("grow"):
@@ -334,9 +470,13 @@ def decide(obs, cfg):
             for k in invs[i]:
                 if k in ANIMAL:
                     owned[k] = owned.get(k, 0) + invs[i][k]
+        owned_total = sum(owned.values())
+        feed_secure = (not cfg.get("phased")) or (
+            planted_count.get("WHEAT", 0) + shed.get("WHEAT", 0) >= owned_total + 1)
         for animal, count in cfg.get("animals", []):
             a = ANIMAL[animal]
-            if owned.get(animal, 0) < count and day <= a.get("last_buy", 22) and money > a["cost"] + cfg.get("cash_buffer", 200):
+            if (owned.get(animal, 0) < count and day <= a.get("last_buy", 22) and feed_secure
+                    and money > a["cost"] + cfg.get("cash_buffer", 200)):
                 orders.append(["BUY_ANIMAL", animal, 1])
                 break
 
@@ -349,26 +489,42 @@ def decide(obs, cfg):
         if cfg.get("buy_land") and len(farm["unlocked_quadrants"]) < cfg.get("max_quadrants", 2):
             n_extra = len(farm["unlocked_quadrants"]) - 1
             price = [1000, 2000, 4000][n_extra] if n_extra < 3 else None
-            if price and money > price + 600 and len(empty_tiles) < 6 and day <= 20:
+            land_buffer = 1500 if cfg.get("phased") else 600
+            if price and money > price + land_buffer and len(empty_tiles) < 6 and day <= 20:
                 orders.append(["BUY_LAND"])
 
     return {"farmer": actions[0], "hands": actions[1:], "market": orders[:10]}
 
 
-CONFIG = {'hands': 8,
- 'animals': [('COW', 4), ('SHEEP', 4)],
- 'plants': {'CARROT': 1, 'MELON': 9, 'STRAWBERRY': 3, 'WHEAT': 9},
+CONFIG = {'hands': 9,
+ 'animals': [('COW', 6), ('SHEEP', 6)],
+ 'plants': {'CARROT': 1, 'MELON': 11, 'STRAWBERRY': 3, 'WHEAT': 12},
  'care': True,
  'collect_fert': True,
  'fert_prio': 45,
  'animal_harvest_at': 4,
  'premium_hold_day': 8,
  'buy_land': True,
- 'max_quadrants': 2,
+ 'max_quadrants': 3,
  'prio_care': 70,
  'prio_urgency': 25,
  'plant_near': True,
- 'endgame': True}
+ 'endgame': True,
+ 'adaptive': True,
+ 'crop_tiles': 22,
+ 'zoning': False,
+ 'zone_fallback_prio': 70,
+ 'prio_feed': 88,
+ 'prio_water': 44,
+ 'prio_win_bonus': 12,
+ 'prio_harvest': 78,
+ 'prio_plant': 40,
+ 'grow': False,
+ 'prio_dig': 8,
+ 'mkt_opp_factor': 1,
+ 'multi_feeder': True,
+ 'phased': False,
+ 'tiles_per_unit': 5}
 
 
 def agent(obs):
