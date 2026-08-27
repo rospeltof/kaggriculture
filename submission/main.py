@@ -1,6 +1,6 @@
 """Kaggriculture submission — generada por empaquetar.py.
 
-Config: RUTERA (campeón vigente de la evolución local; ver docs/BITACORA.md).
+Config: INTEGRAL (campeón vigente de la evolución local; ver docs/BITACORA.md).
 Chasis: bots/chassis.py inline (Python puro, sin dependencias).
 """
 
@@ -41,6 +41,31 @@ MKT = {
 }
 # (unidades al pico sin fert, días de ocupación de la tile aprox)
 CROP_ECON = {"WHEAT": (4, 5), "CARROT": (3, 4), "MELON": (6, 11), "TOMATO": (4, 13), "STRAWBERRY": (4, 18)}
+
+BASE_PRICE = {"WHEAT": 25, "CARROT": 35, "TOMATO": 60, "STRAWBERRY": 120, "MELON": 250,
+              "EGG": 50, "MILK": 160, "WOOL": 200, "FERTILIZER": 100}
+
+# Demanda del town (verificada S7.1): cada tienda consume 1 de cada producto suyo
+# cada 4 turnos (x2 si es mono-producto) = 6 o 12/día; el town center 1/día.
+SHOP_DEMANDS = {
+    "BAKERY": ("EGG", "WHEAT"),
+    "PIZZA_SHOP": ("MILK", "TOMATO", "WHEAT"),
+    "BRUNCH_SPOT": ("EGG", "WHEAT", "STRAWBERRY"),
+    "YARN_STORE": ("WOOL",),
+    "ICE_CREAM_SHOP": ("STRAWBERRY", "MILK", "WHEAT"),
+    "PET_CAFE": ("CARROT",),
+    "SMOOTHIE_SHOP": ("STRAWBERRY", "MILK"),
+    "FARMERS_MARKET": ("WHEAT", "CARROT", "TOMATO", "STRAWBERRY"),
+}
+
+
+def _town_drain_per_day(town, item):
+    drain = 1  # town center
+    for shop in (town or {}).get("unlocked_shops", []) or []:
+        prods = SHOP_DEMANDS.get(shop, ())
+        if item in prods:
+            drain += 12 if len(prods) == 1 else 6
+    return drain
 
 
 def _fshape(f, x, T):
@@ -118,7 +143,7 @@ def _plan_routes(serve, n_units, tiles):
     return [sorted(r, key=lambda t: 0 if is_animal(t) else 1) for r in routes]
 
 
-def _service_ops(tile, day, cfg):
+def _service_ops(tile, day, cfg, has_fert=False):
     """Próxima acción pendiente en esta tile del circuito, o None si está servida."""
     if not isinstance(tile, dict):
         return None
@@ -130,6 +155,12 @@ def _service_ops(tile, day, cfg):
         age = day - tile["planted_day"]
         yu = tile.get("yield_units", 0)
         watered = tile.get("watered_today")
+        # fertilizar ANTES de regar (el bonus x2 aplica al riego del mismo día);
+        # solo si la unidad carga fertilizer (has_fert) y el cultivo lo amerita
+        if (has_fert and tile["crop"] in cfg.get("fert_crops", ()) and day <= 26
+                and tile.get("fertilized_until_day", -1) < day
+                and age >= c["first"] - 2):
+            return ["FERTILIZE"]
         if not watered and day <= LAST_DAY:
             if not (not c["ongoing"] and age > c["peak"]) and not (
                     day == LAST_DAY and not (age >= c["first"] and yu > 0)):
@@ -186,6 +217,8 @@ def decide(obs, cfg):
     seeds = priv.get("seeds", {}) or {}
     money = farm["money"]
     market_inv = obs["market"]["inventory"]
+    market_prices = obs["market"]["prices"]
+    town = obs.get("town", {}) or {}
 
     unit_pos = [tuple(farm["farmer"])] + [tuple(h) for h in farm["hands"]]
     invs = list(priv.get("inventories", [{}]))
@@ -353,7 +386,11 @@ def decide(obs, cfg):
                 continue
             pipeline = planted_count.get(crop, 0) * u + shed.get(crop, 0)
             opp = cfg.get("mkt_opp_factor", 2)
-            price = _price_at(crop, market_inv.get(crop, 10000) + int(opp * pipeline) + u)
+            proj_inv = market_inv.get(crop, 10000) + int(opp * pipeline) + u
+            if cfg.get("town_forecast"):
+                # el town drenará inventario hasta la cosecha -> precio proyectado sube
+                proj_inv -= _town_drain_per_day(town, crop) * occ
+            price = _price_at(crop, proj_inv)
             s = (u * price - CROP[crop]["seed"]) / occ
             if s > best_s:
                 best, best_s = crop, s
@@ -401,7 +438,11 @@ def decide(obs, cfg):
     if router_on:
         if plan_stale:
             hire_limit = 29 if cfg.get("hire_late") else 27
-            n_expected = 1 + (cfg.get("hands", 0) if day <= hire_limit else 0)
+            exp_hands = cfg.get("hands", 0)
+            if cfg.get("hands_per_quadrant"):
+                exp_hands = min(cfg["hands_per_quadrant"] * len(farm["unlocked_quadrants"]),
+                                cfg.get("hands_cap", 12))
+            n_expected = 1 + (exp_hands if day <= hire_limit else 0)
             rst["day"] = day
             rst["routes"] = _plan_routes(serve_tiles, max(n_expected, n_units), tiles)
             rst["idx"] = [0] * len(rst["routes"])
@@ -455,7 +496,7 @@ def decide(obs, cfg):
             route = routes[i]
             while idxs[i] < len(route):
                 tx, ty = route[idxs[i]]
-                op = _service_ops(tiles[ty][tx], day, cfg)
+                op = _service_ops(tiles[ty][tx], day, cfg, invs[i].get("FERTILIZER", 0) > 0)
                 if op is None:
                     idxs[i] += 1
                     continue
@@ -528,6 +569,28 @@ def decide(obs, cfg):
             actions[i] = [_step_toward(unit_pos[i], pos)]
         used_tiles.add(pos)
 
+    # trabajo infinito: peón ocioso + tile vacía + semilla disponible = PLANTA.
+    # (el budget capa el plan, pero el ocio con tierra y semillas es inaceptable)
+    if cfg.get("idle_plant") and day <= 26:
+        for i in range(n_units):
+            if actions[i] is not None or not empty_tiles:
+                continue
+            crop = None
+            for cand in ([adaptive_best] if adaptive_best else []) + sorted(seeds, key=lambda k: -seeds.get(k, 0)):
+                if (cand and cand in CROP and day <= CROP[cand]["last_plant"]
+                        and seeds.get(cand, 0) - plant_claims.get(cand, 0) > 0):
+                    crop = cand
+                    break
+            if not crop:
+                break
+            spot = min(empty_tiles, key=lambda t: _dist(unit_pos[i], t))
+            empty_tiles.remove(spot)
+            if unit_pos[i] == spot:
+                actions[i] = ["PLANT", crop]
+                plant_claims[crop] = plant_claims.get(crop, 0) + 1
+            else:
+                actions[i] = [_step_toward(unit_pos[i], spot)]
+
     for i in range(n_units):
         if actions[i] is None:
             actions[i] = ["PASS"]
@@ -540,12 +603,16 @@ def decide(obs, cfg):
                      if isinstance(t, dict) and t.get("animal"))
         wheat_buffer = min(2 * placed, 20)
     hold_day = cfg.get("premium_hold_day", 0)   # aguantar premium hasta este día
+    floor_frac = cfg.get("sell_floor", 0)       # no vender bajo este % del precio base
     shed_load = sum(shed.values())
     sellable = []
     for it in SELLABLE:
         n = shed.get(it, 0) - (wheat_buffer if it == "WHEAT" else 0)
         if it in PREMIUM and day < hold_day and day < 28 and shed_load < 85:
             continue  # hold; con el shed casi lleno (>=85) se vende igual para no perder por overflow
+        if (floor_frac and it != "FERTILIZER" and day < 28 and shed_load < 85
+                and market_prices.get(it, 0) < floor_frac * BASE_PRICE.get(it, 100)):
+            continue  # mercado estrellado: aguantar; el town drena y el precio se recupera
         if n > 0:
             sellable.append((it, n))
     sellable.sort(key=lambda kv: -kv[1])
@@ -553,8 +620,13 @@ def decide(obs, cfg):
     for it, n in sellable[:sell_cap]:
         orders.append(["SELL", it, n])
 
-    if hour == 0 and day <= (29 if cfg.get("hire_late") else 27):
-        for _ in range(cfg.get("hands", 0)):
+    if hour <= 3 and day <= (29 if cfg.get("hire_late") else 27):
+        n_h = cfg.get("hands", 0)
+        hpq = cfg.get("hands_per_quadrant", 0)
+        if hpq:  # staffing al ritmo del territorio (el patrón de los top: 4/cuadrante)
+            n_h = min(hpq * len(farm["unlocked_quadrants"]), cfg.get("hands_cap", 12))
+        missing = n_h - len(farm["hands"])
+        for _ in range(max(0, min(missing, 6))):  # por tandas: no comerse el cupo de órdenes
             orders.append(["HIRE"])
 
     if day <= 27:
@@ -602,6 +674,16 @@ def decide(obs, cfg):
                 if n > 0:
                     orders.append(["BUY_SEED", best, n])
 
+        # semillas para el trabajo infinito: cubrir tiles vacías que los ociosos plantarán
+        if cfg.get("idle_plant"):
+            best = adaptive_best if (adaptive_best and day <= CROP[adaptive_best]["last_plant"]) else (
+                "WHEAT" if day <= CROP["WHEAT"]["last_plant"] else None)
+            if best:
+                spare = sum(1 for row in tiles for t in row if t is None)
+                n = min(spare - seeds.get(best, 0), 8)
+                if n > 0 and money > CROP[best]["seed"] * n + 300:
+                    orders.append(["BUY_SEED", best, n])
+
         # siguiente animal del plan (1 por turno)
         owned = {}
         for row in tiles:
@@ -635,7 +717,11 @@ def decide(obs, cfg):
             n_extra = len(farm["unlocked_quadrants"]) - 1
             price = [1000, 2000, 4000][n_extra] if n_extra < 3 else None
             land_buffer = 1500 if cfg.get("phased") else 600
-            if price and money > price + land_buffer and len(empty_tiles) < 6 and day <= 20:
+            if cfg.get("land_early"):
+                # comprar por capacidad planeada (los top: día ~6), no cuando ya no hay tiles
+                if price and money > price + 900 and day >= 4 and day <= 20:
+                    orders.append(["BUY_LAND"])
+            elif price and money > price + land_buffer and len(empty_tiles) < 6 and day <= 20:
                 orders.append(["BUY_LAND"])
 
     return {"farmer": actions[0], "hands": actions[1:], "market": orders[:10]}
@@ -671,7 +757,13 @@ CONFIG = {'hands': 7,
  'hire_late': True,
  'multi_feeder': False,
  'phased': False,
- 'tiles_per_unit': 5}
+ 'tiles_per_unit': 5,
+ 'sell_floor': 0.4,
+ 'idle_plant': True,
+ 'hands_per_quadrant': 4,
+ 'land_early': True,
+ 'town_forecast': True,
+ 'fert_crops': ['STRAWBERRY', 'TOMATO']}
 
 
 def agent(obs):

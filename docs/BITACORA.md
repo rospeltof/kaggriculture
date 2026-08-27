@@ -219,3 +219,7 @@ Sobre 12 replays reales (auditor_puntos.py):
 **Números histórico:** $85.1k bajo mercado de la cinta (v5r: $54.9k, +55%); **$119.4k absoluto — récord del proyecto, por encima del nivel élite de las finales del título ($102-103k)**; ocio 8%; ventas a piso aplastadas: $14k → $450. Confirmación en seeds vírgenes: **20-0 vs v5r ($82.7k vs $66.1k)** — primera vez que un bot gana AMBOS criterios (duelo + economía). Aún 0/8 vs la cinta (1.54×).
 
 **Nueva fuga creada por la expansión:** 32.5 plantas muertas/partida ($4.4k) — el idle_plant+land_early planta más de lo que se riega en los picos; objetivo de la fase 3 junto con riegos de ventana ($2.1k). Pendiente: go del usuario para subir integral al ladder.
+
+## 2026-08-31 (5) — INTEGRAL al ladder 🚀
+
+Submission **55823421** (integral). Activas: rutera (667.0) + integral; v5r sale (670.1 final). Meta inmediata: romper la banda de 800 con los $119k de economía. Fase 3 en el banquillo: plantas muertas por sobre-expansión ($4.4k), riegos de ventana ($2.1k), contra-cinta.
