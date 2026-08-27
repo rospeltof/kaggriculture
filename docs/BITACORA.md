@@ -250,3 +250,14 @@ Línea de tiempo de ventas de melón en 5 replays de integral — patrón idént
 ## 2026-09-01 (4) — Ablación del melón: lo feo no siempre es fuga
 
 Doble panel: espejo — integral base gana ($77.8k), fixes de melón levemente negativos; diverso — todos empatados en ruido ($116.5-119.5k, melon14_ovf +$2.9k dentro del error). **Conclusión: los dumps a $16 son horribles a la vista pero económicamente neutros** — la física del melón (sin drenaje del town, ingreso ≈ integral de la curva sobre cantidad total) significa que el dinero ya se capturó en la bajada; las unidades a $16 son la cola planificada de esa integral, y el scorer ya tenía ~igualados los retornos marginales entre cultivos (eficiencia interna accidental). El bug de la válvula era real; su costo, ~cero. Lección bidireccional: ni mi promedio veía el patrón, ni el patrón era la fuga que parecía. Fixes quedan gateados y apagados. Ship: integral con fix de PLACE (bug real de turnos).
+
+## 2026-09-02 — Notebook "strong-barnyard-economist": doctrina de 4 capas y el anuncio fechado del melón
+
+**Arquitectura del bot** (cinta-más-parches, más evolucionada que V16): A ruta completa de temporada (la economía), B reparación local de weeds, C **ordenamiento de SELLs propios por daño de cotización modelado + demanda viva del town** (la posición en la cola ≤10 importa en el lockstep), D **preempción anti-clon multi-horizonte 3→2→1 turnos con repago exacto de cantidad** (generalización del front-run de V16). Principios: blast radius acotado, cada capa apagable/atribuible ("design for the ablation you will want later" — validación externa de nuestro método), evaluar multi-seed y ambos asientos.
+
+**Benchmark:** barnyard 12-0 vs integral ($95.8k vs $59.7k); 0-8 vs cinta v16 ($82.0k vs $95.4k). Escalera local: integral < barnyard < v16. Segundo sparring de élite en bots/sparring_barnyard.py.
+
+**La joya (conclusiones): "un bloque de melón plantado el día 0 es un ANUNCIO FECHADO de una venta el día 10 — y casi nadie lo lee".** La granja rival es pública con planted_day. Adoptables para nuestro bot cerrado:
+1. `opp_pipeline`: reemplazar el mkt_opp_factor ciego por el pipeline OBSERVADO del rival (sus tiles × yields con fechas) en el scorer — encaja exacto en nuestra arquitectura.
+2. `beat_wave`: vender el premium retenido ANTES de que madure la ola anunciada del rival.
+3. Capa C: ranking de nuestra cola de ventas por fragilidad de curva + demanda del town (hoy es orden estático).
