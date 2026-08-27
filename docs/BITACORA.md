@@ -160,3 +160,15 @@ Submissions **55803139** (mimada v4, adaptativa) y **55803144** (mimada xl, 12 a
 - **A. Schedule híbrido**: optimizar offline un plan diario propio (estructura de olas de wheat, fases 8C/4S) y que el chasis lo ejecute con reparación adaptativa — cinta sin fragilidad de cinta.
 - **B. Reescritura de ejecución**: rutas diarias por unidad (eliminar el 60% de movimiento y el 16% de ocio). El camino real al top; ingeniería dura.
 - **C. Contra-cinta**: conocemos el _ACTIONS exacto de la familia de cintas dominante — pre-inundar sus ventas premium programadas (vender 1 turno antes de sus dumps de MILK/WOOL/STRAWBERRY/MELON) recorta su economía en el mercado lockstep. Exploit específico contra la población real del ladder; neutral vs bots adaptativos.
+
+## 2026-08-30 — Opción B fase 1: el ROUTER — nuevo campeón mimada_v5r
+
+**Implementado en el chasis (gateado `router=True`):** plan de jornada al alba (el día es la unidad natural: reset total + trabajo conocido) — tiles con servicio ordenadas en serpentina espacial, partidas en rutas de costo balanceado (una por unidad, animales primero por cercanía al shed), ejecución con **bundling por tile** (todo lo pendiente en una visita: feed+care+harvest+collect) y reparación en vivo (weeds → DIG y sigue; sin wheat → desvío al shed y retoma). Supresión de tareas ya ruteadas en el greedy (que sigue manejando plantado/build/place). `hire_late`: peones también días 28-29. `_service_ops()` como fuente única de "qué le falta a esta tile".
+
+**Resultados fase 1:**
+- Firma estructural (mismo seed vs starter): movimiento **3,355 → 2,156 (−36%)**, productivas 1,567 → 1,698, dinero $98.5k → $104.3k. El ocio SUBIÓ a 35%: el router liberó ~2,000 turnos-unidad que la granja actual no usa — capacidad creada, pendiente de gastar.
+- **v5r vs v4: 24–0 ($66.4k vs $61.5k)** — upgrade limpio por pura ejecución. Nuevo campeón.
+- Mi expansión a mano (v5rxl) perdió 8–16 — enésima vez: los tamaños los encuentra la búsqueda.
+- vs la cinta: 0/16 aún ($48–66k vs $116k) — fase 1 sola no cierra el 2×.
+
+**Lanzada evolución 7**: redimensionar la granja sobre el motor nuevo (router forzado en todos los candidatos, panel = cinta + v5r).

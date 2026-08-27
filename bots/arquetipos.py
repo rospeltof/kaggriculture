@@ -228,3 +228,13 @@ MIMADA_XL = {
     "tiles_per_unit": 5,
 }
 mimada_xl = make_agent(MIMADA_XL)
+
+# Opción B fase 1: router de jornada (plan al alba, serpentina balanceada,
+# bundling por tile, reparación) + contratación hasta el día 29.
+MIMADA_V5R = dict(MIMADA_V4, router=True, hire_late=True)
+mimada_v5r = make_agent(MIMADA_V5R)
+
+# v5r con la granja expandida para usar la capacidad que el router libera.
+MIMADA_V5RXL = dict(MIMADA_V5R, animals=[("COW", 6), ("SHEEP", 6)], crop_tiles=40,
+                    max_quadrants=3, hands=10, fert_prio=75)
+mimada_v5rxl = make_agent(MIMADA_V5RXL)
