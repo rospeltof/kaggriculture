@@ -172,3 +172,11 @@ Submissions **55803139** (mimada v4, adaptativa) y **55803144** (mimada xl, 12 a
 - vs la cinta: 0/16 aún ($48–66k vs $116k) — fase 1 sola no cierra el 2×.
 
 **Lanzada evolución 7**: redimensionar la granja sobre el motor nuevo (router forzado en todos los candidatos, panel = cinta + v5r).
+
+## 2026-08-30 (2) — Evolución 7: la granja redimensionada — rutera vs v5r, la tensión en su forma pura
+
+**Resultado:** el router subió el techo de toda la población (fitness $55-60k → $70-77k). Campeona de fitness: **`rutera`** (r4e_1: crop_tiles 30, fresas 5, 3er cuadrante, 7 peones) — **$80.6k bajo presión de mercado de la cinta** (v5r: $63.2k ahí) y **$100.2k vs oponente débil — primer 6 cifras del proyecto, el nivel absoluto de las finales del título** ($102-103k). Ocio reabsorbido: 35% → 22%; productivas 1,698 → 2,006. Brecha vs la cinta: de 2.2× a **1.5×** (aún 0/8).
+
+**Pero:** rutera pierde **0–20 el cara-a-cara vs v5r** (¡y 12–0 le gana a v4!). La tensión dinero-vs-winrate en su forma más pura: dos criterios de selección, dos campeonas — v5r (duelo) y rutera (economía). El experimento v4/XL del ladder va 657 vs 647 (leve ventaja al criterio duelo, no concluyente).
+
+**Fugas restantes del campeón:** riegos de ventana perdidos $1,252 (timing de ruta vs ventana de bonus) y producción capada $1,040 — objetivos de la fase 2 del router. Propuesta pendiente: subir v5r + rutera al ladder (ambas > v4/XL) y que el Elo real arbitre el criterio.

@@ -238,3 +238,42 @@ mimada_v5r = make_agent(MIMADA_V5R)
 MIMADA_V5RXL = dict(MIMADA_V5R, animals=[("COW", 6), ("SHEEP", 6)], crop_tiles=40,
                     max_quadrants=3, hands=10, fert_prio=75)
 mimada_v5rxl = make_agent(MIMADA_V5RXL)
+
+# Campeón de la evolución 7 (r4e_1): la granja redimensionada para el router —
+# crop_tiles 30 (adaptativo), fresas 5, 3er cuadrante, 7 peones. $80.6k bajo
+# presión de mercado de la cinta (v5r: $63.2k) y $100.2k vs débil — nivel
+# absoluto de las finales del título. VERBATIM de results/evolucion7.json.
+RUTERA = {
+    "hands": 7,
+    "animals": [("COW", 4), ("SHEEP", 4)],
+    "plants": {"CARROT": 1, "MELON": 11, "STRAWBERRY": 5, "WHEAT": 8},
+    "care": True,
+    "collect_fert": True,
+    "fert_prio": 45,
+    "animal_harvest_at": 4,
+    "premium_hold_day": 8,
+    "buy_land": True,
+    "max_quadrants": 3,
+    "prio_care": 70,
+    "prio_urgency": 25,
+    "plant_near": True,
+    "endgame": True,
+    "adaptive": True,
+    "crop_tiles": 30,
+    "zoning": False,
+    "zone_fallback_prio": 70,
+    "prio_feed": 88,
+    "prio_water": 44,
+    "prio_win_bonus": 12,
+    "prio_harvest": 62,
+    "prio_plant": 40,
+    "grow": False,
+    "prio_dig": 8,
+    "mkt_opp_factor": 1,
+    "router": True,
+    "hire_late": True,
+    "multi_feeder": False,
+    "phased": False,
+    "tiles_per_unit": 5,
+}
+rutera = make_agent(RUTERA)
