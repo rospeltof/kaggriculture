@@ -406,10 +406,28 @@ def decide(obs, cfg):
             s = (u_eff * price - CROP[crop]["seed"]) / occ
             if s > best_s:
                 best, best_s = crop, s
+        if cfg.get("melon_max") and best == "MELON" and planted_count.get("MELON", 0) >= cfg["melon_max"]:
+            # melón al tope concurrente (acota la ola de cosecha y la cantidad total
+            # de temporada — la curva sq hace que el melón marginal >~120u valga poco):
+            # elegir el segundo mejor cultivo
+            second, second_s = None, -1e9
+            for crop2, (u2, occ2) in CROP_ECON.items():
+                if crop2 == "MELON" or day > CROP[crop2]["last_plant"]:
+                    continue
+                pipe2 = planted_count.get(crop2, 0) * u2 + shed.get(crop2, 0)
+                pr2 = _price_at(crop2, market_inv.get(crop2, 10000) + pipe2 + u2)
+                s2 = (u2 * pr2 - CROP[crop2]["seed"]) / occ2
+                if s2 > second_s:
+                    second, second_s = crop2, s2
+            best = second
         adaptive_best = best
         for crop, n_want in (("WHEAT", min(wheat_gap, deficit)), (best, deficit - min(wheat_gap, deficit))):
             if not crop or n_want <= 0:
                 continue
+            if crop == "MELON" and cfg.get("melon_max"):
+                n_want = min(n_want, max(0, cfg["melon_max"] - planted_count.get("MELON", 0)))
+                if n_want <= 0:
+                    continue
             n = min(n_want, seeds.get(crop, 0) - plant_claims.get(crop, 0), len(empty_tiles))
             for _ in range(max(0, n)):
                 spot = (max if far else min)(empty_tiles, key=lambda t: _dist(t, SHED))
@@ -625,9 +643,12 @@ def decide(obs, cfg):
         n = shed.get(it, 0) - (wheat_buffer if it == "WHEAT" else 0)
         if it in PREMIUM and day < hold_day and day < 28 and shed_load < 85:
             continue  # hold; con el shed casi lleno (>=85) se vende igual para no perder por overflow
-        if (floor_frac and it != "FERTILIZER" and day < 28 and shed_load < 85
+        cap_load = 95 if (cfg.get("smart_overflow") and it in PREMIUM) else 85
+        if (floor_frac and it != "FERTILIZER" and day < 28 and shed_load < cap_load
                 and market_prices.get(it, 0) < floor_frac * BASE_PRICE.get(it, 100)):
             continue  # mercado estrellado: aguantar; el town drena y el precio se recupera
+        if it == "MELON" and cfg.get("melon_max"):
+            n = min(n, 12)  # pacing: acotar la caminata por la curva en cada orden
         if n > 0:
             sellable.append((it, n))
     sellable.sort(key=lambda kv: -kv[1])

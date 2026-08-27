@@ -238,3 +238,11 @@ Ablación fase 3 corriendo: fixplace (regresión), scorer_v2, sheep6/8, v2+sheep
 ## 2026-09-01 (2) — Ablación fase 3, doble panel: integral RESISTE; disciplina anti-sobreajuste aplicada a nuestras propias ideas
 
 Panel espejo [integral+cinta]: sheep6 +$0.5k (ruido), scorer_v2 -$0.3k, sheep8 -$12.1k (veneno). Sospecha de ceguera del panel (ambos rivales inundan lana/melón) → re-test en panel diverso [clon_ln + control]: **integral $113.5k > sheep6 $107.6k > scorer_v2 $105.9k > combo $105.3k**. Dos paneles independientes coinciden: rechazar sheep6/8 y scorer_v2 (queda gateado apagado — el sell_floor ya domestica la cola del crash: melón realizado $141, no los $13 de los bots pre-floor que vio el usuario). El fix de PLACE-al-portador (bug puro) se queda. Conclusión de método: las intuiciones "obvias" — incluidas las nuestras — mueren o viven por la evidencia; integral+fixplace es la candidata (la 55823421 desplegada NO trae el fix).
+
+## 2026-09-01 (3) — El usuario tenía razón sobre el melón: mi promedio escondía el dump, y la guardia tiene una válvula traidora
+
+Línea de tiempo de ventas de melón en 5 replays de integral — patrón idéntico en TODOS: d12 ~6u a $221-241, d17-19 ola grande (56-78u a $178-236 que desploma), **d20-21 segunda ola: 48-91u a $4-$73 — bajo el piso de $100**. Contra David Nana: 91u a $16 (la escena exacta del usuario). Causa: la guardia de piso se desactiva cuando shed ≥85 (válvula anti-overflow), y la segunda ola de cosecha (~90 melones en 2 días) llena el shed justo entonces → dump forzado. El promedio $141 que reporté era aritméticamente cierto y analíticamente engañoso — lección: los reclamos distribucionales se verifican con distribuciones, no con medias.
+
+**Física del melón:** sin drenaje del town (ninguna tienda lo compra) el precio no se recupera; el ingreso total ≈ integral de la curva sobre las unidades TOTALES → la palanca es cantidad, no timing. Sobreplantamos ~2x (144-312u vs ~120 óptimas).
+
+**Fixes gateados:** `melon_max` (cap de tiles concurrentes → acota ola y total de temporada; al tope elige el 2º mejor cultivo) + pacing de venta (≤12/orden) + `smart_overflow` (con shed lleno alivia con lo barato; el premium aguanta hasta 95). Ablación doble-panel corriendo.
