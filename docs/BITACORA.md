@@ -184,3 +184,13 @@ Submissions **55803139** (mimada v4, adaptativa) y **55803144** (mimada xl, 12 a
 ## 2026-08-30 (3) — v5r y rutera al ladder
 
 Submissions **55807774** (mimada v5r, criterio duelo: 24-0 vs v4, 20-0 vs rutera) y **55807779** (rutera, criterio economía: $80.6k bajo mercado de la cinta, $100k absoluto). Reemplazan a v4 (657.3 final) y XL (657.1 final — cerró empatada con v4: el experimento anterior terminó sin veredicto claro). Ronda 2 del experimento dinero-vs-winrate, con especímenes del motor router. Revisión: mañana.
+
+## 2026-08-31 — Análisis matinal de v5r y rutera en el ladder: el estancamiento explicado
+
+**Ratings:** v5r 683.4, rutera 676.5 (par anterior: 657) — pico de ~800 no sostenido. Ronda 2 del experimento de criterios: de nuevo casi empate, leve ventaja duelo.
+
+**Ejecución en producción (12 replays): LIMPIA.** 0-2 plantas muertas, weeds ~0-4, sobrante final $200-900 (antes $10-16k), 80-104 unidades vendidas en el cierre. El router funciona en el mundo real.
+
+**El estancamiento, cuantificado:** corremos al **34-35% de ocio** (~2,050 turnos-unidad tirados) con granjas de ~30 tiles en 2 cuadrantes, mientras los que nos ganan trabajan 40-50 tiles: perdemos contra el lote de $100-120k (Dhruv 119.8k, Tarun 120.7k, Somasundar 114.3k — descendientes de cinta y titanes de fresa subiendo por nuestra banda) y le ganamos al lote de <$80k. Además 3 derrotas por <$3k de margen (cy zhang -$0.8k, Chris Kang -$0.7k). Nota: rutera vs Dhruv corrió a 20% de ocio y $86.4k — el budget mayor usa más capacidad y gana más; ambas quedaron cortas para el meta real (evolución 7 optimizó contra la cinta en espejo, no contra la diversidad del ladder).
+
+**Fase 2 propuesta:** (a) mecanismo de FERTILIZE en cultivos — no existe en el chasis; en fresas duplica los ticks (4→8 × $120+) y tenemos fertilizer gratis de los animales — sospechoso principal de los $100k+ del meta; (b) granja más grande + trigger de 3er cuadrante por capacidad planeada (no por tiles vacías); (c) evolución 8 para redimensionar con los mecanismos nuevos.
