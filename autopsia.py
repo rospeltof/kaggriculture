@@ -108,6 +108,13 @@ def analyze_episode(env, player):
                             c["noop_water"] += 1
                         if name == "FEED" and isinstance(tile, dict) and tile.get("fed_today"):
                             c["noop_feed"] += 1
+            prices = obs_prev["market"]["prices"]
+            for m in act.get("market") or []:
+                if m and m[0] == "SELL" and len(m) >= 3:
+                    pr = prices.get(m[1], 0)
+                    if pr <= 0.3 * BASE.get(m[1], 100):
+                        c["ventas_piso"] += int(m[2])
+                        c["ventas_piso_$"] += int(m[2]) * (BASE.get(m[1], 100) - pr)
 
     final = steps[-1][0].observation
     prices = final["market"]["prices"]
@@ -139,6 +146,7 @@ def print_report(name, agg):
         ("producción animal capada", "produccion_capada", "produccion_capada_$"),
         ("fertilizer no recogido", "fertilizer_no_recogido", "fertilizer_no_recogido_$"),
         ("riegos de ventana perdidos", "riegos_ventana_perdidos", "riegos_ventana_$"),
+        ("ventas a mercado estrellado", "ventas_piso", "ventas_piso_$"),
     ]
     for label, kc, kd in rows:
         if agg.get(kc):
