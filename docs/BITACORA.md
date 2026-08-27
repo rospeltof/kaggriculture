@@ -223,3 +223,14 @@ Sobre 12 replays reales (auditor_puntos.py):
 ## 2026-08-31 (5) — INTEGRAL al ladder 🚀
 
 Submission **55823421** (integral). Activas: rutera (667.0) + integral; v5r sale (670.1 final). Meta inmediata: romper la banda de 800 con los $119k de economía. Fase 3 en el banquillo: plantas muertas por sobre-expansión ($4.4k), riegos de ventana ($2.1k), contra-cinta.
+
+## 2026-09-01 — Análisis de sistema de integral (29 eps, ~700 estable) + apuntes del usuario
+
+10 replays (6G-4P, $84.1k medio vs $73.8k rival), agregado con analizar_integral.py:
+1. **Día 0-1 SÍ se planta** (16 wheat + ~1 melón medio) — lo que el usuario vio fue el ramp del melón (semillas de a 6/turno). No sistémico.
+2. **Peón 1: BUG REAL encontrado** — PLACE se asignaba al peón más cercano aunque no cargara el animal → 4-7 intentos fallidos en silencio por partida (traza: PLACE COW x4 + x3). Arreglado: elegibilidad como FEED (solo el portador). El vagabundeo W-E-E restante es churn de asignación greedy temprana (menor).
+3. **MELÓN — cuello confirmado con matiz:** picos de 24-52 tiles, 162u/partida vendidas a $141 realizado (base $250; en derrotas $101-114). El scorer valoraba al precio MARGINAL una cosecha que se vende en RÁFAGA sobre curva sq. 8.6 semillas de melón muertas al día 25. 3 de 4 derrotas tienen pico ≥44 tiles. Fix: `scorer_v2` — precio medio de ráfaga (integral discreta) + yields fert-aware (fresa/tomate u_eff=7).
+4. **Fresa:** 108.5u a $231 realizado (¡vs $120 base!) — no tan poca como parecía, pero varianza 34-173u: cuando el melón come tiles, la fresa paga el pato. scorer_v2 debería resolver.
+5. **LANA — el durmiente:** 108u a $210 realizado, precio diario ≥$206 en 8/10 partidas = escasez sostenida NO explotada con solo 4 ovejas. La evolución la mantuvo baja por el panel-espejo con la cinta (que también vende lana) — otro artefacto de endogamia. Variantes sheep6/sheep8 en ablación vs panel diverso.
+MILK es el rubro #1 silencioso: $25.4k/partida a $179.
+Ablación fase 3 corriendo: fixplace (regresión), scorer_v2, sheep6/8, v2+sheep6.

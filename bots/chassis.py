@@ -77,6 +77,17 @@ def _fshape(f, x, T):
     return x
 
 
+def _avg_price_over(crop, inv_start, qty):
+    """Precio medio REALIZADO vendiendo qty unidades desde inv_start (integral
+    discreta de la curva). En curvas 'sq' (melón/lana) el promedio de la ráfaga
+    queda muy por debajo del marginal — el sesgo que infló al melón."""
+    if qty <= 0:
+        return _price_at(crop, inv_start)
+    n = min(int(qty), 12) or 1
+    chunk = qty / n
+    return sum(_price_at(crop, inv_start + chunk * (i + 0.5)) for i in range(n)) / n
+
+
 def _price_at(crop, inv):
     """Precio del motor si el inventario de mercado fuera `inv` (floor $1)."""
     base, T, bf, bt, af, at_ = MKT[crop]
@@ -378,14 +389,21 @@ def decide(obs, cfg):
         for crop, (u, occ) in CROP_ECON.items():
             if day > CROP[crop]["last_plant"]:
                 continue
-            pipeline = planted_count.get(crop, 0) * u + shed.get(crop, 0)
+            u_eff = u
+            if cfg.get("scorer_v2") and crop in cfg.get("fert_crops", ()) and crop in ("STRAWBERRY", "TOMATO"):
+                u_eff = 7  # ticks x2 con fertilizer (el fert es gratis del rebaño)
+            pipeline = planted_count.get(crop, 0) * u_eff + shed.get(crop, 0)
             opp = cfg.get("mkt_opp_factor", 2)
-            proj_inv = market_inv.get(crop, 10000) + int(opp * pipeline) + u
+            proj_inv = market_inv.get(crop, 10000)
             if cfg.get("town_forecast"):
                 # el town drenará inventario hasta la cosecha -> precio proyectado sube
                 proj_inv -= _town_drain_per_day(town, crop) * occ
-            price = _price_at(crop, proj_inv)
-            s = (u * price - CROP[crop]["seed"]) / occ
+            if cfg.get("scorer_v2"):
+                # precio medio de vender la RÁFAGA completa (pipeline + esta tile)
+                price = _avg_price_over(crop, proj_inv, opp * pipeline + u_eff)
+            else:
+                price = _price_at(crop, proj_inv + int(opp * pipeline) + u_eff)
+            s = (u_eff * price - CROP[crop]["seed"]) / occ
             if s > best_s:
                 best, best_s = crop, s
         adaptive_best = best
@@ -530,12 +548,15 @@ def decide(obs, cfg):
         if pos in used_tiles and op[0] not in ("PICKUP",):
             continue
         need_wheat = op[0] == "FEED"
+        need_animal = op[1] if op[0] == "PLACE" and len(op) > 1 else None
         cands = []
         for i in range(n_units):
             if actions[i] is not None:
                 continue
             if need_wheat and invs[i].get("WHEAT", 0) <= 0:
                 continue
+            if need_animal and invs[i].get(need_animal, 0) <= 0:
+                continue  # PLACE solo al que carga el animal (antes fallaba en silencio)
             cands.append((_dist(unit_pos[i], pos), i))
         if zone_owner and cands:
             zoned = [c for c in cands if zone_owner.get(pos, -1) == c[1]]
