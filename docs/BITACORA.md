@@ -246,3 +246,7 @@ Línea de tiempo de ventas de melón en 5 replays de integral — patrón idént
 **Física del melón:** sin drenaje del town (ninguna tienda lo compra) el precio no se recupera; el ingreso total ≈ integral de la curva sobre las unidades TOTALES → la palanca es cantidad, no timing. Sobreplantamos ~2x (144-312u vs ~120 óptimas).
 
 **Fixes gateados:** `melon_max` (cap de tiles concurrentes → acota ola y total de temporada; al tope elige el 2º mejor cultivo) + pacing de venta (≤12/orden) + `smart_overflow` (con shed lleno alivia con lo barato; el premium aguanta hasta 95). Ablación doble-panel corriendo.
+
+## 2026-09-01 (4) — Ablación del melón: lo feo no siempre es fuga
+
+Doble panel: espejo — integral base gana ($77.8k), fixes de melón levemente negativos; diverso — todos empatados en ruido ($116.5-119.5k, melon14_ovf +$2.9k dentro del error). **Conclusión: los dumps a $16 son horribles a la vista pero económicamente neutros** — la física del melón (sin drenaje del town, ingreso ≈ integral de la curva sobre cantidad total) significa que el dinero ya se capturó en la bajada; las unidades a $16 son la cola planificada de esa integral, y el scorer ya tenía ~igualados los retornos marginales entre cultivos (eficiencia interna accidental). El bug de la válvula era real; su costo, ~cero. Lección bidireccional: ni mi promedio veía el patrón, ni el patrón era la fuga que parecía. Fixes quedan gateados y apagados. Ship: integral con fix de PLACE (bug real de turnos).
