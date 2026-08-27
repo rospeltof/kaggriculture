@@ -180,3 +180,7 @@ Submissions **55803139** (mimada v4, adaptativa) y **55803144** (mimada xl, 12 a
 **Pero:** rutera pierde **0–20 el cara-a-cara vs v5r** (¡y 12–0 le gana a v4!). La tensión dinero-vs-winrate en su forma más pura: dos criterios de selección, dos campeonas — v5r (duelo) y rutera (economía). El experimento v4/XL del ladder va 657 vs 647 (leve ventaja al criterio duelo, no concluyente).
 
 **Fugas restantes del campeón:** riegos de ventana perdidos $1,252 (timing de ruta vs ventana de bonus) y producción capada $1,040 — objetivos de la fase 2 del router. Propuesta pendiente: subir v5r + rutera al ladder (ambas > v4/XL) y que el Elo real arbitre el criterio.
+
+## 2026-08-30 (3) — v5r y rutera al ladder
+
+Submissions **55807774** (mimada v5r, criterio duelo: 24-0 vs v4, 20-0 vs rutera) y **55807779** (rutera, criterio economía: $80.6k bajo mercado de la cinta, $100k absoluto). Reemplazan a v4 (657.3 final) y XL (657.1 final — cerró empatada con v4: el experimento anterior terminó sin veredicto claro). Ronda 2 del experimento dinero-vs-winrate, con especímenes del motor router. Revisión: mañana.

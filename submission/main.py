@@ -1,6 +1,6 @@
 """Kaggriculture submission — generada por empaquetar.py.
 
-Config: MIMADA_XL (campeón vigente de la evolución local; ver docs/BITACORA.md).
+Config: RUTERA (campeón vigente de la evolución local; ver docs/BITACORA.md).
 Chasis: bots/chassis.py inline (Python puro, sin dependencias).
 """
 
@@ -76,6 +76,91 @@ def _dist(a, b):
     return abs(a[0] - b[0]) + abs(a[1] - b[1])
 
 
+# ---------- Router (opción B, fase 1): planear la jornada al amanecer ----------
+# El día es la unidad natural: al alba todo se resetea y el 95% del trabajo se
+# conoce. Las tiles con servicio se ordenan en serpentina (ruta de cortacésped),
+# se parten en trozos de costo balanceado (uno por unidad) y cada unidad ejecuta
+# su ruta haciendo TODO lo pendiente de cada tile antes de moverse (bundling).
+_ROUTER_STATE = {}
+
+
+def _router_state(player, step):
+    st = _ROUTER_STATE.setdefault(player, {"last_step": -1})
+    if step == 0 or step < st.get("last_step", -1):
+        st.clear()
+        st["last_step"] = -1
+    st["last_step"] = step
+    return st
+
+
+def _plan_routes(serve, n_units, tiles):
+    """serve: [(x, y, costo)] -> rutas por unidad. Serpentina espacial, corte por
+    costo acumulado, y dentro de cada ruta los animales primero (están cerca del
+    shed, donde la unidad amanece y recoge su wheat)."""
+    serve = sorted(serve, key=lambda t: (t[0], t[1] if t[0] % 2 == 0 else -t[1]))
+    total = sum(c for _, _, c in serve) or 1.0
+    target = total / max(1, n_units)
+    routes, cur, acc = [], [], 0.0
+    for x, y, c in serve:
+        cur.append((x, y))
+        acc += c
+        if acc >= target and len(routes) < n_units - 1:
+            routes.append(cur)
+            cur, acc = [], 0.0
+    routes.append(cur)
+    while len(routes) < n_units:
+        routes.append([])
+
+    def is_animal(t):
+        cell = tiles[t[1]][t[0]]
+        return isinstance(cell, dict) and cell.get("animal")
+
+    return [sorted(r, key=lambda t: 0 if is_animal(t) else 1) for r in routes]
+
+
+def _service_ops(tile, day, cfg):
+    """Próxima acción pendiente en esta tile del circuito, o None si está servida."""
+    if not isinstance(tile, dict):
+        return None
+    kind = tile.get("kind")
+    if kind == "WEED":
+        return ["DIG"]
+    if kind == "PLANT":
+        c = CROP[tile["crop"]]
+        age = day - tile["planted_day"]
+        yu = tile.get("yield_units", 0)
+        watered = tile.get("watered_today")
+        if not watered and day <= LAST_DAY:
+            if not (not c["ongoing"] and age > c["peak"]) and not (
+                    day == LAST_DAY and not (age >= c["first"] and yu > 0)):
+                return ["WATER"]
+        if yu > 0 and age >= c["first"]:
+            if not c["ongoing"]:
+                if age >= c["peak"] and (watered or age > c["peak"] or day == LAST_DAY):
+                    return ["HARVEST"]
+            elif yu >= 2 or day >= 28:
+                return ["HARVEST"]
+        return None
+    if kind in ("COOP", "PASTURE") and tile.get("animal"):
+        a = ANIMAL[tile["animal"]]
+        h_at = cfg.get("animal_harvest_at", 2)
+        if cfg.get("endgame") and day >= 26:
+            h_at = 1
+        yu = tile.get("yield_units", 0)
+        if not tile.get("fed_today") and day <= 28:
+            return ["FEED"]
+        if cfg.get("care") and tile.get("fed_today") and not tile.get("cared_today") and day <= 27:
+            return ["CARE"]
+        if yu >= min(h_at, a["cap"] - 1) or (yu >= 1 and day >= 28):
+            return ["HARVEST"]
+        if cfg.get("collect_fert") and tile.get("fertilizer_available"):
+            return ["COLLECT_FERTILIZER"]
+    return None
+
+
+_SERVICE_OPS = {"WATER", "FEED", "CARE", "HARVEST", "COLLECT_FERTILIZER", "DIG"}
+
+
 def _step_toward(pos, target):
     dx, dy = target[0] - pos[0], target[1] - pos[1]
     if dx == 0 and dy == 0:
@@ -117,6 +202,14 @@ def decide(obs, cfg):
     p_care = cfg.get("prio_care", 46)
     p_plant = cfg.get("prio_plant", 40)
 
+    router_on = bool(cfg.get("router"))
+    serve_tiles = []
+    rst = None
+    plan_stale = False
+    if router_on:
+        rst = _router_state(p, obs.get("step", day * 24 + hour))
+        plan_stale = rst.get("day") != day
+
     # ---- escaneo del tablero -> tareas (prio, (x, y), op) ----
     tasks = []
     hungry = 0            # animales sin alimentar hoy
@@ -134,9 +227,13 @@ def decide(obs, cfg):
                 continue
             kind = tile.get("kind")
             if kind == "WEED":
+                if router_on:
+                    serve_tiles.append((x, y, 1.0))
                 tasks.append((cfg.get("prio_dig", 8), (x, y), ["DIG"]))
                 continue
             if kind == "PLANT":
+                if router_on:
+                    serve_tiles.append((x, y, 1.5))
                 crop = tile["crop"]
                 c = CROP[crop]
                 planted_count[crop] = planted_count.get(crop, 0) + 1
@@ -178,6 +275,8 @@ def decide(obs, cfg):
                     continue
                 a = ANIMAL[animal]
                 yu = tile.get("yield_units", 0)
+                if router_on:
+                    serve_tiles.append((x, y, 3.0))
                 if not tile.get("fed_today") and day <= 28:
                     hungry += 1
                     tasks.append((p_feed + (6 if hour >= 16 else 0), (x, y), ["FEED"]))
@@ -298,6 +397,20 @@ def decide(obs, cfg):
                 tasks.append((cfg.get("prio_plant", 40) - 2, spot, ["PLANT", best]))
                 plant_claims[best] = plant_claims.get(best, 0) + 1
 
+    # ---- router: (re)planear la jornada y suprimir tareas ya ruteadas ----
+    if router_on:
+        if plan_stale:
+            hire_limit = 29 if cfg.get("hire_late") else 27
+            n_expected = 1 + (cfg.get("hands", 0) if day <= hire_limit else 0)
+            rst["day"] = day
+            rst["routes"] = _plan_routes(serve_tiles, max(n_expected, n_units), tiles)
+            rst["idx"] = [0] * len(rst["routes"])
+        routed_pending = set()
+        for i, rt in enumerate(rst.get("routes", [])):
+            start = rst["idx"][i] if i < len(rst.get("idx", [])) else 0
+            routed_pending.update(tuple(t) for t in rt[start:])
+        tasks = [t for t in tasks if not (t[1] in routed_pending and t[2][0] in _SERVICE_OPS)]
+
     # ---- asignación: greedy global, o zonificada si cfg["zoning"] ----
     # Zonificación: las tiles activas (no LOCKED) se parten en bloques contiguos,
     # uno por unidad; cada unidad atiende primero su bloque. Tareas cuya zona
@@ -331,7 +444,39 @@ def decide(obs, cfg):
     # alimentadores en paralelo. Con rebaños grandes, un solo feeder cargando todo
     # el wheat tarda más de un día en alimentar 15 animales (causa de los escapes
     # del writeup y del colapso del clon de "ln"). Al alba todos están en el shed.
-    if cfg.get("multi_feeder") and hungry > 3 and hour <= 2:
+    # ---- ejecutor de rutas: cada unidad sirve su circuito con bundling ----
+    if router_on:
+        shed_adj = {(4, 4), (5, 4), (4, 5), (5, 5)}
+        routes = rst.get("routes", [])
+        idxs = rst.get("idx", [])
+        for i in range(min(n_units, len(routes))):
+            if actions[i] is not None:
+                continue
+            route = routes[i]
+            while idxs[i] < len(route):
+                tx, ty = route[idxs[i]]
+                op = _service_ops(tiles[ty][tx], day, cfg)
+                if op is None:
+                    idxs[i] += 1
+                    continue
+                if op[0] == "FEED" and invs[i].get("WHEAT", 0) <= 0:
+                    if shed.get("WHEAT", 0) > 0:
+                        rem = sum(1 for ax, ay in route[idxs[i]:]
+                                  if isinstance(tiles[ay][ax], dict) and tiles[ay][ax].get("animal"))
+                        if unit_pos[i] in shed_adj:
+                            actions[i] = ["PICKUP", "WHEAT", min(max(1, rem), shed["WHEAT"])]
+                        else:
+                            actions[i] = [_step_toward(unit_pos[i], SHED)]
+                        break
+                    idxs[i] += 1  # sin wheat en ninguna parte: saltar este animal
+                    continue
+                if unit_pos[i] == (tx, ty):
+                    actions[i] = op
+                else:
+                    actions[i] = [_step_toward(unit_pos[i], (tx, ty))]
+                break
+
+    if cfg.get("multi_feeder") and not router_on and hungry > 3 and hour <= 2:
         mf_shed_tiles = {(4, 4), (5, 4), (4, 5), (5, 5)}
         shed_wheat = shed.get("WHEAT", 0)
         n_feeders = min(max(1, -(-hungry // 5)), n_units)
@@ -408,7 +553,7 @@ def decide(obs, cfg):
     for it, n in sellable[:sell_cap]:
         orders.append(["SELL", it, n])
 
-    if hour == 0 and day <= 27:
+    if hour == 0 and day <= (29 if cfg.get("hire_late") else 27):
         for _ in range(cfg.get("hands", 0)):
             orders.append(["HIRE"])
 
@@ -496,9 +641,9 @@ def decide(obs, cfg):
     return {"farmer": actions[0], "hands": actions[1:], "market": orders[:10]}
 
 
-CONFIG = {'hands': 9,
- 'animals': [('COW', 6), ('SHEEP', 6)],
- 'plants': {'CARROT': 1, 'MELON': 11, 'STRAWBERRY': 3, 'WHEAT': 12},
+CONFIG = {'hands': 7,
+ 'animals': [('COW', 4), ('SHEEP', 4)],
+ 'plants': {'CARROT': 1, 'MELON': 11, 'STRAWBERRY': 5, 'WHEAT': 8},
  'care': True,
  'collect_fert': True,
  'fert_prio': 45,
@@ -511,18 +656,20 @@ CONFIG = {'hands': 9,
  'plant_near': True,
  'endgame': True,
  'adaptive': True,
- 'crop_tiles': 22,
+ 'crop_tiles': 30,
  'zoning': False,
  'zone_fallback_prio': 70,
  'prio_feed': 88,
  'prio_water': 44,
  'prio_win_bonus': 12,
- 'prio_harvest': 78,
+ 'prio_harvest': 62,
  'prio_plant': 40,
  'grow': False,
  'prio_dig': 8,
  'mkt_opp_factor': 1,
- 'multi_feeder': True,
+ 'router': True,
+ 'hire_late': True,
+ 'multi_feeder': False,
  'phased': False,
  'tiles_per_unit': 5}
 
