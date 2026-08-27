@@ -147,3 +147,16 @@ Final: 49/56 episodios ganados, $46.9k medio. **Confirmación en seeds vírgenes
 ## 2026-08-28 (2) — v4 y XL al ladder
 
 Submissions **55803139** (mimada v4, adaptativa) y **55803144** (mimada xl, 12 animales + multi_feeder) enviadas y en validación. Pasan a ser las 2 activas (reemplazan a v1/601.5 y v2/618.8 en matchmaking). Experimento en vivo: ¿predice mejor el Elo el head-to-head (v4) o el dinero medio contra campo diverso (XL)? Revisión: mañana — ratings, episodios, y replays de derrotas para la siguiente iteración.
+
+## 2026-08-29 — Evolución 6 vs la cinta: NADIE le gana con configs — el veredicto de 6 evoluciones
+
+**Setup:** cinta de 2913 (sparring_v16) anclada en el panel; 4,392 episodios; registro acumulado 1,642+ firmas.
+
+**Resultado: 0/8 contra la cinta para TODOS los finalistas** (incluida mimada_v4 y todo lo evolucionado). La cinta hace $110–126k contra nosotros; nuestro mejor evolucionado (n9e_4: 3C+5S, wheat 13, fert_prio 75) llega a $59.2k — +$1.8k sobre v4, ruido. **Seis evoluciones y ~1,650 configs únicas prueban que el espacio config/perillas está agotado en ~$55–60k.**
+
+**La brecha es 100% capa de ejecución**: la autopsia del mejor es limpísima en desperdicio ($80 en plantas muertas) pero estructuralmente igual: 3,274 acciones de movimiento + 908 PASS (16%) vs 1,528 productivas. La cinta ejecuta un schedule optimizado offline con rutas ~perfectas.
+
+**Bifurcación estratégica (decisión pendiente):**
+- **A. Schedule híbrido**: optimizar offline un plan diario propio (estructura de olas de wheat, fases 8C/4S) y que el chasis lo ejecute con reparación adaptativa — cinta sin fragilidad de cinta.
+- **B. Reescritura de ejecución**: rutas diarias por unidad (eliminar el 60% de movimiento y el 16% de ocio). El camino real al top; ingeniería dura.
+- **C. Contra-cinta**: conocemos el _ACTIONS exacto de la familia de cintas dominante — pre-inundar sus ventas premium programadas (vender 1 turno antes de sus dumps de MILK/WOOL/STRAWBERRY/MELON) recorta su economía en el mercado lockstep. Exploit específico contra la población real del ladder; neutral vs bots adaptativos.
