@@ -277,3 +277,18 @@ RUTERA = {
     "tiles_per_unit": 5,
 }
 rutera = make_agent(RUTERA)
+
+# Campeona de la evolución 8: RUTERA + los 6 mecanismos fase 2 (las observaciones
+# del usuario hechas sistema). La evolución no encontró nada mejor que el paquete
+# con floor=0.4, hpq=4, fert fresas+tomate — las perillas ya estaban bien.
+# $85.1k bajo mercado de la cinta (v5r: $54.9k) y $119.4k absoluto (récord).
+INTEGRAL = dict(
+    RUTERA,
+    sell_floor=0.4,
+    idle_plant=True,
+    hands_per_quadrant=4,
+    land_early=True,
+    town_forecast=True,
+    fert_crops=["STRAWBERRY", "TOMATO"],
+)
+integral = make_agent(INTEGRAL)

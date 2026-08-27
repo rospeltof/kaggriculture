@@ -211,3 +211,11 @@ Sobre 12 replays reales (auditor_puntos.py):
 - **todo_junto: $78,760 (+$11.3k)** — mejor que la suma de sus partes.
 - Solos: land_early +$3.5k y town_forecast +$3.5k (héroes); fert +$0.5k, floor -$0.2k, idle_plant -$1.3k (neutros solos); **hpq4 -$7.1k (veneno aislado)** — 4 peones en 1 cuadrante ahoga la apertura… pero CON land_early el 2º cuadrante llega el día ~5 y el staffing escala a tiempo, y idle_plant/fert/forecast llenan la tierra nueva. Lección de libro: los efectos no son aditivos; la ablación da la ciencia, la combinación la da la búsqueda.
 - Lanzada evolución 8: flags fase 2 + perillas (piso %, hpq, fert_crops) como genes; panel cinta + todo_junto.
+
+## 2026-08-31 (4) — Evolución 8: el paquete completo corona — nace INTEGRAL
+
+**Resultado:** la evolución (4,400 eps, 2,259 firmas previas respetadas) no encontró nada mejor que el paquete sembrado: **`integral`** = rutera + los 6 mecanismos con floor=0.4, hpq=4, fert=[fresa,tomate], land_early, forecast. Las perillas de la ablación ya eran las correctas (floor 0.4 y hpq 4 en el mejor de TODAS las generaciones).
+
+**Números histórico:** $85.1k bajo mercado de la cinta (v5r: $54.9k, +55%); **$119.4k absoluto — récord del proyecto, por encima del nivel élite de las finales del título ($102-103k)**; ocio 8%; ventas a piso aplastadas: $14k → $450. Confirmación en seeds vírgenes: **20-0 vs v5r ($82.7k vs $66.1k)** — primera vez que un bot gana AMBOS criterios (duelo + economía). Aún 0/8 vs la cinta (1.54×).
+
+**Nueva fuga creada por la expansión:** 32.5 plantas muertas/partida ($4.4k) — el idle_plant+land_early planta más de lo que se riega en los picos; objetivo de la fase 3 junto con riegos de ventana ($2.1k). Pendiente: go del usuario para subir integral al ladder.
