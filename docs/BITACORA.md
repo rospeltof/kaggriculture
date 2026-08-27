@@ -204,3 +204,10 @@ Sobre 12 replays reales (auditor_puntos.py):
 4. Pregunta tiendas: el consumo del town SÍ mueve precios (S7.1, drena inventario = compra) y el scorer adaptativo lo ve REACTIVAMENTE (usa inventario actual); NO pronosticamos el drenaje futuro de unlocked_shops (el chasis nunca lee obs["town"]). Gap identificado.
 
 **Plan fase 2 re-priorizado:** (1) guardia de piso en ventas premium (no vender bajo X% del base salvo cierre/shed lleno) + pacing; (2) trabajo infinito: budget dinámico por capacidad + fallback "si ocioso y hay tile+semilla, planta" + staffing por cuadrante + tierra por capacidad planeada; (3) FERTILIZE en cultivos; (4) forecast de demanda del town en el scorer; (5) evolución 8.
+
+## 2026-08-31 (3) — Ablación fase 2: el paquete gana por INTERACCIONES
+
+128 eps, doble lente [duelo v5r + mercado cinta], base rutera ($67.5k):
+- **todo_junto: $78,760 (+$11.3k)** — mejor que la suma de sus partes.
+- Solos: land_early +$3.5k y town_forecast +$3.5k (héroes); fert +$0.5k, floor -$0.2k, idle_plant -$1.3k (neutros solos); **hpq4 -$7.1k (veneno aislado)** — 4 peones en 1 cuadrante ahoga la apertura… pero CON land_early el 2º cuadrante llega el día ~5 y el staffing escala a tiempo, y idle_plant/fert/forecast llenan la tierra nueva. Lección de libro: los efectos no son aditivos; la ablación da la ciencia, la combinación la da la búsqueda.
+- Lanzada evolución 8: flags fase 2 + perillas (piso %, hpq, fert_crops) como genes; panel cinta + todo_junto.
