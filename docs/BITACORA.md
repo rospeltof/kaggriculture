@@ -291,3 +291,13 @@ Enjambre de 4 revisores + verificadores escépticos (34 agentes; 22 cortados por
 **+18.3 puntos, 3.4 sigma (p<0.001), con dinero estadísticamente idéntico.** La ganancia no viene de producir más sino de **convertir duelos cerrados**: defender la posición en la cola del lockstep gira los partidos que se deciden por márgenes finos (recordar: 3 derrotas del ladder por <$3k). El Elo paga victorias, no dinero — es la primera vez que optimizamos la métrica correcta directamente.
 
 **Candidata registrada: `INTEGRAL_LECTOR`** (verbatim en arquetipos.py). Pendiente de autorización explícita del usuario para subir.
+
+**Desglose por oponente (30 eps c/u, seeds 2.1M) — dónde vive la mejora:**
+
+| oponente | base | INTEGRAL_LECTOR |
+|---|---|---|
+| gemela (INTEGRAL) | 43.3% (espejo ≈50%, ruido) | **73.3%** (2.9σ sobre el 50% esperado) |
+| barnyard | 0/30 | 0/30 |
+| cinta v16 | 0/30 | 2/30 (6.7%) |
+
+**Lectura honesta:** el +18.3 pts global viene casi todo de ganarle a su propio predecesor, no de cerrar la brecha con la élite. Contra barnyard seguimos en cero. PERO eso es exactamente lo que mueve el Elo en NUESTRA banda (~680-700), donde los rivales son pares, no titanes: 73% contra el bot que hoy está en el ladder es subida real de rating. Dato fino: el lector no solo gana más, gana con más margen (18 duelos cerrados vs 30 de la base).
