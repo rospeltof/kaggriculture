@@ -32,6 +32,10 @@ MKT = {
     "TOMATO":     (60, 200, "hinge", 0.40, "sqrt", 0.60),
     "STRAWBERRY": (120, 100, "sqrt", 0.70, "linear", 1.60),
     "MELON":      (250, 300, "log", 0.20, "sq", 3.60),
+    "EGG":        (50, 332, "hinge", 0.40, "log", 0.20),
+    "MILK":       (160, 122, "sqrt", 0.60, "linear", 1.60),
+    "WOOL":       (200, 105, "log", 0.20, "sq", 3.20),
+    "FERTILIZER": (100, 200, "linear", 0.40, "linear", 0.40),
 }
 # (unidades al pico sin fert, días de ocupación de la tile aprox)
 CROP_ECON = {"WHEAT": (4, 5), "CARROT": (3, 4), "MELON": (6, 11), "TOMATO": (4, 13), "STRAWBERRY": (4, 18)}
@@ -225,6 +229,52 @@ def decide(obs, cfg):
     market_prices = obs["market"]["prices"]
     town = obs.get("town", {}) or {}
 
+    # Lectura de la granja rival (pública, con planted_day): su oferta futura por
+    # cultivo, y las "olas anunciadas" (barnyard-economist, sección 12).
+    # Revisión adversarial 2026-09-02 — tres correcciones sobre la v1 ingenua:
+    #  (a) la ventana no tiene piso: una tile MADURA sigue en el tablero hasta que
+    #      el rival la cosecha, y el dump ocurre en/después del pico (la v1 con
+    #      to_peak>=0 se apagaba justo el día de la venta);
+    #  (b) se agrupa por planted_day: un BLOQUE sincronizado es un anuncio fechado,
+    #      el goteo estacionario no (la v1 marcaba ola el 46-54% de los turnos
+    #      porque la ventana cubre el 75% de la vida del carrot);
+    #  (c) el umbral es por VALOR entrante, no por número de tiles (5 carrots = $525
+    #      es ruido; 5 melones = $7,500 es una amenaza).
+    opp_incoming = {}
+    wave_soon = set()
+    if cfg.get("opp_read") or cfg.get("beat_wave"):
+        ofarm = obs["farms"][1 - p]
+        blocks = {}
+        for _row in ofarm["tiles"]:
+            for _tc in _row:
+                if not (isinstance(_tc, dict) and _tc.get("kind") == "PLANT"):
+                    continue
+                c2 = _tc.get("crop")
+                if c2 not in CROP_ECON:
+                    continue
+                cd2 = CROP[c2]
+                pd2 = _tc.get("planted_day", 0)
+                age2 = day - pd2
+                # oferta fantasma fuera: lo que no alcanza a rendir antes del cierre
+                if pd2 + cd2["first"] > LAST_DAY:
+                    continue
+                if cd2["ongoing"]:
+                    # solo los ticks que faltan (los ya producidos ya están en su shed
+                    # o vendidos, y el pipeline propio los ve por el inventario)
+                    done = max(0, (age2 - cd2["first"]) // max(1, cd2["iv"]) + 1) if age2 >= cd2["first"] else 0
+                    units2 = max(0, CROP_ECON[c2][0] - done)
+                else:
+                    units2 = CROP_ECON[c2][0]
+                opp_incoming[c2] = opp_incoming.get(c2, 0) + units2
+                if not cd2["ongoing"] and cd2["peak"] - age2 <= 2:
+                    key2 = (c2, pd2)
+                    blocks[key2] = blocks.get(key2, 0) + 1
+        if cfg.get("beat_wave"):
+            min_val = cfg.get("wave_min_value", 2000)
+            for (c3, _pd3), n3 in blocks.items():
+                if n3 * CROP_ECON[c3][0] * BASE_PRICE.get(c3, 0) >= min_val:
+                    wave_soon.add(c3)
+
     unit_pos = [tuple(farm["farmer"])] + [tuple(h) for h in farm["hands"]]
     invs = list(priv.get("inventories", [{}]))
     while len(invs) < len(unit_pos):
@@ -394,15 +444,19 @@ def decide(obs, cfg):
                 u_eff = 7  # ticks x2 con fertilizer (el fert es gratis del rebaño)
             pipeline = planted_count.get(crop, 0) * u_eff + shed.get(crop, 0)
             opp = cfg.get("mkt_opp_factor", 2)
+            supply = int(opp * pipeline)
+            if cfg.get("opp_read"):
+                # oferta rival OBSERVADA (sus tiles públicas) en vez del factor ciego
+                supply = pipeline + opp_incoming.get(crop, 0)
             proj_inv = market_inv.get(crop, 10000)
             if cfg.get("town_forecast"):
                 # el town drenará inventario hasta la cosecha -> precio proyectado sube
                 proj_inv -= _town_drain_per_day(town, crop) * occ
             if cfg.get("scorer_v2"):
                 # precio medio de vender la RÁFAGA completa (pipeline + esta tile)
-                price = _avg_price_over(crop, proj_inv, opp * pipeline + u_eff)
+                price = _avg_price_over(crop, proj_inv, supply + u_eff)
             else:
-                price = _price_at(crop, proj_inv + int(opp * pipeline) + u_eff)
+                price = _price_at(crop, proj_inv + supply + u_eff)
             s = (u_eff * price - CROP[crop]["seed"]) / occ
             if s > best_s:
                 best, best_s = crop, s
@@ -415,6 +469,8 @@ def decide(obs, cfg):
                 if crop2 == "MELON" or day > CROP[crop2]["last_plant"]:
                     continue
                 pipe2 = planted_count.get(crop2, 0) * u2 + shed.get(crop2, 0)
+                if cfg.get("opp_read"):
+                    pipe2 += opp_incoming.get(crop2, 0)   # el fallback también ve al rival
                 pr2 = _price_at(crop2, market_inv.get(crop2, 10000) + pipe2 + u2)
                 s2 = (u2 * pr2 - CROP[crop2]["seed"]) / occ2
                 if s2 > second_s:
@@ -641,18 +697,41 @@ def decide(obs, cfg):
     sellable = []
     for it in SELLABLE:
         n = shed.get(it, 0) - (wheat_buffer if it == "WHEAT" else 0)
-        if it in PREMIUM and day < hold_day and day < 28 and shed_load < 85:
-            continue  # hold; con el shed casi lleno (>=85) se vende igual para no perder por overflow
+        if (it in PREMIUM and day < hold_day and day < 28 and shed_load < 85
+                and it not in wave_soon):
+            continue  # hold; el shed casi lleno (>=85) o una ola rival anunciada lo perforan
         cap_load = 95 if (cfg.get("smart_overflow") and it in PREMIUM) else 85
         if (floor_frac and it != "FERTILIZER" and day < 28 and shed_load < cap_load
+                and it not in wave_soon
                 and market_prices.get(it, 0) < floor_frac * BASE_PRICE.get(it, 100)):
             continue  # mercado estrellado: aguantar; el town drena y el precio se recupera
-        if it == "MELON" and cfg.get("melon_max"):
+        if it == "MELON" and cfg.get("melon_max") and it not in wave_soon:
             n = min(n, 12)  # pacing: acotar la caminata por la curva en cada orden
         if n > 0:
             sellable.append((it, n))
-    sellable.sort(key=lambda kv: -kv[1])
+    if cfg.get("sell_rank"):
+        # defender la posición en la cola lockstep: primero el producto cuya
+        # cotización más se daña al vender n unidades (curvas sq/linear frágiles)
+        # daño TOTAL en dólares (unitario x volumen), no caída unitaria: la curva
+        # sq del melón es casi plana cerca de I0, y por fragilidad unitaria el
+        # rubro más valioso quedaba fuera del cupo de la cola (hallazgo revisor).
+        def _damage(kv):
+            it2, n2 = kv
+            if it2 in MKT:
+                inv2 = market_inv.get(it2, 10000)
+                return n2 * (_price_at(it2, inv2) - _price_at(it2, inv2 + n2))
+            return 0.0
+        sellable.sort(key=lambda kv: -_damage(kv))
+    else:
+        sellable.sort(key=lambda kv: -kv[1])
     sell_cap = 8 if (cfg.get("endgame") and day >= 28) else 4
+    # el cupo es de 10 órdenes/turno y las extras se descartan EN SILENCIO (S5.5):
+    # reservar sitio para los HIRE del cierre, que si no se perdían (hallazgo revisor)
+    if cfg.get("order_budget") and hour <= 3 and day <= (29 if cfg.get("hire_late") else 27):
+        _n_h = cfg.get("hands", 0)
+        if cfg.get("hands_per_quadrant"):
+            _n_h = min(cfg["hands_per_quadrant"] * len(farm["unlocked_quadrants"]), cfg.get("hands_cap", 12))
+        sell_cap = max(2, min(sell_cap, 10 - max(0, min(_n_h - len(farm["hands"]), 6))))
     for it, n in sellable[:sell_cap]:
         orders.append(["SELL", it, n])
 

@@ -261,3 +261,17 @@ Doble panel: espejo — integral base gana ($77.8k), fixes de melón levemente n
 1. `opp_pipeline`: reemplazar el mkt_opp_factor ciego por el pipeline OBSERVADO del rival (sus tiles × yields con fechas) en el scorer — encaja exacto en nuestra arquitectura.
 2. `beat_wave`: vender el premium retenido ANTES de que madure la ola anunciada del rival.
 3. Capa C: ranking de nuestra cola de ventas por fragilidad de curva + demanda del town (hoy es orden estático).
+
+## 2026-09-02 — Revisión adversarial de los tres mecanismos: 5 bugs cazados antes de creerle a la ablación
+
+Enjambre de 4 revisores + verificadores escépticos (34 agentes; 22 cortados por límite de sesión, 12 completos con repro ejecutado). **15 hallazgos, 2 de ellos verificaciones NEGATIVAS valiosas**: la tabla MKT nueva (EGG/MILK/WOOL/FERTILIZER) coincide exactamente con el motor v1.32.7 ✓, y con los 3 flags apagados el comportamiento es idéntico al previo ✓ (confirmado luego con regresión: $114,638 al centavo).
+
+**Bugs confirmados y corregidos (todos con repro):**
+1. *(crítico)* **beat_wave expiraba ANTES del dump**: la ventana `0<=to_peak<=2` se apagaba el día del pico, justo cuando el rival cosecha y vende. Fix: sin piso — una tile madura sigue en el tablero hasta que la cosechan.
+2. **Detector degenerado**: la ventana cubre el 75% de la vida del carrot y el 60% del wheat → un rival en régimen estacionario encendía `wave_soon` el **46-54% de los turnos**, anulando el sell_floor de forma permanente y re-habilitando el dump de melón sin pacing (deshaciendo el fix de df5c6cc). Fix: agrupar por `planted_day` (bloque sincronizado = anuncio fechado) + umbral por VALOR entrante (≥$2,000), no por número de tiles.
+3. **El hold premium hacía sombra a beat_wave**: su `continue` se evaluaba antes de los usos de `wave_soon` → el mecanismo quedaba anulado justo para MELON, el único premium al que aplica (pariente exacto del bug #2 histórico de la válvula). Fix: la ola perfora el hold.
+4. **opp_incoming contaba oferta fantasma**: tiles ongoing con ticks ya producidos y cultivos plantados tan tarde que nunca rendirán. Fix: solo ticks restantes y solo lo que madura antes del cierre.
+5. **sell_rank ordenaba por fragilidad UNITARIA**: la curva sq del melón es casi plana cerca de I0, así que el rubro más valioso quedaba fuera del cupo de la cola. Fix: daño TOTAL (unitario × volumen).
++ *(preexistente, gateado como `order_budget`)*: en el cierre, `sell_cap=8` + 6 HIRE > 10 órdenes → **4 HIREs descartados en silencio** los días 28-29.
+
+**Ablación previa (con beat_wave roto), panel escalera [gemela+barnyard+cinta]:** opp_read $79.4k (7/18) > los_tres $79.1k > base $74.4k (3/18) > beat_wave $74.1k > sell_rank $74.0k (7/18). Explica el empate de beat_wave: estaba roto de tres formas. `sell_rank` con dinero neutro pero 7/18 victorias es la primera mecánica que sube win-rate sin subir economía (lo que el Elo premia). Re-ablación con todo corregido en curso.
