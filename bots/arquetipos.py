@@ -292,3 +292,21 @@ INTEGRAL = dict(
     fert_crops=["STRAWBERRY", "TOMATO"],
 )
 integral = make_agent(INTEGRAL)
+
+# Candidata 2026-09-02 — INTEGRAL + los mecanismos del notebook barnyard, ya
+# depurados por revisión adversarial (5 bugs) y validados por WIN-RATE, no por
+# dinero: 33.3% vs 15.0% de la base en 120 episodios c/u (+18.3 pts, 3.4 sigma),
+# con dinero estadísticamente idéntico ($71.8k vs $69.0k). La ganancia es pura
+# conversión de duelos cerrados — exactamente lo que paga el Elo.
+#   opp_read     lee el pipeline anunciado del rival (tiles + planted_day) y lo
+#                mete al scorer en vez del factor ciego mkt_opp_factor
+#   sell_rank    ordena nuestra cola de ventas por daño total de cotización
+#                (defiende posición en el lockstep)
+#   order_budget reserva slots del cupo de 10 para los HIRE del cierre
+INTEGRAL_LECTOR = dict(
+    INTEGRAL,
+    opp_read=True,
+    sell_rank=True,
+    order_budget=True,
+)
+integral_lector = make_agent(INTEGRAL_LECTOR)

@@ -275,3 +275,19 @@ Enjambre de 4 revisores + verificadores escépticos (34 agentes; 22 cortados por
 + *(preexistente, gateado como `order_budget`)*: en el cierre, `sell_cap=8` + 6 HIRE > 10 órdenes → **4 HIREs descartados en silencio** los días 28-29.
 
 **Ablación previa (con beat_wave roto), panel escalera [gemela+barnyard+cinta]:** opp_read $79.4k (7/18) > los_tres $79.1k > base $74.4k (3/18) > beat_wave $74.1k > sell_rank $74.0k (7/18). Explica el empate de beat_wave: estaba roto de tres formas. `sell_rank` con dinero neutro pero 7/18 victorias es la primera mecánica que sube win-rate sin subir economía (lo que el Elo premia). Re-ablación con todo corregido en curso.
+
+## 2026-09-02 (2) — El experimento decisivo: el win-rate se DUPLICA con dinero constante
+
+**Primero, la autocorrección:** el "+$5.0k de opp_read" de la primera ablación era RUIDO. La misma config base dio $74,410 con unos seeds y $81,609 con otros (±$7.2k sin cambiar una línea); opp_read dio $79,392 y $79,443. Con 18 episodios y sd $15-25k, el error estándar es ~$4-6k: nada por debajo de ~$10k es distinguible. Lección: n insuficiente produce conclusiones invertidas, y solo repetir con otros seeds lo revela.
+
+**Lo que SÍ sobrevivió en ambas corridas fueron las victorias** (base 3/18 en las dos; variantes 4-7/18) → prueba decisiva por win-rate, 360 episodios, seeds vírgenes (2.0M), panel escalera [gemela + barnyard + cinta], 120 eps por variante:
+
+| variante | win-rate | dinero |
+|---|---|---|
+| **opp_read + sell_rank + order_budget** | **33.3% ± 8.4%** | $71,799 |
+| sell_rank solo | 28.3% ± 8.1% (+13.3 pts, 2.5σ) | $68,792 |
+| base (INTEGRAL) | 15.0% ± 6.4% | $69,026 |
+
+**+18.3 puntos, 3.4 sigma (p<0.001), con dinero estadísticamente idéntico.** La ganancia no viene de producir más sino de **convertir duelos cerrados**: defender la posición en la cola del lockstep gira los partidos que se deciden por márgenes finos (recordar: 3 derrotas del ladder por <$3k). El Elo paga victorias, no dinero — es la primera vez que optimizamos la métrica correcta directamente.
+
+**Candidata registrada: `INTEGRAL_LECTOR`** (verbatim en arquetipos.py). Pendiente de autorización explícita del usuario para subir.
