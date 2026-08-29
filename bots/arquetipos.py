@@ -380,3 +380,17 @@ campeona = make_agent(CAMPEONA)
 # +12.1 puntos de win-rate (2.9 sigma) y +$4k de economía.
 CAMPEONA_SEASON = dict(CAMPEONA, season_aware=True)
 campeona_season = make_agent(CAMPEONA_SEASON)
+
+# Candidata 2026-09-04 — CAMPEONA + fallback_fix. Nace de la observación del
+# usuario ("¿por qué plantamos zanahorias con la fresa a 6x el precio?") y del
+# replay 102786320 (campeona_season vs Omkar Kadam): el día 11 teníamos 44
+# CARROTS a $42 con la fresa a $186 y CERO tiles nuestras de fresa.
+# Causa: cuando melon_max corta el melón, el fallback elegía el segundo cultivo
+# con un modelo DISTINTO al del scorer principal (unidades crudas, sin
+# season_aware ni el x2 del fertilizante) -> la fresa se hundía bajo la oferta
+# rival estimada y ganaba el carrot. Ahora ambos caminos puntúan igual.
+# Evidencia: +14.2 pts de win-rate (3.2σ, 120 eps/variante) y +$2,708;
+# head-to-head 62-28 (68.9%, 3.9σ) sobre la variante con season_aware, que
+# resulta redundante una vez arreglado el fallback.
+CAMPEONA_FB = dict(CAMPEONA, fallback_fix=True)
+campeona_fb = make_agent(CAMPEONA_FB)

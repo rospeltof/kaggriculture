@@ -382,3 +382,15 @@ Enjambre forense sobre 17 replays de la era CAMPEONA (9W-8L, 52.9% WR, $80.2k vs
 - **Prevención estructural:** `bajar_replays.py` descarga SOLO de las submissions activas y las deja separadas por bot; imprime cuáles son las activas. Nunca más se mezclan generaciones en un análisis.
 
 Ratings al momento: CAMPEONA 770.1, integral v2 765.8 (mejor histórico; arrancamos en 600).
+
+## 2026-09-04 — Las tres observaciones del usuario, resueltas (y el bug de las zanahorias)
+
+Replay 102786320 (`campeona_season` vs Omkar Kadam, -$24.8k), archivado en `replays/CAMPEONA_SEASON/`.
+
+**1. "Hay tiles sin plantar" — CIERTO, pero plantarlas es VENENO.** Día 0: 11 tiles vacías con 18 semillas en mano; día 12: 16 vacías con 42 semillas. Implementé `idle_plant_walkers` (que una unidad de camino plante una tile vacía contigua): **-55.8 pts de win-rate (-10.5σ)** y **727 plantas muertas ($53,140)** contra 24 de la base. Las tiles vacías no son negligencia: son el límite real de la capacidad de RIEGO. Mismo error que el `grow` ingenuo de agosto. Descartado, gateado y apagado.
+
+**2. "Farmhand 4 se queda muchos turnos en la misma tile" — CIERTO y medido**: 16 episodios de ≥8 turnos sin moverse; el peor, unidad 4 con **20 turnos en (4,4) y 17 PASS** (días 2 y 3). Causa: el router le da una ruta de 1 tile, la termina y nadie le reasigna trabajo. Implementé `work_steal` (la unidad ociosa roba la mitad de la cola del compañero más cargado): **-24.2 pts (-4.3σ)** y -$13,225. Robar tiles rompe la localidad de la serpentina — más movimiento (4,281 vs 3,978) y menos acciones productivas (2,554 vs 2,858). *El sanity de UN seed daba $111k (parecía bueno) y la autopsia ya delataba la verdad; leer el dinero de un seed en vez de la autopsia casi me engaña otra vez.* Descartado, gateado y apagado.
+
+**3. "¿Por qué zanahorias con la fresa a 6x?" — ERA UN BUG, y es el hallazgo grande.** Día 11 del replay: 44 CARROTS plantados a $42 con la fresa a $186 y cero tiles nuestras de fresa. Instrumenté el scorer en ese turno exacto: el scorer PRINCIPAL sí prefería fresa (score 70.2 vs 25.1 del carrot). El culpable era el **fallback de `melon_max`**: al cortar el melón, elegía el segundo cultivo con un modelo distinto — unidades crudas, sin `season_aware` ni el ×2 del fertilizante — y sumándole la oferta rival estimada (144u de fresa) la fresa colapsaba al floor y ganaba el carrot. **Dos caminos de decisión con dos modelos de valor distintos.**
+
+**`fallback_fix`** (ambos caminos puntúan con el mismo modelo): **+14.2 pts de win-rate (3.2σ), +$2,708**; head-to-head **62-28 (68.9%, 3.9σ)** sobre `fallback+season_aware`. `season_aware` queda **redundante** una vez arreglado el fallback (sus 3 confirmaciones previas se midieron con el bug presente: compensaba parcialmente lo que el fallback rompía). Candidata: **`CAMPEONA_FB`**, pendiente de autorización.
