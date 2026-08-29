@@ -350,3 +350,24 @@ Enjambre forense sobre 17 replays de la era CAMPEONA (9W-8L, 52.9% WR, $80.2k vs
 **8. Veredicto sobre las ideas del usuario:** VALOR COMPUESTO confirmado con tres evidencias independientes (fresa d9-12 rinde 5.39 u/tile vs 1.02 en d18+; nuestras tiles de wheat cuestan 365 tile-días de fresa; $29-48k de banco parado desde el d10). FASES confirmadas como estructura, pero NO como flag de política (`phased=False` en 9/9 finalistas evolutivos): la fase correcta vive como **horizonte dentro del scorer** — que es exactamente lo que son `season_aware` y `fert_tick_aligned`.
 
 **Cola pendiente:** `buy_feed` (comprar forraje libera 365 tile-días: $28.4/tile-día pagados vs $93.6 que rinde una fresa fertilizada) y `herd_scale` (8 animales fijos desde el d10 vs 13.5 del rival, con $29-48k de banco parado) — este último SOLO detrás de buy_feed, porque escalar rebaño sin resolver la logística de forraje ya falló dos veces (sheep8, MIMADA_XL).
+
+## 2026-09-03 (3) — El panel degenerado, y el veredicto: `season_aware` sí, `fert_pickup` no
+
+**Incidente metodológico:** la ablación 2x2 en panel "diverso" [clon + control + barnyard] devolvió **66.7% para las CUATRO variantes** — idéntico al decimal. Panel DEGENERADO: 40/40 contra los débiles, 0/40 contra el fuerte; el resultado lo fijaba el rival, no la variante. Cero poder de discriminación. Lección: un panel puede fallar por endogamia (todos iguales a nosotros) O por saturación (todos decididos de antemano); hay que exigirle **zona de decisión**. Panel corregido con nuestra propia escalera histórica [CAMPEONA + RUTERA + INTEGRAL], donde cada partida se puede ganar o perder.
+
+**Verificación del mecanismo (antes de juzgar el resultado):** FERTILIZE ejecutados 18 (base) → 59 (fert_pickup) → 73 (+season); PASS 866 → 588. El mecanismo hace lo que promete.
+
+**Ablación en panel discriminante (120 eps/variante):**
+
+| variante | win-rate | dinero |
+|---|---|---|
+| **season_aware** | **89.2% (+18.3 pts, 3.6σ)** | $89,625 |
+| season + fert | 88.3% (+17.5, 3.4σ) | $90,983 |
+| fert solo | 81.7% (+10.8, 2.0σ) | $88,597 |
+| base (CAMPEONA) | 70.8% | — |
+
+**Desempate head-to-head (80 eps espejados): season 48-32 sobre season_fert (60.0%, +1.8σ).**
+
+**Veredicto:** `season_aware` es el ganador — **tercera confirmación independiente** (2.3σ, 2.1σ, 3.6σ; 616 episodios acumulados). `fert_pickup` ayuda en solitario (+10.8 pts) pero **no aporta sobre season_aware y pierde el head-to-head**: la superaditividad que predijo el forense NO se cumplió. Hipótesis del porqué: season_aware ya redirige las tiles al cultivo correcto en el momento correcto, y encima de eso las ~55 acciones extra de fertilización compran menos de lo que cuestan en el margen. Queda gateado y apagado, disponible si el meta cambia (los rivales fuertes SÍ fertilizan el 62-75%, así que puede pagar contra ellos aunque no contra nuestra escalera).
+
+**Candidata final: `CAMPEONA_SEASON`** (CAMPEONA + season_aware). Pendiente de autorización del usuario.
