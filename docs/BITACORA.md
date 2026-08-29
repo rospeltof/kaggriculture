@@ -371,3 +371,14 @@ Enjambre forense sobre 17 replays de la era CAMPEONA (9W-8L, 52.9% WR, $80.2k vs
 **Veredicto:** `season_aware` es el ganador — **tercera confirmación independiente** (2.3σ, 2.1σ, 3.6σ; 616 episodios acumulados). `fert_pickup` ayuda en solitario (+10.8 pts) pero **no aporta sobre season_aware y pierde el head-to-head**: la superaditividad que predijo el forense NO se cumplió. Hipótesis del porqué: season_aware ya redirige las tiles al cultivo correcto en el momento correcto, y encima de eso las ~55 acciones extra de fertilización compran menos de lo que cuestan en el margen. Queda gateado y apagado, disponible si el meta cambia (los rivales fuertes SÍ fertilizan el 62-75%, así que puede pagar contra ellos aunque no contra nuestra escalera).
 
 **Candidata final: `CAMPEONA_SEASON`** (CAMPEONA + season_aware). Pendiente de autorización del usuario.
+
+## 2026-09-03 (4) — CAMPEONA_SEASON al ladder + higiene de replays por generación
+
+**Submission enviada** (autorización explícita del usuario): `campeona_season` — CAMPEONA + `season_aware`. Validación self-play OK ($98.0k / $97.1k); config verificada en el paquete (`'season_aware': True`, línea 952). *Nota: el chequeo automático dio un falso negativo porque buscaba comillas dobles y pprint escribe simples — verificado a mano.*
+
+**Higiene de datos (riesgo señalado por el usuario):** los replays mezclaban 7 generaciones de bots. Auditoría episodio→submission de los 171 replays locales:
+- Los dos análisis que motivaron los hallazgos grandes SÍ eran del campeón: **Akshay V (102138884) → CAMPEONA** y **ShiviWhivi (102203713) → CAMPEONA** ✓. Eric Han Wang y meryol eran de integral_v2 (generación inmediata anterior); Tarun de rutera y "ln" de v1 (análisis viejos, ya archivados).
+- **Limpieza:** borrados 70 replays de generaciones retiradas (1.7 GB); los 101 restantes reorganizados en `replays/CAMPEONA/` (41) y `replays/integral_v2/` (60) — las dos activas en el ladder.
+- **Prevención estructural:** `bajar_replays.py` descarga SOLO de las submissions activas y las deja separadas por bot; imprime cuáles son las activas. Nunca más se mezclan generaciones en un análisis.
+
+Ratings al momento: CAMPEONA 770.1, integral v2 765.8 (mejor histórico; arrancamos en 600).

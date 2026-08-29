@@ -1,6 +1,6 @@
 """Kaggriculture submission — generada por empaquetar.py.
 
-Config: CAMPEONA (campeón vigente de la evolución local; ver docs/BITACORA.md).
+Config: CAMPEONA_SEASON (campeón vigente de la evolución local; ver docs/BITACORA.md).
 Chasis: bots/chassis.py inline (Python puro, sin dependencias).
 """
 
@@ -158,6 +158,24 @@ def _plan_routes(serve, n_units, tiles):
     return [sorted(r, key=lambda t: 0 if is_animal(t) else 1) for r in routes]
 
 
+
+def _fert_due(c, age, cfg):
+    """¿Vale la pena fertilizar HOY esta planta? Alineado a los ticks reales:
+    la ventana del fertilizante dura 3 días (hoy, +1, +2), así que aplicarlo en
+    edad tick-2..tick cubre ese tick. Sin alineación se gastaba una aplicación
+    desde edad first-2 que a veces no cubría ningún tick."""
+    if not cfg.get("fert_tick_aligned"):
+        return age >= c["first"] - 2
+    if not c["ongoing"]:
+        return c["first"] - 2 <= age <= c["peak"]
+    iv = max(1, c.get("iv", 1))
+    for k in range(4):
+        tick = c["first"] + k * iv
+        if tick - 2 <= age <= tick:
+            return True
+    return False
+
+
 def _service_ops(tile, day, cfg, has_fert=False):
     """Próxima acción pendiente en esta tile del circuito, o None si está servida."""
     if not isinstance(tile, dict):
@@ -172,9 +190,9 @@ def _service_ops(tile, day, cfg, has_fert=False):
         watered = tile.get("watered_today")
         # fertilizar ANTES de regar (el bonus x2 aplica al riego del mismo día);
         # solo si la unidad carga fertilizer (has_fert) y el cultivo lo amerita
-        if (has_fert and tile["crop"] in cfg.get("fert_crops", ()) and day <= 26
-                and tile.get("fertilized_until_day", -1) < day
-                and age >= c["first"] - 2):
+        if ((has_fert or cfg.get("fert_pickup")) and tile["crop"] in cfg.get("fert_crops", ())
+                and day <= 26 and tile.get("fertilized_until_day", -1) < day
+                and _fert_due(c, age, cfg)):
             return ["FERTILIZE"]
         if not watered and day <= LAST_DAY:
             if not (not c["ongoing"] and age > c["peak"]) and not (
@@ -448,6 +466,26 @@ def decide(obs, cfg):
             u_eff = u
             if cfg.get("scorer_v2") and crop in cfg.get("fert_crops", ()) and crop in ("STRAWBERRY", "TOMATO"):
                 u_eff = 7  # ticks x2 con fertilizer (el fert es gratis del rebaño)
+            if cfg.get("season_aware"):
+                # Rendimiento REAL según los días que quedan de temporada. El
+                # scorer miope valoraba una fresa del día 18 igual que una del
+                # día 5, pero la primera solo alcanza 1 tick de 4: en la derrota
+                # vs Akshay V teníamos 50 tiles de fresa y vendimos 130 unidades
+                # contra sus 265 — mismas tiles, mitad de cosecha, porque
+                # llegamos tarde. Aquí un cultivo que no alcanza a rendir se
+                # devalúa solo, y los de ciclo largo valen más TEMPRANO.
+                cdx = CROP[crop]
+                if cdx["ongoing"]:
+                    first_day = day + cdx["first"]
+                    ticks = 0 if first_day > LAST_DAY else min(
+                        u, (LAST_DAY - first_day) // max(1, cdx["iv"]) + 1)
+                    if crop in cfg.get("fert_crops", ()):
+                        ticks *= 2   # fertilizado, cada tick rinde 2
+                    u_eff = ticks
+                else:
+                    if day + cdx["peak"] > LAST_DAY:
+                        dias_utiles = LAST_DAY - day - cdx["first"]
+                        u_eff = 0 if dias_utiles < 0 else max(0, min(u, 1 + dias_utiles))
             pipeline = planted_count.get(crop, 0) * u_eff + shed.get(crop, 0)
             opp = cfg.get("mkt_opp_factor", 2)
             supply = int(opp * pipeline)
@@ -592,6 +630,19 @@ def decide(obs, cfg):
                 if op is None:
                     idxs[i] += 1
                     continue
+                if op[0] == "FERTILIZE" and invs[i].get("FERTILIZER", 0) <= 0:
+                    if cfg.get("fert_pickup") and shed.get("FERTILIZER", 0) > 0:
+                        rem = sum(1 for ax, ay in route[idxs[i]:]
+                                  if isinstance(tiles[ay][ax], dict)
+                                  and tiles[ay][ax].get("crop") in cfg.get("fert_crops", ()))
+                        if unit_pos[i] in shed_adj:
+                            actions[i] = ["PICKUP", "FERTILIZER",
+                                          min(max(1, rem), shed["FERTILIZER"])]
+                        else:
+                            actions[i] = [_step_toward(unit_pos[i], SHED)]
+                        break
+                    idxs[i] += 1
+                    continue
                 if op[0] == "FEED" and invs[i].get("WHEAT", 0) <= 0:
                     if shed.get("WHEAT", 0) > 0:
                         rem = sum(1 for ax, ay in route[idxs[i]:]
@@ -703,6 +754,11 @@ def decide(obs, cfg):
     sellable = []
     for it in SELLABLE:
         n = shed.get(it, 0) - (wheat_buffer if it == "WHEAT" else 0)
+        if it == "FERTILIZER" and cfg.get("fert_pickup") and day <= 26:
+            # reservar el fertilizante para los cultivos que lo duplican
+            n -= min(cfg.get("fert_reserve", 20), sum(
+                1 for row in tiles for t2 in row
+                if isinstance(t2, dict) and t2.get("crop") in cfg.get("fert_crops", ())))
         if (it in PREMIUM and day < hold_day and day < 28 and shed_load < 85
                 and it not in wave_soon):
             continue  # hold; el shed casi lleno (>=85) o una ola rival anunciada lo perforan
@@ -892,7 +948,8 @@ CONFIG = {'hands': 8,
  'wave_min_value': 2000,
  'melon_max': 8,
  'smart_overflow': False,
- 'scorer_v2': False}
+ 'scorer_v2': False,
+ 'season_aware': True}
 
 
 def agent(obs):
