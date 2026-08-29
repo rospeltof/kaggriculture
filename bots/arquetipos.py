@@ -367,3 +367,16 @@ CAMPEONA = {
     "scorer_v2": False,
 }
 campeona = make_agent(CAMPEONA)
+
+# Candidata 2026-09-03 — CAMPEONA + season_aware (rendimiento consciente del
+# calendario). Nace del análisis forense de la derrota vs Akshay V: íbamos
+# +$11,102 el día 18 y perdimos por $40,791; el 85% del gap fueron FRESAS
+# (130u nuestras vs 265u suyas) porque las plantamos tarde — 50 tiles desde el
+# día 18, cuando una fresa plantada ese día alcanza 1 de sus 4 tandas.
+# El scorer ahora calcula las unidades que un cultivo ALCANZA A RENDIR en los
+# días que quedan (fresa: 8 hasta el d12, 2 el d18, 0 el d21) y reconoce que
+# fertilizada rinde 8 y no 4. Efecto: fresa temprano, carrot solo al cierre.
+# Evidencia: dos mediciones independientes, 248 episodios por variante,
+# +12.1 puntos de win-rate (2.9 sigma) y +$4k de economía.
+CAMPEONA_SEASON = dict(CAMPEONA, season_aware=True)
+campeona_season = make_agent(CAMPEONA_SEASON)

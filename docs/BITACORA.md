@@ -311,3 +311,15 @@ Enjambre de 4 revisores + verificadores escépticos (34 agentes; 22 cortados por
 **Lo que la evolución adoptó (y que solas eran neutras):** `beat_wave=True` (ya corregida, umbral $2,000) y **`melon_max=8`** — la disciplina de melón que el usuario pidió, rechazada en ablación aislada y validada aquí dentro de la combinación correcta; tercera vez que se repite el patrón (hands_per_quadrant, ahora estas dos): *el valor de un mecanismo depende de sus compañeros*. También: 3er cuadrante y prio_feed 75.
 
 **Subida al ladder** con autorización explícita del usuario ("sube solo la mejor"): submission de `CAMPEONA`. Fugas restantes para la próxima ronda: 36.5 plantas muertas ($3.7k, la sobre-expansión de idle_plant+land_early sigue sin regarse a tiempo) y 18.5 riegos de ventana ($1.5k) — objetivos de la fase 3 del router (rutas ordenadas por deadline, no solo por espacio).
+
+## 2026-09-03 — Forense de la derrota vs Akshay V → `season_aware`: el scorer aprende el calendario
+
+**La partida (102138884, -$41,723):** íbamos GANANDO +$11,102 el día 18 y terminamos -$40,791 — tiramos $52k en nueve días. Ventas reales reconstruidas (ventas_reales.py, desde el inventario de mercado): **el 85% del gap son FRESAS — 130u/$31.5k nuestras vs 265u/$64.1k suyas**; en wheat/melón/carrot/tomate le ganamos. Con ~50 tiles de fresa desde el día 18 vendimos la mitad de unidades que él: las plantamos TARDE (d9: 6 tiles, d12: 8, d15: 25, d18: 50) y una fresa es ongoing con 4 tandas (edades 10,12,14,16) — plantada el d18 alcanza una sola.
+
+**Doble miopía del scorer** (responde también la pregunta del usuario sobre carrot vs fresa): (1) valoraba la fresa en 4 unidades ignorando que fertilizada rinde 8; (2) trataba una fresa del día 18 igual que una del día 5. A precios REALIZADOS medidos en nuestras partidas: fresa 8u x $231 / 18d = **$103/tile-día**, melón 6u x $141 / 11d = $77, carrot 3u x $57 / 4d = $43. El carrot es la peor tile del juego SALVO al cierre, cuando es lo único que completa ciclo (4 días) — plantarlo el d24 es correcto, el d9 (9 tiles contra Akshay) es el error.
+
+**`season_aware` (gateado):** unidades esperadas = las que el cultivo alcanza a rendir antes del día 30. Fresa 8 (d0-12) → 6 (d15) → 2 (d18) → 0 (d21); melón 0 desde el d21. Es la idea del usuario del VALOR COMPUESTO aplicada al scorer.
+
+**Evidencia (dos mediciones independientes, seeds distintos):** ablación 72 eps/variante 29.2% vs 13.9%; confirmación 176 eps/variante en seeds vírgenes 46.0% vs 35.2%. **Combinado: 248 eps/variante, +12.1 puntos de win-rate (2.9 sigma), +$4k de economía.** `scorer_v2` rechazado por TERCERA vez (-1.4%) — enterrado.
+
+Candidata `CAMPEONA_SEASON` registrada. **Pendiente de autorización explícita del usuario para subir.**

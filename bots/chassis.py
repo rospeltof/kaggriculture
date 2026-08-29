@@ -442,6 +442,26 @@ def decide(obs, cfg):
             u_eff = u
             if cfg.get("scorer_v2") and crop in cfg.get("fert_crops", ()) and crop in ("STRAWBERRY", "TOMATO"):
                 u_eff = 7  # ticks x2 con fertilizer (el fert es gratis del rebaño)
+            if cfg.get("season_aware"):
+                # Rendimiento REAL según los días que quedan de temporada. El
+                # scorer miope valoraba una fresa del día 18 igual que una del
+                # día 5, pero la primera solo alcanza 1 tick de 4: en la derrota
+                # vs Akshay V teníamos 50 tiles de fresa y vendimos 130 unidades
+                # contra sus 265 — mismas tiles, mitad de cosecha, porque
+                # llegamos tarde. Aquí un cultivo que no alcanza a rendir se
+                # devalúa solo, y los de ciclo largo valen más TEMPRANO.
+                cdx = CROP[crop]
+                if cdx["ongoing"]:
+                    first_day = day + cdx["first"]
+                    ticks = 0 if first_day > LAST_DAY else min(
+                        u, (LAST_DAY - first_day) // max(1, cdx["iv"]) + 1)
+                    if crop in cfg.get("fert_crops", ()):
+                        ticks *= 2   # fertilizado, cada tick rinde 2
+                    u_eff = ticks
+                else:
+                    if day + cdx["peak"] > LAST_DAY:
+                        dias_utiles = LAST_DAY - day - cdx["first"]
+                        u_eff = 0 if dias_utiles < 0 else max(0, min(u, 1 + dias_utiles))
             pipeline = planted_count.get(crop, 0) * u_eff + shed.get(crop, 0)
             opp = cfg.get("mkt_opp_factor", 2)
             supply = int(opp * pipeline)
