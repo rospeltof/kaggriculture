@@ -152,6 +152,24 @@ def _plan_routes(serve, n_units, tiles):
     return [sorted(r, key=lambda t: 0 if is_animal(t) else 1) for r in routes]
 
 
+
+def _fert_due(c, age, cfg):
+    """¿Vale la pena fertilizar HOY esta planta? Alineado a los ticks reales:
+    la ventana del fertilizante dura 3 días (hoy, +1, +2), así que aplicarlo en
+    edad tick-2..tick cubre ese tick. Sin alineación se gastaba una aplicación
+    desde edad first-2 que a veces no cubría ningún tick."""
+    if not cfg.get("fert_tick_aligned"):
+        return age >= c["first"] - 2
+    if not c["ongoing"]:
+        return c["first"] - 2 <= age <= c["peak"]
+    iv = max(1, c.get("iv", 1))
+    for k in range(4):
+        tick = c["first"] + k * iv
+        if tick - 2 <= age <= tick:
+            return True
+    return False
+
+
 def _service_ops(tile, day, cfg, has_fert=False):
     """Próxima acción pendiente en esta tile del circuito, o None si está servida."""
     if not isinstance(tile, dict):
@@ -166,9 +184,9 @@ def _service_ops(tile, day, cfg, has_fert=False):
         watered = tile.get("watered_today")
         # fertilizar ANTES de regar (el bonus x2 aplica al riego del mismo día);
         # solo si la unidad carga fertilizer (has_fert) y el cultivo lo amerita
-        if (has_fert and tile["crop"] in cfg.get("fert_crops", ()) and day <= 26
-                and tile.get("fertilized_until_day", -1) < day
-                and age >= c["first"] - 2):
+        if ((has_fert or cfg.get("fert_pickup")) and tile["crop"] in cfg.get("fert_crops", ())
+                and day <= 26 and tile.get("fertilized_until_day", -1) < day
+                and _fert_due(c, age, cfg)):
             return ["FERTILIZE"]
         if not watered and day <= LAST_DAY:
             if not (not c["ongoing"] and age > c["peak"]) and not (
@@ -606,6 +624,19 @@ def decide(obs, cfg):
                 if op is None:
                     idxs[i] += 1
                     continue
+                if op[0] == "FERTILIZE" and invs[i].get("FERTILIZER", 0) <= 0:
+                    if cfg.get("fert_pickup") and shed.get("FERTILIZER", 0) > 0:
+                        rem = sum(1 for ax, ay in route[idxs[i]:]
+                                  if isinstance(tiles[ay][ax], dict)
+                                  and tiles[ay][ax].get("crop") in cfg.get("fert_crops", ()))
+                        if unit_pos[i] in shed_adj:
+                            actions[i] = ["PICKUP", "FERTILIZER",
+                                          min(max(1, rem), shed["FERTILIZER"])]
+                        else:
+                            actions[i] = [_step_toward(unit_pos[i], SHED)]
+                        break
+                    idxs[i] += 1
+                    continue
                 if op[0] == "FEED" and invs[i].get("WHEAT", 0) <= 0:
                     if shed.get("WHEAT", 0) > 0:
                         rem = sum(1 for ax, ay in route[idxs[i]:]
@@ -717,6 +748,11 @@ def decide(obs, cfg):
     sellable = []
     for it in SELLABLE:
         n = shed.get(it, 0) - (wheat_buffer if it == "WHEAT" else 0)
+        if it == "FERTILIZER" and cfg.get("fert_pickup") and day <= 26:
+            # reservar el fertilizante para los cultivos que lo duplican
+            n -= min(cfg.get("fert_reserve", 20), sum(
+                1 for row in tiles for t2 in row
+                if isinstance(t2, dict) and t2.get("crop") in cfg.get("fert_crops", ())))
         if (it in PREMIUM and day < hold_day and day < 28 and shed_load < 85
                 and it not in wave_soon):
             continue  # hold; el shed casi lleno (>=85) o una ola rival anunciada lo perforan

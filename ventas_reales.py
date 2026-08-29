@@ -77,6 +77,16 @@ def reconstruir(d, me):
             # nuestra parte: acotada por la orden emitida y por el stock disponible
             mine = min(my_orders.get(it, 0), max(0, my_prev.get(it, 0)), total_sold)
             theirs = max(0, total_sold - mine)
+            # OJO (corregido 2026-09-03): total_sold incluye las COMPRAS del rival
+            # (un BUY_PRODUCT suyo baja el inventario igual que su venta lo sube,
+            # y aquí el residuo se le atribuía como venta). El rival compra ~390
+            # wheat por partida: sin este ajuste el gap de wheat era un espejismo
+            # y "planta más wheat" habría sido la recomendación #1, siendo falsa.
+            their_buys = 0
+            for m in (steps[t][1 - me].get("action") or {}).get("market") or []:
+                if m and m[0] == "BUY_PRODUCT" and len(m) >= 3 and m[1] == it:
+                    their_buys += int(m[2])
+            theirs = max(0, theirs - their_buys)
             pr = prices.get(it, 0)
             sold[me][it][0] += mine
             sold[me][it][1] += mine * pr

@@ -323,3 +323,30 @@ Enjambre de 4 revisores + verificadores escépticos (34 agentes; 22 cortados por
 **Evidencia (dos mediciones independientes, seeds distintos):** ablación 72 eps/variante 29.2% vs 13.9%; confirmación 176 eps/variante en seeds vírgenes 46.0% vs 35.2%. **Combinado: 248 eps/variante, +12.1 puntos de win-rate (2.9 sigma), +$4k de economía.** `scorer_v2` rechazado por TERCERA vez (-1.4%) — enterrado.
 
 Candidata `CAMPEONA_SEASON` registrada. **Pendiente de autorización explícita del usuario para subir.**
+
+## 2026-09-03 (2) — Forense exhaustivo: la fertilización es LA fuga; la veta de duelos cerrados está agotada
+
+Enjambre forense sobre 17 replays de la era CAMPEONA (9W-8L, 52.9% WR, $80.2k vs $90.2k). Cinco analistas cayeron cuando la Mac se durmió; el sintetizador reconstruyó el análisis completo.
+
+**1. La veta de duelos cerrados está AGOTADA.** Margen <$8k: **5 victorias, 0 derrotas**. La derrota más cercana necesita +$9,720. `sell_rank`/`opp_read`/`beat_wave` ya cobraron todo lo convertible — más ingeniería de lockstep tiene retorno ~cero. El siguiente punto de rating se compra con ECONOMÍA.
+
+**2. Nuestro techo es plano:** ingreso bruto $110,325 en victorias vs $109,861 en derrotas (0.4%). El resultado lo determina el rival: $70.1k cuando ganamos, $112.9k cuando perdemos. No perdemos partidas — nos superan en producción.
+
+**3. Autocorrección de `ventas_reales.py`:** atribuía las COMPRAS del rival como ventas suyas (el residuo del balance de inventario). El rival compra ~390 wheat/partida; neto, NOSOTROS le ganamos en wheat (+$4,148). "Plantar más wheat" iba a ser la recomendación #1 y era falsa. Corregido.
+
+**4. Gap neto real en derrotas ($31,701):** STRAWBERRY +$18,930 (60%), MILK +$9,335, WOOL +$5,513 = **107% del gap**; en wheat y carrot ganamos.
+
+**5. LA FUGA: recolectamos 208.4 fertilizantes/partida y ejecutamos 21.8 FERTILIZE.** Solo el 24.7% de nuestras fresas se fertiliza; el rival 62.4% (75.8% en derrotas). Rendimiento: 3.32 u/tile nuestro vs 5.34 suyo — **plantamos 37% más tiles de fresa y cosechamos 15% menos unidades**. Causa raíz: el FERTILIZE era puramente oportunista (solo la unidad que casualmente cargaba fertilizante); nunca iba al shed a buscarlo, y de noche todo se volcaba y se vendía a $65 (65% del base). Existía el patrón exacto que faltaba: el desvío WHEAT→FEED.
+→ Implementado `fert_pickup` (desvío de adquisición al shed, espejo del de FEED) + `fert_tick_aligned` (aplicar en edad tick-2..tick: 2 aplicaciones cubren los 4 ticks de la fresa) + `fert_reserve` (no vender lo que se va a usar). Estimación con la curva: **+$13,100/partida neto**. Presupuesto de acciones verificado: ~102 turnos-unidad necesarios contra 215 en PASS en esa ventana.
+
+**6. Interacción que obliga a shipear junto con `season_aware`:** el scorer hace `ticks *= 2` para fert_crops — **ya asume que fertilizamos**. Con 24.7% real, sobrevalúa la fresa sobre una promesa que el ejecutor no cumple; `fert_pickup` la vuelve verdad. Ablación 2x2 en curso (panel DIVERSO, 120 eps/variante).
+
+**7. Respuestas a las observaciones del usuario:**
+- *Farmhand quieto*: NO es bug. Las unidades quietas están en tiles del shed los días 2-3 (granja de 1 cuadrante saturada: 0.0-0.1 tiles vacías, no hay trabajo que dar) y en el cierre d27-29 (ocio real pero inconvertible: nada plantado en d28-29 completa ciclo). 8 peones cuestan $54/día (fib) — el ocio temprano es casi gratis.
+- *Movimiento*: 53.3% nuestro vs **54.6% del rival** — estamos a la par; ya no es la frontera (la zonificación fue rechazada por unanimidad evolutiva).
+- *Tercer cuadrante*: ocupación 67-72 de 75 tiles (90-96%) — las vacías que se ven son 3-8, no un cuadrante ocioso.
+- *Carrot vs fresa*: a precios realizados, fresa $103/tile-día > melón $77 > carrot $43. El carrot solo es correcto al cierre (ciclo de 4 días); `season_aware` ya lo mueve ahí.
+
+**8. Veredicto sobre las ideas del usuario:** VALOR COMPUESTO confirmado con tres evidencias independientes (fresa d9-12 rinde 5.39 u/tile vs 1.02 en d18+; nuestras tiles de wheat cuestan 365 tile-días de fresa; $29-48k de banco parado desde el d10). FASES confirmadas como estructura, pero NO como flag de política (`phased=False` en 9/9 finalistas evolutivos): la fase correcta vive como **horizonte dentro del scorer** — que es exactamente lo que son `season_aware` y `fert_tick_aligned`.
+
+**Cola pendiente:** `buy_feed` (comprar forraje libera 365 tile-días: $28.4/tile-día pagados vs $93.6 que rinde una fresa fertilizada) y `herd_scale` (8 animales fijos desde el d10 vs 13.5 del rival, con $29-48k de banco parado) — este último SOLO detrás de buy_feed, porque escalar rebaño sin resolver la logística de forraje ya falló dos veces (sheep8, MIMADA_XL).
