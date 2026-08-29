@@ -1,6 +1,6 @@
 """Kaggriculture submission — generada por empaquetar.py.
 
-Config: CAMPEONA_SEASON (campeón vigente de la evolución local; ver docs/BITACORA.md).
+Config: CAMPEONA_FB (campeón vigente de la evolución local; ver docs/BITACORA.md).
 Chasis: bots/chassis.py inline (Python puro, sin dependencias).
 """
 
@@ -508,15 +508,50 @@ def decide(obs, cfg):
             # melón al tope concurrente (acota la ola de cosecha y la cantidad total
             # de temporada — la curva sq hace que el melón marginal >~120u valga poco):
             # elegir el segundo mejor cultivo
+            # El fallback DEBE puntuar con el mismo modelo que el scorer principal.
+            # Antes usaba unidades crudas (sin season_aware ni el x2 del fertilizante)
+            # y ahí la fresa se hundía bajo la oferta rival y ganaba el carrot:
+            # medido en la partida vs Omkar Kadam, 44 carrots a $42 el día 11 con
+            # la fresa a $186 y cero tiles nuestras de fresa.
             second, second_s = None, -1e9
             for crop2, (u2, occ2) in CROP_ECON.items():
                 if crop2 == "MELON" or day > CROP[crop2]["last_plant"]:
                     continue
-                pipe2 = planted_count.get(crop2, 0) * u2 + shed.get(crop2, 0)
+                if not cfg.get("fallback_fix"):
+                    pipe0 = planted_count.get(crop2, 0) * u2 + shed.get(crop2, 0)
+                    if cfg.get("opp_read"):
+                        pipe0 += opp_incoming.get(crop2, 0)
+                    pr0 = _price_at(crop2, market_inv.get(crop2, 10000) + pipe0 + u2)
+                    s0 = (u2 * pr0 - CROP[crop2]["seed"]) / occ2
+                    if s0 > second_s:
+                        second, second_s = crop2, s0
+                    continue
+                cd2 = CROP[crop2]
+                ue2 = u2
+                if cfg.get("scorer_v2") and crop2 in cfg.get("fert_crops", ()) and crop2 in ("STRAWBERRY", "TOMATO"):
+                    ue2 = 7
+                if cfg.get("season_aware"):
+                    if cd2["ongoing"]:
+                        fd2 = day + cd2["first"]
+                        tk2 = 0 if fd2 > LAST_DAY else min(u2, (LAST_DAY - fd2) // max(1, cd2["iv"]) + 1)
+                        if crop2 in cfg.get("fert_crops", ()):
+                            tk2 *= 2
+                        ue2 = tk2
+                    elif day + cd2["peak"] > LAST_DAY:
+                        du2 = LAST_DAY - day - cd2["first"]
+                        ue2 = 0 if du2 < 0 else max(0, min(u2, 1 + du2))
+                pipe2 = planted_count.get(crop2, 0) * ue2 + shed.get(crop2, 0)
+                sup2 = int(cfg.get("mkt_opp_factor", 2) * pipe2)
                 if cfg.get("opp_read"):
-                    pipe2 += opp_incoming.get(crop2, 0)   # el fallback también ve al rival
-                pr2 = _price_at(crop2, market_inv.get(crop2, 10000) + pipe2 + u2)
-                s2 = (u2 * pr2 - CROP[crop2]["seed"]) / occ2
+                    sup2 = pipe2 + opp_incoming.get(crop2, 0)
+                inv2 = market_inv.get(crop2, 10000)
+                if cfg.get("town_forecast"):
+                    inv2 -= _town_drain_per_day(town, crop2) * occ2
+                if cfg.get("scorer_v2"):
+                    pr2 = _avg_price_over(crop2, inv2, sup2 + ue2)
+                else:
+                    pr2 = _price_at(crop2, inv2 + sup2 + ue2)
+                s2 = (ue2 * pr2 - CROP[crop2]["seed"]) / occ2
                 if s2 > second_s:
                     second, second_s = crop2, s2
             best = second
@@ -620,6 +655,26 @@ def decide(obs, cfg):
         shed_adj = {(4, 4), (5, 4), (4, 5), (5, 5)}
         routes = rst.get("routes", [])
         idxs = rst.get("idx", [])
+        # work stealing: una unidad que acabó su circuito toma tiles pendientes de
+        # los circuitos más cargados. Sin esto, la unidad con ruta corta se queda
+        # PARADA el resto del día (medido: 20 turnos con 17 PASS en (4,4), d2-d3).
+        if cfg.get("work_steal"):
+            for i in range(min(n_units, len(routes))):
+                if idxs[i] < len(routes[i]):
+                    continue
+                donante, resto = -1, 0
+                for j in range(min(n_units, len(routes))):
+                    if j == i:
+                        continue
+                    pend = len(routes[j]) - idxs[j]
+                    if pend > resto:
+                        donante, resto = j, pend
+                if donante >= 0 and resto >= 2:
+                    # le quita la MITAD de lo que le queda al más cargado
+                    corte = len(routes[donante]) - resto // 2
+                    routes[i] = routes[i] + routes[donante][corte:]
+                    routes[donante] = routes[donante][:corte]
+
         for i in range(min(n_units, len(routes))):
             if actions[i] is not None:
                 continue
@@ -718,8 +773,19 @@ def decide(obs, cfg):
     # trabajo infinito: peón ocioso + tile vacía + semilla disponible = PLANTA.
     # (el budget capa el plan, pero el ocio con tierra y semillas es inaceptable)
     if cfg.get("idle_plant") and day <= 26:
+        _MOV = {"NORTH", "SOUTH", "EAST", "WEST"}
         for i in range(n_units):
-            if actions[i] is not None or not empty_tiles:
+            if not empty_tiles:
+                continue
+            a_i = actions[i]
+            libre = a_i is None
+            if not libre and cfg.get("idle_plant_walkers") and a_i and a_i[0] in _MOV:
+                # va de camino: si tiene una tile vacía AL LADO y semilla, planta
+                # antes (medido d12: 16 tiles vacías con 42 semillas en el bolsillo
+                # porque idle_plant solo miraba unidades sin acción)
+                cerca = min((t for t in empty_tiles), key=lambda t: _dist(unit_pos[i], t), default=None)
+                libre = cerca is not None and _dist(unit_pos[i], cerca) <= cfg.get("idle_plant_radius", 1)
+            if not libre:
                 continue
             crop = None
             for cand in ([adaptive_best] if adaptive_best else []) + sorted(seeds, key=lambda k: -seeds.get(k, 0)):
@@ -949,7 +1015,7 @@ CONFIG = {'hands': 8,
  'melon_max': 8,
  'smart_overflow': False,
  'scorer_v2': False,
- 'season_aware': True}
+ 'fallback_fix': True}
 
 
 def agent(obs):

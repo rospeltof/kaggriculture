@@ -394,3 +394,9 @@ Replay 102786320 (`campeona_season` vs Omkar Kadam, -$24.8k), archivado en `repl
 **3. "¿Por qué zanahorias con la fresa a 6x?" — ERA UN BUG, y es el hallazgo grande.** Día 11 del replay: 44 CARROTS plantados a $42 con la fresa a $186 y cero tiles nuestras de fresa. Instrumenté el scorer en ese turno exacto: el scorer PRINCIPAL sí prefería fresa (score 70.2 vs 25.1 del carrot). El culpable era el **fallback de `melon_max`**: al cortar el melón, elegía el segundo cultivo con un modelo distinto — unidades crudas, sin `season_aware` ni el ×2 del fertilizante — y sumándole la oferta rival estimada (144u de fresa) la fresa colapsaba al floor y ganaba el carrot. **Dos caminos de decisión con dos modelos de valor distintos.**
 
 **`fallback_fix`** (ambos caminos puntúan con el mismo modelo): **+14.2 pts de win-rate (3.2σ), +$2,708**; head-to-head **62-28 (68.9%, 3.9σ)** sobre `fallback+season_aware`. `season_aware` queda **redundante** una vez arreglado el fallback (sus 3 confirmaciones previas se midieron con el bug presente: compensaba parcialmente lo que el fallback rompía). Candidata: **`CAMPEONA_FB`**, pendiente de autorización.
+
+## 2026-09-04 (2) — CAMPEONA_FB al ladder
+
+**Submission 55876067** enviada con autorización del usuario ("Subela con ese fix"). Validación self-play OK ($75.2k/$73.9k); `'fallback_fix': True` verificado en la línea 1018 del paquete. Decisión del usuario: dejarla acumular partidas antes de la siguiente iteración.
+
+Estado del ladder al enviar: **campeona_season 782.3** (nuevo máximo histórico, +12 en su primer día), campeona 772.3, integral v2 retirada de facto por el cupo de 2 activas. Con 3 submissions en cola de reemplazo, las dos que compiten pasarán a ser season y fb — exactamente las dos candidatas validadas.
