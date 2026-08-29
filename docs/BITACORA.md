@@ -301,3 +301,13 @@ Enjambre de 4 revisores + verificadores escépticos (34 agentes; 22 cortados por
 | cinta v16 | 0/30 | 2/30 (6.7%) |
 
 **Lectura honesta:** el +18.3 pts global viene casi todo de ganarle a su propio predecesor, no de cerrar la brecha con la élite. Contra barnyard seguimos en cero. PERO eso es exactamente lo que mueve el Elo en NUESTRA banda (~680-700), donde los rivales son pares, no titanes: 73% contra el bot que hoy está en el ladder es subida real de rating. Dato fino: el lector no solo gana más, gana con más margen (18 duelos cerrados vs 30 de la base).
+
+## 2026-09-02 (3) — Evolución 9: primera selección por WIN-RATE → nace `campeona`, al ladder
+
+**Cambio de fitness:** win_rate x 1e6 + dinero (victorias primero). Justificación: los mecanismos ganadores del día eran neutros en dinero — el proxy viejo los habría descartado. 4,740 episodios, 8 generaciones, panel coevolutivo [gemela + barnyard + cinta], registro de 2,534 firmas previas respetado.
+
+**Ganadora `t5e_3` → `CAMPEONA`:** final 60.0% WR (lector_ref 48.3%); **confirmación head-to-head en seeds vírgenes 46-4 ($90.9k vs $81.6k)**; verificación de transcripción 16-0 en seeds nuevos ($92.3k vs $83.4k); autopsia **$118.0k absoluto, 8% ocio**.
+
+**Lo que la evolución adoptó (y que solas eran neutras):** `beat_wave=True` (ya corregida, umbral $2,000) y **`melon_max=8`** — la disciplina de melón que el usuario pidió, rechazada en ablación aislada y validada aquí dentro de la combinación correcta; tercera vez que se repite el patrón (hands_per_quadrant, ahora estas dos): *el valor de un mecanismo depende de sus compañeros*. También: 3er cuadrante y prio_feed 75.
+
+**Subida al ladder** con autorización explícita del usuario ("sube solo la mejor"): submission de `CAMPEONA`. Fugas restantes para la próxima ronda: 36.5 plantas muertas ($3.7k, la sobre-expansión de idle_plant+land_early sigue sin regarse a tiempo) y 18.5 riegos de ventana ($1.5k) — objetivos de la fase 3 del router (rutas ordenadas por deadline, no solo por espacio).

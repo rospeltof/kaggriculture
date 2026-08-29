@@ -310,3 +310,60 @@ INTEGRAL_LECTOR = dict(
     order_budget=True,
 )
 integral_lector = make_agent(INTEGRAL_LECTOR)
+
+# Campeona de la evolución 9 (t5e_3) — primera evolución seleccionada por
+# WIN-RATE en vez de dinero. Final 60.0% WR (lector: 48.3%); confirmación
+# head-to-head en seeds vírgenes: 46-4 vs INTEGRAL_LECTOR ($90.9k vs $81.6k);
+# $118.0k absoluto y 8% de ocio en autopsia.
+# La evolución ADOPTÓ dos gateados que solos eran neutros: beat_wave (ya
+# corregido, con umbral de valor $2,000) y melon_max=8 — la disciplina de melón
+# que el usuario pidió, validada dentro de la combinación correcta. También subió
+# a 3 cuadrantes y bajó prio_feed a 75. VERBATIM de results/evolucion9_winner.json.
+CAMPEONA = {
+    "hands": 8,
+    "animals": [("COW", 4), ("SHEEP", 4)],
+    "plants": {"CARROT": 1, "MELON": 11, "STRAWBERRY": 5, "WHEAT": 8},
+    "care": True,
+    "collect_fert": True,
+    "fert_prio": 45,
+    "animal_harvest_at": 4,
+    "premium_hold_day": 8,
+    "buy_land": True,
+    "max_quadrants": 3,
+    "prio_care": 70,
+    "prio_urgency": 25,
+    "plant_near": True,
+    "endgame": True,
+    "adaptive": True,
+    "crop_tiles": 30,
+    "zoning": False,
+    "zone_fallback_prio": 70,
+    "prio_feed": 75,
+    "prio_water": 44,
+    "prio_win_bonus": 12,
+    "prio_harvest": 62,
+    "prio_plant": 40,
+    "grow": False,
+    "prio_dig": 8,
+    "mkt_opp_factor": 1,
+    "router": True,
+    "hire_late": True,
+    "multi_feeder": False,
+    "phased": False,
+    "tiles_per_unit": 5,
+    "sell_floor": 0.4,
+    "idle_plant": True,
+    "hands_per_quadrant": 4,
+    "land_early": True,
+    "town_forecast": True,
+    "fert_crops": ["STRAWBERRY", "TOMATO"],
+    "opp_read": True,
+    "sell_rank": True,
+    "order_budget": True,
+    "beat_wave": True,
+    "wave_min_value": 2000,
+    "melon_max": 8,
+    "smart_overflow": False,
+    "scorer_v2": False,
+}
+campeona = make_agent(CAMPEONA)
