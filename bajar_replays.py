@@ -30,8 +30,18 @@ def submissions():
 
 
 def nombre_bot(desc):
-    """Etiqueta corta y estable a partir de la descripción de la submission."""
-    d = desc.lower()
+    """Etiqueta corta y estable a partir de la descripción de la submission.
+
+    OJO (bug 2026-09-05): el matcheo por substring genérico mandaba los replays
+    de "campeona_fb" a la carpeta de "campeona" — justo la mezcla de
+    generaciones que este script existe para evitar. Ahora se toma el PRIMER
+    token de la descripción (que es el nombre del bot por convención nuestra),
+    y la lista de claves solo actúa como respaldo.
+    """
+    d = desc.strip().lower()
+    tok = re.split(r"[\s\-]+", d)[0]
+    if tok and tok not in ("main.py",):
+        return tok.upper()
     for clave in ("campeona_season", "campeona", "integral v2", "integral", "rutera",
                   "v5r", "xl", "v4", "v2", "v1"):
         if clave in d:
