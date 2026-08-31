@@ -170,6 +170,58 @@ def _fert_due(c, age, cfg):
     return False
 
 
+
+def _animal_score(animal, day, town, market_inv, mine, opp, cfg):
+    """$/tile-día esperado de comprar ESTE animal hoy — mismo modelo de valor
+    que el scorer de cultivos (la lección del fallback_fix: dos caminos de
+    decisión con dos economías distintas es como se plantan zanahorias con la
+    fresa a 6x).
+
+    Tres cosas que el rebaño fijo 4+4 nunca vio:
+      · EGG es el ÚNICO producto con curva de glut logarítmica: +400 unidades
+        lo dejan en ~$40. WOOL se hunde al piso con +59 y MILK con +76. Por eso
+        oveja y vaca se auto-estrangulan al escalar y el ganso no.
+      · El sumidero del town varía 15x entre partidas (la lana va de 30 a 750
+        unidades de temporada según cuántos YARN_STORE salgan) y nosotros
+        producíamos 111 siempre.
+      · La oferta del RIVAL compite por el mismo sumidero.
+    """
+    a = ANIMAL[animal]
+    item = a["prod"]
+    dias = LAST_DAY - day
+    if dias <= a["first"]:
+        return -1e9                      # no alcanza a producir ni una vez
+    ticks = (dias - a["first"]) // max(1, a["iv"]) + 1
+    unidades = ticks * 1.0
+    if unidades <= 0:
+        return -1e9
+    # oferta que ya presiona ese mercado: la nuestra en pie + la visible del rival
+    supply = (mine.get(animal, 0) + opp.get(animal, 0)) * ticks
+    # Horizonte del drenaje: restar el consumo del town de TODA la temporada
+    # finge una escasez que no existe cuando vendo (el scorer de cultivos usa la
+    # ocupación del cultivo, no los 30 días). Con el horizonte largo el modelo
+    # veía leche a precio de oro y compraba 14 vacas en monocultivo.
+    horizonte = min(dias, cfg.get("herd_drain_days", 8))
+    inv = market_inv.get(item, 10000) - _town_drain_per_day(town, item) * horizonte
+    precio = _avg_price_over(item, inv + supply, unidades)
+    # coste: estructura + animal + forraje de los días que quedan
+    forraje = dias * cfg.get("feed_cost", 34)
+    neto = unidades * precio - a["cost"] - forraje
+    return neto / max(1, dias)
+
+
+def _herd_target(day, town, market_inv, mine, opp, cfg):
+    """¿Cuál es el siguiente animal que conviene, si alguno? Devuelve None
+    cuando ninguno paga: a diferencia de sheep6/sheep8 (que solo sabían SUBIR),
+    esto puede quedarse quieto cuando el town no demanda."""
+    mejor, mejor_s = None, cfg.get("herd_min_score", 0.0)
+    for animal in ("GOOSE", "COW", "SHEEP"):
+        s = _animal_score(animal, day, town, market_inv, mine, opp, cfg)
+        if s > mejor_s:
+            mejor, mejor_s = animal, s
+    return mejor
+
+
 def _service_ops(tile, day, cfg, has_fert=False):
     """Próxima acción pendiente en esta tile del circuito, o None si está servida."""
     if not isinstance(tile, dict):
@@ -400,8 +452,34 @@ def decide(obs, cfg):
 
     # ---- construcción de estructuras pendientes del plan ----
     want_structs = {"COOP": 0, "PASTURE": 0}
-    for animal, count in cfg.get("animals", []):
-        want_structs[ANIMAL[animal]["structure"]] += count
+    if cfg.get("herd_demand"):
+        # con el rebaño dirigido por demanda, la lista fija cfg["animals"] ya no
+        # manda: las estructuras se derivan de los animales que REALMENTE
+        # tenemos (en tile, en shed o en mano) más un hueco de margen para el
+        # siguiente. Sin esto un GOOSE comprado no tendría COOP donde vivir —
+        # nunca habíamos construido uno.
+        tengo = {"COOP": 0, "PASTURE": 0}
+        for row in tiles:
+            for t in row:
+                if isinstance(t, dict) and t.get("animal"):
+                    tengo[ANIMAL[t["animal"]]["structure"]] += 1
+        pend = {"COOP": 0, "PASTURE": 0}
+        for an, n in shed.items():
+            if an in ANIMAL:
+                pend[ANIMAL[an]["structure"]] += n
+        for i in range(n_units):
+            for k, n in invs[i].items():
+                if k in ANIMAL:
+                    pend[ANIMAL[k]["structure"]] += n
+        # el margen solo se abre para la estructura del animal que el scorer
+        # elegiría hoy, para no sembrar el mapa de pastures vacías
+        siguiente = _herd_target(day, town, market_inv, {}, {}, cfg) if day <= cfg.get("herd_until", 22) else None
+        for kind in ("COOP", "PASTURE"):
+            margen = 1 if (siguiente and ANIMAL[siguiente]["structure"] == kind) else 0
+            want_structs[kind] = tengo[kind] + pend[kind] + margen
+    else:
+        for animal, count in cfg.get("animals", []):
+            want_structs[ANIMAL[animal]["structure"]] += count
     for kind in ("COOP", "PASTURE"):
         deficit = want_structs[kind] - my_structures[kind]
         if cfg.get("phased") and deficit > 0:
@@ -866,13 +944,72 @@ def decide(obs, cfg):
         for _ in range(max(0, min(missing, 6))):  # por tandas: no comerse el cupo de órdenes
             orders.append(["HIRE"])
 
+    # Caja COMPROMETIDA en este mismo turno. El motor procesa las órdenes en
+    # secuencia y cada guard miraba `money` sin descontar lo ya encolado, así
+    # que las semillas se comían la caja del animal y el BUY_ANIMAL se
+    # rechazaba en silencio (medido: 26% de ellos). Con order_funding cada
+    # compra consulta la caja REALMENTE disponible.
+    _committed = [0.0]
+
+    def _afford(cost, buf=0):
+        if not cfg.get("order_funding"):
+            return money > cost + buf
+        return money - _committed[0] > cost + buf
+
+    def _commit(cost):
+        if cfg.get("order_funding"):
+            _committed[0] += cost
+
+    def _bloque_animal():
+        owned = {}
+        for row in tiles:
+            for t in row:
+                if isinstance(t, dict) and t.get("animal"):
+                    owned[t["animal"]] = owned.get(t["animal"], 0) + 1
+        for an in shed:
+            if an in ANIMAL:
+                owned[an] = owned.get(an, 0) + shed[an]
+        for i in range(n_units):
+            for k in invs[i]:
+                if k in ANIMAL:
+                    owned[k] = owned.get(k, 0) + invs[i][k]
+        owned_total = sum(owned.values())
+        feed_secure = (not cfg.get("phased")) or (
+            planted_count.get("WHEAT", 0) + shed.get("WHEAT", 0) >= owned_total + 1)
+        if cfg.get("herd_demand"):
+            if (owned_total < cfg.get("herd_max", 14) and feed_secure
+                    and cfg.get("herd_from", 0) <= day <= cfg.get("herd_until", 22)):
+                opp_an = {}
+                _rival = obs["farms"][1 - obs["player"]]
+                for row in (_rival.get("tiles") or []):
+                    for t in row:
+                        if isinstance(t, dict) and t.get("animal"):
+                            opp_an[t["animal"]] = opp_an.get(t["animal"], 0) + 1
+                elegido = _herd_target(day, town, market_inv, owned, opp_an, cfg)
+                if elegido and _afford(ANIMAL[elegido]["cost"], cfg.get("cash_buffer", 200)):
+                    orders.append(["BUY_ANIMAL", elegido, 1])
+                    _commit(ANIMAL[elegido]["cost"])
+                    return True
+            return False
+        for animal, count in cfg.get("animals", []):
+            a = ANIMAL[animal]
+            if (owned.get(animal, 0) < count and day <= a.get("last_buy", 22) and feed_secure
+                    and _afford(a["cost"], cfg.get("cash_buffer", 200))):
+                orders.append(["BUY_ANIMAL", animal, 1])
+                _commit(a["cost"])
+                return True
+        return False
+
     if day <= 27:
+        if cfg.get("animal_first"):
+            _bloque_animal()
         # semillas: para el mejor cultivo del mercado (adaptive) o el deficit del plan
         if cfg.get("adaptive"):
             if adaptive_best and adaptive_need > 0:
                 n = min(adaptive_need, 6)
-                if money > CROP[adaptive_best]["seed"] * n + 100:
+                if _afford(CROP[adaptive_best]["seed"] * n, 100):
                     orders.append(["BUY_SEED", adaptive_best, n])
+                    _commit(CROP[adaptive_best]["seed"] * n)
         else:
             seed_orders = []
             for crop, target in cfg.get("plants", {}).items():
@@ -885,8 +1022,9 @@ def decide(obs, cfg):
                 if cfg.get("phased"):
                     # baratas-primero con tope de gasto: nunca fundir la caja en semillas
                     seed_orders.append(["BUY_SEED", crop, deficit])
-                elif money > c["seed"] * deficit + 100:
+                elif _afford(c["seed"] * deficit, 100):
                     seed_orders.append(["BUY_SEED", crop, deficit])
+                    _commit(c["seed"] * deficit)
             if cfg.get("phased"):
                 seed_orders.sort(key=lambda o: CROP[o[1]]["seed"])
                 budget_seeds = max(150, money * 0.35)
@@ -906,10 +1044,12 @@ def decide(obs, cfg):
             if best:
                 n_empty = sum(1 for row in tiles for t in row if t is None)
                 need = n_empty - seeds.get(best, 0)
-                afford = max(0, int((money - 400) // CROP[best]["seed"]))
+                _cash = money - (_committed[0] if cfg.get("order_funding") else 0.0)
+                afford = max(0, int((_cash - 400) // CROP[best]["seed"]))
                 n = min(need, afford, 12)
                 if n > 0:
                     orders.append(["BUY_SEED", best, n])
+                    _commit(CROP[best]["seed"] * n)
 
         # semillas para el trabajo infinito: cubrir tiles vacías que los ociosos plantarán
         if cfg.get("idle_plant"):
@@ -918,36 +1058,20 @@ def decide(obs, cfg):
             if best:
                 spare = sum(1 for row in tiles for t in row if t is None)
                 n = min(spare - seeds.get(best, 0), 8)
-                if n > 0 and money > CROP[best]["seed"] * n + 300:
+                if n > 0 and _afford(CROP[best]["seed"] * n, 300):
                     orders.append(["BUY_SEED", best, n])
+                    _commit(CROP[best]["seed"] * n)
 
-        # siguiente animal del plan (1 por turno)
-        owned = {}
-        for row in tiles:
-            for t in row:
-                if isinstance(t, dict) and t.get("animal"):
-                    owned[t["animal"]] = owned.get(t["animal"], 0) + 1
-        for an in shed:
-            if an in ANIMAL:
-                owned[an] = owned.get(an, 0) + shed[an]
-        for i in range(n_units):
-            for k in invs[i]:
-                if k in ANIMAL:
-                    owned[k] = owned.get(k, 0) + invs[i][k]
-        owned_total = sum(owned.values())
-        feed_secure = (not cfg.get("phased")) or (
-            planted_count.get("WHEAT", 0) + shed.get("WHEAT", 0) >= owned_total + 1)
-        for animal, count in cfg.get("animals", []):
-            a = ANIMAL[animal]
-            if (owned.get(animal, 0) < count and day <= a.get("last_buy", 22) and feed_secure
-                    and money > a["cost"] + cfg.get("cash_buffer", 200)):
-                orders.append(["BUY_ANIMAL", animal, 1])
-                break
+        # siguiente animal del plan (1 por turno) — salvo que ya se haya
+        # resuelto arriba con animal_first
+        if not cfg.get("animal_first"):
+            _bloque_animal()
 
         # puente de wheat para alimentar
         total_wheat = shed.get("WHEAT", 0) + sum(inv.get("WHEAT", 0) for inv in invs)
-        if hungry > 0 and total_wheat < hungry and money > 30 * (hungry - total_wheat) + 100:
+        if hungry > 0 and total_wheat < hungry and _afford(30 * (hungry - total_wheat), 100):
             orders.append(["BUY_PRODUCT", "WHEAT", hungry - total_wheat])
+            _commit(30 * (hungry - total_wheat))
 
         # tierra
         if cfg.get("buy_land") and len(farm["unlocked_quadrants"]) < cfg.get("max_quadrants", 2):
@@ -956,9 +1080,11 @@ def decide(obs, cfg):
             land_buffer = 1500 if cfg.get("phased") else 600
             if cfg.get("land_early"):
                 # comprar por capacidad planeada (los top: día ~6), no cuando ya no hay tiles
-                if price and money > price + 900 and day >= 4 and day <= 20:
+                if price and _afford(price, 900) and day >= 4 and day <= 20:
                     orders.append(["BUY_LAND"])
-            elif price and money > price + land_buffer and len(empty_tiles) < 6 and day <= 20:
+                    _commit(price)
+            elif price and _afford(price, land_buffer) and len(empty_tiles) < 6 and day <= 20:
                 orders.append(["BUY_LAND"])
+                _commit(price)
 
     return {"farmer": actions[0], "hands": actions[1:], "market": orders[:10]}
