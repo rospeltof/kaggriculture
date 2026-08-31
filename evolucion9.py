@@ -96,12 +96,15 @@ def evaluate(cands, panel, seed0, eps_seeds, steps, procs):
                 jobs.append((opp, c, s, steps)); meta.append((spec_name(c), 1))
     with Pool(procs) as pool:
         res = pool.map(run_episode, jobs)
-    agg = defaultdict(lambda: {"w": 0, "n": 0, "money": 0.0})
+    agg = defaultdict(lambda: {"w": 0.0, "n": 0, "money": 0.0})
     for r, (name, side) in zip(res, meta):
         my, their = r["money"][side], r["money"][1 - side]
         a = agg[name]
         a["n"] += 1
-        a["w"] += my > their
+        # el EMPATE vale 0.5, no 0: el motor es determinista y un cambio inocuo
+        # produce empates exactos que antes se contaban como derrotas (ver
+        # medicion.py y BITACORA 2026-09-05)
+        a["w"] += 1.0 if my > their else (0.5 if my == their else 0.0)
         a["money"] += my
     out = {}
     for name, a in agg.items():
