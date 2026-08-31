@@ -134,3 +134,26 @@ def reportar(res, base_name, titulo=""):
     if not ok:
         print("  >>> NO interpretar los deltas: el instrumento no pasa su propio control.")
     return ok
+
+
+# ---------------------------------------------------------------------------
+# PANEL OFICIAL — validado por sus propios controles el 2026-09-05.
+#
+# Composición: un rival DURO (la cinta barnyard, que nos gana casi siempre),
+# uno PAR (nuestra generación anterior) y uno FÁCIL (rutera). Esa mezcla es lo
+# que da resolución: la base queda en 65.2% (34.8 puntos de margen) y `_peor`
+# se separa a -2.8σ.
+#
+# Los dos paneles que usábamos antes fallan, de forma simétrica:
+#   escalera [camp+rut+int+xl] -> base 97.1%: SATURADO, solo 2.9 pts de margen
+#   duro     [barnyard+v16+int] -> base 30.6%: CIEGO, _peor a -0.6σ
+# Un panel sirve solo si la base está en zona media Y ve una diferencia que
+# sabemos real. Validar ANTES de medir con él; los controles lo dicen solos.
+# ---------------------------------------------------------------------------
+def panel_oficial():
+    import os
+    from bots.arquetipos import CAMPEONA, RUTERA
+    raiz = os.path.dirname(os.path.abspath(__file__))
+    return [os.path.join(raiz, "bots", "sparring_barnyard.py"),
+            ("cfg", "p_camp", dict(CAMPEONA)),
+            ("cfg", "p_rut", dict(RUTERA))]

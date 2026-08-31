@@ -415,3 +415,22 @@ Estado del ladder al enviar: **campeona_season 782.3** (nuevo máximo histórico
 
 - **`order_funding` + `animal_first`**: el chasis comprobaba la caja en cada compra sin descontar lo ya encolado ese turno, así que las semillas se comían el dinero del animal y el `BUY_ANIMAL` se rechazaba en silencio (**47% de rechazos**, medido). Con el fix bajan a 25%. Pero los animales COMPRADOS no cambian (18 en ambos casos): el techo era el target fijo de 8, no la caja. Al arreglar la secuencia, **el orden de armado de órdenes se revela como la política de asignación de capital** — y estaba invertido (animales $191/tile-día contra fresa $46). `animal_first` mueve el bloque del animal delante de las semillas. Primera lectura: **100.0% (108-0) contra 97.2% de la base**, +1.4σ — prometedor, en confirmación.
 - **`herd_demand` (rebaño derivado de la demanda del town): RECHAZADO.** 41.7-50.0% contra 97.2% de la base, muy por debajo del suelo `_peor` (81.5%) — daño real, no artefacto. El scorer sí logra el comportamiento buscado (en un town con dos YARN_STORE elige oveja y rechaza vaca), pero el rebaño grande no paga con nuestra ejecución: 12 peones ya saturados de riego. Queda gateado y apagado. Dos bugs propios corregidos en el camino: un `NameError` (`me` en vez de `obs["player"]`) que paralizaba al bot desde el día 6, y un modelo de precio que restaba el drenaje del town de TODA la temporada, fingiendo escasez y comprando 14 vacas en monocultivo (corregido con `herd_drain_days`, horizonte de 8 días como el scorer de cultivos).
+
+## 2026-09-05 (2) — El panel también estaba roto, y de dos formas opuestas
+
+Con el medidor arreglado, los dos paneles que usábamos fallan **simétricamente**:
+
+| panel | base | diagnóstico |
+|---|---|---|
+| escalera [camp+rut+int+xl] | **97.1%** | SATURADO por arriba: 2.9 pts de margen para detectar mejoras |
+| duro [barnyard+v16+int] | **30.6%** | CIEGO por abajo: `_peor` a −0.6σ, no ve una diferencia conocida |
+
+El panel duro fue rechazado **por el control automático**, no por mi criterio: el reporte imprimió `[¡CIEGO!]` y `NO interpretar los deltas`. Sin él habría concluido "funding es neutro contra rivales fuertes" a partir de un panel sin autoridad para decir nada.
+
+**Un panel sirve solo si (a) la base está en zona media y (b) VE una diferencia que sabemos real.** Probé 4 composiciones y las que mezclan un rival DURO + uno PAR + uno FÁCIL quedaron en la zona correcta a −1.7/−1.8σ (les faltaba n, no calidad).
+
+**PANEL OFICIAL validado** (`medicion.panel_oficial()`): **[barnyard + CAMPEONA + RUTERA]**, 45 seeds — base **65.2%** (34.8 pts de margen), `_noop` 65.2% (+0.0σ ✓), `_peor` **50.0% (−2.8σ ✓ discrimina)**. De aquí en adelante el panel se valida ANTES de medir con él.
+
+**Consecuencia sobre las mediciones de hoy:** `funding` (+1.0σ) y `season_aware` (−1.0σ) se midieron en el panel escalera saturado, donde solo había 2.9 puntos de rango — ninguna de las dos lecturas tenía potencia real. Re-medidas con el panel oficial junto al resto de la cuarentena (`work_steal`, `fert_pickup`).
+
+**Lección de método, la más cara de la semana:** durante días optimizamos contra un espejo (que solo mide distancia a nuestro propio óptimo local) o contra bots que ya vencíamos (sin margen). El bot no se estancó por falta de ideas: **el termómetro no distinguía**. Elegir el panel a ojo y descubrir su sesgo después de concluir es el error de fondo; ahora el panel se somete a sus controles primero y el reporte se autodiagnostica.
