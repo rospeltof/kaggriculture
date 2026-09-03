@@ -1,5 +1,651 @@
 # Bitácora de experimentos
 
+## 2026-09-03 (2) — `seed_stock_aware`: ADOPTADO (+6.4, t=+2.62 confirmado)
+
+**Cambio de instrumento:** en vez de leer replays, inspeccionar el **estado
+terminal** de la partida y preguntar *"¿qué compramos y nunca usamos?"*.
+48 episodios de `campeona_fase`, dos fugas duras:
+
+| fuga | medida |
+|---|---|
+| semillas compradas y jamás sembradas | **40.3 uds = $2.005/partida** |
+| plantas cosechables en pie al cerrar | 10.9 |
+
+**Causa raíz de la fuga de semillas — desajuste de unidades en el chasis.**
+`deficit` cuenta **tiles** (global, cualquier cultivo), pero la compra sólo
+descontaba el stock del cultivo `best` de HOY:
+
+```python
+adaptive_need = max(0, deficit - seeds.get(best, 0))   # <- solo `best`
+```
+
+Cada vez que `best` rota, el lote anterior deja de contar y se compra uno nuevo
+**para las mismas tiles**. Por eso el melón era el peor ($867): es la semilla
+cara que más rota como `best`. El mismo defecto estaba duplicado en `idle_plant`.
+
+**Arreglo (`seed_stock_aware`):** descontar el stock TOTAL de semillas aún
+plantables hoy, en los dos sitios que compran.
+
+| | base | con el arreglo |
+|---|---|---|
+| semillas sobrantes | 40.3 | **20.6** |
+| $ muertos | $2.005 | **$551** |
+| melón / fresa | $867 / $665 | $90 / $133 |
+
+**Panel de 40 — descubrimiento y confirmación en semillas DISJUNTAS:**
+
+| corrida | seeds | pares | delta | sd | t |
+|---|---|---|---|---|---|
+| descubrimiento | 91000–91003 | 160 | +6.6 | 44.6 | +1.86 |
+| **confirmación** | **91100–91107** | **320** | **+6.4** | **43.7** | **+2.62** |
+
+El efecto replicó casi exacto en semillas que no participaron en su
+descubrimiento → no era winner's curse. **Campeón: `CAMPEONA_GRANO`**
+(= `CAMPEONA_FASE` + `seed_stock_aware`). Segundo efecto más grande jamás
+medido, sólo por detrás de `fert_dawn_load` (+12.8).
+
+**Van 8 de 8: todas las ganancias han salido de incoherencias internas del
+chasis, ninguna de ideas estratégicas ni de copiar al meta.**
+
+### `endgame_reap` RECHAZADO — y el diagnóstico era malo
+
+delta +0.0 con **sd = 0.0**: la bandera nunca llega a morder. La puse en la rama
+`if ready:` de los cultivos de un solo corte, donde el riego pre-cosecha exige
+`not overdue`, o sea `age == peak` EXACTO — casi ninguna planta cumple eso el
+día 29. Y sobre todo: las 10.9 plantas en pie **no son de un solo corte** (a
+esas el código ya les da `HARVEST` a prio 85 cuando se pasan), son **continuas**
+(fresa/tomate), que viven en la rama `else` que el parche ni toca. Esa fuga es
+de **capacidad de mano de obra el último día**, no de prioridades. Sigue abierta.
+
+### ⚠️ REGLA NUEVA: `sd = 0.0` significa "no se ejecutó", no "no sirve"
+
+Tercera vez con esta firma (`hands_cap 14`, `fase_noop2`, `endgame_reap`). Un
+arm que sale **idéntico** al base en las 160 celdas no es un resultado nulo, es
+un **test nulo**: el mecanismo no cambió ni una decisión. Antes de leer un
+"+0.0" como rechazo, comprobar que la bandera dispara.
+
+---
+
+## 2026-09-03 — Cuarentena cerrada: no había nada que rescatar
+
+**El motivo:** varios mecanismos se rechazaron con paneles que después
+resultaron rotos o saturados. El bug de `medicion.py` sólo producía FALSOS
+NEGATIVOS, así que en principio podía haber ideas buenas enterradas por error.
+Re-medidos los cinco contra el panel de 40 rivales reales (2.560 episodios):
+
+| mecanismo | panel 40 | delta | t | veredicto |
+|---|---|---|---|---|
+| `_noop` | 56.9% | +0.0 | — | control ✅ |
+| `work_steal` | 29.7% | **−27.2** | **−7.67** | veneno confirmado |
+| `fert_pickup` | 57.5% | +0.6 | +1.00 | nulo |
+| `season_aware` | 55.3% | −1.6 | −0.50 | nulo |
+| `sheep6` | 49.4% | −7.5 | −1.91 | negativo |
+| `hands_cap 14` | 56.9% | +0.0 | — | **NO DISPARA** |
+| `campeona_fb` (ref. externa) | 38.1% | −18.8 | −6.06 | coherente ✅ |
+
+**Los cinco rechazos originales eran correctos.** La asimetría del bug era real
+como propiedad del bug, pero en la práctica no había nada bueno enterrado.
+
+**`hands_cap=14` es un test nulo, no un resultado nulo.** Lee +0.0 con sd = 0.0,
+es decir no cambia ni una sola decisión: el tope efectivo lo pone
+`hands_per_quadrant × 3 = 12`, así que la bandera nunca llega a morder.
+Cuidado con leer "sd = 0" como "sin efecto": significa "sin ejecución".
+
+**`fert_pickup` pasó de dañino a nulo** — ahora tiene sentido: `fert_dawn_load`
+ya resuelve la logística que `fert_pickup` intentaba resolver caminando al shed.
+**`season_aware` sigue siendo redundante** tras `fallback_fix`, como decía la
+entrada original.
+
+Con esto queda cerrada la cola entera de ideas pendientes de la bitácora.
+
+---
+
+## 2026-09-02 (2) — El panel de 40 rivales REALES: el instrumento que sí ordena como el Elo
+
+**El problema que lo motiva:** el ladder no reproducía nuestro orden local.
+`ruta` ganaba 90-10 a `alba` en el panel de 5 cintas y en el ladder estaban
+empatadas (844.9 vs 846.6).
+
+**Diagnóstico: el panel de 5 estaba SOBREAJUSTADO por construcción.** Se eligieron
+por tener resolución (celdas 25-75%), y eso es seleccionar los rivales donde
+nuestras diferencias se amplifican — selección sobre el estadístico que se mide.
+
+| bot | Elo real | panel 5 (seleccionado) | **panel 40 (completo)** |
+|---|---|---|---|
+| campeona_ruta | 844.9 | **61.6%** | 51.6% |
+| campeona_alba | 846.6 | 46.0% | 54.7% |
+| campeona_fase | 826.4 | — | 56.9% |
+
+El panel de 40 (todos los rivales de una submission, sin seleccionar) reproduce el
+empate del ladder; el de 5 no. Herramientas: `extraer_todos.py`, `panel40.py`.
+`METODO.md` §5 corregido.
+
+**RE-MEDICIÓN DE LAS 4 ADOPCIONES (ablación leave-one-out, 160 pares):**
+
+| apagar | delta | sd | t | el mecanismo vale |
+|---|---|---|---|---|
+| `_noop` | +0.0 | 0.0 | — | control ✅ |
+| `sell_floor 0` | −3.1 | 15.5 | **−2.54** | **+3.1** ✅ |
+| `fert_dawn_load` | −12.8 | 34.2 | **−4.74** | **+12.8** ✅ |
+| `fert_phase_lock` | −2.5 | 18.4 | −1.72 | +2.5 marginal |
+| **paquete `ruta`** | **+5.3** | 45.8 | +1.47 | **−5.3, NO significativo** |
+| `campeona_fb` (Elo 787.3) | −13.4 | 48.1 | −3.53 | referencia externa ✅ |
+
+**Convergencia:** los dos únicos que pasan t>2 (`sell_floor 0` y `fert_dawn_load`)
+son exactamente los que lleva `CAMPEONA_ALBA`, la submission con más Elo (846.6).
+El instrumento local y el externo por fin coinciden.
+
+**El paquete `ruta` no está probado como dañino (t=+1.47) pero NUNCA demostró
+ayudar con instrumento válido.** Por nuestra propia regla (t>2) no debió adoptarse.
+Predicción escrita antes de ver el número: fallé en las dos direcciones — esperaba
+que el paquete sobreviviera "porque arregla bugs verificados" y sospechaba de
+`fert_phase_lock`. *Lección: arreglar un bug verificado NO garantiza mejorar.*
+
+**`buy_feed` (la #1 de la cola pendiente) — DESCARTADO, −34.4 pts (t=−8.61).**
+El mayor negativo de la sesión, peor que retroceder tres generaciones. El mecanismo
+funciona como se diseñó (trigo plantado 64 -> 2, fresa 11 -> 69) pero mete los 290
+tile-días liberados en FRESA, que toca el piso de $1 a las ~100 unidades: valen los
+~$25 del margen, no los $93.6 del precio base. Y encima perdemos el trigo como
+producto vendible, **el único sumidero sin fondo del juego** (a +450 sigue a $19.9).
+*La aritmética de la cola valoraba al margen equivocado — mismo error que `crop_max`.*
+`herd_scale` decae con él (la bitácora lo condicionaba a que buy_feed funcionara).
+
+**ERROR PROPIO GRAVE — parche mal indentado.** El primer `buy_feed` dejó huérfano
+un `_commit` dentro del bloque nuevo y, peor, su `if` a indentación 4 CERRÓ el
+bloque contenedor, cambiando la condición de la compra de tierra. La base se
+desplomó de 56.9% a 15.6% y por un momento pareció que `campeona_fb` superaba a
+`campeona_fase`. **Lo detectó el brazo `_noop`, que leía 15.6% igual que la base:
+si el control se mueve, lo roto es el instrumento, no el candidato.** Corregido y
+verificado (la base vuelve a 56.9% exacto). Es la segunda vez en el día que un
+control de este tipo evita una conclusión falsa.
+
+## 2026-09-02 — El plan de apertura: FRENTE CERRADO, y dos errores de método propios
+
+**Contexto:** con el ladder asentándose a ~1 episodio/2h y 28 días de plazo, se
+decidió no esperar la validación externa y atacar la **optimización offline de la
+trayectoria** (la "Opción A" que la bitácora identificó hace semanas).
+
+**La descomposición que la hace viable:** medido sobre las 12 partidas del top-1,
+**el 83% de las acciones de unidad no miran al rival** (MOVE 43.9% + campo 39.5%).
+El campo es casi un problema de UN jugador y admite optimización offline; sólo el
+mercado interactúa (máx 10 órdenes/turno). Por eso funcionan las cintas.
+
+**Mecanismo `opening_plan`** (gateado): para los días <= `plan_until` las órdenes
+de COMPRA las dicta un calendario; ventas, HIRE, rutas y reparación siguen siendo
+del chasis. Barrido del horizonte (10 seeds, vs cinta ahmad_ali):
+
+| plan_until | dinero medio | delta |
+|---|---|---|
+| base (sin plan) | $85,105 | — |
+| día 0 | $85,105 | **+0** (control exacto: el mecanismo no mete ruido) |
+| día 2 | $86,960 | +1,855 |
+| día 4 | $87,971 | +2,866 |
+| día 12 | $79,882 | **−5,223** |
+
+Congelar de más DESTRUYE adaptación que sí vale. El horizonte útil es 0-4.
+
+**LA COMPROBACIÓN PREVIA QUE CANCELÓ LA BÚSQUEDA.** Antes de gastar horas se midió
+cuánto puede moverse la palanca: 6 aperturas aleatorias razonables (3-6 animales,
+4-10 lotes de semillas en d0-d4, todas dentro de presupuesto) contra la nuestra,
+panel de 5 cintas:
+
+| plan | win-rate |
+|---|---|
+| **BASE (nuestro scorer)** | **50.0%** |
+| rnd0 / rnd3 | 6.0% / 4.0% |
+| rnd1, rnd2, rnd4, rnd5 | **0.0%** |
+
+**Amplitud 50 puntos, y las seis aleatorias se hunden.** La apertura es una palanca
+enorme pero de UN SOLO SENTIDO: se puede destrozar la partida, pero nuestro scorer
+ya está en la meseta buena. La superficie no es una colina que subir sino una
+meseta estrecha rodeada de acantilados — por eso el hill-climbing rechazó 248 de
+250 mutaciones. **Frente cerrado**, y con él el punto ciego (a) del BRIEFING
+("la secuencia de apertura de los días 0-2").
+
+**Error de método 1 — winner's curse en el hill-climber.** El buscador guardaba la
+puntuación del titular como estimación ÚNICA sin re-evaluarla. Cuando it018 sacó
++10.8 con t=1.46 (por debajo del listón), ese 67.5% quedó congelado como referencia
+y las 232 iteraciones siguientes competían contra un número inflado por suerte. Al
+re-medir en seeds frescos, la ganancia real era **+$1,360, dentro del ruido**, no
++17 puntos. *Lección: con evaluación ruidosa hay que re-evaluar al titular cada
+iteración, o el primer golpe de suerte congela la búsqueda.*
+
+**Error de método 2 — se repitió el incidente del 2026-08-26.** Se lanzó
+multiprocessing SIN `if __name__ == "__main__"` y se provocó una tormenta de spawns
+en macOS: **384 MB de tracebacks**. La bitácora ya decía "Guard SIEMPRE" y aun así
+ocurrió. Corregido y verificado en `buscar_apertura.py` y en los scripts auxiliares.
+
+**Riesgo evitado por poco — cintas sobrescritas.** Al minar las derrotas de
+CAMPEONA_ALBA, `reconstruir.py` reescribió `axel_ahmer`, que es una cinta ACTIVA
+del panel v2 extraída de CAMPEONA_FB. Detectado y restaurado (el panel vuelve a
+leer 50.0% exacto); la nueva quedó como `axel_ahmer_b`. *El extractor nombra por
+slug del rival: dos episodios del mismo rival colisionan silenciosamente.*
+
+**Panel ampliado** con 6 cintas nuevas de las derrotas de ALBA (todas validadas
+EXACTAS): demon_ji, umkaaa, caminolsy, tatsuhito_yoshikawa, patwid, axel_ahmer_b.
+
+**Estado del ladder:** campeona_ruta 844.9 (41 eps), campeona_alba 846.6 (48),
+campeona_fase 826.4 (48). **El ladder NO reproduce el orden local** (ruta gana
+90-10 a alba y 78-22 a fase en el panel). Causas posibles sin distinguir: pocos
+episodios, cintas ciegas, o ruido de Elo (±30-40). Sigue abierto.
+
+## 2026-09-01 — CAMPEONA_FASE + el diagnóstico de "acciones por parada" FALSADO
+
+**Nueva campeona: `CAMPEONA_FASE` = ALBA + `fert_phase_lock`.** `_fert_due` aceptaba
+NUEVE edades seguidas en la fresa (8..16) cuando solo DOS pagan: el motor
+(kaggriculture.py L777-800) tickea con `next_day`, así que el riego que cobra el x2
+es el de la VÍSPERA del tick (edades 9,11,13,15). Fertilizar en 9 y en 13 cubre los
+cuatro ticks con dos aplicaciones. Verificado: fresa 9 edades -> [9,13]; tomate -> [7,10].
+
+| medición | resultado |
+|---|---|
+| panel de 5 cintas | **+8.0 pts, t=+2.75** (200 eps), positivo en las 5 celdas |
+| head-to-head vs ALBA | **94-6 = 94.0%** (IC95 [88%,97%], 100 eps) |
+| controles | `_noop` +0.0 · `_peor` −38.5 |
+| efecto | FERTILIZE 95 -> **68** y fresa 254u sobre 54 plantas (4.70/planta) |
+
+**Acumulado del ciclo: `CAMPEONA_FASE` 80-0 (100.0%) contra `campeona_fb`**
+($93,282 vs $79,804). Cadena: fb -> `sell_floor 0` -> `fert_dawn_load` -> `fert_phase_lock`.
+
+Descartado en la misma tanda: `idle_best_only` (−2.5, t=−0.44).
+
+---
+
+**FALSADO: "acciones productivas por parada" NO es el objetivo.**
+
+| bot | prod/parada | paradas de 4 | prod/move | WR panel |
+|---|---|---|---|---|
+| cinta C95 | 1.85 | 203 | 1.03 | — |
+| campeona_fb | 1.45 | 60 | 0.81 | — |
+| campeona_alba | 1.53 | 55 | 0.85 | 73.0% |
+| **campeona_fase** | **1.49** | **46** | 0.84 | **81.0%** |
+
+**La campeona nueva es la MEJOR en win-rate y la PEOR en paradas de 4.** Causa:
+`fert_phase_lock` QUITA fertilizaciones (95 -> 68); las 27 eliminadas no cubrían
+ningún tick pagador. **La métrica cuenta acciones, no valor**: optimizarla empuja a
+hacer más trabajo inútil por visita. El 1.85 de la cinta es CONSECUENCIA de su
+granja, no causa de su éxito — copiar el estadístico habría sido cargo-culting.
+Coherente con que `harvest_at=1`, que SÍ sube la métrica, midiera +0.0 exacto.
+
+Queda como correlato de diagnóstico, nunca como objetivo. **Cuarta explicación del
+foso caída en dos días** (riego, bundling, tamaño de rebaño, acciones por parada).
+
+**Nota de proceso (feedback del usuario):** de los 13 agentes del primer workflow
+salió UNA mejora (`fert_dawn_load`, la mayor del día); el segundo se cortó en 3/6
+lentes. `fert_phase_lock` costó CERO agentes — salió de una lente cacheada,
+implementada y medida con el harness. El cuello ya no es generar ideas (la cola
+está llena: `melon_head`, `shed_access_reservado`, gate de `herd_demand`) sino
+MEDIRLAS: `herd_demand` necesita ~420 pares y tiene 225.
+
+## 2026-08-31 (4) — Teardown del notebook "from zero to top meta": la cinta C95 decodificada
+
+**Hallazgo de material.** El notebook de Rayk Kretzschmar
+(`kaggriculture-findings-from-zero-to-top-meta`) no es solo prosa: las celdas 46/51/54
+llevan **el fuente completo de tres agentes del top meta** (C92, C94, C95) en
+base64+zlib, y dentro de C95 va `_TRACE`, **la cinta exacta de 720 turnos** de
+Lev Neganov episodio 91587143 player 1. Todo decodificado en `bots/meta/`.
+
+**Rival de panel nuevo y real.** `bots/meta/c95_main.py` corre limpio en 1.32.7:
+$175,142 vs starter. Contra `campeona_fb`: **0-24, $76.7k vs $113.1k** (24 eps).
+Es la pieza que le faltaba al panel: fuerte, discriminante y no endogámico.
+`campeona_noop` leyó **idéntico** a la base ($79,400, misma sd) — el brazo de
+control sigue sano tras todos los parches de hoy.
+
+**La cinta, medida (determinista, de `trace_c95.json`):** 10 vacas + 4 ovejas,
+0 gansos; 3 cuadrantes (NE día 6 step 160, SW día 10 step 240, nunca SE);
+peones en RAMPA 4/1/2/3/3/3/4/7/6/7 y luego 8-14 (media 8.3, no plano);
+apertura step 0 = HIRE x4 + COW 1 + **SHEEP 4** + 5 semillas wheat + 5 melón +
+5 wheat de producto (~$2,900 de $3,000); siembra 138 WHEAT (13-15/día desde el
+día 19), 37 STRAWBERRY, 18 MELON, **cero carrot y cero tomate**; 301
+COLLECT_FERTILIZER, 72 FERTILIZE (≈2 por fresa) y 242 fertilizer vendidos;
+CARE se corta el día 27 y FEED el 28 (abandono deliberado del rebaño).
+Fresa: 299 unidades sobre 37 plantas = **7.87/planta** (el máximo teórico con
+los 4 ticks duplicados es 8). Nosotros: 220 sobre 65 = **3.38/planta**.
+
+**Mezcla de acciones, misma seed, mismo formato:**
+
+| | cinta C95 | campeona_fb |
+|---|---|---|
+| unit-turns | 6,716 | 7,286 |
+| MOVE | 42.8% | 52.5% |
+| WATER | 15.1% | **19.4%** (el 51% del briefing es de una versión vieja) |
+| PASS | 15.4% | 10.5% |
+| **productivas / movimiento** | **0.98** | **0.70** |
+
+**El hecho económico que reordena la lista de fallidos.** Precio tras vender N
+unidades a mercado fresco (`_price_at`): WHEAT 25 -> 19.9 a +450 (¡80% del base!);
+FERTILIZER 100 -> 60 a +200; MELON 250 -> 1 a +200; **STRAWBERRY, WOOL y MILK
+tocan el piso de $1 a las ~100 unidades**. Integrando las curvas sobre lo que
+vendió cada uno, la descomposición del gap: WHEAT **+$7,409**, MELON **+$5,379**,
+FERTILIZER **+$4,568**, y MILK/WOOL/STRAWBERRY **+$127/+$128/+$115**.
+Sus 6 vacas de más valen $127; sus 79 fresas de más valen $115.
+*Esto no contradice la lista de fallidos: la explica.* Escalar el rebaño falló
+tres veces porque la leche marginal vale $1, no por falta de ejecución.
+
+**Siete hipótesis estructurales sacadas de la cinta.** *(Corrección de instrumento: la
+primera lectura fue por MEDIAS CRUDAS, con sd $18k y ±$6-8k de banda — no resolvía
+nada. El test correcto es el PAREADO por seed espejado, que es lo que prescribe el
+propio aparato: la sd cae a $0.5-2.2k y ahí sí hay veredicto. `_noop` leyó delta
+exactamente 0 con sd 0.)*
+
+| mecanismo | delta pareado | sd(par) | t | veredicto |
+|---|---|---|---|---|
+| `water_cadence` | −$20,566 | — | — | **negativo duro** |
+| `crop_max` fresa 8 | −$1,220 | 11,714 | −0.29 | **INCONCLUSO** (no negativo) |
+| `sell_marginal` 0.4 | −$591 | 1,341 | −1.25 | negativo débil |
+| `sell_marginal` 0.5 | −$965 | 1,522 | −1.79 | negativo |
+| `sell_marginal` 0.6 | −$3,430 | 2,230 | **−4.35** | **negativo duro y monótono** |
+| `sell_floor` 0 | **+$506** | 829 | **+1.72** | **positivo débil** |
+| `sell_floor` 0.2 | −$6 | 547 | −0.03 | nulo |
+| `drop_deposit` v2000 | −$18 | 173 | −0.29 | no dispara nunca |
+| `drop_deposit` v1000 | −$5,973 | 7,564 | −2.23 | negativo |
+
+La monotonía de `sell_marginal` (t=−4.35 en el piso más alto) confirma
+"correr, no aguantar". `crop_max` NO quedó refutado: su sd pareada es $11.7k
+porque cambia la granja entera; necesita n real.
+
+**Detalle antiguo (medias crudas, conservado para trazabilidad):**
+(8 seeds espejados = 16 eps c/u, dinero vs C95; base $79,400):
+
+| mecanismo | resultado | nota |
+|---|---|---|
+| `water_cadence` (regar sólo si paga: ventana de one-time, víspera de tick fertilizado, o cu>=1) | **$58,834** | mató las muertes (46.5->10.0) y los riegos perdidos (14.5->2.5) y AUN ASÍ perdió: productivas 2,724->2,310, movimiento 3,780->4,736 |
+| `crop_max` fresa 8 / 12 | $78,180 | **reprodujo la mezcla exacta de la cinta** (137 wheat / 36 fresa vs sus 138/37) y el dinero no se movió |
+| `hire_by_work` (plantilla al ritmo del trabajo) | $48,439 (1 seed) | la curva salió 1/1/2/4/5/5/5/5/6/8/12, parecida a la cinta, pero el proxy de trabajo no ve el setup del día 0 |
+| `sell_marginal` 0.4 / 0.5 / 0.6 | $78,809 / $78,434 / $75,970 | acotar cada orden para que la unidad marginal supere el piso |
+| `sell_floor` 0 / 0.2 | $79,905 / $79,394 | quitar el piso |
+
+**Las dos lecciones metodológicas del día:**
+
+1. **El riego no era un impuesto sobre el presupuesto de acciones: era la carga
+   útil que amortizaba las caminatas.** Quitar los riegos que el motor no paga
+   subió el movimiento a 66% y bajó las productivas. El cuello no es cuántas
+   acciones gastamos sino **cuánto trabajo hay por visita**.
+2. **En un mercado compartido en lockstep, aguantar inventario se lo regala al
+   rival.** La columna de C95 sube monótona con nuestro pacing:
+   $114.6k (base) -> $116.3k (floor 0.5) -> $118.4k (floor 0.6). Por eso el autor
+   del notebook dejó `_RESERVE = {}` y `_RACE_WEIGHT = 0.0`: toda su maquinaria de
+   reserve-price con forecast de drenaje del town está **en el código y apagada**.
+   Lo que sí deja encendido es `_SORT_KEY='impact'` — correr, no aguantar.
+
+**Conclusión.** La composición y la política de mercado **no transfieren**: es el
+hallazgo de LN_CLONE otra vez, ahora con el agente meta real y a grano mucho más
+fino. El foso es la capa de ejecución, cuantificado como **0.70 vs 0.98
+productivas por paso**. Todos los mecanismos de hoy quedan gateados y apagados en
+`CAMPEONA_FB`, que sigue leyendo idéntico.
+
+**SUBMISSION 55924018 — `campeona_alba` al ladder.**
+
+Empaquetada con `empaquetar.py CAMPEONA_ALBA` y verificada con las tres pruebas
+que exige la historia del repo (el bug del orden de dict de 2026-08-19):
+
+1. **Espejo** `submission/main.py` vs el módulo: 8-8-4 con **dinero idéntico y
+   misma sd** ($74,561 en ambos lados). Es la firma correcta de agentes iguales
+   —cada seed se juega dos veces con lados invertidos— y no el 8-0 imposible que
+   delató el bug antiguo.
+2. **Fidelidad byte a byte**: **0 de 2,157 decisiones distintas** entre
+   `submission/main.py` y `bots.arquetipos:campeona_alba`.
+3. Self-play DONE/DONE y humo vs starter $129,036.
+
+Descripción con `campeona_alba` como PRIMER TOKEN, que es lo que `bajar_replays.py`
+usa para separar carpetas: sin eso los replays caerían en `CAMPEONA_FB/` — justo la
+mezcla de generaciones que ese guard existe para evitar.
+
+**Par activo ahora: `campeona_alba` (55924018) + `campeona_fb` (55876067, 805.7).**
+`campeona_season` sale del matchmaking. El incumbente queda vivo como control: el
+ladder arbitra el A/B directamente.
+
+**Cómo leerlo (y cómo NO).** Toda submission arranca en 600 y necesita ~50-90
+episodios para asentarse. El notebook del meta documenta el caso extremo: dos
+copias con el MISMO SHA-256 acabaron en 2182.2 y 1210.1 por puro camino de
+oponentes y asientos, y la segunda subió a 1865.6 sin tocar código. **No leer las
+primeras 24 h.** El criterio es el rating asentado contra los 805.7 de campeona_fb,
+no el número de mañana temprano.
+
+**Predicción falsable, para no engañarnos después:** si `fert_dawn_load` y
+`sell_floor=0` transfieren al meta real, `campeona_alba` debería asentarse
+CLARAMENTE por encima de 805.7. Si se asienta en la banda 780-830 el resultado es
+nulo y la ganancia local era específica de las cintas del panel (rivales CIEGOS,
+que no reaccionan a que vendamos antes) — una hipótesis muy viva, porque el
+mecanismo `sell_floor=0` explota exactamente eso. Si baja de 780, revertir.
+
+**CAMPEONA FINAL DEL DÍA: `CAMPEONA_ALBA` = CARRERA + `fert_dawn_load`.**
+
+Re-medición de los tres mecanismos mal juzgados, sobre CARRERA y el panel válido
+(200 eps por brazo):
+
+| variante | takahirohon | ahmad_ali | artfix | masih_pemula | uman_n3l | MEDIA | delta | t | veredicto |
+|---|---|---|---|---|---|---|---|---|---|
+| CARRERA (base) | 37.5% | 55.0% | 47.5% | 72.5% | 75.0% | 57.5% | — | — | — |
+| +`crop_max` fresa 8 | 32.5% | 42.5% | 32.5% | 70.0% | 52.5% | 46.0% | −11.5 | −2.82 | descartar |
+| +`hinge_forecast` | 30.0% | 52.5% | 32.5% | 70.0% | 65.0% | 50.0% | −7.5 | −2.89 | descartar |
+| **+`fert_dawn_load`** | **57.5%** | **85.0%** | **77.5%** | 65.0% | **80.0%** | **73.0%** | **+15.5** | **+3.70** | **ADOPTAR** |
+
+Confirmación head-to-head (100 eps, seeds 41000): **90-10 = 90.0%** (IC95 [83%,94%])
+contra CAMPEONA_CARRERA, con `_noop` en **33-33-34 = 50.0%** exacto y dinero idéntico.
+Aquí el dinero TAMBIÉN sube ($87,198 vs $80,541): contra un rival que no es C95 el
+intercambio fertilizante->fresa sí paga.
+
+**El mecanismo.** Ejecutábamos los ONE-TIME al 100% (melón 6.00 u/planta de 6) y los
+ONGOING al 42% (fresa 3.38 de 8). `_service_ops` gatea FERTILIZE en `has_fert` y la
+unidad llegaba a la fresa con las manos vacías. No es el `fert_pickup` que falló:
+aquel caminaba al shed A MEDIA RUTA y rompía la localidad de la serpentina. Aquí no
+hay viaje — por S1.1/S6.2 el motor GARANTIZA que al amanecer toda unidad está en una
+tile de acceso al shed, así que un solo PICKUP carga la cuota del día.
+Efecto medido: FERTILIZE 25 -> 95, fresa **3.38 -> 4.63 u/planta**, melón 90 -> 114
+unidades (el mismo 114 de la cinta del meta).
+
+**Cadena del día:** CAMPEONA_FB -> +`sell_floor 0` (CARRERA) -> +`fert_dawn_load` (ALBA).
+**ALBA vs CAMPEONA_FB: 96-4 = 96.0%** (IC95 [90%,98%]), $89,996 vs $81,493, 100 eps.
+
+**Lo que NO cambió, y hay que decirlo.** Contra C95 seguimos **0-16** y con el mismo
+dinero que esta mañana ($78,258 contra $79,400 de la base — dentro del ruido). La
+ganancia del día es real contra rivales de NUESTRA banda y no acorta la distancia
+con el top del meta. El foso de ejecución (0.70 productivas por paso contra 0.98)
+sigue intacto.
+
+**Y el aviso metodológico repetido dos veces en un día:** `fert_dawn_load` leía
+−$3,879 en la lente de dinero contra C95 y yo lo reporté como negativo con una
+explicación aritmética correcta al dólar (convierte fertilizante de $85 en fresa de
+$25). La aritmética era cierta y la conclusión falsa: la caja baja y los DUELOS
+suben. Dos mecanismos adoptados hoy, los dos rescatados de un descarte por lente
+equivocada.
+
+**NUEVA CAMPEONA: `CAMPEONA_CARRERA` = CAMPEONA_FB con `sell_floor = 0`.**
+
+Primer mecanismo del proyecto validado sobre un panel que pasa sus propios
+controles. Resultados sobre las 5 cintas reconstruidas (20 seeds espejados por
+celda = 200 episodios por brazo, seeds 31000):
+
+| brazo | takahirohon | ahmad_ali | artfix | masih_pemula | uman_n3l | MEDIA | delta | t |
+|---|---|---|---|---|---|---|---|---|
+| base | 32.5% | 52.5% | 40.0% | 65.0% | 75.0% | **53.0%** | — | — |
+| `_noop` | 32.5% | 52.5% | 40.0% | 65.0% | 75.0% | **53.0%** | **+0.0** | — |
+| **`sell_floor 0`** | 37.5% | 55.0% | 47.5% | 72.5% | 75.0% | **57.5%** | **+4.5** | **+2.23** |
+| `_peor` | 22.5% | 40.0% | 7.5% | 30.0% | 72.5% | **34.5%** | −18.5 | −3.32 |
+
+`_noop` +0.0 en las CINCO celdas; `_peor` negativo en las CINCO. El candidato sube
+en 4/5 y no baja en ninguna. Más el head-to-head: **77-21-2 = 78.0%** contra
+CAMPEONA_FB (IC95 [69%,85%], 100 eps) con `_noop` en 50.0% exacto.
+
+**El mecanismo, en una frase:** en un mercado compartido en lockstep aguantar
+inventario se lo regala al rival. `sell_floor` decidía NO vender con el precio bajo
+y el rival vendía dentro del precio que nosotros sosteníamos. Evidencia directa: al
+subir nuestro pacing el dinero de C95 subía monótono ($114.6k -> $116.3k -> $118.4k)
+mientras el nuestro bajaba. Es la misma conclusión del autor del notebook: su
+reserve-price con forecast de drenaje está escrito y **enviado apagado**
+(`_RESERVE = {}`, `_RACE_WEIGHT = 0.0`); lo único encendido es `_SORT_KEY='impact'`.
+
+**Lección de método (la más cara del día).** Este mecanismo leía **+$506 (t=1.72)**
+en la lente de dinero contra C95 y estuvo a punto de descartarse. En win-rate contra
+panel diverso son +4.5 pts (t=2.23) y +28 pts cara a cara. El Elo paga W/L/T, no
+margen. Los otros once mecanismos del día se juzgaron con la lente de dinero: los
+negativos duros se sostienen, pero `crop_max`, `hinge_forecast` y `fert_dawn_load`
+quedaron descartados por un instrumento ciego y se re-miden sobre la campeona nueva.
+
+**PANEL NUEVO: rivales reales del ladder reconstruidos como cintas.**
+
+Bajados los **54 replays de campeona_fb (submission 55876067) y de ninguna otra**
+(`bajar_replays.py --activas 2` habría mezclado campeona_season; se fue directo al
+ID). Marcador real: **27V 26D 1E = 50.9%**. El episodio 102802012 es contra
+"Rospel" — espejo contra nosotros mismos, empatado al centavo: buen control de que
+el clasificador acierta el lado.
+
+**Bug del extractor (costaba el experimento entero).** En el replay DESCARGADO la
+acción del índice t es la que YA se aplicó para llegar a ese estado, no la que se
+toma desde él. Sin corregirlo la simulación va un turno por detrás y la granja
+colapsa: $12,470 contra los $85,804 reales — el mismo síntoma que el handicap
+sintético, y se habría leído como "las cintas no sirven". La firma que lo delata es
+que la curva de dinero cumple `sim[t] == real[t-1]`. Con `shift=1`:
+
+| episodio | rival | real (yo/rival) | extracción | vs bot vivo |
+|---|---|---|---|---|
+| 104210270 | Uman_n3l | 82,068/85,804 | **EXACTA** | 82,068/85,804 |
+| 102861914 | Zihao Zeng | 62,672/70,020 | **EXACTA** | 62,672/70,020 |
+| 102819471 | ArtFix | 105,116/113,804 | **EXACTA** | 105,116/113,804 |
+| (8 de 8) | | | **EXACTA** | idéntico |
+
+Cero turnos divergentes en los 720. **Validación extra no buscada: nuestro
+campeona_fb LOCAL reproduce el marcador del ladder al centavo -> el bot local es
+idéntico al subido.**
+
+**Perfil del panel en seeds frescos (n=20 espejados, seeds 21000):**
+
+| cinta | nuestro WR | nuestro $ | su $ |
+|---|---|---|---|
+| zihao_zeng | 0.0% | 73,716 | 98,172 |
+| axel_ahmer | 5.0% | 81,238 | 93,796 |
+| **takahirohon** | **52.5%** | 78,042 | 81,731 |
+| **ahmad_ali** | **52.5%** | 86,408 | 86,383 |
+| **artfix** | **55.0%** | 78,547 | 82,491 |
+| **masih_pemula_beneran** | **72.5%** | 82,496 | 78,986 |
+| **uman_n3l** | **75.0%** | 77,294 | 67,716 |
+| sgsuh | 80.0% | 88,246 | 76,272 |
+
+Cinco caen en la banda de resolución 25-75% (media 61.5%, cerca del 65.2% del panel
+viejo) y a diferencia del handicap sintético **no colapsan** en seeds ajenos.
+
+**Limitaciones honestas.** Una cinta es CIEGA: no reacciona a nosotros, así que es
+algo más débil que el rival original y su varianza sube en seeds ajenos
+(zihao_zeng hace $116.9k en seeds frescos contra los $70.0k de su partida real).
+El propio notebook del meta marca el límite: las cintas fijas son un diagnóstico
+correlacionado, no una puerta de promoción; los seeds vírgenes siguen mandando.
+
+Herramientas: `derrotas.py` (clasificación con guard de TeamNames),
+`reconstruir.py` (extracción + doble validación), `bots/meta/tape.py`,
+`bots/meta/tapes/*.json.gz`.
+
+**EL HALLAZGO PRINCIPAL DEL DÍA: el panel oficial es CIEGO A LAS MEJORAS.**
+
+100 episodios head-to-head contra el campeón, con control:
+
+| brazo | vs `campeona_fb` | dinero |
+|---|---|---|
+| `_noop` | **34-34-32 -> 50.0%** exacto | $84,606 vs $84,606, idéntico al centavo |
+| `sell_floor 0` | **77-21-2 -> 78.0%**, IC95 [69%, 85%] | $84,960 vs $83,660 |
+
++28 puntos de win-rate con el dinero casi igual. **Lección de método: la lente de
+dinero contra C95 daba +$506 (t=1.72) y casi lo descarto.** Los otros once
+mecanismos del día fueron juzgados con esa misma lente equivocada; los negativos
+duros se sostienen, pero los "planos" (`crop_max`, `hinge_forecast`,
+`fert_dawn_load`) quedaron descartados con un instrumento que no ve lo que paga Elo.
+
+Pero al llevarlo al panel (25 seeds x 4 rivales, seeds 11000):
+
+| brazo | vs C95 | vs cinta v16 | vs campeona | vs rutera |
+|---|---|---|---|---|
+| base | 0% | 0% | 100% | 100% |
+| `_noop` | 0% | 0% | 100% | 100% |
+| `sell_floor 0` | **0%** | **0%** | **100%** | **100%** |
+| `_peor` | 4% | 2% | 16% | 100% |
+
+**Todas las celdas saturadas.** El candidato es INDISTINGUIBLE de la base en las
+cuatro. Sólo `_peor` se mueve -> el panel detecta regresiones y es ciego a las
+mejoras: modo de fallo #3 del BRIEFING, ahora confirmado con datos. Causa raíz:
+**no hay ningún rival entre nuestro nivel y el del meta.** Contra todo el linaje
+C90-C95 vamos 0% (los tres comparten la misma cinta de campo); contra nuestras
+generaciones viejas, 100%.
+
+**Intento de instrumento (FALLIDO, `bots/meta/c95_handicap.py`).** Idea: degradar
+la cinta de forma determinista para fabricar rivales de fuerza graduable.
+(a) Anular una fracción de acciones de peón: **colapsa a $0** — la cinta no tiene
+holgura, desincronizar PICKUP/PLACE/FEED destruye la granja. (b) Topar unidades
+vendidas por turno: sí produce un dial (s2 100%, s8 91.7%, s11 58.3%, s16 0%),
+pero **falla sus dos controles**: el brazo `_peor` lee +12.7 pts POR ENCIMA de la
+base (debía leer claramente peor), y el punto de calibración oscila
+**66% / 90% / 74%** en tres bloques de seeds de n=25 con IC que no se solapan.
+Throttlear las ventas del rival no produce una versión más débil del mismo juego:
+produce OTRO juego. Instrumento descartado.
+
+**Conclusión operativa.** El cuello del proyecto no es la falta de ideas: es que
+**no existe un instrumento capaz de decir que sí.** Un panel válido necesita
+rivales (a) de fuerza intermedia real, (b) diversos en estrategia, (c) NO derivados
+de nuestro propio bot, y (d) estables entre bloques de seeds. La única fuente que
+cumple las cuatro es el ladder: reconstruir 3-5 rivales reales de nuestra banda
+como agentes-cinta. Es exactamente el método del autor del notebook ("download the
+current leaders, work out which moves repeat, turn the repeatable part into a local
+agent") y ya tenemos la herramienta (`bajar_replays.py`, `perfilar_rivales.py`).
+
+Estado de `sell_floor 0`: 78% contra su padre con control limpio, indistinguible
+contra todo lo demás. **No se enciende hasta tener panel válido.**
+
+**Segunda tanda (tomate/hinge y fertilizante) — el eje queda cerrado por SIMETRÍA:**
+
+| mecanismo | delta pareado | sd(par) | t |
+|---|---|---|---|
+| `hinge_forecast` (horizonte hasta el cierre para curvas hinge) | +$7 | 4,405 | +0.00 |
+| `hinge_forecast` + `hinge_hold` | −$2,253 | 3,408 | −1.87 |
+| `fert_dawn_load` + `fert_tick_aligned` | −$3,879 | 6,090 | −1.80 |
+| `fert_dawn_load` solo | −$4,088 | 6,028 | −1.92 |
+| `fert_crops=[]` (no fertilizar nada) | −$1,812 | 3,107 | −1.65 |
+| rebaño 6+6 | −$10,272 | 19,983 | −1.45 |
+
+**`fert_dawn_load` funciona como mecanismo y aun así pierde — y la aritmética cuadra
+al dólar.** FERTILIZE 25 -> 101, fresa vendida 220 -> 288 (5.05 u/planta, era 3.38).
+Pero FERTILIZER vendido 184 -> 110: **−74 unidades a ~$85 = −$6,290**, contra +68
+fresas que al margen valen ~$25-40 = **+$2,000**. Neto teórico −$4,300; medido
+−$3,879. *Estamos convirtiendo fertilizante de $85 en fresa de $25.*
+Y como no fertilizar nada TAMBIÉN pierde (−$1,812), el nivel actual es un óptimo
+local: el eje del fertilizante está cerrado por ambos lados.
+
+**El rendimiento por planta es EL número del proyecto:**
+
+| cultivo | cinta | nosotros | máximo |
+|---|---|---|---|
+| MELÓN (one-time) | 6.33 | **6.00** | 6 (100%) |
+| FRESA (ongoing) | 8.08 | **3.38** | 8 (42%) |
+| TOMATE (ongoing) | — | **3.5** (71u de 20 plantas) | 8 (44%) |
+
+Los one-time los ejecutamos al 100%; los ongoing al 42%. Por eso ningún cambio de
+composición mueve la caja: multiplicamos otro cultivo por el mismo 0.44. El tomate
+NO falla por el mercado (el hinge es real: $102-144/u con 2-3 tiendas, verificado
+con `_price_at`); falla por lo mismo que la fresa.
+
+**Sobre el tomate, para no perderlo:** demanda de temporada ~250u contra oferta
+combinada de 6u; déficit final medido 220-283 según sorteo de tiendas
+(PIZZA_SHOP y FARMERS_MARKET son las únicas que lo piden). Vender 120u el día 29
+con 2 tiendas = $12,614 ($105/u). La oportunidad existe y es NUESTRA sola — la
+tabla `_MP` de C95 es anterior al parche 1.32.7 — pero requiere primero saber
+cosechar un ongoing.
+
+**Corrección de una lectura mía:** dije que la cinta "pacea el melón de 6 en 6".
+**Falso.** Verificado sobre `trace_c95.json`: casi todos los `SELL MELON 6` van
+inmediatamente después de cosechas — el 6 es el `max_yield` de UNA planta. La cinta
+no pacea el melón: **vende en cuanto cosecha**. Refuerza la misma conclusión.
+
+**Latencia DROP->SELL (medida, y remedio fallido):** el único `DROP` del chasis
+estaba en el endgame (día>=28); todo lo cosechado antes espera al auto-drop nocturno
+(S6.3) y sólo es vendible a h0 del día siguiente. Medido: **87% de nuestras ventas a
+h0 contra 52% de C95**; primera venta de melón step 288 contra su step 252. Pero
+`drop_deposit` (DROP oportunista en tile de acceso, forma C72: 1 paso / valor 2000)
+**casi nunca dispara** (delta −18, sd 173): nuestras rutas no pasan por el shed a
+media jornada. La latencia es real; el remedio exige cambiar las RUTAS, no la
+política de venta.
+
+**Nota de ventaja:** la tabla `_MP` de C95 es **anterior a 1.32.7** — no tiene la
+forma `hinge` y lleva CARROT `below_target` 0.20. Nuestro `MKT` sí tiene el modelo
+correcto (RULES S5.1). El meta está valorando mal carrot/tomate/huevo.
+
 ## 2026-08-28 — Evolución 5 (panel del meta): v4 retiene; nace mimada_xl y la tensión dinero-vs-winrate
 
 **Setup:** panel des-endogamizado [mimada_v4 + clon de "ln"], techos altos, mecánicas de ejecución como genes. 4,590 episodios.
