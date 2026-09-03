@@ -1,5 +1,79 @@
 # Bitácora de experimentos
 
+## 2026-09-03 (3) — INSPECCIÓN DURA: el chasis tiene DOS cerebros y 11 perillas muertas
+
+**El hallazgo estructural.** El chasis implementa **dos veces** la misma
+pregunta ("¿qué hago en esta tile?"):
+
+1. la lista `tasks` con prioridades (`prio_harvest`, `prio_water`…)
+2. **`_service_ops`**, que es la que MANDA cuando `router=True` — y el campeón
+   lleva `router=True`
+
+Ya divergieron. Reglas que no coinciden entre las dos:
+
+| regla | `_service_ops` (manda) | lista `tasks` |
+|---|---|---|
+| cosechar fresa/tomate | `yu >= 2` o día ≥ 28 | `yu >= 3` (alta) / `yu >= 2` (baja) |
+| cosechar un corte en el pico | **exige estar regada** | no lo exige |
+| regar continuas el día final | permitido | prohibido |
+| cosechar animal | `yu >= min(h_at, cap-1)` | `yu >= cap-1` / `yu >= h_at` |
+
+**Herramienta nueva: `muerde.py`.** Quita (o perturba) cada clave del config y
+comprueba si el resultado cambia. 306 episodios, ~4 min.
+
+**Trampa que casi me come:** si el valor del config COINCIDE con el default del
+chasis, quitar la clave es un no-op **por construcción** y el test no dice nada.
+`sell_floor=0` salió "inerte" en la v1 — y es un mecanismo ADOPTADO (+3.1).
+Para esas claves hay que PERTURBAR. Segunda trampa: perturbar restando una
+constante (2000 → 1970) tampoco prueba nada; la perturbación debe ser
+proporcional. Ambas corregidas dentro de la herramienta.
+
+### Las 11 perillas MUERTAS (18% del config es decoración)
+
+| clave | valor | por qué no muerde |
+|---|---|---|
+| `plants` | `{CARROT:1, MELON:11, STRAWBERRY:5, WHEAT:8}` | **`adaptive=True` ignora el plan fijo entero** |
+| `hands` | 8 | lo pisa `hands_per_quadrant 4 × 3 cuadrantes = 12` |
+| `mkt_opp_factor` | 1 | lo pisa `opp_read=True` |
+| `tiles_per_unit` | 5 | sólo se lee bajo `phased=True` (apagado) |
+| `zone_fallback_prio` | 70 | sólo bajo `zoning=True` (apagado) |
+| `prio_dig`, `prio_urgency`, `prio_win_bonus` | 8/25/12 | esas tiles las resuelve el router |
+| `premium_hold_day` | 8 | — |
+| `multi_feeder`, `smart_overflow` | False | apagadas |
+
+**`plants` es la peor: quien lea el config creerá que plantamos 11 melones y 8
+trigos. No plantamos nada de eso — decide el scorer adaptativo.** Y `hands=8`
+es el mismo cuento que `hands_cap=14`: una perilla que no llega a morder.
+
+**Lo que SÍ vive:** `prio_harvest`, `prio_water`, `prio_feed`, `prio_care`,
+`prio_plant`, `fert_prio`, `wave_min_value`. La lista de prioridades NO está
+muerta del todo — gobierna a las unidades fuera de ruta.
+
+**Consecuencia sobre el pasado:** toda búsqueda sobre el config (`evolucion9`,
+`evolucion10`, `buscar_apertura`) estuvo explorando 11 dimensiones muertas.
+
+### `endgame_reap` RECHAZADO — pero por fin con un resultado de verdad
+
+v1 y v2 sobre la lista `tasks`: **sd = 0.0**, código muerto para el router.
+v3 sobre `_service_ops` sí muerde: el día 29, `WATER` se evalúa ANTES que
+`HARVEST` y retorna de inmediato, así que una planta con rendimiento y sin regar
+se REGABA (bonus que ya no hay mañana para cobrar) en vez de cosecharse; y la de
+un corte con `age < peak` no entraba nunca en la rama de `HARVEST`.
+
+Producto en pie al cerrar: **$1.994 → $1.485/partida (−26%)**.
+Panel de 40 (320 pares, seeds 91300-91307): **−0.2, sd 2.8, t = −1.00.**
+
+**Recuperar $509 no compra ni un punto de rating** — y encaja con que el Elo es
+W/L/T: $509 sobre $73.000 es 0,7% del margen, casi nunca voltea un resultado.
+Bandera apagada, arreglo conservado detrás del flag.
+
+> **La regla que separa las dos fugas de hoy:** la de semillas pagó (+6.4) porque
+> liberaba caja TEMPRANO para componer 25 días; la del día 29 no pagó porque
+> devolvía monedas cuando ya no quedaba nada que hacer con ellas.
+> **No importa cuánto dinero recuperas, importa cuándo.**
+
+---
+
 ## 2026-09-03 (2) — `seed_stock_aware`: ADOPTADO (+6.4, t=+2.62 confirmado)
 
 **Cambio de instrumento:** en vez de leer replays, inspeccionar el **estado

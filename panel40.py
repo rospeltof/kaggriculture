@@ -3,8 +3,8 @@ import glob, json, math, os, statistics as st, sys
 from multiprocessing import Pool
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-BOTS = ["campeona_fase", "fase_noop2", "fuga_semilla"]
-ELO = {"campeona_fase": 826.4, "campeona_fb": 787.3}
+BOTS = ["campeona_grano", "grano_noop", "grano_siega"]
+ELO = {}
 
 
 def _una(a):
@@ -22,7 +22,7 @@ def _una(a):
 
 def main():                                     # GUARD OBLIGATORIO
     tapes = [os.path.basename(f)[:-8] for f in glob.glob("bots/meta/tapes/lad_*.json.gz")]
-    seeds = list(range(91100, 91108))   # SEMILLAS NUEVAS: confirmacion
+    seeds = list(range(91300, 91308))
     trabajos = [(b, t, s, seat) for b in BOTS for t in tapes for s in seeds for seat in (0, 1)]
     print(f"{len(tapes)} cintas x {len(seeds)} seeds x 2 asientos x {len(BOTS)} bots "
           f"= {len(trabajos)} episodios", flush=True)

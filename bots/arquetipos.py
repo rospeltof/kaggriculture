@@ -762,3 +762,13 @@ fuga_ambas   = make_agent(FUGA_AMBAS)
 # a la rama equivocada; las plantas en pie son continuas, no de un solo corte).
 CAMPEONA_GRANO = dict(CAMPEONA_FASE, seed_stock_aware=True)
 campeona_grano = make_agent(CAMPEONA_GRANO)
+
+# --- endgame_reap v2 (2026-09-03): el dia 29 es dia de SIEGA -----------------
+# v1 fue un test nulo (sd=0.0): parche a la rama `ready` de los cultivos de un
+# corte, donde el riego pre-cosecha exige age == peak EXACTO. v2 ataca lo medido:
+# $1006 en trigo/zanahoria/melon (un corte, yu>0 pero age<peak -> se regaban y
+# no se cosechaban NUNCA) + $988 en fresa/tomate (continuas). Total $1994/partida.
+GRANO_SIEGA = dict(CAMPEONA_GRANO, endgame_reap=True)
+grano_siega = make_agent(GRANO_SIEGA)
+GRANO_NOOP = dict(CAMPEONA_GRANO)
+grano_noop = make_agent(GRANO_NOOP)
