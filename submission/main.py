@@ -1,6 +1,6 @@
 """Kaggriculture submission — generada por empaquetar.py.
 
-Config: CAMPEONA_GRANO (campeón vigente de la evolución local; ver docs/BITACORA.md).
+Config: CAMPEONA_HOZ (campeón vigente de la evolución local; ver docs/BITACORA.md).
 Chasis: bots/chassis.py inline (Python puro, sin dependencias).
 """
 
@@ -305,6 +305,14 @@ def _service_ops(tile, day, cfg, has_fert=False):
                 and day <= 26 and tile.get("fertilized_until_day", -1) < day
                 and _fert_due(c, age, cfg)):
             return ["FERTILIZE"]
+        # DIA FINAL = SIEGA. Aqui WATER se evalua ANTES que HARVEST y retorna de
+        # inmediato: el dia 29 una planta con rendimiento y sin regar se REGABA
+        # (bonus que ya no hay manana para cobrar) en vez de cosecharse, y la de
+        # un corte con age < peak no entraba nunca en la rama de HARVEST.
+        # Medido: $1994/partida en pie al cerrar (fresa $692, trigo $419,
+        # zanahoria $395, tomate $296, melon $192).
+        if cfg.get("endgame_reap") and day >= LAST_DAY and yu > 0 and age >= c["first"]:
+            return ["HARVEST"]
         if not watered and day <= LAST_DAY:
             if not (not c["ongoing"] and age > c["peak"]) and not (
                     day == LAST_DAY and not (age >= c["first"] and yu > 0)):
@@ -475,16 +483,20 @@ def decide(obs, cfg):
                 if not c["ongoing"]:
                     ready = age >= c["peak"]
                     overdue = age > c["peak"]
-                    if ready:
-                        # El dia final el riego pre-cosecha exige DOS visitas a la
-                        # misma tile (regar y volver a cosechar). Medido: 10.9
-                        # plantas cosechables se quedan en pie al cerrar. Si ya
-                        # hay yield, cosechar y no arriesgar el viaje de vuelta.
-                        _cierre = cfg.get("endgame_reap") and day >= LAST_DAY and yu > 0
-                        if not watered and not overdue and day <= LAST_DAY and not _cierre:
+                    # El dia final NO hay manana: el bonus del riego pre-cosecha
+                    # ya no se puede cobrar y el HARVEST solo aparece dentro de
+                    # `ready`, asi que un cultivo de un corte con rendimiento pero
+                    # age < peak se REGABA y no se cosechaba nunca. Medido: $1006
+                    # por partida en trigo/zanahoria/melon en pie al cerrar.
+                    _siega = (cfg.get("endgame_reap") and day >= LAST_DAY
+                              and yu > 0 and age >= c["first"])
+                    if _siega:
+                        tasks.append((95, (x, y), ["HARVEST"]))
+                    elif ready:
+                        if not watered and not overdue and day <= LAST_DAY:
                             tasks.append((78, (x, y), ["WATER"]))     # riego pre-cosecha (bonus del día pico)
                         elif yu > 0 and age >= c["first"]:
-                            tasks.append((90 if _cierre else (85 if overdue else ph), (x, y), ["HARVEST"]))
+                            tasks.append((85 if overdue else ph, (x, y), ["HARVEST"]))
                     elif not watered:
                         in_win = c["win"][0] <= age <= c["win"][1]
                         prio = pw + (p_win if in_win else 0) + urgency
@@ -498,7 +510,10 @@ def decide(obs, cfg):
                         prio = pw + urgency + (20 if tile.get("consecutive_unwatered", 0) >= 1 else 0)
                         tasks.append((prio, (x, y), ["WATER"]))
                     if yu > 0 and age >= c["first"]:
-                        if yu >= 3 or day >= 28:
+                        if cfg.get("endgame_reap") and day >= LAST_DAY:
+                            # fresa/tomate en pie al cerrar: $988 por partida
+                            tasks.append((95, (x, y), ["HARVEST"]))
+                        elif yu >= 3 or day >= 28:
                             tasks.append((ph + 10, (x, y), ["HARVEST"]))
                         elif yu >= 2:
                             tasks.append((ph - 10, (x, y), ["HARVEST"]))
@@ -1461,7 +1476,7 @@ CONFIG = {'hands': 8,
  'prio_feed': 75,
  'prio_water': 44,
  'prio_win_bonus': 12,
- 'prio_harvest': 62,
+ 'prio_harvest': 76,
  'prio_plant': 40,
  'grow': False,
  'prio_dig': 8,

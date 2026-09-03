@@ -276,5 +276,25 @@ comparación decisión a decisión (`0 de 2,157 distintas` en `campeona_alba`).
 ./.venv/bin/python reconstruir.py --derrotas 8      # extraer cintas + validar
 ./.venv/bin/python harness.py A B -n 20 --seed0 31000
 ./.venv/bin/python autopsia.py A B -n 3             # diagnóstico de mecanismo
-./.venv/bin/python empaquetar.py CAMPEONA_ALBA      # submission/main.py
+./.venv/bin/python empaquetar.py CAMPEONA_HOZ      # submission/main.py
+./.venv/bin/python muerde.py CAMPEONA_HOZ          # que banderas MUERDEN de verdad
+./.venv/bin/python barrido.py 92000                # barrido de prioridades vivas
+./.venv/bin/python barrido.py 92500 harvest_76     # confirmacion en seeds disjuntas
+./.venv/bin/kaggle competitions submit -c kaggriculture -f submission/main.py -m "..."
+```
+
+## 11. Dos trampas que ya nos costaron caro
+
+**`sd = 0.0` significa "no se ejecuto", no "no sirve".** Un brazo identico al
+base en las 160 celdas es un TEST nulo, no un resultado nulo. Antes de leer un
+"+0.0" como rechazo, comprobar con `muerde.py` que la bandera dispara. Nos paso
+tres veces el 2026-09-03 (`hands_cap 14`, `endgame_reap` v1 y v2) porque el
+chasis tiene DOS implementaciones de la misma decision y los parches tocaban la
+mitad muerta: **`_service_ops` es la que manda cuando `router=True`**.
+
+**Quitar una clave cuyo valor == default es un no-op POR CONSTRUCCION.** Ahi hay
+que PERTURBAR el valor, y proporcionalmente (restar 30 a 2000 no prueba nada).
+`muerde.py` lo detecta y lo hace solo.
+
+```bash
 ```

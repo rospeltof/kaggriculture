@@ -772,3 +772,14 @@ GRANO_SIEGA = dict(CAMPEONA_GRANO, endgame_reap=True)
 grano_siega = make_agent(GRANO_SIEGA)
 GRANO_NOOP = dict(CAMPEONA_GRANO)
 grano_noop = make_agent(GRANO_NOOP)
+
+# --- CAMPEONA_HOZ (2026-09-03) ----------------------------------------------
+# prio_harvest 62 -> 76 ADOPTADO. Reordena HARVEST por encima de FEED (75) y
+# CARE (70), y ph+10=86 por encima del literal 85 del HARVEST atrasado.
+# Descubrimiento: +2.5 (t=+2.02, 160 pares, seeds 92000-92003).
+# Confirmacion:   +2.5 (t=+2.96, 320 pares, seeds 92500-92507) -- delta IDENTICO.
+# Huella minuscula (4 de 160 celdas) pero reproducible: el reorden importa en
+# pocas situaciones y en esas voltea la partida.
+# care_80 RECHAZADO: +2.8 (t=0.89) -> +1.1 (t=0.50) al confirmar. Ruido.
+CAMPEONA_HOZ = dict(CAMPEONA_GRANO, prio_harvest=76)
+campeona_hoz = make_agent(CAMPEONA_HOZ)

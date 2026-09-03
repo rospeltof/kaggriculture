@@ -1,5 +1,82 @@
 # Bitácora de experimentos
 
+## 2026-09-03 (4) — Las prioridades son un RANKING, no magnitudes
+
+**Por qué este barrido:** `muerde.py` dejó 6 perillas de prioridad vivas
+(`prio_water`, `prio_feed`, `prio_care`, `prio_harvest`, `prio_plant`,
+`fert_prio`) y ninguna se había tuneado con el panel de 40 — todas las búsquedas
+previas usaron paneles rotos o saturados.
+
+**El hallazgo estructural.** Tres pares de brazos salieron **idénticos celda a
+celda** en las 160 celdas. No es azar: cada par produce **la misma reordenación**
+por caminos distintos.
+
+| par idéntico | la reordenación que ambos consiguen |
+|---|---|
+| `water_30` == `feed_85` | FEED siempre por encima de WATER |
+| `harvest_50` == `fert_60` | FERTILIZE por encima del HARVEST de baja |
+| `plant_55` == `fert_30` | PLANT por encima de FERTILIZE |
+| `plant_28` == base | bajar la que YA es última no reordena nada |
+
+**Consecuencia sobre el pasado:** `evolucion9` y `evolucion10` trataron estos
+números como continuos. El espacio real es el de **órdenes** — pocas
+permutaciones alcanzables — y buscar sobre magnitudes explora una redundancia
+enorme donde la mayoría de los movimientos son no-ops. Sumado a las 11 perillas
+muertas, buena parte de aquella CPU se fue en no moverse.
+
+### Resultados (4.480 episodios, seeds 92000-92003)
+
+| brazo | delta | t | reordenación |
+|---|---|---|---|
+| **`harvest_76`** | **+2.5** | **+2.02** | HARVEST sobre FEED y CARE |
+| `care_80` | +2.8 | +0.89 | CARE sobre FEED |
+| `harvest_50`=`fert_60` | +0.0 | 0.00 | |
+| `water_30`=`feed_85` | −6.2 | −2.33 | FEED siempre sobre WATER |
+| `care_55` | −10.3 | −3.46 | CARE bajo HARVEST |
+| `plant_55`=`fert_30` | −13.4 | −4.43 | PLANT sobre FERTILIZE |
+
+Las tres reordenaciones malas confirman que el orden actual **no es arbitrario**:
+el riego debe poder ganarle a la comida cuando está en ventana o urgente.
+
+### CONFIRMACIÓN en semillas disjuntas (2.560 episodios, seeds 92500-92507)
+
+| brazo | descubrimiento | confirmación | veredicto |
+|---|---|---|---|
+| `harvest_76` | +2.5 (t=2.02) | **+2.5 (t=2.96)** | **ADOPTADO** — delta idéntico |
+| `care_80` | +2.8 (t=0.89) | +1.1 (t=0.50) | rechazado, ruido |
+
+`harvest_76` difiere de la base en sólo **4 de 160 celdas** y aun así replica el
+delta exacto: el reorden importa en pocas situaciones, y en esas voltea la
+partida. **Campeón: `CAMPEONA_HOZ`** (= `CAMPEONA_GRANO` + `prio_harvest=76`).
+
+### Dónde se va la mano de obra (instrumento nuevo)
+
+Una partida completa, 13 unidades, 7.285 turnos:
+
+| acción | % |
+|---|---|
+| **`_MOVER`** | **53.5%** |
+| WATER | 19.1% |
+| **`PASS`** | **8.2%** |
+| HARVEST | 3.9% |
+| FEED+CARE+COLLECT | 8.6% |
+| PLANT+FERTILIZE+DIG | 4.1% |
+
+**El 62% del presupuesto no produce nada.** El `PASS` no está repartido: se
+acumula al final del día (h21 25%, h22 35%, **h23 40%**) y en los días 27-29
+(27%, 20%, 23%). Las cuadrillas terminan el circuito hacia las 20:00.
+
+**Hipótesis descartada:** pre-posicionar durante esas horas muertas para la ruta
+de mañana. Al alba TODAS las unidades están en (4,4) — S1.1 aplica a la
+cuadrilla entera, no sólo al granjero. La posición de fin de día es irrelevante.
+
+**Pista abierta:** a la hora 0 sólo existe el granjero; las 12 manos aparecen
+durante el día. Si la plantilla se contrata a diario, una mano que pasa 4 horas
+en `PASS` es dinero pagado por turnos vacíos. ¿Paga la mano marginal del día 27
+en adelante?
+
+---
+
 ## 2026-09-03 (3) — INSPECCIÓN DURA: el chasis tiene DOS cerebros y 11 perillas muertas
 
 **El hallazgo estructural.** El chasis implementa **dos veces** la misma
