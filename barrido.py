@@ -29,10 +29,27 @@ import glob, json, math, os, statistics as st, sys
 from multiprocessing import Pool
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-BASE = "CAMPEONA_GRANO"
+BASE = "CAMPEONA_HOZ"
 SEED0 = int(sys.argv[1]) if len(sys.argv) > 1 else 92000
 SOLO = sys.argv[2].split(",") if len(sys.argv) > 2 else None
 N_SEEDS = 8 if SOLO else 4          # menos brazos -> mas semillas -> mas potencia
+# S6.1: el HIRE n-esimo del dia cuesta fib(n) -> 1,1,2,3,5,8,13,21,34,55,89,144.
+# La mano 12 cuesta $144 DIARIOS y los peones desaparecen cada noche (S6.3).
+# OJO: n_h = min(hands_per_quadrant * cuadrantes, hands_cap). Con hpq=4 y 3
+# cuadrantes eso es min(12, 12): NI `hands_cap=14` NI `hands_per_quadrant=5`
+# pueden morder por separado. Los dos experimentos de plantilla del pasado eran
+# estructuralmente incapaces de probar la hipotesis. Hay que mover LAS DOS.
+PLANTILLA = {
+    "noop":      {},
+    "h9":        {"hands_cap": 9},                                  # recorte: solo el tardio
+    "h10":       {"hands_cap": 10},
+    "h11":       {"hands_cap": 11},
+    "hpq5_solo": {"hands_per_quadrant": 5},                         # solo el temprano (tardio sigue 12)
+    "h14":       {"hands_per_quadrant": 5, "hands_cap": 14},
+    "h15":       {"hands_per_quadrant": 5, "hands_cap": 15},
+    "por_trabajo": {"hire_by_work": True},                          # plantilla al ritmo del TRABAJO
+}
+
 VARIANTES = {
     "noop":         {},                        # control: DEBE leer +0.0
     "water_30":     {"prio_water": 30},
@@ -50,6 +67,8 @@ VARIANTES = {
 }
 
 
+if os.environ.get("SET") == "plantilla":
+    VARIANTES = PLANTILLA
 if SOLO:
     VARIANTES = {k: v for k, v in VARIANTES.items() if k in ("noop",) or k in SOLO}
 

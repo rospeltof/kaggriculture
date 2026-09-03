@@ -1,5 +1,75 @@
 # Bitácora de experimentos
 
+## 2026-09-03 (5) — Plantilla: frente CERRADO. 12 manos es el óptimo
+
+**El bug metodológico que invalidaba los intentos previos.** El chasis calcula
+`n_h = min(hands_per_quadrant * cuadrantes, hands_cap)`. Con `hpq=4` y 3
+cuadrantes eso es `min(12, 12)`:
+
+- `hands_cap=14` → `min(12, 14)` = 12. **No muerde.**
+- `hands_per_quadrant=5` → `min(15, 12)` = 12. **No muerde.**
+
+**Los dos experimentos de plantilla del pasado eran estructuralmente incapaces
+de probar la hipótesis.** Aquellos "resultados nulos" nunca fueron una prueba.
+Para mover la plantilla hay que mover LAS DOS perillas a la vez.
+
+**La economía: S6.1, el HIRE n-ésimo del día cuesta `fib(n)`** — 1, 1, 2, 3, 5,
+8, 13, 21, 34, 55, 89, **144** — y los peones desaparecen cada noche (S6.3).
+Coste determinista por partida (~21 días de plantilla completa):
+
+| plantilla | $/día en el pico | $ total en HIRE |
+|---|---|---|
+| 9 | $88 | $1.958 |
+| 11 | $232 | $4.982 |
+| **12 (base)** | **$376** | **$8.006** |
+| 14 | $986 | $19.128 |
+
+**Las manos 11 y 12 se llevan el 61% de todo el presupuesto de contratación.**
+
+### Descubrimiento (2.880 episodios, seeds 93000-93003)
+
+| brazo | manos | delta | t |
+|---|---|---|---|
+| `h11` | 11 | +5.3 | +1.81 |
+| `h10` | 10 | +0.0 | 0.00 |
+| `h9` | 9 | −6.9 | −2.44 |
+| `hpq5_solo` | 12 (5 temprano) | −12.8 | −3.27 |
+| `por_trabajo` (`hire_by_work`) | variable | −17.8 | −4.37 |
+| `h14` | 14 | **−24.1** | **−6.07** |
+| `h15` | 15 | **−33.4** | **−7.96** |
+
+### Confirmación en semillas disjuntas (2.560 episodios, seeds 93500-93507)
+
+| brazo | descubrimiento | confirmación | veredicto |
+|---|---|---|---|
+| `h11` | +5.3 (t=+1.81) | **−2.8 (t=−1.43)** | **CAMBIA DE SIGNO** — falso positivo |
+| `h10` | +0.0 (t=0.00) | **−7.0 (t=−3.27)** | negativo |
+
+**Nada se adopta. La plantilla de 12 es el óptimo.** `h11` habría entrado con la
+tabla del descubrimiento sola: es la demostración más limpia hasta ahora de por
+qué el protocolo de confirmación en semillas disjuntas no es opcional. Con 8
+brazos contra una base, el mejor de todos a t=1.81 es justo lo que produce el
+azar.
+
+**`hire_by_work` rechazado con instrumento bueno.** El comentario del chasis
+argumentaba que la cinta del meta corre 8.3 manos de media frente a nuestras ~11
+y que ahí estaba el exceso de ~950 pasos. Razonamiento plausible, medida
+demoledora (−17.8). **Quinto intento fallido de copiarle algo al meta.**
+
+**Y ampliar temprano también es malo** (`hpq5_solo`, −12.8): gastar en peones el
+día 5 retrasa la compra del cuadrante. Las perillas de plantilla no son
+independientes del resto de la economía — compiten por la misma caja.
+
+### Lo que esto le hace a la fuga que originó el frente
+
+El 8.2% de `PASS` **no era dinero recuperable ni ampliando ni recortando**. Y el
+53.5% de movimiento tampoco es obviamente desperdicio: son 3.897 pasos para
+2.789 servicios, o sea **1.4 pasos por acción útil**, cerca del suelo teórico de
+1.0 en una malla donde las tiles contiguas están a un paso. La mano de obra no
+es el cuello de botella que parecía.
+
+---
+
 ## 2026-09-03 (4) — Las prioridades son un RANKING, no magnitudes
 
 **Por qué este barrido:** `muerde.py` dejó 6 perillas de prioridad vivas
