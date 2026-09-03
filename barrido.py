@@ -67,6 +67,45 @@ GANSOS = {
     "suma_g4":{"animals": [("COW", 4), ("SHEEP", 4), ("GOOSE", 4)]},
 }
 
+# VENTAS. Leido el motor (2026-09-03): _process_market cotiza UNIDAD A UNIDAD
+# y recalcula market_price con el inventario ya incrementado, asi que una orden
+# de 40 uds recorre la curva 40 veces DENTRO del mismo turno. Ademas
+# "Sales at $1 do not increase market supply" (_commit_unit): a piso, la oferta
+# deja de subir. Medido sobre campeona_hoz, 16 partidas: 5% de perdida por
+# rafaga ($5.897) y ~60 unidades/partida vendidas a $1 (WOOL 29.6 = 25% de la
+# lana, MILK 18.1 = 13%). `sell_marginal` acota n para que la unidad MARGINAL
+# siga por encima de un piso; existe desde hace tiempo y nunca se midio con el
+# panel de 40. `sell_floor` decide SI vender; `sell_marginal`, CUANTAS.
+VENTAS = {
+    "noop":   {},
+    "sm_50":  {"sell_marginal": True},                                   # piso 0.5 (def.)
+    "sm_30":  {"sell_marginal": True, "sell_marginal_floor": 0.3},
+    "sm_20":  {"sell_marginal": True, "sell_marginal_floor": 0.2},
+    "sm_10":  {"sell_marginal": True, "sell_marginal_floor": 0.1},
+    "sm_05":  {"sell_marginal": True, "sell_marginal_floor": 0.05},
+    "sm_70":  {"sell_marginal": True, "sell_marginal_floor": 0.7},
+    "hinge_h":{"hinge_hold": True},
+}
+
+# CONTRA-META. Medido contra los 40 rivales reales (80 episodios): la escalera
+# es PESADA EN ANIMALES (7.7 COW + 4.4 SHEEP + 0.7 GOOSE) y ligera en cultivos
+# (3.2 STRAWBERRY). Al cierre, de 9 mercados solo DOS quedan saturados y los
+# inundamos NOSOTROS: FERTILIZER (+368, vendemos 157.9) y MELON (+148,
+# vendemos 113.9). Todo lo demas acaba por debajo de 10.000 (el town drena mas
+# de lo que aporta el conjunto). WHEAT cierra a -448: escasez pura.
+# El fertilizante tiene alternativa: duplica el tick de fresa, nuestro producto
+# mas caro ($199/ud). `fert_reserve` (def. 20) decide cuanto guardamos.
+CONTRAMETA = {
+    "noop":     {},
+    "fr_40":    {"fert_reserve": 40},
+    "fr_60":    {"fert_reserve": 60},
+    "fr_100":   {"fert_reserve": 100},          # de facto: no vender fertilizante
+    "melon_5":  {"melon_max": 5},
+    "melon_11": {"melon_max": 11},
+    "fr60_m5":  {"fert_reserve": 60, "melon_max": 5},
+    "sin_fert": {"collect_fert": False},        # ni recogerlo (libera acciones)
+}
+
 VARIANTES = {
     "noop":         {},                        # control: DEBE leer +0.0
     "water_30":     {"prio_water": 30},
@@ -88,6 +127,10 @@ if os.environ.get("SET") == "plantilla":
     VARIANTES = PLANTILLA
 if os.environ.get("SET") == "gansos":
     VARIANTES = GANSOS
+if os.environ.get("SET") == "ventas":
+    VARIANTES = VENTAS
+if os.environ.get("SET") == "contrameta":
+    VARIANTES = CONTRAMETA
 if SOLO:
     VARIANTES = {k: v for k, v in VARIANTES.items() if k in ("noop",) or k in SOLO}
 

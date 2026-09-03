@@ -1,5 +1,96 @@
 # Bitácora de experimentos
 
+## 2026-09-03 (7) — El motor leído de primera mano + ventas y contra-meta rechazados
+
+### ¿Lee bien los precios el agente? SÍ
+
+Comparada `_price_at` del chasis contra `market_price` del motor en **5.148
+puntos** de los 9 productos: **cero errores por encima de 0.5** (el máximo, 0.50,
+es el redondeo a entero del motor). La tabla `MKT` coincide con `MARKET_PARAMS`
+parámetro a parámetro. **Ahí no hay nada roto.**
+
+### TRES REGLAS DEL MOTOR QUE NO ESTABAN EN RULES.md
+
+1. **La venta se cotiza UNIDAD A UNIDAD.** `_process_market` recalcula
+   `market_price` con el inventario ya incrementado tras cada unidad, así que una
+   orden de 40 recorre la curva 40 veces **dentro del mismo turno**.
+2. **`if price > 1: inventory += 1`** — *"Sales at \$1 do not increase market
+   supply"*. El suelo es absorbente: a \$1 la oferta deja de subir.
+3. **El shed tiene capacidad 100 y, si se llena, `BUY_ANIMAL` y `BUY_PRODUCT`
+   fallan EN SILENCIO.** Y `BUY_PRODUCT` sólo existe para WHEAT y FERTILIZER.
+
+Medido sobre `campeona_hoz` (16 partidas): **5% de pérdida por ráfaga
+(\$5.897/partida)** y ~60 unidades/partida vendidas a \$1 — WOOL 29.6 (25% de la
+lana), MILK 18.1 (13%), MELON 11.3.
+
+### `sell_marginal` RECHAZADO — gradiente monótona (2.880 ep, seeds 95500-95503)
+
+| piso marginal | delta | t |
+|---|---|---|
+| `sm_05` | −3.1 | −2.54 |
+| `sm_20` | −4.4 | −3.22 |
+| `sm_30` | −5.6 | −3.83 |
+| `sm_50` | −8.1 | −4.60 |
+| `sm_70` | −10.0 | −4.53 |
+| `hinge_hold` | −1.6 | −1.51 |
+
+**Cuanto más aguantas, peor.** La dosis-respuesta monótona es evidencia más
+fuerte que cualquier t individual: no hace falta confirmación para rechazar.
+**Las 60 unidades a \$1 NO son una fuga; tirarlas es lo correcto.** Tres razones,
+todas visibles en el motor: el shed tope 100 se llena; el dinero de hoy compone
+25 días; y el mercado es **compartido en lockstep**, así que aguantar le regala
+al rival los turnos de precio alto. Confirma `sell_floor=0` desde el otro lado:
+`sell_floor` decide SI vender, `sell_marginal` CUÁNTAS, y **las dos formas de
+aguantar pierden**.
+
+### CONTRA-META: no hay hueco porque YA somos el contra-meta
+
+Medido contra los 40 rivales reales (80 episodios):
+
+**Composición media del rival al cierre:** COW 7.67, SHEEP 4.42, STRAWBERRY 3.18,
+WHEAT 1.11, GOOSE 0.69. **La escalera es pesada en animales y ligera en
+cultivos; nosotros al revés.**
+
+**Inventario de mercado al cierre** (10.000 = neutro): de 9 mercados, **8 acaban
+en ESCASEZ** — el town drena más de lo que aporta el conjunto. WHEAT cierra a
+−448, EGG a −176, CARROT a −189. Sólo dos quedan saturados, **y los saturamos
+nosotros**: FERTILIZER +368 (vendemos 157.9) y MELON +148 (vendemos 113.9).
+
+### Y aun así, redirigir esos dos mercados PIERDE (2.880 ep, seeds 96500-96503)
+
+| brazo | delta | t |
+|---|---|---|
+| `melon_5` | +1.6 | +0.49 (ruido) |
+| `fr_40` (reservar fertilizante) | −13.1 | −5.04 |
+| `fr_60` = `fr_100` | −14.4 | −5.30 |
+| `melon_11` | −16.9 | −4.01 |
+| **`sin_fert`** | **−50.0** | **−12.45** |
+
+Que un mercado esté saturado NO implica dejar de venderle: venderlo a \$26-65
+bate a guardarlo, porque guardarlo llena el shed y el uso alternativo está
+acotado por el número de tiles de fresa/tomate, que `fert_reserve=20` ya cubre.
+(`fr_60` == `fr_100` porque la reserva satura contra ese recuento — el mismo
+patrón de redundancia que las prioridades.)
+
+**`sin_fert` −50.0 es el efecto más grande medido en todo el día.** Recoger
+fertilizante vale la mitad de nuestra tasa de victoria: `collect_fert` +
+`fert_dawn_load` + `fert_phase_lock` son el núcleo real de la ventaja.
+
+### ⚠️ VIGILAR: primer desacuerdo serio panel vs escalera
+
+```
+campeona_grano   828.9   (38 ep)   panel decia +6.4 sobre fase -> CONFIRMA
+campeona_fase    819.4   (66 ep, fuera)
+campeona_hoz     769.5   (27 ep)   panel decia +2.5 sobre grano -> CONTRADICE
+```
+
+`hoz` está ~60 puntos por debajo de `grano`. Con 27 episodios es pronto (los
+ratings arrancan bajos), pero `prio_harvest=76` fue la adopción de **huella más
+pequeña** (4 celdas de 160). Si a los ~60 episodios sigue debajo, hay que
+revisar si el panel resuelve cambios de huella minúscula.
+
+---
+
 ## 2026-09-03 (6) — Gansos: RECHAZADO. Y mi modelo del mercado estaba mal
 
 ### El veredicto (2.880 episodios, seeds 94000-94003)
