@@ -50,6 +50,23 @@ PLANTILLA = {
     "por_trabajo": {"hire_by_work": True},                          # plantilla al ritmo del TRABAJO
 }
 
+# GANSOS/HUEVOS. EGG es el unico producto animal con sumidero casi infinito:
+# 400 unidades todavia pagan $39.7 (79% del base), mientras MILK y WOOL se
+# hunden a $1 pasadas las ~100. Y el ganso es el mejor animal en las tres
+# dimensiones: cuesta menos ($300 vs 400/500), produce antes (dia 4 vs 8/6) y
+# produce A DIARIO (iv=1 vs 2/3). 32 de 40 rivales no tienen ninguno.
+# La base vende 140 MILK + 119 WOOL, muy pasado el colapso: producto regalado.
+GANSOS = {
+    "noop":   {},
+    "g6":     {"animals": [("GOOSE", 6)]},
+    "g8":     {"animals": [("GOOSE", 8)]},
+    "g10":    {"animals": [("GOOSE", 10)]},
+    "g12":    {"animals": [("GOOSE", 12)]},
+    "vaca_g": {"animals": [("COW", 4), ("GOOSE", 4)]},
+    "mixto":  {"animals": [("COW", 2), ("GOOSE", 6)]},
+    "suma_g4":{"animals": [("COW", 4), ("SHEEP", 4), ("GOOSE", 4)]},
+}
+
 VARIANTES = {
     "noop":         {},                        # control: DEBE leer +0.0
     "water_30":     {"prio_water": 30},
@@ -69,6 +86,8 @@ VARIANTES = {
 
 if os.environ.get("SET") == "plantilla":
     VARIANTES = PLANTILLA
+if os.environ.get("SET") == "gansos":
+    VARIANTES = GANSOS
 if SOLO:
     VARIANTES = {k: v for k, v in VARIANTES.items() if k in ("noop",) or k in SOLO}
 

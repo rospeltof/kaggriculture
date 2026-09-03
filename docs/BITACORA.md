@@ -1,5 +1,63 @@
 # Bitácora de experimentos
 
+## 2026-09-03 (6) — Gansos: RECHAZADO. Y mi modelo del mercado estaba mal
+
+### El veredicto (2.880 episodios, seeds 94000-94003)
+
+| brazo | composición | panel 40 | delta | t |
+|---|---|---|---|---|
+| base | COW 4 + SHEEP 4 | 59.1% | — | — |
+| `suma_g4` | + GOOSE 4 | 42.5% | −16.6 | −4.61 |
+| `mixto` | COW 2 + GOOSE 6 | 30.3% | −28.7 | −7.72 |
+| `vaca_g` | COW 4 + GOOSE 4 | 29.1% | −30.0 | −8.79 |
+| `g8` | GOOSE 8 | 19.1% | −40.0 | −9.74 |
+| `g6` | GOOSE 6 | 15.0% | −44.1 | −10.95 |
+| `g10` | GOOSE 10 | 9.7% | **−49.4** | **−13.31** |
+
+### EL ERROR DE MODELO (lo importante de esta entrada)
+
+Leí la tabla `_price_at(producto, 10000 + d)` como si `d` fueran las **ventas
+acumuladas de la partida**. NO LO ES: es el exceso de inventario **instantáneo**.
+Las ventas se reparten en 25 días y el town drena continuamente, así que el
+exceso nunca se acerca a las 100 unidades de golpe.
+
+**Prueba:** WOOL termina la partida a **$247**, por encima de su base de $200.
+Tras vender 119 lanas el inventario está POR DEBAJO del inicial.
+
+Mi afirmación de que "regalamos el 30% de la producción animal a $1" era FALSA:
+
+| | base (COW 4 + SHEEP 4) | g8 (8 gansos) |
+|---|---|---|
+| ingreso animal | MILK $25.354 + WOOL $13.940 = **$39.294** | EGG **$18.324** |
+| unidades vendidas | 259 | ~409 |
+| **$/unidad** | **$152** | **$45** |
+| ingreso de cultivos | $45.349 | $37.153 (también cae) |
+| dinero medio | **93.884** | 70.821 |
+
+El ganso pierde por lo más simple: **precio base $50 frente a $160 y $200**. Ser
+más barato ($300), más rápido (día 4) y diario (iv=1) no compensa valer 3-4 veces
+menos por unidad. Y la mezcla de acciones es IDÉNTICA (53% MOVER, 19% WATER en
+ambos): tampoco libera mano de obra.
+
+### ⚠️ REVISAR: la tesis del suelo de $1 del briefing
+
+*"Fresa, lana y leche tocan el suelo de $1 a las ~100 unidades, y eso explica la
+lista de experimentos fallidos de escalado"* se apoya en la MISMA lectura
+equivocada. Puede seguir siendo cierta para **ráfagas concentradas** (vender 100
+fresas el mismo día sí hunde el precio) pero NO para la producción repartida,
+que es como vendemos. **Pendiente de re-examen.**
+
+### Y me dejé llevar por UNA partida
+
+Mi sonda de un episodio dio $100.261 para `g8` contra $82.167 de la base, y lo
+reporté como señal fuerte. La distribución real de `g8` es mediana $63.668 con
+máximo $119.364: pegué en la cola alta. Es el error contra el que advierto en
+`METODO.md`, cometido media hora después de escribirlo. **Una sonda de un
+episodio sirve para comprobar que una bandera MUERDE, nunca para estimar
+su efecto.**
+
+---
+
 ## 2026-09-03 (5) — Plantilla: frente CERRADO. 12 manos es el óptimo
 
 **El bug metodológico que invalidaba los intentos previos.** El chasis calcula

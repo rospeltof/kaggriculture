@@ -292,6 +292,16 @@ tres veces el 2026-09-03 (`hands_cap 14`, `endgame_reap` v1 y v2) porque el
 chasis tiene DOS implementaciones de la misma decision y los parches tocaban la
 mitad muerta: **`_service_ops` es la que manda cuando `router=True`**.
 
+**Una sonda de UN episodio sirve para comprobar que una bandera MUERDE, nunca
+para estimar su efecto.** El 2026-09-03 una sonda dio \$100k para los gansos
+contra \$82k de la base; el panel de 40 dio 19% de winrate contra 59%. La
+mediana real de ese brazo era \$63k: la sonda pego en la cola alta.
+
+**La curva de precios `_price_at(producto, 10000+d)` mide exceso de inventario
+INSTANTANEO, no ventas acumuladas.** Las ventas se reparten en 25 dias y el town
+drena en continuo, asi que el exceso nunca llega a las 100 unidades de golpe.
+WOOL termina la partida a \$247 (base \$200) despues de vender 119 lanas.
+
 **Quitar una clave cuyo valor == default es un no-op POR CONSTRUCCION.** Ahi hay
 que PERTURBAR el valor, y proporcionalmente (restar 30 a 2000 no prueba nada).
 `muerde.py` lo detecta y lo hace solo.
