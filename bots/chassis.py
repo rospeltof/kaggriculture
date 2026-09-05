@@ -187,6 +187,17 @@ def _fert_due(c, age, cfg):
     if not cfg.get("fert_tick_aligned"):
         return age >= c["first"] - 2
     if not c["ongoing"]:
+        if cfg.get("fert_single"):
+            # MOTOR L431-443: en los cultivos de UN CORTE el rendimiento no madura
+            # con la edad, lo anade el RIEGO, y solo dentro de la ventana
+            # [(max_yield_day+1)//2 .. max_yield_day] -- que es exactamente
+            # nuestro c["win"]. Ahi `bonus = 2 if fertilized else 1`:
+            #   WHEAT  ventana 2..4  ->  1+1+1+1 = 4   fertilizado 1+2+2+2 = 6 (tope)
+            #   CARROT ventana 2..3  ->  1+1+1   = 3   fertilizado 1+2+2   = 4 (tope)
+            #   MELON  ventana 6..12 ->  tope 6 en edad 10; fertilizado en edad 8
+            # Como una aplicacion cubre hoy..hoy+2 (3 dias), UNA sola en la edad
+            # win[0] cubre la ventana entera del trigo y de la zanahoria.
+            return age == c["win"][0]
         return c["first"] - 2 <= age <= c["peak"]
     iv = max(1, c.get("iv", 1))
     if cfg.get("fert_phase_lock"):

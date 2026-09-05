@@ -1,5 +1,122 @@
 # Bitácora de experimentos
 
+## 2026-09-04 — Seis barridos, seis negativos: estamos en un óptimo local afilado
+
+**Escalera (resuelve la vigilancia de ayer):** `campeona_hoz` 769.5 -> **831.3**
+(48 ep) y `campeona_grano` 828.9 -> **786.6** (56 ep). Se cruzaron: era ruido de
+arranque. **Con ~50 episodios el rating tiene un error de ±40**, así que la
+escalera no arbitra diferencias de 10 puntos; sólo el panel puede.
+
+### Análisis de los 12 replays del TOP1 (tetsuya): DOS hipótesis mías, falsas
+
+`tetsuya` gana 11/12 con $115.822 (nosotros ~$94k). Composición por fases:
+melón d6 -> fresa 35 tiles d12 -> trigo 22 d18 -> **trigo 34 d24** -> vacío d29.
+Banco de $2.500 el día 12 y $115k al cierre: reinvierten todo.
+
+**FALSO que cultiven el doble.** Medido: nuestra base planta **66.4 tiles en el
+pico** (media 44.9), más que sus ~58. `crop_tiles=30` NO limita la superficie —
+sólo acota al scorer adaptativo; `idle_plant` planta por encima. Por eso subirlo
+no hizo nada.
+
+**FALSO que la mano de obra nos limite.** Regamos el **94% de las plantas vivas**
+y **no muere ninguna de sed** (0.0 con 2 días sin regar). No hay superficie
+bloqueada que un planificador pudiera desbloquear.
+
+### Los seis barridos (2.880 episodios cada uno)
+
+| frente | mejor brazo | peor brazo |
+|---|---|---|
+| superficie | `ct_58` −4.1 | `ct50_q4` −16.1 |
+| cuarto cuadrante | — | `q4` −13.8 (t=−4.63) |
+| rebaño | `r6` −7.8 | **`r15_top1` −29.1 (t=−7.45)** |
+| fertilizar un corte | `fm` −5.3 | `fwcm` −37.8 (t=−10.07) |
+
+**Séptimo intento fallido de copiar al meta**, y el más concluyente: su
+composición EXACTA de animales es el peor brazo de su barrido.
+
+### El óptimo local, medido en todas las direcciones
+
+| dimensión | óptimo | al moverse |
+|---|---|---|
+| manos | 12 | 9→−6.9 · 11→−2.8 · 14→−24 · 15→−33 |
+| animales | 8 | 6→−7.8 · 10→−8.4 · 13→−15 · 16→−22.5 |
+| cuadrantes | 3 | 4→−13.8 |
+| superficie | actual | +10→−7.5 · +28→−8.8 |
+| ventas | tirar todo | cualquier retención → negativo |
+| fertilizante | fresa/tomate, reserva 20 | cualquier cambio → negativo |
+
+**Cada dimensión empeora en AMBOS sentidos. La búsqueda por parámetros está
+agotada; lo que quede debe venir de mecanismos nuevos.**
+
+### EL NÚMERO QUE IMPORTA: 12.5% contra el TOP1
+
+Extraídas las 12 cintas de tetsuya (`extraer_top1.py`, prefijo `top_` para NO
+mezclarlas con el panel `lad_`: son poblaciones distintas). Contra ellas nuestro
+campeón gana el **12.5%**, frente al 58-65% contra la escalera de ~800.
+
+Probada la hipótesis "nuestro óptimo lo es sólo contra esta población":
+**NO se confirma.** `r13` sale +4.2 con t=0.81 (ruido); el resto de sus
+decisiones también pierden contra ellos.
+
+**Dónde se abre la brecha** (banco mediano por día):
+
+| día | nosotros | tetsuya | ratio |
+|---|---|---|---|
+| 12 | 3.886 | 2.500 | **1.55** |
+| 14 | 12.532 | 15.656 | 0.80 |
+| **16** | **14.782** | **28.954** | **0.51** |
+| 28 | 70.976 | 106.270 | 0.67 |
+
+**Vamos por delante el día 12 y nos sacan el doble para el 16.** Después el
+ratio se congela en 0.67: no perdemos más terreno, pero tampoco lo recuperamos.
+**Todo el partido se decide entre los días 12 y 16.**
+
+### MECANISMO DEL MOTOR QUE NO USÁBAMOS (y por qué no sirve)
+
+Motor L431-443: en los cultivos de UN CORTE el rendimiento **no madura con la
+edad, lo añade el RIEGO**, sólo dentro de `[(max_yield_day+1)//2 .. max_yield_day]`
+— que coincide exactamente con nuestro `c["win"]` (el chasis estaba bien
+ingeniado). Y ahí `bonus = 2 if fertilized else 1`:
+
+| cultivo | ventana | sin fert | fertilizado |
+|---|---|---|---|
+| WHEAT | 2..4 | 4 | **6** (tope) |
+| CARROT | 2..3 | 3 | **4** (tope) |
+| MELON | 6..12 | tope 6 en edad 10 | tope 6 en edad **8** |
+
+Nunca los fertilizábamos. Añadirlos: **−29.4 (t=−7.84)**. Dos razones:
+
+1. **El fertilizante ya está óptimamente asignado.** Fresa: +4 uds x $199 =
+   **+$796**. Trigo: +2 x $46 = **+$92**. La fresa rinde **8.6x más por unidad de
+   fertilizante**. Por eso `fert_reserve=40` empeora aún más (−36.2).
+2. **`FERTILIZE` roba una acción al RIEGO, y en los de un corte el riego ES el
+   rendimiento.** Con el 94% ya regado no hay holgura para el riego futuro que
+   cobraría el x2.
+
+Esto reconcilia el `sin_fert = −50` de ayer: recoger fertilizante es vital
+**porque alimenta a la fresa**, no porque el fertilizante sea bueno en abstracto.
+
+### Monte Carlo: qué es viable
+
+Medido: el agente usa **0.30 ms/turno de media** (p95 0.57, max 39.4) de un
+presupuesto de **1.000 ms**, más 60 s de banco de overage. El episodio entero nos
+cuesta **0.22 s de ~780 s disponibles**. Holgura ~3.300x.
+
+- **MCTS sobre la partida completa: DESCARTADO.** Un rollout del motor cuesta
+  5.6 s (7.8 ms/turno simulado) y, peor, **el estado del rival es privado**
+  (shed, semillas, inventarios): no se puede reconstruir el estado del motor.
+- **Rollout determinista de NUESTRA granja: viable.** El crecimiento depende sólo
+  de edad/riego/fertilizante y la producción animal de first/interval/cap. Nada
+  de eso depende del rival; sólo el precio. Convierte las prioridades cocinadas a
+  mano en valores calculables.
+- **Búsqueda offline sobre las perillas vivas: automatizable**, con el riesgo
+  conocido del winner's curse que envenenó `buscar_apertura.py`.
+
+**Fuentes en internet: nada aprovechable.** El foro está tras login y los
+writeups de Lux AI/Halite son de arquitecturas que no transfieren.
+
+---
+
 ## 2026-09-03 (7) — El motor leído de primera mano + ventas y contra-meta rechazados
 
 ### ¿Lee bien los precios el agente? SÍ

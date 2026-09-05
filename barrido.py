@@ -106,6 +106,75 @@ CONTRAMETA = {
     "sin_fert": {"collect_fert": False},        # ni recogerlo (libera acciones)
 }
 
+# SUPERFICIE. Analisis de los 12 replays del TOP1 (tetsuya, 11/12 victorias,
+# $115.822 medios contra nuestros ~$94k): cultiva ~58 tiles en el pico del dia 12
+# contra nuestras 30, y lleva 15 animales contra nuestros 8. Misma plantilla (12
+# manos) pero MOVER 44% / PASS 17% / WATER 12% frente a nuestro 53/8/19: cubre el
+# doble de superficie moviendose MENOS. Vende 522 fertilizante (nosotros 158) y
+# 367 trigo (nosotros 180) -- y el trigo cierra el mercado a -448, en escasez.
+# `crop_tiles` MUERDE (muerde.py 6/6) pero su VALOR nunca se barrio.
+SUPERFICIE = {
+    "noop":    {},
+    "ct_40":   {"crop_tiles": 40},
+    "ct_50":   {"crop_tiles": 50},
+    "ct_58":   {"crop_tiles": 58},
+    "ct_70":   {"crop_tiles": 70},
+    "q4":      {"max_quadrants": 4},
+    "ct50_q4": {"crop_tiles": 50, "max_quadrants": 4},
+    "ct58_q4": {"crop_tiles": 58, "max_quadrants": 4},
+}
+
+# REBANO GRANDE. Correccion del 2026-09-04: `crop_tiles=30` NO nos limitaba a 30
+# tiles (ya plantamos 66 en el pico, mas que las ~58 del top1) y regamos el 94%
+# sin que muera ninguna de sed. Ni superficie ni mano de obra son el cuello.
+# La diferencia real con tetsuya esta en los ANIMALES: 15 (7.2 SHEEP + 6.1 COW +
+# 1.8 GOOSE) contra nuestros 8. Vende 522 fertilizante (nosotros 158), 192 lana
+# (118) y 177 leche (137): los tres salen del rebano. Y `sin_fert` vale -50, o
+# sea que infrautilizamos a la mitad nuestra palanca mas fuerte.
+# Su blitz de 34 tiles de trigo el dia 24 es FORRAJE: 13 animales comen ~325.
+# Nunca probamos esta composicion: q_sheep6 eran 10 animales, no 15.
+REBANO = {
+    "noop":     {},
+    "r10":      {"animals": [("COW", 5), ("SHEEP", 5)]},
+    "r12":      {"animals": [("COW", 6), ("SHEEP", 6)]},
+    "r13":      {"animals": [("COW", 6), ("SHEEP", 7)]},
+    "r15_top1": {"animals": [("COW", 6), ("SHEEP", 7), ("GOOSE", 2)]},
+    "r16":      {"animals": [("COW", 8), ("SHEEP", 8)]},
+    "r13_ct58": {"animals": [("COW", 6), ("SHEEP", 7)], "crop_tiles": 58},
+    "r6":       {"animals": [("COW", 3), ("SHEEP", 3)]},
+}
+
+# Contra el TOP1 (TAPES=top_): ¿los brazos que pierden contra la escalera de ~800
+# se comportan igual contra un rival de 3040? Si NO, nuestro optimo local es un
+# optimo CONTRA ESA POBLACION y no una propiedad del juego.
+VS_TOP1 = {
+    "noop":     {},
+    "r13":      {"animals": [("COW", 6), ("SHEEP", 7)]},
+    "r15_top1": {"animals": [("COW", 6), ("SHEEP", 7), ("GOOSE", 2)]},
+    "ct_58":    {"crop_tiles": 58},
+    "h11":      {"hands_cap": 11},
+    "q4":       {"max_quadrants": 4},
+}
+
+# FERTILIZAR CULTIVOS DE UN CORTE. Descubierto leyendo el motor (2026-09-04):
+# en WHEAT/CARROT/MELON el rendimiento lo anade el RIEGO dentro de la ventana
+# win, con bonus x2 si esta fertilizado. Nunca los fertilizamos: fert_crops solo
+# lleva STRAWBERRY y TOMATO. Trigo 4->6 unidades (+50%) en un mercado que cierra
+# a -448 (escasez, ~$46/ud); zanahoria 3->4; melon alcanza el tope 2 dias antes.
+# Una sola aplicacion cubre 3 dias = la ventana entera del trigo.
+FERT1 = {
+    "noop":   {},
+    "fw":     {"fert_crops": ["STRAWBERRY","TOMATO","WHEAT"], "fert_single": True},
+    "fwc":    {"fert_crops": ["STRAWBERRY","TOMATO","WHEAT","CARROT"], "fert_single": True},
+    "fwcm":   {"fert_crops": ["STRAWBERRY","TOMATO","WHEAT","CARROT","MELON"], "fert_single": True},
+    "fm":     {"fert_crops": ["STRAWBERRY","TOMATO","MELON"], "fert_single": True},
+    "fw_res": {"fert_crops": ["STRAWBERRY","TOMATO","WHEAT"], "fert_single": True,
+               "fert_reserve": 40},
+    "fwc_res":{"fert_crops": ["STRAWBERRY","TOMATO","WHEAT","CARROT"], "fert_single": True,
+               "fert_reserve": 40},
+    "fw_noal":{"fert_crops": ["STRAWBERRY","TOMATO","WHEAT"]},   # sin alinear: control
+}
+
 VARIANTES = {
     "noop":         {},                        # control: DEBE leer +0.0
     "water_30":     {"prio_water": 30},
@@ -131,6 +200,14 @@ if os.environ.get("SET") == "ventas":
     VARIANTES = VENTAS
 if os.environ.get("SET") == "contrameta":
     VARIANTES = CONTRAMETA
+if os.environ.get("SET") == "superficie":
+    VARIANTES = SUPERFICIE
+if os.environ.get("SET") == "rebano":
+    VARIANTES = REBANO
+if os.environ.get("SET") == "vstop1":
+    VARIANTES = VS_TOP1
+if os.environ.get("SET") == "fert1":
+    VARIANTES = FERT1
 if SOLO:
     VARIANTES = {k: v for k, v in VARIANTES.items() if k in ("noop",) or k in SOLO}
 
@@ -152,7 +229,10 @@ def _una(a):
 
 
 def main():                                     # GUARD OBLIGATORIO
-    tapes = [os.path.basename(f)[:-8] for f in glob.glob("bots/meta/tapes/lad_*.json.gz")]
+    patron = os.environ.get("TAPES", "lad_")     # `lad_` = 40 rivales reales de
+    # nuestras partidas (~800 de rating). `top_` = las 12 cintas de tetsuya, el
+    # TOP1 (3040). Son POBLACIONES DISTINTAS y no deben mezclarse.
+    tapes = [os.path.basename(f)[:-8] for f in glob.glob(f"bots/meta/tapes/{patron}*.json.gz")]
     seeds = list(range(SEED0, SEED0 + N_SEEDS))
     nombres = ["base"] + list(VARIANTES)
     jobs = [(n, t, s, seat) for n in nombres for t in tapes for s in seeds for seat in (0, 1)]
