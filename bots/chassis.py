@@ -450,6 +450,7 @@ def decide(obs, cfg):
     # ---- escaneo del tablero -> tareas (prio, (x, y), op) ----
     tasks = []
     hungry = 0            # animales sin alimentar hoy
+    n_animals = 0         # animales VIVOS en tile (no el rebano planeado)
     empty_tiles = []
     # SHED HUB: las tiles de acceso al shed son de las ESTRUCTURAS, no del plantador.
     # El top-1 (tetsuya) ocupa 3.0 de 4 con animales; nosotros 1.0. Consecuencia
@@ -530,6 +531,7 @@ def decide(obs, cfg):
                     empty_structs.append((x, y, kind))
                     continue
                 a = ANIMAL[animal]
+                n_animals += 1
                 yu = tile.get("yield_units", 0)
                 if router_on:
                     serve_tiles.append((x, y, 3.0))
@@ -650,6 +652,15 @@ def decide(obs, cfg):
         # Comprarlas cuesta $5,800; esos tile-dias rinden $7,250 (fresa al margen)
         # a $32,770 (melon). Idea marcada como #1 de la cola pendiente en la
         # bitacora y nunca medida. El forraje se compra en el bloque de mercado.
+        # INCOHERENCIA: `herd` es el rebano PLANEADO (cfg["animals"]), no el que
+        # existe. El dia 0 no tenemos ni un animal y ya reservabamos 8 tiles para
+        # su forraje -- justo las tiles que la fresa y el melon (first=10)
+        # necesitan a esa hora. Medido contra tetsuya: plantamos melon 2.6 dias y
+        # fresa 4.2 dias tarde, y de ahi sale la zona muerta de los dias 14-16.
+        # El trigo tarda 4 dias en dar, asi que basta con adelantarse
+        # `feed_lookahead` animales al rebano vivo.
+        if cfg.get("wheat_floor_live"):
+            herd = min(herd, n_animals + cfg.get("feed_lookahead", 3))
         wheat_floor = 0 if cfg.get("buy_feed") else min(
             cfg.get("wheat_floor", herd), max(0, budget // 3))
         wheat_gap = 0
@@ -658,7 +669,23 @@ def decide(obs, cfg):
         # 2) resto del budget: mejor $/tile-día, precio evaluado al MARGEN —
         #    inventario + 2x nuestro pipeline (el rival vende parecido) + esta tile.
         best, best_s = None, -1e9
-        for crop, (u, occ) in CROP_ECON.items():
+        # PRIORIDAD AL LEAD TIME. El score es $/tile-dia y es MIOPE: trata igual
+        # una tile-dia del dia 2 que una del dia 20. Pero un cultivo con
+        # first=10 SOLO paga si se planta temprano, mientras el trigo (first=2,
+        # ciclo de 4 dias) cabe en cualquier hueco de la temporada.
+        # Medido contra tetsuya (12 replays): plantamos melon 2.6 dias y fresa
+        # 4.2 dias mas tarde que ellos, porque el dia 0-1 metemos 17 trigos que
+        # taponan las tiles. De ahi sale la zona muerta de los dias 14-16, donde
+        # ganamos +459/+472/-289 mientras ellos hacen +10204/+7350/+5948.
+        _pool = list(CROP_ECON)
+        if cfg.get("premium_first") and day <= cfg.get("premium_day", 6):
+            _lead = [c for c in _pool
+                     if CROP[c]["first"] >= cfg.get("premium_lead", 10)
+                     and day <= CROP[c]["last_plant"]]
+            if _lead:                      # si no hay ninguno viable, no filtrar
+                _pool = _lead
+        for crop in _pool:
+            u, occ = CROP_ECON[crop]
             if day > CROP[crop]["last_plant"]:
                 continue
             u_eff = u

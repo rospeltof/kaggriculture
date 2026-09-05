@@ -1,5 +1,88 @@
 # Bitácora de experimentos
 
+## 2026-09-04 (2) — La ventana d12-d16, localizada al detalle. Tres arreglos, tres fallos
+
+### El sintoma, con precision
+
+Deltas de banco diarios (24 partidas nuestras contra sus cintas | 12 replays suyos):
+
+| dia | nuestro delta | tetsuya |
+|---|---|---|
+| 13 | **+4.918** | +2.952 |
+| **14** | **+459** | **+10.204** |
+| **15** | **+472** | **+7.350** |
+| **16** | **−289** | **+5.948** |
+| 17 | +12.296 | +5.904 |
+
+**Zona muerta de tres dias.** Vendemos CERO melon hasta el dia 17 y entonces 48
+de golpe; ellos venden 19/18/12 los dias 14/15/16.
+
+### La causa: llegamos tarde a los cultivos de lead time largo
+
+| cultivo | nosotros (total, dia medio) | tetsuya |
+|---|---|---|
+| **MELON** | 20.8 · **dia 7.8** | 13.1 · **dia 5.2** |
+| **STRAWBERRY** | 41.2 · **dia 11.7** | 37.8 · **dia 7.5** |
+| WHEAT | 77.6 · dia 12.4 | **148.3** · dia 19.2 |
+| CARROT | 43.4 · dia 19.3 | 21.8 · dia 22.9 |
+
+Melon 2.6 dias tarde, fresa 4.2. Ambos tienen `first=10`: cada dia de retraso al
+plantar es un dia de retraso al cobrar, y **no se recupera** — de ahi que el
+ratio se congele en 0.67 despues del dia 16.
+
+### DESCARTADO 1: atasco logistico (shed / manos)
+
+El shed NO se desborda (carga maxima 28 de 100). Y el melon en manos es **cero
+hasta el dia 16**: no es que cosechemos y se atasque, es que **no cosechamos**.
+
+### DESCARTADO 2: el scorer elige mal (`premium_first`)
+
+Filtrar los candidatos a los cultivos con `first>=10` en los dias tempranos:
+**sd = 0.0 en pf4, pf6 y pf6_l8**. NO DISPARA -> el scorer **ya elegia** melon y
+fresa el dia 0-6. El tapon no venia de la eleccion.
+(Cuarta vez esta semana con la firma sd=0.0: parchear el camino que se LEE en vez
+del que EJECUTA.)
+
+### DESCARTADO 3: el piso de forraje era un fantasma (`wheat_floor_live`)
+
+Hipotesis: `wheat_floor` usa `herd = sum(cfg["animals"]) = 8` desde el dia 0,
+cuando aun no hay ningun animal, y esas 8 tiles se plantan ANTES que el cultivo
+elegido (bucle L819: `(("WHEAT", wheat_gap), (best, resto))`).
+
+| brazo | delta | t |
+|---|---|---|
+| `wl0` (sin adelanto) | **−45.6** | −11.93 |
+| `wl2` | −23.4 | −6.51 |
+| `wf4` (piso fijo 4) | −26.2 | −6.89 |
+| `wl4` | −30.6 | −8.85 |
+
+**El chasis tenia razon.** Motor L817-819: `if consecutive_unfed >= 2: # Animal
+escapes`. Un animal sin comer DOS DIAS se escapa, y el trigo tarda 4 dias en dar:
+plantar 8 trigos el dia 0 para animales que llegan el dia 4-8 es **la
+anticipacion exacta que exige el ciclo del trigo**, no forraje fantasma.
+
+### El dato que no encaja con ninguna hipotesis mia
+
+| dia | nuestro banco | tetsuya |
+|---|---|---|
+| 9 | **332** | **5.237** |
+| 10 | 1.042 | 1.158 (−4.080) |
+
+**Ellos ACUMULAN y sueltan $4.080 de golpe el dia 10; nosotros vamos a cero
+constantemente.** No gastamos menos: goteamos. La diferencia puede no estar en
+QUE plantamos ni en CUANDO lo elegimos, sino en la SECUENCIA DE COMPRAS.
+**Pista viva, sin probar.**
+
+### Estado: 9 barridos hoy, 9 negativos
+
+Superficie, cuarto cuadrante, rebano, fertilizar un corte, gansos, ventas,
+contra-meta, lead time y forraje. **La busqueda por parametros esta agotada** y
+tres hipotesis mecanicas sobre la ventana d12-d16 han caido con evidencia dura.
+Lo que queda con horizonte real es el planificador (rollout determinista de
+nuestra propia granja) o la secuencia de compras.
+
+---
+
 ## 2026-09-04 — Seis barridos, seis negativos: estamos en un óptimo local afilado
 
 **Escalera (resuelve la vigilancia de ayer):** `campeona_hoz` 769.5 -> **831.3**

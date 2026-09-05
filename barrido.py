@@ -175,6 +175,43 @@ FERT1 = {
     "fw_noal":{"fert_crops": ["STRAWBERRY","TOMATO","WHEAT"]},   # sin alinear: control
 }
 
+# LEAD TIME. Comparados 12 replays de tetsuya con 24 partidas nuestras:
+#   MELON      nosotros 20.8 tiles dia medio 7.8  | tetsuya 13.1 dia medio 5.2
+#   STRAWBERRY nosotros 41.2 dia medio 11.7       | tetsuya 37.8 dia medio 7.5
+# Llegamos 2.6 y 4.2 dias TARDE en los dos cultivos con first=10, que son los
+# que generan la caja de los dias 12-18. El dia 0-1 metemos 17 trigos que
+# taponan las tiles; ellos ponen 10 trigos y ya fresa el dia 1 y melon el 3.
+# Zona muerta medida: d14 +459, d15 +472, d16 -289 contra sus +10204/+7350/+5948.
+LEAD = {
+    "noop":   {},
+    "pf4":    {"premium_first": True, "premium_day": 4},
+    "pf6":    {"premium_first": True, "premium_day": 6},
+    "pf8":    {"premium_first": True, "premium_day": 8},
+    "pf10":   {"premium_first": True, "premium_day": 10},
+    "pf6_l8": {"premium_first": True, "premium_day": 6, "premium_lead": 8},
+    "pf8_l8": {"premium_first": True, "premium_day": 8, "premium_lead": 8},
+    "pf12":   {"premium_first": True, "premium_day": 12},
+}
+
+# FORRAJE FANTASMA. `wheat_floor` usaba el rebano PLANEADO (8) desde el dia 0,
+# cuando aun no tenemos ningun animal: 8 tiles reservadas para alimentar a nadie,
+# y son las tiles que melon y fresa (first=10) necesitan temprano. El trigo tarda
+# 4 dias en dar, asi que basta adelantarse unos pocos animales al rebano VIVO.
+# (premium_first fallo con sd=0.0: el scorer YA elegia melon/fresa el dia 0-6;
+#  el tapon no venia de la eleccion sino de este piso de forraje, que se planta
+#  ANTES en el bucle de la linea 819.)
+FORRAJE = {
+    "noop":   {},
+    "wl0":    {"wheat_floor_live": True, "feed_lookahead": 0},
+    "wl2":    {"wheat_floor_live": True, "feed_lookahead": 2},
+    "wl3":    {"wheat_floor_live": True, "feed_lookahead": 3},
+    "wl4":    {"wheat_floor_live": True, "feed_lookahead": 4},
+    "wl6":    {"wheat_floor_live": True, "feed_lookahead": 6},
+    "wl2_pf": {"wheat_floor_live": True, "feed_lookahead": 2,
+               "premium_first": True, "premium_day": 8},
+    "wf4":    {"wheat_floor": 4},          # control: bajar el piso fijo sin mas
+}
+
 VARIANTES = {
     "noop":         {},                        # control: DEBE leer +0.0
     "water_30":     {"prio_water": 30},
@@ -208,6 +245,10 @@ if os.environ.get("SET") == "vstop1":
     VARIANTES = VS_TOP1
 if os.environ.get("SET") == "fert1":
     VARIANTES = FERT1
+if os.environ.get("SET") == "lead":
+    VARIANTES = LEAD
+if os.environ.get("SET") == "forraje":
+    VARIANTES = FORRAJE
 if SOLO:
     VARIANTES = {k: v for k, v in VARIANTES.items() if k in ("noop",) or k in SOLO}
 
