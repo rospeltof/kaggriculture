@@ -266,6 +266,23 @@ if os.environ.get("SET") == "lead":
     VARIANTES = LEAD
 if os.environ.get("SET") == "forraje":
     VARIANTES = FORRAJE
+# ABLACION de harvest_76 (2026-09-05). CAMPEONA_HOZ YA lleva prio_harvest=76,
+# asi que el test correcto es QUITARLO: si vale +2.5, `sin_h76` debe leer ~-2.5.
+# 62 es el default del chasis, o sea el valor previo a la adopcion.
+# Motivo: la adopcion se hizo con t por celda 2.96, pero el diseno es cruzado y
+# a dos vias da t=+1.76 (IC95 [-0.85; +5.85]). Nunca tuvo replica con potencia,
+# y un efecto el DOBLE de grande (compra parcial, +4.84) acaba de dar +0.23 al
+# replicarlo con 16 semillas.
+ABLACION_H76 = {
+    "noop": {},
+    "_peor": {},
+    "sin_h76": {"prio_harvest": 62},
+}
+
+if os.environ.get("SET") == "ablacion_h76":
+    VARIANTES = ABLACION_H76
+    EXACT_CONFIGS = {"_peor": "CAMPEONA_FB"}
+
 if os.environ.get("SET") == "semillas_parciales":
     VARIANTES = SEMILLAS_PARCIALES
     EXACT_CONFIGS = {"_peor": "CAMPEONA_FB"}

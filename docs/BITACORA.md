@@ -1,5 +1,73 @@
 # Bitácora de experimentos
 
+## 2026-09-05 (2) — Dos réplicas con potencia: la compra parcial y `harvest_76`, ambas a cero
+
+Ambos bloques pre-registrados antes de correr, 16 semillas, 5.120 episodios cada
+uno, con `noop` exacto y `_peor` (CAMPEONA_FB exacta) claramente negativo.
+
+### Compra parcial (`seed_partial_batch`) — REFUTADA
+
+| bloque | semillas | delta |
+|---|---|---|
+| descubrimiento | 4 | +5,00 |
+| confirmación | 8 | +4,84 |
+| **réplica** | **16** | **+0,23** |
+
+Criterio pre-registrado (ambos análisis deben excluir cero): por semilla
+IC95 [−6,20; +6,67], dos vías IC95 [−6,01; +6,48]. **Ambos incluyen cero.**
+
+La bandera **dispara** (cambia acciones en 1.280/1.280 episodios) y el panel
+**discrimina** (`_peor` a −26,95, t=−12,43). Resultado nulo real, no test nulo.
+
+### `harvest_76` (adopción del 2026-09-03) — REFUTADA
+
+Ablación leave-one-out: `sin_h76` = CAMPEONA_HOZ con `prio_harvest=62`.
+
+| | delta | t | IC95 |
+|---|---|---|---|
+| `sin_h76` por semilla (n=16) | −0,08 | −0,29 | **[−0,65; +0,49]** |
+| `sin_h76` dos vías (df=15) | −0,08 | −0,30 | [−0,63; +0,47] |
+
+**No es inconcluso: el intervalo es ±0,5 y EXCLUYE el +2,5 atribuido.** Quitar el
+mecanismo no cuesta nada. `sin_h76` cambia acciones en sólo **102/1.280
+episodios** (8%): huella minúscula con poca varianza, que yo leí como efecto real
+porque el t por celda daba 2,96.
+
+### La lección de método, en dos partes
+
+**1. La unidad de análisis.** El panel es un diseño **cruzado** (40 cintas × N
+semillas, ambas dimensiones aleatorias). Tratar las celdas como independientes
+infla el t. El estimador correcto es el de dos vías `V_cinta + V_semilla −
+V_celda` con los gl del clúster menor. Recalculado: `harvest_76` pasa de +2,96
+por celda a **+1,76** a dos vías, y la réplica confirma que no había nada.
+
+**2. Ante un resultado fronterizo, la respuesta no es un estimador mejor: son
+más datos.** El veredicto conservador del otro LLM sobre la compra parcial
+("inconcluso, no adoptar", t=2,08) era el correcto. Yo apliqué el estimador a
+dos vías —más apropiado para el diseño— obtuve t=2,52 y dije que pasaba. La
+réplica dice +0,23. El estimador sigue siendo el bueno; usarlo **después de ver
+el resultado** para cruzar la línea fue el error.
+
+### CALIBRACIÓN DE LA ESCALERA (colateral, y muy útil)
+
+`CAMPEONA_HOZ` = `CAMPEONA_GRANO` + `harvest_76`, y acabamos de medir que son
+**idénticas en el 92% de los episodios** y separadas por −0,08 puntos de panel.
+En la escalera: **`hoz` 818,1 contra `grano` 774,8**.
+
+**43 puntos de Elo entre dos bots prácticamente iguales.** Diferencias de menos
+de ~50 puntos entre nuestras propias submissions **no contienen información**.
+Todas las lecturas comparando generaciones caben dentro de ese ruido.
+
+### Estado del linaje
+
+Con `harvest_76` a cero, **la única mejora que sostiene al campeón de septiembre
+es `seed_stock_aware`** (+6,4 reportado). ⚠️ Sus datos crudos de confirmación
+**se perdieron**: `results/panel40.json` fue sobrescrito por una corrida
+posterior. No es verificable sin volver a medirlo. El `barrido.py` actual ya
+impide sobrescribir, pero llega tarde para ese archivo.
+
+---
+
 ## 2026-09-05 — Traspaso para revisión externa; envíos suspendidos
 
 El usuario pidió reservar la única corrida que indica tener en Kaggle y

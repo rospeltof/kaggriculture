@@ -49,8 +49,20 @@ de compras. Está implementado en `bots/chassis.py`; no se activó en la base.
 cambia acciones en 1.280/1.280: la bandera dispara y el panel discrimina. Es un
 resultado nulo real. Ver [pre-registro](PREREGISTRO_REPLICA_LOTES.md).
 
-**Pendiente heredado:** `harvest_76` está en la base activa con +2,50 y t=+1,76
-a dos vías (IC95 [−0,85; +5,85]); nunca tuvo réplica con potencia.
+**`harvest_76` REFUTADO (2026-09-05).** Ablación con 16 semillas nuevas
+(104000–104015): `sin_h76` da **−0,08**, IC95 **[−0,65; +0,49]** por semilla y
+[−0,63; +0,47] a dos vías. El intervalo **excluye el +2,5 atribuido**. Cambia
+acciones en sólo 102/1.280 episodios. Sigue en la base activa por inercia; no
+daña, pero no aporta. Ver [pre-registro](PREREGISTRO_ABLACION_H76.md).
+
+**Calibración de la escalera:** `hoz` y `grano` son idénticas en el 92% de los
+episodios y difieren −0,08 en panel, pero la escalera las separa 43 puntos
+(818,1 vs 774,8). **Diferencias <50 puntos entre submissions propias no
+informan.**
+
+**Riesgo abierto:** con `harvest_76` a cero, el único soporte del linaje de
+septiembre es `seed_stock_aware`, cuyos datos crudos de confirmación se
+perdieron al sobrescribirse `results/panel40.json`. No verificable sin remedir.
 
 Se ejecutaron 3.840 episodios de panel. Todos terminaron sin errores. Noop exacto
 en las 960 comparaciones correspondientes; el control anterior perdió claramente
