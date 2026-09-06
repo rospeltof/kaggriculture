@@ -279,6 +279,21 @@ ABLACION_H76 = {
     "sin_h76": {"prio_harvest": 62},
 }
 
+# ABLACION de seed_stock_aware (2026-09-05). Es la ULTIMA mejora que sostiene el
+# linaje de septiembre: harvest_76 quedo refutado (-0.08, IC95 [-0.65; +0.49]).
+# Sus datos crudos de confirmacion se perdieron (panel40.json sobrescrito), asi
+# que el +6.4 reportado no es verificable sin remedir. Mismo diseno que las dos
+# ablaciones anteriores: 16 semillas, leave-one-out sobre la base activa.
+ABLACION_SSA = {
+    "noop": {},
+    "_peor": {},
+    "sin_ssa": {"seed_stock_aware": False},
+}
+
+if os.environ.get("SET") == "ablacion_ssa":
+    VARIANTES = ABLACION_SSA
+    EXACT_CONFIGS = {"_peor": "CAMPEONA_FB"}
+
 if os.environ.get("SET") == "ablacion_h76":
     VARIANTES = ABLACION_H76
     EXACT_CONFIGS = {"_peor": "CAMPEONA_FB"}

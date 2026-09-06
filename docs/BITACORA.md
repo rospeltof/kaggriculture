@@ -1,5 +1,84 @@
 # Bitácora de experimentos
 
+## 2026-09-06 — `seed_stock_aware` CONFIRMADO, y el diagnóstico de por qué fallaba el protocolo
+
+### El resultado
+
+Ablación leave-one-out pre-registrada, 16 semillas nuevas (105000–105015),
+5.120 episodios. `sin_ssa` = `CAMPEONA_HOZ` con la bandera apagada.
+
+| criterio | delta | t | IC95 | |
+|---|---|---|---|---|
+| por semilla (n=16) | **−6,25** | −2,72 | [−11,15; −1,35] | **excluye cero** |
+| dos vías (df=15) | −6,25 | −2,63 | [−11,32; −1,18] | **excluye cero** |
+| `_peor` (control) | −21,48 | −14,78 | [−24,58; −18,39] | excluye cero |
+
+`noop` exacto en 1.280 episodios. **Ambos criterios excluyen cero → el mecanismo
+es REAL.** Y la magnitud replica el reporte original casi exacto: +6,4 medido en
+2026-09-03 con 8 semillas, −6,25 en la ablación con 16 semillas distintas. Dos
+mediciones independientes coincidiendo en magnitud valen más que cualquiera de
+los dos estadísticos por separado.
+
+**El campeón de septiembre está bien fundado.** `CAMPEONA_HOZ` debe su ventaja
+sobre `CAMPEONA_FASE` a `seed_stock_aware`, no a `harvest_76` (refutado ayer).
+
+### EL DIAGNÓSTICO: nunca tuvimos potencia
+
+Con el sd entre semillas de un mecanismo real (9,2 puntos), el tamaño mínimo
+detectable al 80% de potencia, bilateral:
+
+| semillas | MDE | episodios (4 brazos) |
+|---|---|---|
+| 4 | 16,3 puntos | 1.280 |
+| **8 (nuestro protocolo de confirmación)** | **10,4 puntos** | 2.560 |
+| 16 | 6,8 puntos | 5.120 |
+| 24 | 5,5 puntos | 7.680 |
+| 32 | 4,7 puntos | 10.240 |
+
+**Los tres mecanismos medidos estaban POR DEBAJO del MDE de nuestro protocolo:**
+
+| mecanismo | efecto | MDE con 8 semillas | verdad |
+|---|---|---|---|
+| `seed_stock_aware` | +6,4 | 10,4 | real, detectado **por suerte** |
+| compra parcial | +4,84 | 10,4 | nulo (+0,23 con 16) |
+| `harvest_76` | +2,5 | 10,4 | nulo (−0,08 con 16) |
+
+**Hacían falta DOS fallos simultáneos para adoptar ruido:** potencia insuficiente
+Y un estadístico inflado (t por celda sobre un diseño cruzado). Corregida la
+unidad de análisis, la falta de potencia deja de esconderse.
+
+### El sd depende del mecanismo — el n fijo fue el error de diseño
+
+| bloque | sd entre semillas |
+|---|---|
+| `harvest_76` | **1,07** (apenas cambia conducta: 102/1.280 episodios) |
+| `seed_stock_aware` | 9,20 |
+| compra parcial | 12,09 |
+
+Un mecanismo de huella pequeña se acota con pocas semillas (por eso refutamos
+`harvest_76` con un IC de ±0,5); uno de huella grande necesita muchas más.
+**Usar n=8 fijo sin mirar la varianza fue el error de fondo.**
+
+### PROTOCOLO NUEVO
+
+1. **Bloque piloto de 4 semillas** para estimar el sd entre semillas del brazo.
+2. **Dimensionar el bloque de confirmación** con ese sd para un MDE menor que el
+   efecto observado en el descubrimiento. Registrar el cálculo antes de correr.
+3. **Análisis primario: agrupamiento a dos vías** (`V_cinta + V_semilla −
+   V_celda`, gl del clúster menor). El t por celda se conserva sólo como
+   referencia histórica.
+4. **Ablación leave-one-out sobre la base activa**, no suma sobre una base vieja.
+5. Nada se declara confirmado si el efecto está por debajo del MDE del bloque,
+   aunque el t salga significativo.
+
+### Calibración de la escalera (de la sesión anterior, aquí para tenerlo junto)
+
+`hoz` y `grano` son idénticas en el 92% de los episodios y difieren −0,08 en
+panel, pero la escalera las separa **43 puntos de Elo** (818,1 vs 774,8).
+**Diferencias <50 puntos entre submissions propias no contienen información.**
+
+---
+
 ## 2026-09-05 (2) — Dos réplicas con potencia: la compra parcial y `harvest_76`, ambas a cero
 
 Ambos bloques pre-registrados antes de correr, 16 semillas, 5.120 episodios cada

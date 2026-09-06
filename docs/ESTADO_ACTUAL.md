@@ -60,9 +60,17 @@ episodios y difieren −0,08 en panel, pero la escalera las separa 43 puntos
 (818,1 vs 774,8). **Diferencias <50 puntos entre submissions propias no
 informan.**
 
-**Riesgo abierto:** con `harvest_76` a cero, el único soporte del linaje de
-septiembre es `seed_stock_aware`, cuyos datos crudos de confirmación se
-perdieron al sobrescribirse `results/panel40.json`. No verificable sin remedir.
+**`seed_stock_aware` CONFIRMADO (2026-09-06).** Ablación con 16 semillas nuevas
+(105000–105015): `sin_ssa` da **−6,25**, IC95 [−11,15; −1,35] por semilla y
+[−11,32; −1,18] a dos vías. **Ambos excluyen cero.** La magnitud replica el +6,4
+original medido con semillas distintas. **El campeón está bien fundado**; su
+ventaja sobre `CAMPEONA_FASE` viene de aquí, no de `harvest_76`.
+
+**Diagnóstico del protocolo:** con 8 semillas el MDE al 80% de potencia es
+**10,4 puntos**. Los tres mecanismos medidos (6,4 · 4,84 · 2,5) estaban por
+debajo: nunca tuvimos potencia. Protocolo nuevo en
+[BITACORA.md](BITACORA.md#2026-09-06) — piloto para estimar sd, dimensionar el
+bloque, dos vías como análisis primario, ablación sobre la base activa.
 
 Se ejecutaron 3.840 episodios de panel. Todos terminaron sin errores. Noop exacto
 en las 960 comparaciones correspondientes; el control anterior perdió claramente
