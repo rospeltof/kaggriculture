@@ -290,6 +290,26 @@ ABLACION_SSA = {
     "sin_ssa": {"seed_stock_aware": False},
 }
 
+# 2x2 CADENCIA x REBANO (2026-09-06). Probamos las dos piezas POR SEPARADO y
+# las dos fallaron: water_cadence (medida en dinero con el aparato viejo) y el
+# rebano de 13 (-15.0). La hipotesis es que son COMPLEMENTARIAS.
+# Medido: el 68% de nuestro riego no compra rendimiento (825 de 1209 riegos por
+# partida; motor L431-443 y L786-800). Y un rebano grande CUESTA acciones: 3 al
+# dia por animal entre FEED, CARE y COLLECT. Pedir 13 animales sin liberar el
+# riego es pedir algo que no cabe en el presupuesto de acciones.
+# Precedente en la bitacora: "INTEGRAL: el paquete gana por INTERACCIONES".
+CADENCIA_REBANO = {
+    "noop": {},
+    "_peor": {},
+    "cad": {"water_cadence": True},
+    "r13": {"animals": [("COW", 6), ("SHEEP", 7)]},
+    "cad_r13": {"water_cadence": True, "animals": [("COW", 6), ("SHEEP", 7)]},
+}
+
+if os.environ.get("SET") == "cadencia_rebano":
+    VARIANTES = CADENCIA_REBANO
+    EXACT_CONFIGS = {"_peor": "CAMPEONA_FB"}
+
 if os.environ.get("SET") == "ablacion_ssa":
     VARIANTES = ABLACION_SSA
     EXACT_CONFIGS = {"_peor": "CAMPEONA_FB"}

@@ -478,7 +478,18 @@ def decide(obs, cfg):
                 continue
             if kind == "PLANT":
                 if router_on:
-                    serve_tiles.append((x, y, 1.5))
+                    # INCOHERENCIA: la ruta del alba metia TODA planta sin
+                    # comprobar si necesita algo, mientras el servicio lo decide
+                    # `_service_ops`. Con `water_cadence` eso ahorra la ACCION de
+                    # regar pero no el VIAJE: la unidad camina hasta la tile para
+                    # no hacer nada. Aqui la ruta se construye con el mismo
+                    # predicado que decide el servicio, asi que una tile que no
+                    # necesita nada sale del circuito y se ahorran los pasos.
+                    # has_fert=True es deliberadamente inclusivo: no sabemos aun
+                    # que unidad la visitara ni si cargara fertilizante.
+                    if (not cfg.get("route_needed_only")
+                            or _service_ops(tile, day, cfg, True) is not None):
+                        serve_tiles.append((x, y, 1.5))
                 crop = tile["crop"]
                 c = CROP[crop]
                 planted_count[crop] = planted_count.get(crop, 0) + 1

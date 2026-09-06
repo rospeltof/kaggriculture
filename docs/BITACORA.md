@@ -1,5 +1,88 @@
 # Bitácora de experimentos
 
+## 2026-09-06 (2) — Tres ideas nuevas: dos cerradas, una sin rescate
+
+### Idea 3 — asimetría de asiento: NO EXISTE (coste cero)
+
+S5.4 dice que `HIRE` y `BUY_LAND` se resuelven en orden de jugador, el 0 primero.
+Medido sobre **19.208 episodios ya en disco**: asiento 0 = 56,5%, asiento 1 =
+56,7%, diferencia **−0,2** (t=−0,32, y ese t está inflado porque los episodios
+comparten cinta y semilla).
+
+Tiene sentido: el coste fibonacci del HIRE es por jugador y el precio de la
+tierra es fijo, así que no hay contienda real. **Bonus:** confirma que todos
+nuestros paneles están balanceados por asiento — ninguna medición anterior tiene
+confusión de asiento.
+
+### Riego: el 68% no compra rendimiento (medido)
+
+Motor L431-443 (un corte): el riego sólo suma dentro de `win`. Motor L786-800
+(continuos): producen +1 **regadas o no**; el riego sólo da el ×2 con
+fertilizante, o evita la muerte por dos días secos.
+
+| | riegos/partida | |
+|---|---|---|
+| útil, un corte dentro de ventana | 287 | 23,8% |
+| útil, continuo víspera de tick **y** fertilizado | 97 | 8,0% |
+| sólo mantiene viva, un corte fuera de ventana | 370 | 30,6% |
+| sólo mantiene viva, continuo fuera de víspera | 438 | 36,2% |
+
+**825 de 1.209 riegos (68%) no compran rendimiento.**
+
+### Idea 1 — 2×2 cadencia × rebaño: interacción REAL pero INSUFICIENTE
+
+Hipótesis: `water_cadence` y el rebaño grande son complementarios (uno libera
+acciones, el otro les da destino), y por eso ambos fallaron por separado.
+
+| brazo | panel | delta | t semilla | IC95 semilla |
+|---|---|---|---|---|
+| base | 60,5% | — | — | — |
+| `cad` | 38,8% | **−21,80** | −11,18 | [−25,95; −17,64] |
+| `r13` | 41,6% | **−18,98** | −9,10 | [−23,43; −14,54] |
+| **`cad_r13`** | 38,7% | **−21,88** | −9,05 | [−27,03; −16,72] |
+| `_peor` | 38,7% | −21,88 | −11,75 | [−25,84; −17,91] |
+
+**La interacción existe:** si los daños se sumaran, `cad_r13` daría −40,8; da
+−21,9. Son claramente **sub-aditivos**. Pero no basta: el paquete no bate a la
+base, no bate a `r13` e iguala a `cad`. **Frente cerrado.**
+
+`water_cadence` sale en −21,80, **idéntico a `_peor`**: cortar el riego es tan
+malo como volver a la generación de hace una semana.
+
+### Idea 2 — `route_needed_only`: implementada, NO medida en panel
+
+Incoherencia encontrada: la ruta del alba metía **toda** planta en `serve_tiles`
+sin comprobar si necesita algo, mientras el servicio lo decide `_service_ops`.
+Con `water_cadence` eso ahorra la ACCIÓN de regar pero no el VIAJE.
+
+Sonda de UNA partida (sólo verifica mecanismo, no estima efecto): `cad` sube el
+`_MOVER` de 52,9% a **62,1%** — las acciones liberadas se convierten en
+**caminar**, no en trabajo. Podar la ruta no lo arregla: el circuito queda más
+disperso y cada servicio cuesta más pasos.
+
+**Esto ya estaba en la bitácora desde agosto:** *"cortar el riego perdió $20,6k
+porque el agua es la carga útil que amortiza el caminar"*. Segundo redescubrimiento
+de la sesión (el primero, las reglas del motor que ya estaban en `RULES.md`).
+
+La bandera queda implementada y **apagada**, sin medición de panel. Dado que toda
+la dirección de la cadencia sale en −21,8, no merece un bloque propio.
+
+### ERROR DE PROCEDIMIENTO PROPIO
+
+**Edité `bots/chassis.py` mientras el barrido estaba en vuelo**, para implementar
+la idea 2. `barrido.py` hashea las fuentes al principio y al final, detectó el
+cambio y **abortó antes de escribir los pares** — hizo exactamente lo correcto.
+
+Antes de interpretar nada, **verifiqué** la inercia en vez de argumentarla: 24
+comparaciones (4 brazos × 3 cintas × 2 semillas) del chasis previo contra el
+actual, **hash de acciones idéntico en todas**. Con la bandera ausente,
+`not cfg.get(...)` es True y el `or` cortocircuita al `append` de siempre.
+Los pares se reconstruyeron desde el JSONL incremental, que sí se guardó.
+
+**Regla nueva: no tocar `bots/chassis.py` mientras haya un barrido corriendo.**
+
+---
+
 ## 2026-09-06 — `seed_stock_aware` CONFIRMADO, y el diagnóstico de por qué fallaba el protocolo
 
 ### El resultado
