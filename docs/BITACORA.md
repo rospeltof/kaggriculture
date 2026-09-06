@@ -1,5 +1,57 @@
 # Bitácora de experimentos
 
+## 2026-09-06 (4) — `compete_aware` REFUTADO con dosis-respuesta monótona
+
+### El resultado
+
+Pre-registrado antes de correr. 16 semillas (113000-113015), 8.960 episodios.
+`noop` exacto en 1.280; `_peor` a −26,1 (t=−14,98): el panel discrimina.
+
+| brazo | panel | delta | t semilla |
+|---|---|---|---|
+| base | 60,9% | — | — |
+| `ca2` | 58,4% | −2,5 | −1,84 |
+| `ca3` | 52,4% | −8,4 | −5,99 |
+| `ca4` | 48,0% | **−12,8** | −7,24 |
+| `mof2` | 61,7% | +0,9 | +0,60 (ruido) |
+
+La condición de monotonía del pre-registro **se cumple, en la dirección
+contraria**: cuanta más competencia asume el scorer, peor. Nada que rescatar.
+
+### Por qué falló: el porcentaje engañaba
+
+Los productos frágiles **siguen valiendo 4× más después del daño**:
+
+| | $/ud compitiendo |
+|---|---|
+| STRAWBERRY | **175,6** (tras perder el 19%) |
+| WHEAT | **39,0** (tras ganar el 13%) |
+
+Perder el 19% de $216 deja $175; ganar el 13% de $34 deja $39. **Un porcentaje
+de pérdida mayor sobre un número mucho mayor sigue siendo el mejor negocio.**
+Nuestra cesta ya era la correcta y el 38% es el precio de jugar en el mercado
+caro. El razonamiento por porcentajes ocultaba los niveles absolutos.
+
+### ⚠️ Debilidad de la medición que motivó la hipótesis
+
+El "26% de coste de competir del top-1" se obtuvo **reproduciendo sus cintas**.
+Una cinta es una secuencia de acciones FIJA: no se adapta al rival ni al campo
+contra el que se reproduce, y fue grabada contra otro oponente. Nuestro bot sí
+se adapta. **La asimetría 38% vs 26% es mucho más débil de lo que se presentó**;
+no es su política compitiendo, es una grabación fuera de contexto.
+
+El único número de esa medición que no tiene ese problema es el nuestro: 140.532
+aislados vs 87.533 compitiendo. Que el rival nos cueste $53.000 es real; que el
+top-1 lo lleve mejor, no está establecido.
+
+### Tercera sonda de un episodio que apunta al revés
+
+`ca4` en una partida: $67.538 → $88.579. En el panel: **−12,8 puntos**. Van tres
+en la sesión (gansos, `cad+ruta`, y esta). Esta vez la salvedad estaba escrita en
+el pre-registro y no se actuó sobre ella.
+
+---
+
 ## 2026-09-06 (3) — El techo de la apertura, y EL HALLAZGO: producimos mejor, competimos peor
 
 ### La apertura está cerrada POR TECHO, no por intentos fallidos

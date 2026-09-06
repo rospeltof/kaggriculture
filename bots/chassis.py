@@ -728,6 +728,16 @@ def decide(obs, cfg):
             if cfg.get("opp_read"):
                 # oferta rival OBSERVADA (sus tiles públicas) en vez del factor ciego
                 supply = pipeline + opp_incoming.get(crop, 0)
+            if cfg.get("compete_aware"):
+                # COMPETENCIA DE PRECIO. Medido 2026-09-06: vendemos las MISMAS
+                # unidades (932 aislados vs 977 compitiendo) a precios hundidos.
+                # WOOL -65%, MELON -35%, STRAWBERRY -19%, MILK -18%; mientras
+                # TOMATO +90%, CARROT +27% y WHEAT +13% MEJORAN con rival, porque
+                # sus curvas son `hinge`/`log` y el rival DRENA esos mercados.
+                # `opp_incoming` sólo ve las tiles rivales de HOY: subestima su
+                # oferta de temporada. Aquí asumimos un rival comparable al
+                # nuestro, que es lo que castiga a las curvas frágiles.
+                supply = int(cfg.get("compete_mult", 2) * pipeline) + opp_incoming.get(crop, 0)
             proj_inv = market_inv.get(crop, 10000)
             if cfg.get("town_forecast"):
                 # el town drenará inventario hasta la cosecha -> precio proyectado sube

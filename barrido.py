@@ -306,6 +306,26 @@ CADENCIA_REBANO = {
     "cad_r13": {"water_cadence": True, "animals": [("COW", 6), ("SHEEP", 7)]},
 }
 
+# COMPETENCIA DE PRECIO (2026-09-06). Medido: producimos MAS que el top1 en
+# aislamiento (140.532 vs 131.034) y perdemos 38% al competir contra su 26%.
+# El desglose por producto muestra competencia de PRECIO pura: mismas unidades
+# (932 -> 977) a precios hundidos. WOOL -65% (-$18.846), MELON -35%, STRAWBERRY
+# -19%, MILK -18%; y TOMATO +90%, CARROT +27%, WHEAT +13% MEJORAN con rival.
+# El scorer evalua el precio con la oferta rival OBSERVADA HOY (opp_read), que
+# subestima su oferta de temporada, asi que sobrevalora las curvas fragiles.
+COMPETENCIA = {
+    "noop": {},
+    "_peor": {},
+    "ca2": {"compete_aware": True, "compete_mult": 2},
+    "ca3": {"compete_aware": True, "compete_mult": 3},
+    "ca4": {"compete_aware": True, "compete_mult": 4},
+    "mof2": {"opp_read": False, "mkt_opp_factor": 2},   # el default viejo del chasis
+}
+
+if os.environ.get("SET") == "competencia":
+    VARIANTES = COMPETENCIA
+    EXACT_CONFIGS = {"_peor": "CAMPEONA_FB"}
+
 if os.environ.get("SET") == "cadencia_rebano":
     VARIANTES = CADENCIA_REBANO
     EXACT_CONFIGS = {"_peor": "CAMPEONA_FB"}
