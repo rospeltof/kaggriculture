@@ -1,0 +1,204 @@
+{
+  "verdict": "inconcluso_no_adoptar",
+  "method": "IC95 t de Student de deltas medios por semilla, panel fijo de 40 cintas",
+  "runs": [
+    {
+      "seeds": [
+        101000,
+        101001,
+        101002,
+        101003
+      ],
+      "episodes": 1280,
+      "arms": {
+        "base": {
+          "win_rate_percent": 62.18749999999999,
+          "delta_points": 0.0,
+          "ci95_seed_points": [
+            0.0,
+            0.0
+          ],
+          "t_seed": null,
+          "t_cell": null,
+          "seed_deltas_points": {
+            "101000": 0.0,
+            "101001": 0.0,
+            "101002": 0.0,
+            "101003": 0.0
+          },
+          "changed_actions_episodes": 0,
+          "ties": 0
+        },
+        "noop": {
+          "win_rate_percent": 62.18749999999999,
+          "delta_points": 0.0,
+          "ci95_seed_points": [
+            0.0,
+            0.0
+          ],
+          "t_seed": null,
+          "t_cell": null,
+          "seed_deltas_points": {
+            "101000": 0.0,
+            "101001": 0.0,
+            "101002": 0.0,
+            "101003": 0.0
+          },
+          "changed_actions_episodes": 0,
+          "ties": 0
+        },
+        "_peor": {
+          "win_rate_percent": 36.25,
+          "delta_points": -25.937500000000004,
+          "ci95_seed_points": [
+            -31.41485860603126,
+            -20.460141393968744
+          ],
+          "t_seed": -15.070165563453184,
+          "t_cell": -5.9412628810031025,
+          "seed_deltas_points": {
+            "101000": -23.75,
+            "101001": -27.500000000000004,
+            "101002": -22.5,
+            "101003": -30.0
+          },
+          "changed_actions_episodes": 320,
+          "ties": 0
+        },
+        "partial_batch": {
+          "win_rate_percent": 67.1875,
+          "delta_points": 5.0,
+          "ci95_seed_points": [
+            -4.469671882026762,
+            14.469671882026763
+          ],
+          "t_seed": 1.6803361008336117,
+          "t_cell": 1.4075895748459328,
+          "seed_deltas_points": {
+            "101000": 8.75,
+            "101001": -1.25,
+            "101002": 1.25,
+            "101003": 11.25
+          },
+          "changed_actions_episodes": 320,
+          "ties": 0
+        }
+      },
+      "runtime_minutes": 8.185930316666667,
+      "transitions": {
+        "iguales": 250,
+        "mejoran": 43,
+        "empeoran": 27
+      }
+    },
+    {
+      "seeds": [
+        102000,
+        102001,
+        102002,
+        102003,
+        102004,
+        102005,
+        102006,
+        102007
+      ],
+      "episodes": 2560,
+      "arms": {
+        "base": {
+          "win_rate_percent": 60.0,
+          "delta_points": 0.0,
+          "ci95_seed_points": [
+            0.0,
+            0.0
+          ],
+          "t_seed": null,
+          "t_cell": null,
+          "seed_deltas_points": {
+            "102000": 0.0,
+            "102001": 0.0,
+            "102002": 0.0,
+            "102003": 0.0,
+            "102004": 0.0,
+            "102005": 0.0,
+            "102006": 0.0,
+            "102007": 0.0
+          },
+          "changed_actions_episodes": 0,
+          "ties": 0
+        },
+        "noop": {
+          "win_rate_percent": 60.0,
+          "delta_points": 0.0,
+          "ci95_seed_points": [
+            0.0,
+            0.0
+          ],
+          "t_seed": null,
+          "t_cell": null,
+          "seed_deltas_points": {
+            "102000": 0.0,
+            "102001": 0.0,
+            "102002": 0.0,
+            "102003": 0.0,
+            "102004": 0.0,
+            "102005": 0.0,
+            "102006": 0.0,
+            "102007": 0.0
+          },
+          "changed_actions_episodes": 0,
+          "ties": 0
+        },
+        "_peor": {
+          "win_rate_percent": 36.71875,
+          "delta_points": -23.28125,
+          "ci95_seed_points": [
+            -31.451523503515027,
+            -15.110976496484973
+          ],
+          "t_seed": -6.738012911527406,
+          "t_cell": -8.454555952002593,
+          "seed_deltas_points": {
+            "102000": -3.75,
+            "102001": -20.0,
+            "102002": -25.0,
+            "102003": -25.0,
+            "102004": -25.0,
+            "102005": -33.75,
+            "102006": -18.75,
+            "102007": -35.0
+          },
+          "changed_actions_episodes": 640,
+          "ties": 0
+        },
+        "partial_batch": {
+          "win_rate_percent": 64.84375,
+          "delta_points": 4.84375,
+          "ci95_seed_points": [
+            -0.6701159427042518,
+            10.357615942704252
+          ],
+          "t_seed": 2.077244684159868,
+          "t_cell": 2.4469567658648965,
+          "seed_deltas_points": {
+            "102000": 13.750000000000002,
+            "102001": 2.5,
+            "102002": 2.5,
+            "102003": 0.0,
+            "102004": -2.5,
+            "102005": 3.75,
+            "102006": 16.25,
+            "102007": 2.5
+          },
+          "changed_actions_episodes": 640,
+          "ties": 0
+        }
+      },
+      "runtime_minutes": 16.821907966666668,
+      "transitions": {
+        "iguales": 547,
+        "mejoran": 62,
+        "empeoran": 31
+      }
+    }
+  ]
+}

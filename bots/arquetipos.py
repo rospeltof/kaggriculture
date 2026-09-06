@@ -783,3 +783,9 @@ grano_noop = make_agent(GRANO_NOOP)
 # care_80 RECHAZADO: +2.8 (t=0.89) -> +1.1 (t=0.50) al confirmar. Ruido.
 CAMPEONA_HOZ = dict(CAMPEONA_GRANO, prio_harvest=76)
 campeona_hoz = make_agent(CAMPEONA_HOZ)
+
+# Candidato experimental autorizado para contraste en Kaggle (2026-09-05).
+# Panel: +5,0 puntos en descubrimiento, +4,84 en confirmación; el IC95
+# agrupado por semilla cruza cero [-0,67; +10,36]. No sustituye al campeón.
+HOZ_LOTES = dict(CAMPEONA_HOZ, seed_partial_batch=True)
+hoz_lotes = make_agent(HOZ_LOTES)

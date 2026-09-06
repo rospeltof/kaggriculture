@@ -22,7 +22,7 @@ chassis_src = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "bot
 
 main_py = f'''"""Kaggriculture submission — generada por empaquetar.py.
 
-Config: {config_name} (campeón vigente de la evolución local; ver docs/BITACORA.md).
+Config: {config_name} (estado y evidencia en docs/BITACORA.md).
 Chasis: bots/chassis.py inline (Python puro, sin dependencias).
 """
 

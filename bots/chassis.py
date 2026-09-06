@@ -1364,7 +1364,13 @@ def decide(obs, cfg):
         if cfg.get("adaptive"):
             if adaptive_best and adaptive_need > 0:
                 n = min(adaptive_need, 6)
-                if _afford(CROP[adaptive_best]["seed"] * n, 100):
+                # Un lote completo puede no caber aunque sí quepan semillas
+                # del mismo cultivo manteniendo la reserva. Sólo cambia el
+                # tamaño de esta compra; scorer, stock y orden quedan iguales.
+                if cfg.get("seed_partial_batch"):
+                    while n > 0 and not _afford(CROP[adaptive_best]["seed"] * n, 100):
+                        n -= 1
+                if n > 0 and _afford(CROP[adaptive_best]["seed"] * n, 100):
                     orders.append(["BUY_SEED", adaptive_best, n])
                     _commit(CROP[adaptive_best]["seed"] * n)
         else:

@@ -1,5 +1,74 @@
 # Bitácora de experimentos
 
+## 2026-09-05 — Traspaso para revisión externa; envíos suspendidos
+
+El usuario pidió reservar la única corrida que indica tener en Kaggle y
+organizar hallazgos, errores e ideas para otro LLM. **No se envió ninguna
+submission.** Se había preparado HOZ_LOTES y realizado un smoke de dos episodios
+contra su propio módulo; no era el veto contra HOZ ni una confirmación de fuerza.
+`submission/main.py` quedó restaurado byte por byte a su versión anterior.
+La copia experimental permanece local e ignorada en `results/`.
+
+**Error de nuestra verificación de empaquetado:** comparar directamente las
+tuplas de la config Python con las listas del JSON produjo un falso desacuerdo.
+Normalizar ambas mediante JSON, conservando el orden, confirmó igualdad. No era
+un fallo del candidato y tampoco aporta evidencia de mejora.
+
+Se prepararon `ESTADO_ACTUAL.md`, `AUDITORIA_LLM.md`, `IDEAS_Y_PRUEBAS.md`, un
+método vigente único y un prompt de revisión. El método anterior se conserva en
+`archivo/` como histórico. Los resultados de lotes se copiaron fuera de `results/`
+a `evidencia/lotes_semillas/`, con hashes y fuentes congeladas. El generador
+`preparar_contexto_llm.py` verifica registros existentes y reúne el contexto sin
+red ni simulaciones. Este traspaso no autoriza nuevos barridos ni envíos y no
+crea un commit. Ver [ESTADO_ACTUAL.md](ESTADO_ACTUAL.md).
+
+---
+
+## 2026-09-05 — Compra parcial de semillas y verificación de conducta
+
+**Corrección del instrumento:** `sd=0` en W/L/T no demuestra que una bandera
+no dispare. El `muerde.py` anterior comparaba dinero, no decisiones. Ambos
+medidores guardan ahora huellas de acciones emitidas antes de entregarlas al
+motor. El barrido además guarda episodios, configs y hashes; exige noop exacto
+y rechaza errores. Los reclamos históricos de no ejecución basados sólo en
+sd o dinero quedan limitados a esas métricas, salvo evidencia adicional de código.
+
+**Incertidumbre:** reportamos también SE/t agrupados por semilla, ya que las
+40 cintas comparten escenarios. Reanalizar `harvest_76` así conserva +2,5 puntos
+pero cambia el t de confirmación de 2,96 a 1,60; no prueba regresión, sí menor
+solidez que la atribuida. No se revierte el campeón por esta observación.
+
+**Hipótesis aislada:** `seed_partial_batch=True` permite comprar parte del lote
+adaptativo cuando la caja no alcanza para las seis semillas. Mantiene scorer,
+piso de trigo, reserva y orden de compras. Apagado por defecto.
+
+**Sonda 99000, primera cinta lad_, asiento 0:** primer melón d6 h16 → d1 h18,
+primera fresa d8 h3 → d7 h19. La tile (2,1) que recibe melón temprano se ocupaba
+con trigo en la base. 599 decisiones distintas; noop y chasis anterior exactos.
+Ambos brazos ganan: prueba directa de conducta distinta con W/L/T idéntico.
+
+**Descubrimiento, 101000–101003:** 1.280 episodios; base 62,1875%, candidato
+67,1875%, delta +5,0 puntos, t por semilla 1,68, IC95 [−4,47; +14,47]. Noop
+exacto; CAMPEONA_FB como control anterior −25,9375 puntos, t por semilla −15,07.
+Pasa el cribado positivo predefinido, no constituye confirmación.
+
+**Confirmación, 102000–102007:** 2.560 episodios válidos; base 60,0000%,
+candidato 64,8438%, delta +4,8438 puntos. t por celda 2,45; t por semilla 2,08;
+IC95 por semilla [−0,67; +10,36]. Noop exacto en 640/640 comparaciones; control
+anterior −23,2813 puntos (IC95 [−31,45; −15,11]). El candidato mejora 62
+resultados y empeora 31; cambia acciones en los 640 episodios.
+
+**INCONCLUSO, NO ADOPTADO.** Se repite la señal, pero no supera el criterio
+registrado (IC95 por semilla por encima de cero). No se rescata combinando
+descubrimiento y confirmación ni cambiando al t por celda. El veto head-to-head
+no correspondía sin confirmación. La bandera queda apagada. Coste: 3.840
+episodios de panel, unos 25 minutos de pared con diez workers.
+
+Protocolo, comandos y evidencia:
+[EXPERIMENTO_LOTES_SEMILLAS.md](EXPERIMENTO_LOTES_SEMILLAS.md).
+
+---
+
 ## 2026-09-04 (2) — La ventana d12-d16, localizada al detalle. Tres arreglos, tres fallos
 
 ### El sintoma, con precision

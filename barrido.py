@@ -24,15 +24,22 @@ Consecuencia: buscar sobre estos numeros como si fueran continuos (evolucion9/10
 explora un espacio con redundancia masiva. El espacio real es el de ORDENES.
 
 Uso:  ./.venv/bin/python barrido.py [seed0] [brazo1,brazo2,...]
+      SET=semillas_parciales N_SEEDS=4 WORKERS=4 ./.venv/bin/python barrido.py 99000
+
+Cada corrida conserva pares JSON compatibles, episodios JSONL incrementales y
+un manifiesto .meta.json. Un archivo existente nunca se sobrescribe.
 """
-import glob, json, math, os, statistics as st, sys
+import glob, hashlib, json, math, os, platform, statistics as st, sys, time
+from datetime import datetime, timezone
+from importlib.metadata import version
 from multiprocessing import Pool
+from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 BASE = "CAMPEONA_HOZ"
 SEED0 = int(sys.argv[1]) if len(sys.argv) > 1 else 92000
 SOLO = sys.argv[2].split(",") if len(sys.argv) > 2 else None
-N_SEEDS = 8 if SOLO else 4          # menos brazos -> mas semillas -> mas potencia
+N_SEEDS = int(os.environ.get("N_SEEDS", 8 if SOLO else 4))
 # S6.1: el HIRE n-esimo del dia cuesta fib(n) -> 1,1,2,3,5,8,13,21,34,55,89,144.
 # La mano 12 cuesta $144 DIARIOS y los peones desaparecen cada noche (S6.3).
 # OJO: n_h = min(hands_per_quadrant * cuadrantes, hands_cap). Con hpq=4 y 3
@@ -212,6 +219,16 @@ FORRAJE = {
     "wf4":    {"wheat_floor": 4},          # control: bajar el piso fijo sin mas
 }
 
+# Compra parcial cuando hay caja para algunas semillas, pero no para el lote.
+# El control anterior se carga COMPLETO: un update sobre HOZ conservaria fixes
+# nuevos y dejaria de ser CAMPEONA_FB.
+SEMILLAS_PARCIALES = {
+    "noop": {},
+    "_peor": {},
+    "partial_batch": {"seed_partial_batch": True},
+}
+EXACT_CONFIGS = {}
+
 VARIANTES = {
     "noop":         {},                        # control: DEBE leer +0.0
     "water_30":     {"prio_water": 30},
@@ -249,59 +266,228 @@ if os.environ.get("SET") == "lead":
     VARIANTES = LEAD
 if os.environ.get("SET") == "forraje":
     VARIANTES = FORRAJE
+if os.environ.get("SET") == "semillas_parciales":
+    VARIANTES = SEMILLAS_PARCIALES
+    EXACT_CONFIGS = {"_peor": "CAMPEONA_FB"}
 if SOLO:
-    VARIANTES = {k: v for k, v in VARIANTES.items() if k in ("noop",) or k in SOLO}
+    VARIANTES = {k: v for k, v in VARIANTES.items() if k in ("noop", "_peor") or k in SOLO}
+
+
+def _hash(value):
+    # Conservar orden de diccionarios: el orden de plants forma parte del bot.
+    raw = json.dumps(value, ensure_ascii=False, separators=(",", ":"), allow_nan=False)
+    return hashlib.sha256(raw.encode()).hexdigest()
+
+
+def _config(nombre):
+    from bots import arquetipos
+    if nombre in EXACT_CONFIGS:
+        return dict(getattr(arquetipos, EXACT_CONFIGS[nombre]))
+    cfg = dict(getattr(arquetipos, BASE))
+    cfg.update(VARIANTES.get(nombre, {}))
+    return cfg
 
 
 def _una(a):
-    nombre, tape, seed, seat = a
-    from kaggle_environments import make
-    from bots import arquetipos
-    from bots.chassis import make_agent
-    from harness import materialize
-    cfg = dict(getattr(arquetipos, BASE))
-    cfg.update(VARIANTES.get(nombre, {}))
-    yo, riv = make_agent(cfg), materialize(f"bots.meta.tape:{tape}")
-    env = make("kaggriculture", configuration={"episodeSteps": 720, "seed": seed}, debug=False)
-    env.run([yo, riv] if seat == 0 else [riv, yo])
-    f = env.steps[-1]
-    mio, suyo = f[seat].reward or 0, f[1 - seat].reward or 0
-    return (nombre, tape, seed), (1.0 if mio > suyo else (0.5 if mio == suyo else 0.0))
+    nombre, tape, seed, seat, cfg = a
+    result = dict(arm=nombre, tape=tape, seed=seed, seat=seat, config_hash=_hash(cfg), valid=False)
+    start = time.monotonic()
+    try:
+        from kaggle_environments import make
+        from bots.chassis import make_agent
+        from harness import materialize
+        yo, riv = make_agent(cfg), materialize(f"bots.meta.tape:{tape}")
+        hashes = [hashlib.sha256(), hashlib.sha256()]
+        counts = [0, 0]
+
+        def traced(agent, player):
+            def call(obs):
+                action = agent(obs)
+                # Serializar antes de entregar al motor: éste puede mutar las
+                # listas. La igualdad de resultados no prueba igual conducta.
+                raw = json.dumps({"step": obs.get("step"), "action": action},
+                                 sort_keys=True, separators=(",", ":"), allow_nan=False)
+                hashes[player].update(raw.encode())
+                hashes[player].update(b"\n")
+                counts[player] += 1
+                return action
+            return call
+
+        yo, riv = traced(yo, seat), traced(riv, 1 - seat)
+        env = make("kaggriculture", configuration={"episodeSteps": 720, "seed": seed}, debug=False)
+        env.run([yo, riv] if seat == 0 else [riv, yo])
+        final = env.steps[-1]
+        rewards = [p.reward for p in final]
+        statuses = [str(p.status) for p in final]
+        bad = [(i, p, str(s.status)) for i, step in enumerate(env.steps)
+               for p, s in enumerate(step) if str(s.status) in ("ERROR", "TIMEOUT", "INVALID")]
+        result.update(rewards=rewards, statuses=statuses, bad_statuses=bad,
+                      steps=len(env.steps),
+                      action_hashes=[h.hexdigest() for h in hashes], action_counts=counts)
+        if bad or statuses != ["DONE", "DONE"]:
+            raise ValueError(f"estado de episodio invalido: final={statuses}, errores={bad[:3]}")
+        if any(not isinstance(r, (int, float)) or not math.isfinite(r) for r in rewards):
+            raise ValueError(f"recompensas invalidas: {rewards}")
+        mio, suyo = rewards[seat], rewards[1 - seat]
+        result.update(valid=True, score=1.0 if mio > suyo else (0.5 if mio == suyo else 0.0))
+    except Exception as exc:
+        result["error"] = f"{type(exc).__name__}: {exc}"
+    result["seconds"] = time.monotonic() - start
+    return result
+
+
+def _stats(values):
+    n = len(values)
+    mean = st.mean(values)
+    sd = st.stdev(values) if n > 1 else None
+    se = sd / math.sqrt(n) if sd is not None else None
+    return dict(n=n, mean=mean, sd=sd, se=se, t=mean / se if se else None)
+
+
+def _summary(pares, records):
+    base = pares["base"]
+    out = {}
+    for nombre, arm in pares.items():
+        if set(arm) != set(base):
+            raise ValueError(f"celdas incompletas: {nombre}")
+        delta = {k: arm[k] - base[k] for k in sorted(base)}
+        seeds = sorted({s for _, s in delta})
+        by_seed = {s: st.mean([v for (_, seed), v in delta.items() if seed == s]) for s in seeds}
+        own = [r for (n, _, _, _), r in records.items() if n == nombre]
+        changed = sum(r["action_hashes"][r["seat"]] !=
+                      records[("base", r["tape"], r["seed"], r["seat"])]["action_hashes"][r["seat"]]
+                      for r in own)
+        out[nombre] = dict(win_rate=st.mean(list(arm.values())), cell=_stats(list(delta.values())),
+                           seed=_stats(list(by_seed.values())), seed_deltas=by_seed,
+                           action_changed_episodes=changed, episodes=len(own))
+    return out
+
+
+def _check_noop(records, tape, seed, seat):
+    keys = [(n, tape, seed, seat) for n in ("base", "noop")]
+    if not all(k in records for k in keys):
+        return
+    base, noop = (records[k] for k in keys)
+    fields = ("config_hash", "rewards", "statuses", "steps", "action_hashes", "action_counts", "score")
+    dif = [f for f in fields if base[f] != noop[f]]
+    if dif:
+        raise ValueError(f"NOOP distinto de base en {(tape, seed, seat)}: {dif}")
+
+
+def _file_hashes(paths):
+    return {str(p): hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in paths}
+
+
+def _save_meta(path, meta):
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(json.dumps(meta, indent=2, ensure_ascii=False, allow_nan=False) + "\n")
+    os.replace(temporary, path)
+
+
+def _reserve_output():
+    Path("results").mkdir(exist_ok=True)
+    suffix = 0
+    while True:
+        stem = Path("results") / (f"barrido_{SEED0}" + (f"_{suffix}" if suffix else ""))
+        paths = [Path(str(stem) + ext) for ext in (".json", ".meta.json", ".episodes.jsonl")]
+        if not any(p.exists() for p in paths):
+            try:
+                return (*paths, paths[2].open("x"))
+            except FileExistsError:
+                pass
+        suffix += 1
 
 
 def main():                                     # GUARD OBLIGATORIO
-    patron = os.environ.get("TAPES", "lad_")     # `lad_` = 40 rivales reales de
-    # nuestras partidas (~800 de rating). `top_` = las 12 cintas de tetsuya, el
-    # TOP1 (3040). Son POBLACIONES DISTINTAS y no deben mezclarse.
-    tapes = [os.path.basename(f)[:-8] for f in glob.glob(f"bots/meta/tapes/{patron}*.json.gz")]
+    if N_SEEDS < 1:
+        raise ValueError("N_SEEDS debe ser positivo")
+    max_workers = max(1, (os.cpu_count() or 2) - 1)
+    requested = int(os.environ.get("WORKERS", max_workers))
+    if requested < 1:
+        raise ValueError("WORKERS debe ser positivo")
+    workers = min(requested, max_workers)
+    patron = os.environ.get("TAPES", "lad_")
+    tape_paths = sorted(glob.glob(f"bots/meta/tapes/{patron}*.json.gz"))
+    if not tape_paths:
+        raise ValueError(f"ninguna cinta coincide con TAPES={patron!r}")
+    tapes = [os.path.basename(f)[:-8] for f in tape_paths]
     seeds = list(range(SEED0, SEED0 + N_SEEDS))
     nombres = ["base"] + list(VARIANTES)
-    jobs = [(n, t, s, seat) for n in nombres for t in tapes for s in seeds for seat in (0, 1)]
+    configs = {n: _config(n) for n in nombres}
+    # Controles juntos a la base: detectar una discrepancia antes de gastar el panel.
+    jobs = [(n, t, s, seat, configs[n]) for t in tapes for s in seeds for seat in (0, 1) for n in nombres]
+    sources = ["barrido.py", "bots/chassis.py", "bots/arquetipos.py", "bots/meta/tape.py", "harness.py"]
+    hashes = _file_hashes(sources + tape_paths)
+    pair_path, meta_path, raw_path, raw = _reserve_output()
+    meta = dict(schema=1, state="running", started_at=datetime.now(timezone.utc).isoformat(),
+                set=os.environ.get("SET", "prioridades"), base=BASE, command=sys.argv,
+                seeds=seeds, seed_start=seeds[0], seed_end_inclusive=seeds[-1],
+                tapes=tapes, workers=workers, expected_episodes=len(jobs), completed_episodes=0,
+                python=platform.python_version(), kaggle_environments=version("kaggle-environments"),
+                configs=configs, config_hashes={n: _hash(c) for n, c in configs.items()},
+                exact_configs=EXACT_CONFIGS, file_hashes=hashes,
+                paths=dict(pairs=str(pair_path), metadata=str(meta_path), episodes=str(raw_path)),
+                statistics="Paired W/L/T deltas; cell=(tape,seed), seed=mean delta across fixed tapes.")
+    records = {}
+    last_progress = time.monotonic()
+    _save_meta(meta_path, meta)
     print(f"{len(nombres)} brazos x {len(tapes)} cintas x {len(seeds)} seeds x 2 asientos "
-          f"= {len(jobs)} episodios (seeds {seeds[0]}-{seeds[-1]})", flush=True)
-    with Pool(max(1, (os.cpu_count() or 2) - 1)) as pool:
-        res = pool.map(_una, jobs)
-    por = {}
-    for (n, t, s), v in res:
-        por.setdefault(n, {}).setdefault((t, s), []).append(v)
-    pares = {n: {k: sum(v) / len(v) for k, v in d.items()} for n, d in por.items()}
-    json.dump({n: {f"{k[0]}|{k[1]}": v for k, v in d.items()} for n, d in pares.items()},
-              open(f"results/barrido_{SEED0}.json", "w"))
-    base = pares["base"]
-    print(f"\n{'brazo':14s} {'panel 40':>9} {'delta':>8} {'sd':>7} {'t':>7}")
-    print(f"{'base':14s} {100*st.mean(list(base.values())):>8.1f}%")
-    filas = []
-    for n in VARIANTES:
-        k = sorted(set(base) & set(pares[n]))
-        d = [pares[n][x] - base[x] for x in k]
-        m, sd = st.mean(d), st.stdev(d)
-        t = m / (sd / math.sqrt(len(d))) if sd else float("nan")
-        filas.append((n, 100 * st.mean(list(pares[n].values())), 100 * m, 100 * sd, t))
-    for n, wr, m, sd, t in sorted(filas, key=lambda r: -(r[4] if r[4] == r[4] else -9)):
-        aviso = "  <-- sd=0: NO DISPARA" if sd == 0 and n != "noop" else ""
-        print(f"{n:14s} {wr:>8.1f}% {m:>+7.1f} {sd:>7.1f} {t:>+7.2f}{aviso}")
-    print("\nNada se adopta con esta tabla sola: 12 brazos contra una base es"
-          "\nmultiplicidad. Los supervivientes van a confirmacion en seeds disjuntas.")
+          f"= {len(jobs)} episodios (seeds {seeds[0]}-{seeds[-1]}, workers {workers})\n"
+          f"Episodios: {raw_path}; manifiesto: {meta_path}", flush=True)
+    try:
+        with raw, Pool(workers) as pool:
+            for result in pool.imap_unordered(_una, jobs, chunksize=1):
+                raw.write(json.dumps(result, ensure_ascii=False, allow_nan=False) + "\n")
+                raw.flush()
+                key = (result["arm"], result["tape"], result["seed"], result["seat"])
+                if key in records:
+                    raise ValueError(f"episodio duplicado: {key}")
+                records[key] = result
+                meta["completed_episodes"] = len(records)
+                if not result["valid"]:
+                    raise ValueError(f"episodio fallido {key}: {result.get('error')}")
+                if result["config_hash"] != meta["config_hashes"][result["arm"]]:
+                    raise ValueError(f"config distinta del manifiesto: {key}")
+                _check_noop(records, result["tape"], result["seed"], result["seat"])
+                if len(records) % 64 == 0 or time.monotonic() - last_progress >= 30:
+                    _save_meta(meta_path, meta)
+                    print(f"Progreso {len(records)}/{len(jobs)} episodios guardados", flush=True)
+                    last_progress = time.monotonic()
+        expected = {(n, t, s, seat) for n, t, s, seat, _ in jobs}
+        if set(records) != expected:
+            raise ValueError("episodios faltantes o inesperados")
+        if _file_hashes(sources + tape_paths) != hashes:
+            raise ValueError("fuentes o cintas cambiaron durante la corrida")
+        pares = {n: {(t, s): st.mean([records[(n, t, s, seat)]["score"] for seat in (0, 1)])
+                     for t in tapes for s in seeds} for n in nombres}
+        summary = _summary(pares, records)
+        meta.update(state="complete", noop="exact rewards, statuses, steps and both action trajectories",
+                    summary=summary, finished_at=datetime.now(timezone.utc).isoformat())
+        with pair_path.open("x") as output:
+            json.dump({n: {f"{t}|{s}": v for (t, s), v in arm.items()} for n, arm in pares.items()}, output)
+        _save_meta(meta_path, meta)
+    except BaseException as exc:
+        meta.update(state="invalid", error=f"{type(exc).__name__}: {exc}",
+                    finished_at=datetime.now(timezone.utc).isoformat())
+        _save_meta(meta_path, meta)
+        raise
+    print(f"\nNOOP exacto en {len(tapes) * len(seeds) * 2} episodios. Pares: {pair_path}")
+    print(f"{'brazo':14s} {'panel':>8} {'delta':>8} {'sd cel':>8} {'SE cel':>8} {'t cel':>8} {'SE seed':>8} {'t seed':>8} {'acciones':>9}")
+    def number(value):
+        return f"{value:+8.2f}" if value is not None else f"{'-':>8}"
+    for n, r in summary.items():
+        cell, seed = r["cell"], r["seed"]
+        print(f"{n:14s} {100*r['win_rate']:>7.1f}% {100*cell['mean']:>+7.1f} "
+              + " ".join(number(v) for v in (100*cell['sd'] if cell['sd'] is not None else None,
+                  100*cell['se'] if cell['se'] is not None else None, cell['t'],
+                  100*seed['se'] if seed['se'] is not None else None, seed['t']))
+              + f" {r['action_changed_episodes']:>5}/{r['episodes']}")
+        if cell["sd"] == 0 and n not in ("base", "noop"):
+            print("  sd=0: delta W/L/T constante; no determina si la conducta cambio.")
+    if "_peor" in summary:
+        print("_peor es CAMPEONA_FB exacta. Revisar su separacion de base antes de interpretar mejoras.")
+    print("SE/t por celda conservan el reporte anterior; SE/t por seed agrupan todas las cintas.\n"
+          "Nada se adopta con esta tabla sola: confirmar en semillas disjuntas.")
 
 
 if __name__ == "__main__":
