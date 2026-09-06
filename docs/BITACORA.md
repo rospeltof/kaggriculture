@@ -1,5 +1,73 @@
 # Bitácora de experimentos
 
+## 2026-09-06 (3) — El techo de la apertura, y EL HALLAZGO: producimos mejor, competimos peor
+
+### La apertura está cerrada POR TECHO, no por intentos fallidos
+
+Diagnóstico previo: hay dos regímenes de capital. **Días 2-5 SIN CAJA** (16-23
+turnos/día con <$300, sin poder comprar) y **días 12-28 CAJA OCIOSA** (12-24
+turnos/día con ≥$2.000 parados; **$44.418 el día 20**, $80.566 el día 28).
+Pasamos hambre cuando el capital compone y acumulamos cuando ya no sirve.
+
+**La caja ociosa NO es recuperable:** los cuatro sumideros de capital del juego
+están medidos y pierden — tierra (`q4` −13,8), animales (−15 a −29), semillas
+(66 tiles ya plantadas), `BUY_PRODUCT` (`buy_feed` −34,4, reservar fertilizante
+−13 a −14). Es el síntoma de un techo de capacidad, no una fuga.
+
+**Techo de la apertura, medido** (rival PASS para aislar nuestra granja; con
+cintas, `startingMoney` beneficia también al rival y confunde):
+
+| caja extra | dinero final | ganancia | retorno por $ |
+|---|---|---|---|
+| +$500 | 137.812 | +880 | ×1,76 |
+| +$3.000 | 141.582 | +4.652 | ×1,55 |
+| +$6.000 | 149.903 | +12.972 | ×2,16 |
+| +$12.000 | 151.116 | +14.186 | ×1,18 (satura) |
+
+El capital temprano rinde **×1,5-2**. Pero una apertura perfecta **no crea
+dinero**: reordena unos cientos mal colocados. Premio máximo ≈ **$750-1.000
+sobre $137.000 = 0,6%**, y con métrica W/L/T eso casi nunca voltea una partida.
+**Cerrado por argumento de techo.** Coherente con `partial_batch` (+0,23) y con
+el fracaso de `buscar_apertura`.
+
+### EL HALLAZGO: el coste de competir
+
+| | aislado (rival PASS) | compitiendo (rival real) | coste |
+|---|---|---|---|
+| **nosotros** | **140.532** | 87.533 | **−53.000 (38%)** |
+| **top-1 (cintas)** | 131.034 | 97.005 | **−34.028 (26%)** |
+
+**Producimos MÁS que el top-1 en el vacío** (140,5k vs 131k) y perdemos **12
+puntos porcentuales más** ante un rival. **Nuestra granja es mejor; nuestra
+competencia por el mercado es peor.**
+
+Eso explica por qué doce barridos consecutivos salieron negativos: **todos
+medían la granja**, que es donde ya vamos por delante.
+
+### La causa probable: fragilidad de la cesta de productos
+
+Curvas al saturar (`above_func` × `above_target`): WHEAT y EGG `log`×0,20
+(robustas); FERTILIZER `linear`×0,40; STRAWBERRY y MILK `linear`×1,60 (frágiles);
+MELON `sq`×3,60 y WOOL `sq`×3,20 (muy frágiles).
+
+| | unidades frágiles (fresa+leche+melón+lana) | del total |
+|---|---|---|
+| nosotros | 612 de 1.001 | **61%** |
+| top-1 | 711 de 1.710 | **42%** |
+
+Nuestro producto estrella es la fresa a $199 — espectacular en aislamiento, con
+curva lineal de target 1,60 que se hunde cuando dos jugadores la venden. Ellos
+cargan en trigo ($46, `log`, la curva más resistente): 367 unidades contra 180.
+
+**El scorer optimiza valor AISLADO y es ciego a la fragilidad.** Evalúa
+`_price_at(crop, proj_inv + supply + u_eff)` con NUESTRA oferta proyectada, no
+con lo que ocurre cuando el rival descarga lo mismo durante 25 días.
+
+**Primera hipótesis en tres días que explica POR QUÉ falló el resto.** Pendiente
+de diseñar e implementar.
+
+---
+
 ## 2026-09-06 (2) — Tres ideas nuevas: dos cerradas, una sin rescate
 
 ### Idea 3 — asimetría de asiento: NO EXISTE (coste cero)
