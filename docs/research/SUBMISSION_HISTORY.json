@@ -5,11 +5,30 @@
     "git_commit": "(sin commit: working tree del 14-sep, ver docs/evidencia/envio_maj_20260914)",
     "experiment_id": "maj_107674293",
     "config": "cinta fija de Majkel1337, episodio 107674293 (vs yaki-imo)",
-    "local_harness": {"panel": "40 lad + 8 sepopp, 19 seeds, 2 asientos", "wr": 71.49, "base_wr": 57.13,
-                      "delta": 14.36, "ci95_seed": [9.02, 19.71], "ci95_2way": [6.71, 22.02],
-                      "opponent_breakdown": {"lad40": "+15.00", "sepopp8": "+11.18"}},
+    "local_harness": {
+      "panel": "40 lad + 8 sepopp, 19 seeds, 2 asientos",
+      "wr": 71.49,
+      "base_wr": 57.13,
+      "delta": 14.36,
+      "ci95_seed": [
+        9.02,
+        19.71
+      ],
+      "ci95_2way": [
+        6.71,
+        22.02
+      ],
+      "opponent_breakdown": {
+        "lad40": "+15.00",
+        "sepopp8": "+11.18"
+      }
+    },
     "reason": "Mejor candidato del piloto de 14 brazos; +14.36 confirmado. Usuario: 'Subela a kaggle pa que coja calle'",
-    "leaderboard": {"score": 852.6, "episodes": 126, "rank": "~4589/9776 (2026-09-21)"},
+    "leaderboard": {
+      "score": 852.6,
+      "episodes": 126,
+      "rank": "~4589/9776 (2026-09-21)"
+    },
     "delta_vs_champion_ladder": "+175 sobre campeona_hoz (677.5), pero hoz esta en caida y ruido de +-40",
     "observed": "Converge en ~852. Es la mejor submission que hemos tenido. Nota: Majkel1337 esta en 3075 y su CINTA fija da 852: el valor del agente esta en la adaptacion, no en la secuencia.",
     "conclusion": "CHAMPION (ladder). Panel +14 -> ladder +175 vs hoz: la direccion transfiere.",
@@ -21,15 +40,54 @@
     "git_commit": "f5c2889",
     "experiment_id": "tree_v1",
     "config": "arbol de 4 cintas de Majkel1337 (107685970/107692988/107696961/107710951); rama en step 72 por primera tienda y en 144 por YARN_STORE. Paquete: empaquetar_arbol.py, 51413 bytes",
-    "local_harness": {"panel": "piloto 14-sep: 16 rivales x 4 seeds x 2 asientos", "wr": 64.06, "base_wr": 46.09,
-                      "delta": 17.97, "ci95_seed": null, "ci95_2way": null,
-                      "opponent_breakdown": {"lad8": "62.50", "sepopp8": "65.62"},
-                      "nota": "empato con maj_107674293 (64.06) en el piloto; perdio el desempate alfabetico. Confirmacion con potencia: en curso (compare, 16 seeds)"},
+    "local_harness": {
+      "panel": "piloto 14-sep: 16 rivales x 4 seeds x 2 asientos",
+      "wr": 64.06,
+      "base_wr": 46.09,
+      "delta": 17.97,
+      "ci95_seed": null,
+      "ci95_2way": null,
+      "opponent_breakdown": {
+        "lad8": "62.50",
+        "sepopp8": "65.62"
+      },
+      "nota": "empato con maj_107674293 (64.06) en el piloto; perdio el desempate alfabetico. Confirmacion con potencia: en curso (compare, 16 seeds)"
+    },
     "reason": "REAL_WORLD_CANDIDATE criterio #3 (estructuralmente distinto: ramifica) y #7 (localmente indistinguible de la cinta; solo el ladder los separa). Verificado identico al arbol local en 6 semillas, DONE",
-    "leaderboard": {"score": null, "episodes": 0, "rank": null},
+    "leaderboard": {
+      "score": null,
+      "episodes": 0,
+      "rank": null
+    },
     "delta_vs_champion_ladder": null,
     "observed": null,
     "conclusion": "PENDIENTE",
     "next_action": "Comparar contra maj_107674293 (852.6) cuando pase de ~60 episodios. Mientras: compare panel tree vs tree_v2."
+  },
+  {
+    "submission_id": 56444505,
+    "timestamp": "2026-09-21T22:40:00-05:00",
+    "git_commit": "073fa24",
+    "experiment_id": "maj_107674293+guard6",
+    "config": "cinta maj_107674293 + bots/guardia_cinta.py reserve=6 until_step=24 (descarta BUY_SEED/BUY_PRODUCT del d0 que dejarian la caja bajo $6)",
+    "local_harness": {
+      "panel": "sonda 40 partidas vs lad (no es panel completo)",
+      "wr": 65,
+      "base_wr": 62,
+      "delta": 3,
+      "ci95_seed": null,
+      "ci95_2way": null,
+      "nota": "harness NO reproduce el fallo (15% de partidas <4 manos local vs 42% real). Con guardia: 0% <4 manos. Identica a la cinta en 24/40"
+    },
+    "reason": "REAL_WORLD_CANDIDATE #4: corrige debilidad observada en 60 partidas reales (manos d1 -> WR 0/23/60%). Unico cambio vs champion: la guardia. Aisla su efecto en ladder",
+    "leaderboard": {
+      "score": null,
+      "episodes": 0,
+      "rank": null
+    },
+    "delta_vs_champion_ladder": null,
+    "observed": null,
+    "conclusion": "PENDIENTE",
+    "next_action": "Comparar con 852.6 (56245770) a ~60 ep. Prediccion: si el mecanismo es real, +10..+20 puntos de WR en ladder -> rating claramente > 852. Si queda en ~850, el fallo del d1 no era la causa dominante de las derrotas"
   }
 ]
