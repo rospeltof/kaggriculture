@@ -39,7 +39,7 @@ def materialize(name):
         return make_agent(dict(CAMPEONA_HOZ))
     if name=="_peor":
         return make_agent(dict(CAMPEONA_FB))
-    if name.startswith(("maj_","sepopp_","lad_")):
+    if name.startswith(("maj_","sepopp_","lad_","top_")):
         return tape(name)
     if name=="tree_v2":
         from bots.arbol_lider import make as make_v2
@@ -144,6 +144,15 @@ def run(args):
         assert args.candidate and args.seeds in range(16,33)
         arms=["base","noop","_peor",args.candidate]
         opponents=lad+recent;seeds=list(range(215000,215000+args.seeds))
+    elif args.phase=="tapes":
+        # 2026-09-21: successive halving sobre las 30 victorias de Majkel (sub
+        # 56142830) como cintas SOLAS. Piloto barato; las mejores van a confirm.
+        import glob as _g
+        tops=sorted(Path(x).name[:-8] for x in _g.glob(str(ROOT/"bots/meta/tapes/top_majkel1337_*.json.gz")))
+        clas={r["ep"]:r for r in json.load(open(ROOT/"results/clasif_MAJKEL_56142830.json"))}
+        tops=[t for t in tops if clas.get(int(t.split("_")[-1]),{}).get("gana")]
+        arms=["base","noop","maj_107674293"]+tops
+        opponents=lad[::5]+recent;seeds=list(range(221000,221000+args.seeds))
     elif args.phase=="compare":
         # 2026-09-21: arbol v1 (4 cintas) contra arbol v2 (30 victorias de la
         # sub 56142830) y la cinta desplegada, en el MISMO bloque.
@@ -215,7 +224,7 @@ def run(args):
 
 if __name__=="__main__":
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--phase",choices=("pilot","confirm","stress","compare"),required=True)
+    ap.add_argument("--phase",choices=("pilot","confirm","stress","compare","tapes"),required=True)
     ap.add_argument("--candidate")
     ap.add_argument("--seeds",type=int,default=16)
     ap.add_argument("--workers",type=int,default=8)

@@ -1,6 +1,6 @@
 # Estado de investigación — leer primero para continuar
 
-Actualizado: 2026-09-21 22:10 (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
+Actualizado: 2026-09-21 23:30 (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
 Loop autónomo autorizado por el usuario (mensaje del 2026-09-21): harness + ladder
 como evidencia complementaria, submissions como instrumento (5/día).
 
@@ -14,8 +14,10 @@ Referencia local: `CAMPEONA_HOZ` (677,5 en ladder, cayendo).
 
 | id | qué | estado | evidencia |
 |---|---|---|---|
-| `tree_v1` | árbol 4 cintas Majkel, ramas por tienda d3/d6 | **REAL_WORLD_CANDIDATE** — sub **56444202** (2026-09-21 21:53) | piloto: 64,06% = cinta; confirmación en curso |
-| `tree_v2` | árbol 30 victorias Majkel (sub 56142830), NN sobre secuencia de tiendas | **PROMISING** — panel `compare` corriendo (9.216 ep) | dispara y ramifica (6 semillas → 5 cintas finales) |
+| `maj+guard6` | cinta campeona + guardia de caja d0 | **REAL_WORLD_CANDIDATE** — sub **56444505** (2026-09-21 22:40) | #4: 42% de partidas reales con <4 manos d1 → 3-22; harness no lo ve (15% local) |
+| `tree_v1` | árbol 4 cintas Majkel, ramas por tienda d3/d6 | **REAL_WORLD_CANDIDATE** — sub **56444202** (2026-09-21 21:53) | compare: +9,0 [−6,1; +24,1] dos vías; < cinta (+12,1) en local |
+| `tree_v2` | árbol 30 victorias Majkel, NN sobre tiendas | **PROMISING→REJECTED como está**: +4,8 [−5,0; +14,7], < v1 < cinta | defecto: cambia entre cintas con prefijos distintos (12 prefijos) → estado inconsistente al ramificar. Arreglable: ramificar sólo entre cintas con prefijo idéntico |
+| `mejor cinta sola` | successive halving sobre 30 victorias como cintas fijas | **EN CURSO** — piloto `tapes` 4 seeds (4.096 ep) | compare dice cinta sola > árboles localmente |
 | `tree_v3` | árbol con cintas de DSM/UMG/Vadim (top-3, 2850-2880) | **PENDIENTE** — replays bajando | — |
 | `tree_liquid` | árbol + ventas reactivas | PROMISING (empató con tree en piloto, 0 cambios de W/L/T) | no confirmar solo |
 | `warmstart10` | cinta hasta d10 + HOZ | PROMISING débil (+6,25 piloto, < cinta pura) | baja prioridad |
@@ -29,24 +31,34 @@ compete_aware, compra parcial, harvest_76, apertura dentro del planner.
 
 ## PROCESOS EN CURSO (al escribir esto)
 
-- `evaluar_lider.py --phase compare --seeds 16` → `results/compare_arboles.txt`,
-  evidencia en `docs/evidencia/lider_20260914/compare.*`. **No tocar fuentes hasta que termine.**
-- `bajar_lider.py` para DSM_56307459 (40), UMG_56376259 (30), VADIM_56374127 (30)
-  → `replays/<CARPETA>/`, log `results/bajar_top3.txt`.
-- `bajar_lider.py 56245770 MAJTAPE_LADDER 60` → partidas reales de nuestra cinta,
-  log `results/bajar_majtape.txt`.
+- `evaluar_lider.py --phase tapes --seeds 4` → `results/tapes_piloto.txt`, evidencia
+  `docs/evidencia/lider_20260914/tapes.*`. **No tocar fuentes hasta que termine.**
+- Terminados: compare (resultados arriba), descargas (DSM 40, UMG 30, VADIM 30,
+  MAJTAPE_LADDER 60 en `replays/`).
+
+## HALLAZGOS DE HOY (resumen; detalle en RESEARCH_BELIEFS.md)
+
+1. **Manos d1 → resultado** (60 reales): 0-2 manos 0%, 3: 23%, 4: 60%. Guardia
+   `bots/guardia_cinta.py` reserve=6. Sólo d1 (d2 residual 3/60; d3+ ninguno).
+2. **Divergencia harness/ladder**: 71,5% local vs 40% real. Cintas pasivas no
+   mueven el mercado d0.
+3. **Tienda d3 explica derrotas** de la cinta fija: 60% BAKERY … 14% PIZZA.
+4. **DSM vs Majkel 3-6**; cima decidida por 1-5%. Cintas de DSM no son mejor materia.
+5. **compare**: cinta +12,1 > tree +9,0 > tree_v2 +4,8 (vs HOZ). Más cintas mezcladas, peor.
 
 ## NEXT_EXPERIMENTS (orden)
 
-1. Leer `compare`: si `tree_v2` > `tree` con IC dos vías > 0 → subir `tree_v2`
-   (`empaquetar_arbol.py` necesita generalizarse a N cintas). Si empatan, subir
-   igualmente por criterio #7 (distinguir en ladder).
-2. Failure analysis REAL: clasificar las 60 partidas de MAJTAPE_LADDER (V/D,
-   rival, tiendas, dónde se abre la brecha). Buscar qué explota a una cinta fija.
-3. Clasificar replays de DSM/UMG/Vadim (`clasificar_lider.py` con OBJ = nombre),
-   extraer cintas (`extraer_top1.py <Team> <CARPETA>`), construir `tree_v3`.
-4. Cuando 56444202 pase de ~60 ep: comparar con 852,6 y actualizar
-   HARNESS_VS_LEADERBOARD.
+1. Leer piloto `tapes` → top-3 cintas a `--phase confirm` (16 seeds). Si alguna
+   supera a 107674293 con IC dos vías > 0 → nueva cinta base (+guardia) al ladder.
+2. Leer 56444505 (guardia) y 56444202 (tree v1) a ~60 ep → HARNESS_VS_LEADERBOARD.
+   Predicción guardia: claramente > 852,6 si las manos d1 eran la causa dominante.
+3. Si guardia transfiere Y tree v1 ≥ cinta en ladder → `tree_v1 + guard` (combinación
+   de validados, criterio #6).
+4. Arreglar `tree_v2`: ramificar sólo entre cintas con prefijo IDÉNTICO hasta el
+   paso de ramificación (agrupar por hash de prefijo). Medir vs tree v1.
+5. `tree_liquid` (ventas reactivas) al ladder si hay slot: 0 efecto local por
+   rivales pasivos — mismo patrón de divergencia que la guardia.
+6. Ampliar guardia al d1 (until_step=48) si 56444505 muestra déficit residual en d2.
 
 ## HARNESS_VS_LEADERBOARD (dataset acumulado)
 

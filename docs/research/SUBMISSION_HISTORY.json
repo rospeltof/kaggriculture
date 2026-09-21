@@ -51,7 +51,22 @@
         "lad8": "62.50",
         "sepopp8": "65.62"
       },
-      "nota": "empato con maj_107674293 (64.06) en el piloto; perdio el desempate alfabetico. Confirmacion con potencia: en curso (compare, 16 seeds)"
+      "nota": "empato con maj_107674293 (64.06) en el piloto; perdio el desempate alfabetico. Confirmacion con potencia: en curso (compare, 16 seeds)",
+      "confirm_compare": {
+        "panel": "48 rivales x 16 seeds x 2 asientos (compare 2026-09-21)",
+        "wr": 65.76,
+        "base_wr": 56.77,
+        "delta": 8.98,
+        "ci95_seed": [
+          4.99,
+          12.98
+        ],
+        "ci95_2way": [
+          -6.09,
+          24.06
+        ],
+        "nota": "en el MISMO bloque la cinta sola dio +12.11 [2.81; 21.41] y tree_v2 +4.82. Local: cinta > tree > tree_v2"
+      }
     },
     "reason": "REAL_WORLD_CANDIDATE criterio #3 (estructuralmente distinto: ramifica) y #7 (localmente indistinguible de la cinta; solo el ladder los separa). Verificado identico al arbol local en 6 semillas, DONE",
     "leaderboard": {
