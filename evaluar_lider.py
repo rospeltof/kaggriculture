@@ -44,6 +44,9 @@ def materialize(name):
     if name=="tree_v2":
         from bots.arbol_lider import make as make_v2
         return make_v2()
+    if name=="tree_v3":
+        from bots.arbol_lider_v3 import make as make_v3
+        return make_v3()
     from bots.experimentos_lider import make
     if name not in ("tree","tree_liquid","warmstart10"):
         raise ValueError(f"Candidato desconocido: {name}")
@@ -153,6 +156,13 @@ def run(args):
         tops=[t for t in tops if clas.get(int(t.split("_")[-1]),{}).get("gana")]
         arms=["base","noop","maj_107674293"]+tops
         opponents=lad[::5]+recent;seeds=list(range(221000,221000+args.seeds))
+    elif args.phase=="compare2":
+        # 2026-09-22: successive halving. Top-5 cintas solas del piloto `tapes`
+        # (4 seeds) + arboles v1/v3 + cinta campeona, 16 seeds, mismo bloque.
+        TOP5=["top_majkel1337_107649304","top_majkel1337_107603287","top_majkel1337_107570947",
+              "top_majkel1337_107604888","top_majkel1337_107658008"]
+        arms=["base","noop","_peor","maj_107674293","tree","tree_v3"]+TOP5
+        opponents=lad+recent;seeds=list(range(223000,223000+args.seeds))
     elif args.phase=="compare":
         # 2026-09-21: arbol v1 (4 cintas) contra arbol v2 (30 victorias de la
         # sub 56142830) y la cinta desplegada, en el MISMO bloque.
@@ -167,7 +177,7 @@ def run(args):
     if manifest.exists() or raw.exists() or raw.with_suffix(raw.suffix+".gz").exists():
         raise FileExistsError(f"No sobrescribir corrida: {tag}")
     source_names=["evaluar_lider.py","bots/experimentos_lider.py","bots/chassis.py","bots/arquetipos.py","bots/meta/tape.py",
-                  "docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md","bots/arbol_lider.py","results/clasif_MAJKEL_56142830.json"]
+                  "docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md","bots/arbol_lider.py","results/clasif_MAJKEL_56142830.json","bots/arbol_lider_v3.py"]
     tape_names=sorted(set(opponents)|{f"maj_{i}" for i in IDS})
     paths=[ROOT/n for n in source_names]+[ROOT/f"bots/meta/tapes/{n}.json.gz" for n in tape_names]
     hashes={str(p.relative_to(ROOT)):sha(p.read_bytes()) for p in paths}
@@ -224,7 +234,7 @@ def run(args):
 
 if __name__=="__main__":
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--phase",choices=("pilot","confirm","stress","compare","tapes"),required=True)
+    ap.add_argument("--phase",choices=("pilot","confirm","stress","compare","tapes","compare2"),required=True)
     ap.add_argument("--candidate")
     ap.add_argument("--seeds",type=int,default=16)
     ap.add_argument("--workers",type=int,default=8)
