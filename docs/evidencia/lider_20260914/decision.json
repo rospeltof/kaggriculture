@@ -1,0 +1,8 @@
+{
+  "candidate": "maj_107674293",
+  "local_jump_confirmed": false,
+  "candidate_both_ci_positive": true,
+  "control_both_ci_negative": true,
+  "delta": 0.14364035087719298,
+  "kaggle_submitted": false
+}

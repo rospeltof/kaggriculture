@@ -1,5 +1,9 @@
 # Kaggriculture — briefing de incorporación
 
+**Ronda nueva del 2026-09-14:** ver [resultados del líder](RESULTADOS_LIDER_2026-09-14.md)
+y [auditoría de los ocho replays](ANALISIS_LIDER_2026-09-14.md). Los ratings y
+restricciones temporales que aparecen abajo pertenecen al historial anterior.
+
 **Actualizado: 2026-09-05.** Este documento conserva el contexto técnico e
 histórico. Empieza por [ESTADO_ACTUAL.md](ESTADO_ACTUAL.md), que fija estado y
 autorizaciones. La sección 5 resume variantes ya medidas: antes de repetirlas,

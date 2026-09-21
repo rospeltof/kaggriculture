@@ -1,0 +1,35 @@
+[
+  {
+    "submission_id": 56245770,
+    "timestamp": "2026-09-14T23:52:00-05:00",
+    "git_commit": "(sin commit: working tree del 14-sep, ver docs/evidencia/envio_maj_20260914)",
+    "experiment_id": "maj_107674293",
+    "config": "cinta fija de Majkel1337, episodio 107674293 (vs yaki-imo)",
+    "local_harness": {"panel": "40 lad + 8 sepopp, 19 seeds, 2 asientos", "wr": 71.49, "base_wr": 57.13,
+                      "delta": 14.36, "ci95_seed": [9.02, 19.71], "ci95_2way": [6.71, 22.02],
+                      "opponent_breakdown": {"lad40": "+15.00", "sepopp8": "+11.18"}},
+    "reason": "Mejor candidato del piloto de 14 brazos; +14.36 confirmado. Usuario: 'Subela a kaggle pa que coja calle'",
+    "leaderboard": {"score": 852.6, "episodes": 126, "rank": "~4589/9776 (2026-09-21)"},
+    "delta_vs_champion_ladder": "+175 sobre campeona_hoz (677.5), pero hoz esta en caida y ruido de +-40",
+    "observed": "Converge en ~852. Es la mejor submission que hemos tenido. Nota: Majkel1337 esta en 3075 y su CINTA fija da 852: el valor del agente esta en la adaptacion, no en la secuencia.",
+    "conclusion": "CHAMPION (ladder). Panel +14 -> ladder +175 vs hoz: la direccion transfiere.",
+    "next_action": "Arbol de rutas (ramificar por tiendas) para reducir el desajuste de contexto de una cinta fija."
+  },
+  {
+    "submission_id": 56444202,
+    "timestamp": "2026-09-21T21:53:35-05:00",
+    "git_commit": "PENDIENTE (se rellena en el commit siguiente)",
+    "experiment_id": "tree_v1",
+    "config": "arbol de 4 cintas de Majkel1337 (107685970/107692988/107696961/107710951); rama en step 72 por primera tienda y en 144 por YARN_STORE. Paquete: empaquetar_arbol.py, 51413 bytes",
+    "local_harness": {"panel": "piloto 14-sep: 16 rivales x 4 seeds x 2 asientos", "wr": 64.06, "base_wr": 46.09,
+                      "delta": 17.97, "ci95_seed": null, "ci95_2way": null,
+                      "opponent_breakdown": {"lad8": "62.50", "sepopp8": "65.62"},
+                      "nota": "empato con maj_107674293 (64.06) en el piloto; perdio el desempate alfabetico. Confirmacion con potencia: en curso (compare, 16 seeds)"},
+    "reason": "REAL_WORLD_CANDIDATE criterio #3 (estructuralmente distinto: ramifica) y #7 (localmente indistinguible de la cinta; solo el ladder los separa). Verificado identico al arbol local en 6 semillas, DONE",
+    "leaderboard": {"score": null, "episodes": 0, "rank": null},
+    "delta_vs_champion_ladder": null,
+    "observed": null,
+    "conclusion": "PENDIENTE",
+    "next_action": "Comparar contra maj_107674293 (852.6) cuando pase de ~60 episodios. Mientras: compare panel tree vs tree_v2."
+  }
+]

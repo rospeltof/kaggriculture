@@ -1,5 +1,56 @@
 # Bitácora de experimentos
 
+## 2026-09-14, 23:52 — `maj_107674293` enviada por autorización expresa
+
+Petición: «Subela a kaggle pa que coja calle». Submission **56245770**, recibida
+por Kaggle, estado inicial PENDING. La CLI indicó 4 envíos restantes ese día.
+No se envió el árbol ni HOZ: se envió la cinta seleccionada y confirmada localmente.
+Paquete autónomo de 13.506 bytes, SHA-256
+`7894c015654e18803b7f31e2c2d37127accb143fce007cec6e2db519f997ca08`.
+
+Validación de 721 casos de acción y copia independiente; ocho episodios comparan
+archivo contra módulo, dos semillas, ambos asientos: cuatro pares idénticos en
+720 estados de juego. El main anterior quedó archivado; HOZ no se modificó.
+El envío no altera retrospectivamente el umbral de 15 puntos del experimento.
+Registro: `docs/evidencia/envio_maj_20260914/paquete.json` y
+`validacion_paquete.json`. No se programó otro envío ni monitoreo automático.
+
+## 2026-09-14 — Rutas del líder: mejora local, umbral de salto no alcanzado
+
+Nueva autorización del usuario: investigación pública y experimentos locales;
+ningún envío a Kaggle. Se auditaron ocho replays de Majkel1337 con reproducción
+exacta de 720 estados y conciliación de flujos de dinero para ambos jugadores.
+No contienen Elo ni permiten reconstruir por sí solos una evolución temporal.
+
+Piloto registrado: once candidatos (ocho cintas, árbol de tiendas, árbol con
+ventas y apertura seguida de HOZ), tres controles, cuatro semillas, 16 rivales,
+ambos asientos: 1.792 episodios. Cinta 107674293 y ambos árboles empataron en
+64,06%, +17,97 puntos frente a HOZ; desempate por nombre seleccionó la cinta.
+Las ventas reactivas cambiaron acciones en 128/128 episodios, sin cambiar ningún
+W/L/T frente al árbol. Eso no significa que el parche no se ejecutó.
+
+Confirmación registrada antes de correr: 19 semillas disjuntas, 48 rivales,
+cuatro brazos, ambos asientos, 7.296 episodios. Candidato 71,49%, HOZ 57,13%;
+delta **+14,36**, IC95 semilla **[+9,02; +19,71]**, dos vías **[+6,71; +22,02]**.
+Noop exacto 1.824/1.824, FB −19,35 con ambos intervalos negativos. Mejora positiva
+en panel fijo; no cumple delta puntual ≥15, por lo que no se declara el salto
+registrado ni se cambia de candidato para rescatar ese criterio.
+
+Se conservaron todos los resultados y las ponderaciones registradas: piloto 8/8
+históricos/nuevos, confirmación 40/8. En los nuevos el candidato marca 48,68%
+frente a 37,50% de HOZ. Esa diferencia y familias de rutas compartidas limitan
+el transporte al ladder. Duelo contra HOZ vivo: 12/16 victorias, diagnóstico pequeño.
+Estrés frente a las ocho cintas de Majkel: candidato 90,62%, HOZ 11,72%, 512
+episodios. Control FB −1,56 con intervalo que cruza cero; fuentes usadas durante
+desarrollo. No se interpreta como una confirmación adicional ni como victoria
+sobre el líder reactivo. Total de la ronda y sondas: 9.634 episodios locales.
+
+Resultados completos, estrés contra fuentes del líder, limitaciones y propuestas:
+[RESULTADOS_LIDER_2026-09-14.md](RESULTADOS_LIDER_2026-09-14.md).
+Protocolo: [EXPERIMENTOS_ATREVIDOS_2026-09-14.md](EXPERIMENTOS_ATREVIDOS_2026-09-14.md).
+Fuentes, configs, cintas, hashes y episodios: `docs/evidencia/lider_20260914/`.
+HOZ y `submission/main.py` se conservaron intactos.
+
 ## 2026-09-06 (4) — `compete_aware` REFUTADO con dosis-respuesta monótona
 
 ### El resultado

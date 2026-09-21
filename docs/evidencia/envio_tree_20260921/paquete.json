@@ -1,0 +1,16 @@
+{
+  "candidate": "tree",
+  "branch_ids": [
+    107685970,
+    107692988,
+    107696961,
+    107710951
+  ],
+  "prepared_at": "2026-09-21T21:26:24.015338+00:00",
+  "main_sha256": "11b30a57f490a2e05e27b90b69eb4a3644b059f1279ad6c2aaa073b30ff0595b",
+  "main_bytes": 51413,
+  "previous_main_sha256": "7894c015654e18803b7f31e2c2d37127accb143fce007cec6e2db519f997ca08",
+  "previous_main_archive": "submission/archivo/main_7894c015654e18803b7f31e2c2d37127accb143fce007cec6e2db519f997ca08.py",
+  "state": "prepared",
+  "authorization": "Usuario 2026-09-21: 'si hazlo' (subir el tree)"
+}

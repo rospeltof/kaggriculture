@@ -1,6 +1,23 @@
 # Cola de ideas y revisión entre LLMs
 
-Estado: propuestas, no experimentos autorizados. La última corrida de Kaggle
+## Ronda vigente — 2026-09-14
+
+El usuario autorizó los experimentos locales de la ronda del líder. Consultar
+[protocolo](EXPERIMENTOS_ATREVIDOS_2026-09-14.md) y
+[resultados](RESULTADOS_LIDER_2026-09-14.md) antes de proponer otro bloque.
+La cola técnica siguiente es histórica; no justifica repetir compras parciales
+sin revisar la réplica posterior ni desplaza la nueva investigación de rutas.
+Las propuestas siguientes a esta ronda están en el informe de resultados, con
+sus costes y reglas de parada. No se autoriza ningún envío a Kaggle.
+
+Para otro LLM: reconstruir primero selección, controles y deltas de la nueva
+evidencia con `verificar_lider.py`, y distinguir semillas nuevas de rivales nuevos.
+Preguntar si las familias de rutas compartidas y la ponderación 8/8 frente a
+40/8 limitan la conclusión. El acuerdo entre modelos no sustituye una réplica.
+
+## Cola histórica del traspaso anterior
+
+Estado anterior: propuestas, no experimentos autorizados. La última corrida de Kaggle
 queda reservada. **Un episodio local no consume una submission de Kaggle**;
 los costes de CPU local y el cupo de envíos son presupuestos distintos.
 

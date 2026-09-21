@@ -1,0 +1,19 @@
+{
+  "pilot_sha256": "19f78e385556fdd3b45a003a3a32459eca681825abf11a37d500b77be4b7fd61",
+  "candidate": "maj_107674293",
+  "pilot_score": 0.640625,
+  "pilot_delta": 0.1796875,
+  "seed_sd": 0.2315805632855803,
+  "prior_control_delta": -0.125,
+  "selection_rule": "Máximo W/L/T; empate por nombre; excluidos controles",
+  "proceed": true,
+  "raw_sample_size": 19,
+  "n_seeds": 19,
+  "sample_size_capped": false,
+  "seed_start": 215000,
+  "seed_end": 215018,
+  "expected_episodes": 7296,
+  "effect_of_interest": 0.15,
+  "approximate_mde80": 0.1487590296536945,
+  "promotion_rule": "Delta >=15 puntos, IC95 semilla y dos vías >0, control anterior ambos IC95 <0, noop exacto y cero errores"
+}

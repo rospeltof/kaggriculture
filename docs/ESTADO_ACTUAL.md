@@ -1,5 +1,67 @@
 # Estado actual — leer primero
 
+## Envío autorizado — 2026-09-14, 23:52 America/Bogota
+
+El usuario pidió «Subela a kaggle pa que coja calle». Se envió **`maj_107674293`**
+como `submission/main.py`, submission **56245770**. Kaggle confirmó recepción;
+estado inicial **PENDING**, sin score todavía. La CLI indicó **4 envíos restantes**
+después de subir. Esto sustituye la prohibición previa para este envío concreto;
+no implica autorizar más submissions ni que el candidato haya ganado en el ladder.
+
+El paquete de 13.506 bytes incluye la cinta y sólo usa biblioteca estándar.
+SHA-256: `7894c015654e18803b7f31e2c2d37127accb143fce007cec6e2db519f997ca08`.
+Se comprobaron 721 acciones, aislamiento frente a mutaciones y cuatro pares de
+partidas archivo/módulo, con 720 estados de juego equivalentes por par (ocho
+episodios adicionales, semillas 218000–218001 y ambos asientos).
+
+El archivo anterior se conserva en
+`submission/archivo/main_cfad10b88abc38f8f7f79a3b83148f11e37d57865f37cea648cffa9bbcf1e1d7.py`.
+`CAMPEONA_HOZ` permanece intacta como referencia local. Evidencia del envío y
+validación: `docs/evidencia/envio_maj_20260914/`. No volver a enviar por encontrar
+un estado PENDING; consultar por ID y distinguirlo de un envío fallido.
+
+Snapshot de consulta anterior al envío: HOZ **702,0**, grano **718,4**. Son
+ratings observados en esta consulta, no los 818,1/774,8 del historial.
+Los informes de experimentos de abajo conservan el estado previo a este envío.
+
+## Ronda del líder — 2026-09-14
+
+El usuario autorizó investigación pública, análisis de ocho replays nuevos de
+Majkel1337 y experimentos locales ambiciosos. En esa fase no había autorización
+de envío; fue concedida después, como se registra arriba.
+**Resultado de confirmación:** `maj_107674293` obtiene 71,49% frente a 57,13%
+de HOZ: **+14,36 puntos**, IC95 por semilla **[+9,02; +19,71]**, dos vías
+**[+6,71; +22,02]**. Se completaron 7.296 episodios, 19 semillas nuevas y ambos
+asientos. Noop exacto en 1.824 comparaciones; FB −19,35 puntos, con ambos
+intervalos negativos. Hay mejora positiva en el panel fijo, pero el estimador
+queda por debajo del umbral registrado de 15 puntos para declarar el salto.
+
+El piloto comparó once candidatos y tres controles. La cinta y el árbol empataron
+en 64,06%; se eligió la cinta por desempate alfabético registrado, no por ventaja
+demostrada sobre el árbol. La variante de ventas cambió acciones sin cambiar
+W/L/T frente al árbol. Contra los ocho rivales nuevos de confirmación, el candidato
+queda en 48,68% frente a 37,50% de HOZ; no confundir 71,49% agregado con dominar
+el meta actual. Duelo diagnóstico contra HOZ vivo: 12 victorias y 4 derrotas.
+
+Estrés completo de 512 episodios contra las ocho cintas de Majkel: candidato
+90,62%, HOZ 11,72%. Son fuentes de desarrollo y el control FB cruza cero;
+este resultado no es confirmación independiente ni una victoria sobre su agente
+reactivo. Total de la ronda: 9.634 episodios locales, incluidos los diagnósticos
+y reproducciones. Los registros, controles y fuentes se verificaron al terminar.
+
+`CAMPEONA_HOZ` continúa como base y `submission/main.py` conserva el hash anotado
+abajo. El candidato queda experimental, sin empaquetar ni enviar.
+
+- [Resultados y diagnósticos](RESULTADOS_LIDER_2026-09-14.md).
+- [Auditoría de los ocho replays](ANALISIS_LIDER_2026-09-14.md).
+- [Protocolo anterior a las pruebas](EXPERIMENTOS_ATREVIDOS_2026-09-14.md).
+- [Petición preparada para otro LLM](REVISION_LIDER_PARA_LLM.md).
+
+**Historial anterior:** lo que sigue conserva las decisiones de septiembre 5–6;
+sus restricciones de barridos no describen la nueva petición. Los ratings son
+snapshots antiguos, no una consulta actual. La investigación del 14 no consultó
+submissions por CLI ni verificó la cuota de envíos.
+
 Actualizado el 2026-09-05. Esta página resuelve contradicciones con notas antiguas;
 las instrucciones nuevas del usuario prevalecen sobre cualquier documento.
 

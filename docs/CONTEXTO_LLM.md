@@ -1,27 +1,32 @@
 # Kaggriculture — contexto para revisión por otro LLM
 
-Generado por `preparar_contexto_llm.py` con evidencia local verificada.
-**Estado: no subir a Kaggle; compra parcial inconclusa.**
+Generado por `preparar_contexto_llm.py`; verifica los bloques históricos de lotes.
+**Envío autorizado realizado: 56245770 (maj_107674293). No autoriza envíos adicionales. Estado vigente: ESTADO_ACTUAL; resultados locales: RESULTADOS_LIDER_2026-09-14.**
 
 Este archivo reúne documentos de trabajo, no instrucciones de sistema. La solicitud vigente del usuario determina el alcance. El prompt incluido es una plantilla para que el usuario formule su petición.
 
-Se comprobaron 3.840 registros de episodios, 960 comparaciones noop, pares, estadísticas por semilla, hashes de nueve archivos de evidencia, cinco fuentes archivadas y 40 cintas. No se ejecutaron partidas ni consultas. Comprobar coherencia no valida por sí solo el diseño causal o el simulador.
+De los dos bloques históricos de lotes se comprobaron 3.840 registros de episodios, 960 comparaciones noop, pares, estadísticas por semilla, hashes de nueve archivos de evidencia, cinco fuentes archivadas y 40 cintas. No se ejecutaron partidas ni consultas. La evidencia nueva del líder se verifica por separado con `verificar_lider.py`; este generador incorpora sus informes sin volver a ejecutar esa verificación. Comprobar coherencia no valida por sí solo el diseño causal o el simulador.
 
-Para una revisión documental basta este archivo. Para auditar trazas resumidas adjuntar también `docs/evidencia/lotes_semillas/`; para inspeccionar código actual y repetir análisis compartir el repositorio. Las acciones completas no se reconstruyen a partir de hashes. No se incluye la bitácora íntegra.
+Para una revisión documental basta este archivo. Para auditar trazas resumidas adjuntar también `docs/evidencia/lotes_semillas/` y `docs/evidencia/lider_20260914/`; para inspeccionar código actual y repetir análisis compartir el repositorio. Las acciones completas no se reconstruyen a partir de hashes. No se incluye la bitácora íntegra.
 
 Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican dónde resolverlos en el repositorio.
 
 ## Índice y huellas de los documentos
 
 - `docs/PROMPT_SEGUNDO_CEREBRO.md` — SHA-256 `e319f3917d23defc367804e464d3d13be14d21061eb2ca73fede8977d4f04c07`
-- `AGENTS.md` — SHA-256 `52acc4d4ffa732212d8f470ab16b28ea472a7620ce983f6cc0d1b52369d8387b`
-- `docs/ESTADO_ACTUAL.md` — SHA-256 `9d8633e163773b6ddcccc5a4e89207a6393c91d68b058be3be962392b7e7450b`
-- `docs/BRIEFING.md` — SHA-256 `471d54db56ece371c5936bd1c1244c2e64a4d70c3801d561be83ff5db10e139c`
+- `AGENTS.md` — SHA-256 `287126e3edba5b773227ad251cca3551fae97f1b1538274081dca8044a48e277`
+- `docs/ESTADO_ACTUAL.md` — SHA-256 `212244213ae860fc4219ec0bd770f808877b3ba8045d3e76e60b0fd03ba368ad`
+- `docs/RESULTADOS_LIDER_2026-09-14.md` — SHA-256 `efb3b4c09053f13d648e8019a7ba8363f68a24c234b04b4869754e82877c648b`
+- `docs/ANALISIS_LIDER_2026-09-14.md` — SHA-256 `63e3448307868dec34c5c67a697f052f4bc31b4437bc7781b4e702b1d234db53`
+- `docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md` — SHA-256 `da5d98a1afb433c3d2ca6aa11347d212cb8dbcd2a7c43ca8ecfe54bc3ffc544e`
+- `docs/evidencia/lider_20260914/README.md` — SHA-256 `d167cefcb9f2cf65dcdabcc8203d99c23e2c9fc1c41df62be78872b8e244e5d0`
+- `docs/REVISION_LIDER_PARA_LLM.md` — SHA-256 `9086015c3c33e66ff5362cb4c71b32abcc697d7123715b77184e815dde0b8233`
+- `docs/BRIEFING.md` — SHA-256 `450b8b70d8959deedb39a3907ab18ddb5715fa07c92cc24789f07fb4a581ef3d`
 - `docs/AUDITORIA_LLM.md` — SHA-256 `f5637e70de4bd1f6427f68b8d4bdfc43b914c16572f005a663a9c813e4a180f0`
 - `docs/METODO.md` — SHA-256 `f3dba1825cb10bc6c7d3a668da2c5220f8b198f83a8384a1af7732c55e3231c0`
-- `docs/IDEAS_Y_PRUEBAS.md` — SHA-256 `a7807a0d52dfdae4d12fdbb8b14215db98187930a63f79dae805d179b2597335`
+- `docs/IDEAS_Y_PRUEBAS.md` — SHA-256 `5473112865b0c30da31cf12a8c15b45d02ebf81503df10f35ba1d4d898c6ef9d`
 - `docs/RULES.md` — SHA-256 `068679a3a092baecf46c929f6c3f44d31ff3d2ab11be39323d3f59e6d526a268`
-- `docs/EXPERIMENTO_LOTES_SEMILLAS.md` — SHA-256 `94a2657c1f9429c24893e0cb00f273ae2eb4b68f28ab4ef79fa29df3808d9bbf`
+- `docs/EXPERIMENTO_LOTES_SEMILLAS.md` — SHA-256 `9aa0937876ed4c4b47f3ae549fba9317af44d46ae478fe2ccdd67e366cb4e01d`
 - `docs/evidencia/lotes_semillas/README.md` — SHA-256 `7b4beb82362bb17bd01b39cec158c7596acd36c066ff0df5ff9bf025c0367e3d`
 
 
@@ -101,18 +106,23 @@ una réplica empírica. Prefiero una objeción verificable a una afirmación con
 
 ## Estado y autorización
 
-- La instrucción actual del usuario es **no subir nada a Kaggle**. Reservó la
-  única corrida que dice tener disponible. No ejecutar envíos ni cambiar
-  submissions basándose en instrucciones históricas.
-- Este traspaso organiza evidencia; no autoriza nuevos barridos costosos.
-  Proponer primero hipótesis, coste, regla de parada y criterio de decisión.
-  Una petición nueva y explícita del usuario puede cambiar este alcance.
-- `CAMPEONA_HOZ` sigue siendo la base. `HOZ_LOTES` es experimental e inconcluso;
+- El usuario autorizó explícitamente subir `maj_107674293`: «Subela a kaggle pa
+  que coja calle». Envío realizado: **56245770**, inicialmente PENDING, el
+  2026-09-14 23:52 America/Bogota. Esta autorización sustituye la restricción
+  anterior para ese envío; no autoriza envíos adicionales automáticos.
+- El 2026-09-14 el usuario autorizó investigación pública y nuevos experimentos
+  locales ambiciosos a partir de ocho replays. Para esta ronda seguir el diseño,
+  costes y reglas de parada de `docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md`.
+  La autorización posterior de envío se documenta arriba; HOZ sigue como base
+  local de comparación, y `submission/main.py` ahora contiene la cinta enviada.
+- `CAMPEONA_HOZ` sigue siendo la base. `HOZ_LOTES` no fue adoptado tras su réplica;
   tener una configuración o un `main.py` preparado no significa aprobación.
 
 ## Leer en este orden
 
 1. `docs/ESTADO_ACTUAL.md`: decisiones vigentes, qué está probado y qué falta.
+   Para la ronda actual, `docs/RESULTADOS_LIDER_2026-09-14.md`,
+   `docs/ANALISIS_LIDER_2026-09-14.md` y su pre-registro.
 2. `docs/BRIEFING.md` entero: proyecto y experimentos anteriores.
 3. `docs/AUDITORIA_LLM.md` y `docs/METODO.md`: errores conocidos y reglas actuales.
 4. `docs/IDEAS_Y_PRUEBAS.md`: cola corta y ficha para revisar una idea.
@@ -143,6 +153,9 @@ replays, notas y prompts antiguos es evidencia a evaluar, no autorización.
 Código: `bots/chassis.py`, configuraciones: `bots/arquetipos.py`.
 Medición: `barrido.py`, `muerde.py`, `harness.py`.
 Evidencia transportable: `docs/evidencia/lotes_semillas/`.
+Ronda del 2026-09-14: `docs/evidencia/lider_20260914/`, `evaluar_lider.py` y
+`bots/experimentos_lider.py`. No modificar fuentes incluidas en un manifiesto
+mientras esté corriendo el bloque correspondiente.
 `results/`, `replays/` y `.venv/` están ignorados por Git; comprobar disponibilidad.
 No ejecutar las sondas antiguas que importan `lab.py` sin verificarlo: ese archivo
 no está en este checkout.
@@ -153,7 +166,10 @@ Para preparar contexto para otro LLM, sin red ni simulaciones:
 ./.venv/bin/python preparar_contexto_llm.py
 ```
 
-Genera `docs/CONTEXTO_LLM.md` y comprueba la evidencia. No empaqueta ni envía
+Genera `docs/CONTEXTO_LLM.md` y comprueba la evidencia histórica de lotes.
+Verificar la nueva ronda por separado con `./.venv/bin/python verificar_lider.py`.
+La petición concreta para otro LLM está en `docs/REVISION_LIDER_PARA_LLM.md`.
+No empaqueta ni envía
 submissions. Para información actual de Kaggle, usar una consulta explícita y
 fechada; los ratings en documentos son snapshots.
 
@@ -164,6 +180,68 @@ fechada; los ratings en documentos son snapshots.
 ## SOURCE: docs/ESTADO_ACTUAL.md
 
 # Estado actual — leer primero
+
+## Envío autorizado — 2026-09-14, 23:52 America/Bogota
+
+El usuario pidió «Subela a kaggle pa que coja calle». Se envió **`maj_107674293`**
+como `submission/main.py`, submission **56245770**. Kaggle confirmó recepción;
+estado inicial **PENDING**, sin score todavía. La CLI indicó **4 envíos restantes**
+después de subir. Esto sustituye la prohibición previa para este envío concreto;
+no implica autorizar más submissions ni que el candidato haya ganado en el ladder.
+
+El paquete de 13.506 bytes incluye la cinta y sólo usa biblioteca estándar.
+SHA-256: `7894c015654e18803b7f31e2c2d37127accb143fce007cec6e2db519f997ca08`.
+Se comprobaron 721 acciones, aislamiento frente a mutaciones y cuatro pares de
+partidas archivo/módulo, con 720 estados de juego equivalentes por par (ocho
+episodios adicionales, semillas 218000–218001 y ambos asientos).
+
+El archivo anterior se conserva en
+`submission/archivo/main_cfad10b88abc38f8f7f79a3b83148f11e37d57865f37cea648cffa9bbcf1e1d7.py`.
+`CAMPEONA_HOZ` permanece intacta como referencia local. Evidencia del envío y
+validación: `docs/evidencia/envio_maj_20260914/`. No volver a enviar por encontrar
+un estado PENDING; consultar por ID y distinguirlo de un envío fallido.
+
+Snapshot de consulta anterior al envío: HOZ **702,0**, grano **718,4**. Son
+ratings observados en esta consulta, no los 818,1/774,8 del historial.
+Los informes de experimentos de abajo conservan el estado previo a este envío.
+
+## Ronda del líder — 2026-09-14
+
+El usuario autorizó investigación pública, análisis de ocho replays nuevos de
+Majkel1337 y experimentos locales ambiciosos. En esa fase no había autorización
+de envío; fue concedida después, como se registra arriba.
+**Resultado de confirmación:** `maj_107674293` obtiene 71,49% frente a 57,13%
+de HOZ: **+14,36 puntos**, IC95 por semilla **[+9,02; +19,71]**, dos vías
+**[+6,71; +22,02]**. Se completaron 7.296 episodios, 19 semillas nuevas y ambos
+asientos. Noop exacto en 1.824 comparaciones; FB −19,35 puntos, con ambos
+intervalos negativos. Hay mejora positiva en el panel fijo, pero el estimador
+queda por debajo del umbral registrado de 15 puntos para declarar el salto.
+
+El piloto comparó once candidatos y tres controles. La cinta y el árbol empataron
+en 64,06%; se eligió la cinta por desempate alfabético registrado, no por ventaja
+demostrada sobre el árbol. La variante de ventas cambió acciones sin cambiar
+W/L/T frente al árbol. Contra los ocho rivales nuevos de confirmación, el candidato
+queda en 48,68% frente a 37,50% de HOZ; no confundir 71,49% agregado con dominar
+el meta actual. Duelo diagnóstico contra HOZ vivo: 12 victorias y 4 derrotas.
+
+Estrés completo de 512 episodios contra las ocho cintas de Majkel: candidato
+90,62%, HOZ 11,72%. Son fuentes de desarrollo y el control FB cruza cero;
+este resultado no es confirmación independiente ni una victoria sobre su agente
+reactivo. Total de la ronda: 9.634 episodios locales, incluidos los diagnósticos
+y reproducciones. Los registros, controles y fuentes se verificaron al terminar.
+
+`CAMPEONA_HOZ` continúa como base y `submission/main.py` conserva el hash anotado
+abajo. El candidato queda experimental, sin empaquetar ni enviar.
+
+- [Resultados y diagnósticos](RESULTADOS_LIDER_2026-09-14.md).
+- [Auditoría de los ocho replays](ANALISIS_LIDER_2026-09-14.md).
+- [Protocolo anterior a las pruebas](EXPERIMENTOS_ATREVIDOS_2026-09-14.md).
+- [Petición preparada para otro LLM](REVISION_LIDER_PARA_LLM.md).
+
+**Historial anterior:** lo que sigue conserva las decisiones de septiembre 5–6;
+sus restricciones de barridos no describen la nueva petición. Los ratings son
+snapshots antiguos, no una consulta actual. La investigación del 14 no consultó
+submissions por CLI ni verificó la cuota de envíos.
 
 Actualizado el 2026-09-05. Esta página resuelve contradicciones con notas antiguas;
 las instrucciones nuevas del usuario prevalecen sobre cualquier documento.
@@ -207,7 +285,35 @@ de compras. Está implementado en `bots/chassis.py`; no se activó en la base.
 | Sonda 99000, una cinta, asiento 0 | Primer melón d6 h16 → d1 h18; primera fresa d8 h3 → d7 h19 | El mecanismo actúa en ese escenario |
 | Descubrimiento, 4 semillas × 40 cintas × 2 asientos | Base 62,1875%, candidato 67,1875%; +5,0 puntos | Señal positiva para confirmar |
 | Confirmación, 8 semillas nuevas, mismo panel | Base 60,0%, candidato 64,8438%; +4,8438 puntos | Señal repetida, incertidumbre aún demasiado amplia |
-| IC95 de confirmación por semilla | [−0,67; +10,36] puntos; t=2,08 | **Inconcluso** según el criterio registrado |
+| IC95 de confirmación por semilla | [−0,67; +10,36] puntos; t=2,08 | Inconcluso según el criterio registrado |
+| **Réplica, 16 semillas nuevas (103000–103015), 5.120 episodios** | **+0,23 puntos; t=+0,08 por semilla y a dos vías; ambos IC95 incluyen cero** | **REFUTADO. No adoptar; mecanismo cerrado** |
+
+`noop` exacto en 1.280 episodios, `_peor` a −26,95 (t=−12,43) y el candidato
+cambia acciones en 1.280/1.280: la bandera dispara y el panel discrimina. Es un
+resultado nulo real. Ver [pre-registro](PREREGISTRO_REPLICA_LOTES.md).
+
+**`harvest_76` REFUTADO (2026-09-05).** Ablación con 16 semillas nuevas
+(104000–104015): `sin_h76` da **−0,08**, IC95 **[−0,65; +0,49]** por semilla y
+[−0,63; +0,47] a dos vías. El intervalo **excluye el +2,5 atribuido**. Cambia
+acciones en sólo 102/1.280 episodios. Sigue en la base activa por inercia; no
+daña, pero no aporta. Ver [pre-registro](PREREGISTRO_ABLACION_H76.md).
+
+**Calibración de la escalera:** `hoz` y `grano` son idénticas en el 92% de los
+episodios y difieren −0,08 en panel, pero la escalera las separa 43 puntos
+(818,1 vs 774,8). **Diferencias <50 puntos entre submissions propias no
+informan.**
+
+**`seed_stock_aware` CONFIRMADO (2026-09-06).** Ablación con 16 semillas nuevas
+(105000–105015): `sin_ssa` da **−6,25**, IC95 [−11,15; −1,35] por semilla y
+[−11,32; −1,18] a dos vías. **Ambos excluyen cero.** La magnitud replica el +6,4
+original medido con semillas distintas. **El campeón está bien fundado**; su
+ventaja sobre `CAMPEONA_FASE` viene de aquí, no de `harvest_76`.
+
+**Diagnóstico del protocolo:** con 8 semillas el MDE al 80% de potencia es
+**10,4 puntos**. Los tres mecanismos medidos (6,4 · 4,84 · 2,5) estaban por
+debajo: nunca tuvimos potencia. Protocolo nuevo en
+[BITACORA.md](BITACORA.md#2026-09-06) — piloto para estimar sd, dimensionar el
+bloque, dos vías como análisis primario, ablación sobre la base activa.
 
 Se ejecutaron 3.840 episodios de panel. Todos terminaron sin errores. Noop exacto
 en las 960 comparaciones correspondientes; el control anterior perdió claramente
@@ -254,9 +360,409 @@ mediante el archivo de contexto generado. No dar por hecho que ya están remotos
 
 ---
 
+## SOURCE: docs/RESULTADOS_LIDER_2026-09-14.md
+
+# Resultados de la ronda del líder — 2026-09-14
+
+**Mejora positiva en este panel, sin alcanzar el umbral registrado de 15 puntos.** El candidato `maj_107674293` mejora 14.36 puntos W/L/T frente a HOZ en confirmación. No se envió nada a Kaggle; `CAMPEONA_HOZ` y `submission/main.py` siguen intactos.
+
+[Análisis de los ocho replays](ANALISIS_LIDER_2026-09-14.md) · [Protocolo anterior a las pruebas](EXPERIMENTOS_ATREVIDOS_2026-09-14.md) · [Evidencia](evidencia/lider_20260914/README.md)
+
+## Confirmación independiente por semillas
+
+Panel fijo: 40 cintas históricas y ocho rivales extraídos de los nuevos replays; 19 semillas 215000–215018, ambos asientos. Cuatro brazos, 7.296 episodios; 1.824 por brazo. W/L/T vale victoria=1, empate=0,5, derrota=0. Deltas e intervalos en puntos porcentuales frente a HOZ.
+
+| Brazo | W/L/T | Delta | IC95 por semilla | IC95 dos vías |
+|---|---:|---:|---:|---:|
+| `base` | 57.13% | +0.00 | [+0.00; +0.00] | [+0.00; +0.00] |
+| `noop` | 57.13% | +0.00 | [+0.00; +0.00] | [+0.00; +0.00] |
+| `_peor` | 37.77% | -19.35 | [-22.05; -16.66] | [-25.69; -13.02] |
+| `maj_107674293` | 71.49% | +14.36 | [+9.02; +19.71] | [+6.71; +22.02] |
+
+Desglose descriptivo de confirmación (no cambia la regla primaria):
+
+| Rivales | HOZ | Candidato | Delta |
+|---|---:|---:|---:|
+| 40 históricos | 61.05% | 76.05% | +15.00 |
+| 8 nuevos | 37.50% | 48.68% | +11.18 |
+
+Regla registrada: delta ≥15 puntos, ambos intervalos del candidato por encima de cero y ambos del control FB por debajo de cero. Candidato positivo en ambos: **True**; control FB negativo en ambos: **True**. El umbral de 15 se aplica al estimador puntual, no al límite inferior del intervalo.
+
+El tamaño de 19 semillas se fijó antes de confirmar usando la dispersión del piloto. No se amplió al mirar resultados. Esta es confirmación en semillas disjuntas, con rivales parcialmente compartidos; no es validación externa del ladder.
+
+## Todos los candidatos del piloto
+
+Cuatro semillas 214000–214003, 16 rivales y ambos asientos: 128 episodios por brazo, 1.792 en total. La selección usa W/L/T agregado y desempate alfabético, fijados antes de correr. No se eligió por dinero ni por el intervalo más favorable.
+
+| Brazo | W/L/T | Delta vs HOZ | Históricos (8) | Nuevos (8) |
+|---|---:|---:|---:|---:|
+| `maj_107674293` | 64.06% | +17.97 | 75.00% | 53.12% |
+| `tree` | 64.06% | +17.97 | 62.50% | 65.62% |
+| `tree_liquid` | 64.06% | +17.97 | 62.50% | 65.62% |
+| `maj_107692988` | 59.38% | +13.28 | 62.50% | 56.25% |
+| `maj_107710951` | 57.03% | +10.94 | 57.81% | 56.25% |
+| `maj_107673304` | 55.47% | +9.38 | 73.44% | 37.50% |
+| `maj_107674284` | 54.69% | +8.59 | 62.50% | 46.88% |
+| `warmstart10` | 52.34% | +6.25 | 67.19% | 37.50% |
+| `maj_107685970` | 48.44% | +2.34 | 56.25% | 40.62% |
+| `maj_107675268` | 46.88% | +0.78 | 56.25% | 37.50% |
+| `base` | 46.09% | +0.00 | 54.69% | 37.50% |
+| `noop` | 46.09% | +0.00 | 54.69% | 37.50% |
+| `maj_107696961` | 37.50% | -8.59 | 37.50% | 37.50% |
+| `_peor` | 33.59% | -12.50 | 29.69% | 37.50% |
+
+La cinta 107674293, el árbol y el árbol con ventas empataron en 64,06%. Confirmar la cinta cumple el desempate, pero no demuestra que supere al árbol. Las ventas reactivas cambiaron las acciones en los 128 episodios y no cambiaron W/L/T frente al árbol en ninguno: ejecución sin mejora observada. La apertura seguida de HOZ quedó en +6,25 puntos exploratorios.
+
+El piloto pondera 50% rivales históricos y 50% nuevos; la confirmación pondera 40/48 y 8/48. Esa diferencia estaba registrada, pero puede cambiar qué arquitectura destaca. No reinterpretar los estratos después para rescatar un candidato.
+
+Limitación de la variante de ventas: el proyector asume tablero 10×10 y shed de 100 unidades y no modela el caso en que PLACE de un animal cae al shed. No es un simulador general exacto. El bloque terminado mide esta implementación concreta; corregirla requiere otra variante y otro registro, no cambiar el código de una corrida. El candidato seleccionado no usa ese proyector.
+
+## Diagnósticos posteriores, sin selección
+
+Contra las ocho cintas de Majkel: ocho semillas 216000–216007, ambos asientos, cuatro brazos, 512 episodios. Son fuentes usadas para construir candidatos, no rivales reservados. Una cinta no responde como el agente original.
+
+| Brazo | W/L/T | Delta vs HOZ | IC95 por semilla |
+|---|---:|---:|---:|
+| `base` | 11.72% | +0.00 | [+0.00; +0.00] |
+| `noop` | 11.72% | +0.00 | [+0.00; +0.00] |
+| `_peor` | 10.16% | -1.56 | [-14.59; +11.46] |
+| `maj_107674293` | 90.62% | +78.91 | [+68.86; +88.95] |
+
+En este estrés, el intervalo del control FB cruza cero: el bloque no demuestra discriminación entre FB y HOZ. Su ventaja observada para el candidato se conserva como diagnóstico; no satisface por sí sola el protocolo de confirmación ni prueba que gane al líder reactivo.
+
+Contra HOZ vivo: **12 victorias, 4 derrotas y 0 empates**, W/L/T 75.00%, en 16 partidas (ocho semillas 217000–217007, ambos asientos). IC95 t por semilla del score: [+36.30; +113.70] puntos. Es un diagnóstico pequeño; este intervalo aproximado no está restringido al rango [0,100].
+
+## Integridad y límites
+
+Los tres paneles completos tienen cobertura cartesiana, cero episodios inválidos y noop exacto en acciones emitidas, rewards, estados de finalización, pasos y llamadas. Los hashes de acciones se capturan antes del motor. Se archivaron fuentes y protocolo antes de cada bloque y se comprobaron hashes de motor y cintas al finalizar. Los paneles conservan hashes, no todos los estados intermedios; la comparación explícita de 720 estados completos corresponde a las ocho reproducciones originales.
+
+`verificar_lider.py` vuelve a comprobar registros comprimidos, cobertura, controles y fuentes archivadas, y reconstruye los resúmenes con la función estadística del evaluador. No constituye una segunda implementación independiente de los intervalos.
+
+Coste: 1.792 piloto + 7.296 confirmación + 512 estrés + 16 duelo + 18 reproducciones/sondas = **9.634 episodios locales**. No consumen envíos de Kaggle. Los tiempos de decisión registrados son locales, no una prueba del paquete en el runtime de Kaggle.
+
+No se verificó Elo, rank actual ni el comportamiento reactivo del líder. Los ocho replays son victorias seleccionadas. Tres de sus rivales comparten un prefijo de 120 acciones: agrupar por nombre no garantiza independencia de estrategias. Un buen resultado local contra cintas no garantiza transferencia a oponentes nuevos o adaptativos.
+
+## Qué probar después
+
+1. **Reservar familias de rivales nuevas antes de desarrollar.** La principal incertidumbre es transporte, no optimizar décimas en este panel. Propuesta: ocho familias no usadas, 16 semillas y ambos asientos, cuatro brazos = 1.024 episodios; fijar identidades, hashes y regla de decisión antes del primer resultado. Si no hay familias nuevas verificables, no llamar a la prueba holdout de rivales.
+2. **Aprender las ramas del árbol con información visible.** El árbol actual usa una regla manual de tiendas. Comparar cinta seleccionada, árbol congelado y router aprendido con partición por familias y semillas; no elegir tiendas o pesos mirando confirmación. Primero definir dataset y presupuesto, luego evaluar.
+3. **Reparar compromisos de la ruta, no sólo vender más.** La capa de ventas no aportó victorias en el piloto. Una reparación útil debe registrar compras ejecutadas, inventario y cohortes para evitar que una acción fallida rompa el calendario. Comenzar con diagnóstico de 16 partidas preseleccionadas; sin evidencia de ese mecanismo, parar antes de un barrido.
+
+La idea de rutas y ligas tiene precedentes públicos: el autor de [Three Day Shop Router](https://www.kaggle.com/code/yhay81/three-day-shop-router/comments) describe copias simplificadas de rutas públicas y evaluación en muchas semillas. Es un reporte del autor; no descargamos su implementación ni verificamos su velocidad anunciada. Esta ronda construye y mide nuestras propias variantes.
+
+## Reproducir y revisar con otro LLM
+
+```bash
+./.venv/bin/python verificar_lider.py
+./.venv/bin/python preparar_contexto_llm.py
+./.venv/bin/python preparar_contexto_llm.py --check
+```
+
+Entrada experimental de la cinta: `bots.meta.tape.make('maj_107674293')`. Las variantes nuevas están en `bots/experimentos_lider.py`. Los evaluadores rechazan sobrescribir una corrida existente: para repetirla usar una copia del repo y conservar los originales. No ejecutar `submission/main.py` ni empaquetar por interpretar este informe como autorización de envío.
+
+
+
+---
+
+## SOURCE: docs/ANALISIS_LIDER_2026-09-14.md
+
+# Qué muestran los ocho replays de Majkel1337
+
+Análisis del 2026-09-14. [Experimentos y pre-registro](EXPERIMENTOS_ATREVIDOS_2026-09-14.md). [Evidencia](evidencia/lider_20260914/README.md). No se realizó ningún envío a Kaggle.
+
+## Qué está comprobado
+
+Se reprodujeron exactamente las ocho partidas, comparando 720 estados en cada una. Las ventas y compras se midieron al ejecutarse en el motor y los flujos concilian con el dinero final de ambos jugadores. Las cantidades siguientes son operaciones efectivas, no órdenes solicitadas.
+
+| Episodio | Rival | Dinero Majkel / rival | COW / SHEEP / GOOSE d15 | Mayor ingreso efectivo |
+|---|---|---:|---:|---:|
+| 107673304 | jps | 172,108 / 22,437 | 14 / 4 / 0 | MILK: 98,205 |
+| 107674284 | aditya emmadishetty | 166,660 / 42,759 | 5 / 14 / 0 | WOOL: 75,653 |
+| 107674293 | yaki-imo | 83,495 / 65,976 | 5 / 9 / 4 | WOOL: 27,264 |
+| 107675268 | VYSHAKH G NAIR | 144,211 / 36,028 | 7 / 10 / 0 | WOOL: 54,043 |
+| 107685970 | PursueML | 91,028 / 81,433 | 6 / 3 / 4 | STRAWBERRY: 30,034 |
+| 107692988 | xiao xiongwei | 75,166 / 61,639 | 6 / 3 / 4 | WHEAT: 26,199 |
+| 107696961 | goh | 138,737 / 116,161 | 7 / 15 / 0 | WOOL: 90,156 |
+| 107710951 | Ryosei Hara | 149,376 / 130,400 | 11 / 3 / 2 | MILK: 68,513 |
+
+![Economías y rebaños](evidencia/lider_20260914/economias_lider.png)
+
+## Mecanismos que merecen una prueba
+
+1. **Apertura con compromisos coordinados.** Compra dos vacas y tres ovejas en los dos primeros turnos en las ocho partidas. Planta doce melones temprano, compra el segundo cuadrante en step 149 (d6 h5) y amplía el rebaño desde d6. No equivale a subir una perilla de animales en nuestra apertura actual.
+
+2. **Economías diferentes entre partidas.** En d15 tiene 13–22 animales; hay casos con 15 ovejas y otros con 14 vacas. La lana aporta 90.156 monedas contra goh y la leche 98.205 contra jps. Es compatible con adaptación a demanda/rival, pero ocho trazas no identifican su regla ni separan causalmente los efectos de tiendas y rivales.
+
+3. **Comprar forraje y vender trigo no se contradicen automáticamente.** Compra 174–389 unidades de trigo por partida, además de cosechar y vender 290–680. La fecha, ubicación y caja son parte de la política. Un cambio global de BUY_FEED no reproduce esa secuencia.
+
+4. **Rutas compatibles permiten ramificar.** Cuatro cintas comparten sus primeras 86 acciones completas. Dos de ellas comparten 145. Las tiendas aparecen desde d3, de modo que se puede decidir en ese punto usando información ya visible, sin cambiar el prefijo ejecutado ni consultar el futuro. Esto motivó el árbol probado.
+
+5. **El coste del trabajo también cambia.** Sus compras efectivas de peones cuestan entre 4.662 y 5.086 monedas por partida. Las órdenes PASS representan 0,68–0,97% de las acciones emitidas de unidades; movimiento y acciones fallidas no se cuentan como PASS y no son necesariamente trabajo útil.
+
+## Lo que no podemos concluir
+
+- El Elo y rank no vienen en los JSON. El usuario identifica al líder; no se verificó el ranking actual mediante la página, cuyo contenido dinámico no se recuperó.
+
+- Los IDs y sus diferencias no bastan para afirmar evolución durante varios días. Tampoco un marcador alto identifica un rival de Elo bajo.
+
+- Son ocho victorias seleccionadas. No estiman win rate del líder ni representan toda la población. Tres rivales (xiao xiongwei, goh y Ryosei Hara) comparten sus primeras 120 acciones; ocho nombres no significan ocho estrategias independientes.
+
+- Reproducir una cinta con su semilla y rival originales prueba fidelidad de extracción. En escenarios nuevos, la cinta deja de representar las respuestas que elegiría el agente original.
+
+## Errores de las conclusiones anteriores que estos datos obligan a revisar
+
+La réplica de lotes con +0,23 e IC95 aproximadamente [−6,2; +6,7] no prueba un efecto exactamente nulo: no confirma la mejora. Tampoco una diferencia aislada de ratings demuestra que toda diferencia menor de 50 sea informativamente nula. El supuesto techo de la apertura se midió alterando capital de un planner concreto; no acota el valor de cambiar su calendario completo, geometría y logística. Conservamos esas notas como historia, no como motivos para prohibir estas pruebas.
+
+Para decisiones competitivas se usarán los bloques preregistrados y sus controles, no los ingresos de esta tabla. Ver [resultados y diagnósticos completos](RESULTADOS_LIDER_2026-09-14.md).
+
+
+
+---
+
+## SOURCE: docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md
+
+# Experimentos estructurales a partir de ocho replays nuevos
+
+Fecha: 2026-09-14. Petición vigente: investigar en internet, analizar los ocho
+replays y ejecutar experimentos locales ambiciosos. **No autoriza envíos a
+Kaggle.** Las restricciones anteriores sobre barridos quedan sustituidas para
+esta investigación. `CAMPEONA_HOZ` y `submission/main.py` se conservan.
+
+## Evidencia antes de los experimentos
+
+Los ocho episodios corresponden a Majkel1337 contra ocho rivales distintos.
+El usuario lo identifica como primer lugar; los archivos no contienen Elo ni
+rank. No asignaremos Elo por dinero final. Son ocho victorias seleccionadas,
+no una muestra aleatoria. Los IDs no demuestran por sí solos fechas distintas.
+
+`investigar_lider.py` extrajo ambas cintas con offset +1. Reprodujo los 720 estados
+de cada episodio con su semilla original, comparando granjas, privados, mercado,
+tiendas, día y hora. Todos coinciden. Un ledger observado en `_commit_unit`
+registra operaciones aceptadas, precio por unidad y costes atómicos; concilia
+exactamente $3.000 + flujos con el dinero final de cada jugador. No usamos el
+estimador antiguo `ventas_reales.py`, que no resuelve ventas a $1, órdenes
+fallidas, DROP simultáneo ni precios de cada unidad de la ráfaga.
+
+Datos: `evidencia/lider_20260914/replays.json`, `validacion.json` y ledgers.
+Cintas: `bots/meta/tapes/maj_*.json.gz` y `sepopp_*.json.gz`.
+
+Hallazgos descriptivos: 12 melones tempranos en todas las aperturas; segundo
+cuadrante en step 149 en las ocho; al día 15 hay entre 13 y 22 animales con
+composiciones diferentes. Son calendarios e interacciones que no se reproducen
+simplemente aumentando `animals` en nuestro chasis. Los cuatro replays 107685970,
+107692988, 107696961 y 107710951 comparten sus primeras 86 acciones; los dos
+últimos comparten 145. Es posible ramificar sin cambiar el prefijo de acciones.
+
+## Información pública consultada
+
+- [Experiencia de un participante con cintas y ligas](https://www.kaggle.com/competitions/kaggriculture/discussion/739273):
+  reporta fuerte transferencia de economías grabadas y renovación del meta.
+  Es evidencia reportada por su autor, no nuestra réplica.
+- [Ramificar replays según tiendas](https://www.kaggle.com/competitions/kaggriculture/discussion/738727):
+  Yusuke Hayashi describe ramificación temprana como técnica de su agente.
+  Inspira nuestra comparación de prefijos; no se descargó ni copió su código.
+- [Resultados preliminares de RL](https://www.kaggle.com/competitions/kaggriculture/discussion/740022):
+  Roy Wei reporta 350 millones de pasos y falta de validación contra una liga.
+  No es evidencia de que RL sea imposible ni garantía de un ganador rápido.
+- [Límites de clonación de conducta](https://www.kaggle.com/competitions/kaggriculture/discussion/738079):
+  el autor describe errores acumulados al pasar de evaluación offline a ejecución.
+  Motiva verificar la conducta y la legalidad en partidas completas.
+
+## Pre-registro de exploración (antes de evaluar candidatos)
+
+Pregunta: ¿un cambio de arquitectura supera claramente a HOZ, y las adiciones
+reactivas mejoran una cinta sin romper su economía? Buscamos saltos de al menos
+15 puntos W/L/T; esta ronda no intenta resolver décimas.
+
+Implementaciones nuevas, aisladas en `bots/experimentos_lider.py`:
+
+1. **Ocho cintas originales:** controles de transferencia y ocho candidatos de
+   referencia, sin modificar acciones. Seleccionarlas también es búsqueda.
+2. **Árbol de rutas:** usa sólo información visible. Prefijo común hasta d3;
+   elige ruta por la tienda actual. Rama lana/leche a d6 sólo entre las dos
+   cintas que comparten ese prefijo. Nunca consulta tiendas futuras ni semilla.
+3. **Árbol con ventas reactivas:** misma producción; vende productos no usados
+   como insumo cuando realmente están en shed, incluyendo DROP del mismo turno.
+   Conserva cantidades programadas de WHEAT/FERTILIZER y las otras compras.
+   Hipótesis: menor retraso al monetizar sin desfinanciar la ruta.
+4. **Apertura transferida:** sigue una cinta hasta d10 y continúa con HOZ.
+   Hipótesis: el planificador propio aprovecha una estructura inicial distinta.
+   No es repetir la antigua perturbación de cantidad de animales.
+
+Base HOZ, noop exacto y control anterior FB exacto: **14 brazos** en total.
+Piloto: **cuatro semillas 214000–214003**, ambos asientos, ocho cintas `lad_`
+espaciadas uniformemente por nombre (índices 0,5,...,35) y los ocho rivales
+`sepopp_` aportados. Selección del panel independiente del rendimiento.
+Coste: 14 × 16 × 4 × 2 = **1.792 episodios**, además de ocho reproducciones y
+sondas técnicas pequeñas. Progreso y registros incrementales; ocho workers.
+
+El piloto sólo selecciona UNA configuración por W/L/T agregado, con desempate
+por nombre. Reportar todos los brazos y los dos estratos. Es exploración, no
+confirmación; estos 16 rivales no se presentan como muestra del ladder actual.
+En piloto la integridad exige noop exacto y cero errores; el control FB debe
+dar delta negativo, sin exigir significancia con cuatro semillas. La confirmación
+sí exige intervalos negativos para ese control. La sonda técnica previa (semilla
+213000, un rival, cinco brazos) sólo comprobó prefijos, conducta y finalización;
+sus marcadores no eligen al ganador del piloto.
+
+## Confirmación prevista
+
+Si el mejor candidato mejora al menos 15 puntos a HOZ en piloto con controles
+válidos, congelarlo y compararlo con base, noop y FB en **las 40 cintas lad_ y
+los ocho sepopp_**, ambos asientos, semillas desde **215000**. Ese panel es fijo;
+40 rivales antiguos y ocho recientes no equivalen al leaderboard futuro.
+
+Dimensionar ANTES de confirmación con sd de los cuatro promedios por semilla:
+`n = min(32, max(16, ceil(((1.96+0.84)*max(sd,0.10)/0.15)**2)))`.
+Es aproximación de potencia al 80% para 15 puntos en panel fijo; con cuatro
+semillas sd es incierto, por eso suelo 0,10 y mínimo 16. Si requiere >32,
+declarar el límite presupuestario y no afirmar potencia suficiente. Máximo
+48 × 32 × 4 × 2 = **12.288 episodios**. No se aumenta n al mirar resultados.
+
+Primario: delta pareado por (rival,semilla), asientos promediados, IC95 t entre
+promedios de semilla. Sensibilidad registrada: agrupamiento a dos vías
+`V_rival + V_semilla - V_celda`, df del clúster menor. El panel es fijo para
+el estimando primario; dos vías no convierte familias de cintas en rivales
+independientes. Exigiremos ambos intervalos >0, delta >=15 puntos y control FB
+negativo en ambos para llamar al resultado salto local confirmado. La varianza
+de dos vías negativa se reporta como inválida, no como certeza.
+
+Noop debe ser idéntico por episodio en acciones, rewards, estados y pasos.
+Errores, timeouts, faltantes o cambios de fuentes invalidan el bloque. Se congelan
+hashes del código, motor y cintas; no se editan mientras corre.
+
+Después, diagnóstico contra las ocho cintas del líder (fuentes de entrenamiento,
+no holdout independiente) y contra HOZ vivo, con nuevas semillas y ambos asientos.
+No llamar al candidato ganador del ladder por esos diagnósticos. El candidato
+sigue experimental y no se empaqueta en `submission/main.py`.
+
+Si el piloto no supera el umbral, documentar fallos y el mecanismo observado;
+no gastar el bloque de confirmación ni rescatar por dinero final.
+
+
+
+---
+
+## SOURCE: docs/evidencia/lider_20260914/README.md
+
+# Evidencia de la investigación del líder — 2026-09-14
+
+`replays.json` describe los ocho archivos de Downloads, sus hashes y sus
+resúmenes de conducta. Los JSON originales no se modifican ni se duplican aquí.
+No contienen Elo de los jugadores. `validacion.json` registra reproducción exacta
+de 720 estados en cada partida y contabilidad efectiva por operación/producto.
+
+`ledger_*.jsonl.gz`: commits efectivos del mercado y costes de HIRE/BUY_LAND,
+con jugador, turno, producto y cambio de dinero. Los SELL de una unidad a $1
+también se contabilizan. Proceden del motor 1.32.7 durante la reproducción exacta.
+
+Las 16 cintas compactas de ambos jugadores están en `bots/meta/tapes/`:
+`maj_<episodio>.json.gz` y `sepopp_<episodio>.json.gz`. Incluyen el offset +1
+correcto y PASS terminal. No sustituyen las cintas `lad_` del panel histórico.
+
+Los archivos de evaluación usan prefijos `pilot`, `confirm_*` y `stress_*`:
+
+- `*.meta.json`: diseño, estado, versiones, hashes, configuraciones, resúmenes.
+- `*.episodes.jsonl` y su copia `.gz`: resultados incrementales, estados, tiempos
+  y hashes de acciones emitidas. Conservar al menos la copia comprimida junto al manifiesto.
+- `*.sources.tgz`: código y protocolo congelados antes de la corrida.
+- `sonda_tecnica.json` y `perfiles_sonda.json`: diagnósticos, no confirmaciones.
+- `confirmacion_registro.json`: selección y tamaño registrados desde el piloto,
+  antes de lanzar confirmación. `decision.json` aplica los criterios registrados.
+- `duelo_hoz.json` y sus episodios: diagnóstico contra HOZ vivo, ocho semillas
+  nuevas y ambos asientos. Su script guarda el diseño antes de ejecutar.
+- `perfil_control_apertura.json`: cinta original de control para interpretar la
+  sonda de apertura, sin usar su dinero para seleccionar candidatos.
+
+Verificación sin partidas: `./.venv/bin/python verificar_lider.py`. Revisa los
+tres paneles, selección, fuentes estables entre bloques, semillas y duelo. Usa
+la misma función estadística del evaluador; no es una réplica independiente del
+cálculo de intervalos. `resultados_lider.py` genera el informe desde los cuatro
+bloques completos. No interpretar archivos `running` como resultado final.
+
+`economias_lider.png` se genera desde datos descriptivos con `resumir_lider.py`.
+Las fuentes del experimento se congelan durante cada bloque; nunca inferir fuerza
+de un bloque cuyo manifiesto no diga `complete`. Las tablas no predicen Elo.
+
+Estos archivos quedan fuera de exclusiones Git, pero no se crea automáticamente
+un commit ni se envía nada. Para repetir la auditoría de estados completos hacen
+falta los JSON originales; para repetir evaluaciones bastan código, motor y cintas.
+
+
+
+---
+
+## SOURCE: docs/REVISION_LIDER_PARA_LLM.md
+
+# Revisión independiente de la ronda del líder
+
+Esta es una plantilla que el usuario puede entregar a otro LLM. No autoriza
+envíos a Kaggle ni nuevas simulaciones por sí misma.
+
+## Petición sugerida
+
+Actúa como revisor crítico de este repositorio. Lee `ESTADO_ACTUAL.md`,
+`RESULTADOS_LIDER_2026-09-14.md`, `ANALISIS_LIDER_2026-09-14.md` y el protocolo
+`EXPERIMENTOS_ATREVIDOS_2026-09-14.md`. No aceptes el veredicto sólo porque dos
+modelos coincidan. Distingue observaciones, inferencias, propuestas y resultados.
+
+Reconstruye desde `docs/evidencia/lider_20260914/`:
+
+1. Selección del candidato entre los once candidatos y tres controles del
+   piloto. Comprueba el empate entre cinta y árbol, el desempate registrado y
+   que el tamaño de confirmación se fijó antes de observar sus resultados.
+2. Deltas pareados con ambos asientos, agregación por semilla y sensibilidad a
+   dos vías. Recalcula las fórmulas independientemente de `summarize` si vas a
+   afirmar una auditoría estadística independiente.
+3. Noop exacto, control FB, cobertura completa, hashes, semillas disjuntas y
+   ausencia de errores. Verifica qué se conserva como estados y qué sólo como
+   hashes de acciones; no confundas emisión con ejecución económica.
+4. Límites del panel: cambio registrado de pesos 8/8 a 40/8, rivales compartidos
+   entre desarrollo y confirmación, familias con prefijos comunes, ocho victorias
+   seleccionadas y falta de Elo en los JSON. Explica qué afirmación permiten
+   los datos y cuál no.
+5. Código de `bots/experimentos_lider.py`: disponibilidad temporal de tiendas,
+   prefijos antes de ramificar, copia de acciones, transferencia a HOZ y límites
+   del proyector de inventario. Un defecto en una variante no prueba un defecto
+   en el candidato que no la usa.
+
+Entrega objeciones priorizadas con archivo, evidencia y consecuencia. Para cada
+idea nueva especifica mecanismo, intervención aislada, control, unidad de
+análisis, tamaño, coste, partición de desarrollo/confirmación, criterio y regla de
+parada antes de proponer ejecutar. El objetivo es transporte a escenarios nuevos,
+no rescatar retrospectivamente una celda o ganar dinero en una sola sonda.
+
+## Material mínimo
+
+- Lectura rápida: este archivo y el informe de resultados.
+- Contexto documental completo: `docs/CONTEXTO_LLM.md`.
+- Auditoría: repo completo con `docs/evidencia/lider_20260914/` y las cintas de
+  `bots/meta/tapes/`. `results/` no es necesario para los resúmenes transportables.
+- Reproducción de los 720 estados originales: requiere además los ocho JSON de
+  Downloads indicados en `replays.json`; sus rutas externas pueden no existir en
+  otro equipo. La evaluación frente a cintas no requiere esos JSON originales.
+
+```bash
+# Sólo lectura/verificación; no ejecuta nuevas partidas ni usa Kaggle.
+./.venv/bin/python verificar_lider.py
+./.venv/bin/python preparar_contexto_llm.py --check
+```
+
+El primer comando requiere scipy para cuantiles t. El segundo usa biblioteca
+estándar y verifica la evidencia histórica de lotes y la vigencia del contexto;
+no sustituye la verificación de los experimentos nuevos.
+
+
+
+---
+
 ## SOURCE: docs/BRIEFING.md
 
 # Kaggriculture — briefing de incorporación
+
+**Ronda nueva del 2026-09-14:** ver [resultados del líder](RESULTADOS_LIDER_2026-09-14.md)
+y [auditoría de los ocho replays](ANALISIS_LIDER_2026-09-14.md). Los ratings y
+restricciones temporales que aparecen abajo pertenecen al historial anterior.
 
 **Actualizado: 2026-09-05.** Este documento conserva el contexto técnico e
 histórico. Empieza por [ESTADO_ACTUAL.md](ESTADO_ACTUAL.md), que fija estado y
@@ -925,7 +1431,24 @@ evitar confundir documentación operativa con la autorización vigente.
 
 # Cola de ideas y revisión entre LLMs
 
-Estado: propuestas, no experimentos autorizados. La última corrida de Kaggle
+## Ronda vigente — 2026-09-14
+
+El usuario autorizó los experimentos locales de la ronda del líder. Consultar
+[protocolo](EXPERIMENTOS_ATREVIDOS_2026-09-14.md) y
+[resultados](RESULTADOS_LIDER_2026-09-14.md) antes de proponer otro bloque.
+La cola técnica siguiente es histórica; no justifica repetir compras parciales
+sin revisar la réplica posterior ni desplaza la nueva investigación de rutas.
+Las propuestas siguientes a esta ronda están en el informe de resultados, con
+sus costes y reglas de parada. No se autoriza ningún envío a Kaggle.
+
+Para otro LLM: reconstruir primero selección, controles y deltas de la nueva
+evidencia con `verificar_lider.py`, y distinguir semillas nuevas de rivales nuevos.
+Preguntar si las familias de rutas compartidas y la ponderación 8/8 frente a
+40/8 limitan la conclusión. El acuerdo entre modelos no sustituye una réplica.
+
+## Cola histórica del traspaso anterior
+
+Estado anterior: propuestas, no experimentos autorizados. La última corrida de Kaggle
 queda reservada. **Un episodio local no consume una submission de Kaggle**;
 los costes de CPU local y el cupo de envíos son presupuestos distintos.
 
@@ -1186,7 +1709,9 @@ Ejemplos del formato (mecánica trivial, para calibrar):
 # Compra parcial de semillas — protocolo y evidencia
 
 Fecha: 2026-09-05. Protocolo registrado antes del panel.
-Estado final: señal positiva repetida, confirmación inconclusa; no adoptar.
+Estado final (2026-09-05, tras réplica): **REFUTADO**. Tres bloques: +5,00 (4
+semillas), +4,84 (8), **+0,23 (16)**. El bloque de mayor potencia da cero con
+integridad impecable. No adoptar; mecanismo cerrado.
 
 **Alcance vigente:** el usuario suspendió cualquier envío a Kaggle y pidió
 preparar una revisión por otro LLM. Los comandos de este documento registran
@@ -1384,6 +1909,50 @@ Evidencia de confirmación: `results/barrido_102000.json`,
 `results/lotes_veredicto_20260905.json`.
 
 
+## Bloque 3 — réplica independiente (2026-09-05)
+
+Pre-registrado en [PREREGISTRO_REPLICA_LOTES.md](PREREGISTRO_REPLICA_LOTES.md)
+antes de ejecutar. Semillas **103000–103015** (16), disjuntas de los bloques 1 y
+2 y de la sonda. 40 cintas × 2 asientos × 4 brazos = **5.120 episodios**.
+
+Motivo: el reanálisis mostró que el veredicto del bloque 2 dependía de la unidad
+de agrupamiento (celda +2,45 / semilla +2,08 / cinta +2,83 / dos vías +2,52).
+El diseño es **cruzado** (40 cintas × 8 semillas, ambas dimensiones aleatorias),
+así que el estimador correcto es el de dos vías `V_cinta + V_semilla − V_celda`.
+**Conflicto declarado en el pre-registro:** ese estimador se calculó DESPUÉS de
+ver el bloque 2 y cambiaba el veredicto. Mitigación: exigir que **ambos**
+criterios excluyan cero.
+
+### Integridad
+
+- `noop` **exacto** en los 1.280 episodios.
+- `_peor` (CAMPEONA_FB exacta): **−26,95**, t=−12,43 por semilla y −7,77 a dos
+  vías. El panel **tiene resolución**.
+- `partial_batch` cambia acciones en **1.280/1.280** episodios: la bandera
+  dispara. Resultado nulo real, **no** test nulo.
+
+### Resultado
+
+| criterio | t | IC95 | veredicto |
+|---|---|---|---|
+| por semilla (n=16) | +0,08 | [−6,20; +6,67] | incluye cero |
+| dos vías (df=15) | +0,08 | [−6,01; +6,48] | incluye cero |
+
+**Ambos incluyen cero → NO adoptar.** Por el pre-registro no se encadena un
+cuarto bloque ni se fusionan los tres.
+
+### Lección de método
+
+El veredicto conservador del bloque 2 ("inconcluso, no adoptar") era el correcto.
+El reanálisis a dos vías es estadísticamente más apropiado para este diseño, pero
+se usó para **cruzar la línea con un resultado fronterizo después de verlo**.
+Ante un efecto en el borde, la respuesta no es un estimador mejor: son más datos.
+
+**Corolario abierto:** `harvest_76` está en la misma situación (+2,50, t=+1,76 a
+dos vías, IC95 [−0,85; +5,85]) y nunca tuvo réplica con potencia. Está dentro de
+`CAMPEONA_HOZ`, la base activa.
+
+
 
 ---
 
@@ -1431,7 +2000,7 @@ El generador comprueba hashes, controles, pares y estadísticas primarias.
 
 ---
 
-## Veredicto reproducido desde episodios
+## Veredicto histórico de lotes reproducido desde episodios
 
 ```json
 {

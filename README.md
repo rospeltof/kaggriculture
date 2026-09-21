@@ -4,15 +4,18 @@ Planner determinista de Python para una simulación de granja 1v1. No usa un
 LLM durante la partida. Este repositorio contiene el agente, el aparato de
 medición y el registro de experimentos.
 
-**Estado:** compra parcial prometedora pero inconclusa. **No subir a Kaggle:**
-el usuario reservó su última corrida disponible. No hay envíos ni evaluaciones
-en curso. Leer [el estado actual](docs/ESTADO_ACTUAL.md) antes de actuar.
+**Estado actual, 2026-09-14:** `maj_107674293` enviada con autorización expresa,
+submission **56245770** (inicialmente PENDING). `submission/main.py` contiene esa
+cinta; HOZ sigue como referencia local. Leer [el estado actual](docs/ESTADO_ACTUAL.md),
+los [resultados](docs/RESULTADOS_LIDER_2026-09-14.md),
+el [análisis del líder](docs/ANALISIS_LIDER_2026-09-14.md) y el
+[pre-registro](docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md) antes de actuar.
 
 ## Para retomar con otro LLM
 
 1. Darle acceso al repo y pedir que lea [AGENTS.md](AGENTS.md), o generar el
    archivo único de contexto con el comando de abajo.
-2. Copiar el [prompt de traspaso](docs/PROMPT_SEGUNDO_CEREBRO.md).
+2. Copiar la [petición de revisión de esta ronda](docs/REVISION_LIDER_PARA_LLM.md).
 3. Pedir revisión de evidencia y **una** siguiente prueba, antes de ejecutar.
 
 ```bash
@@ -20,17 +23,21 @@ python3 preparar_contexto_llm.py
 ```
 
 El generador usa sólo biblioteca estándar: verifica hashes, controles y deltas
-guardados, y escribe [docs/CONTEXTO_LLM.md](docs/CONTEXTO_LLM.md). No usa la red,
+históricos de lotes guardados, y escribe [docs/CONTEXTO_LLM.md](docs/CONTEXTO_LLM.md). No usa la red,
 no simula partidas ni genera o envía un `main.py`.
+La evidencia nueva se comprueba aparte con `./.venv/bin/python verificar_lider.py`.
 
 ## Ruta de lectura
 
 | Archivo | Propósito |
 |---|---|
 | [ESTADO_ACTUAL](docs/ESTADO_ACTUAL.md) | Autorización, base, candidato, resultados y pendientes |
+| [Resultados del líder](docs/RESULTADOS_LIDER_2026-09-14.md) | Piloto completo, confirmación, diagnósticos y decisión registrada |
+| [Análisis del líder](docs/ANALISIS_LIDER_2026-09-14.md) | Ocho replays, contabilidad exacta, diferencias de conducta y límites |
+| [Experimentos actuales](docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md) | Rutas por tiendas, ventas reactivas y transferencia de apertura |
 | [BRIEFING](docs/BRIEFING.md) | Proyecto completo y experimentos anteriores |
 | [AUDITORIA_LLM](docs/AUDITORIA_LLM.md) | Errores de inferencia y límites de las conclusiones |
-| [METODO](docs/METODO.md) | Única guía operativa vigente de evaluación |
+| [METODO](docs/METODO.md) | Guía general; complementada por el protocolo de esta ronda |
 | [IDEAS_Y_PRUEBAS](docs/IDEAS_Y_PRUEBAS.md) | Cola corta, coste y ficha de revisión entre LLMs |
 | [RULES](docs/RULES.md) | Modelo del motor con evidencia; leer antes del motor |
 | [Experimento de lotes](docs/EXPERIMENTO_LOTES_SEMILLAS.md) | Protocolo registrado y resultado inconcluso |
@@ -45,10 +52,15 @@ si fueran decisiones vigentes.
 - `bots/chassis.py`: `decide`, router, servicios, scorer y compras.
 - `bots/arquetipos.py`: `CAMPEONA_HOZ` (base) y `HOZ_LOTES` (experimental).
 - `barrido.py`: panel pareado, controles, episodios y manifiestos.
+- `evaluar_lider.py`: piloto, confirmación y estrés de las nuevas arquitecturas.
+- `bots/experimentos_lider.py`: árbol por tiendas, ventas reactivas y apertura transferida.
+- `verificar_lider.py`: reanálisis de evidencia de esta ronda sin simulaciones.
 - `muerde.py`: perturbaciones; compara acciones, dinero y estados por separado.
 - `sondas/005_lotes_semillas.py`: activación y cohortes de la compra parcial.
 - `harness.py`: episodios y espejo. Un duelo contra el linaje no promociona solo.
 - `empaquetar.py`: genera `submission/main.py`; ejecutarlo no autoriza subirlo.
+- `empaquetar_cinta.py`: exporta una cinta autónoma y archiva el main anterior.
+- `verificar_paquete_cinta.py`: equivalencia de acciones y estados entre paquete y cinta.
 
 Las sondas antiguas 001–004 importan `lab.py`, que no está en este checkout.
 El README anterior lo anunciaba como existente: no usar esas sondas sin recuperar

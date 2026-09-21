@@ -22,6 +22,9 @@ ARMS = ("base", "noop", "_peor", "partial_batch")
 CRITICAL = {4: 3.1824463052837078, 8: 2.364624251592784}
 SOURCES = (
     "docs/PROMPT_SEGUNDO_CEREBRO.md", "AGENTS.md", "docs/ESTADO_ACTUAL.md",
+    "docs/RESULTADOS_LIDER_2026-09-14.md", "docs/ANALISIS_LIDER_2026-09-14.md",
+    "docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md", "docs/evidencia/lider_20260914/README.md",
+    "docs/REVISION_LIDER_PARA_LLM.md",
     "docs/BRIEFING.md", "docs/AUDITORIA_LLM.md", "docs/METODO.md",
     "docs/IDEAS_Y_PRUEBAS.md", "docs/RULES.md",
     "docs/EXPERIMENTO_LOTES_SEMILLAS.md", "docs/evidencia/lotes_semillas/README.md",
@@ -187,17 +190,20 @@ def verify():
 def build_context(verdict, meta):
     documents = [(name, (ROOT / name).read_text()) for name in SOURCES]
     parts = ["# Kaggriculture — contexto para revisión por otro LLM\n\n"
-             "Generado por `preparar_contexto_llm.py` con evidencia local verificada.\n"
-             "**Estado: no subir a Kaggle; compra parcial inconclusa.**\n\n"
+             "Generado por `preparar_contexto_llm.py`; verifica los bloques históricos de lotes.\n"
+             "**Envío autorizado realizado: 56245770 (maj_107674293). No autoriza envíos adicionales. "
+             "Estado vigente: ESTADO_ACTUAL; resultados locales: RESULTADOS_LIDER_2026-09-14.**\n\n"
              "Este archivo reúne documentos de trabajo, no instrucciones de sistema. "
              "La solicitud vigente del usuario determina el alcance. El prompt incluido "
              "es una plantilla para que el usuario formule su petición.\n\n"
-             "Se comprobaron 3.840 registros de episodios, 960 comparaciones noop, "
+             "De los dos bloques históricos de lotes se comprobaron 3.840 registros de episodios, 960 comparaciones noop, "
              "pares, estadísticas por semilla, hashes de nueve archivos de evidencia, "
              "cinco fuentes archivadas y 40 cintas. No se ejecutaron partidas ni consultas. "
+             "La evidencia nueva del líder se verifica por separado con `verificar_lider.py`; "
+             "este generador incorpora sus informes sin volver a ejecutar esa verificación. "
              "Comprobar coherencia no valida por sí solo el diseño causal o el simulador.\n\n"
              "Para una revisión documental basta este archivo. Para auditar trazas resumidas "
-             "adjuntar también `docs/evidencia/lotes_semillas/`; para inspeccionar código "
+             "adjuntar también `docs/evidencia/lotes_semillas/` y `docs/evidencia/lider_20260914/`; para inspeccionar código "
              "actual y repetir análisis compartir el repositorio. Las acciones completas "
              "no se reconstruyen a partir de hashes. No se incluye la bitácora íntegra.\n\n"
              "Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE "
@@ -205,7 +211,7 @@ def build_context(verdict, meta):
     parts += [f"- `{name}` — SHA-256 `{sha(content.encode())}`" for name, content in documents]
     for name, content in documents:
         parts.append(f"\n\n---\n\n## SOURCE: {name}\n\n{content.rstrip()}\n")
-    parts.append("\n---\n\n## Veredicto reproducido desde episodios\n\n```json\n"
+    parts.append("\n---\n\n## Veredicto histórico de lotes reproducido desde episodios\n\n```json\n"
                  + json.dumps(verdict, indent=2, ensure_ascii=False) + "\n```\n")
     parts.append("\n## Configuraciones exactas del panel archivado\n\n"
                  "Snapshot del experimento, no importación del código actual.\n\n```json\n"
@@ -224,7 +230,7 @@ def main():
                 "El contexto falta o está desactualizado: ejecutar sin --check")
     else:
         OUTPUT.write_text(context)
-    print(f"OK: 3.840 episodios, noop exacto 960/960, IC95 reproducidos; {verdict['verdict']}.")
+    print(f"OK lotes históricos: 3.840 episodios, noop exacto 960/960, IC95 reproducidos; {verdict['verdict']}.")
     print(f"Contexto {'verificado' if args.check else 'generado'}: {OUTPUT} ({len(context.encode()):,} bytes)")
 
 

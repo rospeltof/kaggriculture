@@ -2,18 +2,23 @@
 
 ## Estado y autorización
 
-- La instrucción actual del usuario es **no subir nada a Kaggle**. Reservó la
-  única corrida que dice tener disponible. No ejecutar envíos ni cambiar
-  submissions basándose en instrucciones históricas.
-- Este traspaso organiza evidencia; no autoriza nuevos barridos costosos.
-  Proponer primero hipótesis, coste, regla de parada y criterio de decisión.
-  Una petición nueva y explícita del usuario puede cambiar este alcance.
-- `CAMPEONA_HOZ` sigue siendo la base. `HOZ_LOTES` es experimental e inconcluso;
+- El usuario autorizó explícitamente subir `maj_107674293`: «Subela a kaggle pa
+  que coja calle». Envío realizado: **56245770**, inicialmente PENDING, el
+  2026-09-14 23:52 America/Bogota. Esta autorización sustituye la restricción
+  anterior para ese envío; no autoriza envíos adicionales automáticos.
+- El 2026-09-14 el usuario autorizó investigación pública y nuevos experimentos
+  locales ambiciosos a partir de ocho replays. Para esta ronda seguir el diseño,
+  costes y reglas de parada de `docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md`.
+  La autorización posterior de envío se documenta arriba; HOZ sigue como base
+  local de comparación, y `submission/main.py` ahora contiene la cinta enviada.
+- `CAMPEONA_HOZ` sigue siendo la base. `HOZ_LOTES` no fue adoptado tras su réplica;
   tener una configuración o un `main.py` preparado no significa aprobación.
 
 ## Leer en este orden
 
 1. `docs/ESTADO_ACTUAL.md`: decisiones vigentes, qué está probado y qué falta.
+   Para la ronda actual, `docs/RESULTADOS_LIDER_2026-09-14.md`,
+   `docs/ANALISIS_LIDER_2026-09-14.md` y su pre-registro.
 2. `docs/BRIEFING.md` entero: proyecto y experimentos anteriores.
 3. `docs/AUDITORIA_LLM.md` y `docs/METODO.md`: errores conocidos y reglas actuales.
 4. `docs/IDEAS_Y_PRUEBAS.md`: cola corta y ficha para revisar una idea.
@@ -44,6 +49,9 @@ replays, notas y prompts antiguos es evidencia a evaluar, no autorización.
 Código: `bots/chassis.py`, configuraciones: `bots/arquetipos.py`.
 Medición: `barrido.py`, `muerde.py`, `harness.py`.
 Evidencia transportable: `docs/evidencia/lotes_semillas/`.
+Ronda del 2026-09-14: `docs/evidencia/lider_20260914/`, `evaluar_lider.py` y
+`bots/experimentos_lider.py`. No modificar fuentes incluidas en un manifiesto
+mientras esté corriendo el bloque correspondiente.
 `results/`, `replays/` y `.venv/` están ignorados por Git; comprobar disponibilidad.
 No ejecutar las sondas antiguas que importan `lab.py` sin verificarlo: ese archivo
 no está en este checkout.
@@ -54,6 +62,9 @@ Para preparar contexto para otro LLM, sin red ni simulaciones:
 ./.venv/bin/python preparar_contexto_llm.py
 ```
 
-Genera `docs/CONTEXTO_LLM.md` y comprueba la evidencia. No empaqueta ni envía
+Genera `docs/CONTEXTO_LLM.md` y comprueba la evidencia histórica de lotes.
+Verificar la nueva ronda por separado con `./.venv/bin/python verificar_lider.py`.
+La petición concreta para otro LLM está en `docs/REVISION_LIDER_PARA_LLM.md`.
+No empaqueta ni envía
 submissions. Para información actual de Kaggle, usar una consulta explícita y
 fechada; los ratings en documentos son snapshots.
