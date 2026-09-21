@@ -21,6 +21,9 @@ Actualizado: 2026-09-21. Cada entrada lleva su evidencia; cada evidencia nueva s
 
 ## MEDIUM CONFIDENCE
 
+- **[2026-09-22] Segunda clase de filo de navaja: compromisos de capital a paso fijo (BUY_LAND/BUY_ANIMAL) sin recuperacion.** La cinta 107606658 falla el 2o cuadrante por \$193 y toda la expansion muere (\$26-49k). `guard_commitments` (reintento hasta 48 pasos) la lleva a \$61-81k con 3 cuadrantes. En el campeon rara vez actua (57/60 compras reales entraron; cuando actua, +23k neto en 4 partidas locales). Importa mas para las cintas de caja apretada del arbol.
+- **[2026-09-22, TEMPRANO] El arbol por tiendas transfiere al ladder.** tree_v1 (56444202): 914 a 16 ep, 967 a 19 ep, frente a 857 del campeon. Localmente era +9.0 vs +12.1 de la cinta: si se confirma a ~50 ep, es una divergencia local/real POSITIVA (el panel de cintas pasivas subestima el valor de ramificar por tienda, igual que subestimaba el filo del d1).
+
 - **Ramificar la cinta por tiendas (arbol) generaliza mejor que una cinta fija.** Piloto: tree = cinta (64.06%). Confirmacion con 16 seeds en curso (compare). Ladder: 56444202 pendiente.
 - **La unica rama estrategica VISIBLE de la politica del lider es la tienda (step 72, 144, ...).** El `town` esta vacio antes; las divergencias en pasos 20-36 son reacciones a la caja (BUY_SEED MELON 2 o no), no ramas.
 - **Una cinta fija de un agente de 3075 rinde ~850 en el ladder.** El valor del agente esta en la adaptacion al contexto (rival, campo, mercado), no en la secuencia. Reducir el desajuste de contexto (mas cintas, mejor matching) deberia acercar el arbol al agente original.

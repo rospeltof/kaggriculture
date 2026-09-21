@@ -70,9 +70,20 @@
     },
     "reason": "REAL_WORLD_CANDIDATE criterio #3 (estructuralmente distinto: ramifica) y #7 (localmente indistinguible de la cinta; solo el ladder los separa). Verificado identico al arbol local en 6 semillas, DONE",
     "leaderboard": {
-      "score": null,
-      "episodes": 0,
-      "rank": null
+      "score": 966.9,
+      "episodes": 19,
+      "rank": null,
+      "lecturas": [
+        [
+          16,
+          914.0
+        ],
+        [
+          19,
+          966.9
+        ]
+      ],
+      "nota": "TEMPRANO; ruido +-40..80 a <30 ep"
     },
     "delta_vs_champion_ladder": null,
     "observed": null,
@@ -96,9 +107,20 @@
     },
     "reason": "REAL_WORLD_CANDIDATE #4: corrige debilidad observada en 60 partidas reales (manos d1 -> WR 0/23/60%). Unico cambio vs champion: la guardia. Aisla su efecto en ladder",
     "leaderboard": {
-      "score": null,
-      "episodes": 0,
-      "rank": null
+      "score": 709.5,
+      "episodes": 14,
+      "rank": null,
+      "lecturas": [
+        [
+          10,
+          660.7
+        ],
+        [
+          14,
+          709.5
+        ]
+      ],
+      "nota": "arranque frio; no leer antes de ~50 ep"
     },
     "delta_vs_champion_ladder": null,
     "observed": null,
