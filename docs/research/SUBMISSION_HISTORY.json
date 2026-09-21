@@ -18,7 +18,7 @@
   {
     "submission_id": 56444202,
     "timestamp": "2026-09-21T21:53:35-05:00",
-    "git_commit": "PENDIENTE (se rellena en el commit siguiente)",
+    "git_commit": "f5c2889",
     "experiment_id": "tree_v1",
     "config": "arbol de 4 cintas de Majkel1337 (107685970/107692988/107696961/107710951); rama en step 72 por primera tienda y en 144 por YARN_STORE. Paquete: empaquetar_arbol.py, 51413 bytes",
     "local_harness": {"panel": "piloto 14-sep: 16 rivales x 4 seeds x 2 asientos", "wr": 64.06, "base_wr": 46.09,
