@@ -26,13 +26,17 @@ import json
 # ---- fin guardia ----
 
 _TRACE = json.loads(gzip.decompress(base64.b64decode({base64.b64encode(payload).decode("ascii")!r})))
+_COMMIT = {{}}
 
 
 def agent(obs, config=None):
     step = int(obs.get("step", 0) or 0)
+    if step == 0:
+        _COMMIT.clear()
     if step >= len(_TRACE):
         return {{"farmer": ["PASS"], "hands": [], "market": []}}
-    return guard_cash(obs, json.loads(json.dumps(_TRACE[step])), reserve={a.reserve})
+    action = guard_cash(obs, json.loads(json.dumps(_TRACE[step])), reserve={a.reserve})
+    return guard_commitments(obs, action, _COMMIT)
 '''
     out = ROOT / a.out; out.write_text(source)
     rec = dict(candidate=f"{a.name}+guard{a.reserve}", prepared_at=datetime.now(timezone.utc).isoformat(),

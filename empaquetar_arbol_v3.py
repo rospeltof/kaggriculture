@@ -43,12 +43,14 @@ _CINTAS = [(c["ep"], c["money"], [tuple(s) for s in c["seq"]],
 _LCP = {sub_lcp!r}
 _START = {start_k}
 _STATE = {{}}
+_COMMIT = {{}}
 
 
 def agent(obs, config=None):
     step = int(obs.get("step", 0) or 0)
     if step == 0 or "cur" not in _STATE:
         _STATE["cur"] = _START
+        _COMMIT.clear()
     shops = tuple((obs.get("town") or {{}}).get("unlocked_shops") or [])
     if step in _BRANCH_STEPS:
         k = _BRANCH_STEPS.index(step); cur = _STATE["cur"]
@@ -59,7 +61,7 @@ def agent(obs, config=None):
             _STATE["cur"] = max(cand, key=lambda j: _CINTAS[j][1])
     acts = _CINTAS[_STATE["cur"]][3]
     action = json.loads(json.dumps(acts[min(step, len(acts) - 1)]))
-    {"return guard_cash(obs, action, reserve=%d)" % a.guard if a.guard else "return action"}
+    {"return guard_commitments(obs, guard_cash(obs, action, reserve=%d), _COMMIT)" % a.guard if a.guard else "return action"}
 '''
     out = ROOT / a.out; out.write_text(source)
     rec = dict(candidate=f"tree_v3{'+guard%d' % a.guard if a.guard else ''}", n_cintas=len(idx), start=cintas[start]["ep"],
