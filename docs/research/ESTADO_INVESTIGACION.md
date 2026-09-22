@@ -1,6 +1,6 @@
 # Estado de investigación — leer primero para continuar
 
-Actualizado: 2026-09-22 08:40 (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
+Actualizado: 2026-09-22 (cierre de sesion) (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
 Loop autónomo autorizado por el usuario (mensaje del 2026-09-21): harness + ladder
 como evidencia complementaria, submissions como instrumento (5/día).
 
@@ -69,7 +69,29 @@ que termine (funcionó el 2026-09-22 05:05).
 4. **DSM vs Majkel 3-6**; cima decidida por 1-5%. Cintas de DSM no son mejor materia.
 5. **compare**: cinta +12,1 > tree +9,0 > tree_v2 +4,8 (vs HOZ). Más cintas mezcladas, peor.
 
-## NEXT_EXPERIMENTS (orden, 2026-09-22 08:40)
+## CIERRE DE SESION 2026-09-22 — decision: CONSOLIDAR
+
+Todas las vias de mejora sobre la cinta estan medidas y cerradas:
+- Mejor cinta fija: 107570947, de ~70 candidatas de Majkel-2652/Majkel-3075/DSM.
+- Guardias (caja d0 + compromisos): +15-18 vs fuertes; 100% mecanicas en real.
+- Arboles: peores que la cinta sola vs fuertes (tree_v3+g 29.5% vs 54.8%).
+- Hibrido cinta+chasis: colapsa al nivel del chasis (10-17% vs 43%).
+- Cierre limpio (0.6%), acciones fallidas ~1%, ocio 4.7% (+2-4% maximo).
+
+**Champion: `107570947 + guardias` (56449108).** Dejar converger. Segundo billete:
+`tree_v1 + guardias` (56447472). El score de equipo es el mejor submission.
+
+## NEXT_EXPERIMENTS (si se retoma; orden)
+
+1. Leer 56449108 y 56447472 a ~100 ep (rating convergido, W/L por rival).
+2. Unica capa barata no probada: dar trabajo a los peones sin orden (4.7% de
+   mano-turnos), p.ej. barrido de riego a partir de h18 y DIG de maleza. +2-4%
+   estimado, riesgo de interferir con la cinta. Medir vs fuertes antes de subir.
+3. Si el ladder converge por debajo de 1150: subir 107570947+g de nuevo como
+   billete adicional NO es investigacion (misma esperanza, mas varianza del max).
+   Solo si el usuario lo pide.
+
+### (historial de la cola)
 
 0. **Leer piloto `dsm`** (`results/dsm.txt`, 27 victorias de DSM nº1 + guardias vs
    62 fuertes, 4 seeds). Top-3 → `--phase` de confirmación pareada con 8 seeds
