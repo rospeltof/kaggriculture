@@ -162,9 +162,15 @@
     },
     "reason": "Criterio 6: combinacion de dos mejoras validadas POR SEPARADO en ladder. tree_v1 31-9 (78%) con 8/9 derrotas por manos d1 (con 4 manos 30-1); guardia 32/32 con 4 manos, 53% vs 40%",
     "leaderboard": {
-      "score": null,
-      "episodes": 0,
-      "rank": null
+      "score": 1118.9,
+      "episodes": 28,
+      "lecturas": [
+        [
+          28,
+          1118.9
+        ]
+      ],
+      "nota": "> tree_v1 solo (1082 @40). Leer W/L a ~30"
     },
     "delta_vs_champion_ladder": null,
     "observed": null,
@@ -199,9 +205,15 @@
     },
     "reason": "CHAMPION_CANDIDATE por evidencia local fuerte en la poblacion que predice el ladder. Una variable vs 56447472 (tree_v1+guards): material de cintas",
     "leaderboard": {
-      "score": null,
-      "episodes": 0,
-      "rank": null
+      "score": 1182.0,
+      "episodes": 13,
+      "lecturas": [
+        [
+          13,
+          1182.0
+        ]
+      ],
+      "nota": "TEMPRANO; leer W/L a ~30"
     },
     "delta_vs_champion_ladder": null,
     "observed": null,
