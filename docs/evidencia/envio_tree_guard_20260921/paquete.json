@@ -1,0 +1,16 @@
+{
+  "candidate": "tree+guard6",
+  "branch_ids": [
+    107685970,
+    107692988,
+    107696961,
+    107710951
+  ],
+  "prepared_at": "2026-09-22T00:49:16.385463+00:00",
+  "main_sha256": "a9aafe7dda242fa25b0072ffcf9d78abbbfae12d329557446c884ce4a902c437",
+  "main_bytes": 56583,
+  "previous_main_sha256": "a9aafe7dda242fa25b0072ffcf9d78abbbfae12d329557446c884ce4a902c437",
+  "previous_main_archive": "submission/archivo/main_a9aafe7dda242fa25b0072ffcf9d78abbbfae12d329557446c884ce4a902c437.py",
+  "state": "prepared",
+  "authorization": "Usuario 2026-09-21: 'si hazlo' (subir el tree)"
+}
