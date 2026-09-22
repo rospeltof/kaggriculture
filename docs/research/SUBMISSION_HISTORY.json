@@ -162,19 +162,22 @@
     },
     "reason": "Criterio 6: combinacion de dos mejoras validadas POR SEPARADO en ladder. tree_v1 31-9 (78%) con 8/9 derrotas por manos d1 (con 4 manos 30-1); guardia 32/32 con 4 manos, 53% vs 40%",
     "leaderboard": {
-      "score": 1118.9,
-      "episodes": 28,
+      "score": 1136.1,
+      "episodes": 40,
       "lecturas": [
         [
           28,
           1118.9
+        ],
+        [
+          40,
+          1136.1
         ]
-      ],
-      "nota": "> tree_v1 solo (1082 @40). Leer W/L a ~30"
+      ]
     },
     "delta_vs_champion_ladder": null,
-    "observed": null,
-    "conclusion": "PENDIENTE",
+    "observed": "23-17 (58%) a rating mas alto que tree_v1; +54 Elo vs tree_v1 solo a 40 ep. 3/40 con 3 manos (reserve=6 corto para sus cintas; deberia ser 8)",
+    "conclusion": "PROMISING; superada por 56449108",
     "next_action": "Prediccion: >= tree_v1 (1082 @40ep) y con menos derrotas catastroficas. Si a ~40 ep supera 1082 -> CHAMPION. Desactiva a tree_v1 (56444202, 40 ep, ya leido)"
   },
   {
@@ -205,19 +208,22 @@
     },
     "reason": "CHAMPION_CANDIDATE por evidencia local fuerte en la poblacion que predice el ladder. Una variable vs 56447472 (tree_v1+guards): material de cintas",
     "leaderboard": {
-      "score": 1182.0,
-      "episodes": 13,
+      "score": 1179.7,
+      "episodes": 24,
       "lecturas": [
         [
           13,
           1182.0
+        ],
+        [
+          24,
+          1179.7
         ]
-      ],
-      "nota": "TEMPRANO; leer W/L a ~30"
+      ]
     },
     "delta_vs_champion_ladder": null,
-    "observed": null,
-    "conclusion": "PENDIENTE",
+    "observed": "15-9 (62%), $100.5k vs $88.1k. 24/24 con 4 manos y 3 cuadrantes. Derrotas ajustadas vs rivales de 93-138k. Banco identico en V y D: produccion fija, gana sii el rival produce menos",
+    "conclusion": "CHAMPION_CANDIDATE confirmandose; subida mas rapida registrada",
     "next_action": "Leer W/L (no rating) a ~30 ep. Prediccion: >= tree_v1+guards. Desactiva a 56444505 (guardia, 32 ep, ya leida)"
   }
 ]
