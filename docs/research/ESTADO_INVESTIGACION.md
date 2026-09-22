@@ -1,18 +1,19 @@
 # Estado de investigación — leer primero para continuar
 
-Actualizado: 2026-09-22 05:10 (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
+Actualizado: 2026-09-22 08:40 (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
 Loop autónomo autorizado por el usuario (mensaje del 2026-09-21): harness + ladder
 como evidencia complementaria, submissions como instrumento (5/día).
 
 ## BEST_CURRENT_CHAMPION
 
-**CHAMPION_CANDIDATE: `tree_v1`** — 56444202, **1.082 @40 ep, 31-9 (78%)** en ladder.
-Desactivada al subir su sucesora. Champion formal aún `maj_107674293` (56245770,
-857, 126 ep) hasta que 56447472 confirme.
+**CHAMPION_CANDIDATE: `107570947 + guardias`** — 56449108, commit 6527d3a,
+**1.180 @24 ep, 15-9 (62%)**, 24/24 con 4 manos y 3 cuadrantes, derrotas ajustadas.
+Paquete: `submission/main_107570947_guard.py` (= `submission/main.py`).
+Segunda: `tree_v1+guardias` 56447472, 1.136 @40 (23-17). Ambas activas.
+Champion formal anterior: `maj_107674293` (56245770, 857, 126 ep) — superada.
 
-**En ladder ahora:** `107570947+guardias` (56449108, commit 6527d3a, CHAMPION_CANDIDATE
-por panel fuerte 54,8%) y `tree_v1+guardias` (56447472, commit 98f9ea6). Una variable
-entre ellas: material de cintas (una sola vs árbol de 4).
+**Escalera de ratings a episodios comparables:** cinta 857 (126) · tree_v1 1082 (40) ·
+tree_v1+g 1136 (40) · **107570947+g 1180 (24)**.
 
 **Panel FUERTE (80 rivales de Majkel/DSM), la métrica que predice el ladder:**
 guard:107570947 54,8% · 107570947 36,3% · guard:tree_v3 29,5% · tree 20,2% ·
@@ -68,14 +69,22 @@ que termine (funcionó el 2026-09-22 05:05).
 4. **DSM vs Majkel 3-6**; cima decidida por 1-5%. Cintas de DSM no son mejor materia.
 5. **compare**: cinta +12,1 > tree +9,0 > tree_v2 +4,8 (vs HOZ). Más cintas mezcladas, peor.
 
-## NEXT_EXPERIMENTS (orden, 2026-09-22 05:10)
+## NEXT_EXPERIMENTS (orden, 2026-09-22 08:40)
 
-0. Leer `majkel2` → si alguna cinta de Majkel actual + guardias supera a
-   guard:107570947 vs fuertes con IC dos vías > 0 → **subir** (una variable:
-   material). Luego fase `dsm` con el mismo criterio.
-0b. Leer W/L (no rating) de 56449108 y 56447472 a ~30 ep cada una.
-0c. Ventas reactivas sobre la mejor cinta (la dimensión de contexto que la cinta
-   sigue ignorando: precios); medir vs panel fuerte.
+0. **Leer piloto `dsm`** (`results/dsm.txt`, 27 victorias de DSM nº1 + guardias vs
+   62 fuertes, 4 seeds). Top-3 → `--phase` de confirmación pareada con 8 seeds
+   contra guard:107570947 (añadir fase análoga a `majkel2_confirm`). Si alguna
+   supera con IC dos vías > 0 → subir con guardias (reserve calibrada a sus
+   HIRE del alba: ver `empaquetar_cinta_guard.py --reserve`).
+1. Si DSM no supera: **el enfoque de cinta fija ha llegado a su techo** (~el plan
+   de Majkel-2652). Opciones: (a) consolidar 107570947+g y dejarlo converger;
+   (b) subir 2-3 cintas top en paralelo (5/día) y dejar que el ladder elija;
+   (c) capa reactiva — pero la evidencia dice que el gap con los fuertes es
+   produccion tardía (+5-7% d21-25), no ventas.
+2. `tree_v1+guardias` tiene 3/40 con 3 manos: sus cintas necesitan reserve=8.
+   Sólo relevante si se vuelve a subir un árbol.
+3. Leído majkel2 (hecho): ninguna cinta de Majkel-3075 > 107570947 (+1,85
+   [−26; +30]). El valor de Majkel actual está en la adaptación, no la secuencia.
 
 ### (anteriores)
 
