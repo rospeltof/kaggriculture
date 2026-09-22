@@ -134,5 +134,41 @@
     "observed": "No mejora al campeon; posible que sea peor. Hipotesis: las manos del d1 eran SINTOMA (rival fuerte hunde precios d0 -> caja 0) y no causa. Correlacion tomada por causalidad",
     "conclusion": "PROMISING -> en revision; replays bajando para failure analysis",
     "next_action": "Comparar con 852.6 (56245770) a ~60 ep. Prediccion: si el mecanismo es real, +10..+20 puntos de WR en ladder -> rating claramente > 852. Si queda en ~850, el fallo del d1 no era la causa dominante de las derrotas"
+  },
+  {
+    "submission_id": 56447472,
+    "timestamp": "2026-09-22T03:10:00-05:00",
+    "git_commit": "98f9ea6",
+    "experiment_id": "tree_v1+guards",
+    "config": "arbol de 4 cintas (ramas tienda d3 / YARN d6) + guard_cash reserve=6 + guard_commitments max_retry=48. empaquetar_arbol.py --guard 6. 56583 bytes",
+    "local_harness": {
+      "panel": "tree_v1: compare2 48riv x 16seeds; guardias: sondas",
+      "wr": 63.35,
+      "base_wr": 57.23,
+      "delta": 6.12,
+      "ci95_seed": [
+        1.9,
+        10.34
+      ],
+      "ci95_2way": [
+        -7.13,
+        19.37
+      ],
+      "opponent_breakdown": {
+        "lad40": "-6.72 vs cinta",
+        "sepopp8 (fuertes)": "+10.16 vs cinta"
+      },
+      "nota": "las guardias son inertes cuando la caja alcanza; verificado paquete == local en 12 partidas"
+    },
+    "reason": "Criterio 6: combinacion de dos mejoras validadas POR SEPARADO en ladder. tree_v1 31-9 (78%) con 8/9 derrotas por manos d1 (con 4 manos 30-1); guardia 32/32 con 4 manos, 53% vs 40%",
+    "leaderboard": {
+      "score": null,
+      "episodes": 0,
+      "rank": null
+    },
+    "delta_vs_champion_ladder": null,
+    "observed": null,
+    "conclusion": "PENDIENTE",
+    "next_action": "Prediccion: >= tree_v1 (1082 @40ep) y con menos derrotas catastroficas. Si a ~40 ep supera 1082 -> CHAMPION. Desactiva a tree_v1 (56444202, 40 ep, ya leido)"
   }
 ]
