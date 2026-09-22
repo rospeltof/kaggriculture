@@ -1,21 +1,26 @@
 # Estado de investigación — leer primero para continuar
 
-Actualizado: 2026-09-21 23:30 (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
+Actualizado: 2026-09-22 03:20 (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
 Loop autónomo autorizado por el usuario (mensaje del 2026-09-21): harness + ladder
 como evidencia complementaria, submissions como instrumento (5/día).
 
 ## BEST_CURRENT_CHAMPION
 
-**`maj_107674293`** — submission 56245770, **852,6** (126 ep, convergida). Cinta fija
-de Majkel1337 (episodio 107674293). Código: `submission/archivo/main_7894c0...py`.
-Referencia local: `CAMPEONA_HOZ` (677,5 en ladder, cayendo).
+**CHAMPION_CANDIDATE: `tree_v1`** — 56444202, **1.082 @40 ep, 31-9 (78%)** en ladder.
+Desactivada al subir su sucesora. Champion formal aún `maj_107674293` (56245770,
+857, 126 ep) hasta que 56447472 confirme.
+
+**En ladder ahora:** `tree_v1+guardias` (56447472, commit 98f9ea6, predicción ≥1.082)
+y `maj+guard6` (56444505, 53% @32 ep).
 
 ## RESEARCH_FRONTIER (estados)
 
 | id | qué | estado | evidencia |
 |---|---|---|---|
-| `maj+guard6` | cinta campeona + guardia de caja d0 | **REAL_WORLD_CANDIDATE** — sub **56444505** (2026-09-21 22:40) | #4: 42% de partidas reales con <4 manos d1 → 3-22; harness no lo ve (15% local) |
-| `tree_v1` | árbol 4 cintas Majkel, ramas por tienda d3/d6 | **REAL_WORLD_CANDIDATE** — sub **56444202** (2026-09-21 21:53) | compare: +9,0 [−6,1; +24,1] dos vías; < cinta (+12,1) en local |
+| `maj+guard6` | cinta campeona + guardia de caja d0 | **VALIDADO en ladder** — 56444505: 32/32 con 4 manos, 17-15 (53%) vs 40% | rating 714 @32 es dinámica de arranque, no rendimiento |
+| `tree_v1` | árbol 4 cintas Majkel, ramas por tienda d3/d6 | **CHAMPION_CANDIDATE** — 56444202: 31-9 (78%), 1082 @40 | local +6..+9 global pero **+10 vs fuertes**; ladder confirma |
+| `tree_v1+guardias` | lo anterior + guard_cash + guard_commitments | **REAL_WORLD_CANDIDATE** — sub **56447472** (2026-09-22 03:10) | combinación de validados (#6); 8/9 derrotas del tree eran manos d1 |
+| `107570947` (cinta sola) | mejor cinta del successive halving | **PROMISING** | compare2: +13,1 global; **+21,5 vs fuertes [5,7; 37,3]**, −0,6 vs débiles. Panel fuerte en curso |
 | `tree_v2` | árbol 30 victorias Majkel, NN sobre tiendas | **PROMISING→REJECTED como está**: +4,8 [−5,0; +14,7], < v1 < cinta | defecto: cambia entre cintas con prefijos distintos (12 prefijos) → estado inconsistente al ramificar. Arreglable: ramificar sólo entre cintas con prefijo idéntico |
 | `mejor cinta sola` | successive halving sobre 30 victorias como cintas fijas | **EN CURSO** — piloto `tapes` 4 seeds (4.096 ep) | compare dice cinta sola > árboles localmente |
 | `tree_v3` | árbol con cintas de DSM/UMG/Vadim (top-3, 2850-2880) | **PENDIENTE** — replays bajando | — |
