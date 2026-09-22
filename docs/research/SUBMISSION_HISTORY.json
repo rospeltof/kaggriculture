@@ -70,8 +70,8 @@
     },
     "reason": "REAL_WORLD_CANDIDATE criterio #3 (estructuralmente distinto: ramifica) y #7 (localmente indistinguible de la cinta; solo el ladder los separa). Verificado identico al arbol local en 6 semillas, DONE",
     "leaderboard": {
-      "score": 966.9,
-      "episodes": 19,
+      "score": 1082.2,
+      "episodes": 40,
       "rank": null,
       "lecturas": [
         [
@@ -81,13 +81,17 @@
         [
           19,
           966.9
+        ],
+        [
+          40,
+          1082.2
         ]
       ],
-      "nota": "TEMPRANO; ruido +-40..80 a <30 ep"
+      "nota": "+225 sobre el campeon (857) a 40 ep: fuera del ruido de arranque. POSITIVE SURPRISE (punto 16): local +6..+9 global, +10 vs fuertes"
     },
     "delta_vs_champion_ladder": null,
-    "observed": null,
-    "conclusion": "PENDIENTE",
+    "observed": "Mucho mejor en ladder de lo que el panel global predecia. Coherente con compare2: el arbol gana vs FUERTES (+10.2) y el ladder empareja con rivales de nuestro nivel",
+    "conclusion": "CHAMPION_CANDIDATE (pendiente replay analysis + confirmar a ~60 ep)",
     "next_action": "Comparar contra maj_107674293 (852.6) cuando pase de ~60 episodios. Mientras: compare panel tree vs tree_v2."
   },
   {
@@ -107,8 +111,8 @@
     },
     "reason": "REAL_WORLD_CANDIDATE #4: corrige debilidad observada en 60 partidas reales (manos d1 -> WR 0/23/60%). Unico cambio vs champion: la guardia. Aisla su efecto en ladder",
     "leaderboard": {
-      "score": 709.5,
-      "episodes": 14,
+      "score": 713.7,
+      "episodes": 32,
       "rank": null,
       "lecturas": [
         [
@@ -118,13 +122,17 @@
         [
           14,
           709.5
+        ],
+        [
+          32,
+          713.7
         ]
       ],
-      "nota": "arranque frio; no leer antes de ~50 ep"
+      "nota": "PLANA en ~710 mientras tree_v1 sube a 1082 en la misma ventana. NEGATIVE SURPRISE (punto 12)"
     },
     "delta_vs_champion_ladder": null,
-    "observed": null,
-    "conclusion": "PENDIENTE",
+    "observed": "No mejora al campeon; posible que sea peor. Hipotesis: las manos del d1 eran SINTOMA (rival fuerte hunde precios d0 -> caja 0) y no causa. Correlacion tomada por causalidad",
+    "conclusion": "PROMISING -> en revision; replays bajando para failure analysis",
     "next_action": "Comparar con 852.6 (56245770) a ~60 ep. Prediccion: si el mecanismo es real, +10..+20 puntos de WR en ladder -> rating claramente > 852. Si queda en ~850, el fallo del d1 no era la causa dominante de las derrotas"
   }
 ]
