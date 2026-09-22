@@ -1,6 +1,6 @@
 # Estado de investigación — leer primero para continuar
 
-Actualizado: 2026-09-22 03:20 (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
+Actualizado: 2026-09-22 04:35 (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
 Loop autónomo autorizado por el usuario (mensaje del 2026-09-21): harness + ladder
 como evidencia complementaria, submissions como instrumento (5/día).
 
@@ -10,8 +10,13 @@ como evidencia complementaria, submissions como instrumento (5/día).
 Desactivada al subir su sucesora. Champion formal aún `maj_107674293` (56245770,
 857, 126 ep) hasta que 56447472 confirme.
 
-**En ladder ahora:** `tree_v1+guardias` (56447472, commit 98f9ea6, predicción ≥1.082)
-y `maj+guard6` (56444505, 53% @32 ep).
+**En ladder ahora:** `107570947+guardias` (56449108, commit 6527d3a, CHAMPION_CANDIDATE
+por panel fuerte 54,8%) y `tree_v1+guardias` (56447472, commit 98f9ea6). Una variable
+entre ellas: material de cintas (una sola vs árbol de 4).
+
+**Panel FUERTE (80 rivales de Majkel/DSM), la métrica que predice el ladder:**
+guard:107570947 54,8% · 107570947 36,3% · guard:tree_v3 29,5% · tree 20,2% ·
+cinta campeona 17,4% · HOZ 9,5%. **Las guardias valen +15-18 vs fuertes.**
 
 ## RESEARCH_FRONTIER (estados)
 

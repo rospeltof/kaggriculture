@@ -170,5 +170,42 @@
     "observed": null,
     "conclusion": "PENDIENTE",
     "next_action": "Prediccion: >= tree_v1 (1082 @40ep) y con menos derrotas catastroficas. Si a ~40 ep supera 1082 -> CHAMPION. Desactiva a tree_v1 (56444202, 40 ep, ya leido)"
+  },
+  {
+    "submission_id": 56449108,
+    "timestamp": "2026-09-22T04:30:00-05:00",
+    "git_commit": "6527d3a",
+    "experiment_id": "107570947+guards8",
+    "config": "cinta top_majkel1337_107570947 (Majkel vs Q.Ai, PET_CAFE d3) + guard_cash reserve=8 + guard_commitments. empaquetar_cinta_guard.py. 18345 bytes",
+    "local_harness": {
+      "panel": "FUERTE: 80 rivales de Majkel/DSM x 8 seeds x 2 asientos",
+      "wr": 54.84,
+      "base_wr": 9.53,
+      "delta": 45.31,
+      "ci95_seed": [
+        32.16,
+        58.47
+      ],
+      "ci95_2way": [
+        30.44,
+        60.18
+      ],
+      "opponent_breakdown": {
+        "fuertes80": "54.8% (cinta campeona 17.4%, tree_v3+guard 29.5%, tree 20.2%)",
+        "compare2 lad40 (sin guardias)": "-0.6 vs cinta",
+        "compare2 sepopp8 (sin guardias)": "+21.5 [5.7; 37.3] vs cinta"
+      },
+      "nota": "reserve=8 (no 6): esta cinta pide 5 HIRE al alba, usa 4, necesita \\$7. Sin guardias: 36.3% vs fuertes"
+    },
+    "reason": "CHAMPION_CANDIDATE por evidencia local fuerte en la poblacion que predice el ladder. Una variable vs 56447472 (tree_v1+guards): material de cintas",
+    "leaderboard": {
+      "score": null,
+      "episodes": 0,
+      "rank": null
+    },
+    "delta_vs_champion_ladder": null,
+    "observed": null,
+    "conclusion": "PENDIENTE",
+    "next_action": "Leer W/L (no rating) a ~30 ep. Prediccion: >= tree_v1+guards. Desactiva a 56444505 (guardia, 32 ep, ya leida)"
   }
 ]
