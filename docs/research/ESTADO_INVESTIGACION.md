@@ -1,6 +1,6 @@
 # Estado de investigación — leer primero para continuar
 
-Actualizado: 2026-09-22 04:35 (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
+Actualizado: 2026-09-22 05:10 (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
 Loop autónomo autorizado por el usuario (mensaje del 2026-09-21): harness + ladder
 como evidencia complementaria, submissions como instrumento (5/día).
 
@@ -39,12 +39,24 @@ Todo el espacio de perillas del chasis (13 barridos), gansos, ventas retenidas,
 fertilizar un corte, superficie, rebaño, plantilla, copiar por piezas, cadencia,
 compete_aware, compra parcial, harvest_76, apertura dentro del planner.
 
+## REGLA REFORZADA (violada dos veces hoy)
+
+**`evaluar_lider.py` hashea sus fuentes (evaluar_lider.py, chassis, arquetipos,
+tape.py, arbol_lider*.py, guardia_cinta.py, clasif json) al inicio y al final.
+NO editar NINGUNO mientras una fase corre.** Preparar ediciones en el scratchpad
+y aplicarlas al terminar. Si se edita por error: `git checkout <fichero>` antes de
+que termine (funcionó el 2026-09-22 05:05).
+
 ## PROCESOS EN CURSO (al escribir esto)
 
-- `evaluar_lider.py --phase tapes --seeds 4` → `results/tapes_piloto.txt`, evidencia
-  `docs/evidencia/lider_20260914/tapes.*`. **No tocar fuentes hasta que termine.**
-- Terminados: compare (resultados arriba), descargas (DSM 40, UMG 30, VADIM 30,
-  MAJTAPE_LADDER 60 en `replays/`).
+- `evaluar_lider.py --phase majkel2 --seeds 4` → `results/majkel2.txt`: 12 cintas de
+  Majkel ACTUAL (vs top-3) + guardias, vs 71 fuertes sin Majkel. Referencia
+  guard:107570947.
+- **Pendiente de lanzar al terminar:** fase `dsm` (27 victorias de DSM, nº1 actual)
+  — la edición está en `scratchpad/evaluar_lider_con_dsm.py`; copiar sobre
+  `evaluar_lider.py` cuando `majkel2` termine.
+- Terminados: compare, compare2, tapes, fuerte; descargas (DSM 40, UMG 30, VADIM 30,
+  MAJTAPE_LADDER 60, TREE1_LADDER 40, GUARD_LADDER 32).
 
 ## HALLAZGOS DE HOY (resumen; detalle en RESEARCH_BELIEFS.md)
 
@@ -56,7 +68,16 @@ compete_aware, compra parcial, harvest_76, apertura dentro del planner.
 4. **DSM vs Majkel 3-6**; cima decidida por 1-5%. Cintas de DSM no son mejor materia.
 5. **compare**: cinta +12,1 > tree +9,0 > tree_v2 +4,8 (vs HOZ). Más cintas mezcladas, peor.
 
-## NEXT_EXPERIMENTS (orden)
+## NEXT_EXPERIMENTS (orden, 2026-09-22 05:10)
+
+0. Leer `majkel2` → si alguna cinta de Majkel actual + guardias supera a
+   guard:107570947 vs fuertes con IC dos vías > 0 → **subir** (una variable:
+   material). Luego fase `dsm` con el mismo criterio.
+0b. Leer W/L (no rating) de 56449108 y 56447472 a ~30 ep cada una.
+0c. Ventas reactivas sobre la mejor cinta (la dimensión de contexto que la cinta
+   sigue ignorando: precios); medir vs panel fuerte.
+
+### (anteriores)
 
 1. Leer piloto `tapes` → top-3 cintas a `--phase confirm` (16 seeds). Si alguna
    supera a 107674293 con IC dos vías > 0 → nueva cinta base (+guardia) al ladder.
