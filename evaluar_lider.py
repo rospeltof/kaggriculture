@@ -32,6 +32,12 @@ def sha(data):
 
 
 def materialize(name):
+    if name.startswith("guard:"):
+        from bots.guardia_cinta import guard_cash, guard_commitments
+        inner = materialize(name[6:]); st = {}
+        def g(obs):
+            return guard_commitments(obs, guard_cash(obs, inner(obs), reserve=6), st)
+        return g
     from bots.chassis import make_agent
     from bots.arquetipos import CAMPEONA_HOZ,CAMPEONA_FB
     from bots.meta.tape import make as tape
@@ -39,7 +45,7 @@ def materialize(name):
         return make_agent(dict(CAMPEONA_HOZ))
     if name=="_peor":
         return make_agent(dict(CAMPEONA_FB))
-    if name.startswith(("maj_","sepopp_","lad_","top_")):
+    if name.startswith(("maj_","sepopp_","lad_","top_","fuerte_")):
         return tape(name)
     if name=="tree_v2":
         from bots.arbol_lider import make as make_v2
@@ -156,6 +162,15 @@ def run(args):
         tops=[t for t in tops if clas.get(int(t.split("_")[-1]),{}).get("gana")]
         arms=["base","noop","maj_107674293"]+tops
         opponents=lad[::5]+recent;seeds=list(range(221000,221000+args.seeds))
+    elif args.phase=="fuerte":
+        # 2026-09-22: PANEL FUERTE. compare2 mostro que los brazos se ordenan al
+        # reves segun la fuerza del rival y que el ladder sigue al subconjunto
+        # fuerte. 80 rivales de Majkel y DSM (2000-3000), 8 seeds, 2 asientos.
+        import glob as _g
+        fuertes=sorted(Path(x).name[:-8] for x in _g.glob(str(ROOT/"bots/meta/tapes/fuerte_*.json.gz")))
+        arms=["base","noop","maj_107674293","top_majkel1337_107570947","guard:top_majkel1337_107570947",
+              "tree_v3","guard:tree_v3","tree"]
+        opponents=fuertes;seeds=list(range(227000,227000+args.seeds))
     elif args.phase=="compare2":
         # 2026-09-22: successive halving. Top-5 cintas solas del piloto `tapes`
         # (4 seeds) + arboles v1/v3 + cinta campeona, 16 seeds, mismo bloque.
@@ -177,8 +192,8 @@ def run(args):
     if manifest.exists() or raw.exists() or raw.with_suffix(raw.suffix+".gz").exists():
         raise FileExistsError(f"No sobrescribir corrida: {tag}")
     source_names=["evaluar_lider.py","bots/experimentos_lider.py","bots/chassis.py","bots/arquetipos.py","bots/meta/tape.py",
-                  "docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md","bots/arbol_lider.py","results/clasif_MAJKEL_56142830.json","bots/arbol_lider_v3.py"]
-    tape_names=sorted(set(opponents)|{f"maj_{i}" for i in IDS})
+                  "docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md","bots/arbol_lider.py","results/clasif_MAJKEL_56142830.json","bots/arbol_lider_v3.py","bots/guardia_cinta.py"]
+    tape_names=sorted(set(o for o in opponents if not o.startswith("guard:"))|{f"maj_{i}" for i in IDS})
     paths=[ROOT/n for n in source_names]+[ROOT/f"bots/meta/tapes/{n}.json.gz" for n in tape_names]
     hashes={str(p.relative_to(ROOT)):sha(p.read_bytes()) for p in paths}
     import importlib
@@ -234,7 +249,7 @@ def run(args):
 
 if __name__=="__main__":
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--phase",choices=("pilot","confirm","stress","compare","tapes","compare2"),required=True)
+    ap.add_argument("--phase",choices=("pilot","confirm","stress","compare","tapes","compare2","fuerte"),required=True)
     ap.add_argument("--candidate")
     ap.add_argument("--seeds",type=int,default=16)
     ap.add_argument("--workers",type=int,default=8)
