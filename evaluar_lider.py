@@ -45,7 +45,7 @@ def materialize(name):
         return make_agent(dict(CAMPEONA_HOZ))
     if name=="_peor":
         return make_agent(dict(CAMPEONA_FB))
-    if name.startswith(("maj_","sepopp_","lad_","top_","fuerte_","top2_")):
+    if name.startswith(("maj_","sepopp_","lad_","top_","fuerte_","top2_","top3_")):
         return tape(name)
     if name=="tree_v2":
         from bots.arbol_lider import make as make_v2
@@ -180,6 +180,23 @@ def run(args):
         fuertes=sorted(Path(x).name[:-8] for x in _g.glob(str(ROOT/"bots/meta/tapes/fuerte_*.json.gz")) if "majkel" not in Path(x).name)
         arms=["base","noop","guard:top_majkel1337_107570947"]+[f"guard:{t}" for t in c2]
         opponents=fuertes;seeds=list(range(230000,230000+args.seeds))
+    elif args.phase=="majkel2_confirm":
+        # 2026-09-22: confirmacion (successive halving) de las 3 mejores del
+        # piloto majkel2 contra la candidata en ladder, 8 seeds, mismo bloque.
+        import glob as _g
+        fuertes=sorted(Path(x).name[:-8] for x in _g.glob(str(ROOT/"bots/meta/tapes/fuerte_*.json.gz")) if "majkel" not in Path(x).name)
+        arms=["base","noop","guard:top_majkel1337_107570947",
+              "guard:top2_majkel1337_110344288","guard:top2_majkel1337_110304538","guard:top2_majkel1337_110360751"]
+        opponents=fuertes;seeds=list(range(232000,232000+args.seeds))
+    elif args.phase=="dsm":
+        # 2026-09-22: las 27 victorias de DSM (n1 actual, 3174) como candidatas
+        # con guardias, vs panel fuerte SIN Majkel ni DSM (62 rivales).
+        import glob as _g
+        c3=sorted(Path(x).name[:-8] for x in _g.glob(str(ROOT/"bots/meta/tapes/top3_dsm_*.json.gz")))
+        fuertes=sorted(Path(x).name[:-8] for x in _g.glob(str(ROOT/"bots/meta/tapes/fuerte_*.json.gz"))
+                       if "majkel" not in Path(x).name and "dsm" not in Path(x).name)
+        arms=["base","noop","guard:top_majkel1337_107570947"]+[f"guard:{t}" for t in c3]
+        opponents=fuertes;seeds=list(range(231000,231000+args.seeds))
     elif args.phase=="compare2":
         # 2026-09-22: successive halving. Top-5 cintas solas del piloto `tapes`
         # (4 seeds) + arboles v1/v3 + cinta campeona, 16 seeds, mismo bloque.
@@ -258,7 +275,7 @@ def run(args):
 
 if __name__=="__main__":
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--phase",choices=("pilot","confirm","stress","compare","tapes","compare2","fuerte","majkel2"),required=True)
+    ap.add_argument("--phase",choices=("pilot","confirm","stress","compare","tapes","compare2","fuerte","majkel2","dsm","majkel2_confirm"),required=True)
     ap.add_argument("--candidate")
     ap.add_argument("--seeds",type=int,default=16)
     ap.add_argument("--workers",type=int,default=8)
