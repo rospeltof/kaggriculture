@@ -45,7 +45,7 @@ def materialize(name):
         return make_agent(dict(CAMPEONA_HOZ))
     if name=="_peor":
         return make_agent(dict(CAMPEONA_FB))
-    if name.startswith(("maj_","sepopp_","lad_","top_","fuerte_")):
+    if name.startswith(("maj_","sepopp_","lad_","top_","fuerte_","top2_")):
         return tape(name)
     if name=="tree_v2":
         from bots.arbol_lider import make as make_v2
@@ -171,6 +171,15 @@ def run(args):
         arms=["base","noop","maj_107674293","top_majkel1337_107570947","guard:top_majkel1337_107570947",
               "tree_v3","guard:tree_v3","tree"]
         opponents=fuertes;seeds=list(range(227000,227000+args.seeds))
+    elif args.phase=="majkel2":
+        # 2026-09-22: las 12 partidas de Majkel ACTUAL (3075) contra el top-3,
+        # como candidatas con guardias, vs el panel fuerte SIN las cintas de
+        # Majkel (71 rivales). Referencia: guard:107570947 (la candidata en ladder).
+        import glob as _g
+        c2=sorted(Path(x).name[:-8] for x in _g.glob(str(ROOT/"bots/meta/tapes/top2_majkel1337_*.json.gz")))
+        fuertes=sorted(Path(x).name[:-8] for x in _g.glob(str(ROOT/"bots/meta/tapes/fuerte_*.json.gz")) if "majkel" not in Path(x).name)
+        arms=["base","noop","guard:top_majkel1337_107570947"]+[f"guard:{t}" for t in c2]
+        opponents=fuertes;seeds=list(range(230000,230000+args.seeds))
     elif args.phase=="compare2":
         # 2026-09-22: successive halving. Top-5 cintas solas del piloto `tapes`
         # (4 seeds) + arboles v1/v3 + cinta campeona, 16 seeds, mismo bloque.
@@ -249,7 +258,7 @@ def run(args):
 
 if __name__=="__main__":
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--phase",choices=("pilot","confirm","stress","compare","tapes","compare2","fuerte"),required=True)
+    ap.add_argument("--phase",choices=("pilot","confirm","stress","compare","tapes","compare2","fuerte","majkel2"),required=True)
     ap.add_argument("--candidate")
     ap.add_argument("--seeds",type=int,default=16)
     ap.add_argument("--workers",type=int,default=8)
