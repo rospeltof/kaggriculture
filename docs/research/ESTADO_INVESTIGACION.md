@@ -1,6 +1,6 @@
 # Estado de investigación — leer primero para continuar
 
-Actualizado: 2026-09-23 13:40 (sesion reabierta por el usuario: 'continua') (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
+Actualizado: 2026-09-23 18:00 (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
 Loop autónomo autorizado por el usuario (mensaje del 2026-09-21): harness + ladder
 como evidencia complementaria, submissions como instrumento (5/día).
 
@@ -88,9 +88,27 @@ guardia a medias. Nuevo prefijo `gcal:` con `reserve_auto` (da 8 para
   M&M&P&Q (56378284), DECEM (56446088), Majkel-nuevo (56407295), Vadim-nuevo
   (56427964), seek inspiration (56407833).
 
-**Plan:** top-5 de `cal1` → confirmación pareada vs `gcal:107570947` en
-**semillas Y rivales disjuntos** del piloto (resto del panel fuerte). Ronda 2
-con las fuentes nuevas. Mejor candidata con IC dos vías > 0 → submission.
+**Hecho:** `cal1` (111 cintas) → `confirm_cal1` vs 148 rivales NUEVOS (rivales
+del top-13 actual). Ganadora confirmada: **`110304538` (Majkel-3075) + gcal:
++18,9 [−0,5; +38,4] vs 107570947+gcal, positiva vs las 6 fuentes → subida como
+56504082** (17:30). La #1 del piloto (umg_111191811) se desplomó a −11,7.
+
+**Activas en ladder:** 56449108 (107570947+g, 1.164) y 56504082 (110304538+gcal).
+⚠️ La próxima submission desplaza a **56449108**: sólo subir si 56504082 ≥ 56449108
+o si la candidata nueva supera a ambas.
+
+**En curso:** piloto `cal2` (`results/cal2.txt`, centinela `results/cal2.done`):
+93 cintas de Boey/MMPQ/DECEM/Majkel-nuevo/Vadim-nuevo/seek + anclas, vs 32
+rivales de fuentes viejas no usados en cal1, 2 seeds. Filtro grueso → etapa 2
+(~20 brazos, más celdas) → confirmación vs `results/rivales_reserva_confirm2.json`
+(76 rivales nunca usados), siempre con `gcal:110304538` y `gcal:107570947` en el
+mismo bloque.
+
+**Herramientas nuevas:** `comparar_pareado.py` (delta pareado, IC semilla y dos
+vías, desglose por fuente), `extraer_fuente.py` (victorias + rivales de una
+carpeta), fase `spec` del evaluador (brazos/rivales/semillas desde JSON).
+**Lección de infraestructura:** esperar por fichero centinela, nunca por
+`pgrep -f` con un patrón que aparece en el propio comando del bucle.
 
 ## CIERRE DE SESION 2026-09-22 — decision: CONSOLIDAR (revisada el 23)
 

@@ -1,6 +1,6 @@
 # Harness vs leaderboard — qué métrica local predice el ladder
 
-Actualizado: 2026-09-22 02:30. Dataset acumulado y conclusiones provisionales.
+Actualizado: 2026-09-23 18:00. Dataset acumulado y conclusiones provisionales.
 
 ## Dataset
 
@@ -10,7 +10,10 @@ Actualizado: 2026-09-22 02:30. Dataset acumulado y conclusiones provisionales.
 | 55994874 | hoz (+harvest_76, refutado) | +2,5 → −0,08 | — | 677–831 según fecha | 68 |
 | 56245770 | **maj_107674293** (cinta fija) | +14,4 / +10,0 | **43,0%** (peor de todos) | **857** | 126 |
 | 56444202 | tree_v1 | +9,0 / +6,1 | 53,1% (+10,2) | **967** @19 ep (TEMPRANO) | 19 |
-| 56444505 | maj+guard6 | ≈ cinta (harness no ve el fallo) | — | 710 @14 ep (arranque) | 14 |
+| 56444505 | maj+guard6 | ≈ cinta (harness no ve el fallo) | — | 714 @32 ep (53% W/L) | 32 |
+| 56447472 | tree_v1 + guard(6) | +6,1 global | fuerte: tree 20,2% | **1.132** @81 | 81 |
+| 56449108 | **107570947 + guard(8)** | — | fuerte (guard 6): 54,8% · **gcal: 53,1% (cal1)** · 42,7% (rivales r2) | **1.164** @78 | 78 |
+| 56504082 | **110304538 + gcal(8)** | — | cal1 62,5% · **rivales r2 61,6% (+18,9 vs 107570947)** | pendiente | 0 |
 
 ## Conclusiones (provisionales, se actualizan con cada lectura)
 
@@ -35,6 +38,16 @@ mejor en ladder de lo que el panel global predecía. Hipótesis: el ladder ya no
 enfrenta a rivales más fuertes que el panel `lad_` (rating ~800 → ahora 900+).
 Comprobación: clasificar los replays de 56444202 por rating del rival y por
 tienda d3 cuando pase de 50 episodios.
+
+**5. (2026-09-23) La población de rivales importa más que el tamaño del bloque.**
+La misma cinta de referencia rinde 53,1% contra rivales de Majkel/DSM/UMG/Vadim
+(sep 11-20) y 42,7% contra los rivales del top-13 de esta semana. El campo se
+endurece; confirmar siempre contra la población más reciente disponible.
+
+**6. (2026-09-23) La selección sobre un piloto grande está dominada por ruido.**
+111 candidatas × 64 celdas: el 1º (87,5%) cae a 31,0% en población fresca; el 4º
+sube a 1º. Successive halving en ≥2 etapas + confirmación en rivales y semillas
+disjuntos, siempre.
 
 ## Regla operativa derivada
 
