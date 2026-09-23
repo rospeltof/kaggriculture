@@ -1,6 +1,6 @@
 # Estado de investigación — leer primero para continuar
 
-Actualizado: 2026-09-22 (cierre de sesion) (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
+Actualizado: 2026-09-23 13:40 (sesion reabierta por el usuario: 'continua') (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
 Loop autónomo autorizado por el usuario (mensaje del 2026-09-21): harness + ladder
 como evidencia complementaria, submissions como instrumento (5/día).
 
@@ -69,7 +69,30 @@ que termine (funcionó el 2026-09-22 05:05).
 4. **DSM vs Majkel 3-6**; cima decidida por 1-5%. Cintas de DSM no son mejor materia.
 5. **compare**: cinta +12,1 > tree +9,0 > tree_v2 +4,8 (vs HOZ). Más cintas mezcladas, peor.
 
-## CIERRE DE SESION 2026-09-22 — decision: CONSOLIDAR
+## SESION 2026-09-23 — en curso
+
+**Ladder @13:11:** 56449108 (107570947+g) **1.163,7** @78 ep; 56447472 (tree_v1+g)
+1.131,6 @81 ep. Rank equipo **3.510 / 9.919**. Nuevo nº1: Boey (3.112).
+
+**Fallo de método encontrado:** el evaluador aplicaba las guardias con
+`reserve=6` fijo; 72 de 79 cintas necesitan \$7+ (5 HIRE al alba, usan 4).
+Todas las comparaciones previas entre cintas con guardias se hicieron con la
+guardia a medias. Nuevo prefijo `gcal:` con `reserve_auto` (da 8 para
+107570947 = exactamente la submission). `guard:` se conserva para reproducir.
+
+**En curso:**
+- Piloto `cal1` (`results/cal1.txt`): 111 cintas (Majkel-2652 ×30, Majkel-3075
+  ×12, DSM ×27, UMG ×21, Vadim ×21) con `gcal:`, vs 32 fuertes balanceados
+  (8 por fuente) × 2 seeds × 2 asientos = 14.592 ep.
+- Descargas (`results/bajar_ronda2.txt`): 25 replays de Boey (56309208),
+  M&M&P&Q (56378284), DECEM (56446088), Majkel-nuevo (56407295), Vadim-nuevo
+  (56427964), seek inspiration (56407833).
+
+**Plan:** top-5 de `cal1` → confirmación pareada vs `gcal:107570947` en
+**semillas Y rivales disjuntos** del piloto (resto del panel fuerte). Ronda 2
+con las fuentes nuevas. Mejor candidata con IC dos vías > 0 → submission.
+
+## CIERRE DE SESION 2026-09-22 — decision: CONSOLIDAR (revisada el 23)
 
 Todas las vias de mejora sobre la cinta estan medidas y cerradas:
 - Mejor cinta fija: 107570947, de ~70 candidatas de Majkel-2652/Majkel-3075/DSM.

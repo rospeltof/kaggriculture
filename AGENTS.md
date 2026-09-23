@@ -1,5 +1,15 @@
 # Entrada para agentes que trabajan en este repositorio
 
+> **Estado vigente (2026-09-23): leer primero `docs/research/ESTADO_INVESTIGACION.md`.**
+> Desde el 2026-09-21 el usuario autorizó un loop autónomo de investigación que
+> incluye submissions experimentales ("También tienes capacidad para crear y
+> subir submissions reales. Usa ambas cosas"). Champion en ladder:
+> `107570947 + guardias` (56449108). Creencias con evidencia:
+> `docs/research/RESEARCH_BELIEFS.md`; historial reproducible de envíos:
+> `docs/research/SUBMISSION_HISTORY.json`; qué métrica local predice el ladder:
+> `docs/research/HARNESS_VS_LEADERBOARD.md`. Lo que sigue abajo es el estado
+> del 2026-09-14 y se conserva como historia.
+
 ## Estado y autorización
 
 - El usuario autorizó explícitamente subir `maj_107674293`: «Subela a kaggle pa
