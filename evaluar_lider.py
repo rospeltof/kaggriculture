@@ -56,8 +56,8 @@ def materialize(name):
         return make_agent(dict(CAMPEONA_HOZ))
     if name=="_peor":
         return make_agent(dict(CAMPEONA_FB))
-    if name.startswith(("maj_","sepopp_","lad_","top_","fuerte_","top2_","top3_","top4_","top5_","top6_")):
-        return tape(name)
+    if (ROOT/"bots/meta/tapes"/f"{name}.json.gz").exists():
+        return tape(name)          # 2026-09-23: regla generica; antes lista de prefijos
     if name.startswith("hib"):
         from bots.hibrido import make as mk_h
         corte={"hib10":240,"hib15":360,"hib20":480}[name]
@@ -203,6 +203,12 @@ def run(args):
         arms=["base","noop","guard:top_majkel1337_107570947",
               "guard:top2_majkel1337_110344288","guard:top2_majkel1337_110304538","guard:top2_majkel1337_110360751"]
         opponents=fuertes;seeds=list(range(232000,232000+args.seeds))
+    elif args.phase=="spec":
+        # 2026-09-23: fase generica dirigida por JSON (--candidate = ruta del spec).
+        # spec = {"tag": str, "arms": [...], "opponents": [...], "seed0": int}.
+        # El spec entra en los hashes de fuentes: no editarlo con la corrida viva.
+        spec=json.load(open(ROOT/args.candidate))
+        arms=spec["arms"];opponents=spec["opponents"];seeds=list(range(spec["seed0"],spec["seed0"]+args.seeds))
     elif args.phase=="cal1":
         # 2026-09-23: piloto con guardias CALIBRADAS (gcal:) sobre las 111 cintas
         # de 5 fuentes (Majkel-2652 victorias, Majkel-3075, DSM, UMG, Vadim).
@@ -251,12 +257,12 @@ def run(args):
         assert args.candidate
         arms=["base","noop","_peor",args.candidate]
         opponents=[f"maj_{i}" for i in IDS];seeds=list(range(216000,216008))
-    tag=args.phase+("_"+args.candidate if args.candidate else "")
+    tag=(json.load(open(ROOT/args.candidate))["tag"] if args.phase=="spec" else args.phase+("_"+args.candidate if args.candidate else ""))
     manifest=OUT/f"{tag}.meta.json";raw=OUT/f"{tag}.episodes.jsonl"
     if manifest.exists() or raw.exists() or raw.with_suffix(raw.suffix+".gz").exists():
         raise FileExistsError(f"No sobrescribir corrida: {tag}")
     source_names=["evaluar_lider.py","bots/experimentos_lider.py","bots/chassis.py","bots/arquetipos.py","bots/meta/tape.py",
-                  "docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md","bots/arbol_lider.py","results/clasif_MAJKEL_56142830.json","bots/arbol_lider_v3.py","bots/guardia_cinta.py","bots/hibrido.py","results/fuertes_por_fuente.json"]
+                  "docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md","bots/arbol_lider.py","results/clasif_MAJKEL_56142830.json","bots/arbol_lider_v3.py","bots/guardia_cinta.py","bots/hibrido.py","results/fuertes_por_fuente.json"]+([args.candidate] if args.phase=="spec" else [])
     tape_names=sorted(set(o for o in opponents if not o.startswith("guard:"))|{f"maj_{i}" for i in IDS})
     paths=[ROOT/n for n in source_names]+[ROOT/f"bots/meta/tapes/{n}.json.gz" for n in tape_names]
     hashes={str(p.relative_to(ROOT)):sha(p.read_bytes()) for p in paths}
@@ -313,7 +319,7 @@ def run(args):
 
 if __name__=="__main__":
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--phase",choices=("pilot","confirm","stress","compare","tapes","compare2","fuerte","majkel2","dsm","majkel2_confirm","hibrido","cal1"),required=True)
+    ap.add_argument("--phase",choices=("pilot","confirm","stress","compare","tapes","compare2","fuerte","majkel2","dsm","majkel2_confirm","hibrido","cal1","spec"),required=True)
     ap.add_argument("--candidate")
     ap.add_argument("--seeds",type=int,default=16)
     ap.add_argument("--workers",type=int,default=8)
