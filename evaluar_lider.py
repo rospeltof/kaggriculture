@@ -32,6 +32,17 @@ def sha(data):
 
 
 def materialize(name):
+    if name.startswith("gcal:"):
+        # 2026-09-23: guardias con reserva CALIBRADA a la cinta (reserve_auto).
+        # `guard:` conserva reserve=6 fijo para reproducir las corridas previas.
+        import gzip as _gz
+        from bots.guardia_cinta import guard_cash, guard_commitments, reserve_auto
+        inner_name = name[5:]
+        tr = json.load(_gz.open(ROOT/"bots/meta/tapes"/f"{inner_name}.json.gz", "rt"))
+        res = reserve_auto(tr); inner = materialize(inner_name); st = {}
+        def gc(obs):
+            return guard_commitments(obs, guard_cash(obs, inner(obs), reserve=res), st)
+        return gc
     if name.startswith("guard:"):
         from bots.guardia_cinta import guard_cash, guard_commitments
         inner = materialize(name[6:]); st = {}
@@ -45,7 +56,7 @@ def materialize(name):
         return make_agent(dict(CAMPEONA_HOZ))
     if name=="_peor":
         return make_agent(dict(CAMPEONA_FB))
-    if name.startswith(("maj_","sepopp_","lad_","top_","fuerte_","top2_","top3_")):
+    if name.startswith(("maj_","sepopp_","lad_","top_","fuerte_","top2_","top3_","top4_","top5_","top6_")):
         return tape(name)
     if name.startswith("hib"):
         from bots.hibrido import make as mk_h
@@ -192,6 +203,21 @@ def run(args):
         arms=["base","noop","guard:top_majkel1337_107570947",
               "guard:top2_majkel1337_110344288","guard:top2_majkel1337_110304538","guard:top2_majkel1337_110360751"]
         opponents=fuertes;seeds=list(range(232000,232000+args.seeds))
+    elif args.phase=="cal1":
+        # 2026-09-23: piloto con guardias CALIBRADAS (gcal:) sobre las 111 cintas
+        # de 5 fuentes (Majkel-2652 victorias, Majkel-3075, DSM, UMG, Vadim).
+        # Panel fuerte balanceado: 8 rivales por fuente (Majkel/DSM/UMG/Vadim).
+        # Seleccion por W/L agregado; confirmacion posterior en seeds y rivales
+        # disjuntos. guard:107570947 (reserve=6) se incluye como enlace historico.
+        import glob as _g
+        clas={r["ep"]:r for r in json.load(open(ROOT/"results/clasif_MAJKEL_56142830.json"))}
+        def _n(pat): return sorted(Path(x).name[:-8] for x in _g.glob(str(ROOT/f"bots/meta/tapes/{pat}.json.gz")))
+        cands=[t for t in _n("top_majkel1337_*") if clas.get(int(t.split("_")[-1]),{}).get("gana")]
+        cands+=_n("top2_majkel1337_*")+_n("top3_dsm_*")+_n("top4_umg_*")+_n("top5_vadim_*")
+        pf=json.load(open(ROOT/"results/fuertes_por_fuente.json"))
+        opponents=sorted(o for k in ("majkel","dsm","umg","vadim") for o in pf[k][::max(1,len(pf[k])//8)][:8])
+        arms=["base","noop","guard:top_majkel1337_107570947"]+[f"gcal:{c}" for c in cands]
+        seeds=list(range(234000,234000+args.seeds))
     elif args.phase=="hibrido":
         # 2026-09-22: cinta 107570947 hasta d10/d15/d20 + CAMPEONA_HOZ despues,
         # con guardias, vs panel fuerte sin Majkel/DSM. Referencia: guard:107570947.
@@ -230,7 +256,7 @@ def run(args):
     if manifest.exists() or raw.exists() or raw.with_suffix(raw.suffix+".gz").exists():
         raise FileExistsError(f"No sobrescribir corrida: {tag}")
     source_names=["evaluar_lider.py","bots/experimentos_lider.py","bots/chassis.py","bots/arquetipos.py","bots/meta/tape.py",
-                  "docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md","bots/arbol_lider.py","results/clasif_MAJKEL_56142830.json","bots/arbol_lider_v3.py","bots/guardia_cinta.py","bots/hibrido.py"]
+                  "docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md","bots/arbol_lider.py","results/clasif_MAJKEL_56142830.json","bots/arbol_lider_v3.py","bots/guardia_cinta.py","bots/hibrido.py","results/fuertes_por_fuente.json"]
     tape_names=sorted(set(o for o in opponents if not o.startswith("guard:"))|{f"maj_{i}" for i in IDS})
     paths=[ROOT/n for n in source_names]+[ROOT/f"bots/meta/tapes/{n}.json.gz" for n in tape_names]
     hashes={str(p.relative_to(ROOT)):sha(p.read_bytes()) for p in paths}
@@ -287,7 +313,7 @@ def run(args):
 
 if __name__=="__main__":
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--phase",choices=("pilot","confirm","stress","compare","tapes","compare2","fuerte","majkel2","dsm","majkel2_confirm","hibrido"),required=True)
+    ap.add_argument("--phase",choices=("pilot","confirm","stress","compare","tapes","compare2","fuerte","majkel2","dsm","majkel2_confirm","hibrido","cal1"),required=True)
     ap.add_argument("--candidate")
     ap.add_argument("--seeds",type=int,default=16)
     ap.add_argument("--workers",type=int,default=8)

@@ -97,3 +97,21 @@ def guard_commitments(obs, action, state, max_retry=48):
     if extra:
         action = dict(action); action["market"] = (extra + list(action.get("market") or []))[:10]
     return action
+
+
+# ---------------------------------------------------------------------------
+# Calibracion automatica de la reserva (2026-09-23). `reserve=6` fijo dejaba a
+# 72 de 79 cintas candidatas por debajo de lo que necesitan: casi todas emiten
+# 5 HIRE al alba del d1 y usan 4 manos, que cuestan fib = 1+1+2+3 = $7. La
+# reserva correcta es el coste de las manos que la cinta USA en el d1, +1.
+# Para 107570947 da 8, el valor de la submission 56449108.
+# ---------------------------------------------------------------------------
+_FIB = (1, 1, 2, 3, 5, 8, 13, 21, 34, 55)
+
+
+def reserve_auto(trace, margin=1):
+    """Reserva de caja que garantiza las manos del d1 de una cinta."""
+    usadas = max(len(trace[s].get("hands") or []) for s in range(25, 48))
+    pedidas = sum(1 for o in trace[24].get("market") or [] if o and o[0] == "HIRE")
+    k = min(usadas, pedidas)
+    return (sum(_FIB[:k]) + margin) if k else 0
