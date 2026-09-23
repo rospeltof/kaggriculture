@@ -162,8 +162,8 @@
     },
     "reason": "Criterio 6: combinacion de dos mejoras validadas POR SEPARADO en ladder. tree_v1 31-9 (78%) con 8/9 derrotas por manos d1 (con 4 manos 30-1); guardia 32/32 con 4 manos, 53% vs 40%",
     "leaderboard": {
-      "score": 1183.5,
-      "episodes": 51,
+      "score": 1131.6,
+      "episodes": 81,
       "lecturas": [
         [
           28,
@@ -176,13 +176,17 @@
         [
           51,
           1183.5
+        ],
+        [
+          81,
+          1131.6
         ]
       ],
       "rank": "3368/9792 (equipo)"
     },
     "delta_vs_champion_ladder": null,
     "observed": "23-17 (58%) a rating mas alto que tree_v1; +54 Elo vs tree_v1 solo a 40 ep. 3/40 con 3 manos (reserve=6 corto para sus cintas; deberia ser 8)",
-    "conclusion": "PROMISING; superada por 56449108",
+    "conclusion": "PROMISING; desactivada 2026-09-23 al subir 56504082 (1131.6 @81 ep, congelada)",
     "next_action": "Prediccion: >= tree_v1 (1082 @40ep) y con menos derrotas catastroficas. Si a ~40 ep supera 1082 -> CHAMPION. Desactiva a tree_v1 (56444202, 40 ep, ya leido)"
   },
   {
@@ -213,8 +217,8 @@
     },
     "reason": "CHAMPION_CANDIDATE por evidencia local fuerte en la poblacion que predice el ladder. Una variable vs 56447472 (tree_v1+guards): material de cintas",
     "leaderboard": {
-      "score": 1201.3,
-      "episodes": 51,
+      "score": 1163.7,
+      "episodes": 78,
       "lecturas": [
         [
           13,
@@ -227,6 +231,10 @@
         [
           51,
           1201.3
+        ],
+        [
+          78,
+          1163.7
         ]
       ],
       "rank": "3368/9792 (equipo)"
@@ -235,5 +243,47 @@
     "observed": "15-9 (62%), $100.5k vs $88.1k. 24/24 con 4 manos y 3 cuadrantes. Derrotas ajustadas vs rivales de 93-138k. Banco identico en V y D: produccion fija, gana sii el rival produce menos",
     "conclusion": "CHAMPION_CANDIDATE confirmandose; subida mas rapida registrada",
     "next_action": "Leer W/L (no rating) a ~30 ep. Prediccion: >= tree_v1+guards. Desactiva a 56444505 (guardia, 32 ep, ya leida)"
+  },
+  {
+    "submission_id": 56504082,
+    "timestamp": "2026-09-23T17:30:00-05:00",
+    "git_commit": "3cbaca1",
+    "experiment_id": "110304538+gcal8",
+    "config": "cinta top2_majkel1337_110304538 (Majkel-3075, 2a mitad de sep, vs top-3) + guard_cash reserve_auto=8 + guard_commitments. empaquetar_cinta_guard.py --reserve 8. 19576 bytes",
+    "local_harness": {
+      "panel": "confirm_cal1: 148 rivales NUEVOS (rivales de Boey/MMPQ/DECEM/Majkel-nuevo/Vadim-nuevo/seek) x 4 seeds x 2 asientos",
+      "wr": 61.6,
+      "ref_wr": 42.7,
+      "delta_vs_ref": 18.92,
+      "ci95_seed": [
+        -3.5,
+        41.3
+      ],
+      "ci95_2way": [
+        -0.5,
+        38.4
+      ],
+      "opponent_breakdown": {
+        "boey": "+16.0",
+        "decem": "+25.5",
+        "majkel3": "+17.9",
+        "mmpq": "+21.5",
+        "seek": "+11.0",
+        "vadim2": "+21.6"
+      },
+      "historial": "majkel2_confirm (reserve 6 ambos, 71 fuertes): -0.26 [-25;+24]; cal1 piloto (gcal, 32 fuertes): +9.4",
+      "nota": "ref = gcal:107570947 = la campeona 56449108 exacta"
+    },
+    "reason": "REAL_WORLD_CANDIDATE (criterio 1): point estimate claramente interesante en una poblacion FRESCA y relevante (rivales del top-13 de esta semana), positiva contra las 6 fuentes; IC dos vias roza cero por 4 seeds. Desplaza a la mas debil de las dos activas (tree_v1+g)",
+    "leaderboard": {
+      "score": null,
+      "episodes": 0,
+      "rank": null,
+      "lecturas": []
+    },
+    "delta_vs_champion_ladder": null,
+    "observed": null,
+    "conclusion": "PENDIENTE",
+    "next_action": "Leer W/L a ~30 ep y rating a ~60. Si supera a 56449108 (1164) -> CHAMPION. OJO: la proxima submission desplazaria a 56449108; solo subir otra si 56504082 no es peor"
   }
 ]
