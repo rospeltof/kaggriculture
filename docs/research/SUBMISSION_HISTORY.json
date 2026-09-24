@@ -333,13 +333,18 @@
     },
     "reason": "CHAMPION_CANDIDATE: supera a las dos activas con ambos IC >0 en poblacion fresca. Pareja diversificada (fuente distinta a DECEM)",
     "leaderboard": {
-      "score": null,
-      "episodes": 0,
+      "score": 1324.8,
+      "episodes": 55,
       "rank": null,
-      "lecturas": []
+      "lecturas": [
+        [
+          55,
+          1324.8
+        ]
+      ]
     },
-    "observed": null,
-    "conclusion": "PENDIENTE",
+    "observed": "1324.8 @55 ep (~3.5 h activa): +160 sobre 107570947+g a igual edad; la mejora relativa del harness SI transfirio",
+    "conclusion": "Superada en nivel absoluto por los agentes publicos (0-20 vs cada uno en torneo_rr1). Desactivada al subir 56511611/56511619",
     "next_action": "Leer W/L a ~30 ep; comparar con decem. Si una de las dos flojea claramente en el ladder, sustituirla por decem_112007951 o decem_112034117"
   },
   {
@@ -376,6 +381,23 @@
     },
     "reason": "CHAMPION_CANDIDATE, pareja de seek; la evidencia de DECEM esta replicada en 4 cintas",
     "leaderboard": {
+      "score": 1285.9,
+      "episodes": 58,
+      "rank": null,
+      "lecturas": [
+        [
+          58,
+          1285.9
+        ]
+      ]
+    },
+    "observed": "1285.9 @58 ep: +120 sobre 107570947+g; seek > decem, como predijo confirm2 (+27.7 vs +22.7)",
+    "conclusion": "Idem; desactivada",
+    "next_action": "Idem. Si DECEM transfiere mejor que seek, las otras 3 DECEM confirmadas son el banquillo"
+  },
+  {
+    "local_harness_cadena": "torneo_rr1: bucle cerrado, motor oficial 1.32.7, cargado como Kaggle (ultimo callable), 10 seeds 910000-009 x 2 asientos, 9 agentes, 720 partidas, 0 errores",
+    "leaderboard": {
       "score": null,
       "episodes": 0,
       "rank": null,
@@ -383,6 +405,59 @@
     },
     "observed": null,
     "conclusion": "PENDIENTE",
-    "next_action": "Idem. Si DECEM transfiere mejor que seek, las otras 3 DECEM confirmadas son el banquillo"
+    "autorizacion": "usuario 2026-09-24 (AskUserQuestion): 'arshs3 + v13 (Recomendado)'",
+    "submission_id": 56511611,
+    "timestamp": "2026-09-24T04:28:30Z",
+    "git_commit": "9e724c3",
+    "experiment_id": "publico_v13_thomastschinkel",
+    "config": "main.py publico byte-exacto de thomastschinkel/the-metav4-farm-submission-v13 (Apache-2.0), sha256 9d63494603f88219857a3101d7dc19cc750ded04e5886732ee428580326967d9, entrada agent",
+    "local_harness": {
+      "torneo_rr1_pct_vs_resto": 41.2,
+      "vs": {
+        "v94": "20-0",
+        "arshs3": "0-20",
+        "ars40": "0-20",
+        "hsov": "0-20",
+        "h2965": "0-20",
+        "guru6": "6-14",
+        "seek": "20-0 (+14.4k)",
+        "decem": "20-0 (+15.6k)"
+      },
+      "nota": "semillas A>B por pareja en torneo_rr1.txt; cambio de asiento casi repite la partida: unidad efectiva = semilla"
+    },
+    "reason": "Salto de nivel absoluto (publicos 2500-2950 vs nosotros ~1300). Rama cinta+reflejos del autor con mejor registro de ladder documentado (v9/4 2944.7 @201). Diversifica frente a arshs3",
+    "next_action": "Leer W/L a ~30 ep y rating a ~60-100. Predice > 2500. Si queda claramente por debajo de arshs3, primer slot a sustituir"
+  },
+  {
+    "local_harness_cadena": "torneo_rr1: bucle cerrado, motor oficial 1.32.7, cargado como Kaggle (ultimo callable), 10 seeds 910000-009 x 2 asientos, 9 agentes, 720 partidas, 0 errores",
+    "leaderboard": {
+      "score": null,
+      "episodes": 0,
+      "rank": null,
+      "lecturas": []
+    },
+    "observed": null,
+    "conclusion": "PENDIENTE",
+    "autorizacion": "usuario 2026-09-24 (AskUserQuestion): 'arshs3 + v13 (Recomendado)'",
+    "submission_id": 56511619,
+    "timestamp": "2026-09-24T04:28:57Z",
+    "git_commit": "fd2ce6d",
+    "experiment_id": "publico_arshs3_arsgorynich",
+    "config": "main.py publico byte-exacto de arsgorynich/herd-safe-v3-experimental-risk-aware-feed (Apache-2.0), sha256 4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01, entrada herdsafe_forecast_agent",
+    "local_harness": {
+      "torneo_rr1_pct_vs_resto": 98.8,
+      "vs": {
+        "ars40": "18-2",
+        "v13": "20-0",
+        "v94": "20-0",
+        "h2965": "20-0",
+        "hsov": "20-0",
+        "guru6": "20-0",
+        "seek": "20-0 (+14.6k)",
+        "decem": "20-0 (+16.2k)"
+      }
+    },
+    "reason": "Campeon del torneo en bucle cerrado contra el pool publico",
+    "next_action": "Leer W/L a ~30 ep y rating a ~60-100. Prediccion: >= v13 si el bucle cerrado intra-familia transfiere; si no, dato para HARNESS_VS_LEADERBOARD"
   }
 ]
