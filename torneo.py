@@ -6,7 +6,8 @@ Uso:
   torneo.py --out results/torneo_X --seeds 10 --seed0 910000 --workers 11 \
             nombre=ruta.py nombre2=ruta2.py ... [--vs nombre]
 
---vs limita a las parejas que incluyen a ese agente; sin --vs, todos contra todos.
+--vs a,b limita a las parejas que incluyen a alguno de esos agentes (brazos): cada brazo
+contra todo el pool y los brazos entre si; sin --vs, todos contra todos.
 Escribe <out>.jsonl (una fila por episodio) y <out>.meta.json (sha256 de cada fichero).
 """
 import argparse, hashlib, itertools, json, multiprocessing as mp, statistics as st, sys, time
@@ -91,9 +92,10 @@ def main():
             sys.exit(f"no existe {p}")
     meta = dict(agentes={n: dict(ruta=p, sha256=hashlib.sha256(Path(p).read_bytes()).hexdigest()) for n, p in ag.items()},
                 seeds=list(range(args.seed0, args.seed0 + args.seeds)), vs=args.vs, inicio=time.strftime("%Y-%m-%d %H:%M:%S"))
-    parejas = [(a, b) for a, b in itertools.combinations(ag, 2) if args.vs in (None, a, b)]
-    if args.vs:
-        parejas = [(args.vs, b if a == args.vs else a) for a, b in parejas]
+    brazos = args.vs.split(",") if args.vs else None
+    parejas = [(a, b) for a, b in itertools.combinations(ag, 2) if brazos is None or a in brazos or b in brazos]
+    if brazos:
+        parejas = [(a, b) if a in brazos else (b, a) for a, b in parejas]
     jobs = [(a, ag[a], b, ag[b], s, seat) for a, b in parejas for s in meta["seeds"] for seat in (0, 1)]
     print(f"{len(ag)} agentes, {len(parejas)} parejas, {len(jobs)} episodios", flush=True)
     rows = []

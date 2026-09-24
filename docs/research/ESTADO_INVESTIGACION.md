@@ -33,6 +33,28 @@ máx 215 ms/turno). Evidencia: `docs/evidencia/torneo_publicos/torneo_rr1.*`.
 | seek+gcal | nuestra activa 56507746 | 8,8% | pierde 0-20 con CADA público, −$12..16k |
 | decem+gcal | nuestra activa 56507747 | 3,8% | idem |
 
+**Rondas 2 y 3** (`torneo_rr2`, `torneo_rr3`; seeds 920000-009 y 930000-009;
+560+560 partidas, 0 errores, máx 291 ms/turno; límite de Kaggle 1 s + reserva):
+
+| agente | rr2 % | rr3 % | directo vs arshs3 |
+|---|---|---|---|
+| arshs3 | 82,9 | 77,1 | — (**invicto: 22/22 cruces en las 3 rondas**) |
+| tds (tetsutani, demand-preserving, 22-sep) | 72,9 | 78,6 | 8-12 / 7-13 (margen −$10..−$14) |
+| hl59 (haodou092, Harvest Ledger V59) | — | 78,6 | 7-13 (≈ tds: 14 empates de 20) |
+| hybu (wzhengbiao) | — | 53,6 | 8-12 |
+| ars40 ≈ dmw (More Wheat) | 50,7 | — | 6-14 |
+| wz15, lp16, obr, ob3, hsov≈hs2700≈st25, bv48 | 26-44 | 5-44 | 1-19 .. 7-13 |
+
+Entre los públicos top los márgenes medios son de decenas de dólares sobre ~$115k:
+las partidas se deciden en el margen.
+
+**Activas desde 2026-09-24 04:28 UTC:** 56511611 (v13) y **56511619 (arshs3)**.
+v13 se mantiene a propósito como segunda familia: su rating frente al de arshs3
+mide si el bucle cerrado intra-público transfiere al ladder.
+
+**En curso:** `PREREG_VQ_2026-09-24.md` — arshs3 + compactación de cola de tds
+(`apilar_capa_vq.py`), 12 rivales × 10 seeds, `torneo_vq1`.
+
 Ficheros auditados estáticamente (sólo stdlib; `exec` de cadenas constantes sin
 imports peligrosos; `open` sólo tras una variable de entorno de desarrollo o
 `path=None`). Código en `results/publicos/` (gitignored; hashes en el meta).

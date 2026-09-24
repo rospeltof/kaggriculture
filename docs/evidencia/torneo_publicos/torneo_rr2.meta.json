@@ -1,0 +1,51 @@
+{
+  "agentes": {
+    "arshs3": {
+      "ruta": "results/publicos/arsgorynich_herd-safe-v3-experimental-risk-aware-feed/main.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    },
+    "ars40": {
+      "ruta": "results/publicos/arsgorynich_kaggriculture-v40-challenger/main.py",
+      "sha256": "d5a192fac67f00da31fe2bc7b747b8c33766bf1024780c53e49f2292a97db2de"
+    },
+    "hsov": {
+      "ruta": "results/publicos/haideptry_the-shepherds-ledger-herd-safe-sovereign/main.py",
+      "sha256": "5f2b51a2beaf5e08cb73e82f0e03e02e56de601563b28344e49b7058e371b247"
+    },
+    "hs2700": {
+      "ruta": "results/publicos/dmitriigluzdov_kaggriculture-herd-safe-sale-window-lb-2700/main.py",
+      "sha256": "4889137f1adf1f9266b2ad5a6ac6700c40e9be6dfe3654e39db375fb55b71341"
+    },
+    "dmw": {
+      "ruta": "results/publicos/dmitriigluzdov_kaggriculture-more-wheat-smarter-sales/main.py",
+      "sha256": "7ac1a2545ea285fa75b6a51b7ea0bbdb5f334f405f20e72b72f8188a1d898a35"
+    },
+    "st25": {
+      "ruta": "results/publicos/statma_kaggriculture-herd-safe-sale-window-race-ca25/main.py",
+      "sha256": "c4b72e64acede4053c4b41d797afb562ce2aeadf5d9d0cf58e18aed9baa33c9e"
+    },
+    "tds": {
+      "ruta": "results/publicos/tetsutani_demand-preserving-turn-sale-timing/main.py",
+      "sha256": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a"
+    },
+    "wz15": {
+      "ruta": "results/publicos/wzhengbiao_kaggriculture-v15stack-submit/main.py",
+      "sha256": "d6565929be5283a5decf00c986359542ee1c106d7819815f8c69ccab35e363dd"
+    }
+  },
+  "seeds": [
+    920000,
+    920001,
+    920002,
+    920003,
+    920004,
+    920005,
+    920006,
+    920007,
+    920008,
+    920009
+  ],
+  "vs": null,
+  "inicio": "2026-09-23 23:30:14",
+  "fin": "2026-09-23 23:36:18"
+}
