@@ -52,8 +52,22 @@ las partidas se deciden en el margen.
 v13 se mantiene a propósito como segunda familia: su rating frente al de arshs3
 mide si el bucle cerrado intra-público transfiere al ladder.
 
-**En curso:** `PREREG_VQ_2026-09-24.md` — arshs3 + compactación de cola de tds
-(`apilar_capa_vq.py`), 12 rivales × 10 seeds, `torneo_vq1`.
+**Experimentos de capas sobre arshs3 (2026-09-24):**
+- **VQ** (compactación de cola, tetsutani): contra el pool 0/120 celdas cambian
+  (+$20/partida, mínimo −$6) → inerte en W/L; en ESPEJO gana 17-3, 40-0 (20
+  semillas nuevas) y 95% (tercer bloque). `hsov2` (haideptry, 24-sep) ya es copia
+  de arshs3: las copias circulan. **REAL_WORLD_CANDIDATE: arshs3vq** (sha 9b463dfb,
+  `results/exp_publicos/arshs3_vq.py`, construido con `apilar_capa_vq.py` @e43ce1d).
+- **ADV** (adelanto de ventas, Ahmed EXP293): descubrimiento +10 [−10; +30],
+  confirmación −2,1 [−20; +16] → **REJECTED**. Intercambia partidas entre linajes.
+- Derrotas de arshs3: mediana $521 (p25 $257, p75 $1.147); sólo 7/95 < $100.
+  Micro-capas de final de partida no las voltean.
+
+**Plan de envíos (día UTC 2026-09-25; hoy queda 1 envío sin usar a propósito):**
+v13 y arshs3 juntan ~18 h de ladder = prueba de transferencia bucle cerrado →
+ladder (predicción: arshs3 ≫ v13; 20-0 local). Luego: (1) subir arshs3vq, (2)
+subir la segunda según esa lectura (v13 si transfiere mal; si no, tds o hl59,
+el otro linaje top). El envío nuevo siempre desplaza al activo MÁS ANTIGUO.
 
 Ficheros auditados estáticamente (sólo stdlib; `exec` de cadenas constantes sin
 imports peligrosos; `open` sólo tras una variable de entorno de desarrollo o

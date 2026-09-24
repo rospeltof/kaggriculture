@@ -1,0 +1,83 @@
+{
+  "agentes": {
+    "arshs3vq": {
+      "ruta": "results/exp_publicos/arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "arshs3advvq": {
+      "ruta": "results/exp_publicos/arshs3_adv_vq.py",
+      "sha256": "2abbca9ad20f23adebae3c1d1b5fdf2daead583a8daf47673e14441d949d8c2b"
+    },
+    "tds": {
+      "ruta": "results/publicos/tetsutani_demand-preserving-turn-sale-timing/main.py",
+      "sha256": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a"
+    },
+    "hl59": {
+      "ruta": "results/publicos/haodou092_kaggriculture-harvest-ledger/main.py",
+      "sha256": "37d284d4d4d9aff50ee2dce8a6cc2353ce3dddd6534bc7635d6e471310ca6689"
+    },
+    "hybu": {
+      "ruta": "results/publicos/wzhengbiao_kaggriculture-hybu-submit/main.py",
+      "sha256": "f6175fd1bc3850f74185e7a813bb5a87d54e7e15212c874133dafc6e1ce91d34"
+    },
+    "lp16": {
+      "ruta": "results/publicos/yasutakababa_kaggriculture-late-purchase-v16-submit/main.py",
+      "sha256": "0957bac0892defe4416cd8fcd774174e7177eef75b9ad4fff6ce184051bcdd75"
+    },
+    "ars40": {
+      "ruta": "results/publicos/arsgorynich_kaggriculture-v40-challenger/main.py",
+      "sha256": "d5a192fac67f00da31fe2bc7b747b8c33766bf1024780c53e49f2292a97db2de"
+    },
+    "hsov": {
+      "ruta": "results/publicos/haideptry_the-shepherds-ledger-herd-safe-sovereign/main.py",
+      "sha256": "5f2b51a2beaf5e08cb73e82f0e03e02e56de601563b28344e49b7058e371b247"
+    },
+    "v13": {
+      "ruta": "results/publicos/thomastschinkel_the-metav4-farm-submission-v13/main.py",
+      "sha256": "9d63494603f88219857a3101d7dc19cc750ded04e5886732ee428580326967d9"
+    },
+    "obr": {
+      "ruta": "results/publicos/arsgorynich_order-book-v3-response-improvement/main.py",
+      "sha256": "8045c8872406044cb0b6bf9f80e440f07c250e325618894f4a91141af6d3b6ad"
+    },
+    "h2965": {
+      "ruta": "results/publicos/haideptry_the-2965-master-hybrid-engine/main.py",
+      "sha256": "a58ee3a1e78dbbd0e5a27a37eb7d3ae16cc3064f5101d7b955608f23719e9dba"
+    },
+    "guru6": {
+      "ruta": "results/publicos/guruprasaathas111_kaggriculture-master-engine-v3/main.py",
+      "sha256": "ffbb800db22f6f0d390415b1bd7188c2df1ad41d5b7f6f33ca43d6513ba673fe"
+    },
+    "wz15": {
+      "ruta": "results/publicos/wzhengbiao_kaggriculture-v15stack-submit/main.py",
+      "sha256": "d6565929be5283a5decf00c986359542ee1c106d7819815f8c69ccab35e363dd"
+    },
+    "v94": {
+      "ruta": "results/publicos/thomastschinkel_the-2945-farm-96-vs-the-top-10-public-bots/main.py",
+      "sha256": "bfee70e9daaebeae0737a880f1df8f1c60d0783c59af620136cc0d28ef482bc7"
+    },
+    "arshs3": {
+      "ruta": "results/publicos/arsgorynich_herd-safe-v3-experimental-risk-aware-feed/main.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    },
+    "hsov2": {
+      "ruta": "results/publicos/haideptry_the-shepherds-ledger-herd-safe-sovereign_v2/main.py",
+      "sha256": "ae44d83baf39ae2cf203d3617d0e9d7846d4a8b379b00c3ebd3734f1cfb5fbf3"
+    }
+  },
+  "seeds": [
+    980000,
+    980001,
+    980002,
+    980003,
+    980004,
+    980005,
+    980006,
+    980007,
+    980008,
+    980009
+  ],
+  "vs": "arshs3vq,arshs3advvq",
+  "inicio": "2026-09-24 00:01:58",
+  "fin": "2026-09-24 00:07:41"
+}

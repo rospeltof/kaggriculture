@@ -1,6 +1,7 @@
 """Delta pareado entre dos brazos de un torneo (torneo.py --vs ref,cand).
 
-Uso: pareado_torneo.py <torneo.jsonl> <ref> <cand>
+Uso: pareado_torneo.py <torneo.jsonl> <ref> <cand> [rival_excluido,rival_excluido...]
+(los rivales excluidos se informan aparte y no entran en la estimacion)
 
 Unidad: celda (rival, semilla) con la puntuacion media de los dos asientos.
 Delta = cand - ref en puntos porcentuales. IC95 por semilla (t sobre la media de
@@ -12,8 +13,16 @@ from collections import defaultdict
 from scipy.stats import t as tdist
 
 
-def main(path, ref, cand):
+def main(path, ref, cand, excluir=""):
+    fuera = set(filter(None, excluir.split(",")))
     rows = [json.loads(l) for l in open(path)]
+    for x in sorted(fuera):
+        for brazo in (ref, cand):
+            sc = [r["score"] if r["a"] == brazo else 1 - r["score"] for r in rows
+                  if r["valid"] and {r["a"], r["b"]} == {brazo, x}]
+            if sc:
+                print(f"  (extra, no entra en la estimacion) {brazo} vs {x}: {100 * st.mean(sc):.1f}% ({len(sc)} ep)")
+    rows = [r for r in rows if r["a"] not in fuera and r["b"] not in fuera]
     bad = [r for r in rows if not r["valid"]]
     if bad:
         print(f"!! {len(bad)} episodios invalidos: se excluyen sus celdas")
@@ -57,4 +66,4 @@ def main(path, ref, cand):
 
 
 if __name__ == "__main__":
-    main(*sys.argv[1:4])
+    main(*sys.argv[1:5])

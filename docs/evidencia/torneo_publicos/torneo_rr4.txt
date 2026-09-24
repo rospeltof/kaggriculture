@@ -1,0 +1,30 @@
+7 agentes, 11 parejas, 220 episodios
+  50/220
+  100/220
+  150/220
+  200/220
+episodios validos 220/220; con error: 0
+
+         A          B  W-L-T de A   %A    margen medio A   semillas A>B
+    arshs3   arshs3vq    2- 18- 0   10.0         -54   0/10
+    arshs3    h2965v2   15-  5- 0   75.0        +271   7/10
+    arshs3       hl59    9- 11- 0   45.0         -75   4/10
+    arshs3      hsov2    3-  3-14   50.0          +0   0/10
+    arshs3         pr   19-  1- 0   95.0        +706   9/10
+    arshs3        tds    9- 11- 0   45.0         -75   4/10
+  arshs3vq    h2965v2   15-  5- 0   75.0        +297   7/10
+  arshs3vq       hl59    9- 11- 0   45.0         -50   4/10
+  arshs3vq      hsov2   18-  2- 0   90.0         +54   8/10
+  arshs3vq         pr   19-  1- 0   95.0        +756   9/10
+  arshs3vq        tds    9- 11- 0   45.0         -50   4/10
+
+Puntuacion media contra todos los demas:
+    arshs3vq  73.3%  (120 ep)
+         tds  55.0%  (40 ep)
+        hl59  55.0%  (40 ep)
+      arshs3  53.3%  (120 ep)
+       hsov2  30.0%  (40 ep)
+     h2965v2  25.0%  (40 ep)
+          pr   5.0%  (40 ep)
+
+ms max por turno (peor episodio): arshs3 261, arshs3vq 242, pr 196, h2965v2 227, hsov2 233, tds 175, hl59 239
