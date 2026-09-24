@@ -217,7 +217,7 @@
     },
     "reason": "CHAMPION_CANDIDATE por evidencia local fuerte en la poblacion que predice el ladder. Una variable vs 56447472 (tree_v1+guards): material de cintas",
     "leaderboard": {
-      "score": 1163.7,
+      "score": 1156.3,
       "episodes": 78,
       "lecturas": [
         [
@@ -235,13 +235,17 @@
         [
           78,
           1163.7
+        ],
+        [
+          90,
+          1156.3
         ]
       ],
       "rank": "3368/9792 (equipo)"
     },
     "delta_vs_champion_ladder": null,
     "observed": "15-9 (62%), $100.5k vs $88.1k. 24/24 con 4 manos y 3 cuadrantes. Derrotas ajustadas vs rivales de 93-138k. Banco identico en V y D: produccion fija, gana sii el rival produce menos",
-    "conclusion": "CHAMPION_CANDIDATE confirmandose; subida mas rapida registrada",
+    "conclusion": "CHAMPION hasta 2026-09-24 00:58 UTC; desactivada al subir 56507746/56507747. Congelada ~1156",
     "next_action": "Leer W/L (no rating) a ~30 ep. Prediccion: >= tree_v1+guards. Desactiva a 56444505 (guardia, 32 ep, ya leida)"
   },
   {
@@ -276,14 +280,105 @@
     },
     "reason": "REAL_WORLD_CANDIDATE (criterio 1): point estimate claramente interesante en una poblacion FRESCA y relevante (rivales del top-13 de esta semana), positiva contra las 6 fuentes; IC dos vias roza cero por 4 seeds. Desplaza a la mas debil de las dos activas (tree_v1+g)",
     "leaderboard": {
+      "score": 1096.8,
+      "episodes": 20,
+      "rank": null,
+      "lecturas": [
+        [
+          20,
+          1096.8
+        ]
+      ]
+    },
+    "delta_vs_champion_ladder": null,
+    "observed": "20 partidas: 12V 7D 1E (62%), 5-6 manos d1 y 3 cuadrantes en las 20; derrotas ajustadas. = tasa de 107570947+g a igual edad",
+    "conclusion": "Localmente empatada con 107570947 en confirm2 (+0.3 [-5.2;+5.9]); desactivada al subir la pareja seek/decem",
+    "next_action": "Leer W/L a ~30 ep y rating a ~60. Si supera a 56449108 (1164) -> CHAMPION. OJO: la proxima submission desplazaria a 56449108; solo subir otra si 56504082 no es peor"
+  },
+  {
+    "local_harness_cadena": "cal2 (93 cintas, 32 rivales, filtro) -> etapa2 (148 rivales r2, 2 seeds, 592 ep/brazo) -> confirm2 (76 rivales reservados, 6 seeds)",
+    "timestamp": "2026-09-24T00:58:00Z",
+    "submission_id": 56507746,
+    "git_commit": "2555828",
+    "experiment_id": "seek_112344897+gcal8",
+    "config": "cinta top11_seek_112344897 (seek inspiration, sub 56407833) + guard_cash reserve_auto=8 + guard_commitments",
+    "local_harness": {
+      "etapa2": "91.4%, +31.8 vs 110304538 (148 rivales r2)",
+      "confirm2_wr": 78.2,
+      "confirm2_delta_vs_110304538": 27.74,
+      "ci95_seed": [
+        9.4,
+        46.1
+      ],
+      "ci95_2way": [
+        9.7,
+        45.8
+      ],
+      "delta_vs_107570947": 27.41,
+      "ci95_2way_vs_107570947": [
+        12.6,
+        42.2
+      ],
+      "opponent_breakdown": {
+        "dsm": "+38.9",
+        "majkel": "+18.1",
+        "umg": "+33.3",
+        "vadim": "+19.6"
+      },
+      "nota": "max de 5 confirmadas: estimacion encogida ~+18..+20"
+    },
+    "reason": "CHAMPION_CANDIDATE: supera a las dos activas con ambos IC >0 en poblacion fresca. Pareja diversificada (fuente distinta a DECEM)",
+    "leaderboard": {
       "score": null,
       "episodes": 0,
       "rank": null,
       "lecturas": []
     },
-    "delta_vs_champion_ladder": null,
     "observed": null,
     "conclusion": "PENDIENTE",
-    "next_action": "Leer W/L a ~30 ep y rating a ~60. Si supera a 56449108 (1164) -> CHAMPION. OJO: la proxima submission desplazaria a 56449108; solo subir otra si 56504082 no es peor"
+    "next_action": "Leer W/L a ~30 ep; comparar con decem. Si una de las dos flojea claramente en el ladder, sustituirla por decem_112007951 o decem_112034117"
+  },
+  {
+    "local_harness_cadena": "cal2 (93 cintas, 32 rivales, filtro) -> etapa2 (148 rivales r2, 2 seeds, 592 ep/brazo) -> confirm2 (76 rivales reservados, 6 seeds)",
+    "timestamp": "2026-09-24T00:58:00Z",
+    "submission_id": 56507747,
+    "git_commit": "1385825",
+    "experiment_id": "decem_112000345+gcal5",
+    "config": "cinta top8_decem_112000345 (DECEM, sub 56446088) + guard_cash reserve_auto=5 + guard_commitments",
+    "local_harness": {
+      "etapa2": "87.8%, +28.2 vs 110304538",
+      "confirm2_wr": 73.1,
+      "confirm2_delta_vs_110304538": 22.7,
+      "ci95_seed": [
+        10.3,
+        35.1
+      ],
+      "ci95_2way": [
+        8.2,
+        37.2
+      ],
+      "delta_vs_107570947": 22.37,
+      "ci95_2way_vs_107570947": [
+        7.9,
+        36.9
+      ],
+      "opponent_breakdown": {
+        "dsm": "+32.6",
+        "majkel": "+13.9",
+        "umg": "+25.0",
+        "vadim": "+18.5"
+      },
+      "nota": "senal de fuente: 4 cintas DECEM confirmadas a +20..+23"
+    },
+    "reason": "CHAMPION_CANDIDATE, pareja de seek; la evidencia de DECEM esta replicada en 4 cintas",
+    "leaderboard": {
+      "score": null,
+      "episodes": 0,
+      "rank": null,
+      "lecturas": []
+    },
+    "observed": null,
+    "conclusion": "PENDIENTE",
+    "next_action": "Idem. Si DECEM transfiere mejor que seek, las otras 3 DECEM confirmadas son el banquillo"
   }
 ]
