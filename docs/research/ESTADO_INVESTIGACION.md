@@ -1,10 +1,53 @@
 # Estado de investigación — leer primero para continuar
 
-Actualizado: 2026-09-23 18:00 (America/Bogota). Deadline 2026-09-30. Rank ~4589/9776.
+Actualizado: 2026-09-23 20:45 (America/Bogota) = 2026-09-24 01:45 UTC. Deadline 2026-09-30 23:59 UTC.
 Loop autónomo autorizado por el usuario (mensaje del 2026-09-21): harness + ladder
 como evidencia complementaria, submissions como instrumento (5/día).
 
-## BEST_CURRENT_CHAMPION
+## ⚠️ PIVOTE 2026-09-24: el techo real está en los agentes PÚBLICOS
+
+**Leaderboard 2026-09-24 01:02 UTC (9.937 equipos):** #1 3057 · #10 2921 · #100 2715 ·
+#500 2499 · #1000 2308 · #2000 1807 · **nosotros ~1160 = puesto ~3.500**.
+280 equipos ≥ 2600, 1.635 ≥ 2000.
+
+**Causa:** existe un ecosistema de agentes públicos Apache-2.0 (Code tab) —
+cintas de ruta (yhay81) + router por tiendas + capas reactivas (Ahmed Berat Özer
+V25-V48, Thomas Tschinkel v9/4 y v13, familia Herd-Safe de Dmitrii Gluzdov /
+arsgorynich, haideptry...)— que puntúan 2500-2950 en el ladder. El de Thomas
+(v9/4, sub 56269928) documenta **2944,7 con 201 partidas**. Desde el 2026-09-02
+no volvimos a medirnos contra ellos: optimizamos dentro de una familia débil.
+
+**Torneo en bucle cerrado** (`torneo.py`, motor oficial 1.32.7, cargados como Kaggle
+= último callable, 10 semillas 910000-009 × 2 asientos, 720 partidas, 0 errores,
+máx 215 ms/turno). Evidencia: `docs/evidencia/torneo_publicos/torneo_rr1.*`.
+
+| agente | origen | % vs resto | nota |
+|---|---|---|---|
+| **arshs3** | arsgorynich, Herd-Safe v3 forecast4 | **98,8%** | gana a TODOS (ars40 18-2, resto 20-0) |
+| ars40 | arsgorynich, More Wheat v11 | 81,2% | |
+| hsov | haideptry, Shepherds Ledger herd-safe | 76,2% | |
+| h2965 | haideptry, 2965 Master Hybrid (V59) | 67,5% | |
+| guru6 | guruprasaathas111, Master Engine V6 | 47,5% | |
+| v13 | Thomas Tschinkel, Metav4 v13 | 41,2% | gana a v94 20-0 |
+| v94 | Thomas Tschinkel, 2945 Farm (ladder 2944,7) | 25,0% | pierde con toda la familia Herd-Safe |
+| seek+gcal | nuestra activa 56507746 | 8,8% | pierde 0-20 con CADA público, −$12..16k |
+| decem+gcal | nuestra activa 56507747 | 3,8% | idem |
+
+Ficheros auditados estáticamente (sólo stdlib; `exec` de cadenas constantes sin
+imports peligrosos; `open` sólo tras una variable de entorno de desarrollo o
+`path=None`). Código en `results/publicos/` (gitignored; hashes en el meta).
+
+**Decisión pendiente del usuario:** subir agentes públicos (código de terceros,
+Apache-2.0). Propuesta: arshs3 (campeón en bucle cerrado) + v13 (rama distinta,
+autor con el mejor registro de ladder documentado). Las cintas propias quedan
+superadas por ~+1.500 Elo esperados.
+
+**Limitaciones:** el torneo es intra-familia (forks emparentados); no mide contra
+los top-10 adaptativos (mtmr_s1, feel the agi, DeeperNet), que según Thomas
+abandonan la cinta en d12-18 y le ganaron 36-0 a v9/4. Ranking en ladder entre
+públicos: incierto (±100 de ruido por submission según Thomas).
+
+## BEST_CURRENT_CHAMPION (hasta el 2026-09-23; historia)
 
 **CHAMPION_CANDIDATE: `107570947 + guardias`** — 56449108, commit 6527d3a,
 **1.180 @24 ep, 15-9 (62%)**, 24/24 con 4 manos y 3 cuadrantes, derrotas ajustadas.

@@ -218,7 +218,7 @@
     "reason": "CHAMPION_CANDIDATE por evidencia local fuerte en la poblacion que predice el ladder. Una variable vs 56447472 (tree_v1+guards): material de cintas",
     "leaderboard": {
       "score": 1156.3,
-      "episodes": 78,
+      "episodes": 90,
       "lecturas": [
         [
           13,
@@ -280,13 +280,17 @@
     },
     "reason": "REAL_WORLD_CANDIDATE (criterio 1): point estimate claramente interesante en una poblacion FRESCA y relevante (rivales del top-13 de esta semana), positiva contra las 6 fuentes; IC dos vias roza cero por 4 seeds. Desplaza a la mas debil de las dos activas (tree_v1+g)",
     "leaderboard": {
-      "score": 1096.8,
+      "score": 1102.3,
       "episodes": 20,
       "rank": null,
       "lecturas": [
         [
           20,
           1096.8
+        ],
+        [
+          "final",
+          1102.3
         ]
       ]
     },

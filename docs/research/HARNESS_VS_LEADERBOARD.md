@@ -49,6 +49,11 @@ endurece; confirmar siempre contra la población más reciente disponible.
 sube a 1º. Successive halving en ≥2 etapas + confirmación en rivales y semillas
 disjuntos, siempre.
 
+**7. (2026-09-24) El harness de cintas nunca midió el nivel ABSOLUTO.** Cada
+"confirmación" comparaba variantes propias contra rivales-cinta pasivos. Los
+agentes públicos (2500-2950 en ladder) nos ganan 20-0 en bucle cerrado. Desde
+ahora: toda candidata se mide también en `torneo.py` contra el pool público.
+
 ## Regla operativa derivada
 
 - **Métrica primaria local: WR vs panel FUERTE** (80 rivales de Majkel/DSM,
