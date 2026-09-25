@@ -1,0 +1,65 @@
+{
+  "seeds": [
+    1068000,
+    1068001,
+    2111590720,
+    2042899352
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "expected_games": 48,
+  "runtime_hash_seed": "0",
+  "opponent": {
+    "path": "results/publicos_0548_20260925/haideptry_the-2965-master-hybrid-engine/main.py",
+    "sha256": "cda529cb6b359fc4a9ab124d4d7950d5912bd5de846dcec4be70ca83b7150b2d"
+  },
+  "agents": {
+    "base": {
+      "path": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "top3": {
+      "path": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "sales_sync_vq": {
+      "path": "results/atribucion_ventas_20260925/sales_sync_vq.py",
+      "sha256": "094a5face24b1375b70c8ca5c9827a4fe6bee21b8c12f3faf59e68184ef6f1e3",
+      "config": {
+        "parent": "vq",
+        "enabled": true
+      },
+      "behavior_reference": "base"
+    },
+    "sales_noop_vq": {
+      "path": "results/atribucion_ventas_20260925/sales_noop_vq.py",
+      "sha256": "b79cc5ac8b137874eef0beb1878e0473472a49b84ab05cdfa41299d5a68d6bca",
+      "config": {
+        "parent": "vq",
+        "enabled": false
+      },
+      "behavior_reference": "base"
+    },
+    "sales_sync_top3": {
+      "path": "results/atribucion_ventas_20260925/sales_sync_top3.py",
+      "sha256": "739f18d546b2f6767d1d2773637ee5ffc3430d61690e9e49482c38cd4e2ba221",
+      "config": {
+        "parent": "top3",
+        "enabled": true
+      },
+      "behavior_reference": "top3"
+    },
+    "sales_noop_top3": {
+      "path": "results/atribucion_ventas_20260925/sales_noop_top3.py",
+      "sha256": "a0afbc0c77737a11ba1ee86b38be565a8f560890bcf35afa238400d3d75aa9a8",
+      "config": {
+        "parent": "top3",
+        "enabled": false
+      },
+      "behavior_reference": "top3"
+    }
+  },
+  "purpose": "Registered source-snapshot integrity and reactive mechanics. Rewards do not select variants."
+}

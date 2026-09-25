@@ -1,0 +1,510 @@
+{
+  "passed": true,
+  "competitive_ready": true,
+  "games": 72,
+  "noop_exact_turns": 17256,
+  "max_turn_ms": 403.43783298158087,
+  "activated_cells": {
+    "sales_sync_vq": 6,
+    "sales_sync_top3": 2
+  },
+  "corrected_snapshot_turns": {
+    "sales_sync_vq": 242,
+    "sales_sync_top3": 110
+  },
+  "candidate_hashes": {
+    "sales_sync_vq": "094a5face24b1375b70c8ca5c9827a4fe6bee21b8c12f3faf59e68184ef6f1e3",
+    "sales_sync_top3": "739f18d546b2f6767d1d2773637ee5ffc3430d61690e9e49482c38cd4e2ba221"
+  },
+  "base_hash": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976",
+  "control_hash": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
+  "own_sale_item_turn_checks": 120792,
+  "summary": [
+    {
+      "arm": "sales_sync_vq",
+      "seed": 1068000,
+      "seat": 0,
+      "changed_own_turns": 0,
+      "snapshot_corrected_turns": 21,
+      "parent_snapshot_mismatches": 23,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -70.0,
+      "candidate_margin": -70.0
+    },
+    {
+      "arm": "sales_sync_vq",
+      "seed": 1068000,
+      "seat": 1,
+      "changed_own_turns": 0,
+      "snapshot_corrected_turns": 21,
+      "parent_snapshot_mismatches": 23,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -70.0,
+      "candidate_margin": -70.0
+    },
+    {
+      "arm": "sales_sync_top3",
+      "seed": 1068000,
+      "seat": 0,
+      "changed_own_turns": 5,
+      "snapshot_corrected_turns": 21,
+      "parent_snapshot_mismatches": 23,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": 560.0,
+      "candidate_margin": 459.0
+    },
+    {
+      "arm": "sales_sync_top3",
+      "seed": 1068000,
+      "seat": 1,
+      "changed_own_turns": 5,
+      "snapshot_corrected_turns": 21,
+      "parent_snapshot_mismatches": 23,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": 560.0,
+      "candidate_margin": 459.0
+    },
+    {
+      "arm": "sales_sync_vq",
+      "seed": 1068001,
+      "seat": 0,
+      "changed_own_turns": 0,
+      "snapshot_corrected_turns": 9,
+      "parent_snapshot_mismatches": 15,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -999.0,
+      "candidate_margin": -999.0
+    },
+    {
+      "arm": "sales_sync_vq",
+      "seed": 1068001,
+      "seat": 1,
+      "changed_own_turns": 0,
+      "snapshot_corrected_turns": 9,
+      "parent_snapshot_mismatches": 15,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -999.0,
+      "candidate_margin": -999.0
+    },
+    {
+      "arm": "sales_sync_top3",
+      "seed": 1068001,
+      "seat": 0,
+      "changed_own_turns": 0,
+      "snapshot_corrected_turns": 7,
+      "parent_snapshot_mismatches": 12,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -7.0,
+      "candidate_margin": -7.0
+    },
+    {
+      "arm": "sales_sync_top3",
+      "seed": 1068001,
+      "seat": 1,
+      "changed_own_turns": 0,
+      "snapshot_corrected_turns": 7,
+      "parent_snapshot_mismatches": 12,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -7.0,
+      "candidate_margin": -7.0
+    },
+    {
+      "arm": "sales_sync_vq",
+      "seed": 2111590720,
+      "seat": 0,
+      "changed_own_turns": 0,
+      "snapshot_corrected_turns": 21,
+      "parent_snapshot_mismatches": 27,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -1531.0,
+      "candidate_margin": -1531.0
+    },
+    {
+      "arm": "sales_sync_vq",
+      "seed": 2111590720,
+      "seat": 1,
+      "changed_own_turns": 0,
+      "snapshot_corrected_turns": 21,
+      "parent_snapshot_mismatches": 27,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -1569.0,
+      "candidate_margin": -1569.0
+    },
+    {
+      "arm": "sales_sync_top3",
+      "seed": 2111590720,
+      "seat": 0,
+      "changed_own_turns": 0,
+      "snapshot_corrected_turns": 19,
+      "parent_snapshot_mismatches": 24,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -708.0,
+      "candidate_margin": -708.0
+    },
+    {
+      "arm": "sales_sync_top3",
+      "seed": 2111590720,
+      "seat": 1,
+      "changed_own_turns": 0,
+      "snapshot_corrected_turns": 19,
+      "parent_snapshot_mismatches": 24,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -708.0,
+      "candidate_margin": -708.0
+    },
+    {
+      "arm": "sales_sync_vq",
+      "seed": 2042899352,
+      "seat": 0,
+      "changed_own_turns": 0,
+      "snapshot_corrected_turns": 9,
+      "parent_snapshot_mismatches": 13,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -990.0,
+      "candidate_margin": -990.0
+    },
+    {
+      "arm": "sales_sync_vq",
+      "seed": 2042899352,
+      "seat": 1,
+      "changed_own_turns": 0,
+      "snapshot_corrected_turns": 9,
+      "parent_snapshot_mismatches": 13,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -990.0,
+      "candidate_margin": -990.0
+    },
+    {
+      "arm": "sales_sync_top3",
+      "seed": 2042899352,
+      "seat": 0,
+      "changed_own_turns": 0,
+      "snapshot_corrected_turns": 8,
+      "parent_snapshot_mismatches": 12,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": 616.0,
+      "candidate_margin": 616.0
+    },
+    {
+      "arm": "sales_sync_top3",
+      "seed": 2042899352,
+      "seat": 1,
+      "changed_own_turns": 0,
+      "snapshot_corrected_turns": 8,
+      "parent_snapshot_mismatches": 12,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": 616.0,
+      "candidate_margin": 616.0
+    },
+    {
+      "arm": "sales_sync_vq",
+      "seed": 1068000,
+      "seat": 0,
+      "changed_own_turns": 4,
+      "snapshot_corrected_turns": 23,
+      "parent_snapshot_mismatches": 28,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -221.0,
+      "candidate_margin": -340.0
+    },
+    {
+      "arm": "sales_sync_vq",
+      "seed": 1068000,
+      "seat": 1,
+      "changed_own_turns": 4,
+      "snapshot_corrected_turns": 23,
+      "parent_snapshot_mismatches": 28,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -221.0,
+      "candidate_margin": -340.0
+    },
+    {
+      "arm": "sales_sync_vq",
+      "seed": 1068001,
+      "seat": 0,
+      "changed_own_turns": 2,
+      "snapshot_corrected_turns": 10,
+      "parent_snapshot_mismatches": 18,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -2187.0,
+      "candidate_margin": -2287.0
+    },
+    {
+      "arm": "sales_sync_vq",
+      "seed": 1068001,
+      "seat": 1,
+      "changed_own_turns": 2,
+      "snapshot_corrected_turns": 10,
+      "parent_snapshot_mismatches": 18,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -2187.0,
+      "candidate_margin": -2287.0
+    },
+    {
+      "arm": "sales_sync_vq",
+      "seed": 2111590720,
+      "seat": 0,
+      "changed_own_turns": 4,
+      "snapshot_corrected_turns": 19,
+      "parent_snapshot_mismatches": 25,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -1478.0,
+      "candidate_margin": -1586.0
+    },
+    {
+      "arm": "sales_sync_vq",
+      "seed": 2111590720,
+      "seat": 1,
+      "changed_own_turns": 4,
+      "snapshot_corrected_turns": 19,
+      "parent_snapshot_mismatches": 25,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -1478.0,
+      "candidate_margin": -1586.0
+    },
+    {
+      "arm": "sales_sync_vq",
+      "seed": 2042899352,
+      "seat": 0,
+      "changed_own_turns": 0,
+      "snapshot_corrected_turns": 9,
+      "parent_snapshot_mismatches": 13,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -384.0,
+      "candidate_margin": -384.0
+    },
+    {
+      "arm": "sales_sync_vq",
+      "seed": 2042899352,
+      "seat": 1,
+      "changed_own_turns": 0,
+      "snapshot_corrected_turns": 9,
+      "parent_snapshot_mismatches": 13,
+      "candidate_snapshot_mismatches": 0,
+      "same_shops": true,
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -384.0,
+      "candidate_margin": -384.0
+    }
+  ],
+  "note": "Final own sale quantity exactly matches accepted sales. This does not resolve invisible sales at price floor or demonstrate WLT improvement.",
+  "development_blocks": [
+    "sale_attribution_smoke",
+    "sale_attribution_coverage"
+  ],
+  "initial_coverage_failure_preserved": "sale_attribution_validation.initial_failure.json"
+}

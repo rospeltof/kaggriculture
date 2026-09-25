@@ -1,0 +1,43 @@
+{
+  "seeds": [
+    1068000,
+    1068001,
+    2111590720,
+    2042899352
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "expected_games": 24,
+  "runtime_hash_seed": "0",
+  "opponent": {
+    "path": "submission/main_publico_arshs3_vq_top3.py",
+    "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+  },
+  "agents": {
+    "base": {
+      "path": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "sales_sync_vq": {
+      "path": "results/atribucion_ventas_20260925/sales_sync_vq.py",
+      "sha256": "094a5face24b1375b70c8ca5c9827a4fe6bee21b8c12f3faf59e68184ef6f1e3",
+      "config": {
+        "parent": "vq",
+        "enabled": true
+      },
+      "behavior_reference": "base"
+    },
+    "sales_noop_vq": {
+      "path": "results/atribucion_ventas_20260925/sales_noop_vq.py",
+      "sha256": "b79cc5ac8b137874eef0beb1878e0473472a49b84ab05cdfa41299d5a68d6bca",
+      "config": {
+        "parent": "vq",
+        "enabled": false
+      },
+      "behavior_reference": "base"
+    }
+  },
+  "purpose": "Prospective second-rival coverage after original VQ emitted-action coverage failure. Fixed 24 games, no WLT selection."
+}

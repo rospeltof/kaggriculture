@@ -25,6 +25,8 @@ SOURCES = (
     "docs/research/CIERRE_TRIGO19_2026-09-25.md",
     "docs/research/FEEDBACK_0914_2026-09-25.md",
     "docs/research/PREREG_LOOP27_ATRIBUCION_2026-09-25.md",
+    "docs/research/ADENDA_LOOP27_COBERTURA_2026-09-25.md",
+    "docs/research/ATRIBUCION_VENTAS_2026-09-25.md",
     "docs/research/REPARACION_HASH_RUNTIME_2026-09-25.md",
     "docs/research/SCORECARDS_LOOP_2026-09-25.md",
     "docs/research/PREREG_LOOP26_SEMILLAS_2026-09-25.md",

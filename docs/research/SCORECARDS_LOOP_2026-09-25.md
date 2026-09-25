@@ -2,7 +2,7 @@
 
 Estado09:28UTC: confirm19_fixedhash0 completa3.200/noop832. Ambas delta0,
 no seleccionadas; seis acciones propias distintas por brazo, tres semillas.
-Pilot20corriendo;21–26en cola;27desarrollo48en curso;17detenido. Objetivo activo.
+Pilot20corriendo;21–27en cola;27validado72juegos;17detenido. Objetivo activo.
 Originalconfirm19inválida queda archivada, no se combina con la repetición.
 
 
@@ -891,3 +891,14 @@ ICdos vías indefinido; no prueba de efecto universal0. Ambas cambian6/704
 acciones propias en tres semillas contra guru6, ya ganadas. Márgenes suben
 769–3501enboth y853–2458enfront, sin W/L/T nuevos. INCONCLUSIVE_NOT_SELECTED.
 Ver CIERRE_TRIGO19; no enviar ni rescatar original inválida. Pilot20ya iniciado.
+
+## Actualización 09:36 UTC —27aprobado para piloto
+
+72desarrollos, noop17.256turnos y120.792cantidades propias exactas, max404ms.
+Primero falló coberturaVQ(0/8contraV7); adenda previa+24contra mirrorTop3activa
+6/8celdas, tres mundos. Top3activa2/8en original. Noop/campo/cosecha/tiendas/
+pérdidas preservados, cero escapes/productos terminales.64eventos falsos de
+padres→0en candidatas; persisten omisiones por mínimo. Márgenes de desarrollo
+peores donde cambia acción; W/L/Tiguales. No adoptar por arreglo de medición.
+Runner27en espera tras26, piloto960, gates intactos.93variantes más2prototipos.
+Ver ATRIBUCION_VENTAS y adenda; usar verificar_cobertura_atribucion_ventas.py.

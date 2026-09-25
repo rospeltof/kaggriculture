@@ -4,6 +4,13 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, desarrollo27] Inferencia más fiel no asegura estrategia mejor.**
+  Sincronizar el snapshot elimina64eventos falsos de padres en los desarrollos
+  auditados; las candidatas tienen0.72juegos/noop17.256,120.792cantidades propias
+  exactas, pero márgenes empeoran en celdas activas y no cambiaW/L/T. Persiste
+  invisibilidad al mínimo. Ampliación de cobertura registrada antes de24juegos
+  adicionales; no selección por dinero. Piloto pendiente, ver ATRIBUCION_VENTAS.
+
 - **[2026-09-25, atribución de ventas] Una instantánea intermedia puede
   contaminar el reconocimiento del rival.** Seis controles reales exactos,
   65cantidades propias distintas de ventas aceptadas en20.821pares elegibles;

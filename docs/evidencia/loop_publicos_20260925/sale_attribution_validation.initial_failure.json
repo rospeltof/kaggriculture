@@ -1,0 +1,6 @@
+{
+  "created_at": "2026-09-25T09:31:43.394842+00:00",
+  "games": 48,
+  "reason": "Per-candidate emitted-action coverage missing for sales_sync_vq: 0/8 cells; top3 2/8. Mechanical quantity checks and both noops passed before coverage assertion. No pilot started.",
+  "validator_sha256": "30afcf48c9208e50539bf337096fe4b5b5d65c391e7be297a0c60e37d110b08d"
+}

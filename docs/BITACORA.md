@@ -1,5 +1,17 @@
 # Bitácora de experimentos
 
+
+## Actualización 09:36 UTC —27aprobado para piloto
+
+72desarrollos, noop17.256turnos y120.792cantidades propias exactas, max404ms.
+Primero falló coberturaVQ(0/8contraV7); adenda previa+24contra mirrorTop3activa
+6/8celdas, tres mundos. Top3activa2/8en original. Noop/campo/cosecha/tiendas/
+pérdidas preservados, cero escapes/productos terminales.64eventos falsos de
+padres→0en candidatas; persisten omisiones por mínimo. Márgenes de desarrollo
+peores donde cambia acción; W/L/Tiguales. No adoptar por arreglo de medición.
+Runner27en espera tras26, piloto960, gates intactos.93variantes más2prototipos.
+Ver ATRIBUCION_VENTAS y adenda; usar verificar_cobertura_atribucion_ventas.py.
+
 ## 2026-09-25,09:28UTC — Confirm19neutral,20activo y fallo de atribución
 
 Confirm19_fixedhash0válida3.200/noop832,termina09:22:12UTC. Ambasdelta0,

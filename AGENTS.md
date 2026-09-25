@@ -14,6 +14,18 @@
 
 ## Loop continuo vigente
 
+
+## Actualización 09:36 UTC —27aprobado para piloto
+
+72desarrollos, noop17.256turnos y120.792cantidades propias exactas, max404ms.
+Primero falló coberturaVQ(0/8contraV7); adenda previa+24contra mirrorTop3activa
+6/8celdas, tres mundos. Top3activa2/8en original. Noop/campo/cosecha/tiendas/
+pérdidas preservados, cero escapes/productos terminales.64eventos falsos de
+padres→0en candidatas; persisten omisiones por mínimo. Márgenes de desarrollo
+peores donde cambia acción; W/L/Tiguales. No adoptar por arreglo de medición.
+Runner27en espera tras26, piloto960, gates intactos.93variantes más2prototipos.
+Ver ATRIBUCION_VENTAS y adenda; usar verificar_cobertura_atribucion_ventas.py.
+
 Actualización09:28UTC: confirm19_fixedhash0cerrada/noop832, ambasdelta0,
 seis trayectorias propias distintas en tres semillas, todas ya ganadas; no
 selección.20corriendo y21–26en cola. No repetir.27en desarrollo: sincronizar
@@ -36,7 +48,8 @@ y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_reventa_town.py`, `continuar_loop_senales_extra.py` y
 `continuar_loop_harvest68.py`, `continuar_loop_suministro_ovino.py` y
 `continuar_loop_adelanto_trigo.py`, `continuar_loop_panel_cercano.py` y
-`continuar_loop_semillas_tardias.py` encadenan bloques
+`continuar_loop_semillas_tardias.py` y
+`continuar_loop_atribucion_ventas.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
 terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
 (una de64 partidas cambia, +1,5625pp). Confirm5 tomate−21,591pp: REJECTED.
