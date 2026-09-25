@@ -1,0 +1,204 @@
+{
+  "results": {
+    "night_wheat1": {
+      "reference": "base",
+      "candidate": "night_wheat1",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "tds"
+      ],
+      "seeds": [
+        1028000,
+        1028001,
+        1028002,
+        1028003,
+        1028004,
+        1028005,
+        1028006,
+        1028007,
+        1028008,
+        1028009,
+        1028010,
+        1028011,
+        1028012,
+        1028013,
+        1028014,
+        1028015
+      ],
+      "base_wr": 87.5,
+      "candidate_wr": 92.1875,
+      "delta_points": 4.6875,
+      "ci95_seed": [
+        -2.558171286920536,
+        11.933171286920537
+      ],
+      "ci95_2way": [
+        -6.969166408317198,
+        16.3441664083172
+      ],
+      "opponent_breakdown": {
+        "ars40": 0.0,
+        "arshs3": 12.5,
+        "hybu": 0.0,
+        "tds": 6.25
+      },
+      "better_cells": 3,
+      "worse_cells": 0,
+      "equal_cells": 61,
+      "status": "PROMISING"
+    },
+    "night_wheat2": {
+      "reference": "base",
+      "candidate": "night_wheat2",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "tds"
+      ],
+      "seeds": [
+        1028000,
+        1028001,
+        1028002,
+        1028003,
+        1028004,
+        1028005,
+        1028006,
+        1028007,
+        1028008,
+        1028009,
+        1028010,
+        1028011,
+        1028012,
+        1028013,
+        1028014,
+        1028015
+      ],
+      "base_wr": 87.5,
+      "candidate_wr": 90.625,
+      "delta_points": 3.125,
+      "ci95_seed": [
+        -3.5357798298742997,
+        9.7857798298743
+      ],
+      "ci95_2way": [
+        -5.996762629669037,
+        12.246762629669037
+      ],
+      "opponent_breakdown": {
+        "ars40": 0.0,
+        "arshs3": 6.25,
+        "hybu": 0.0,
+        "tds": 6.25
+      },
+      "better_cells": 2,
+      "worse_cells": 0,
+      "equal_cells": 62,
+      "status": "PROMISING"
+    },
+    "night_inputs1": {
+      "reference": "base",
+      "candidate": "night_inputs1",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "tds"
+      ],
+      "seeds": [
+        1028000,
+        1028001,
+        1028002,
+        1028003,
+        1028004,
+        1028005,
+        1028006,
+        1028007,
+        1028008,
+        1028009,
+        1028010,
+        1028011,
+        1028012,
+        1028013,
+        1028014,
+        1028015
+      ],
+      "base_wr": 87.5,
+      "candidate_wr": 92.1875,
+      "delta_points": 4.6875,
+      "ci95_seed": [
+        -2.558171286920536,
+        11.933171286920537
+      ],
+      "ci95_2way": [
+        -6.969166408317198,
+        16.3441664083172
+      ],
+      "opponent_breakdown": {
+        "ars40": 0.0,
+        "arshs3": 12.5,
+        "hybu": 0.0,
+        "tds": 6.25
+      },
+      "better_cells": 3,
+      "worse_cells": 0,
+      "equal_cells": 61,
+      "status": "PROMISING"
+    },
+    "night_inputs2": {
+      "reference": "base",
+      "candidate": "night_inputs2",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "tds"
+      ],
+      "seeds": [
+        1028000,
+        1028001,
+        1028002,
+        1028003,
+        1028004,
+        1028005,
+        1028006,
+        1028007,
+        1028008,
+        1028009,
+        1028010,
+        1028011,
+        1028012,
+        1028013,
+        1028014,
+        1028015
+      ],
+      "base_wr": 87.5,
+      "candidate_wr": 92.1875,
+      "delta_points": 4.6875,
+      "ci95_seed": [
+        -2.558171286920536,
+        11.933171286920537
+      ],
+      "ci95_2way": [
+        -6.969166408317198,
+        16.3441664083172
+      ],
+      "opponent_breakdown": {
+        "ars40": 0.0,
+        "arshs3": 12.5,
+        "hybu": 0.0,
+        "tds": 6.25
+      },
+      "better_cells": 3,
+      "worse_cells": 0,
+      "equal_cells": 61,
+      "status": "PROMISING"
+    }
+  },
+  "selected_for_confirmation": [
+    "night_inputs1",
+    "night_inputs2"
+  ]
+}

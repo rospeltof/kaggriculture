@@ -8,11 +8,12 @@ import tarfile
 OUT = Path('docs/evidencia/loop_publicos_20260925')
 
 
-def main():
-    plan = json.loads((OUT/'feed_smoke.plan.json').read_text())
-    rows = json.loads((OUT/'feed_smoke.json').read_text())
-    manifest = json.loads((OUT/'feed_variants.json').read_text())
-    with tarfile.open(OUT/'feed_smoke.sources.tgz', 'r:gz') as tar:
+def main(tag='feed_smoke', manifest_file='feed_variants.json',
+         output_file='feed_validation.json', expected_games=36, noop_name='feed_noop'):
+    plan = json.loads((OUT/(tag+'.plan.json')).read_text())
+    rows = json.loads((OUT/(tag+'.json')).read_text())
+    manifest = json.loads((OUT/manifest_file).read_text())
+    with tarfile.open(OUT/(tag+'.sources.tgz'), 'r:gz') as tar:
         for name, spec in plan['agents'].items():
             assert hashlib.sha256(tar.extractfile(name+'.py').read()).hexdigest() == spec['sha256']
             assert hashlib.sha256(Path(spec['path']).read_bytes()).hexdigest() == spec['sha256']
@@ -20,15 +21,15 @@ def main():
                 assert manifest[name]['sha256'] == spec['sha256']
     keyed = {(r['arm'], r['seed'], r['seat']): r for r in rows}
     expected = {(a, s, p) for a in plan['agents'] for s in plan['seeds'] for p in plan['seats']}
-    assert len(rows) == len(keyed) == 36 and set(keyed) == expected
+    assert len(rows) == len(keyed) == expected_games and set(keyed) == expected
     summary = []
     for seed in plan['seeds']:
         for seat in plan['seats']:
-            base = keyed['base', seed, seat]; noop = keyed['feed_noop', seed, seat]
+            base = keyed['base', seed, seat]; noop = keyed[noop_name, seed, seat]
             assert (base['action_hash'], base['rewards']) == (noop['action_hash'], noop['rewards'])
             for arm in manifest:
                 row = keyed[arm, seed, seat]
-                events = [json.loads(l) for l in gzip.decompress((OUT/f'feed_smoke.{seed}.{arm}.{seat}.units.jsonl.gz').read_bytes()).decode().splitlines()]
+                events = [json.loads(l) for l in gzip.decompress((OUT/f'{tag}.{seed}.{arm}.{seat}.units.jsonl.gz').read_bytes()).decode().splitlines()]
                 fed = [e for e in events if e['action'] == ['FEED'] and e['successful']]
                 assert all(e['inventory_delta'].get('WHEAT') == -1 for e in fed)
                 assert len(fed) == sum(q for k, q in row['successful'].items() if k.startswith('FEED:'))
@@ -42,14 +43,16 @@ def main():
                                     harvested_base=base['harvested'], harvested_candidate=row['harvested'],
                                     same_shops=row['shops'] == base['shops'], escapes=row['escapes'],
                                     losses_base=base['losses'], losses_candidate=row['losses']))
-    report = dict(passed=True, development_games=36, noop_exact_turns=6*719,
-                  source_archive='feed_smoke.sources.tgz', candidate_hashes={n: r['sha256'] for n, r in manifest.items()},
+    report = dict(passed=True, development_games=expected_games,
+                  noop_exact_turns=len(plan['seeds'])*len(plan['seats'])*719,
+                  source_archive=tag+'.sources.tgz', candidate_hashes={n: r['sha256'] for n, r in manifest.items()},
                   max_turn_ms=max(r['max_turn_ms'] for r in rows),
                   note='Actual FEED consumes one WHEAT; these development games validate implementation, not competitive benefit.',
                   summary=summary)
     assert report['max_turn_ms'] < 1000
-    (OUT/'feed_validation.json').write_text(json.dumps(report, indent=2)+'\n')
+    (OUT/output_file).write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(report, indent=2))
+    return report
 
 
 if __name__ == '__main__':

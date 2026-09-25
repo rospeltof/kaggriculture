@@ -2,6 +2,27 @@
 
 ## Lectura nueva — 2026-09-25 UTC
 
+Estado operativo actual del loop: comparar contra políticas públicas reactivas
+en motor oficial, con mismas semillas/ambos asientos, noop y confirmación
+disjunta. Los paneles de cintas descritos al final son históricos; no sustituyen
+esta prueba. Los rivales emparentados limitan la diversidad efectiva del panel.
+
+Top3sobreVQ confirmó+10,795pp local (ICdos vías[−0,115;21,706]) y se envió
+56537205. VQ56535264se conserva; el original56511619ya fue desplazado. Snapshot
+05:47UTC:top32093,6/69episodios listados yVQ2285,8/83, ambasCOMPLETE; incluyen
+validación. No es comparación causal ni rankings sincronizados por edad/rivales.
+Los conteos y lecturas fechadas están en SUBMISSION_HISTORY. La ventaja local
+todavía no demuestra superioridad real; no redefinir el gate según estos ratings.
+
+En loop11, nuevos streams cambiaron18/256acciones sin cambiar W/L/T; datos más
+recientes no equivalen a mejora. En loop12, tomate inicial−80,469pp y paquete
+MarketShock−64,063pp muestran regresión pese a las narrativas públicas. No
+adoptar por nombre/rating anunciado ni atribuir el daño a una sola capa sin
+ablarlo. Las fuentes nuevas se congelan y comparan como rivales/variantes nuevos,
+sin reemplazar fuentes en bloques ya iniciados.
+
+Lo siguiente documenta la lectura anterior y el historial de calibración.
+
 Arshs3 **2292,5 @148 episodios**, v13 **1857,9 @136**, tras aproximadamente 20 h
 activos. Ambos superan las cintas propias (seek 1324,8, decem 1285,9); el orden
 arshs3 > v13 coincide con el torneo cerrado (20-0 directo). Evidencia API:
@@ -75,7 +96,7 @@ disjuntos, siempre.
 agentes públicos (2500-2950 en ladder) nos ganan 20-0 en bucle cerrado. Desde
 ahora: toda candidata se mide también en `torneo.py` contra el pool público.
 
-## Regla operativa derivada
+## Regla histórica del panel de cintas (sustituida por el loop reactivo)
 
 - **Métrica primaria local: WR vs panel FUERTE** (80 rivales de Majkel/DSM,
   `fuerte_*`). El panel `lad_` de 40 se conserva como control de no-regresión

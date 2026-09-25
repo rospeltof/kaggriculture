@@ -1,0 +1,20 @@
+[
+  {
+    "path": "results/publicos_0548_20260925/haideptry_the-2965-master-hybrid-engine/main.py",
+    "sha256": "cda529cb6b359fc4a9ab124d4d7950d5912bd5de846dcec4be70ca83b7150b2d",
+    "last_callable": "v7_hr_agent",
+    "official_callable": "v7_hr_agent",
+    "nominal_callable": "kaggle_submission_agent",
+    "identical_objects": false,
+    "nominal_wrapper": "def kaggle_submission_agent(observation, configuration=None):\n    return v7_hr_agent(observation, configuration)"
+  },
+  {
+    "path": "results/publicos_0548_20260925/haideptry_the-shepherds-ledger-herd-safe-sovereign/main.py",
+    "sha256": "8378f73c82db7624ce5d0369cf896aa0761a662af147b119f67254f1f8634c56",
+    "last_callable": "hs4_ig_agent",
+    "official_callable": "hs4_ig_agent",
+    "nominal_callable": "kaggle_submission_agent",
+    "identical_objects": false,
+    "nominal_wrapper": "def kaggle_submission_agent(observation, configuration=None):\n    return hs4_ig_agent(observation, configuration)"
+  }
+]

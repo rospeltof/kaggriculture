@@ -1,0 +1,31 @@
+{
+  "seeds": [
+    1039000,
+    1004000,
+    1272457736
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "opponent": "submission/main_publico_arshs3_arsgorynich.py",
+  "purpose": "Feed mechanics with a reactive rival; no development reward selection.",
+  "agents": {
+    "base": {
+      "path": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "cap_first": {
+      "path": "results/bonus_limitado_20260925/cap_first.py",
+      "sha256": "869afe2b3cc9bf6faed8257a42fb9fbd2edafb9ef73f99707ea33d61ef7c2385"
+    },
+    "cap_full": {
+      "path": "results/bonus_limitado_20260925/cap_full.py",
+      "sha256": "aa00b032225e952ea48270c620f85cbc18ef37fe0b4e984a574675d8449fb1ea"
+    },
+    "cap_noop": {
+      "path": "results/bonus_limitado_20260925/cap_noop.py",
+      "sha256": "07f2194c9d21f863c1c8f9a9b85d2e288035974a9d2c27e86fffe17138d6f2df"
+    }
+  }
+}

@@ -16,18 +16,19 @@ from sonda_fallo_forecast import run
 TAG = 'feed_smoke'
 
 
-def main():
-    manifest = json.loads((AGENTS/'manifest.json').read_text())
+def main(manifest_path=None, tag=TAG, seeds=(1030000, 1004000, 1272457736),
+         noop_name='feed_noop', extra_reports=()):
+    manifest = json.loads(Path(manifest_path or AGENTS/'manifest.json').read_text())
     arms = {'base': str(BASE), **{n: r['path'] for n, r in manifest.items()}}
-    plan = dict(seeds=[1030000, 1004000, 1272457736], seats=[0, 1],
+    plan = dict(seeds=list(seeds), seats=[0, 1],
                 opponent='submission/main_publico_arshs3_arsgorynich.py',
                 purpose='Feed mechanics with a reactive rival; no development reward selection.',
                 agents={n: dict(path=p, sha256=hashlib.sha256(Path(p).read_bytes()).hexdigest()) for n, p in arms.items()})
-    dest = OUT/(TAG+'.plan.json')
+    dest = OUT/(tag+'.plan.json')
     if dest.exists():
         raise FileExistsError(dest)
     dest.write_text(json.dumps(plan, indent=2)+'\n')
-    with tarfile.open(OUT/(TAG+'.sources.tgz'), 'x:gz') as tar:
+    with tarfile.open(OUT/(tag+'.sources.tgz'), 'x:gz') as tar:
         for name, path in arms.items():
             tar.add(path, arcname=name+'.py')
         tar.add(plan['opponent'], arcname='opponent.py')
@@ -99,9 +100,9 @@ def main():
                 key = seed, seat
                 if name == 'base':
                     baseline[key] = actions, rewards
-                if name == 'feed_noop':
+                if name == noop_name:
                     assert (actions, rewards) == baseline[key]
-                reports = {k: deepcopy(ns.get(k, {})) for k in ('_R85_REPORT', '_V92_P_REPORT', '_VQ_REPORT')}
+                reports = {k: deepcopy(ns.get(k, {})) for k in ('_R85_REPORT', '_V92_P_REPORT', '_VQ_REPORT')+tuple(extra_reports)}
                 assert not any(v for report in reports.values() for k, v in report.items() if 'error' in k and isinstance(v, (int, float)))
                 escapes = []
                 for step in range(719):
@@ -130,9 +131,9 @@ def main():
                            changed_action_turns=sum(a[seat] != b[seat] for a, b in zip(actions, baseline[key][0])))
                 results.append(row)
                 for kind, data in (('ledger', ledger), ('units', events)):
-                    (OUT/f'{TAG}.{seed}.{name}.{seat}.{kind}.jsonl.gz').write_bytes(gzip.compress(('\n'.join(json.dumps(e) for e in data)+'\n').encode(), mtime=0))
+                    (OUT/f'{tag}.{seed}.{name}.{seat}.{kind}.jsonl.gz').write_bytes(gzip.compress(('\n'.join(json.dumps(e) for e in data)+'\n').encode(), mtime=0))
                 print(json.dumps({k: row[k] for k in ('seed','arm','seat','rewards','max_turn_ms','changed_action_turns','successful','harvested','escapes')}), flush=True)
-    (OUT/(TAG+'.json')).write_text(json.dumps(results, indent=2)+'\n')
+    (OUT/(tag+'.json')).write_text(json.dumps(results, indent=2)+'\n')
 
 
 if __name__ == '__main__':

@@ -6,8 +6,11 @@ El loop autónomo, incluidas submissions experimentales justificadas, está
 autorizado. Leer `research/ESTADO_INVESTIGACION.md` y la cola actual en
 `research/IDEAS_VIVAS_2026-09-25.md`. Las restricciones y propuestas de abajo
 son históricas. Confirm10 terminó inerte y biblioteca11sin mejora W/L/T;
-piloto12 corre y loops13–16están en cola. La siguiente hipótesis de alimento
-marginal evita pagar bonus de cuidado que no cabe en la primera producción.
+piloto12 terminó sin seleccionadas. Confirm13 corre con dos variantes que
+dieron+4,6875pp en piloto;14–16 y18 están en cola. Loop17
+se detuvo por confundir stock actual con stock nocturno: una cosecha intermedia
+libera capacidad y hace valiosa la alimentación omitida. No repetir ese modelo.
+Loop18 compara dos fuentes públicas nuevas con entradas verificadas.
 No duplicar los bloques congelados ni repetir experimentos ya registrados.
 
 ## Ronda vigente — 2026-09-14

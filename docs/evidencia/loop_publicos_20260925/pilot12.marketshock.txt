@@ -1,0 +1,20 @@
+  (extra, no entra en la estimacion) base vs noop: 50.0% (16 ep)
+  (extra, no entra en la estimacion) marketshock vs noop: 6.2% (16 ep)
+  (extra, no entra en la estimacion) base vs open_cycle: 50.0% (16 ep)
+  (extra, no entra en la estimacion) marketshock vs open_cycle: 6.2% (16 ep)
+  (extra, no entra en la estimacion) base vs open_original: 93.8% (16 ep)
+  (extra, no entra en la estimacion) marketshock vs open_original: 6.2% (16 ep)
+  (extra, no entra en la estimacion) base vs open_tomato: 100.0% (16 ep)
+  (extra, no entra en la estimacion) marketshock vs open_tomato: 93.8% (16 ep)
+marketshock - base: 8 rivales x 8 semillas = 64 celdas; ref 82.8%
+  delta -64.06 pts | IC95 semilla [-106.03; -22.10] | dos vias [-104.44; -23.69]
+  celdas cambiadas 50/64: 4 a favor, 46 en contra
+    vs    ars40  -56.2
+    vs    guru6  -93.8
+    vs    h2965  -50.0
+    vs     hsov  -50.0
+    vs     hybu  -62.5
+    vs      obr  -50.0
+    vs      tds  -75.0
+    vs      v13  -75.0
+  directo marketshock vs base: 6.2% (16 ep)

@@ -1,0 +1,14 @@
+{
+  "cap_first": {
+    "path": "results/bonus_limitado_20260925/cap_first.py",
+    "sha256": "869afe2b3cc9bf6faed8257a42fb9fbd2edafb9ef73f99707ea33d61ef7c2385",
+    "mode": "first",
+    "layer_sha256": "7265c32f0362962060781245c330bcac27b25ad7d669e89f4d03d05dba912399"
+  },
+  "cap_full": {
+    "path": "results/bonus_limitado_20260925/cap_full.py",
+    "sha256": "aa00b032225e952ea48270c620f85cbc18ef37fe0b4e984a574675d8449fb1ea",
+    "mode": "full",
+    "layer_sha256": "7265c32f0362962060781245c330bcac27b25ad7d669e89f4d03d05dba912399"
+  }
+}

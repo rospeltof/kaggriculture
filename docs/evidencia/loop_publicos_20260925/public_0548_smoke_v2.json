@@ -1,0 +1,3654 @@
+[
+  {
+    "seed": 1042000,
+    "arm": "base",
+    "mode": "official",
+    "seat": 0,
+    "rewards": [
+      94202.0,
+      94202.0
+    ],
+    "entry_name": "loop_research_agent",
+    "telemetry": {},
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        122,
+        -4402
+      ],
+      "SELL:WHEAT": [
+        386,
+        14842
+      ],
+      "BUY_SEED:WHEAT": [
+        164,
+        -1640
+      ],
+      "HIRE:None": [
+        267,
+        -4253.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        338,
+        15550
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        139,
+        29662
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        92,
+        -2989
+      ],
+      "SELL:MILK": [
+        244,
+        23556
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        92,
+        4916
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        13964
+      ],
+      "BUY_SEED:CARROT": [
+        31,
+        -620
+      ],
+      "SELL:CARROT": [
+        97,
+        2609
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 1,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 77.77183299185708,
+    "action_hash": "50357fdc91bdf33f714a83ede6e288835741adc56b430af5f3a856c7f16224cd",
+    "changed_action_turns": 0
+  },
+  {
+    "seed": 1042000,
+    "arm": "base",
+    "mode": "official",
+    "seat": 1,
+    "rewards": [
+      94202.0,
+      94202.0
+    ],
+    "entry_name": "loop_research_agent",
+    "telemetry": {},
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        122,
+        -4402
+      ],
+      "SELL:WHEAT": [
+        386,
+        14842
+      ],
+      "BUY_SEED:WHEAT": [
+        164,
+        -1640
+      ],
+      "HIRE:None": [
+        267,
+        -4253.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        338,
+        15550
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        139,
+        29662
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        92,
+        -2989
+      ],
+      "SELL:MILK": [
+        244,
+        23556
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        92,
+        4916
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        13964
+      ],
+      "BUY_SEED:CARROT": [
+        31,
+        -620
+      ],
+      "SELL:CARROT": [
+        97,
+        2609
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 1,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 59.35829199734144,
+    "action_hash": "50357fdc91bdf33f714a83ede6e288835741adc56b430af5f3a856c7f16224cd",
+    "changed_action_turns": 0
+  },
+  {
+    "seed": 1042000,
+    "arm": "noop",
+    "mode": "official",
+    "seat": 0,
+    "rewards": [
+      94202.0,
+      94202.0
+    ],
+    "entry_name": "loop_research_agent",
+    "telemetry": {},
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        122,
+        -4402
+      ],
+      "SELL:WHEAT": [
+        386,
+        14842
+      ],
+      "BUY_SEED:WHEAT": [
+        164,
+        -1640
+      ],
+      "HIRE:None": [
+        267,
+        -4253.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        338,
+        15550
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        139,
+        29662
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        92,
+        -2989
+      ],
+      "SELL:MILK": [
+        244,
+        23556
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        92,
+        4916
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        13964
+      ],
+      "BUY_SEED:CARROT": [
+        31,
+        -620
+      ],
+      "SELL:CARROT": [
+        97,
+        2609
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 1,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 166.4134590246249,
+    "action_hash": "50357fdc91bdf33f714a83ede6e288835741adc56b430af5f3a856c7f16224cd",
+    "changed_action_turns": 0
+  },
+  {
+    "seed": 1042000,
+    "arm": "noop",
+    "mode": "official",
+    "seat": 1,
+    "rewards": [
+      94202.0,
+      94202.0
+    ],
+    "entry_name": "loop_research_agent",
+    "telemetry": {},
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        122,
+        -4402
+      ],
+      "SELL:WHEAT": [
+        386,
+        14842
+      ],
+      "BUY_SEED:WHEAT": [
+        164,
+        -1640
+      ],
+      "HIRE:None": [
+        267,
+        -4253.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        338,
+        15550
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        139,
+        29662
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        92,
+        -2989
+      ],
+      "SELL:MILK": [
+        244,
+        23556
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        92,
+        4916
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        13964
+      ],
+      "BUY_SEED:CARROT": [
+        31,
+        -620
+      ],
+      "SELL:CARROT": [
+        97,
+        2609
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 1,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 71.44383300328627,
+    "action_hash": "50357fdc91bdf33f714a83ede6e288835741adc56b430af5f3a856c7f16224cd",
+    "changed_action_turns": 0
+  },
+  {
+    "seed": 1042000,
+    "arm": "public_v7",
+    "mode": "official",
+    "seat": 0,
+    "rewards": [
+      93917.0,
+      93250.0
+    ],
+    "entry_name": "v7_hr_agent",
+    "telemetry": {},
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        137,
+        -4874
+      ],
+      "SELL:WHEAT": [
+        398,
+        15223
+      ],
+      "BUY_SEED:WHEAT": [
+        164,
+        -1640
+      ],
+      "HIRE:None": [
+        267,
+        -4253.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        338,
+        15523
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        139,
+        29616
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        92,
+        -2989
+      ],
+      "SELL:MILK": [
+        247,
+        23537
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        93,
+        4967
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        13813
+      ],
+      "BUY_SEED:CARROT": [
+        31,
+        -620
+      ],
+      "SELL:CARROT": [
+        97,
+        2607
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 1,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 218.3165000169538,
+    "action_hash": "71d6ffa78a81f40c546e41fda784f819d2ce13ff0da02cf775c6ce325322ffc2",
+    "changed_action_turns": 133
+  },
+  {
+    "seed": 1042000,
+    "arm": "public_v7",
+    "mode": "official",
+    "seat": 1,
+    "rewards": [
+      93250.0,
+      93917.0
+    ],
+    "entry_name": "v7_hr_agent",
+    "telemetry": {},
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        137,
+        -4874
+      ],
+      "SELL:WHEAT": [
+        398,
+        15223
+      ],
+      "BUY_SEED:WHEAT": [
+        164,
+        -1640
+      ],
+      "HIRE:None": [
+        267,
+        -4253.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        338,
+        15523
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        139,
+        29616
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        92,
+        -2989
+      ],
+      "SELL:MILK": [
+        247,
+        23537
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        93,
+        4967
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        13813
+      ],
+      "BUY_SEED:CARROT": [
+        31,
+        -620
+      ],
+      "SELL:CARROT": [
+        97,
+        2607
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 1,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 37.04029199434444,
+    "action_hash": "be72be00176c1adc2b35828fb9c83edf4f208b376b9be0813f0bfe7f9455401d",
+    "changed_action_turns": 133
+  },
+  {
+    "seed": 1042000,
+    "arm": "public_v7",
+    "mode": "nominal",
+    "seat": 0,
+    "rewards": [
+      93917.0,
+      93250.0
+    ],
+    "entry_name": "kaggle_submission_agent",
+    "telemetry": {
+      "_V7_SM_REPORT": {
+        "sm_shields": 1,
+        "sm_units": 3,
+        "sm_errors": 0
+      },
+      "_V7_MPX_REPORT": {
+        "mpx_fires": 38,
+        "mpx_units": 104,
+        "mpx_errors": 0
+      },
+      "_V7_CXD_REPORT": {
+        "cxd_turns": 10,
+        "cxd_gain": 130.0,
+        "cxd_evals": 3865,
+        "cxd_budget_hits": 2,
+        "cxd_errors": 0
+      },
+      "_V7_E402_REPORT": {
+        "cut_units": 0,
+        "saved_cost": 0,
+        "changed_turns": 0,
+        "errors": 0
+      },
+      "_V7_MG_REPORT": {
+        "mg_turns": 9,
+        "mg_merged": 9,
+        "mg_errors": 0
+      },
+      "_V7_IG_REPORT": {
+        "queue_changed_turns": 1,
+        "zeroed_orders": 1,
+        "pulled_orders": 0,
+        "pulled_slots": 0,
+        "errors": 0
+      },
+      "_V7_HR_REPORT": {
+        "changed": 1,
+        "extra_units": 1,
+        "errors": 0
+      }
+    },
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        137,
+        -4874
+      ],
+      "SELL:WHEAT": [
+        398,
+        15223
+      ],
+      "BUY_SEED:WHEAT": [
+        164,
+        -1640
+      ],
+      "HIRE:None": [
+        267,
+        -4253.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        338,
+        15523
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        139,
+        29616
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        92,
+        -2989
+      ],
+      "SELL:MILK": [
+        247,
+        23537
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        93,
+        4967
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        13813
+      ],
+      "BUY_SEED:CARROT": [
+        31,
+        -620
+      ],
+      "SELL:CARROT": [
+        97,
+        2607
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 1,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 256.5359160071239,
+    "action_hash": "71d6ffa78a81f40c546e41fda784f819d2ce13ff0da02cf775c6ce325322ffc2",
+    "changed_action_turns": 133
+  },
+  {
+    "seed": 1042000,
+    "arm": "public_v7",
+    "mode": "nominal",
+    "seat": 1,
+    "rewards": [
+      93250.0,
+      93917.0
+    ],
+    "entry_name": "kaggle_submission_agent",
+    "telemetry": {
+      "_V7_SM_REPORT": {
+        "sm_shields": 1,
+        "sm_units": 3,
+        "sm_errors": 0
+      },
+      "_V7_MPX_REPORT": {
+        "mpx_fires": 38,
+        "mpx_units": 104,
+        "mpx_errors": 0
+      },
+      "_V7_CXD_REPORT": {
+        "cxd_turns": 10,
+        "cxd_gain": 130.0,
+        "cxd_evals": 3865,
+        "cxd_budget_hits": 2,
+        "cxd_errors": 0
+      },
+      "_V7_E402_REPORT": {
+        "cut_units": 0,
+        "saved_cost": 0,
+        "changed_turns": 0,
+        "errors": 0
+      },
+      "_V7_MG_REPORT": {
+        "mg_turns": 9,
+        "mg_merged": 9,
+        "mg_errors": 0
+      },
+      "_V7_IG_REPORT": {
+        "queue_changed_turns": 1,
+        "zeroed_orders": 1,
+        "pulled_orders": 0,
+        "pulled_slots": 0,
+        "errors": 0
+      },
+      "_V7_HR_REPORT": {
+        "changed": 1,
+        "extra_units": 1,
+        "errors": 0
+      }
+    },
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        137,
+        -4874
+      ],
+      "SELL:WHEAT": [
+        398,
+        15223
+      ],
+      "BUY_SEED:WHEAT": [
+        164,
+        -1640
+      ],
+      "HIRE:None": [
+        267,
+        -4253.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        338,
+        15523
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        139,
+        29616
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        92,
+        -2989
+      ],
+      "SELL:MILK": [
+        247,
+        23537
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        93,
+        4967
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        13813
+      ],
+      "BUY_SEED:CARROT": [
+        31,
+        -620
+      ],
+      "SELL:CARROT": [
+        97,
+        2607
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 1,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 38.46629199688323,
+    "action_hash": "be72be00176c1adc2b35828fb9c83edf4f208b376b9be0813f0bfe7f9455401d",
+    "changed_action_turns": 133
+  },
+  {
+    "seed": 1042000,
+    "arm": "public_hs4",
+    "mode": "official",
+    "seat": 0,
+    "rewards": [
+      94017.0,
+      94294.0
+    ],
+    "entry_name": "hs4_ig_agent",
+    "telemetry": {},
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        122,
+        -4402
+      ],
+      "SELL:WHEAT": [
+        386,
+        14838
+      ],
+      "BUY_SEED:WHEAT": [
+        164,
+        -1640
+      ],
+      "HIRE:None": [
+        267,
+        -4253.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        338,
+        15545
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        139,
+        29644
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        92,
+        -2997
+      ],
+      "SELL:MILK": [
+        244,
+        23831
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        92,
+        4914
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        13541
+      ],
+      "BUY_SEED:CARROT": [
+        31,
+        -620
+      ],
+      "SELL:CARROT": [
+        97,
+        2609
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 1,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 239.16550001013093,
+    "action_hash": "a66b211ac9c4fdbf23562927bf4f96e8ff970642783ada573de8e7b92e2f04a0",
+    "changed_action_turns": 77
+  },
+  {
+    "seed": 1042000,
+    "arm": "public_hs4",
+    "mode": "official",
+    "seat": 1,
+    "rewards": [
+      94294.0,
+      94017.0
+    ],
+    "entry_name": "hs4_ig_agent",
+    "telemetry": {},
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        122,
+        -4402
+      ],
+      "SELL:WHEAT": [
+        386,
+        14838
+      ],
+      "BUY_SEED:WHEAT": [
+        164,
+        -1640
+      ],
+      "HIRE:None": [
+        267,
+        -4253.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        338,
+        15545
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        139,
+        29644
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        92,
+        -2997
+      ],
+      "SELL:MILK": [
+        244,
+        23831
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        92,
+        4914
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        13541
+      ],
+      "BUY_SEED:CARROT": [
+        31,
+        -620
+      ],
+      "SELL:CARROT": [
+        97,
+        2609
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 1,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 41.680082998936996,
+    "action_hash": "390311a0dc3812d4ac4cc14445b2af3cc02afe4dbf6e2e6600694535c6cd44fe",
+    "changed_action_turns": 77
+  },
+  {
+    "seed": 1042000,
+    "arm": "public_hs4",
+    "mode": "nominal",
+    "seat": 0,
+    "rewards": [
+      94017.0,
+      94294.0
+    ],
+    "entry_name": "kaggle_submission_agent",
+    "telemetry": {
+      "_HS4_SM_REPORT": {
+        "sm_shields": 0,
+        "sm_units": 0,
+        "sm_errors": 0
+      },
+      "_HS4_E402_REPORT": {
+        "cut_units": 0,
+        "saved_cost": 0,
+        "changed_turns": 0,
+        "errors": 0
+      },
+      "_HS4_T4_REPORT": {
+        "preempt_turns": 4,
+        "preempt_units": 26,
+        "credits_applied": 26,
+        "lead2_turns": 0,
+        "errors": 0
+      },
+      "_HS4_IG_REPORT": {
+        "queue_changed_turns": 12,
+        "zeroed_orders": 12,
+        "pulled_orders": 0,
+        "pulled_slots": 0,
+        "errors": 0
+      }
+    },
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        122,
+        -4402
+      ],
+      "SELL:WHEAT": [
+        386,
+        14838
+      ],
+      "BUY_SEED:WHEAT": [
+        164,
+        -1640
+      ],
+      "HIRE:None": [
+        267,
+        -4253.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        338,
+        15545
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        139,
+        29644
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        92,
+        -2997
+      ],
+      "SELL:MILK": [
+        244,
+        23831
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        92,
+        4914
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        13541
+      ],
+      "BUY_SEED:CARROT": [
+        31,
+        -620
+      ],
+      "SELL:CARROT": [
+        97,
+        2609
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 1,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 249.8890409769956,
+    "action_hash": "a66b211ac9c4fdbf23562927bf4f96e8ff970642783ada573de8e7b92e2f04a0",
+    "changed_action_turns": 77
+  },
+  {
+    "seed": 1042000,
+    "arm": "public_hs4",
+    "mode": "nominal",
+    "seat": 1,
+    "rewards": [
+      94294.0,
+      94017.0
+    ],
+    "entry_name": "kaggle_submission_agent",
+    "telemetry": {
+      "_HS4_SM_REPORT": {
+        "sm_shields": 0,
+        "sm_units": 0,
+        "sm_errors": 0
+      },
+      "_HS4_E402_REPORT": {
+        "cut_units": 0,
+        "saved_cost": 0,
+        "changed_turns": 0,
+        "errors": 0
+      },
+      "_HS4_T4_REPORT": {
+        "preempt_turns": 4,
+        "preempt_units": 26,
+        "credits_applied": 26,
+        "lead2_turns": 0,
+        "errors": 0
+      },
+      "_HS4_IG_REPORT": {
+        "queue_changed_turns": 12,
+        "zeroed_orders": 12,
+        "pulled_orders": 0,
+        "pulled_slots": 0,
+        "errors": 0
+      }
+    },
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        122,
+        -4402
+      ],
+      "SELL:WHEAT": [
+        386,
+        14838
+      ],
+      "BUY_SEED:WHEAT": [
+        164,
+        -1640
+      ],
+      "HIRE:None": [
+        267,
+        -4253.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        338,
+        15545
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        139,
+        29644
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        92,
+        -2997
+      ],
+      "SELL:MILK": [
+        244,
+        23831
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        92,
+        4914
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        13541
+      ],
+      "BUY_SEED:CARROT": [
+        31,
+        -620
+      ],
+      "SELL:CARROT": [
+        97,
+        2609
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 1,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 253.3042090071831,
+    "action_hash": "390311a0dc3812d4ac4cc14445b2af3cc02afe4dbf6e2e6600694535c6cd44fe",
+    "changed_action_turns": 77
+  },
+  {
+    "seed": 1042001,
+    "arm": "base",
+    "mode": "official",
+    "seat": 0,
+    "rewards": [
+      138262.0,
+      138262.0
+    ],
+    "entry_name": "loop_research_agent",
+    "telemetry": {},
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        122,
+        -4116
+      ],
+      "SELL:WHEAT": [
+        336,
+        10158
+      ],
+      "BUY_SEED:WHEAT": [
+        159,
+        -1590
+      ],
+      "HIRE:None": [
+        265,
+        -4075.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        337,
+        15134
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        123,
+        13268
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        79,
+        -2564
+      ],
+      "SELL:MILK": [
+        266,
+        59050
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        91,
+        4518
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        43331
+      ],
+      "BUY_SEED:CARROT": [
+        40,
+        -800
+      ],
+      "SELL:CARROT": [
+        114,
+        2941
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 5,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 328.2759159919806,
+    "action_hash": "874f7582f934241a53b3e023f9e5821c2bbf4c16e36a022123140f7b005a94fa",
+    "changed_action_turns": 0
+  },
+  {
+    "seed": 1042001,
+    "arm": "base",
+    "mode": "official",
+    "seat": 1,
+    "rewards": [
+      138262.0,
+      138262.0
+    ],
+    "entry_name": "loop_research_agent",
+    "telemetry": {},
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        122,
+        -4116
+      ],
+      "SELL:WHEAT": [
+        336,
+        10158
+      ],
+      "BUY_SEED:WHEAT": [
+        159,
+        -1590
+      ],
+      "HIRE:None": [
+        265,
+        -4075.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        337,
+        15134
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        123,
+        13268
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        79,
+        -2564
+      ],
+      "SELL:MILK": [
+        266,
+        59050
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        91,
+        4518
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        43331
+      ],
+      "BUY_SEED:CARROT": [
+        40,
+        -800
+      ],
+      "SELL:CARROT": [
+        114,
+        2941
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 5,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 77.16241700109094,
+    "action_hash": "874f7582f934241a53b3e023f9e5821c2bbf4c16e36a022123140f7b005a94fa",
+    "changed_action_turns": 0
+  },
+  {
+    "seed": 1042001,
+    "arm": "noop",
+    "mode": "official",
+    "seat": 0,
+    "rewards": [
+      138262.0,
+      138262.0
+    ],
+    "entry_name": "loop_research_agent",
+    "telemetry": {},
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        122,
+        -4116
+      ],
+      "SELL:WHEAT": [
+        336,
+        10158
+      ],
+      "BUY_SEED:WHEAT": [
+        159,
+        -1590
+      ],
+      "HIRE:None": [
+        265,
+        -4075.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        337,
+        15134
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        123,
+        13268
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        79,
+        -2564
+      ],
+      "SELL:MILK": [
+        266,
+        59050
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        91,
+        4518
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        43331
+      ],
+      "BUY_SEED:CARROT": [
+        40,
+        -800
+      ],
+      "SELL:CARROT": [
+        114,
+        2941
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 5,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 380.84570900537074,
+    "action_hash": "874f7582f934241a53b3e023f9e5821c2bbf4c16e36a022123140f7b005a94fa",
+    "changed_action_turns": 0
+  },
+  {
+    "seed": 1042001,
+    "arm": "noop",
+    "mode": "official",
+    "seat": 1,
+    "rewards": [
+      138262.0,
+      138262.0
+    ],
+    "entry_name": "loop_research_agent",
+    "telemetry": {},
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        122,
+        -4116
+      ],
+      "SELL:WHEAT": [
+        336,
+        10158
+      ],
+      "BUY_SEED:WHEAT": [
+        159,
+        -1590
+      ],
+      "HIRE:None": [
+        265,
+        -4075.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        337,
+        15134
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        123,
+        13268
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        79,
+        -2564
+      ],
+      "SELL:MILK": [
+        266,
+        59050
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        91,
+        4518
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        43331
+      ],
+      "BUY_SEED:CARROT": [
+        40,
+        -800
+      ],
+      "SELL:CARROT": [
+        114,
+        2941
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 5,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 64.36983298044652,
+    "action_hash": "874f7582f934241a53b3e023f9e5821c2bbf4c16e36a022123140f7b005a94fa",
+    "changed_action_turns": 0
+  },
+  {
+    "seed": 1042001,
+    "arm": "public_v7",
+    "mode": "official",
+    "seat": 0,
+    "rewards": [
+      137997.0,
+      138483.0
+    ],
+    "entry_name": "v7_hr_agent",
+    "telemetry": {},
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        141,
+        -4710
+      ],
+      "SELL:WHEAT": [
+        357,
+        10766
+      ],
+      "BUY_SEED:WHEAT": [
+        160,
+        -1600
+      ],
+      "HIRE:None": [
+        265,
+        -4075.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        337,
+        15126
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        124,
+        13072
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        79,
+        -2565
+      ],
+      "SELL:MILK": [
+        266,
+        59037
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        91,
+        4519
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        43318
+      ],
+      "BUY_SEED:CARROT": [
+        39,
+        -780
+      ],
+      "SELL:CARROT": [
+        111,
+        2882
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 5,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 373.91854100860655,
+    "action_hash": "e156bfe6e1897aa7f6bc3529c2f840a56a44bf17bbb01e38e1693f2a56d6a039",
+    "changed_action_turns": 122
+  },
+  {
+    "seed": 1042001,
+    "arm": "public_v7",
+    "mode": "official",
+    "seat": 1,
+    "rewards": [
+      138483.0,
+      137997.0
+    ],
+    "entry_name": "v7_hr_agent",
+    "telemetry": {},
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        141,
+        -4710
+      ],
+      "SELL:WHEAT": [
+        357,
+        10766
+      ],
+      "BUY_SEED:WHEAT": [
+        160,
+        -1600
+      ],
+      "HIRE:None": [
+        265,
+        -4075.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        337,
+        15126
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        124,
+        13072
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        79,
+        -2565
+      ],
+      "SELL:MILK": [
+        266,
+        59037
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        91,
+        4519
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        43318
+      ],
+      "BUY_SEED:CARROT": [
+        39,
+        -780
+      ],
+      "SELL:CARROT": [
+        111,
+        2882
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 5,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 38.446374994236976,
+    "action_hash": "5c6fc1d95008f61da46cffe69340478641fb75b1ad9f9cd64300355661083f93",
+    "changed_action_turns": 122
+  },
+  {
+    "seed": 1042001,
+    "arm": "public_v7",
+    "mode": "nominal",
+    "seat": 0,
+    "rewards": [
+      137997.0,
+      138483.0
+    ],
+    "entry_name": "kaggle_submission_agent",
+    "telemetry": {
+      "_V7_SM_REPORT": {
+        "sm_shields": 1,
+        "sm_units": 7,
+        "sm_errors": 0
+      },
+      "_V7_MPX_REPORT": {
+        "mpx_fires": 24,
+        "mpx_units": 61,
+        "mpx_errors": 0
+      },
+      "_V7_CXD_REPORT": {
+        "cxd_turns": 5,
+        "cxd_gain": 61.0,
+        "cxd_evals": 2759,
+        "cxd_budget_hits": 0,
+        "cxd_errors": 0
+      },
+      "_V7_E402_REPORT": {
+        "cut_units": 0,
+        "saved_cost": 0,
+        "changed_turns": 0,
+        "errors": 0
+      },
+      "_V7_MG_REPORT": {
+        "mg_turns": 9,
+        "mg_merged": 9,
+        "mg_errors": 0
+      },
+      "_V7_IG_REPORT": {
+        "queue_changed_turns": 0,
+        "zeroed_orders": 0,
+        "pulled_orders": 0,
+        "pulled_slots": 0,
+        "errors": 0
+      },
+      "_V7_HR_REPORT": {
+        "changed": 1,
+        "extra_units": 1,
+        "errors": 0
+      }
+    },
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        141,
+        -4710
+      ],
+      "SELL:WHEAT": [
+        357,
+        10766
+      ],
+      "BUY_SEED:WHEAT": [
+        160,
+        -1600
+      ],
+      "HIRE:None": [
+        265,
+        -4075.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        337,
+        15126
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        124,
+        13072
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        79,
+        -2565
+      ],
+      "SELL:MILK": [
+        266,
+        59037
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        91,
+        4519
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        43318
+      ],
+      "BUY_SEED:CARROT": [
+        39,
+        -780
+      ],
+      "SELL:CARROT": [
+        111,
+        2882
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 5,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 430.9932499891147,
+    "action_hash": "e156bfe6e1897aa7f6bc3529c2f840a56a44bf17bbb01e38e1693f2a56d6a039",
+    "changed_action_turns": 122
+  },
+  {
+    "seed": 1042001,
+    "arm": "public_v7",
+    "mode": "nominal",
+    "seat": 1,
+    "rewards": [
+      138483.0,
+      137997.0
+    ],
+    "entry_name": "kaggle_submission_agent",
+    "telemetry": {
+      "_V7_SM_REPORT": {
+        "sm_shields": 1,
+        "sm_units": 7,
+        "sm_errors": 0
+      },
+      "_V7_MPX_REPORT": {
+        "mpx_fires": 24,
+        "mpx_units": 61,
+        "mpx_errors": 0
+      },
+      "_V7_CXD_REPORT": {
+        "cxd_turns": 5,
+        "cxd_gain": 61.0,
+        "cxd_evals": 2759,
+        "cxd_budget_hits": 0,
+        "cxd_errors": 0
+      },
+      "_V7_E402_REPORT": {
+        "cut_units": 0,
+        "saved_cost": 0,
+        "changed_turns": 0,
+        "errors": 0
+      },
+      "_V7_MG_REPORT": {
+        "mg_turns": 9,
+        "mg_merged": 9,
+        "mg_errors": 0
+      },
+      "_V7_IG_REPORT": {
+        "queue_changed_turns": 0,
+        "zeroed_orders": 0,
+        "pulled_orders": 0,
+        "pulled_slots": 0,
+        "errors": 0
+      },
+      "_V7_HR_REPORT": {
+        "changed": 1,
+        "extra_units": 1,
+        "errors": 0
+      }
+    },
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        141,
+        -4710
+      ],
+      "SELL:WHEAT": [
+        357,
+        10766
+      ],
+      "BUY_SEED:WHEAT": [
+        160,
+        -1600
+      ],
+      "HIRE:None": [
+        265,
+        -4075.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        337,
+        15126
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        124,
+        13072
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        79,
+        -2565
+      ],
+      "SELL:MILK": [
+        266,
+        59037
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        91,
+        4519
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        43318
+      ],
+      "BUY_SEED:CARROT": [
+        39,
+        -780
+      ],
+      "SELL:CARROT": [
+        111,
+        2882
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 5,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 41.44691699184477,
+    "action_hash": "5c6fc1d95008f61da46cffe69340478641fb75b1ad9f9cd64300355661083f93",
+    "changed_action_turns": 122
+  },
+  {
+    "seed": 1042001,
+    "arm": "public_hs4",
+    "mode": "official",
+    "seat": 0,
+    "rewards": [
+      138209.0,
+      138237.0
+    ],
+    "entry_name": "hs4_ig_agent",
+    "telemetry": {},
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        122,
+        -4116
+      ],
+      "SELL:WHEAT": [
+        336,
+        10153
+      ],
+      "BUY_SEED:WHEAT": [
+        159,
+        -1590
+      ],
+      "HIRE:None": [
+        265,
+        -4075.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        337,
+        15125
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        123,
+        13253
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        79,
+        -2569
+      ],
+      "SELL:MILK": [
+        266,
+        59050
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        91,
+        4518
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        43312
+      ],
+      "BUY_SEED:CARROT": [
+        40,
+        -800
+      ],
+      "SELL:CARROT": [
+        114,
+        2941
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 5,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 360.7451670104638,
+    "action_hash": "790948f7fb65c6f69b8de75da147aa46c68ac7ca60e799bc3f333de12b0ccab0",
+    "changed_action_turns": 72
+  },
+  {
+    "seed": 1042001,
+    "arm": "public_hs4",
+    "mode": "official",
+    "seat": 1,
+    "rewards": [
+      138237.0,
+      138209.0
+    ],
+    "entry_name": "hs4_ig_agent",
+    "telemetry": {},
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        122,
+        -4116
+      ],
+      "SELL:WHEAT": [
+        336,
+        10153
+      ],
+      "BUY_SEED:WHEAT": [
+        159,
+        -1590
+      ],
+      "HIRE:None": [
+        265,
+        -4075.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        337,
+        15125
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        123,
+        13253
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        79,
+        -2569
+      ],
+      "SELL:MILK": [
+        266,
+        59050
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        91,
+        4518
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        43312
+      ],
+      "BUY_SEED:CARROT": [
+        40,
+        -800
+      ],
+      "SELL:CARROT": [
+        114,
+        2941
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 5,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 46.87145899515599,
+    "action_hash": "8f6690f3c663ed3465684587767bbaabbd3adf01e91be892f8c99e22fb5dac1f",
+    "changed_action_turns": 72
+  },
+  {
+    "seed": 1042001,
+    "arm": "public_hs4",
+    "mode": "nominal",
+    "seat": 0,
+    "rewards": [
+      138209.0,
+      138237.0
+    ],
+    "entry_name": "kaggle_submission_agent",
+    "telemetry": {
+      "_HS4_SM_REPORT": {
+        "sm_shields": 0,
+        "sm_units": 0,
+        "sm_errors": 0
+      },
+      "_HS4_E402_REPORT": {
+        "cut_units": 0,
+        "saved_cost": 0,
+        "changed_turns": 0,
+        "errors": 0
+      },
+      "_HS4_T4_REPORT": {
+        "preempt_turns": 2,
+        "preempt_units": 15,
+        "credits_applied": 15,
+        "lead2_turns": 0,
+        "errors": 0
+      },
+      "_HS4_IG_REPORT": {
+        "queue_changed_turns": 14,
+        "zeroed_orders": 14,
+        "pulled_orders": 0,
+        "pulled_slots": 0,
+        "errors": 0
+      }
+    },
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        122,
+        -4116
+      ],
+      "SELL:WHEAT": [
+        336,
+        10153
+      ],
+      "BUY_SEED:WHEAT": [
+        159,
+        -1590
+      ],
+      "HIRE:None": [
+        265,
+        -4075.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        337,
+        15125
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        123,
+        13253
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        79,
+        -2569
+      ],
+      "SELL:MILK": [
+        266,
+        59050
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        91,
+        4518
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        43312
+      ],
+      "BUY_SEED:CARROT": [
+        40,
+        -800
+      ],
+      "SELL:CARROT": [
+        114,
+        2941
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 5,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 375.4129169974476,
+    "action_hash": "790948f7fb65c6f69b8de75da147aa46c68ac7ca60e799bc3f333de12b0ccab0",
+    "changed_action_turns": 72
+  },
+  {
+    "seed": 1042001,
+    "arm": "public_hs4",
+    "mode": "nominal",
+    "seat": 1,
+    "rewards": [
+      138237.0,
+      138209.0
+    ],
+    "entry_name": "kaggle_submission_agent",
+    "telemetry": {
+      "_HS4_SM_REPORT": {
+        "sm_shields": 0,
+        "sm_units": 0,
+        "sm_errors": 0
+      },
+      "_HS4_E402_REPORT": {
+        "cut_units": 0,
+        "saved_cost": 0,
+        "changed_turns": 0,
+        "errors": 0
+      },
+      "_HS4_T4_REPORT": {
+        "preempt_turns": 2,
+        "preempt_units": 15,
+        "credits_applied": 15,
+        "lead2_turns": 0,
+        "errors": 0
+      },
+      "_HS4_IG_REPORT": {
+        "queue_changed_turns": 14,
+        "zeroed_orders": 14,
+        "pulled_orders": 0,
+        "pulled_slots": 0,
+        "errors": 0
+      }
+    },
+    "flows": {
+      "BUY_PRODUCT:WHEAT": [
+        122,
+        -4116
+      ],
+      "SELL:WHEAT": [
+        336,
+        10153
+      ],
+      "BUY_SEED:WHEAT": [
+        159,
+        -1590
+      ],
+      "HIRE:None": [
+        265,
+        -4075.0
+      ],
+      "BUY_ANIMAL:COW": [
+        9,
+        -3600
+      ],
+      "BUY_ANIMAL:SHEEP": [
+        5,
+        -2500
+      ],
+      "BUY_SEED:MELON": [
+        12,
+        -960
+      ],
+      "SELL:FERTILIZER": [
+        337,
+        15125
+      ],
+      "BUY_SEED:STRAWBERRY": [
+        33,
+        -3300
+      ],
+      "SELL:WOOL": [
+        123,
+        13253
+      ],
+      "BUY_LAND:None": [
+        2,
+        -3000.0
+      ],
+      "BUY_PRODUCT:FERTILIZER": [
+        79,
+        -2569
+      ],
+      "SELL:MILK": [
+        266,
+        59050
+      ],
+      "BUY_ANIMAL:GOOSE": [
+        3,
+        -900
+      ],
+      "SELL:MELON": [
+        72,
+        14267
+      ],
+      "SELL:EGG": [
+        91,
+        4518
+      ],
+      "SELL:STRAWBERRY": [
+        249,
+        43312
+      ],
+      "BUY_SEED:CARROT": [
+        40,
+        -800
+      ],
+      "SELL:CARROT": [
+        114,
+        2941
+      ]
+    },
+    "escapes": [],
+    "terminal_private": {
+      "shed": {
+        "WHEAT": 0,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0,
+        "EGG": 0,
+        "MILK": 0,
+        "WOOL": 0,
+        "FERTILIZER": 0,
+        "GOOSE": 0,
+        "COW": 0,
+        "SHEEP": 0
+      },
+      "seeds": {
+        "WHEAT": 5,
+        "CARROT": 0,
+        "TOMATO": 0,
+        "STRAWBERRY": 0,
+        "MELON": 0
+      },
+      "inventories": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "shops": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "max_turn_ms": 47.74529198766686,
+    "action_hash": "8f6690f3c663ed3465684587767bbaabbd3adf01e91be892f8c99e22fb5dac1f",
+    "changed_action_turns": 72
+  }
+]

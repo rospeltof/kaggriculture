@@ -4,6 +4,20 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, error temporal en loop17] Stock lleno ahora no implica
+  bonus inútil esta noche.** En1039000, cap_full omite FEED682 por ver4huevos;
+  HARVEST687 retira esos4 antes de producir. Resultado: cosecha700de2→1,
+  total91→90. Modelo temporal incorrecto, aunque ejecución/noop pasan24juegos.
+  Detenido antes del piloto; no es estimación W/L/T ni refutación de todo cap.
+  Evidencia `capped_bonus_decision.json` y ledgers/unidades de desarrollo.
+
+- **[2026-09-25, aperturas loop12] TomatoInsteadOfCow y MarketShock completo
+  perjudican a top3 en este panel:** −80,46875/−64,0625pp,1.008episodios,
+  noop192/192, ICdos vías completamente negativos. No confirmar/enviar estas
+  fuentes. Tomate aumenta propio dinero en un caso adverso, pero cambia tiendas
+  y aumenta más el dinero rival. Dinero bruto no equivale a mejora competitiva.
+  EarlyCycle cambia128/128acciones pese a delta0: no llamarlo inerte.
+
 - **[2026-09-25, pérdida en campo] No todo cap se arregla cosechando más.**
   Doce replays top3 reproducidos exactamente:33MILK truncados al primer yield
   de vacas tardías con inventario previo0; es exceso de banco de cuidado.

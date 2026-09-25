@@ -1,7 +1,7 @@
 # Scorecards del loop continuo — 2026-09-25 UTC
 
-Estado05:38UTC: pilotos1–11 y confirm1/5/7/8/10 completos; piloto12 corriendo.
-Loops13–16 validados y encolados. Objetivo persistente activo.
+Estado06:08UTC: pilotos1–13 y confirm1/5/7/8/10 completos; confirm13 corriendo.
+Loops14–16 y18 validados y encolados;17detenido en desarrollo. Objetivo activo.
 
 ## Confirmación disjunta terminada
 
@@ -420,6 +420,25 @@ heredado espera cosecha53 y por eso marca0. Tomato/MarketShock cosechan2en53.
 No concluir que la rama no corrió porque ese contador sea0. Piloto1.008,
 semillas1025000–007; confirmación1026000–015. Runner detrás de loop11.
 
+**Piloto12 terminado:**1.008 episodios, noop192/192, cero errores,
+cobertura/hashes verificados. Base82,8125% frente a ocho rivales.
+
+| Variante | Delta pp | IC95 dos vías | Acciones propias distintas | Decisión |
+|---|---:|---|---:|---|
+| open_original | −3,125 | [−10,276;4,026] | 128/128 | Inconcluso, no seleccionado |
+| open_cycle | 0 | Indefinido | 128/128 | Sin señal W/L/T, no seleccionado |
+| open_tomato | −80,46875 | [−104,038;−56,899] | 128/128 | Rechazado |
+| marketshock | −64,0625 | [−104,437;−23,688] | 128/128 | Rechazado |
+
+No se ejecuta confirm12. Los intervalos lineales no están truncados a los
+límites físicos del delta. Cycle no es inerte pese al mismo W/L/T.
+Seis juegos adicionales explican celdas registradas, sin ampliar la muestra:
+tomate/ars40/1025000 pasa margen+2.441→−4.999 aunque propio88.750→93.280;
+cambian tiendas. MarketShock en la misma celda pasa a−3.748 con mismas tiendas;
+en1025004 mejora−85→+538, pero no rescata el resultado agregado. No atribuir
+el paquete completo a una sola capa. Ledger/rewards reproducidos exactamente.
+Evidencia `pilot12.results/validation/behavior.json` y `pilot12.*.harm/benefit.*`.
+
 ## Piloto9 completo: seis rebaños inertes
 
 1.920episodios, noop320/320, cero errores, fuentes/cobertura verificadas.
@@ -567,3 +586,74 @@ sin descartar esos episodios ni escoger por rewards. Stock privado final0.
 
 Piloto2.496(1037000–031) encolado detrás de15, confirmación condicional32seeds
 1038000–031. Total71variantes competitivas construidas, no71mejoras.
+
+
+## Loop17 detenido antes del piloto: stock presente versus nocturno
+
+Dos prototipos, cap_first/cap_full,24juegos de desarrollo en tres mundos,
+noop4.314turnos, max284ms, fuentes y consumo de FEED verificados. El informe
+`capped_bonus_validation.json` pasa ejecución; **no es aprobación competitiva**.
+`capped_bonus_decision.json` marca DEVELOPMENT_STOPPED/competitive_ready=false.
+
+Cap_first modifica una valoración de vaca en1272457736pero no las acciones:
+la otra guarda nativa impide omitir ese FEED. Cap_full modifica tres turnos en
+1039000por asiento: omite FEED682, luego HARVEST687de4EGG libera el espacio,
+y HARVEST700recibe1EGG en vez de2. FEEDGOOSE52→51y EGG91→90. No escapa un
+animal, pero el supuesto de bonus marginal0 es falso. Detención por error de
+modelo, no por comparar dinero de estas partidas ni prueba poblacional.
+
+No se ejecutaron las704partidas de piloto17. El runner rechaza arrancar y se
+comprobó que no sobrescribe el estado activo. Una versión futura debe modelar
+la cosecha antes de la noche o limitarse a stock vacío verificable y comprobar
+la alimentación siguiente. No reciclar el mismo modelo bajo otro nombre.
+
+## Loop18 validado y en cola: V7/HS4 públicos de04:09UTC
+
+Fuentes cda529cb/8378f73c extraídas como literales y archivadas, distintas de
+las anteriores.24juegos en1042000/1042001, ambos asientos contra top3; noop
+2.876turnos e igualdad oficial/nominal5.752turnos. Máximo431ms,720DONEsin
+estados fatales y nuevos contadores internos observados sin errores. No se
+recopilaron todos los contadores heredados. Caja conciliada en cada partida.
+
+Ambas cambian acciones en los dos mundos: V7133/122turnos yHS477/72.
+Mismas tiendas, sin escapes ni productos finales en almacén/bolsas; sí quedan
+1/5semillas. No se selecciona por24rewards ni por promesas del notebook.
+Primera sonda falló por una aserción de identidad demasiado estricta entre
+wrapper y función envuelta; evidencia archivada, fuentes sin modificar.
+
+Piloto704semillas1043000–015, confirmación1044000–015, cuatro/once rivales,
+gate≥3pp/peor rival≥−20pp. Runner espera fin16directamente;17no tiene torneo.
+Total73variantes competitivas construidas más2prototipos17detenidos.
+
+
+## Piloto13 completo: ahorro nocturno a confirmación
+
+1.248 episodios, noop256/256, cero errores, hashes/cobertura completos.
+Base87,5%. Wheat1/inputs1/inputs2:+4,6875pp, IC95semilla[−2,558;11,933],
+ICdos vías[−6,969;16,344]. Wheat2:+3,125pp, ICdos vías[−5,997;12,247].
+Inputs1/2: tres celdas mejores en dos semillas, ninguna peor; propias56/128
+cambian y rivales52/48. Coinciden ambas acciones/rewards96/128, no son copias.
+Desempate alfabético registrado selecciona inputs1/2. Confirm13de1.600juegos
+con once rivales y16semillas nuevas comenzó06:02:06UTC; no leer parcial para
+adoptar o detener. Todavía no cumple confirmación ni justifica subir.
+
+`auditar_piloto_almacen.py`:12juegos (base/dos en todas las tres celdas mejores,
+asiento0, más primera celda ordenada de acciones distintas/WLTigual), hashes
+propios y rewards exactos del piloto,720DONE/caja conciliada. Ocho activaciones
+predicen vector y pérdida nocturnos exactamente; mismas tiendas, ningún escape.
+
+| Celda | Margen base | Inputs1 / inputs2 | Pérdida base | Inputs1 / inputs2 |
+|---|---:|---:|---:|---:|
+| arshs3/1028001 | −25 | +81 / +51 | 8 | 4 / 6 |
+| arshs3/1028013 | −205 | +291 / +218 | 27 | 9 / 17 |
+| tds/1028001 | −100 | +25 / +14 | 9 | 5 / 6 |
+| ars40/1028000, neutral W/L | +151 | +634 / +634 | 6 | 3 / 3 |
+
+En las tres primeras no cambia alimentación al cierre; inputs1/arshs3/1028001
+fertiliza/cosecha7zanahorias más. En la neutral ambas omiten3FEEDCOWen652,
+bajan cosechas3MILK/2EGG y dejan tres vacas más sin alimentar en671, sin escape.
+Un FEEDfallido de oveja608ya existe en base, no atribuirlo al parche. Esto
+no prueba escasez física: hay que separar orden omitida de FEED emitido fallido.
+Las reservas no garantizan producción ni conducta futura, aunque aquí gane.
+Fuentes en `pilot13.sources.tgz`; resultados físicos/summary/plan y24archivos
+comprimidos de ledger/unidades bajo `pilot13.physical.*`. Diagnósticos no suman muestra estadística.

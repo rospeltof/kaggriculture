@@ -116,8 +116,9 @@ el gate. Si la biblioteca confirma ventaja, una interacción historia×bibliotec
 necesita diseño nuevo, no sumar deltas de bloques distintos.
 
 La referencia MarketShock nueva motivó loop12 de aperturas controladas.
-TomatoInsteadOfCow sólo entrega4tomates en desarrollo: evaluar piloto antes
-de suponer que una planta temprana compensa toda la leche sacrificada. La
+Piloto completo1.008/noop192: tomate−80,46875pp yMarketShock−64,0625pp,
+ambos rechazados con ICdos vías negativos. Original−3,125pp, cycle0; no
+selección ni confirmación. Cycle sí cambia128/128acciones. La
 telemetría de trigo de base/cycle espera53, pero el motor cosecha en87; futuros
 diagnósticos deben usar acciones aceptadas y cronología real. No hay aún una
 variante de mantenimiento/replantado ni evidencia de que convenga.
@@ -168,11 +169,24 @@ desarrollo con ventaja poblacional ni omitir cambios de cultivos/RNG posteriores
 
 La auditoría de12replays encuentra33MILK truncadas con yield previo0: exceso
 de cuidado antes del primer yield de vacas tardías. Cosecha adicional no ayuda
-en esas tiles vacías. Próxima hipótesis aún sin piloto registrado: valorar el
-bonus marginal limitado por cap y ahorrar FEED cuando no suma producción,
-con hambre previa0y alimentación siguiente verificada. Ver auditoría de campo;
-no repetir los multiplicadores de loop14 bajo otro nombre.14EGG sí se pierden
+en esas tiles vacías. Loop17 probó valor marginal limitado en24partidas, pero
+se detuvo: cap_full ignora cosechas entre FEED y producción. Omite FEED682,
+cosecha4huevos687y pierde un huevo en700; premisa temporal falsa. Cap_first
+cambia valoración pero no acciones en tres mundos. No ejecutar piloto17.
+Una versión futura necesita stock proyectado tras cosechas o una tile
+demostrablemente vacía, además de alimentación siguiente factible. Ver
+`capped_bonus_decision.json`; no repetir fórmula ni renombrar multiplicadores14.
+14EGG sí se pierden
 con inventario previo, pero rescatar requiere ruta/entrega factible.
+
+## Fuentes públicas renovadas, loop18
+
+V7cda529cb/HS48378f73c son distintos de los anteriores, extraídos de notebooks
+actualizados04:09UTC y archivados.24juegos verifican entradas oficial/nominal,
+noop, caja y tiempos; cambian acciones en ambos mundos. Piloto704en cola tras16,
+confirmación disjunta si procede. No asumir dominancia por texto del notebook
+ni reemplazar los rivales antiguos. El indicador HS4de adelanto2turnos no se
+activa; no significa que su forecast nativo completo esté inerte.
 
 ## Incidencia neutral pendiente del harness
 
@@ -182,3 +196,19 @@ reprodujeron y preservaron720 estados entre base/infill inerte. No afecta
 selección observada; el origen aún no se ha identificado. Si reaparece, capturar
 las acciones anteriores al motor y el primer estado divergente; no cambiar el
 harness, eliminar rivales ni atribuirlo a hashes/tiempo sin prueba.
+
+
+## Actualización06:08UTC: confirmación nocturna y frente de trigo
+
+Piloto13:+4,6875pp en tres de cuatro variantes, tres celdas mejores en dos
+semillas. Inputs1/2seleccionadas por desempate registrado; confirm13en marcha.
+Diagnóstico12juegos confirma reducción de pérdidas y también cambios de
+producción/alimentación en una celda neutral. No convertir esa señal en
+ventaja confirmada ni mover reservas usando la confirmación parcial.
+
+Nuevo replay real113164976contra today pierde1.702con composición/costes
+similares. Neto de compra/venta de trigo propio12.308vs15.501rival; resto de
+flujos compensa1.491. Auditoría futura: cronología de arbitraje/inventario y
+precio aceptado. Todavía no hay una ablación nueva registrada; no interpretar
+comprar/vender más como causa probada ni repetir ADV ya rechazado. Este frente
+es distinto del ahorro nocturno y puede investigarse mientras termina el panel.

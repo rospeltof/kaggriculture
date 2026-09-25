@@ -1,5 +1,47 @@
 # Bitácora de experimentos
 
+## 2026-09-25, 06:08 UTC — Señal nocturna y auditoría del mecanismo
+
+Piloto13 terminado1.248/noop256, cero errores. Wheat1/inputs1/inputs2+4,6875pp,
+wheat2+3,125pp; intervalos cruzan0. Inputs1/2seleccionadas según desempate,
+confirm13de1.600episodios nuevos arrancó06:02:06UTC. Tres celdas mejores en
+sólo dos semillas: no confundir los dos asientos ni variantes con más evidencia.
+
+Doce reproducciones físicas, propios hashes/rewards exactos: pérdidas nocturnas
+8→4/6,27→9/17y9→5/6en las celdas mejores. Neutral6→3, pero3FEEDCOWomitidos
+posteriormente y3MILK/2EGGmenos, sin escapes. Registrar el efecto completo.
+El FEEDfallido608enesa celda ya existe en base; no es error nuevo del candidato.
+
+Cuatro replays recientes del snapshot05:47descargados06:06, elegidos antes de
+recompensas:3V/1D, exactos720estados/caja, cero escapes propios/stock producto
+final. Derrota1.702contra today con neto de trigo−3.193relativo, compensado por
+otros+1.491. Es contabilidad, no causalidad del arbitraje. Siguiente diagnóstico
+independiente: órdenes/precios/inventario temporal de ese episodio. Objetivo activo.
+
+## 2026-09-25, 06:00 UTC — Aperturas descartadas, error temporal y fuentes nuevas
+
+Piloto12 completo1.008/noop192, cero errores; Original−3,125pp, cycle0,
+tomate−80,46875pp, MarketShock−64,0625pp. Últimos dos rechazados, ninguna
+confirmación. Cycle cambia128/128acciones: no llamarlo inerte. Seis partidas
+de diagnóstico reproducidas; tomate puede elevar dinero propio y perder por
+más ingreso rival, con tiendas distintas. Piloto13arrancó05:47:06UTC.
+
+Loop17 detiene dos prototipos tras24diagnósticos/noop4.314/max284ms. La fórmula
+cap_full usa stock presente como si llegara intacto a la noche: omite FEED682,
+HARVEST687retira4EGG y en700recoge1en vez de2. No lanzar piloto ni enviar;
+no es selección por recompensas. Cap_first cambia valoración pero no acciones.
+Guardia del runner verificada sin modificar estado del pipeline.
+
+API05:47:41UTC: top3 2093,6/69episodios yVQ2285,8/83, ambas COMPLETE;
+recuentos incluyen validación. Sin envío nuevo ni descarga de nuevos replays.
+Dos notebooks públicos actualizados04:09son fuentes distintas V7/HS4.
+Extracción literal y revisión estática, avisos conservados.24diagnósticos,
+noop2.876, igualdad de entradas5.752turnos, max431ms; loop18de704partidas
+encolado tras16. Primera sonda exigía identidad wrapper/función y falló antes
+de jugar agentes nuevos; corregido control, no política.73variantes competitivas
+más2prototipos detenidos. Objetivo activo; seguir investigando y evaluando.
+
+
 ## 2026-09-25, 05:38 UTC — Biblioteca11sin mejora, composición inicial16
 
 Piloto11 terminó1.920episodios, noop448/448, cero errores. Tres deltas0;

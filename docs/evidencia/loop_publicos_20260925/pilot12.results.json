@@ -1,0 +1,198 @@
+{
+  "results": {
+    "open_original": {
+      "reference": "base",
+      "candidate": "open_original",
+      "rivals": [
+        "ars40",
+        "guru6",
+        "h2965",
+        "hsov",
+        "hybu",
+        "obr",
+        "tds",
+        "v13"
+      ],
+      "seeds": [
+        1025000,
+        1025001,
+        1025002,
+        1025003,
+        1025004,
+        1025005,
+        1025006,
+        1025007
+      ],
+      "base_wr": 82.8125,
+      "candidate_wr": 79.6875,
+      "delta_points": -3.125,
+      "ci95_seed": [
+        -7.962531081719748,
+        1.7125310817197477
+      ],
+      "ci95_2way": [
+        -10.276018345065925,
+        4.026018345065924
+      ],
+      "opponent_breakdown": {
+        "ars40": 0.0,
+        "guru6": 0.0,
+        "h2965": 0.0,
+        "hsov": 0.0,
+        "hybu": 0.0,
+        "obr": 0.0,
+        "tds": -25.0,
+        "v13": 0.0
+      },
+      "better_cells": 0,
+      "worse_cells": 2,
+      "equal_cells": 62,
+      "status": "INCONCLUSIVE_NOT_SELECTED"
+    },
+    "open_cycle": {
+      "reference": "base",
+      "candidate": "open_cycle",
+      "rivals": [
+        "ars40",
+        "guru6",
+        "h2965",
+        "hsov",
+        "hybu",
+        "obr",
+        "tds",
+        "v13"
+      ],
+      "seeds": [
+        1025000,
+        1025001,
+        1025002,
+        1025003,
+        1025004,
+        1025005,
+        1025006,
+        1025007
+      ],
+      "base_wr": 82.8125,
+      "candidate_wr": 82.8125,
+      "delta_points": 0.0,
+      "ci95_seed": [
+        0.0,
+        0.0
+      ],
+      "ci95_2way": null,
+      "opponent_breakdown": {
+        "ars40": 0.0,
+        "guru6": 0.0,
+        "h2965": 0.0,
+        "hsov": 0.0,
+        "hybu": 0.0,
+        "obr": 0.0,
+        "tds": 0.0,
+        "v13": 0.0
+      },
+      "better_cells": 0,
+      "worse_cells": 0,
+      "equal_cells": 64,
+      "status": "INCONCLUSIVE_NOT_SELECTED"
+    },
+    "open_tomato": {
+      "reference": "base",
+      "candidate": "open_tomato",
+      "rivals": [
+        "ars40",
+        "guru6",
+        "h2965",
+        "hsov",
+        "hybu",
+        "obr",
+        "tds",
+        "v13"
+      ],
+      "seeds": [
+        1025000,
+        1025001,
+        1025002,
+        1025003,
+        1025004,
+        1025005,
+        1025006,
+        1025007
+      ],
+      "base_wr": 82.8125,
+      "candidate_wr": 2.34375,
+      "delta_points": -80.46875,
+      "ci95_seed": [
+        -105.3616746785752,
+        -55.5758253214248
+      ],
+      "ci95_2way": [
+        -104.03821514808872,
+        -56.899284851911275
+      ],
+      "opponent_breakdown": {
+        "ars40": -81.25,
+        "guru6": -93.75,
+        "h2965": -81.25,
+        "hsov": -81.25,
+        "hybu": -62.5,
+        "obr": -75.0,
+        "tds": -81.25,
+        "v13": -87.5
+      },
+      "better_cells": 0,
+      "worse_cells": 54,
+      "equal_cells": 10,
+      "status": "REJECTED"
+    },
+    "marketshock": {
+      "reference": "base",
+      "candidate": "marketshock",
+      "rivals": [
+        "ars40",
+        "guru6",
+        "h2965",
+        "hsov",
+        "hybu",
+        "obr",
+        "tds",
+        "v13"
+      ],
+      "seeds": [
+        1025000,
+        1025001,
+        1025002,
+        1025003,
+        1025004,
+        1025005,
+        1025006,
+        1025007
+      ],
+      "base_wr": 82.8125,
+      "candidate_wr": 18.75,
+      "delta_points": -64.0625,
+      "ci95_seed": [
+        -106.02651374078746,
+        -22.098486259212542
+      ],
+      "ci95_2way": [
+        -104.43702459412424,
+        -23.687975405875754
+      ],
+      "opponent_breakdown": {
+        "ars40": -56.25,
+        "guru6": -93.75,
+        "h2965": -50.0,
+        "hsov": -50.0,
+        "hybu": -62.5,
+        "obr": -50.0,
+        "tds": -75.0,
+        "v13": -75.0
+      },
+      "better_cells": 4,
+      "worse_cells": 46,
+      "equal_cells": 14,
+      "status": "REJECTED"
+    }
+  },
+  "selected_for_confirmation": []
+}

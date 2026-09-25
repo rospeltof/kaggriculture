@@ -1,0 +1,40 @@
+[
+  {
+    "path": "results/publicos_0548_20260925/haideptry_the-2965-master-hybrid-engine/main.py",
+    "notebook": "results/publicos_0548_20260925/haideptry_the-2965-master-hybrid-engine/the-2965-master-hybrid-engine.ipynb",
+    "sha256": "cda529cb6b359fc4a9ab124d4d7950d5912bd5de846dcec4be70ca83b7150b2d",
+    "bytes": 1045228,
+    "notebook_sha256": "9412db22c908f5e8cbe0c1b8ee5106d857f7fab1760fc3c79b7998cb6bed3d48",
+    "imports": [
+      "__future__",
+      "base64",
+      "copy",
+      "itertools",
+      "json",
+      "math",
+      "os",
+      "random",
+      "zlib"
+    ],
+    "identical_to": []
+  },
+  {
+    "path": "results/publicos_0548_20260925/haideptry_the-shepherds-ledger-herd-safe-sovereign/main.py",
+    "notebook": "results/publicos_0548_20260925/haideptry_the-shepherds-ledger-herd-safe-sovereign/the-shepherds-ledger-herd-safe-sovereign.ipynb",
+    "sha256": "8378f73c82db7624ce5d0369cf896aa0761a662af147b119f67254f1f8634c56",
+    "bytes": 1051849,
+    "notebook_sha256": "f5179fc47b6b9024a805119b643abf386cdb14dc6c2344e9e81cdfb715b6185e",
+    "imports": [
+      "__future__",
+      "base64",
+      "copy",
+      "itertools",
+      "json",
+      "math",
+      "os",
+      "random",
+      "zlib"
+    ],
+    "identical_to": []
+  }
+]

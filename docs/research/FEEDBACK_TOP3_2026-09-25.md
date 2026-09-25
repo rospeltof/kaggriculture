@@ -170,3 +170,32 @@ y pagan mismos jornales; cobro de fresa20.537vs19.535explica gran parte de la
 diferencia, compensada por otros flujos. En otras partidas hay diferencias de
 cantidades; no atribuir toda victoria a forecast. Sin nuevos fallos mecánicos
 observados en esos cuatro; mantener investigación con rivales/contextos nuevos.
+
+
+## Cuatro replays del snapshot05:47UTC, descargados06:06UTC
+
+Regla fijada antes de leer recompensas: cuatro episodios públicos completos
+más recientes por endTime/id en `top3_episodes_0548.json`. No muestra por W/L.
+Cada uno reproduce720estados exactamente y caja conciliada. Cero escapes
+propios y productos terminales en almacén/bolsas; originales archivados en
+`top3_feedback_0548.replays.tgz`. No estima WR global ni compara causalmenteVQ.
+
+| Episodio | Rival | Margen propio |
+|---:|---|---:|
+|113164976|today|−1.702|
+|113163783|DeeperNet|+35|
+|113162622|Yuta Tomimasu|+1.230|
+|113162882|sneaky6767|+459|
+
+Contra today, misma composición en los snapshots y mismos costes agregados
+de animales/tierra/jornales/semillas. Vendemos2huevos más; otras cantidades
+premium iguales. Diferencia principal contable: neto SELLWHEAT−BUY_PRODUCTWHEAT
+propio **12.308**, rival **15.501** (brecha−3.193), compensado por+1.491en
+los otros flujos. Compramos3.388/vendemos3.685trigos, frente a3.271/3.567.
+Más operaciones no significa mayor ganancia. Pero cultivo, alimentación y
+trading comparten producto; esto **no separa beneficio causal del arbitraje**
+ni demuestra que reducir volumen arregle la derrota. Próxima auditoría debe
+reconstruir inventario, órdenes aceptadas, decisiones y precios por turno.
+No repetir ADV de ventas ni desactivar forecast por una descomposición contable.
+
+Evidencia `top3_audit_0548.json`, cuatro ledgers y `top3_0548_wheat_gap.json`.

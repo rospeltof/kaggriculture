@@ -1,0 +1,72 @@
+{
+  "rule": "All three WLT-improving pilot cells, plus first sorted changed-action/equal-WLT cell, seat0 only. Diagnostic, no extra statistical samples.",
+  "cells": [
+    [
+      "arshs3",
+      1028001,
+      0
+    ],
+    [
+      "arshs3",
+      1028013,
+      0
+    ],
+    [
+      "tds",
+      1028001,
+      0
+    ],
+    [
+      "ars40",
+      1028000,
+      0
+    ]
+  ],
+  "arms": [
+    "base",
+    "night_inputs1",
+    "night_inputs2"
+  ],
+  "agents": {
+    "base": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "noop": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "night_wheat1": {
+      "ruta": "results/espacio_nocturno_v2_20260925/night_wheat1.py",
+      "sha256": "9225a4e9dc366dea4aa163bb7fd0365b9d2dce8308234e5098bc492907f6de14"
+    },
+    "night_wheat2": {
+      "ruta": "results/espacio_nocturno_v2_20260925/night_wheat2.py",
+      "sha256": "ee1ddb852cdec9aed9382c1ebe29f47e7c2abb43c0800fa432765e62649ecd29"
+    },
+    "night_inputs1": {
+      "ruta": "results/espacio_nocturno_v2_20260925/night_inputs1.py",
+      "sha256": "9e36cda8f0c6320f92434e0419dba4faff49905c320714ac8345c451bce5b27d"
+    },
+    "night_inputs2": {
+      "ruta": "results/espacio_nocturno_v2_20260925/night_inputs2.py",
+      "sha256": "c6cbb20e5aa75b4230597a8a2b05a499715e4438cbb706b10a123266ad92981b"
+    },
+    "tds": {
+      "ruta": "submission/main_publico_tds_tetsutani.py",
+      "sha256": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a"
+    },
+    "hybu": {
+      "ruta": "results/publicos/wzhengbiao_kaggriculture-hybu-submit/main.py",
+      "sha256": "f6175fd1bc3850f74185e7a813bb5a87d54e7e15212c874133dafc6e1ce91d34"
+    },
+    "ars40": {
+      "ruta": "results/publicos/arsgorynich_kaggriculture-v40-challenger/main.py",
+      "sha256": "d5a192fac67f00da31fe2bc7b747b8c33766bf1024780c53e49f2292a97db2de"
+    },
+    "arshs3": {
+      "ruta": "submission/main_publico_arshs3_arsgorynich.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    }
+  }
+}

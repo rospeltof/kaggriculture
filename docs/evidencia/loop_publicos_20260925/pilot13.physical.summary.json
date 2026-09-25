@@ -1,0 +1,322 @@
+[
+  {
+    "arm": "night_inputs1",
+    "opponent": "arshs3",
+    "seed": 1028001,
+    "margin_base": -25.0,
+    "margin_candidate": 81.0,
+    "loss_base": 8,
+    "loss_candidate": 4,
+    "harvest_delta": {
+      "CARROT": 7
+    },
+    "accepted_delta": {
+      "FERTILIZE:CARROT": 7
+    },
+    "same_shops": true,
+    "nf": {
+      "nf_turns": 1,
+      "nf_sold": 4,
+      "nf_saved": 4,
+      "nf_errors": 0
+    },
+    "unfed_differences": [],
+    "failed_FEED_base": [],
+    "failed_FEED_candidate": [],
+    "escapes": []
+  },
+  {
+    "arm": "night_inputs2",
+    "opponent": "arshs3",
+    "seed": 1028001,
+    "margin_base": -25.0,
+    "margin_candidate": 51.0,
+    "loss_base": 8,
+    "loss_candidate": 6,
+    "harvest_delta": {},
+    "accepted_delta": {},
+    "same_shops": true,
+    "nf": {
+      "nf_turns": 1,
+      "nf_sold": 2,
+      "nf_saved": 2,
+      "nf_errors": 0
+    },
+    "unfed_differences": [],
+    "failed_FEED_base": [],
+    "failed_FEED_candidate": [],
+    "escapes": []
+  },
+  {
+    "arm": "night_inputs1",
+    "opponent": "arshs3",
+    "seed": 1028013,
+    "margin_base": -205.0,
+    "margin_candidate": 291.0,
+    "loss_base": 27,
+    "loss_candidate": 9,
+    "harvest_delta": {},
+    "accepted_delta": {},
+    "same_shops": true,
+    "nf": {
+      "nf_turns": 1,
+      "nf_sold": 18,
+      "nf_saved": 18,
+      "nf_errors": 0
+    },
+    "unfed_differences": [],
+    "failed_FEED_base": [],
+    "failed_FEED_candidate": [],
+    "escapes": []
+  },
+  {
+    "arm": "night_inputs2",
+    "opponent": "arshs3",
+    "seed": 1028013,
+    "margin_base": -205.0,
+    "margin_candidate": 218.0,
+    "loss_base": 27,
+    "loss_candidate": 17,
+    "harvest_delta": {},
+    "accepted_delta": {},
+    "same_shops": true,
+    "nf": {
+      "nf_turns": 1,
+      "nf_sold": 10,
+      "nf_saved": 10,
+      "nf_errors": 0
+    },
+    "unfed_differences": [],
+    "failed_FEED_base": [],
+    "failed_FEED_candidate": [],
+    "escapes": []
+  },
+  {
+    "arm": "night_inputs1",
+    "opponent": "tds",
+    "seed": 1028001,
+    "margin_base": -100.0,
+    "margin_candidate": 25.0,
+    "loss_base": 9,
+    "loss_candidate": 5,
+    "harvest_delta": {},
+    "accepted_delta": {},
+    "same_shops": true,
+    "nf": {
+      "nf_turns": 1,
+      "nf_sold": 4,
+      "nf_saved": 4,
+      "nf_errors": 0
+    },
+    "unfed_differences": [],
+    "failed_FEED_base": [],
+    "failed_FEED_candidate": [],
+    "escapes": []
+  },
+  {
+    "arm": "night_inputs2",
+    "opponent": "tds",
+    "seed": 1028001,
+    "margin_base": -100.0,
+    "margin_candidate": 14.0,
+    "loss_base": 9,
+    "loss_candidate": 6,
+    "harvest_delta": {},
+    "accepted_delta": {},
+    "same_shops": true,
+    "nf": {
+      "nf_turns": 1,
+      "nf_sold": 3,
+      "nf_saved": 3,
+      "nf_errors": 0
+    },
+    "unfed_differences": [],
+    "failed_FEED_base": [],
+    "failed_FEED_candidate": [],
+    "escapes": []
+  },
+  {
+    "arm": "night_inputs1",
+    "opponent": "ars40",
+    "seed": 1028000,
+    "margin_base": 151.0,
+    "margin_candidate": 634.0,
+    "loss_base": 6,
+    "loss_candidate": 3,
+    "harvest_delta": {
+      "MILK": -3,
+      "EGG": -2
+    },
+    "accepted_delta": {
+      "CARE:GOOSE": 1,
+      "HARVEST:GOOSE": -1,
+      "FEED:COW": -3
+    },
+    "same_shops": true,
+    "nf": {
+      "nf_turns": 1,
+      "nf_sold": 3,
+      "nf_saved": 3,
+      "nf_errors": 0
+    },
+    "unfed_differences": [
+      {
+        "step": 671,
+        "base": [
+          {
+            "x": 3,
+            "y": 4,
+            "animal": "SHEEP"
+          }
+        ],
+        "candidate": [
+          {
+            "x": 5,
+            "y": 2,
+            "animal": "COW"
+          },
+          {
+            "x": 2,
+            "y": 4,
+            "animal": "COW"
+          },
+          {
+            "x": 3,
+            "y": 4,
+            "animal": "SHEEP"
+          },
+          {
+            "x": 6,
+            "y": 4,
+            "animal": "COW"
+          }
+        ]
+      }
+    ],
+    "failed_FEED_base": [
+      {
+        "step": 608,
+        "actor": 3,
+        "xy": [
+          6,
+          3
+        ],
+        "action": [
+          "FEED"
+        ],
+        "subject": "SHEEP",
+        "successful": false,
+        "inventory_delta": {}
+      }
+    ],
+    "failed_FEED_candidate": [
+      {
+        "step": 608,
+        "actor": 3,
+        "xy": [
+          6,
+          3
+        ],
+        "action": [
+          "FEED"
+        ],
+        "subject": "SHEEP",
+        "successful": false,
+        "inventory_delta": {}
+      }
+    ],
+    "escapes": []
+  },
+  {
+    "arm": "night_inputs2",
+    "opponent": "ars40",
+    "seed": 1028000,
+    "margin_base": 151.0,
+    "margin_candidate": 634.0,
+    "loss_base": 6,
+    "loss_candidate": 3,
+    "harvest_delta": {
+      "MILK": -3,
+      "EGG": -2
+    },
+    "accepted_delta": {
+      "CARE:GOOSE": 1,
+      "HARVEST:GOOSE": -1,
+      "FEED:COW": -3
+    },
+    "same_shops": true,
+    "nf": {
+      "nf_turns": 1,
+      "nf_sold": 3,
+      "nf_saved": 3,
+      "nf_errors": 0
+    },
+    "unfed_differences": [
+      {
+        "step": 671,
+        "base": [
+          {
+            "x": 3,
+            "y": 4,
+            "animal": "SHEEP"
+          }
+        ],
+        "candidate": [
+          {
+            "x": 5,
+            "y": 2,
+            "animal": "COW"
+          },
+          {
+            "x": 2,
+            "y": 4,
+            "animal": "COW"
+          },
+          {
+            "x": 3,
+            "y": 4,
+            "animal": "SHEEP"
+          },
+          {
+            "x": 6,
+            "y": 4,
+            "animal": "COW"
+          }
+        ]
+      }
+    ],
+    "failed_FEED_base": [
+      {
+        "step": 608,
+        "actor": 3,
+        "xy": [
+          6,
+          3
+        ],
+        "action": [
+          "FEED"
+        ],
+        "subject": "SHEEP",
+        "successful": false,
+        "inventory_delta": {}
+      }
+    ],
+    "failed_FEED_candidate": [
+      {
+        "step": 608,
+        "actor": 3,
+        "xy": [
+          6,
+          3
+        ],
+        "action": [
+          "FEED"
+        ],
+        "subject": "SHEEP",
+        "successful": false,
+        "inventory_delta": {}
+      }
+    ],
+    "escapes": []
+  }
+]

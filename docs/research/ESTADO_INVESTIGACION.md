@@ -87,18 +87,32 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   ICdos vías indefinido. DSM inerte256/256; ladder/all cambian18/256acciones
   propias y10rivales en tres semillas, sin W/L/T distintos. Ladder/all son
   equivalentes256/256en ambas acciones/rewards. Sin selección/confirmación.
-- Loop12 validado/encolado: tres aperturas nativas sobre top3 y MarketShock
+- Loop12 completo: tres aperturas nativas sobre top3 y MarketShock
   público con entrada corregida.12juegos, noop1.438turnos, max229ms; tomate
   inicial produjo4unidades y sustituye una vaca. Trigo temporal de base/cycle
   se cosecha en87, distinto al contador heredado que esperaba53. MarketShock
   tiene un escape tardío de ganso; no se oculta.1.008episodios, semillas1025000–007,
-  **Piloto12 corriendo desde05:35:02UTC**. Total55variantes construidas al registrarlo.
+  **1.008 completos**, noop192/192, cero errores. Original−3,125pp, cycle0,
+  tomate−80,46875pp, MarketShock−64,0625pp. Los dos últimos REJECTED, ninguna
+  seleccionada/confirmada. Cycle cambia128/128acciones: delta0 no implica inercia.
+  Seis juegos de mecanismo reproducen caja/rewards; tomate cambia tiendas.
+  En su caso adverso sube nuestro dinero pero gana más el rival: no usar dinero
+  bruto para adoptar. Total55variantes construidas al registrarlo.
 - Loop13 validado/encolado: cuatro ventas preventivas de excedente WHEAT/FERTILIZER
   con reservas1/2días. V1 inválida por omitir VQ al capturar entrada antigua;
   fuente/evidencia conservadas. **V2**36juegos completos, noop4.314turnos,
  22activaciones con vector final/pérdida exactos del motor, max291ms,
   cero errores/escapes/diferencias en animales sin alimentar al cierre.
-  Piloto1.248 después de loop12, semillas1028000–015. Total59variantes construidas.
+  Piloto1.248 **completo**, noop256/256, cero errores: wheat1/inputs1/inputs2
+  +4,6875pp y wheat2+3,125pp; ICdos vías cruzan0. Tres celdas mejores en dos
+  semillas, ninguna peor para inputs1/2. Cambian56/128acciones; ambas fuentes
+  son distintas en32/128juegos. Desempate registrado selecciona inputs1/2:
+  **confirm13 de1.600episodios corriendo desde06:02:06UTC**,1029000–015.
+  Auditoría12juegos reproduce hashes propios/rewards/caja: pérdidas8→4/6,
+  27→9/17 y9→5/6en las tres celdas positivas. Caso neutral6→3, pero omite
+  tres FEED posteriores y cosecha3MILK/2EGGmenos; no afirmar alimentación
+  universalmente preservada. Mismas tiendas, ningún escape en los12diagnósticos.
+  Total59variantes construidas al registrarlo.
   Motivación: c0nrad nos ganó con menos movimiento/jornales y se verificaron
   33unidades propias perdidas en cinco descargas nocturnas; rival0. Guardas ya
   existentes no lo solucionan conservando el vector final. JSON aislado cambia
@@ -132,8 +146,20 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
 - Auditoría de12replays top3:3CARROTpor decay,1por sequía y4MILKen campo final.
   33MILKtruncadas con inventario previo0son exceso de cuidado antes de primer
   yield; no se arreglan cosechando antes.14EGGcon cap sí requerirían ruta/entrega.
-  Próxima hipótesis: valorar bonus marginal limitado por capacidad. Sin nuevo
-  piloto registrado aún; ver `AUDITORIA_PERDIDAS_CAMPO_2026-09-25.md`.
+  Motivó loop17; ver `AUDITORIA_PERDIDAS_CAMPO_2026-09-25.md`.
+- Loop17 detenido en desarrollo:24juegos/noop4.314/max284ms, ejecución válida
+  pero cap_full confunde inventario actual con inventario nocturno. Omite FEED682,
+  luego HARVEST687 libera espacio y pierde un huevo de producción700. Cap_first
+  cambia una valoración pero no acciones en tres mundos. Error de modelo temporal,
+  no rechazo por rewards ni estimación poblacional. No lanzar piloto17/subir:
+  `capped_bonus_decision.json` marca competitive_ready=false y runner lo exige.
+- Loop18 validado/encolado directamente tras16: V7cda529cb yHS48378f73c públicos
+  nuevos,24juegos/noop2.876/igualdad oficial-nominal5.752turnos, max431ms.
+  Cero estados fatales, cero errores en contadores nuevos observados, cero escapes
+  y productos terminales en esos mundos; quedan semillas. Piloto704semillas
+  1043000–015 y confirmación1044000–015. No sobrescribir rivales antiguos del pool.
+  Total73variantes competitivas construidas más2prototipos17detenidos.
+  Ver `FUENTES_PUBLICAS_0548_2026-09-25.md`; afirmaciones externas no son evidencia.
 - Fuentes públicas nuevas: MasterEngine actualizado es tds25 byte exacto,
   excluido. MarketShock12ad317e diferente; loader elegía instalador. Corrección
   de entrada1c94b979 probada idéntica al `module.agent` del autor en8juegos.
@@ -185,12 +211,20 @@ Producción muy similar a rivales en esa muestra; no es superioridad causal vsVQ
 Archivos con sufijo0333 se consultaron03:39; metadatos `.fetch.json` dan hora real.
 Snapshot **04:30:35UTC**:top3 **2022,5 /46episodios listados** y VQ
 **2288,2 /69**, ambas COMPLETE. Archivos sufijo0431; hora real en metadatos.
-Último snapshot **05:13:31UTC**:top3 **2068,8 /58episodios listados** y VQ
+Snapshot **05:13:31UTC**:top3 **2068,8 /58episodios listados** y VQ
 **2287,2 /81**, ambas COMPLETE. Archivos sufijo0515; hora real en metadatos.
 Recuentos incluyen validación; ninguna submission nueva desde top3.
 Cuatro replays nuevos por recencia0515:4V,márgenes240–1.480,720estados exactos
 y caja conciliada cada uno; cero escapes propios/stock terminal. Originales
 archivados. No estima WR global ni ventaja causal sobre VQ; ver FEEDBACK_TOP3.
+Último snapshot **05:47:41UTC**:top3 **2093,6 /69episodios listados** y VQ
+**2285,8 /83**, ambas COMPLETE. Sufijo0548, recuentos incluyen validación.
+Sin otra submission. Después se descargaron cuatro replays fijados por recencia
+de esa consulta:3V/1D, márgenes−1.702/+35/+1.230/+459;720estados exactos/caja
+conciliada cada uno. Cero escapes propios/stock terminal de productos. Contra
+today, flujo neto de WHEAT propio12.308vsrival15.501; diferencia−3.193que se
+compensa parcialmente con otras ventas. No demuestra que sobreoperar trigo
+sea la causa ni justifica desactivar arbitraje sin auditoría temporal.
 
 Lo siguiente es el cierre de la ronda anterior; no significa parar este loop.
 
