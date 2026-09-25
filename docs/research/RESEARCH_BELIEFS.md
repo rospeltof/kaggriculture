@@ -4,6 +4,19 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, oferta comprometida] Mirar sólo animales/plantas colocados
+  puede sobreestimar una inversión adicional.** En el desarrollo ovino había
+  seis ovejas pagadas aún en transporte y8 lanas privadas. Incorporarlas cambia
+  ingreso proyectado9.637→4.157 frente a coste8.615. El filtro anterior admitía
+  una inversión que el modelo completo rechaza. En infill4_d18 también hay
+  un proyecto V219 comprometido aún sin plantar; no cambiar su confirmación
+  en curso, pero revisar ese supuesto antes de interpretar la cotización.
+- **[2026-09-25, transporte] Una orden de regreso tardía no evita el depósito
+  automático nocturno.** Hay que comprobar antes de HARVEST si alcanza viaje,
+  cosecha y entrega. Rebaño v2 entrega36/53/83 lanas, confirmado por instrumentar
+  `_apply_unit_action` real, incluido PLACEh23. Fuente de v3 sólo cambia filtro
+  económico y conserva exactamente las acciones forzadas en ambos asientos.
+
 - **[2026-09-25, confirm5] La relajación late18_6k perjudica a VQ:** −21,591pp,
   IC95 dos vías[−36,90;−6,28],1.152 episodios, noop384/384,16 semillas nuevas.
   Piloto+3,125 dependía de una semilla; confirmación cambia156/352 partidas,

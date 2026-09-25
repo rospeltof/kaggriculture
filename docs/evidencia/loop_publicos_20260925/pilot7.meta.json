@@ -1,0 +1,72 @@
+{
+  "agentes": {
+    "base": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "noop": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "infill4_d16": {
+      "ruta": "results/tomate_relleno_v4_20260925/infill4_d16.py",
+      "sha256": "8bc2b8c84f0d1044c0338d65037618efd005f131613ba77439cede0926aa0b08"
+    },
+    "infill8_d16": {
+      "ruta": "results/tomate_relleno_v4_20260925/infill8_d16.py",
+      "sha256": "2939d2ffa0acc92d1ef51a10e2c4eec97b9f88bd1f7ab47738689dee8ccbb53a"
+    },
+    "infill4_d18": {
+      "ruta": "results/tomate_relleno_v4_20260925/infill4_d18.py",
+      "sha256": "f08a0f64db11ca321d05cf0e1f62b5b6d83af1684c9695cb8c86ecf16bb1e298"
+    },
+    "infill8_d18": {
+      "ruta": "results/tomate_relleno_v4_20260925/infill8_d18.py",
+      "sha256": "b699a62d05bcac3d82fa1972a24d0540b9d2755c49468e0fd343189debe805e1"
+    },
+    "tds": {
+      "ruta": "submission/main_publico_tds_tetsutani.py",
+      "sha256": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a"
+    },
+    "hybu": {
+      "ruta": "results/publicos/wzhengbiao_kaggriculture-hybu-submit/main.py",
+      "sha256": "f6175fd1bc3850f74185e7a813bb5a87d54e7e15212c874133dafc6e1ce91d34"
+    },
+    "ars40": {
+      "ruta": "results/publicos/arsgorynich_kaggriculture-v40-challenger/main.py",
+      "sha256": "d5a192fac67f00da31fe2bc7b747b8c33766bf1024780c53e49f2292a97db2de"
+    },
+    "arshs3": {
+      "ruta": "submission/main_publico_arshs3_arsgorynich.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    }
+  },
+  "seeds": [
+    1010000,
+    1010001,
+    1010002,
+    1010003,
+    1010004,
+    1010005,
+    1010006,
+    1010007,
+    1010008,
+    1010009,
+    1010010,
+    1010011,
+    1010012,
+    1010013,
+    1010014,
+    1010015
+  ],
+  "vs": "base,noop,infill4_d16,infill8_d16,infill4_d18,infill8_d18",
+  "inicio": "2026-09-24 21:41:40",
+  "state": "complete",
+  "expected_episodes": 1248,
+  "workers": 8,
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "cc2c653a1cce243e55d3d30effd5985405bb9db28bde7622cecc400a7298b025",
+  "completed_episodes": 1248,
+  "fin": "2026-09-24 22:00:52"
+}

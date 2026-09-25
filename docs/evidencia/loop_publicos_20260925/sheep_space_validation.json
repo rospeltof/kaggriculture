@@ -1,0 +1,49 @@
+{
+  "candidate_version": 2,
+  "smoke_games": 22,
+  "delivery_games": 6,
+  "noop_exact_actions": 1438,
+  "max_turn_ms": 729.1178750165273,
+  "parent_wool_units": 108,
+  "parent_fertilizer_applications": 7,
+  "early_escapes": 0,
+  "harvest_deposit_pairs": [
+    {
+      "arm": "forced2",
+      "seat": 0,
+      "harvested": 36,
+      "deposited": 36
+    },
+    {
+      "arm": "forced2",
+      "seat": 1,
+      "harvested": 36,
+      "deposited": 36
+    },
+    {
+      "arm": "forced3",
+      "seat": 0,
+      "harvested": 53,
+      "deposited": 53
+    },
+    {
+      "arm": "forced3",
+      "seat": 1,
+      "harvested": 53,
+      "deposited": 53
+    },
+    {
+      "arm": "forced6",
+      "seat": 0,
+      "harvested": 83,
+      "deposited": 83
+    },
+    {
+      "arm": "forced6",
+      "seat": 1,
+      "harvested": 83,
+      "deposited": 83
+    }
+  ],
+  "performance_claim": false
+}

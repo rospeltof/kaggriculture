@@ -1,0 +1,55 @@
+{
+  "seed": 1004000,
+  "seats": [
+    0,
+    1
+  ],
+  "opponent": "submission/main_publico_arshs3_arsgorynich.py",
+  "purpose": "Known sheep SE world. Execution, cash reconciliation, noop; never performance selection.",
+  "agents": {
+    "base": {
+      "path": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "sheep2_d12": {
+      "path": "results/rebano_adicional_20260925/sheep2_d12.py",
+      "sha256": "b20843713800202449a300d54275a3fa7735c0f6f0052874639abd4b699962e2"
+    },
+    "sheep3_d12": {
+      "path": "results/rebano_adicional_20260925/sheep3_d12.py",
+      "sha256": "38b14d82904599ff9732330ad505e976b6b9bd7f8727ed5b3947db275f92d2e5"
+    },
+    "sheep6_d12": {
+      "path": "results/rebano_adicional_20260925/sheep6_d12.py",
+      "sha256": "e37df0f1d31d6e78a8ea03681a0f577b4ace90b0ee15793687d242827014d550"
+    },
+    "sheep2_d14": {
+      "path": "results/rebano_adicional_20260925/sheep2_d14.py",
+      "sha256": "d9ff90d2e7e1b8d8ca668d808395002decd10c9ff823a32febeead57d08aa197"
+    },
+    "sheep3_d14": {
+      "path": "results/rebano_adicional_20260925/sheep3_d14.py",
+      "sha256": "004332206858ea048cebc4658a211e06530c429780785ac5b73c1504dd5e2e40"
+    },
+    "sheep6_d14": {
+      "path": "results/rebano_adicional_20260925/sheep6_d14.py",
+      "sha256": "93c650d2bb82ef6f9b501e2de2cf9ed099d10e16aa6eb35d9f24c6e932c05e01"
+    },
+    "noop": {
+      "path": "results/rebano_adicional_20260925/noop.py",
+      "sha256": "3c70319bb2d297b98ee684fafb83be92460507c483e72f87e90bd80a0ad54283"
+    },
+    "forced2": {
+      "path": "results/rebano_adicional_20260925/forced2.py",
+      "sha256": "69c7e9cfb4271549e37b831f8277fcdac1d3906bac73ebe6366233c5a458f533"
+    },
+    "forced3": {
+      "path": "results/rebano_adicional_20260925/forced3.py",
+      "sha256": "134bff3a72a69114b8d740860a19747ae3323c0c4fc50a2187f92dc6242174a0"
+    },
+    "forced6": {
+      "path": "results/rebano_adicional_20260925/forced6.py",
+      "sha256": "3e3abde49e8751fbcc418a03172a7abc5cd49d76a2a8e262387a931affec41ea"
+    }
+  }
+}

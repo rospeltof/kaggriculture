@@ -34,15 +34,29 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   delta0; EGG cambia46/64 acciones y MELON es inerte. Top3+fast2 −6,25pp.
   Ninguna seleccionada. Controles factoriales: VQ78,125%, fast2 70,313%,
   top3 96,875%, combinado90,625%. No asumir suma de efectos de rondas previas.
-- Loop7 en desarrollo: cuatro políticas de tomates en suelo SE libre, 4/8
+- Loop7 en evaluación: cuatro políticas de tomates en suelo SE libre, 4/8
   plantas d16/d18, sobre top3. V2 podía inhibir R51; v3 corrigió contratación
   pero perdió cuatro tomates por overflow. V4 separa riego/cosecha:16 diagnósticos
   completos, plantas y ventas16/32 confirmadas, R51 y ovejas conservados.
-  1.248 episodios corriendo desde02:41UTC, `continuar_loop_relleno.py`.
+  Piloto1.248 completo, noop256/256. D16 inertes; d18 +1,5625pp cada una,
+  IC dos vías[−3,41;6,54], cambia16/128 partidas en dos semillas.
+  **Confirm7 corriendo**:1.600 episodios, dos d18, semillas1011000–015.
 - Loop8 registrado: seis variantes de patrones (rank5/7, historia120/360,
   ajuste por producto y desfase temporal). Validación16 juegos completa,
   noop1.438 acciones idénticas, cero errores, máximo271ms. Piloto1.472
   encolado detrás de loop7. Total36 variantes competitivas construidas.
+- Loop9 en desarrollo: seis rebaños incrementales (2/3/6 ovejas, día12/14),
+  sin comprar tierra y con demanda YARN ya visible. Se validan22 partidas
+  dirigidas por versión antes de encolar1.920. V2 corrige cosechas tardías;
+  motor confirmó36/53/83 entregas completas en ambos asientos. **V3** incluye
+  seis ovejas compradas pero aún sin colocar y lana privada en la proyección.
+  Otros22 juegos válidos, forzadas byte de acciones/rewards idéntico a v2;
+  seis variantes normales inertes en ese mundo. Manifiesto v3 actualizado
+  antes del piloto9; runner espera a loop8. Total42 variantes competitivas.
+- Auditoría piloto7: cuatro filas TDS con acción propia idéntica y hash rival
+  distinto, pero rewards/WLT idénticos. Ocho reproducciones (hashseeds0–3)
+  dieron acciones/estados idénticos; origen de la variación neutral no resuelto.
+  No afecta selección observada ni justifica afirmar determinismo universal.
 - Scorecards actualizadas: `SCORECARDS_LOOP_2026-09-25.md`.
 - Estado máquina: `docs/evidencia/loop_publicos_20260925/pipeline_state.json`.
   Logs: `results/loop_publicos_20260925_pipeline.log` y los logs de cada bloque.
@@ -77,6 +91,7 @@ fatales. Derrota contra c0nrad−23.180: rival32 ovejas frente a17, casi sin tom
 Cuatro reproducciones exactas y caja conciliada. Lana391/759 unidades,
 ingresos69.502/113.264; rival paga menos jornales y tierra. Ver
 `FEEDBACK_TOP3_2026-09-25.md`. Muestra pequeña, no WR ni fuerza estable.
+Snapshot posterior02:58UTC: top3 1738,5 / VQ2268,6, sin recuento nuevo sincronizado.
 
 Lo siguiente es el cierre de la ronda anterior; no significa parar este loop.
 

@@ -1,0 +1,18 @@
+{
+  "candidate_version": 3,
+  "smoke_games": 22,
+  "noop_exact_actions": 1438,
+  "forced_actions_identical_to_version2": true,
+  "accepted_delivery_inherited_from": "sheep_space_delivery_v2.json",
+  "max_turn_ms": 300.2930000075139,
+  "normal_arms_inert_in_development_world": true,
+  "pilot_not_started": true,
+  "changed_quote": {
+    "arm": "sheep3_d12",
+    "prior_revenue": 9637,
+    "new_revenue": 4157,
+    "cost": 8615,
+    "own_unplaced_sheep": 6,
+    "own_held_wool": 8
+  }
+}

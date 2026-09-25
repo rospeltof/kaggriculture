@@ -1,7 +1,7 @@
 # Scorecards del loop continuo — 2026-09-25 UTC
 
-Estado: loops1–6, confirm1/5 terminados; loop7 corriendo;
-loop8 validado y encolado. Objetivo persistente activo.
+Estado: pilotos1–7, confirm1/5 terminados; confirm7 corriendo;
+loops8/9 validados y encolados. Objetivo persistente activo.
 
 ## Confirmación disjunta terminada
 
@@ -264,3 +264,45 @@ lana391/759 unidades y69.502/113.264 de ingreso; rival8.273 de jornales frente
 a10.217 propios, tierra3.000 frente a7.000. Hipótesis nueva: especialización
 ovina con demanda visible y trabajo marginal viable. Aún no implementada;
 ver `FEEDBACK_TOP3_2026-09-25.md`, no repetir herd_future del loop3.
+
+## Piloto7 y confirmación en curso
+
+1.248 episodios, noop256/256, cero errores. Base89,0625%. Infill4/8_d16
+inertes128/128. Infill4/8_d18 +1,5625pp cada una, IC95 dos vías[−3,41;6,54];
+cambian16/128 partidas en semillas1010001/009. Ambas pasan a confirm7 según
+regla positiva:1.600 partidas, once rivales,16 semillas disjuntas. Sin envío.
+
+Mecanismo infill4_d18: ars40/1010001/asiento0, primera diferencia436. Cuatro
+plantas/16 tomates extra, cosecha confirmada y sin faltantes. Venta total de
+tomate80→96, ingreso30.024→34.386; margen−1→+2.206. Tiendas posteriores
+cambian; no atribuir todo el margen al tomate. Modelo cotiza9.756 de ingreso
+para inversión que cuesta4.614, pero omite tomates V219 comprometidos aún
+sin plantar. Las fuentes del bloque activo permanecen intactas; registrar
+esta omisión para revisar mecanismo/posible nueva variante tras confirmación.
+
+Cuatro filas TDS en seed1010007: acciones propias iguales, hash rival distinto,
+rewards/WLT idénticos. Ocho reproducciones con PYTHONHASHSEED0–3 dieron
+estados/acciones idénticos y no reprodujeron el hash alternativo. Origen neutral
+aún no resuelto; no afecta selección observada. No alterar harness basándose
+en una conjetura. Evidencia `pilot7.neutral_trace_audit.json`.
+
+## Loop9: rebaños, desarrollo terminado y fuentes v3 encoladas
+
+Seis tamaños/fechas,2/3/6 ovejas desde12/14, sin tierra nueva. V1 iniciaba
+cosechas demasiado tarde; V2 reserva viaje/cosecha/descarga.22 juegos válidos,
+noop1.438 acciones y cero escapes antes de última producción. Motor real
+confirma36/53/83 lanas cosechadas y depositadas en forzadas2/3/6, ambos asientos
+(seis comprobaciones). V1 y V2 se conservan con sus fuentes/resultados.
+
+V3 añade seis ovejas propias compradas aún sin colocar y lana privada al
+modelo de oferta.22 juegos adicionales, controles exactos; forzadas tienen
+exactamente las acciones de ambos agentes y rewards de v2, por lo que heredan
+prueba de entrega. Normales inertes en el mundo dirigido, por filtro económico.
+No es señal poblacional ni refuta la hipótesis. Manifiesto v3 fijado antes
+de iniciar piloto9;1.920 partidas encoladas tras loop8. Máximo de desarrollo
+<1s, volver a medir en bloque aleatorio.
+
+Búsqueda pública adicional no identificó un código inequívoco de c0nrad.
+[V35](https://www.kaggle.com/code/ahmedberatozer/kaggriculture-v35-reactive-sales-sheep-expansi)
+describe expansión financiada ya presente en nuestra genealogía; no se repite
+como candidata nueva. La fuente útil para esta ronda es el replay auditado.

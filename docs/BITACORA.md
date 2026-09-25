@@ -1,5 +1,31 @@
 # Bitácora de experimentos
 
+## 2026-09-25, 03:21 UTC — Rebaños validados, tomate espacial a confirmación
+
+Piloto7 terminado:1.248 episodios, noop256/256. Infill d16 inertes; d18
++1,5625pp ambas, IC dos vías[−3,41;6,54], sólo dos semillas activan el cambio.
+Confirm7 de1.600 sigue corriendo. Caso positivo cuatro plantas/16 tomates,
+margen−1→+2.206; tiendas cambian. Se detecta oferta V219 aún no plantada
+omitida en la cotización: documentada, sin tocar fuentes del bloque activo.
+
+Loop9: seis rebaños adicionales. Script diagnóstico inicial falló tras un
+juego por variable de ruta reutilizada; corregido y conservado como fallo de
+sonda. Agente v1 completó22; v2 corrigió cosechas sin tiempo de retorno y
+completó22 más. Verificación directa de motor en seis juegos:36/53/83 lanas
+aceptadas en almacén, ambos asientos. Padre108 lanas y7 aplicaciones R51.
+
+V3 corrige oferta propia comprometida:6 ovejas sin colocar y8 lanas en privado
+reducen cotización9.637→4.157, coste8.615.22 juegos más, normales inertes;
+forzadas idénticas a v2 en acciones completas de ambos jugadores y rewards.
+Manifiesto actualizado ANTES de piloto9.1.920 partidas encoladas tras loop8;
+42 variantes competitivas construidas en el loop. No envío nuevo.
+
+TDS mostró cuatro hashes rivales distintos con acciones propias/rewards/WLT
+iguales en una semilla. Ocho reproducciones exactas no reprodujeron el hash
+alternativo: origen pendiente, sin efecto en selección observada. No parchear
+el harness por intuición. Snapshot real02:58:top3 1738,5/VQ2268,6, aún sin
+recuento actualizado sincronizado. Objetivo persistente activo.
+
 ## 2026-09-25, 02:43 UTC — Loop6 completo, loop7 corriendo, patrones encolados
 
 736 episodios válidos, noop112/112. EGG/MELON/ambos delta0; EGG sí cambia

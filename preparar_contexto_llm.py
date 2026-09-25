@@ -29,6 +29,8 @@ SOURCES = (
     "docs/research/PREREG_LOOP6_PRODUCTOS_2026-09-25.md",
     "docs/research/PREREG_LOOP7_RELLENO_2026-09-25.md",
     "docs/research/PREREG_LOOP8_PATRONES_2026-09-25.md",
+    "docs/research/PREREG_LOOP9_REBANO_2026-09-25.md",
+    "docs/research/IDEAS_VIVAS_2026-09-25.md",
     "docs/research/FEEDBACK_TOP3_2026-09-25.md",
     "docs/research/LIDER_Y_FUENTES_2026-09-25.md",
     "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",

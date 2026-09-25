@@ -1,0 +1,338 @@
+[
+  {
+    "arm": "infill8_d16",
+    "opponent": "tds",
+    "seed": 1010007,
+    "seat": 1,
+    "base": {
+      "a": "base",
+      "b": "tds",
+      "seed": 1010007,
+      "seat": 1,
+      "valid": true,
+      "rewards": [
+        87605.0,
+        93915.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "n_err": 0,
+      "errors": [],
+      "steps": 720,
+      "score": 1.0,
+      "margin": 6310.0,
+      "ms": [
+        {
+          "mean": 1.647596662030598,
+          "max": 116.863
+        },
+        {
+          "mean": 1.493152990264256,
+          "max": 107.42699999999999
+        }
+      ],
+      "action_hashes": [
+        "b9f1e0db2c3e5b7025dfb4f2d15e84ad02523124efa399476c604fe8fd52ff52",
+        "2eea04aab8b686f3cb107921d05a7ab2e3ac74a329a216c9e5e7a9e816c4cabb"
+      ],
+      "action_counts": [
+        719,
+        719
+      ],
+      "seconds": 6.523960791993886
+    },
+    "candidate": {
+      "a": "infill8_d16",
+      "b": "tds",
+      "seed": 1010007,
+      "seat": 1,
+      "valid": true,
+      "rewards": [
+        87605.0,
+        93915.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "n_err": 0,
+      "errors": [],
+      "steps": 720,
+      "score": 1.0,
+      "margin": 6310.0,
+      "ms": [
+        {
+          "mean": 2.7402837273991656,
+          "max": 163.661
+        },
+        {
+          "mean": 2.3694937413073713,
+          "max": 157.116
+        }
+      ],
+      "action_hashes": [
+        "c57885901f158d7dd877401a6ea40caa7450bd0138ee475f602a5d8c3c6359a2",
+        "2eea04aab8b686f3cb107921d05a7ab2e3ac74a329a216c9e5e7a9e816c4cabb"
+      ],
+      "action_counts": [
+        719,
+        719
+      ],
+      "seconds": 9.419523166987346
+    }
+  },
+  {
+    "arm": "infill8_d16",
+    "opponent": "tds",
+    "seed": 1010007,
+    "seat": 0,
+    "base": {
+      "a": "base",
+      "b": "tds",
+      "seed": 1010007,
+      "seat": 0,
+      "valid": true,
+      "rewards": [
+        93915.0,
+        87605.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "n_err": 0,
+      "errors": [],
+      "steps": 720,
+      "score": 1.0,
+      "margin": 6310.0,
+      "ms": [
+        {
+          "mean": 2.1562002781641167,
+          "max": 131.319
+        },
+        {
+          "mean": 1.3516981919332407,
+          "max": 128.079
+        }
+      ],
+      "action_hashes": [
+        "2eea04aab8b686f3cb107921d05a7ab2e3ac74a329a216c9e5e7a9e816c4cabb",
+        "c57885901f158d7dd877401a6ea40caa7450bd0138ee475f602a5d8c3c6359a2"
+      ],
+      "action_counts": [
+        719,
+        719
+      ],
+      "seconds": 6.598682791984174
+    },
+    "candidate": {
+      "a": "infill8_d16",
+      "b": "tds",
+      "seed": 1010007,
+      "seat": 0,
+      "valid": true,
+      "rewards": [
+        93915.0,
+        87605.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "n_err": 0,
+      "errors": [],
+      "steps": 720,
+      "score": 1.0,
+      "margin": 6310.0,
+      "ms": [
+        {
+          "mean": 2.7534144645340755,
+          "max": 162.27
+        },
+        {
+          "mean": 1.994970792767733,
+          "max": 160.487
+        }
+      ],
+      "action_hashes": [
+        "2eea04aab8b686f3cb107921d05a7ab2e3ac74a329a216c9e5e7a9e816c4cabb",
+        "b9f1e0db2c3e5b7025dfb4f2d15e84ad02523124efa399476c604fe8fd52ff52"
+      ],
+      "action_counts": [
+        719,
+        719
+      ],
+      "seconds": 9.489857792010298
+    }
+  },
+  {
+    "arm": "infill4_d18",
+    "opponent": "tds",
+    "seed": 1010007,
+    "seat": 1,
+    "base": {
+      "a": "base",
+      "b": "tds",
+      "seed": 1010007,
+      "seat": 1,
+      "valid": true,
+      "rewards": [
+        87605.0,
+        93915.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "n_err": 0,
+      "errors": [],
+      "steps": 720,
+      "score": 1.0,
+      "margin": 6310.0,
+      "ms": [
+        {
+          "mean": 1.647596662030598,
+          "max": 116.863
+        },
+        {
+          "mean": 1.493152990264256,
+          "max": 107.42699999999999
+        }
+      ],
+      "action_hashes": [
+        "b9f1e0db2c3e5b7025dfb4f2d15e84ad02523124efa399476c604fe8fd52ff52",
+        "2eea04aab8b686f3cb107921d05a7ab2e3ac74a329a216c9e5e7a9e816c4cabb"
+      ],
+      "action_counts": [
+        719,
+        719
+      ],
+      "seconds": 6.523960791993886
+    },
+    "candidate": {
+      "a": "infill4_d18",
+      "b": "tds",
+      "seed": 1010007,
+      "seat": 1,
+      "valid": true,
+      "rewards": [
+        87605.0,
+        93915.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "n_err": 0,
+      "errors": [],
+      "steps": 720,
+      "score": 1.0,
+      "margin": 6310.0,
+      "ms": [
+        {
+          "mean": 2.006481223922114,
+          "max": 118.23500000000001
+        },
+        {
+          "mean": 1.5480945757997218,
+          "max": 98.142
+        }
+      ],
+      "action_hashes": [
+        "c57885901f158d7dd877401a6ea40caa7450bd0138ee475f602a5d8c3c6359a2",
+        "2eea04aab8b686f3cb107921d05a7ab2e3ac74a329a216c9e5e7a9e816c4cabb"
+      ],
+      "action_counts": [
+        719,
+        719
+      ],
+      "seconds": 6.4436578750028275
+    }
+  },
+  {
+    "arm": "infill4_d18",
+    "opponent": "tds",
+    "seed": 1010007,
+    "seat": 0,
+    "base": {
+      "a": "base",
+      "b": "tds",
+      "seed": 1010007,
+      "seat": 0,
+      "valid": true,
+      "rewards": [
+        93915.0,
+        87605.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "n_err": 0,
+      "errors": [],
+      "steps": 720,
+      "score": 1.0,
+      "margin": 6310.0,
+      "ms": [
+        {
+          "mean": 2.1562002781641167,
+          "max": 131.319
+        },
+        {
+          "mean": 1.3516981919332407,
+          "max": 128.079
+        }
+      ],
+      "action_hashes": [
+        "2eea04aab8b686f3cb107921d05a7ab2e3ac74a329a216c9e5e7a9e816c4cabb",
+        "c57885901f158d7dd877401a6ea40caa7450bd0138ee475f602a5d8c3c6359a2"
+      ],
+      "action_counts": [
+        719,
+        719
+      ],
+      "seconds": 6.598682791984174
+    },
+    "candidate": {
+      "a": "infill4_d18",
+      "b": "tds",
+      "seed": 1010007,
+      "seat": 0,
+      "valid": true,
+      "rewards": [
+        93915.0,
+        87605.0
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "n_err": 0,
+      "errors": [],
+      "steps": 720,
+      "score": 1.0,
+      "margin": 6310.0,
+      "ms": [
+        {
+          "mean": 2.2268706536856744,
+          "max": 143.697
+        },
+        {
+          "mean": 1.3101488178025036,
+          "max": 120.396
+        }
+      ],
+      "action_hashes": [
+        "2eea04aab8b686f3cb107921d05a7ab2e3ac74a329a216c9e5e7a9e816c4cabb",
+        "b9f1e0db2c3e5b7025dfb4f2d15e84ad02523124efa399476c604fe8fd52ff52"
+      ],
+      "action_counts": [
+        719,
+        719
+      ],
+      "seconds": 6.572217999986606
+    }
+  }
+]

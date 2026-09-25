@@ -1,0 +1,138 @@
+{
+  "original_affected_cells": 4,
+  "original_wlt_changed": false,
+  "original_rewards_changed": false,
+  "primary_selection_affected": false,
+  "followup_episodes": 8,
+  "hash_seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "all_followup_states_exact": true,
+  "alternative_hash_reproduced": false,
+  "status": "Unresolved source of neutral rival trace variation; no WLT or reward effect in observed cells. Do not claim action determinism for every rival.",
+  "reports": [
+    {
+      "hash_seed": "0",
+      "seed": 1010007,
+      "seat": 0,
+      "reports": [
+        {
+          "arm": "base",
+          "rewards": [
+            93915.0,
+            87605.0
+          ],
+          "hashes": [
+            "2eea04aab8b686f3cb107921d05a7ab2e3ac74a329a216c9e5e7a9e816c4cabb",
+            "b9f1e0db2c3e5b7025dfb4f2d15e84ad02523124efa399476c604fe8fd52ff52"
+          ]
+        },
+        {
+          "arm": "infill8_d16",
+          "rewards": [
+            93915.0,
+            87605.0
+          ],
+          "hashes": [
+            "2eea04aab8b686f3cb107921d05a7ab2e3ac74a329a216c9e5e7a9e816c4cabb",
+            "b9f1e0db2c3e5b7025dfb4f2d15e84ad02523124efa399476c604fe8fd52ff52"
+          ]
+        }
+      ],
+      "same_states": true
+    },
+    {
+      "hash_seed": "1",
+      "seed": 1010007,
+      "seat": 0,
+      "reports": [
+        {
+          "arm": "base",
+          "rewards": [
+            93915.0,
+            87605.0
+          ],
+          "hashes": [
+            "2eea04aab8b686f3cb107921d05a7ab2e3ac74a329a216c9e5e7a9e816c4cabb",
+            "b9f1e0db2c3e5b7025dfb4f2d15e84ad02523124efa399476c604fe8fd52ff52"
+          ]
+        },
+        {
+          "arm": "infill8_d16",
+          "rewards": [
+            93915.0,
+            87605.0
+          ],
+          "hashes": [
+            "2eea04aab8b686f3cb107921d05a7ab2e3ac74a329a216c9e5e7a9e816c4cabb",
+            "b9f1e0db2c3e5b7025dfb4f2d15e84ad02523124efa399476c604fe8fd52ff52"
+          ]
+        }
+      ],
+      "same_states": true
+    },
+    {
+      "hash_seed": "2",
+      "seed": 1010007,
+      "seat": 0,
+      "reports": [
+        {
+          "arm": "base",
+          "rewards": [
+            93915.0,
+            87605.0
+          ],
+          "hashes": [
+            "2eea04aab8b686f3cb107921d05a7ab2e3ac74a329a216c9e5e7a9e816c4cabb",
+            "b9f1e0db2c3e5b7025dfb4f2d15e84ad02523124efa399476c604fe8fd52ff52"
+          ]
+        },
+        {
+          "arm": "infill8_d16",
+          "rewards": [
+            93915.0,
+            87605.0
+          ],
+          "hashes": [
+            "2eea04aab8b686f3cb107921d05a7ab2e3ac74a329a216c9e5e7a9e816c4cabb",
+            "b9f1e0db2c3e5b7025dfb4f2d15e84ad02523124efa399476c604fe8fd52ff52"
+          ]
+        }
+      ],
+      "same_states": true
+    },
+    {
+      "hash_seed": "3",
+      "seed": 1010007,
+      "seat": 0,
+      "reports": [
+        {
+          "arm": "base",
+          "rewards": [
+            93915.0,
+            87605.0
+          ],
+          "hashes": [
+            "2eea04aab8b686f3cb107921d05a7ab2e3ac74a329a216c9e5e7a9e816c4cabb",
+            "b9f1e0db2c3e5b7025dfb4f2d15e84ad02523124efa399476c604fe8fd52ff52"
+          ]
+        },
+        {
+          "arm": "infill8_d16",
+          "rewards": [
+            93915.0,
+            87605.0
+          ],
+          "hashes": [
+            "2eea04aab8b686f3cb107921d05a7ab2e3ac74a329a216c9e5e7a9e816c4cabb",
+            "b9f1e0db2c3e5b7025dfb4f2d15e84ad02523124efa399476c604fe8fd52ff52"
+          ]
+        }
+      ],
+      "same_states": true
+    }
+  ]
+}
