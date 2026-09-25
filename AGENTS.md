@@ -4,8 +4,8 @@
 > Desde el 2026-09-21 el usuario autorizó un loop autónomo de investigación que
 > incluye submissions experimentales ("También tienes capacidad para crear y
 > subir submissions reales. Usa ambas cosas"). Referencias reales activas:
-> **VQ56535264** y **top3 56537205**, ambas COMPLETE. Snapshot06:52UTC:
-> 2289,1/88episodios y2094,7/75 respectivamente; incluyen validación.
+> **VQ56535264** y **top3 56537205**, ambas COMPLETE. Snapshot07:41UTC:
+> 2296,9/91episodios y2094,4/79 respectivamente; incluyen validación.
 > No volver al campeón histórico de1180. Creencias con evidencia:
 > `docs/research/RESEARCH_BELIEFS.md`; historial reproducible de envíos:
 > `docs/research/SUBMISSION_HISTORY.json`; qué métrica local predice el ladder:
@@ -26,7 +26,8 @@ y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_almacen.py`, `continuar_loop_alimentacion.py` y
 `continuar_loop_caja_alimento.py`, `continuar_loop_rebano_inicial.py` y
 `continuar_loop_publicos_0548.py`, `continuar_loop_trigo_reventa.py` y
-`continuar_loop_reventa_town.py` y `continuar_loop_senales_extra.py` encadenan bloques
+`continuar_loop_reventa_town.py`, `continuar_loop_senales_extra.py` y
+`continuar_loop_harvest68.py` y `continuar_loop_suministro_ovino.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
 terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
 (una de64 partidas cambia, +1,5625pp). Confirm5 tomate−21,591pp: REJECTED.
@@ -46,7 +47,8 @@ No seleccionadas ni enviadas; no son inertes. Piloto14terminó1.248/noop256,
 half−12,5pp(inconcluso), double−26,5625, keep_sheep−50,78125, all−64,84375
 (últimas tres REJECTED). Sin confirmación. Piloto15terminó1.568/noop288:
 night/24−12,5pp(inconcluso),48/all24inertes128/128; ninguna seleccionada.
-Corre16desde06:55UTC;18/19/20en cola. Doce diagnósticos validan reducción de pérdidas,
+16terminó2.496/noop512: todas REJECTED.18terminó704/noop192:V7−21,875pp
+(inconcluso), HS4−30,46875(REJECTED), ninguna seleccionada. Corre19desde07:33UTC;20/21/22en cola. Doce diagnósticos validan reducción de pérdidas,
 pero una celda neutral omite3FEEDposteriores: no garantiza preservar producción.
 Loop14 modifica sólo filtro económico FEED:36juegos/noop4.314turnos,
 consumo/producción aceptados comprobados; todas activas128/128en piloto.
@@ -73,14 +75,14 @@ reserva de insumos futuros. Loop15 validado: cuatro reservas, control antiguo,
 42diagnósticos/noop4.314, max294ms. Night/24evitan los escapes del caso adverso
 y permiten conversión en el solvente;48/all24inertes en desarrollo. Piloto1.568
 completo, sin seleccionadas. Loop16 mezcla inicial:48juegos/noop5.752, max329ms,
-cantidades/costes físicos comprobados;2.496piloto corriendo. Sheep2pierde
+cantidades/costes físicos comprobados;2.496piloto completo, las cuatro REJECTED. Sheep2pierde
 una vaca215en1272457736; registrar escapes, no ocultarlos. Total71variantes.
 Doce replays muestran33MILKtruncadas por banco excesivo antes del primer yield
 con inventario previo0. Loop17 probó valor marginal limitado:24juegos válidos
 para ejecución, pero detenido por modelo temporal incorrecto (cosecha687libera
 espacio después del FEED682omitido). No ejecutar piloto17; runner protegido.
 Loop18 fuentes V7/HS4 nuevas:24juegos/noop2.876/entradas equivalentes5.752turnos,
-max431ms. Piloto704 encolado directamente tras16. Total73variantes competitivas
+max431ms. Piloto704terminado sin seleccionadas. Total73variantes competitivas
 y2prototipos detenidos. No modificar fuentes de paneles congelados.
 Loop19 separa prioridad/mitad/ambas en compras grandes de trigo.30diagnósticos
 válidos/noop4.314/max305ms; activa en uno de tres mundos. Cobertura estática
@@ -99,6 +101,17 @@ Alimento/cosecha cambian en dos: es efecto total. Piloto2.016tras20con VQcomo
 control y dos rivales públicos nuevos. No inferir debilidad de top3sólo por rating:8replays recientes
 reproducidos exactamente,7/8mejoran margen top3contra cinta rival fija; no
 prueba efecto contra rival reactivo.83variantes construidas más2prototipos.
+
+
+Loop22V68harvest y ablación selector-off:42juegos/noop4.314/entradas8.628,
+max713ms, swaps1/1/2aceptados, créditos liquidados; cambia tiendas en un mundo.
+En cola tras21. Master07:12es duplicado V7, no repetir. Loop23validado/encolado:
+peón ovino compacto queda21turnos PICKUP0por competir con retiro nativo;
+regla de suministro general rescata24lanas en replaydavion, margen−2904→1255
+contra acciones grabadas.48juegos reactivos/noop8.628/max327ms: activo sólo
+contraV7en mundo dirigido, recupera24lanas/margen−5090→−1093ambos asientos,
+conserva derrota. Piloto2.560tras22, controlesVQ; no seleccionar por desarrollo.
+87variantes construidas más2prototipos detenidos. Ver estado y preregistros22/23.
 
 ## Estado y autorización
 

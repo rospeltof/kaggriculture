@@ -1,5 +1,15 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte operativo07:50UTC
+
+Pilotos16/18cerrados sin candidatas. Corre19;20/21/22/23validados y en cola,
+un solo torneo grande. No iniciar duplicados.87variantes construidas más2
+prototipos17detenidos. Suministro23rescata6alimentaciones/24lanas contraV7
+reactivo pero aún pierde; falta piloto global. Nueva pista para investigar:
+adelantar compras nativas de trigo, observada19/19veces en rivalGrimReaper;
+aún no hay implementación24. Último feedback real07:41:40UTC:VQ2296,9/91,
+top32094,4/79, ambasCOMPLETE. No se ha enviado otra submission.
+
 ## Loop activo desde 2026-09-25 01:02 UTC
 
 El usuario pidió explícitamente seguir investigando y probando en un **loop
@@ -158,7 +168,11 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   Cambiar caja inicial altera cultivos y tiendas: es efecto total, no sólo lana
   por leche. Sheep2pierde una vaca215en1272457736;1036000tiene escapes tardíos
   en base/cow1. Se conservan, no ocultarlos. Piloto2.496con32semillas1037000–031,
-  confirmación32semillas1038000–031. **Piloto16corriendo desde06:55:12UTC**.
+  confirmación32semillas1038000–031. **Piloto16completo**:2.496episodios,
+  noop512/512, cero errores, base92,1875%. Sheep1−86,71875pp, resto−92,1875pp,
+  todos REJECTED con ICdos vías negativos. Todos cambian256/256acciones propias.
+  Sin seleccionadas/confirmación. Dos celdas adversas reproducidas con caja:
+  cambian tiendas; sheep1sube caja831pero rival8.971. No es efecto puro de especies.
   Total71variantes construidas.
 - Auditoría de12replays top3:3CARROTpor decay,1por sequía y4MILKen campo final.
   33MILKtruncadas con inventario previo0son exceso de cuidado antes de primer
@@ -174,7 +188,11 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   nuevos,24juegos/noop2.876/igualdad oficial-nominal5.752turnos, max431ms.
   Cero estados fatales, cero errores en contadores nuevos observados, cero escapes
   y productos terminales en esos mundos; quedan semillas. Piloto704semillas
-  1043000–015 y confirmación1044000–015. No sobrescribir rivales antiguos del pool.
+  1043000–015 **completo**704episodios/noop192/errores0: V7−21,875pp
+  (ICdos vías[−57,741;13,991], inconcluso); HS4−30,46875pp
+  (IC[−56,648;−4,290], REJECTED). Ambos activos128/128. Ningún seleccionado
+  ni confirmación. **Corre19desde07:33:37UTC**;20/21/22esperan.
+  No sobrescribir rivales antiguos del pool.
   Total73variantes competitivas construidas más2prototipos17detenidos.
   Ver `FUENTES_PUBLICAS_0548_2026-09-25.md`; afirmaciones externas no son evidencia.
 - Loop19 validado/encolado tras18: prioridad de BUYWHEAT, mitad de cantidad y
@@ -209,6 +227,23 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   enviado:719acciones/720estados exactos;16juegos con contrafactualVQ/top3,
   caja conciliada/max348ms/sin escapes propios. Top3mejora margen7/8pero
   rival grabado no reacciona: no es estimación competitiva. Ver FEEDBACK_PAREADO_0653.
+- Loop22validado/encolado: Harvest Ledger V68SHA3b543611y selector-offab4cbb92.
+  Master descargado07:12idéntico al V7ya probado, deduplicado.42juegos/noop4.314,
+  entradas oficial/nominal8.628turnos exactos, max713ms, cero errores observables,
+  escapes/productos finales/créditosYpendientes. Selector activo3mundos, swaps
+  1/1/2aceptados; quedan semillas2/0/6y cambian tiendas en1578791335. Piloto1.280
+  tras21, controlVQ/gate≥0vsVQ. Total85variantes más2prototipos; ver informe0712.
+- Loop23validado/encolado: suministro del peón ovino compacto, buy/hold, dos fuentes
+  generales. Replaydavion113174624reproducido exactamente: otro actor consume5
+  antes de que peón12retire6; recibe1y queda21turnos PICKUP0. Seis ovejas no
+  alimentadas/cuidadas; no FEEDfallido ni problema de caja. Sonda compra6→11
+  recupera24lanas vendidas, caja propia+22pero rival−4.137, margen−2.904→+1.255
+  contra cinta fija. Regla general lo reproduce sin seed/paso fijos.48desarrollos
+  reactivos válidos/noop8.628/max327ms, activo sólo contraV7en mundo dirigido,
+  ambos asientos. Retira6trigos completos, restaura6FEEDy24lanas, margen−5090→−1093;
+  no convierte esa derrota. Base/arshs3/VQ/HS4inertes. Piloto2.560tras22,
+  controlVQy confirmación disjunta.87variantes construidas
+  más2prototipos; ver `SUMINISTRO_OVINO_2026-09-25.md`. No es mejora OOS aún.
 - Fuentes públicas nuevas: MasterEngine actualizado es tds25 byte exacto,
   excluido. MarketShock12ad317e diferente; loader elegía instalador. Corrección
   de entrada1c94b979 probada idéntica al `module.agent` del autor en8juegos.
@@ -232,7 +267,16 @@ arshs3 reactivo): reparación inerte en asiento 0; recupera planta y −671→+5
 asiento 1, con tiendas diferentes. Caso dirigido, no estimación poblacional.
 La prueba de cobertura quedó registrada y encolada como loop4.
 
-Snapshot nuevo06:52:55UTC (sufijo0653): VQ**2289,1/88episodios listados**,
+Snapshot vigente07:41:40UTC(sufijo0742):VQ**2296,9/91episodios listados**,
+top3**2094,4/79**, ambasCOMPLETE. Incluyen validación. Sin nuevo envío.
+Siete replays nuevos por recencia: cada fuente reproduce719acciones/720estados
+exactos/caja, máximo187ms; cero escapes propios/productos finales/PICKUPW0.
+Top3:2V2D;VQ:2V1D, no WRpoblacional. ContraGrimReaper,19/19compras grandes
+rivales ocurren un turno antes con igual cantidad pedida; coste2988menos con
+1359unidades vs1361propias. Nueva hipótesis de adelanto de compras, distinta
+a prioridad19/nuevos roundtrips20, aún sin construir. Ver `FEEDBACK_0742_2026-09-25.md`.
+
+Snapshot anterior06:52:55UTC (sufijo0653): VQ**2289,1/88episodios listados**,
 top3**2094,7/75**, ambasCOMPLETE. Incluyen validación. No nuevo envío. Las
 cuatro partidas recientes por fuente se seleccionaron antes de leer rewards.
 Diagnóstico8replays/16reproducciones en `FEEDBACK_PAREADO_0653_2026-09-25.md`.

@@ -1,0 +1,58 @@
+[
+  {
+    "id": 113197940,
+    "policy": "top3",
+    "path": "replays/top3_feedback_0742/episode-113197940-replay.json",
+    "sha256": "04b5fc32e9ae7f5bf7e41e41b231bc82f887671c6284acdbc9a25a0fd0c4aaa4",
+    "started_at": "2026-09-25T07:42:40.318636+00:00",
+    "completed_at": "2026-09-25T07:42:43.188780+00:00"
+  },
+  {
+    "id": 113191143,
+    "policy": "top3",
+    "path": "replays/top3_feedback_0742/episode-113191143-replay.json",
+    "sha256": "87a76d02bd387a2cf80d77c544fb643565bcdbf0c8893344f1547e32abbf8984",
+    "started_at": "2026-09-25T07:42:43.188875+00:00",
+    "completed_at": "2026-09-25T07:42:44.971221+00:00"
+  },
+  {
+    "id": 113186794,
+    "policy": "top3",
+    "path": "replays/top3_feedback_0742/episode-113186794-replay.json",
+    "sha256": "7f7f5fde6f369ab1be75b50d13a551894a273f6a32f5d78b884d49b5205e2dae",
+    "started_at": "2026-09-25T07:42:44.971384+00:00",
+    "completed_at": "2026-09-25T07:42:46.766438+00:00"
+  },
+  {
+    "id": 113187263,
+    "policy": "top3",
+    "path": "replays/top3_feedback_0742/episode-113187263-replay.json",
+    "sha256": "6004da4e4b264d1285e6c062e030318de24bc88b13fd86c6a4bbac7443dba889",
+    "started_at": "2026-09-25T07:42:46.766569+00:00",
+    "completed_at": "2026-09-25T07:42:48.508754+00:00"
+  },
+  {
+    "id": 113198597,
+    "policy": "vq",
+    "path": "replays/vq_feedback_0742/episode-113198597-replay.json",
+    "sha256": "0a3235de778ea8b6277491cc3651c6caf55d7776cb0964fea685e612a38a45f6",
+    "started_at": "2026-09-25T07:42:48.509061+00:00",
+    "completed_at": "2026-09-25T07:42:50.482849+00:00"
+  },
+  {
+    "id": 113194322,
+    "policy": "vq",
+    "path": "replays/vq_feedback_0742/episode-113194322-replay.json",
+    "sha256": "22f97e95cef9c6f4ba2872ea451c7aad3bcde3d351c73e75a413109247b4c883",
+    "started_at": "2026-09-25T07:42:50.483005+00:00",
+    "completed_at": "2026-09-25T07:42:52.293012+00:00"
+  },
+  {
+    "id": 113187518,
+    "policy": "vq",
+    "path": "replays/vq_feedback_0742/episode-113187518-replay.json",
+    "sha256": "e2f3fa9c2420ef1db2ca2cdf745e6e10b3e537dfed44ff89db4c5fea458728c0",
+    "started_at": "2026-09-25T07:42:52.293098+00:00",
+    "completed_at": "2026-09-25T07:42:54.217248+00:00"
+  }
+]

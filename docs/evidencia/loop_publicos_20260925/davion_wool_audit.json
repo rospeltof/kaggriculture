@@ -1,0 +1,156 @@
+{
+  "plan": {
+    "episode": 113174624,
+    "seed": 1578791335,
+    "seat": 0,
+    "rule": "Only top3 loss in the four recent episodes already selected by date; physical attribution only, no new population sample.",
+    "source_sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
+    "replay_sha256": "be83a6423b0a152abc8497c814847f37e8b4b6c0e9bd58891ac58c73225cd5df"
+  },
+  "states_exact": 720,
+  "summaries": [
+    {
+      "player": 0,
+      "production": 389,
+      "sold": 385,
+      "sale_cash": 85254,
+      "field_final": 0,
+      "private_final": 0,
+      "harvest_overflow": 0,
+      "storage_loss": 4,
+      "cap_loss": 0,
+      "immediate_feed_gap": 18,
+      "accepted": {
+        "FEED": 335,
+        "CARE": 336,
+        "HARVEST": 95
+      },
+      "fed_nights": 335,
+      "cared_nights": 334
+    },
+    {
+      "player": 1,
+      "production": 414,
+      "sold": 410,
+      "sale_cash": 89095,
+      "field_final": 0,
+      "private_final": 0,
+      "harvest_overflow": 0,
+      "storage_loss": 4,
+      "cap_loss": 0,
+      "immediate_feed_gap": 0,
+      "accepted": {
+        "FEED": 341,
+        "CARE": 343,
+        "HARVEST": 95
+      },
+      "fed_nights": 341,
+      "cared_nights": 341
+    }
+  ],
+  "economic_feed_skips": [
+    {
+      "step": 650,
+      "actor": 1,
+      "xy": [
+        5,
+        4
+      ],
+      "tile": {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 6,
+        "yield_units": 4,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 1
+      },
+      "prices": {
+        "WHEAT": 39,
+        "CARROT": 48,
+        "TOMATO": 63,
+        "STRAWBERRY": 32,
+        "MELON": 115,
+        "EGG": 55,
+        "MILK": 38,
+        "WOOL": 179,
+        "FERTILIZER": 2
+      },
+      "bonus": 0,
+      "final_command": [
+        "PASS"
+      ]
+    },
+    {
+      "step": 652,
+      "actor": 3,
+      "xy": [
+        5,
+        3
+      ],
+      "tile": {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 6,
+        "yield_units": 4,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 1
+      },
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 48,
+        "TOMATO": 63,
+        "STRAWBERRY": 32,
+        "MELON": 115,
+        "EGG": 55,
+        "MILK": 38,
+        "WOOL": 179,
+        "FERTILIZER": 3
+      },
+      "bonus": 0,
+      "final_command": [
+        "PASS"
+      ]
+    },
+    {
+      "step": 653,
+      "actor": 2,
+      "xy": [
+        3,
+        4
+      ],
+      "tile": {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 0,
+        "yield_units": 0,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 1
+      },
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 48,
+        "TOMATO": 63,
+        "STRAWBERRY": 37,
+        "MELON": 115,
+        "EGG": 55,
+        "MILK": 42,
+        "WOOL": 190,
+        "FERTILIZER": 3
+      },
+      "bonus": 0,
+      "final_command": [
+        "PASS"
+      ]
+    }
+  ],
+  "note": "Immediate feed_gap holds current bank/stock fixed; it excludes future care, routing and market feedback, and is not realizable profit."
+}

@@ -1,0 +1,88 @@
+{
+  "agentes": {
+    "base": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "noop": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "initial_sheep1": {
+      "ruta": "results/rebano_inicial_20260925/initial_sheep1.py",
+      "sha256": "51fc6bf6651f22239c59e7b05a1c6987a14a97defd7a47af86fe8c65e5327447"
+    },
+    "initial_sheep2": {
+      "ruta": "results/rebano_inicial_20260925/initial_sheep2.py",
+      "sha256": "d6c0b24f47cd01763df361b79de717a9c9fb17caf2e378d8fb480a4852196078"
+    },
+    "initial_cow1": {
+      "ruta": "results/rebano_inicial_20260925/initial_cow1.py",
+      "sha256": "bacf602086d66f80ba4f4dea2a206df639ec533d81ccb26978102f8d5759cd76"
+    },
+    "initial_cow2": {
+      "ruta": "results/rebano_inicial_20260925/initial_cow2.py",
+      "sha256": "737e5727cd72e15bf58a28479c510afaa81d8729d5498cf372b66987d8d5ff7f"
+    },
+    "tds": {
+      "ruta": "submission/main_publico_tds_tetsutani.py",
+      "sha256": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a"
+    },
+    "hybu": {
+      "ruta": "results/publicos/wzhengbiao_kaggriculture-hybu-submit/main.py",
+      "sha256": "f6175fd1bc3850f74185e7a813bb5a87d54e7e15212c874133dafc6e1ce91d34"
+    },
+    "ars40": {
+      "ruta": "results/publicos/arsgorynich_kaggriculture-v40-challenger/main.py",
+      "sha256": "d5a192fac67f00da31fe2bc7b747b8c33766bf1024780c53e49f2292a97db2de"
+    },
+    "arshs3": {
+      "ruta": "submission/main_publico_arshs3_arsgorynich.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    }
+  },
+  "seeds": [
+    1037000,
+    1037001,
+    1037002,
+    1037003,
+    1037004,
+    1037005,
+    1037006,
+    1037007,
+    1037008,
+    1037009,
+    1037010,
+    1037011,
+    1037012,
+    1037013,
+    1037014,
+    1037015,
+    1037016,
+    1037017,
+    1037018,
+    1037019,
+    1037020,
+    1037021,
+    1037022,
+    1037023,
+    1037024,
+    1037025,
+    1037026,
+    1037027,
+    1037028,
+    1037029,
+    1037030,
+    1037031
+  ],
+  "vs": "base,noop,initial_sheep1,initial_sheep2,initial_cow1,initial_cow2",
+  "inicio": "2026-09-25 01:55:12",
+  "state": "complete",
+  "expected_episodes": 2496,
+  "workers": 8,
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "cc2c653a1cce243e55d3d30effd5985405bb9db28bde7622cecc400a7298b025",
+  "completed_episodes": 2496,
+  "fin": "2026-09-25 02:25:12"
+}

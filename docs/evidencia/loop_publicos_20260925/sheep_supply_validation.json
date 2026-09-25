@@ -1,0 +1,141 @@
+{
+  "passed": true,
+  "competitive_ready": true,
+  "development_games": 48,
+  "noop_exact_turns": 8628,
+  "max_turn_ms": 326.9581669883337,
+  "activation": {
+    "sheep_supply_buy": 2,
+    "sheep_supply_hold": 2
+  },
+  "pickup_checks": [
+    {
+      "tag": "sheep_supply_coverage_public_v7",
+      "arm": "sheep_supply_buy",
+      "seed": 1578791335,
+      "seat": 0,
+      "step": 601,
+      "need": 11,
+      "predicted": 11,
+      "actual": 11,
+      "accepted_buy": 11,
+      "worker_pickup": 6
+    },
+    {
+      "tag": "sheep_supply_coverage_public_v7",
+      "arm": "sheep_supply_buy",
+      "seed": 1578791335,
+      "seat": 1,
+      "step": 601,
+      "need": 11,
+      "predicted": 11,
+      "actual": 11,
+      "accepted_buy": 11,
+      "worker_pickup": 6
+    },
+    {
+      "tag": "sheep_supply_coverage_public_v7",
+      "arm": "sheep_supply_hold",
+      "seed": 1578791335,
+      "seat": 0,
+      "step": 601,
+      "need": 11,
+      "predicted": 11,
+      "actual": 11,
+      "accepted_buy": 11,
+      "worker_pickup": 6
+    },
+    {
+      "tag": "sheep_supply_coverage_public_v7",
+      "arm": "sheep_supply_hold",
+      "seed": 1578791335,
+      "seat": 1,
+      "step": 601,
+      "need": 11,
+      "predicted": 11,
+      "actual": 11,
+      "accepted_buy": 11,
+      "worker_pickup": 6
+    }
+  ],
+  "buy_hold_equivalence": [
+    {
+      "tag": "sheep_supply_smoke",
+      "seed": 1578791335,
+      "seat": 0,
+      "both_actions_and_rewards_equal": true
+    },
+    {
+      "tag": "sheep_supply_smoke",
+      "seed": 1578791335,
+      "seat": 1,
+      "both_actions_and_rewards_equal": true
+    },
+    {
+      "tag": "sheep_supply_smoke",
+      "seed": 1057000,
+      "seat": 0,
+      "both_actions_and_rewards_equal": true
+    },
+    {
+      "tag": "sheep_supply_smoke",
+      "seed": 1057000,
+      "seat": 1,
+      "both_actions_and_rewards_equal": true
+    },
+    {
+      "tag": "sheep_supply_smoke",
+      "seed": 1057001,
+      "seat": 0,
+      "both_actions_and_rewards_equal": true
+    },
+    {
+      "tag": "sheep_supply_smoke",
+      "seed": 1057001,
+      "seat": 1,
+      "both_actions_and_rewards_equal": true
+    },
+    {
+      "tag": "sheep_supply_coverage_vq",
+      "seed": 1578791335,
+      "seat": 0,
+      "both_actions_and_rewards_equal": true
+    },
+    {
+      "tag": "sheep_supply_coverage_vq",
+      "seed": 1578791335,
+      "seat": 1,
+      "both_actions_and_rewards_equal": true
+    },
+    {
+      "tag": "sheep_supply_coverage_public_v7",
+      "seed": 1578791335,
+      "seat": 0,
+      "both_actions_and_rewards_equal": true
+    },
+    {
+      "tag": "sheep_supply_coverage_public_v7",
+      "seed": 1578791335,
+      "seat": 1,
+      "both_actions_and_rewards_equal": true
+    },
+    {
+      "tag": "sheep_supply_coverage_public_hs4",
+      "seed": 1578791335,
+      "seat": 0,
+      "both_actions_and_rewards_equal": true
+    },
+    {
+      "tag": "sheep_supply_coverage_public_hs4",
+      "seed": 1578791335,
+      "seat": 1,
+      "both_actions_and_rewards_equal": true
+    }
+  ],
+  "candidate_hashes": {
+    "sheep_supply_buy": "7b3257ba8bdfa499f9b6194a0d13236975e5fe87e92e18816e8f45787a5b18be",
+    "sheep_supply_hold": "77123a795f22889a9b37e2a9234fd9941c1b160be6579d7e803068825d7ad07a"
+  },
+  "control_hash": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976",
+  "note": "Actual field pickups, accepted market buys, next stock, noop, cash and source hashes verified. Directed coverage is not population effectiveness; no reward-based development selection."
+}

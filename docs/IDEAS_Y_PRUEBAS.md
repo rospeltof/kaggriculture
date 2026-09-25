@@ -9,12 +9,18 @@ son históricas. Confirm10 terminó inerte y biblioteca11sin mejora W/L/T;
 piloto12 terminó sin seleccionadas. Confirm13 terminó delta0 pese a
 107/86acciones distintas; no enviar. Piloto14sin seleccionadas: dar más alimento
 perjudica en este panel.15sin seleccionadas: reserva de caja no garantiza
-conversión rentable. Corre16;18/19/20en cola. Loop21modera señales extra
+conversión rentable.16terminócon cuatro REJECTED;18sin seleccionadas. Corre19,
+20/21/22/23en cola.23valida suministro del peón ovino adicional, omitido por
+la guarda de retiros nativos:48desarrollos/noop8.628/max327ms. ContraV7recupera
+24lanas pero conserva derrota; piloto32semillas pendiente. No repetir alimentación indiscriminada14. Loop21modera señales extra
 del forecast, con VQcomo control y rivales nuevos. Loop20validó146compras/cierres. Loop17
 se detuvo por confundir stock actual con stock nocturno: una cosecha intermedia
 libera capacidad y hace valiosa la alimentación omitida. No repetir ese modelo.
-Loop18 compara dos fuentes públicas nuevas con entradas verificadas.
-No duplicar los bloques congelados ni repetir experimentos ya registrados.
+Loop18cerró704juegos:V7−21,875ppinconcluso, HS4−30,46875REJECTED.
+Loop22compara Harvest V68y selector-off, fuente distinta; Master07:12duplicado.
+Siguiente pista0742:GrimReaper compra trigo un turno antes en19/19órdenes
+grandes de VQ; distinto a prioridad19. Revisar compromisos y preregistrar
+antes de construir. No duplicar los bloques congelados ni repetir experimentos ya registrados.
 
 ## Ronda vigente — 2026-09-14
 

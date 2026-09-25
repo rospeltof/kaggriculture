@@ -1,0 +1,31 @@
+{
+  "seeds": [
+    1578791335,
+    1057000,
+    1057001
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "opponent": "submission/main_publico_arshs3_arsgorynich.py",
+  "purpose": "Feed mechanics with a reactive rival; no development reward selection.",
+  "agents": {
+    "base": {
+      "path": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "sheep_supply_buy": {
+      "path": "results/suministro_ovino_20260925/sheep_supply_buy.py",
+      "sha256": "7b3257ba8bdfa499f9b6194a0d13236975e5fe87e92e18816e8f45787a5b18be"
+    },
+    "sheep_supply_hold": {
+      "path": "results/suministro_ovino_20260925/sheep_supply_hold.py",
+      "sha256": "77123a795f22889a9b37e2a9234fd9941c1b160be6579d7e803068825d7ad07a"
+    },
+    "sheep_supply_noop": {
+      "path": "results/suministro_ovino_20260925/sheep_supply_noop.py",
+      "sha256": "f1a50a63908178b334cd1c1d5e48c7ca3920d4988e09ef2ebc9e4e41a2a21a5e"
+    }
+  }
+}

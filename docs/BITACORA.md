@@ -1,5 +1,40 @@
 # Bitácora de experimentos
 
+## 2026-09-25, 07:49 UTC — Rebaño16cerrado; suministro23y compras anticipadas
+
+Piloto16completo2.496/noop512/errores0: sheep1−86,71875pp, otras tres−92,1875,
+ICdos vías negativos. Cuatro diagnósticos reproducen rewards/caja; cambian tiendas,
+sheep1sube831pero rival8971. Todas REJECTED, ninguna confirmación.18completo704/
+noop192:V7−21,875ppinconcluso; HS4−30,46875REJECTED. Cuatro diagnósticos
+reproducen rewards/caja y mismas tiendas. Ninguna seleccionada.19corre desde07:33.
+
+Harvest Ledger V68nuevo07:12, SHA3b543611; Masteridéntico V7deduplicado.
+42desarrollos/noop4314/entradas8628exactas, max713ms, swaps1/1/2aceptados,
+créditosYliquidados, cero escapes/productos finales; semillas2/0/6. Tiendas
+cambian en mundo1578791335. Fuente cruda+selector-offen cola22tras21.
+
+Auditoría davion113174624reproduce720estados y balanceWOOL: peón12recibe1/6
+por retirada5del actor9; emite21PICKUP0, seis ovejas sin alimento/cuidado.
+Sonda dirigida compra6→11rescata24lanas vendidas, margen−2904→1255contra cinta;
+caja propia sólo+22, rival−4137. Regla general buy/hold registrada23no usa seed
+ni paso601y reproduce rescate. Desarrollo24contraarshs3inerte; adenda24fijada
+antes de ver resultados contraVQ/V7/HS4. Activa sóloV7, ambos asientos/brazos,
+compra11y retiro6exactos,6FEEDy24lanas restaurados, margen−5090→−1093(sigueD).
+Total48/noop8628/max327ms/ceroerrores/escapes/productos finales. Buy/holdidénticos
+12/12celdas: rama de retención sin cobertura. Runner23validado/encolado tras22,
+piloto2560semillas1058000–031, VQcontrol; confirmación condicional disjunta.
+87variantes construidas más2prototipos17detenidos. No se envió otra submission.
+
+API07:41:40UTC:VQ2296,9/91episodios, top32094,4/79, ambosCOMPLETE, incluyen
+validación. Siete nuevos por recencia seleccionados antes de rewards:top32V2D,
+VQ2V1D. Todos719acciones/720estados exactos, caja, max187ms, ceroescapes propios/
+stockfinal/PICKUPW0. FrenteGrimReaper19/19compras grandes rivales del mismo
+volumen pedido se adelantan un turno;1361/1359llenadas,costes59427/56439.
+Nueva hipótesis temporal distinta a19y20, aún sin construir. Revisar cancelación
+de compras futuras y usarVQcomo padre/control. Documentos/evidencia actualizados;
+objetivo continuo activo. No detenerse al cerrar esta ronda.
+
+
 ## 2026-09-25, 07:09 UTC — Caja15cerrada, feedback pareado y señales21
 
 Piloto15terminó1.568episodios/noop288, cero errores. Night/24−12,5pp con ICdos

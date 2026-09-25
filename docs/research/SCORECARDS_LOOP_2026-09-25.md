@@ -1,7 +1,7 @@
 # Scorecards del loop continuo — 2026-09-25 UTC
 
-Estado06:30UTC: pilotos1–13 y confirm1/5/7/8/10/13 completos; piloto14 corriendo.
-Loops15/16/18/19validados y encolados;17detenido en desarrollo. Objetivo activo.
+Estado07:40UTC: pilotos1–16/18 y confirm1/5/7/8/10/13 completos; piloto19corre.
+20/21/22/23validados y encolados;17detenido. Objetivo activo.
 
 ## Confirmación disjunta terminada
 
@@ -786,3 +786,52 @@ No se seleccionaron brazos por estos rewards. Piloto de 2.016 partidas en
 ineligible, seis rivales piloto/trece confirmación, gate adicional ≥0 frente
 al VQ del mismo bloque. Fuentes en `extra_forecast_smoke.sources.tgz`;
 validación `extra_forecast_validation.json`. Total83variantes más2prototipos.
+
+## Cierre de pilotos16y18; fuente22y suministro23
+
+Piloto16:2.496episodios,32semillas/noop512, cero errores. Base92,1875%.
+Todos los brazos cambian256/256acciones propias y rivales del pool.
+
+| Variante | Delta pp | IC95dos vías | Decisión |
+|---|---:|---|---|
+| initial_sheep1 | −86,71875 | [−95,610;−77,828] | REJECTED |
+| initial_sheep2 | −92,1875 | [−101,469;−82,906] | REJECTED |
+| initial_cow1 | −92,1875 | [−101,469;−82,906] | REJECTED |
+| initial_cow2 | −92,1875 | [−101,469;−82,906] | REJECTED |
+
+Sin seleccionadas ni confirmación. Intervalo lineal sin truncar; −101no es
+probabilidad. Cuatro diagnósticos (primera celda adversa de sheep1y cow1,
+ambas ars40/1037000/asiento0) reproducen rewards y caja. Cambian tiendas.
+Sheep1: propia134642→135473(+831), rival134465→143436(+8971), margen177→−7963.
+Cow1: propia105990/rival111109, margen−5119; leche245→248vendidas,
+pero ingresos48611→26013. Lana99→127, ingreso5498→21802. No aislar especies
+sin considerar el calendario de tiendas y otras decisiones inducidas.
+
+Piloto18:704episodios/16semillas/noop192, cero errores; base90,625%.
+V7−21,875pp, ICdos vías[−57,741;13,991], INCONCLUSIVE_NOT_SELECTED.
+HS4−30,46875pp, IC[−56,648;−4,290], REJECTED. Ambos cambian128/128acciones
+propias,128/126rivales; no seleccionados ni confirmados. Se conservan como
+rivales22/23según preregistro, sin retirar a posteriori por rendimiento.
+Cuatro diagnósticos con caja/rewards exactos, tiendas preservadas:V7en
+ars40/1043000margen898→−62, HS4enars40/1043005margen821→−158.
+HS4vende254lanas en ambos, pero ingreso24682→24240. V7cambia producción
+(leche201→204, huevos89→91, fresas251→249): no es sólo cola de ventas.
+
+Harvest V68nuevo07:12+selector-off:42desarrollos válidos/noop4314/entrada8628,
+max713ms. Selector añade1/1/2animales distintos, créditos cerrados, cero escapes
+ni productos finales; tienda cambia en un mundo. Piloto22de1280en cola tras21.
+Ver `FUENTES_PUBLICAS_0712_2026-09-25.md`;85variantes construidas al registro.
+
+Suministro23buy/hold: construcción87variantes total, aparte2prototipos17.
+24desarrollos contra arshs3completos, ambos brazos inertes en tres mundos.
+Contra replaydavion la regla general compra11en vez de6, rescata24lanas,
+margen−2904→1255; no prueba poblacional ni contra rival reactivo. Adenda24
+partidas de cobertura contraVQ/V7/HS4fijada antes de observarlas. No seleccionar
+por rewards dirigidos ni confundir cero cambios con refutación del mecanismo.
+
+Validación23completa:48juegos/noop8.628/max326,96ms,0errores/escapes/productos
+finales, mismas tiendas. Ambos brazos activos sólo contraV7reactivo en mundo
+1578791335, ambos asientos: compra11/retirada6verificadas,6FEEDrestaurados,
+WOOL389→413cosechada. Margen−5090→−1093; sigue derrota. Buy/holdequivalentes
+12/12celdas de desarrollo; rama de venta retenida sin cobertura aún. Runner23
+encolado tras22, piloto2.560con32semillas nuevas yVQcontrol. No es envío aprobado.

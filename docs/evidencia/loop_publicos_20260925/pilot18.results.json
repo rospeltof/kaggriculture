@@ -1,0 +1,103 @@
+{
+  "results": {
+    "public_v7": {
+      "reference": "base",
+      "candidate": "public_v7",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "tds"
+      ],
+      "seeds": [
+        1043000,
+        1043001,
+        1043002,
+        1043003,
+        1043004,
+        1043005,
+        1043006,
+        1043007,
+        1043008,
+        1043009,
+        1043010,
+        1043011,
+        1043012,
+        1043013,
+        1043014,
+        1043015
+      ],
+      "base_wr": 90.625,
+      "candidate_wr": 68.75,
+      "delta_points": -21.875,
+      "ci95_seed": [
+        -41.256228837273895,
+        -2.493771162726105
+      ],
+      "ci95_2way": [
+        -57.741484569538656,
+        13.991484569538656
+      ],
+      "opponent_breakdown": {
+        "ars40": -37.5,
+        "arshs3": -37.5,
+        "hybu": -6.25,
+        "tds": -6.25
+      },
+      "better_cells": 2,
+      "worse_cells": 16,
+      "equal_cells": 46,
+      "status": "INCONCLUSIVE_NOT_SELECTED"
+    },
+    "public_hs4": {
+      "reference": "base",
+      "candidate": "public_hs4",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "tds"
+      ],
+      "seeds": [
+        1043000,
+        1043001,
+        1043002,
+        1043003,
+        1043004,
+        1043005,
+        1043006,
+        1043007,
+        1043008,
+        1043009,
+        1043010,
+        1043011,
+        1043012,
+        1043013,
+        1043014,
+        1043015
+      ],
+      "base_wr": 90.625,
+      "candidate_wr": 60.15625,
+      "delta_points": -30.46875,
+      "ci95_seed": [
+        -47.13734320660123,
+        -13.80015679339877
+      ],
+      "ci95_2way": [
+        -56.64766303085864,
+        -4.2898369691413585
+      ],
+      "opponent_breakdown": {
+        "ars40": -18.75,
+        "arshs3": -21.875,
+        "hybu": -31.25,
+        "tds": -50.0
+      },
+      "better_cells": 2,
+      "worse_cells": 22,
+      "equal_cells": 40,
+      "status": "REJECTED"
+    }
+  },
+  "selected_for_confirmation": []
+}

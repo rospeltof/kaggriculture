@@ -253,3 +253,31 @@ de loop19. Requiere verificar exactamente el coste de ida/vuelta lockstep;
 no asumir ganancia por la diferencia entre precios anunciados ni usar futuro
 rival real en la política. También vigilar transferencia: VQ2294,3/85frente
 a top32084,7/73en06:26UTC, comparación descriptiva, no efecto causal probado.
+
+
+## Actualización07:40UTC: cobertura de suministro
+
+16rechaza las cuatro mezclas iniciales incondicionales;18no seleccionaV7/HS4.
+No repetirlas ni alterar el panel de21/22por sus resultados. Harvest V68es
+fuente nueva con selector restante COW/SHEEP;22validado y en cola.
+
+Prioridad23: demanda nativa+peón ovino dinámico. La derrota real davion muestra
+21PICKUP0y seis ovejas sin alimento pese a caja suficiente. Regla general rescata
+24lanas contra replay fijo;24desarrollos reactivos arshs3inertes, cobertura
+adicional24contraVQ/V7/HS4completa: activaV7ambos asientos, recupera24lanas
+y margen−5090→−1093, sigue derrota.48juegos/noop8.628validados,23encolado. Mantener ausencia de cobertura visible,
+no seleccionar semillas positivas para estimar W/L/T. Presupuesto piloto32
+semillas ya fijado antes; no ampliarlo mirando parciales. Tras esto investigar
+si mecanismos raros requieren pruebas estratificadas por situaciones observables,
+con población/ponderación fijadas de antemano, sin mezclar con panelglobal.
+
+
+## Siguiente hipótesis: adelantar compras nativas de trigo (aún sin construir)
+
+Feedback0742, VQcontraGrimReaper:19/19compras grandes iguales por cantidad
+solicitada, rival un turno antes;2988monedas menos con1359vs1361unidades.
+Nuestra fuente real reproduce719acciones/720estados. Diferente de19(slot/cantidad)
+y20(nuevas operaciones), y deADV(ventas). Revisar cancelación del compromiso
+nativo al turno siguiente, capacidad nocturna, insumos y fondos. Probar sobreVQ
+con top3como control, no escoger padre sólo por panel local. Registrar antes de
+crear variantes; no inferir algoritmos de una trayectoria ni adoptar por ahorro.

@@ -4,6 +4,22 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, suministro ovino] Cero FEEDfallidos no implica alimento suficiente.**
+  Replaydavion113174624reproducido: trabajador12recibe1/6trigos y espera21turnos
+  en PICKUP0; seis ovejas sin alimento/cuidado. Sonda compra6→11recupera24lanas
+  vendidas; caja propia+22,rival−4.137, margen+4.159. Regla general sin seed ni
+  turno fijo reproduce el rescate. ContraV7reactivo también recupera6FEEDy24lanas,
+  pero margen−5090→−1093conserva derrota.48desarrollos/noop8.628válidos; cobertura
+  general pendiente de piloto23. Cinta favorable no sustituye rival reactivo.
+  Ver `SUMINISTRO_OVINO_2026-09-25.md`; no era falta de fondos ni R85skip.
+
+- **[2026-09-25, loop16] Alterar mezcla inicial de forma incondicional daña
+  estas fuentes en el panel registrado.** 2.496juegos/noop512; sheep1−86,719pp,
+  otras tres−92,1875, ICdos vías negativos. Todas cambian256/256acciones y
+  respuesta rival. Dos diagnósticos reproducen caja/rewards y cambian tiendas;
+  sheep1sube caja831pero rival8.971. No interpretar como efecto aislado de lana.
+
+
 - **[2026-09-25, loop15] Reparar financiación no garantiza inversión rentable.**
   Piloto1.568/noop288: night/24−12,5pp(inconcluso), legacy−18,75;48/all24inertes.
   En1034015nightcompra4trigos en191y evita tres escapes, frente a0de legacy.

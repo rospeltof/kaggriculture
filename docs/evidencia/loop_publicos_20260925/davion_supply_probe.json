@@ -1,0 +1,749 @@
+{
+  "plan": {
+    "seed": 1578791335,
+    "seat": 0,
+    "source_sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
+    "rule": "Directed mechanism probe only. At known starving-worker episode step601 increase the one existing BUY_PRODUCT WHEAT from6 to11. Reactive own policy, recorded rival. This hardcoded intervention is not a candidate or estimate of population effect.",
+    "games": 2
+  },
+  "results": [
+    {
+      "arm": "base",
+      "rewards": [
+        107373.0,
+        110277.0
+      ],
+      "margin": -2904.0,
+      "wool": [
+        {
+          "wool_sold": 385,
+          "wool_cash": 85254
+        },
+        {
+          "wool_sold": 410,
+          "wool_cash": 89095
+        }
+      ],
+      "edits": [],
+      "worker": [
+        {
+          "step": 601,
+          "shed_wheat": 12,
+          "wheat": null,
+          "action": null
+        },
+        {
+          "step": 602,
+          "shed_wheat": 6,
+          "wheat": 0,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            6
+          ]
+        },
+        {
+          "step": 603,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 604,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 605,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 606,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 607,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 608,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 609,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 610,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 611,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 612,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 613,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 614,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 615,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 616,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 617,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 618,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 619,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 620,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 621,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 622,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        },
+        {
+          "step": 623,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            0
+          ]
+        }
+      ],
+      "tiles_after_night": [
+        {
+          "xy": [
+            5,
+            5
+          ],
+          "tile": {
+            "kind": "PASTURE",
+            "animal": "SHEEP",
+            "placed_day": 11,
+            "yield_units": 1,
+            "consecutive_unfed": 1,
+            "fed_today": false,
+            "cared_today": false,
+            "fertilizer_available": true,
+            "pending_care_bonus": 0
+          }
+        },
+        {
+          "xy": [
+            6,
+            5
+          ],
+          "tile": {
+            "kind": "PASTURE",
+            "animal": "SHEEP",
+            "placed_day": 11,
+            "yield_units": 1,
+            "consecutive_unfed": 1,
+            "fed_today": false,
+            "cared_today": false,
+            "fertilizer_available": true,
+            "pending_care_bonus": 0
+          }
+        },
+        {
+          "xy": [
+            7,
+            5
+          ],
+          "tile": {
+            "kind": "PASTURE",
+            "animal": "SHEEP",
+            "placed_day": 11,
+            "yield_units": 1,
+            "consecutive_unfed": 1,
+            "fed_today": false,
+            "cared_today": false,
+            "fertilizer_available": true,
+            "pending_care_bonus": 0
+          }
+        },
+        {
+          "xy": [
+            5,
+            6
+          ],
+          "tile": {
+            "kind": "PASTURE",
+            "animal": "SHEEP",
+            "placed_day": 11,
+            "yield_units": 1,
+            "consecutive_unfed": 1,
+            "fed_today": false,
+            "cared_today": false,
+            "fertilizer_available": true,
+            "pending_care_bonus": 0
+          }
+        },
+        {
+          "xy": [
+            6,
+            6
+          ],
+          "tile": {
+            "kind": "PASTURE",
+            "animal": "SHEEP",
+            "placed_day": 11,
+            "yield_units": 1,
+            "consecutive_unfed": 1,
+            "fed_today": false,
+            "cared_today": false,
+            "fertilizer_available": true,
+            "pending_care_bonus": 0
+          }
+        },
+        {
+          "xy": [
+            7,
+            6
+          ],
+          "tile": {
+            "kind": "PASTURE",
+            "animal": "SHEEP",
+            "placed_day": 11,
+            "yield_units": 1,
+            "consecutive_unfed": 1,
+            "fed_today": false,
+            "cared_today": false,
+            "fertilizer_available": true,
+            "pending_care_bonus": 0
+          }
+        }
+      ],
+      "accepted_wheat601": 6,
+      "shops_preserved": true
+    },
+    {
+      "arm": "directed_plus5",
+      "rewards": [
+        107395.0,
+        106140.0
+      ],
+      "margin": 1255.0,
+      "wool": [
+        {
+          "wool_sold": 409,
+          "wool_cash": 85457
+        },
+        {
+          "wool_sold": 410,
+          "wool_cash": 84951
+        }
+      ],
+      "edits": [
+        {
+          "step": 601,
+          "before": [
+            [
+              "SELL",
+              "WOOL",
+              11
+            ],
+            [
+              "SELL",
+              "FERTILIZER",
+              15
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              6
+            ],
+            [
+              "HIRE"
+            ]
+          ],
+          "after": [
+            [
+              "SELL",
+              "WOOL",
+              11
+            ],
+            [
+              "SELL",
+              "FERTILIZER",
+              15
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "HIRE"
+            ],
+            [
+              "BUY_PRODUCT",
+              "WHEAT",
+              11
+            ],
+            [
+              "HIRE"
+            ]
+          ]
+        }
+      ],
+      "worker": [
+        {
+          "step": 601,
+          "shed_wheat": 12,
+          "wheat": null,
+          "action": null
+        },
+        {
+          "step": 602,
+          "shed_wheat": 11,
+          "wheat": 0,
+          "action": [
+            "PICKUP",
+            "WHEAT",
+            6
+          ]
+        },
+        {
+          "step": 603,
+          "shed_wheat": 0,
+          "wheat": 6,
+          "action": [
+            "FEED"
+          ]
+        },
+        {
+          "step": 604,
+          "shed_wheat": 0,
+          "wheat": 5,
+          "action": [
+            "CARE"
+          ]
+        },
+        {
+          "step": 605,
+          "shed_wheat": 0,
+          "wheat": 5,
+          "action": [
+            "COLLECT_FERTILIZER"
+          ]
+        },
+        {
+          "step": 606,
+          "shed_wheat": 0,
+          "wheat": 5,
+          "action": [
+            "SOUTH"
+          ]
+        },
+        {
+          "step": 607,
+          "shed_wheat": 0,
+          "wheat": 5,
+          "action": [
+            "FEED"
+          ]
+        },
+        {
+          "step": 608,
+          "shed_wheat": 0,
+          "wheat": 4,
+          "action": [
+            "CARE"
+          ]
+        },
+        {
+          "step": 609,
+          "shed_wheat": 0,
+          "wheat": 4,
+          "action": [
+            "COLLECT_FERTILIZER"
+          ]
+        },
+        {
+          "step": 610,
+          "shed_wheat": 0,
+          "wheat": 4,
+          "action": [
+            "EAST"
+          ]
+        },
+        {
+          "step": 611,
+          "shed_wheat": 0,
+          "wheat": 4,
+          "action": [
+            "FEED"
+          ]
+        },
+        {
+          "step": 612,
+          "shed_wheat": 0,
+          "wheat": 3,
+          "action": [
+            "CARE"
+          ]
+        },
+        {
+          "step": 613,
+          "shed_wheat": 0,
+          "wheat": 3,
+          "action": [
+            "COLLECT_FERTILIZER"
+          ]
+        },
+        {
+          "step": 614,
+          "shed_wheat": 0,
+          "wheat": 3,
+          "action": [
+            "NORTH"
+          ]
+        },
+        {
+          "step": 615,
+          "shed_wheat": 0,
+          "wheat": 3,
+          "action": [
+            "FEED"
+          ]
+        },
+        {
+          "step": 616,
+          "shed_wheat": 0,
+          "wheat": 2,
+          "action": [
+            "CARE"
+          ]
+        },
+        {
+          "step": 617,
+          "shed_wheat": 0,
+          "wheat": 2,
+          "action": [
+            "COLLECT_FERTILIZER"
+          ]
+        },
+        {
+          "step": 618,
+          "shed_wheat": 0,
+          "wheat": 2,
+          "action": [
+            "EAST"
+          ]
+        },
+        {
+          "step": 619,
+          "shed_wheat": 0,
+          "wheat": 2,
+          "action": [
+            "FEED"
+          ]
+        },
+        {
+          "step": 620,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "CARE"
+          ]
+        },
+        {
+          "step": 621,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "SOUTH"
+          ]
+        },
+        {
+          "step": 622,
+          "shed_wheat": 0,
+          "wheat": 1,
+          "action": [
+            "FEED"
+          ]
+        },
+        {
+          "step": 623,
+          "shed_wheat": 0,
+          "wheat": 0,
+          "action": [
+            "CARE"
+          ]
+        }
+      ],
+      "tiles_after_night": [
+        {
+          "xy": [
+            5,
+            5
+          ],
+          "tile": {
+            "kind": "PASTURE",
+            "animal": "SHEEP",
+            "placed_day": 11,
+            "yield_units": 4,
+            "consecutive_unfed": 0,
+            "fed_today": false,
+            "cared_today": false,
+            "fertilizer_available": true,
+            "pending_care_bonus": 1
+          }
+        },
+        {
+          "xy": [
+            6,
+            5
+          ],
+          "tile": {
+            "kind": "PASTURE",
+            "animal": "SHEEP",
+            "placed_day": 11,
+            "yield_units": 4,
+            "consecutive_unfed": 0,
+            "fed_today": false,
+            "cared_today": false,
+            "fertilizer_available": true,
+            "pending_care_bonus": 1
+          }
+        },
+        {
+          "xy": [
+            7,
+            5
+          ],
+          "tile": {
+            "kind": "PASTURE",
+            "animal": "SHEEP",
+            "placed_day": 11,
+            "yield_units": 4,
+            "consecutive_unfed": 0,
+            "fed_today": false,
+            "cared_today": false,
+            "fertilizer_available": true,
+            "pending_care_bonus": 1
+          }
+        },
+        {
+          "xy": [
+            5,
+            6
+          ],
+          "tile": {
+            "kind": "PASTURE",
+            "animal": "SHEEP",
+            "placed_day": 11,
+            "yield_units": 4,
+            "consecutive_unfed": 0,
+            "fed_today": false,
+            "cared_today": false,
+            "fertilizer_available": true,
+            "pending_care_bonus": 1
+          }
+        },
+        {
+          "xy": [
+            6,
+            6
+          ],
+          "tile": {
+            "kind": "PASTURE",
+            "animal": "SHEEP",
+            "placed_day": 11,
+            "yield_units": 4,
+            "consecutive_unfed": 0,
+            "fed_today": false,
+            "cared_today": false,
+            "fertilizer_available": true,
+            "pending_care_bonus": 1
+          }
+        },
+        {
+          "xy": [
+            7,
+            6
+          ],
+          "tile": {
+            "kind": "PASTURE",
+            "animal": "SHEEP",
+            "placed_day": 11,
+            "yield_units": 4,
+            "consecutive_unfed": 0,
+            "fed_today": false,
+            "cared_today": false,
+            "fertilizer_available": true,
+            "pending_care_bonus": 1
+          }
+        }
+      ],
+      "accepted_wheat601": 11,
+      "shops_preserved": true
+    }
+  ]
+}

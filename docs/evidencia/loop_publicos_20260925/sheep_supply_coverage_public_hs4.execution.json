@@ -1,0 +1,194 @@
+{
+  "passed": true,
+  "development_games": 8,
+  "noop_exact_turns": 1438,
+  "source_archive": "sheep_supply_coverage_public_hs4.sources.tgz",
+  "candidate_hashes": {
+    "sheep_supply_buy": "7b3257ba8bdfa499f9b6194a0d13236975e5fe87e92e18816e8f45787a5b18be",
+    "sheep_supply_hold": "77123a795f22889a9b37e2a9234fd9941c1b160be6579d7e803068825d7ad07a"
+  },
+  "max_turn_ms": 53.00087499199435,
+  "note": "Actual FEED consumes one WHEAT; these development games validate implementation, not competitive benefit.",
+  "summary": [
+    {
+      "seed": 1578791335,
+      "seat": 0,
+      "arm": "sheep_supply_buy",
+      "changed_action_turns": 0,
+      "feed_skips": 24,
+      "feed_base": {
+        "FEED:SHEEP": 341,
+        "FEED:COW": 119
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 341,
+        "FEED:COW": 119
+      },
+      "harvested_base": {
+        "WHEAT": 480,
+        "WOOL": 413,
+        "MILK": 164,
+        "CARROT": 164,
+        "MELON": 72,
+        "STRAWBERRY": 249
+      },
+      "harvested_candidate": {
+        "WHEAT": 480,
+        "WOOL": 413,
+        "MILK": 164,
+        "CARROT": 164,
+        "MELON": 72,
+        "STRAWBERRY": 249
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 5
+      },
+      "losses_candidate": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 5
+      }
+    },
+    {
+      "seed": 1578791335,
+      "seat": 0,
+      "arm": "sheep_supply_hold",
+      "changed_action_turns": 0,
+      "feed_skips": 24,
+      "feed_base": {
+        "FEED:SHEEP": 341,
+        "FEED:COW": 119
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 341,
+        "FEED:COW": 119
+      },
+      "harvested_base": {
+        "WHEAT": 480,
+        "WOOL": 413,
+        "MILK": 164,
+        "CARROT": 164,
+        "MELON": 72,
+        "STRAWBERRY": 249
+      },
+      "harvested_candidate": {
+        "WHEAT": 480,
+        "WOOL": 413,
+        "MILK": 164,
+        "CARROT": 164,
+        "MELON": 72,
+        "STRAWBERRY": 249
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 5
+      },
+      "losses_candidate": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 5
+      }
+    },
+    {
+      "seed": 1578791335,
+      "seat": 1,
+      "arm": "sheep_supply_buy",
+      "changed_action_turns": 0,
+      "feed_skips": 24,
+      "feed_base": {
+        "FEED:SHEEP": 341,
+        "FEED:COW": 119
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 341,
+        "FEED:COW": 119
+      },
+      "harvested_base": {
+        "WHEAT": 480,
+        "WOOL": 413,
+        "MILK": 164,
+        "CARROT": 164,
+        "MELON": 72,
+        "STRAWBERRY": 249
+      },
+      "harvested_candidate": {
+        "WHEAT": 480,
+        "WOOL": 413,
+        "MILK": 164,
+        "CARROT": 164,
+        "MELON": 72,
+        "STRAWBERRY": 249
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 5
+      },
+      "losses_candidate": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 5
+      }
+    },
+    {
+      "seed": 1578791335,
+      "seat": 1,
+      "arm": "sheep_supply_hold",
+      "changed_action_turns": 0,
+      "feed_skips": 24,
+      "feed_base": {
+        "FEED:SHEEP": 341,
+        "FEED:COW": 119
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 341,
+        "FEED:COW": 119
+      },
+      "harvested_base": {
+        "WHEAT": 480,
+        "WOOL": 413,
+        "MILK": 164,
+        "CARROT": 164,
+        "MELON": 72,
+        "STRAWBERRY": 249
+      },
+      "harvested_candidate": {
+        "WHEAT": 480,
+        "WOOL": 413,
+        "MILK": 164,
+        "CARROT": 164,
+        "MELON": 72,
+        "STRAWBERRY": 249
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 5
+      },
+      "losses_candidate": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 5
+      }
+    }
+  ]
+}

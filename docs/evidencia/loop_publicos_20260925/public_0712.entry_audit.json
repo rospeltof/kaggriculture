@@ -1,0 +1,19 @@
+{
+  "path": "results/publicos_0712_20260925/haodou092_kaggriculture-harvest-ledger/main.py",
+  "sha256": "3b543611448947399c9902e6ca1e45b84e904031156ff012ea675947dc74197e",
+  "last_callable": "_final_sell_block_reorder_entrypoint",
+  "official_callable": "_final_sell_block_reorder_entrypoint",
+  "last_is_agent": true,
+  "last_is_named": true,
+  "callsites": 2,
+  "settings": {
+    "_HD2_FUTURE": 0.0,
+    "_Y_CFG": {
+      "days": [
+        6,
+        20
+      ]
+    },
+    "DSM_GAIN": 250
+  }
+}

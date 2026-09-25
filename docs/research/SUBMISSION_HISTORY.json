@@ -498,9 +498,9 @@
     },
     "reason": "VQ validada contra copias; arshs3 transfiere al ladder (2292.5 vs v13 1857.9). Desplaza v13, preserva arshs3 como referencia activa.",
     "leaderboard": {
-      "score": 2289.1,
+      "score": 2296.9,
       "rank": null,
-      "episodes": 88,
+      "episodes": 91,
       "lecturas": [
         [
           "initial",
@@ -569,6 +569,11 @@
           "2026-09-25T06:52:55.181043+00:00",
           2289.1,
           88
+        ],
+        [
+          "2026-09-25T07:41:40.360131+00:00",
+          2296.9,
+          91
         ]
       ],
       "status": "SubmissionStatus.COMPLETE"
@@ -577,7 +582,7 @@
     "observed": "COMPLETE, snapshot 2026-09-25T06:52:55.181043+00:00: score2289.1, 88 episodios listados (incluye validación). Comparación de ratings no causal. Ocho replays recientes reproducen fuente enviada exactamente; diagnóstico contra rival grabado favorece margen top3 en7/8, no es WLT reactivo.",
     "conclusion": "REAL_WORLD_CANDIDATE; ventaja local específica contra copias, sin promoción automática",
     "next_action": "Piloto15sin seleccionadas,16corriendo;18/19/20en cola. Loop21modera señales adicionales, incorpora controlVQy dos fuentes nuevas. Conservar VQ como referencia real y revisar gate/riesgo de desplazamiento antes de otro envío.",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0653.json"
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0742.json"
   },
   {
     "submission_id": 56537205,
@@ -713,8 +718,8 @@
     },
     "reason": "Cumple gate registrado: delta>=3pp, ningún rival<-20pp, cero errores, revisión de mecanismos y runtime. Prueba real autorizada.",
     "leaderboard": {
-      "score": 2094.7,
-      "episodes": 75,
+      "score": 2094.4,
+      "episodes": 79,
       "status": "SubmissionStatus.COMPLETE",
       "lecturas": [
         [
@@ -761,6 +766,11 @@
           "2026-09-25T06:52:55.181043+00:00",
           2094.7,
           75
+        ],
+        [
+          "2026-09-25T07:41:40.360131+00:00",
+          2094.4,
+          79
         ]
       ]
     },
@@ -770,6 +780,6 @@
     "replaces_submission": 56511619,
     "preserves_submission": 56535264,
     "evidence": "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0653.json"
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0742.json"
   }
 ]
