@@ -1,0 +1,9 @@
+{
+  "path": "results/publicos_0400_20260925/leoprovorov_a-song-of-ice-and-fire-fixed-flexible/main.py",
+  "sha256": "12ad317ecac6c07fb2c2e10bf4820ecd1fd4551a5a36aa0e34ab93b2c33c2693",
+  "official_loader_callable": "install_water_repair_local_patch",
+  "argument_count": 1,
+  "return_type": "function",
+  "action_is_dict": false,
+  "note": "Official get_last_callable selects installer, which returns a function when called with an observation. Notebook only checks module.agent, a different entry."
+}

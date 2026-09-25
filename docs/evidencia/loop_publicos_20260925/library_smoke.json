@@ -1,0 +1,450 @@
+[
+  {
+    "arm": "base",
+    "seed": 1004000,
+    "seat": 0,
+    "rewards": [
+      93353.0,
+      93191.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 45.46404199209064,
+    "library": {},
+    "forecast": {
+      "pred_units": 148,
+      "pred_fires": 24,
+      "pred_errors": 0
+    },
+    "action_hash": "7ae5aeb9714357efb09e538c9a8dae4ad771735cb1b1844376386c0fce01d9fb"
+  },
+  {
+    "arm": "base",
+    "seed": 1004000,
+    "seat": 1,
+    "rewards": [
+      93191.0,
+      93353.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 46.63116700248793,
+    "library": {},
+    "forecast": {
+      "pred_units": 148,
+      "pred_fires": 24,
+      "pred_errors": 0
+    },
+    "action_hash": "463e3b89f39a7cbe1f432a985bd72d4b6cf99128fa21c6ff81c6245ce99d82c8"
+  },
+  {
+    "arm": "library_dsm",
+    "seed": 1004000,
+    "seat": 0,
+    "rewards": [
+      93353.0,
+      93191.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 33.07408301043324,
+    "library": {
+      "fits": 275,
+      "new_candidates_exposed": 0,
+      "new_patterns_selected": 0,
+      "selected_by_episode": {}
+    },
+    "forecast": {
+      "pred_units": 148,
+      "pred_fires": 24,
+      "pred_errors": 0
+    },
+    "action_hash": "7ae5aeb9714357efb09e538c9a8dae4ad771735cb1b1844376386c0fce01d9fb"
+  },
+  {
+    "arm": "library_dsm",
+    "seed": 1004000,
+    "seat": 1,
+    "rewards": [
+      93191.0,
+      93353.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 31.69899998465553,
+    "library": {
+      "fits": 275,
+      "new_candidates_exposed": 0,
+      "new_patterns_selected": 0,
+      "selected_by_episode": {}
+    },
+    "forecast": {
+      "pred_units": 148,
+      "pred_fires": 24,
+      "pred_errors": 0
+    },
+    "action_hash": "463e3b89f39a7cbe1f432a985bd72d4b6cf99128fa21c6ff81c6245ce99d82c8"
+  },
+  {
+    "arm": "library_ladder",
+    "seed": 1004000,
+    "seat": 0,
+    "rewards": [
+      93353.0,
+      93191.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 165.61404199455865,
+    "library": {
+      "fits": 275,
+      "new_candidates_exposed": 0,
+      "new_patterns_selected": 0,
+      "selected_by_episode": {}
+    },
+    "forecast": {
+      "pred_units": 148,
+      "pred_fires": 24,
+      "pred_errors": 0
+    },
+    "action_hash": "7ae5aeb9714357efb09e538c9a8dae4ad771735cb1b1844376386c0fce01d9fb"
+  },
+  {
+    "arm": "library_ladder",
+    "seed": 1004000,
+    "seat": 1,
+    "rewards": [
+      93191.0,
+      93353.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 49.12387501099147,
+    "library": {
+      "fits": 275,
+      "new_candidates_exposed": 0,
+      "new_patterns_selected": 0,
+      "selected_by_episode": {}
+    },
+    "forecast": {
+      "pred_units": 148,
+      "pred_fires": 24,
+      "pred_errors": 0
+    },
+    "action_hash": "463e3b89f39a7cbe1f432a985bd72d4b6cf99128fa21c6ff81c6245ce99d82c8"
+  },
+  {
+    "arm": "library_all",
+    "seed": 1004000,
+    "seat": 0,
+    "rewards": [
+      93353.0,
+      93191.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 160.51558300387114,
+    "library": {
+      "fits": 275,
+      "new_candidates_exposed": 0,
+      "new_patterns_selected": 0,
+      "selected_by_episode": {}
+    },
+    "forecast": {
+      "pred_units": 148,
+      "pred_fires": 24,
+      "pred_errors": 0
+    },
+    "action_hash": "7ae5aeb9714357efb09e538c9a8dae4ad771735cb1b1844376386c0fce01d9fb"
+  },
+  {
+    "arm": "library_all",
+    "seed": 1004000,
+    "seat": 1,
+    "rewards": [
+      93191.0,
+      93353.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 38.084333995357156,
+    "library": {
+      "fits": 275,
+      "new_candidates_exposed": 0,
+      "new_patterns_selected": 0,
+      "selected_by_episode": {}
+    },
+    "forecast": {
+      "pred_units": 148,
+      "pred_fires": 24,
+      "pred_errors": 0
+    },
+    "action_hash": "463e3b89f39a7cbe1f432a985bd72d4b6cf99128fa21c6ff81c6245ce99d82c8"
+  },
+  {
+    "arm": "library_noop",
+    "seed": 1004000,
+    "seat": 0,
+    "rewards": [
+      93353.0,
+      93191.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 249.797458993271,
+    "library": {
+      "fits": 275,
+      "new_candidates_exposed": 0,
+      "new_patterns_selected": 0,
+      "selected_by_episode": {}
+    },
+    "forecast": {
+      "pred_units": 148,
+      "pred_fires": 24,
+      "pred_errors": 0
+    },
+    "action_hash": "7ae5aeb9714357efb09e538c9a8dae4ad771735cb1b1844376386c0fce01d9fb"
+  },
+  {
+    "arm": "library_noop",
+    "seed": 1004000,
+    "seat": 1,
+    "rewards": [
+      93191.0,
+      93353.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 33.274290995905176,
+    "library": {
+      "fits": 275,
+      "new_candidates_exposed": 0,
+      "new_patterns_selected": 0,
+      "selected_by_episode": {}
+    },
+    "forecast": {
+      "pred_units": 148,
+      "pred_fires": 24,
+      "pred_errors": 0
+    },
+    "action_hash": "463e3b89f39a7cbe1f432a985bd72d4b6cf99128fa21c6ff81c6245ce99d82c8"
+  },
+  {
+    "arm": "base",
+    "seed": 1272457736,
+    "seat": 0,
+    "rewards": [
+      114856.0,
+      114184.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 35.93824998824857,
+    "library": {},
+    "forecast": {
+      "pred_units": 181,
+      "pred_fires": 26,
+      "pred_errors": 0
+    },
+    "action_hash": "be92d0255e9e95cc49d6873c754183b5ad734b15c7dfe627b5d47f024bd583ab"
+  },
+  {
+    "arm": "base",
+    "seed": 1272457736,
+    "seat": 1,
+    "rewards": [
+      114184.0,
+      114856.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 43.504833010956645,
+    "library": {},
+    "forecast": {
+      "pred_units": 181,
+      "pred_fires": 26,
+      "pred_errors": 0
+    },
+    "action_hash": "d7e802b04d6515c3dfb3c7150ce89c8b53e17a46c1335dcc02f9f3f5409a531b"
+  },
+  {
+    "arm": "library_dsm",
+    "seed": 1272457736,
+    "seat": 0,
+    "rewards": [
+      114856.0,
+      114184.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 37.38566700485535,
+    "library": {
+      "fits": 275,
+      "new_candidates_exposed": 275,
+      "new_patterns_selected": 0,
+      "selected_by_episode": {}
+    },
+    "forecast": {
+      "pred_units": 181,
+      "pred_fires": 26,
+      "pred_errors": 0
+    },
+    "action_hash": "be92d0255e9e95cc49d6873c754183b5ad734b15c7dfe627b5d47f024bd583ab"
+  },
+  {
+    "arm": "library_dsm",
+    "seed": 1272457736,
+    "seat": 1,
+    "rewards": [
+      114184.0,
+      114856.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 53.92845798633061,
+    "library": {
+      "fits": 275,
+      "new_candidates_exposed": 275,
+      "new_patterns_selected": 0,
+      "selected_by_episode": {}
+    },
+    "forecast": {
+      "pred_units": 181,
+      "pred_fires": 26,
+      "pred_errors": 0
+    },
+    "action_hash": "d7e802b04d6515c3dfb3c7150ce89c8b53e17a46c1335dcc02f9f3f5409a531b"
+  },
+  {
+    "arm": "library_ladder",
+    "seed": 1272457736,
+    "seat": 0,
+    "rewards": [
+      114932.0,
+      114031.0
+    ],
+    "changed_action_turns": 18,
+    "max_turn_ms": 236.2605839734897,
+    "library": {
+      "fits": 275,
+      "new_candidates_exposed": 550,
+      "new_patterns_selected": 164,
+      "selected_by_episode": {
+        "113126108": 164
+      }
+    },
+    "forecast": {
+      "pred_units": 192,
+      "pred_fires": 27,
+      "pred_errors": 0
+    },
+    "action_hash": "e2126449a7e9177aed3966b30c8f4eabac453df6e056539917451c28962daab0"
+  },
+  {
+    "arm": "library_ladder",
+    "seed": 1272457736,
+    "seat": 1,
+    "rewards": [
+      114031.0,
+      114932.0
+    ],
+    "changed_action_turns": 18,
+    "max_turn_ms": 40.00654199626297,
+    "library": {
+      "fits": 275,
+      "new_candidates_exposed": 550,
+      "new_patterns_selected": 164,
+      "selected_by_episode": {
+        "113126108": 164
+      }
+    },
+    "forecast": {
+      "pred_units": 192,
+      "pred_fires": 27,
+      "pred_errors": 0
+    },
+    "action_hash": "b6febc1844f49ffd0d24e2994a99c00c71b624ed67a8da14044e0efd0a821a47"
+  },
+  {
+    "arm": "library_all",
+    "seed": 1272457736,
+    "seat": 0,
+    "rewards": [
+      114932.0,
+      114031.0
+    ],
+    "changed_action_turns": 18,
+    "max_turn_ms": 40.08545898250304,
+    "library": {
+      "fits": 275,
+      "new_candidates_exposed": 825,
+      "new_patterns_selected": 164,
+      "selected_by_episode": {
+        "113126108": 164
+      }
+    },
+    "forecast": {
+      "pred_units": 192,
+      "pred_fires": 27,
+      "pred_errors": 0
+    },
+    "action_hash": "e2126449a7e9177aed3966b30c8f4eabac453df6e056539917451c28962daab0"
+  },
+  {
+    "arm": "library_all",
+    "seed": 1272457736,
+    "seat": 1,
+    "rewards": [
+      114031.0,
+      114932.0
+    ],
+    "changed_action_turns": 18,
+    "max_turn_ms": 52.920957998139784,
+    "library": {
+      "fits": 275,
+      "new_candidates_exposed": 825,
+      "new_patterns_selected": 164,
+      "selected_by_episode": {
+        "113126108": 164
+      }
+    },
+    "forecast": {
+      "pred_units": 192,
+      "pred_fires": 27,
+      "pred_errors": 0
+    },
+    "action_hash": "b6febc1844f49ffd0d24e2994a99c00c71b624ed67a8da14044e0efd0a821a47"
+  },
+  {
+    "arm": "library_noop",
+    "seed": 1272457736,
+    "seat": 0,
+    "rewards": [
+      114856.0,
+      114184.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 54.06833300366998,
+    "library": {
+      "fits": 275,
+      "new_candidates_exposed": 0,
+      "new_patterns_selected": 0,
+      "selected_by_episode": {}
+    },
+    "forecast": {
+      "pred_units": 181,
+      "pred_fires": 26,
+      "pred_errors": 0
+    },
+    "action_hash": "be92d0255e9e95cc49d6873c754183b5ad734b15c7dfe627b5d47f024bd583ab"
+  },
+  {
+    "arm": "library_noop",
+    "seed": 1272457736,
+    "seat": 1,
+    "rewards": [
+      114184.0,
+      114856.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 43.077000009361655,
+    "library": {
+      "fits": 275,
+      "new_candidates_exposed": 0,
+      "new_patterns_selected": 0,
+      "selected_by_episode": {}
+    },
+    "forecast": {
+      "pred_units": 181,
+      "pred_fires": 26,
+      "pred_errors": 0
+    },
+    "action_hash": "d7e802b04d6515c3dfb3c7150ce89c8b53e17a46c1335dcc02f9f3f5409a531b"
+  }
+]

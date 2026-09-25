@@ -1,0 +1,23 @@
+[
+  {
+    "ref": "guruprasaathas111_kaggriculture-master-engine-v3",
+    "path": "results/publicos_0400_20260925/guruprasaathas111_kaggriculture-master-engine-v3/main.py",
+    "bytes": 501543,
+    "sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652",
+    "notebook_sha256": "2185227ba7c35585374431ed562f0339118ee69f28ec25f8f3bf05a6da229873",
+    "identical_to": [
+      "results/publicos_20260925/tds/main.py",
+      "results/publicos_20260925/cha22/main.py"
+    ],
+    "old_sha256": "ffbb800db22f6f0d390415b1bd7188c2df1ad41d5b7f6f33ca43d6513ba673fe"
+  },
+  {
+    "ref": "leoprovorov_a-song-of-ice-and-fire-fixed-flexible",
+    "path": "results/publicos_0400_20260925/leoprovorov_a-song-of-ice-and-fire-fixed-flexible/main.py",
+    "bytes": 897851,
+    "sha256": "12ad317ecac6c07fb2c2e10bf4820ecd1fd4551a5a36aa0e34ab93b2c33c2693",
+    "notebook_sha256": "946c8a6bd7a3f29c09b707f8389a7abdb7f8dfdbd7053857df7cc38396806dcb",
+    "identical_to": [],
+    "old_sha256": "a16e0e9b40c489972630a0b9d04f30e9c1cab03159fa78676db74277d84d82ab"
+  }
+]

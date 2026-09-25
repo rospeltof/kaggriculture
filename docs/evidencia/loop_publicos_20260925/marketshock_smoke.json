@@ -1,0 +1,298 @@
+[
+  {
+    "arm": "named_upstream",
+    "seed": 1023000,
+    "seat": 0,
+    "rewards": [
+      76539.0,
+      81056.0
+    ],
+    "margin": -4517.0,
+    "max_turn_ms": 84.89299999200739,
+    "reports": {
+      "_WR_REPORT": {
+        "activations": 0,
+        "overrides": 0,
+        "errors": 0,
+        "scenario": null
+      },
+      "_ALT_REPORT": {
+        "selected_opening": "EarlyCycle",
+        "temporary_crop_seen": 1,
+        "temporary_crop_harvested": 2,
+        "restored_pasture_seen": 1,
+        "delivered_extra_wheat": 2,
+        "tomato_seen": 0,
+        "tomato_water_requests": 0,
+        "tomato_harvest_requests": 0,
+        "tomato_units_harvest_requested": 0,
+        "extension_errors": 0
+      },
+      "_V92_P_REPORT": {
+        "pred_units": 164,
+        "pred_fires": 23,
+        "pred_errors": 0
+      }
+    },
+    "action_hash": "b3279062eb8d33a1346445e7d996e98b87209ad3a543d9910a7df3b5d081510c"
+  },
+  {
+    "arm": "named_upstream",
+    "seed": 1023000,
+    "seat": 1,
+    "rewards": [
+      81056.0,
+      76539.0
+    ],
+    "margin": -4517.0,
+    "max_turn_ms": 46.35045799659565,
+    "reports": {
+      "_WR_REPORT": {
+        "activations": 0,
+        "overrides": 0,
+        "errors": 0,
+        "scenario": null
+      },
+      "_ALT_REPORT": {
+        "selected_opening": "EarlyCycle",
+        "temporary_crop_seen": 1,
+        "temporary_crop_harvested": 2,
+        "restored_pasture_seen": 1,
+        "delivered_extra_wheat": 2,
+        "tomato_seen": 0,
+        "tomato_water_requests": 0,
+        "tomato_harvest_requests": 0,
+        "tomato_units_harvest_requested": 0,
+        "extension_errors": 0
+      },
+      "_V92_P_REPORT": {
+        "pred_units": 164,
+        "pred_fires": 23,
+        "pred_errors": 0
+      }
+    },
+    "action_hash": "d1fda2206d56a2fbd56f9db14e83c1d74c73b0212fecd77c29985177e2bd2b39"
+  },
+  {
+    "arm": "named_upstream",
+    "seed": 1023001,
+    "seat": 0,
+    "rewards": [
+      147323.0,
+      148158.0
+    ],
+    "margin": -835.0,
+    "max_turn_ms": 142.5642909889575,
+    "reports": {
+      "_WR_REPORT": {
+        "activations": 0,
+        "overrides": 0,
+        "errors": 0,
+        "scenario": null
+      },
+      "_ALT_REPORT": {
+        "selected_opening": "EarlyCycle",
+        "temporary_crop_seen": 1,
+        "temporary_crop_harvested": 2,
+        "restored_pasture_seen": 1,
+        "delivered_extra_wheat": 2,
+        "tomato_seen": 0,
+        "tomato_water_requests": 0,
+        "tomato_harvest_requests": 0,
+        "tomato_units_harvest_requested": 0,
+        "extension_errors": 0
+      },
+      "_V92_P_REPORT": {
+        "pred_units": 81,
+        "pred_fires": 9,
+        "pred_errors": 0
+      }
+    },
+    "action_hash": "8e1b102b5a723c20b8d60b4809fadf5d3914809325762a81c0b55916bbc6bebd"
+  },
+  {
+    "arm": "named_upstream",
+    "seed": 1023001,
+    "seat": 1,
+    "rewards": [
+      148158.0,
+      147323.0
+    ],
+    "margin": -835.0,
+    "max_turn_ms": 38.413665984990075,
+    "reports": {
+      "_WR_REPORT": {
+        "activations": 0,
+        "overrides": 0,
+        "errors": 0,
+        "scenario": null
+      },
+      "_ALT_REPORT": {
+        "selected_opening": "EarlyCycle",
+        "temporary_crop_seen": 1,
+        "temporary_crop_harvested": 2,
+        "restored_pasture_seen": 1,
+        "delivered_extra_wheat": 2,
+        "tomato_seen": 0,
+        "tomato_water_requests": 0,
+        "tomato_harvest_requests": 0,
+        "tomato_units_harvest_requested": 0,
+        "extension_errors": 0
+      },
+      "_V92_P_REPORT": {
+        "pred_units": 81,
+        "pred_fires": 9,
+        "pred_errors": 0
+      }
+    },
+    "action_hash": "dac13002faab00f55cfa7fd83d129c1e7ccc8d1a6326e160fdc4eb8748126a24"
+  },
+  {
+    "arm": "fixed_official",
+    "seed": 1023000,
+    "seat": 0,
+    "rewards": [
+      76539.0,
+      81056.0
+    ],
+    "margin": -4517.0,
+    "max_turn_ms": 206.17862499784678,
+    "reports": {
+      "_WR_REPORT": {
+        "activations": 0,
+        "overrides": 0,
+        "errors": 0,
+        "scenario": null
+      },
+      "_ALT_REPORT": {
+        "selected_opening": "EarlyCycle",
+        "temporary_crop_seen": 1,
+        "temporary_crop_harvested": 2,
+        "restored_pasture_seen": 1,
+        "delivered_extra_wheat": 2,
+        "tomato_seen": 0,
+        "tomato_water_requests": 0,
+        "tomato_harvest_requests": 0,
+        "tomato_units_harvest_requested": 0,
+        "extension_errors": 0
+      },
+      "_V92_P_REPORT": {
+        "pred_units": 164,
+        "pred_fires": 23,
+        "pred_errors": 0
+      }
+    },
+    "action_hash": "b3279062eb8d33a1346445e7d996e98b87209ad3a543d9910a7df3b5d081510c"
+  },
+  {
+    "arm": "fixed_official",
+    "seed": 1023000,
+    "seat": 1,
+    "rewards": [
+      81056.0,
+      76539.0
+    ],
+    "margin": -4517.0,
+    "max_turn_ms": 30.63808399019763,
+    "reports": {
+      "_WR_REPORT": {
+        "activations": 0,
+        "overrides": 0,
+        "errors": 0,
+        "scenario": null
+      },
+      "_ALT_REPORT": {
+        "selected_opening": "EarlyCycle",
+        "temporary_crop_seen": 1,
+        "temporary_crop_harvested": 2,
+        "restored_pasture_seen": 1,
+        "delivered_extra_wheat": 2,
+        "tomato_seen": 0,
+        "tomato_water_requests": 0,
+        "tomato_harvest_requests": 0,
+        "tomato_units_harvest_requested": 0,
+        "extension_errors": 0
+      },
+      "_V92_P_REPORT": {
+        "pred_units": 164,
+        "pred_fires": 23,
+        "pred_errors": 0
+      }
+    },
+    "action_hash": "d1fda2206d56a2fbd56f9db14e83c1d74c73b0212fecd77c29985177e2bd2b39"
+  },
+  {
+    "arm": "fixed_official",
+    "seed": 1023001,
+    "seat": 0,
+    "rewards": [
+      147323.0,
+      148158.0
+    ],
+    "margin": -835.0,
+    "max_turn_ms": 175.16475002048537,
+    "reports": {
+      "_WR_REPORT": {
+        "activations": 0,
+        "overrides": 0,
+        "errors": 0,
+        "scenario": null
+      },
+      "_ALT_REPORT": {
+        "selected_opening": "EarlyCycle",
+        "temporary_crop_seen": 1,
+        "temporary_crop_harvested": 2,
+        "restored_pasture_seen": 1,
+        "delivered_extra_wheat": 2,
+        "tomato_seen": 0,
+        "tomato_water_requests": 0,
+        "tomato_harvest_requests": 0,
+        "tomato_units_harvest_requested": 0,
+        "extension_errors": 0
+      },
+      "_V92_P_REPORT": {
+        "pred_units": 81,
+        "pred_fires": 9,
+        "pred_errors": 0
+      }
+    },
+    "action_hash": "8e1b102b5a723c20b8d60b4809fadf5d3914809325762a81c0b55916bbc6bebd"
+  },
+  {
+    "arm": "fixed_official",
+    "seed": 1023001,
+    "seat": 1,
+    "rewards": [
+      148158.0,
+      147323.0
+    ],
+    "margin": -835.0,
+    "max_turn_ms": 38.260667002759874,
+    "reports": {
+      "_WR_REPORT": {
+        "activations": 0,
+        "overrides": 0,
+        "errors": 0,
+        "scenario": null
+      },
+      "_ALT_REPORT": {
+        "selected_opening": "EarlyCycle",
+        "temporary_crop_seen": 1,
+        "temporary_crop_harvested": 2,
+        "restored_pasture_seen": 1,
+        "delivered_extra_wheat": 2,
+        "tomato_seen": 0,
+        "tomato_water_requests": 0,
+        "tomato_harvest_requests": 0,
+        "tomato_units_harvest_requested": 0,
+        "extension_errors": 0
+      },
+      "_V92_P_REPORT": {
+        "pred_units": 81,
+        "pred_fires": 9,
+        "pred_errors": 0
+      }
+    },
+    "action_hash": "dac13002faab00f55cfa7fd83d129c1e7ccc8d1a6326e160fdc4eb8748126a24"
+  }
+]

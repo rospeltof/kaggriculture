@@ -1,0 +1,50 @@
+{
+  "library_dsm": {
+    "path": "results/biblioteca_reciente_20260925/library_dsm.py",
+    "sha256": "687cfc28c0a4cf572fe652c61c951cdebacccc2e12e83cc902b4ad5ebd93ac26",
+    "episodes": [
+      113091953,
+      113086007,
+      113079205,
+      113073385
+    ],
+    "source_data_sha256": "bcaff8ae9e14b2e587dec84fd63f506e1bababa30980dd2a94a8a06bcf06b1c9",
+    "layer_sha256": "763a5ac60d2daae8dba032398c5c5cb45eed46804d189d35221bb3691ad774b5"
+  },
+  "library_ladder": {
+    "path": "results/biblioteca_reciente_20260925/library_ladder.py",
+    "sha256": "c7cfe6c12cf457d879ddb2f073cf3d4442026adaaa64074fe95dea5a81ea4adb",
+    "episodes": [
+      113108628,
+      113107623,
+      113107458,
+      113106269,
+      113127276,
+      113126108,
+      113124966,
+      113125627
+    ],
+    "source_data_sha256": "bcaff8ae9e14b2e587dec84fd63f506e1bababa30980dd2a94a8a06bcf06b1c9",
+    "layer_sha256": "763a5ac60d2daae8dba032398c5c5cb45eed46804d189d35221bb3691ad774b5"
+  },
+  "library_all": {
+    "path": "results/biblioteca_reciente_20260925/library_all.py",
+    "sha256": "16cddb968702b772dbb76fb0b885145c6df46775e3dd0689b910adfce71697f9",
+    "episodes": [
+      113091953,
+      113086007,
+      113079205,
+      113073385,
+      113108628,
+      113107623,
+      113107458,
+      113106269,
+      113127276,
+      113126108,
+      113124966,
+      113125627
+    ],
+    "source_data_sha256": "bcaff8ae9e14b2e587dec84fd63f506e1bababa30980dd2a94a8a06bcf06b1c9",
+    "layer_sha256": "763a5ac60d2daae8dba032398c5c5cb45eed46804d189d35221bb3691ad774b5"
+  }
+}

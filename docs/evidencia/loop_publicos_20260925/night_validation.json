@@ -1,0 +1,519 @@
+{
+  "passed": true,
+  "development_games": 36,
+  "noop_exact_turns": 4314,
+  "source_archive": "night_smoke_v2.sources.tgz",
+  "candidate_hashes": {
+    "night_wheat1": "9225a4e9dc366dea4aa163bb7fd0365b9d2dce8308234e5098bc492907f6de14",
+    "night_wheat2": "ee1ddb852cdec9aed9382c1ebe29f47e7c2abb43c0800fa432765e62649ecd29",
+    "night_inputs1": "9e36cda8f0c6320f92434e0419dba4faff49905c320714ac8345c451bce5b27d",
+    "night_inputs2": "c6cbb20e5aa75b4230597a8a2b05a499715e4438cbb706b10a123266ad92981b"
+  },
+  "predictions_validated": 22,
+  "max_turn_ms": 290.46266598743387,
+  "note": "Mechanism validation, not competitive selection. Unfed and escapes are retained for comparison; a reserve is not a universal proof.",
+  "summary": [
+    {
+      "seed": 1272457736,
+      "seat": 0,
+      "arm": "night_wheat1",
+      "activations": 2,
+      "lost_base": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 16
+      },
+      "lost_candidate": {
+        "WHEAT": 4,
+        "FERTILIZER": 4
+      },
+      "changed_action_turns": 21,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1272457736,
+      "seat": 0,
+      "arm": "night_wheat2",
+      "activations": 1,
+      "lost_base": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 16
+      },
+      "lost_candidate": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 9
+      },
+      "changed_action_turns": 3,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1272457736,
+      "seat": 0,
+      "arm": "night_inputs1",
+      "activations": 2,
+      "lost_base": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 16
+      },
+      "lost_candidate": {
+        "WHEAT": 4,
+        "FERTILIZER": 4
+      },
+      "changed_action_turns": 21,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1272457736,
+      "seat": 0,
+      "arm": "night_inputs2",
+      "activations": 1,
+      "lost_base": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 16
+      },
+      "lost_candidate": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 9
+      },
+      "changed_action_turns": 3,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1272457736,
+      "seat": 1,
+      "arm": "night_wheat1",
+      "activations": 2,
+      "lost_base": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 16
+      },
+      "lost_candidate": {
+        "WHEAT": 4,
+        "FERTILIZER": 4
+      },
+      "changed_action_turns": 21,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1272457736,
+      "seat": 1,
+      "arm": "night_wheat2",
+      "activations": 1,
+      "lost_base": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 16
+      },
+      "lost_candidate": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 9
+      },
+      "changed_action_turns": 3,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1272457736,
+      "seat": 1,
+      "arm": "night_inputs1",
+      "activations": 2,
+      "lost_base": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 16
+      },
+      "lost_candidate": {
+        "WHEAT": 4,
+        "FERTILIZER": 4
+      },
+      "changed_action_turns": 21,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1272457736,
+      "seat": 1,
+      "arm": "night_inputs2",
+      "activations": 1,
+      "lost_base": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 16
+      },
+      "lost_candidate": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 9
+      },
+      "changed_action_turns": 3,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1004000,
+      "seat": 0,
+      "arm": "night_wheat1",
+      "activations": 1,
+      "lost_base": {
+        "FERTILIZER": 14,
+        "WOOL": 9,
+        "WHEAT": 1
+      },
+      "lost_candidate": {
+        "WOOL": 9,
+        "FERTILIZER": 6,
+        "WHEAT": 1
+      },
+      "changed_action_turns": 21,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1004000,
+      "seat": 0,
+      "arm": "night_wheat2",
+      "activations": 0,
+      "lost_base": {
+        "FERTILIZER": 14,
+        "WOOL": 9,
+        "WHEAT": 1
+      },
+      "lost_candidate": {
+        "FERTILIZER": 14,
+        "WOOL": 9,
+        "WHEAT": 1
+      },
+      "changed_action_turns": 0,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1004000,
+      "seat": 0,
+      "arm": "night_inputs1",
+      "activations": 1,
+      "lost_base": {
+        "FERTILIZER": 14,
+        "WOOL": 9,
+        "WHEAT": 1
+      },
+      "lost_candidate": {
+        "WOOL": 9,
+        "FERTILIZER": 6,
+        "WHEAT": 1
+      },
+      "changed_action_turns": 21,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1004000,
+      "seat": 0,
+      "arm": "night_inputs2",
+      "activations": 0,
+      "lost_base": {
+        "FERTILIZER": 14,
+        "WOOL": 9,
+        "WHEAT": 1
+      },
+      "lost_candidate": {
+        "FERTILIZER": 14,
+        "WOOL": 9,
+        "WHEAT": 1
+      },
+      "changed_action_turns": 0,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1004000,
+      "seat": 1,
+      "arm": "night_wheat1",
+      "activations": 1,
+      "lost_base": {
+        "FERTILIZER": 14,
+        "WOOL": 9,
+        "WHEAT": 1
+      },
+      "lost_candidate": {
+        "WOOL": 9,
+        "FERTILIZER": 6,
+        "WHEAT": 1
+      },
+      "changed_action_turns": 21,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1004000,
+      "seat": 1,
+      "arm": "night_wheat2",
+      "activations": 0,
+      "lost_base": {
+        "FERTILIZER": 14,
+        "WOOL": 9,
+        "WHEAT": 1
+      },
+      "lost_candidate": {
+        "FERTILIZER": 14,
+        "WOOL": 9,
+        "WHEAT": 1
+      },
+      "changed_action_turns": 0,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1004000,
+      "seat": 1,
+      "arm": "night_inputs1",
+      "activations": 1,
+      "lost_base": {
+        "FERTILIZER": 14,
+        "WOOL": 9,
+        "WHEAT": 1
+      },
+      "lost_candidate": {
+        "WOOL": 9,
+        "FERTILIZER": 6,
+        "WHEAT": 1
+      },
+      "changed_action_turns": 21,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1004000,
+      "seat": 1,
+      "arm": "night_inputs2",
+      "activations": 0,
+      "lost_base": {
+        "FERTILIZER": 14,
+        "WOOL": 9,
+        "WHEAT": 1
+      },
+      "lost_candidate": {
+        "FERTILIZER": 14,
+        "WOOL": 9,
+        "WHEAT": 1
+      },
+      "changed_action_turns": 0,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1027000,
+      "seat": 0,
+      "arm": "night_wheat1",
+      "activations": 1,
+      "lost_base": {
+        "WHEAT": 4,
+        "CARROT": 3,
+        "WOOL": 2,
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2
+      },
+      "lost_candidate": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2
+      },
+      "changed_action_turns": 4,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1027000,
+      "seat": 0,
+      "arm": "night_wheat2",
+      "activations": 0,
+      "lost_base": {
+        "WHEAT": 4,
+        "CARROT": 3,
+        "WOOL": 2,
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2
+      },
+      "lost_candidate": {
+        "WHEAT": 4,
+        "CARROT": 3,
+        "WOOL": 2,
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2
+      },
+      "changed_action_turns": 0,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1027000,
+      "seat": 0,
+      "arm": "night_inputs1",
+      "activations": 1,
+      "lost_base": {
+        "WHEAT": 4,
+        "CARROT": 3,
+        "WOOL": 2,
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2
+      },
+      "lost_candidate": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2
+      },
+      "changed_action_turns": 6,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1027000,
+      "seat": 0,
+      "arm": "night_inputs2",
+      "activations": 1,
+      "lost_base": {
+        "WHEAT": 4,
+        "CARROT": 3,
+        "WOOL": 2,
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2
+      },
+      "lost_candidate": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2
+      },
+      "changed_action_turns": 6,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1027000,
+      "seat": 1,
+      "arm": "night_wheat1",
+      "activations": 1,
+      "lost_base": {
+        "WHEAT": 4,
+        "CARROT": 3,
+        "WOOL": 2,
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2
+      },
+      "lost_candidate": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2
+      },
+      "changed_action_turns": 4,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1027000,
+      "seat": 1,
+      "arm": "night_wheat2",
+      "activations": 0,
+      "lost_base": {
+        "WHEAT": 4,
+        "CARROT": 3,
+        "WOOL": 2,
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2
+      },
+      "lost_candidate": {
+        "WHEAT": 4,
+        "CARROT": 3,
+        "WOOL": 2,
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2
+      },
+      "changed_action_turns": 0,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1027000,
+      "seat": 1,
+      "arm": "night_inputs1",
+      "activations": 1,
+      "lost_base": {
+        "WHEAT": 4,
+        "CARROT": 3,
+        "WOOL": 2,
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2
+      },
+      "lost_candidate": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2
+      },
+      "changed_action_turns": 6,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    },
+    {
+      "seed": 1027000,
+      "seat": 1,
+      "arm": "night_inputs2",
+      "activations": 1,
+      "lost_base": {
+        "WHEAT": 4,
+        "CARROT": 3,
+        "WOOL": 2,
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2
+      },
+      "lost_candidate": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2
+      },
+      "changed_action_turns": 6,
+      "unfed_matches_base": true,
+      "escapes": [],
+      "same_shops": true
+    }
+  ]
+}

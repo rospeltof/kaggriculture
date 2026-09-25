@@ -1,0 +1,122 @@
+{
+  "passed": true,
+  "episodes": 20,
+  "noop_turns_exact": 2876,
+  "absent_pair_controls_exact": true,
+  "max_turn_ms": 249.797458993271,
+  "candidate_hashes": {
+    "library_dsm": "687cfc28c0a4cf572fe652c61c951cdebacccc2e12e83cc902b4ad5ebd93ac26",
+    "library_ladder": "c7cfe6c12cf457d879ddb2f073cf3d4442026adaaa64074fe95dea5a81ea4adb",
+    "library_all": "16cddb968702b772dbb76fb0b885145c6df46775e3dd0689b910adfce71697f9"
+  },
+  "activation": [
+    {
+      "arm": "base",
+      "seat": 0,
+      "changed_action_turns": 0,
+      "library": {}
+    },
+    {
+      "arm": "base",
+      "seat": 1,
+      "changed_action_turns": 0,
+      "library": {}
+    },
+    {
+      "arm": "library_dsm",
+      "seat": 0,
+      "changed_action_turns": 0,
+      "library": {
+        "fits": 275,
+        "new_candidates_exposed": 275,
+        "new_patterns_selected": 0,
+        "selected_by_episode": {}
+      }
+    },
+    {
+      "arm": "library_dsm",
+      "seat": 1,
+      "changed_action_turns": 0,
+      "library": {
+        "fits": 275,
+        "new_candidates_exposed": 275,
+        "new_patterns_selected": 0,
+        "selected_by_episode": {}
+      }
+    },
+    {
+      "arm": "library_ladder",
+      "seat": 0,
+      "changed_action_turns": 18,
+      "library": {
+        "fits": 275,
+        "new_candidates_exposed": 550,
+        "new_patterns_selected": 164,
+        "selected_by_episode": {
+          "113126108": 164
+        }
+      }
+    },
+    {
+      "arm": "library_ladder",
+      "seat": 1,
+      "changed_action_turns": 18,
+      "library": {
+        "fits": 275,
+        "new_candidates_exposed": 550,
+        "new_patterns_selected": 164,
+        "selected_by_episode": {
+          "113126108": 164
+        }
+      }
+    },
+    {
+      "arm": "library_all",
+      "seat": 0,
+      "changed_action_turns": 18,
+      "library": {
+        "fits": 275,
+        "new_candidates_exposed": 825,
+        "new_patterns_selected": 164,
+        "selected_by_episode": {
+          "113126108": 164
+        }
+      }
+    },
+    {
+      "arm": "library_all",
+      "seat": 1,
+      "changed_action_turns": 18,
+      "library": {
+        "fits": 275,
+        "new_candidates_exposed": 825,
+        "new_patterns_selected": 164,
+        "selected_by_episode": {
+          "113126108": 164
+        }
+      }
+    },
+    {
+      "arm": "library_noop",
+      "seat": 0,
+      "changed_action_turns": 0,
+      "library": {
+        "fits": 275,
+        "new_candidates_exposed": 0,
+        "new_patterns_selected": 0,
+        "selected_by_episode": {}
+      }
+    },
+    {
+      "arm": "library_noop",
+      "seat": 1,
+      "changed_action_turns": 0,
+      "library": {
+        "fits": 275,
+        "new_candidates_exposed": 0,
+        "new_patterns_selected": 0,
+        "selected_by_episode": {}
+      }
+    }
+  ]
+}

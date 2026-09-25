@@ -1,0 +1,34 @@
+{
+  "seeds": [
+    1004000,
+    1272457736
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "opponent": "submission/main_publico_arshs3_arsgorynich.py",
+  "purpose": "Known absent-pair and YARN-pair worlds. Activation/noop/runtime only, not held-out competitive evidence.",
+  "agents": {
+    "base": {
+      "path": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "library_dsm": {
+      "path": "results/biblioteca_reciente_20260925/library_dsm.py",
+      "sha256": "687cfc28c0a4cf572fe652c61c951cdebacccc2e12e83cc902b4ad5ebd93ac26"
+    },
+    "library_ladder": {
+      "path": "results/biblioteca_reciente_20260925/library_ladder.py",
+      "sha256": "c7cfe6c12cf457d879ddb2f073cf3d4442026adaaa64074fe95dea5a81ea4adb"
+    },
+    "library_all": {
+      "path": "results/biblioteca_reciente_20260925/library_all.py",
+      "sha256": "16cddb968702b772dbb76fb0b885145c6df46775e3dd0689b910adfce71697f9"
+    },
+    "library_noop": {
+      "path": "results/biblioteca_reciente_20260925/library_noop.py",
+      "sha256": "4ab670a0060dd5bb3a27e6c595ef979b9f9bfd16c9c0f4deae41a8e44970d891"
+    }
+  }
+}

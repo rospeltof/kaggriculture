@@ -1,7 +1,8 @@
 # Fronteras después de loops7–9
 
-Estado03:49UTC: la primera idea ya se convirtió en loop10, validado/encolado.
-Las demás siguen pendientes. Leer bloques completos; no duplicar corridas.
+Estado04:39UTC: piloto9 completo, seis variantes inertes128/128; conversión
+temprana loop10 corriendo. Biblioteca reciente loop11 y aperturas loop12
+validadas/encoladas. Loop13 almacén también validado y en cola. No duplicar corridas.
 
 ## Reasignar compras futuras de vacas con demanda de lana ya visible
 
@@ -61,11 +62,52 @@ Auditoría hecha:2.398streams,64/64pares de tiendas,24–63por par. No se conoce
 fecha original porque los ids están sustituidos por−1. Doce fuentes fijadas
 por recencia (DSM4 y rivales top3 ocho) son nuevas con fingerprint que preserva
 umbrales nativos de cantidades; no agregan pares de tiendas. Artefactos
-`forecast_library_audit.json` y `recent_sale_streams.json`. Siguiente paso
-posible: agregar streams con desempate que preserve prioridad de los existentes,
-medir si llegan a seleccionarse, validar noop cuando no hay datos nuevos para
-el par, y registrar mundo nuevo/confirmación. No confundir inclusión de nuevos
-datos con una mejora de predicción ni de W/L. Aún no existe candidata loop11.
+`forecast_library_audit.json` y `recent_sale_streams.json`. **Implementada en
+loop11:** tres fuentesets preservan desempate original, noop exacto y20juegos
+validados. Ladder/all sí seleccionan streams nuevos. Piloto/confirmación con
+32semillas por bloque, fuentes congeladas. No repetir desarrollo ni confundir
+inclusión de nuevos datos con mejora de precisión o W/L. Ver protocolo loop11.
+
+## Señal residual y diagnóstico pendientes, sin nueva corrida registrada
+
+History360 terminó confirm8 en+2,8409pp, IC dos vías[−1,249;6,931], debajo
+del gate3. No fue enviada ni refutada; no redondear, reutilizar seeds o cambiar
+el gate. Si la biblioteca confirma ventaja, una interacción historia×biblioteca
+necesita diseño nuevo, no sumar deltas de bloques distintos.
+
+La referencia MarketShock nueva motivó loop12 de aperturas controladas.
+TomatoInsteadOfCow sólo entrega4tomates en desarrollo: evaluar piloto antes
+de suponer que una planta temprana compensa toda la leche sacrificada. La
+telemetría de trigo de base/cycle espera53, pero el motor cosecha en87; futuros
+diagnósticos deben usar acciones aceptadas y cronología real. No hay aún una
+variante de mantenimiento/replantado ni evidencia de que convenga.
+
+## Capacidad nocturna y reasignación productiva
+
+c0nrad113107623: motor confirma33unidades destruidas en nuestras descargas,
+rival0. No es stock terminal ni inferencia por órdenes. Guardas existentes no
+rescatan estas cinco noches manteniendo la misma mezcla de productos. Loop13
+implementa venta de insumos excedentes para liberar capacidad, bajo reservas
+1/2días. V2completó36juegos, noop4.314,22activaciones exactas contra motor;
+cero escapes/diferencias en alimentación nocturna, máximo291ms. V1inválida por
+omitir VQ queda archivada y no se usa. No añadir otra guarda equivalente sin leer
+`PREREG_LOOP13_ALMACEN_2026-09-25.md`. En671 sólo hay carga>100 y almacén0:
+ese caso necesita logística previa; la variante no promete resolverlo.
+
+La auditoría de trabajo encuentra759PASS/3.186movimientos propios frente a
+280/2.556del rival, y302vs113riegos efectivos de fresa. c0nrad duplica cuidados
+ovinos con menos jornales. Próxima frontera estructural: reemplazar cultivos o
+rutas futuras por cuidado ovino con las mismas horas, previa auditoría de
+factibilidad por posición/hora. No tratar PASS agregado como peón disponible.
+El piloto9 inerte no refuta todas las inversiones: no activó cambios en este
+panel. Sus razones de rechazo por caso no se guardaron en el torneo; no
+atribuir todo a un gate específico sin sonda. Repetirlo sin política nueva
+no enseña más.
+
+La predicción de overflow requiere observaciones del motor reconstruido:
+el JSON ordena bolsas alfabéticamente y produjo pérdida/acción falsa en527.
+Cinco comparaciones de observación viva coinciden con el motor. Mantener esta
+distinción al diseñar diagnósticos futuros; no se demostró vínculo con pilot7.
 
 ## Incidencia neutral pendiente del harness
 

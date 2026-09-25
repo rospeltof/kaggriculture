@@ -1,5 +1,63 @@
 # Bitácora de experimentos
 
+## 2026-09-25, 04:39 UTC — Rebaños inertes, logística nocturna y loop13
+
+Piloto9 termina1.920episodios, noop320/320, cero errores. Seis variantes sin
+cambios propios/rivales128/128por brazo, delta0 e ICdos vías indefinido;
+no confirmación/envío. No se guardan motivos de rechazo por caso: no atribuir
+la inercia a una causa única sin sonda. Piloto10 inicia04:29:14UTC,1.920.
+
+Tres auditorías de c0nrad113107623, cada una720estados exactos/caja conciliada:
+menos jornales/movimientos/PASS/riego de fresa y más cuidado ovino rival;
+nosotros395lanas cosechadas/391vendidas y249fresas/244vendidas. Motor confirma
+33unidades destruidas de noche, rival0. Inventario final0 no lo detectaba.
+Guardas nativas ya existen; reaplicar overflow no cambia las cinco acciones
+con observaciones vivas. JSON reordena bolsas: en527 predice2trigos perdidos
+en vez de2fresas y genera modificación falsa. Reconstrucción viva coincide
+5/5conmotor. No asociar esta evidencia sin prueba a pilot7.
+
+Loop13:cuatro ventas de insumos sobrantes con reserva1/2días. V1capturó
+entrada antigua `agent`, omitióVQ y falló el primer noop tras diez filas;
+queda INVALID_NOOP con fuentes/filas, sin uso competitivo. V2captura último
+callable y nombre único;36juegos completos, noop4.314turnos,22activaciones
+con inventario/pérdida predichos exactos contra motor. Máximo291ms, cero
+errores/escapes/stock final, perfil de alimentación nocturna igual a base.
+Mundo dirigidoYARN:1día reduce pérdidas27→8,2días27→20; quedan pérdidas.
+Otros mundos distinguen reservas y venta deFERT. Piloto1.248registrado
+1028000–015, confirmación1029000–015; runner encolado tras loop12.
+
+Snapshot real04:30:35UTC:top32022,5/46episodios, VQ2288,2/69, COMPLETE;
+incluyen validación. Archivos0431contienen hora real enmetadatos. Sin envío.
+Objetivo persistente y pipeline siguen activos. No se alteraron fuentes de
+piloto10 ni de loops11/12 mientras esperaban.
+
+## 2026-09-25, 04:12 UTC — Confirm8 completa y dos familias nuevas
+
+Confirm8:1.600episodios, noop416/416, cero errores. History360+2,8409pp,
+ICdos vías[−1,249;6,931], debajo del gate3; PROMISING sin envío. Phase2
+−3,4091pp, IC[−13,23;6,412], inconcluso sin selección. Daños reproducidos
+en4juegos: history+189→−61, phase+492→−79, tiendas iguales/caja conciliada.
+Piloto9 arrancó04:06:10UTC con1.920episodios; fuenteovino v3 inalterada.
+
+Loop11:3bibliotecas recientes (DSM4, ladder8, all12),20diagnósticos, noop
+2.876turnos y ausencia de cambios en par sin datos. Ladder/all seleccionan
+un stream nuevo164veces/asiento en mundo dirigido,18acciones distintas;
+DSM inerte allí. Máximo250ms.1.920piloto/32semillas y confirmación32semillas
+registradas; runner espera loop10. No interpretación OOS del caso dirigido.
+
+Actualización pública: MasterEngine02:50UTC es tds25 byte exacto. MarketShock
+12ad317e diferente, pero último callable era instalador. Corrección de entrada
+1c94b979 idéntica al module.agent nominal en8juegos. El parche de riego requiere
+un estado exacto de entrenamiento y no actuó.0–4únicos contra top3 no es
+evaluación poblacional. Fuentes/dedupe en FUENTES_PUBLICAS_0400.
+
+Loop12:Original/EarlyCycle/TomatoInsteadOfCow sobre top3 más MarketShock.
+12diagnósticos, noop1.438, max229ms. Tomate sustituye1vaca y vende sólo4unidades.
+Base/cycle cosechan trigo en87, aunque contador esperaba53; no decir que no
+ejecutaron el intercultivo. MarketShock tiene1escape tardío/asiento. Todo
+documentado. Piloto1.008encolado tras loop11.55variantes competitivas construidas;
+ninguna subida adicional. Objetivo persistente y pipeline continúan activos.
+
 ## 2026-09-25, 03:49 UTC — Confirmación inerte, patrones y conversión ovina
 
 Confirm7 completa:1.600 episodios, noop416/416; ambas d18 inertes352/352

@@ -1,0 +1,16 @@
+[
+  {
+    "version": "v1_invalid",
+    "path": "results/espacio_nocturno_20260925/night_noop.py",
+    "sha256": "4f28875a2350065a16a8b873ef4bd2e288f1a16f49ed1971a06084a8833146d9",
+    "parent": "agent",
+    "official_entry": "agent"
+  },
+  {
+    "version": "v2_validated",
+    "path": "results/espacio_nocturno_v2_20260925/night_noop.py",
+    "sha256": "ceb660e4938bf49d1da582d5fa7121fee57755f4e6d938e5cfc34c5e23e3996c",
+    "parent": "loop_research_agent",
+    "official_entry": "night_stock_agent"
+  }
+]

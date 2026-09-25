@@ -34,7 +34,7 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   delta0; EGG cambia46/64 acciones y MELON es inerte. Top3+fast2 −6,25pp.
   Ninguna seleccionada. Controles factoriales: VQ78,125%, fast2 70,313%,
   top3 96,875%, combinado90,625%. No asumir suma de efectos de rondas previas.
-- Loop7 en evaluación: cuatro políticas de tomates en suelo SE libre, 4/8
+- Loop7 completo: cuatro políticas de tomates en suelo SE libre, 4/8
   plantas d16/d18, sobre top3. V2 podía inhibir R51; v3 corrigió contratación
   pero perdió cuatro tomates por overflow. V4 separa riego/cosecha:16 diagnósticos
   completos, plantas y ventas16/32 confirmadas, R51 y ovejas conservados.
@@ -49,16 +49,20 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   completo:1.472 episodios, noop224/224, cero errores. History360, phase2 y
   rank5 +1,5625pp cada uno (una celda mejor); rank7−3,125, history120−10,9375,
   product3−1,5625. Desempate registrado selecciona history360/phase2.
-  **Confirm8 corriendo** desde03:45:23UTC:1.600 episodios disjuntos.
-- Loop9 validado/encolado: seis rebaños incrementales (2/3/6 ovejas, día12/14),
+  **Confirm8 completa**:1.600 episodios, noop416/416, cero errores.
+  History360+2,8409pp, IC dos vías[−1,249;6,931], debajo del gate3; PROMISING
+  sin envío. Phase2−3,4091pp, IC[−13,23;6,412], inconcluso sin selección.
+- Loop9 completo: seis rebaños incrementales (2/3/6 ovejas, día12/14),
   sin comprar tierra y con demanda YARN ya visible. Se validan22 partidas
   dirigidas por versión antes de encolar1.920. V2 corrige cosechas tardías;
   motor confirmó36/53/83 entregas completas en ambos asientos. **V3** incluye
   seis ovejas compradas pero aún sin colocar y lana privada en la proyección.
   Otros22 juegos válidos, forzadas byte de acciones/rewards idéntico a v2;
   seis variantes normales inertes en ese mundo. Manifiesto v3 actualizado
-  antes del piloto9; runner espera a loop8. Total42 variantes competitivas.
-- Loop10 validado/encolado: adelantar conversión COW→SHEEP a días3–7,
+  antes del piloto9. **1.920 completos**, noop320/320, cero errores; las seis
+  inertes128/128contra pool, acciones propias/rivales idénticas, delta0 e IC
+  dos vías indefinido. Sin selección/confirmación. Total42variantes competitivas.
+- Loop10 corriendo desde04:29:14UTC: adelantar conversión COW→SHEEP a días3–7,
   fuera de la regla8–11 ya existente. Seis políticas de fecha/demanda/caja.
  48 juegos dirigidos, noop4.314 turnos exactos, max284ms. En mundo YARN/YARN:
   dos compras/colocaciones aceptadas,49 lanas cosechadas, cero escapes/créditos
@@ -68,7 +72,34 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
 - Biblioteca auditada:2.398 streams,64/64 pares de tiendas,24–63 por par.
   Doce streams recientes de ventas aceptadas son nuevos por fingerprint; no
   agregan pares de tiendas. Fecha de biblioteca original desconocida (ids−1).
-  `recent_sale_streams.json` preparado; aún sin candidata ni piloto registrado.
+  Loop11 ahora valida tres bibliotecas (DSM4, ladder8, todas12):20juegos,
+  noop2.876turnos exactos, max250ms; ladder/all sí seleccionan un stream nuevo.
+  Piloto1.920 con32semillas1021000–031, luego confirmación de32semillas;
+  runner encolado detrás de loop10. No mezclar con history360 aún no promovida.
+- Loop12 validado/encolado: tres aperturas nativas sobre top3 y MarketShock
+  público con entrada corregida.12juegos, noop1.438turnos, max229ms; tomate
+  inicial produjo4unidades y sustituye una vaca. Trigo temporal de base/cycle
+  se cosecha en87, distinto al contador heredado que esperaba53. MarketShock
+  tiene un escape tardío de ganso; no se oculta.1.008episodios, semillas1025000–007,
+  después de loop11. Total55variantes competitivas construidas en este loop.
+- Loop13 validado/encolado: cuatro ventas preventivas de excedente WHEAT/FERTILIZER
+  con reservas1/2días. V1 inválida por omitir VQ al capturar entrada antigua;
+  fuente/evidencia conservadas. **V2**36juegos completos, noop4.314turnos,
+ 22activaciones con vector final/pérdida exactos del motor, max291ms,
+  cero errores/escapes/diferencias en animales sin alimentar al cierre.
+  Piloto1.248 después de loop12, semillas1028000–015. Total59variantes construidas.
+  Motivación: c0nrad nos ganó con menos movimiento/jornales y se verificaron
+  33unidades propias perdidas en cinco descargas nocturnas; rival0. Guardas ya
+  existentes no lo solucionan conservando el vector final. JSON aislado cambia
+  orden de bolsas y da predicción falsa en527; reconstrucción viva sí coincide
+  con motor en5/5. Ver feedback y `c0nrad_*_audit.json`.
+  En mundo dirigido1272457736 contra arshs3 reactivo, reserva1día reduce
+  pérdida27→8, reserva2días27→20; quedan pérdidas residuales. En1004000
+  brazo2días inerte;1027000 permite diferenciar trigo/fertilizante. No es W/L OOS.
+- Fuentes públicas nuevas: MasterEngine actualizado es tds25 byte exacto,
+  excluido. MarketShock12ad317e diferente; loader elegía instalador. Corrección
+  de entrada1c94b979 probada idéntica al `module.agent` del autor en8juegos.
+  Fuente/adaptación separadas en `FUENTES_PUBLICAS_0400_2026-09-25.md`.
 - Auditoría piloto7: cuatro filas TDS con acción propia idéntica y hash rival
   distinto, pero rewards/WLT idénticos. Ocho reproducciones (hashseeds0–3)
   dieron acciones/estados idénticos; origen de la variación neutral no resuelto.
@@ -94,7 +125,7 @@ tomates, con diferencias grandes de composición por mundo. No inferir causalida
 ni algoritmo del score. Informe: `LIDER_Y_FUENTES_2026-09-25.md`. Dos notebooks
 con nombre nuevo eran copias de tds25: se deduplicaron sin repetir torneo.
 
-Último snapshot real: VQ56535264 **2319,5 /24 episodios listados**, original
+Snapshot histórico01:52UTC: VQ56535264 **2319,5 /24 episodios listados**, original
 56511619 **2275,7**. VQ aún joven, no afirmar superioridad por este rating.
 Top3 **56537205 COMPLETE**, enviada 2026-09-25 01:56:34 UTC, commit ba1fda8,
 sha9668e30a byte exacto de confirmación. Validación113099118: 720 pasos,
@@ -114,6 +145,9 @@ partidas seleccionadas por endTime antes de leer rewards:4V, márgenes923–2891
 720 estados exactos×4, caja conciliada, cero escapes propios/inventario final.
 Producción muy similar a rivales en esa muestra; no es superioridad causal vsVQ.
 Archivos con sufijo0333 se consultaron03:39; metadatos `.fetch.json` dan hora real.
+Último snapshot **04:30:35UTC**:top3 **2022,5 /46episodios listados** y VQ
+**2288,2 /69**, ambas COMPLETE. Archivos sufijo0431; hora real en metadatos.
+Recuentos incluyen validación; ninguna submission nueva desde top3.
 
 Lo siguiente es el cierre de la ronda anterior; no significa parar este loop.
 

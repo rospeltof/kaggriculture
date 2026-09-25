@@ -1,0 +1,281 @@
+{
+  "results": {
+    "sheep2_d12": {
+      "reference": "base",
+      "candidate": "sheep2_d12",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "tds"
+      ],
+      "seeds": [
+        1015000,
+        1015001,
+        1015002,
+        1015003,
+        1015004,
+        1015005,
+        1015006,
+        1015007,
+        1015008,
+        1015009,
+        1015010,
+        1015011,
+        1015012,
+        1015013,
+        1015014,
+        1015015
+      ],
+      "base_wr": 87.5,
+      "candidate_wr": 87.5,
+      "delta_points": 0.0,
+      "ci95_seed": [
+        0.0,
+        0.0
+      ],
+      "ci95_2way": null,
+      "opponent_breakdown": {
+        "ars40": 0.0,
+        "arshs3": 0.0,
+        "hybu": 0.0,
+        "tds": 0.0
+      },
+      "better_cells": 0,
+      "worse_cells": 0,
+      "equal_cells": 64,
+      "status": "INCONCLUSIVE_NOT_SELECTED"
+    },
+    "sheep3_d12": {
+      "reference": "base",
+      "candidate": "sheep3_d12",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "tds"
+      ],
+      "seeds": [
+        1015000,
+        1015001,
+        1015002,
+        1015003,
+        1015004,
+        1015005,
+        1015006,
+        1015007,
+        1015008,
+        1015009,
+        1015010,
+        1015011,
+        1015012,
+        1015013,
+        1015014,
+        1015015
+      ],
+      "base_wr": 87.5,
+      "candidate_wr": 87.5,
+      "delta_points": 0.0,
+      "ci95_seed": [
+        0.0,
+        0.0
+      ],
+      "ci95_2way": null,
+      "opponent_breakdown": {
+        "ars40": 0.0,
+        "arshs3": 0.0,
+        "hybu": 0.0,
+        "tds": 0.0
+      },
+      "better_cells": 0,
+      "worse_cells": 0,
+      "equal_cells": 64,
+      "status": "INCONCLUSIVE_NOT_SELECTED"
+    },
+    "sheep6_d12": {
+      "reference": "base",
+      "candidate": "sheep6_d12",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "tds"
+      ],
+      "seeds": [
+        1015000,
+        1015001,
+        1015002,
+        1015003,
+        1015004,
+        1015005,
+        1015006,
+        1015007,
+        1015008,
+        1015009,
+        1015010,
+        1015011,
+        1015012,
+        1015013,
+        1015014,
+        1015015
+      ],
+      "base_wr": 87.5,
+      "candidate_wr": 87.5,
+      "delta_points": 0.0,
+      "ci95_seed": [
+        0.0,
+        0.0
+      ],
+      "ci95_2way": null,
+      "opponent_breakdown": {
+        "ars40": 0.0,
+        "arshs3": 0.0,
+        "hybu": 0.0,
+        "tds": 0.0
+      },
+      "better_cells": 0,
+      "worse_cells": 0,
+      "equal_cells": 64,
+      "status": "INCONCLUSIVE_NOT_SELECTED"
+    },
+    "sheep2_d14": {
+      "reference": "base",
+      "candidate": "sheep2_d14",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "tds"
+      ],
+      "seeds": [
+        1015000,
+        1015001,
+        1015002,
+        1015003,
+        1015004,
+        1015005,
+        1015006,
+        1015007,
+        1015008,
+        1015009,
+        1015010,
+        1015011,
+        1015012,
+        1015013,
+        1015014,
+        1015015
+      ],
+      "base_wr": 87.5,
+      "candidate_wr": 87.5,
+      "delta_points": 0.0,
+      "ci95_seed": [
+        0.0,
+        0.0
+      ],
+      "ci95_2way": null,
+      "opponent_breakdown": {
+        "ars40": 0.0,
+        "arshs3": 0.0,
+        "hybu": 0.0,
+        "tds": 0.0
+      },
+      "better_cells": 0,
+      "worse_cells": 0,
+      "equal_cells": 64,
+      "status": "INCONCLUSIVE_NOT_SELECTED"
+    },
+    "sheep3_d14": {
+      "reference": "base",
+      "candidate": "sheep3_d14",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "tds"
+      ],
+      "seeds": [
+        1015000,
+        1015001,
+        1015002,
+        1015003,
+        1015004,
+        1015005,
+        1015006,
+        1015007,
+        1015008,
+        1015009,
+        1015010,
+        1015011,
+        1015012,
+        1015013,
+        1015014,
+        1015015
+      ],
+      "base_wr": 87.5,
+      "candidate_wr": 87.5,
+      "delta_points": 0.0,
+      "ci95_seed": [
+        0.0,
+        0.0
+      ],
+      "ci95_2way": null,
+      "opponent_breakdown": {
+        "ars40": 0.0,
+        "arshs3": 0.0,
+        "hybu": 0.0,
+        "tds": 0.0
+      },
+      "better_cells": 0,
+      "worse_cells": 0,
+      "equal_cells": 64,
+      "status": "INCONCLUSIVE_NOT_SELECTED"
+    },
+    "sheep6_d14": {
+      "reference": "base",
+      "candidate": "sheep6_d14",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "tds"
+      ],
+      "seeds": [
+        1015000,
+        1015001,
+        1015002,
+        1015003,
+        1015004,
+        1015005,
+        1015006,
+        1015007,
+        1015008,
+        1015009,
+        1015010,
+        1015011,
+        1015012,
+        1015013,
+        1015014,
+        1015015
+      ],
+      "base_wr": 87.5,
+      "candidate_wr": 87.5,
+      "delta_points": 0.0,
+      "ci95_seed": [
+        0.0,
+        0.0
+      ],
+      "ci95_2way": null,
+      "opponent_breakdown": {
+        "ars40": 0.0,
+        "arshs3": 0.0,
+        "hybu": 0.0,
+        "tds": 0.0
+      },
+      "better_cells": 0,
+      "worse_cells": 0,
+      "equal_cells": 64,
+      "status": "INCONCLUSIVE_NOT_SELECTED"
+    }
+  },
+  "selected_for_confirmation": []
+}

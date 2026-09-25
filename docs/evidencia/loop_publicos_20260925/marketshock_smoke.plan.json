@@ -1,0 +1,22 @@
+{
+  "seeds": [
+    1023000,
+    1023001
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "opponent": "submission/main_publico_arshs3_vq_top3.py",
+  "purpose": "Packaging equivalence, runtime and execution; not a population estimate.",
+  "files": {
+    "named_upstream": {
+      "path": "results/publicos_0400_20260925/leoprovorov_a-song-of-ice-and-fire-fixed-flexible/main.py",
+      "sha256": "12ad317ecac6c07fb2c2e10bf4820ecd1fd4551a5a36aa0e34ab93b2c33c2693"
+    },
+    "fixed_official": {
+      "path": "results/publicos_0400_20260925/leoprovorov_a-song-of-ice-and-fire-fixed-flexible/main_entry_fixed.py",
+      "sha256": "1c94b979761ed115268b468254be5a1fc676a712e7b1290e34cb9fd963b1aa0b"
+    }
+  }
+}

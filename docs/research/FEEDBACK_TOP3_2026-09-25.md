@@ -51,11 +51,9 @@ forzar ovejas en todos los mundos, copiar la cinta rival ni subir una variante
 sin comparación reactiva. Loop3 ya mostró daño de extrapolar tiendas futuras;
 no repetir ese criterio bajo otro nombre.
 
-La evaluación espacial de tomates loop7 y los seis predictores loop8 continúan
-según sus protocolos. Siguiente hipótesis estructural a diseñar: uso de espacio
-libre para un rebaño adicional pequeño, o reasignación de trabajo bovino con
-demanda observada de lana, contabilizando jornales Fibonacci y capacidad de
-alimentación. Aún no hay implementación, protocolo ni prueba de esa hipótesis.
+Esta observación motivó los rebaños de loop9 y la conversión temprana de loop10.
+Actualización04:29UTC: piloto9 terminó inerte en128/128partidas por variante,
+sin confirmación; piloto10 ya corre. No volver a planificarlos como pendientes.
 
 Evidencia: `top3_replay_selection_0236.json`,
 `top3_accepted_transactions_0234.json`, `top3_*.ledger.jsonl.gz`, hashes de
@@ -87,3 +85,62 @@ otras producciones importan en esa muestra. No atribuir causalmente las
 victorias a top3 sin contrafactual; tampoco generalizarlas a adversarios de
 economía diferente como c0nrad. Evidencia `top3_audit_0339.json` y ledgers;
 reconstrucción `auditar_replays_recientes.py` con selección archivada.
+
+## Trabajo y pérdidas intermedias: auditoría posterior de c0nrad
+
+Dos reconstrucciones adicionales de113107623,720estados exactos y caja
+conciliada. Hooks del motor separan orden intentada de cambio aceptado.
+
+| Medida | Nosotros | c0nrad |
+|---|---:|---:|
+| Contrataciones / jornales |307 /10.217|274 /8.273|
+| Desplazamientos emitidos |3.186|2.556|
+| PASS emitidos |759|280|
+| WATER emitidos, todos cultivos |1.096|804|
+| Riegos de fresa efectivos |302|113|
+| FEED ovino efectivo |334|642|
+| CARE ovino efectivo |343|642|
+| Cosechas ovinas efectivas |95|174|
+| Lana cosechada |395|759|
+| Fresa cosechada |249|86|
+
+El rival asigna más trabajo a ovejas y menos a fresas y desplazamientos.
+Son totales de una partida; PASS no implica que exista una reasignación viable
+desde esa posición/hora, y estos datos no identifican su algoritmo. Añadir
+peones con salario Fibonacci no reproduce su eficiencia. Una futura política
+de rutas/productos debe medir cuidados y entregas aceptados, además de caja.
+
+La diferencia cosecha→venta revela pérdida intermedia:5fresas y4lanas propias.
+Instrumentar `_end_of_day` confirma **33unidades destruidas**, frente a0rival:
+
+| Turno | Pérdida real propia | Total privado antes→después |
+|---:|---|---:|
+|527|2fresas,3fertilizantes|105→100|
+|575|7trigos,3fresas,4lanas,5fertilizantes|119→100|
+|623|4fertilizantes|104→100|
+|647|3fertilizantes|103→100|
+|671|2fertilizantes|102→100|
+
+No valorar esas pérdidas con precio puntual como si fuera ingreso realizable.
+Hay guardas de overflow y SHEDROOM ya instaladas. Reaplicar `_ov_apply` al
+final no cambia ninguna de las cinco acciones: exige preservar todo el vector
+de inventario al amanecer y no puede sustituir insumos sobrantes por cosecha.
+En671 el almacén ya queda vacío y la carga sola excede100: una venta del
+almacén en ese turno no lo resuelve. La hipótesis loop13 acepta cambiar mezcla
+de inputs bajo reservas explícitas; no promete eliminar todos los casos.
+
+**Advertencia metodológica demostrada:** JSON del replay ordena alfabéticamente
+productos en bolsas; el motor vivo mantiene inserción histórica. En527,
+consultar helpers sobre JSON aislado predice perder2trigos en vez de2fresas y
+modifica espuriamente `_ov_apply`. En la reconstrucción viva, las cinco
+predicciones de pérdida/vector final coinciden exactamente con el motor.
+No se modificó el harness ni se atribuyó a esto la incidencia neutral de pilot7.
+
+Evidencia: `c0nrad_labor_audit.json`, `c0nrad_inventory_audit.json`,
+`c0nrad_guard_audit.json`; scripts `auditar_trabajo_c0nrad.py`,
+`auditar_overflow_c0nrad.py`, `auditar_guardas_c0nrad.py`.
+
+Snapshot posterior04:30:35UTC:top32022,5/46episodios listados y VQ2288,2/69,
+ambas COMPLETE. Incluyen validación. Sin nuevo muestreo de replays en esta
+consulta ni inferencia causal entre sus ratings; ficheros sufijo0431 con
+metadatos de hora real.

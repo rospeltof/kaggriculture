@@ -3,9 +3,10 @@
 > **Estado vigente (2026-09-25 UTC): leer primero `docs/research/ESTADO_INVESTIGACION.md`.**
 > Desde el 2026-09-21 el usuario autorizó un loop autónomo de investigación que
 > incluye submissions experimentales ("También tienes capacidad para crear y
-> subir submissions reales. Usa ambas cosas"). Mejor referencia real:
-> **arshs3 (56511619), 2292,5 @148 episodios**; VQ experimental **56535264**
-> enviada y COMPLETE. No volver al campeón histórico de 1180. Creencias con evidencia:
+> subir submissions reales. Usa ambas cosas"). Referencias reales activas:
+> **VQ56535264** y **top3 56537205**, ambas COMPLETE. Snapshot04:30UTC:
+> 2288,2/69episodios y2022,5/46 respectivamente; incluyen validación.
+> No volver al campeón histórico de1180. Creencias con evidencia:
 > `docs/research/RESEARCH_BELIEFS.md`; historial reproducible de envíos:
 > `docs/research/SUBMISSION_HISTORY.json`; qué métrica local predice el ladder:
 > `docs/research/HARNESS_VS_LEADERBOARD.md`. Lo que sigue abajo es el estado
@@ -20,13 +21,21 @@ y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_publicos.py`, `continuar_loop_herd.py`,
 `continuar_loop_recuperacion.py`, `continuar_loop_tomate.py` y
 `continuar_loop_productos.py`, `continuar_loop_relleno.py` y
-`continuar_loop_patrones.py`, `continuar_loop_rebano.py` y `continuar_loop_vacas.py` encadenan bloques
+`continuar_loop_patrones.py`, `continuar_loop_rebano.py`, `continuar_loop_vacas.py`,
+`continuar_loop_biblioteca.py`, `continuar_loop_aperturas.py` y
+`continuar_loop_almacen.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
 terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
 (una de64 partidas cambia, +1,5625pp). Confirm5 tomate−21,591pp: REJECTED.
 Loop6 sin seleccionadas; confirm7 completa, ambas d18 inertes352/352,
-sin selección. Confirm8 corre (history360/phase2, piloto+1,5625pp), loops9/10
-validados/encolados. Loop10 extiende COW→SHEEP a días3–7;48 juegos dirigidos
+sin selección. Confirm8 completa:history360+2,8409pp no supera gate3,
+phase2−3,4091pp; sin envío. Piloto9 completo1.920episodios, seis variantes
+inertes128/128contra pool, sin selección. Piloto10 corre desde04:29UTC;
+loops11–13 validados/encolados. Loop13 almacén: versión1 inválida
+por capturar entrada antigua y omitir VQ, detectado por noop; versión2 usa
+último callable correcto,36juegos completos, noop4.314turnos y22predicciones
+de descarga exactas contra motor. Piloto1.248 encolado. No reutilizar resultados v1.
+Loop10 extiende COW→SHEEP a días3–7;48 juegos dirigidos
 y dos colocaciones/49 lanas confirmadas en mundo con YARN. Rebaño vigente v3 incluye oferta propia
 ya comprada: no volver a versiones1/2 ni a sus manifiestos históricos. No repetir las
 versiones infill2/3: v4 corrige interferencia R51 y overflow de cosecha.
@@ -35,6 +44,10 @@ pasos DONE/DONE sin errores/timeouts. VQ2364,6 en snapshot02:04UTC, aún joven.
 Conserva VQ56535264 como control; tres envíos restantes reportados. Ver historial.
 Al completar los bloques, revisar resultados y seguir con la siguiente hipótesis
 o submission justificada. Cierre de bloque no equivale a cierre de investigación.
+Auditoría nueva: al reconstruir113107623,33unidades propias se destruyen de
+noche; no detectadas por inventario terminal0. Orden de bolsas del JSON del
+replay difiere del motor vivo y cambia overflow: usar reconstrucción, no JSON
+aislado. Ver `c0nrad_guard_audit.json` y FEEDBACK_TOP3.
 
 ## Estado y autorización
 

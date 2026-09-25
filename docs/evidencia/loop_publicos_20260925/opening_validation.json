@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "episodes": 12,
+  "noop_turns_exact": 1438,
+  "max_turn_ms": 228.3033750136383,
+  "candidate_hashes": {
+    "open_original": "ab54f5c5254eb6537f85ec5ec65eaea7fa75df18009753471d7768a095b05ae7",
+    "open_cycle": "8c3f9a3a4b3fe523c304c46513c0a17debd7676285c6b87438a0b48662143a05",
+    "open_tomato": "4100cd49bf1ec2d1420741f8da77fb15c2c3e54adef8fbb2b413f13d2d893f18",
+    "marketshock": "1c94b979761ed115268b468254be5a1fc676a712e7b1290e34cb9fd963b1aa0b"
+  },
+  "caveats": [
+    "open_cycle changes only one submitted action in this world, same rewards; not guaranteed inert universally.",
+    "open_tomato bought one fewer cow and harvested/sold four tomatoes; no evidence of competitive improvement.",
+    "MarketShock has one goose escape at step647 per seat; record, do not hide.",
+    "Hybrid/early-cycle temporary wheat is harvested at step87, not at the step53 expected by inherited telemetry."
+  ],
+  "observed_escapes": [
+    {
+      "arm": "marketshock",
+      "seat": 0,
+      "escapes": [
+        {
+          "step": 647,
+          "xy": [
+            3,
+            2
+          ],
+          "animal": "GOOSE"
+        }
+      ]
+    },
+    {
+      "arm": "marketshock",
+      "seat": 1,
+      "escapes": [
+        {
+          "step": 647,
+          "xy": [
+            3,
+            2
+          ],
+          "animal": "GOOSE"
+        }
+      ]
+    }
+  ]
+}

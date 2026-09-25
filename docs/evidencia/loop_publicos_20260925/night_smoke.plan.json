@@ -1,0 +1,39 @@
+{
+  "seeds": [
+    1272457736,
+    1004000,
+    1027000
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "opponent": "submission/main_publico_arshs3_arsgorynich.py",
+  "purpose": "Night-stock mechanics and no-op; no selection by development rewards.",
+  "agents": {
+    "base": {
+      "path": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "night_wheat1": {
+      "path": "results/espacio_nocturno_20260925/night_wheat1.py",
+      "sha256": "ca3054d37f4bd39055d5ab3392462dd00f11d0c0a37e8d880d0f583eece1a22e"
+    },
+    "night_wheat2": {
+      "path": "results/espacio_nocturno_20260925/night_wheat2.py",
+      "sha256": "e7ccaf4c8068c92b8311d684eafb3eeb4847df862d32ebced58ba712b9a64e48"
+    },
+    "night_inputs1": {
+      "path": "results/espacio_nocturno_20260925/night_inputs1.py",
+      "sha256": "20ad2cc975a714eef4f9319f5b1c2f49deb6782c1f8ae3d63a866eea5a17a667"
+    },
+    "night_inputs2": {
+      "path": "results/espacio_nocturno_20260925/night_inputs2.py",
+      "sha256": "5f34b8b8265311018eb04f57b6580d04529e3eab0493ccf25f2d1ae9f31d5b86"
+    },
+    "night_noop": {
+      "path": "results/espacio_nocturno_20260925/night_noop.py",
+      "sha256": "4f28875a2350065a16a8b873ef4bd2e288f1a16f49ed1971a06084a8833146d9"
+    }
+  }
+}

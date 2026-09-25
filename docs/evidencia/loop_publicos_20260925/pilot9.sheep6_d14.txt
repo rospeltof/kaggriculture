@@ -1,0 +1,20 @@
+  (extra, no entra en la estimacion) base vs noop: 50.0% (32 ep)
+  (extra, no entra en la estimacion) sheep6_d14 vs noop: 50.0% (32 ep)
+  (extra, no entra en la estimacion) base vs sheep2_d12: 50.0% (32 ep)
+  (extra, no entra en la estimacion) sheep6_d14 vs sheep2_d12: 50.0% (32 ep)
+  (extra, no entra en la estimacion) base vs sheep2_d14: 50.0% (32 ep)
+  (extra, no entra en la estimacion) sheep6_d14 vs sheep2_d14: 50.0% (32 ep)
+  (extra, no entra en la estimacion) base vs sheep3_d12: 50.0% (32 ep)
+  (extra, no entra en la estimacion) sheep6_d14 vs sheep3_d12: 50.0% (32 ep)
+  (extra, no entra en la estimacion) base vs sheep3_d14: 50.0% (32 ep)
+  (extra, no entra en la estimacion) sheep6_d14 vs sheep3_d14: 50.0% (32 ep)
+  (extra, no entra en la estimacion) base vs sheep6_d12: 50.0% (32 ep)
+  (extra, no entra en la estimacion) sheep6_d14 vs sheep6_d12: 50.0% (32 ep)
+sheep6_d14 - base: 4 rivales x 16 semillas = 64 celdas; ref 87.5%
+  delta +0.00 pts | IC95 semilla [+0.00; +0.00] | dos vias [+nan; +nan]
+  celdas cambiadas 0/64: 0 a favor, 0 en contra
+    vs    ars40   +0.0
+    vs   arshs3   +0.0
+    vs     hybu   +0.0
+    vs      tds   +0.0
+  directo sheep6_d14 vs base: 50.0% (32 ep)

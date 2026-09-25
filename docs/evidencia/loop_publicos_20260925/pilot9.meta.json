@@ -1,0 +1,80 @@
+{
+  "agentes": {
+    "base": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "noop": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "sheep2_d12": {
+      "ruta": "results/rebano_adicional_v3_20260925/sheep2_d12.py",
+      "sha256": "b98088332babab5d338c3739aaa969645e3956cfa052eddb1618522f1396ad98"
+    },
+    "sheep3_d12": {
+      "ruta": "results/rebano_adicional_v3_20260925/sheep3_d12.py",
+      "sha256": "bc58e9a6606cce1e1512928b815a48bdcf4f50b6ec8439dd7d1d873d12d1aded"
+    },
+    "sheep6_d12": {
+      "ruta": "results/rebano_adicional_v3_20260925/sheep6_d12.py",
+      "sha256": "bb897446fb99d358d93137ad695905466b68837329a623861cb52dbd9b792505"
+    },
+    "sheep2_d14": {
+      "ruta": "results/rebano_adicional_v3_20260925/sheep2_d14.py",
+      "sha256": "70c835d1716910b7d83aa838ff2bdeef5c9f59883a33c23f1d72a2cefc438ae4"
+    },
+    "sheep3_d14": {
+      "ruta": "results/rebano_adicional_v3_20260925/sheep3_d14.py",
+      "sha256": "3ed5a69450359aa9170390b5145f42eb0e47ee5436a07174868becc74285c805"
+    },
+    "sheep6_d14": {
+      "ruta": "results/rebano_adicional_v3_20260925/sheep6_d14.py",
+      "sha256": "08dce989a6b0f7df057ed85ff6d78abcf354c50a8d28939dc084ff9587bd356a"
+    },
+    "tds": {
+      "ruta": "submission/main_publico_tds_tetsutani.py",
+      "sha256": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a"
+    },
+    "hybu": {
+      "ruta": "results/publicos/wzhengbiao_kaggriculture-hybu-submit/main.py",
+      "sha256": "f6175fd1bc3850f74185e7a813bb5a87d54e7e15212c874133dafc6e1ce91d34"
+    },
+    "ars40": {
+      "ruta": "results/publicos/arsgorynich_kaggriculture-v40-challenger/main.py",
+      "sha256": "d5a192fac67f00da31fe2bc7b747b8c33766bf1024780c53e49f2292a97db2de"
+    },
+    "arshs3": {
+      "ruta": "submission/main_publico_arshs3_arsgorynich.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    }
+  },
+  "seeds": [
+    1015000,
+    1015001,
+    1015002,
+    1015003,
+    1015004,
+    1015005,
+    1015006,
+    1015007,
+    1015008,
+    1015009,
+    1015010,
+    1015011,
+    1015012,
+    1015013,
+    1015014,
+    1015015
+  ],
+  "vs": "base,noop,sheep2_d12,sheep3_d12,sheep6_d12,sheep2_d14,sheep3_d14,sheep6_d14",
+  "inicio": "2026-09-24 23:06:10",
+  "state": "complete",
+  "expected_episodes": 1920,
+  "workers": 8,
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "cc2c653a1cce243e55d3d30effd5985405bb9db28bde7622cecc400a7298b025",
+  "completed_episodes": 1920,
+  "fin": "2026-09-24 23:29:14"
+}

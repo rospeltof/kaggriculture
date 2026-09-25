@@ -368,3 +368,92 @@ originales recuperables (ids−1): no afirmar antigüedad. Doce streams aceptado
 recientes (DSM4, rivales top3 ocho) son distintos semánticamente; Jaccard de
 eventos más cercano0,118–0,573. No agregan pares de tiendas. Preparados en
 `recent_sale_streams.json`, aún sin agente ni evaluación. No es precisión OOS.
+
+## Confirm8: señal pequeña de memoria larga, desfase no confirma
+
+1.600episodios, noop416/416, cero errores, fuentes/coverage verificadas. Base
+82,9545%. History36085,7955%, delta+2,8409pp, IC95dos vías[−1,249;6,931];
+6celdas mejores y1peor,318/352acciones cambian. PROMISING, pero no alcanza
+gate3: no redondear ni enviar por seleccionar un subpanel. Ningún rival tiene
+delta agregado negativo; eso no niega la existencia de la celda de daño.
+
+Phase279,5455%, delta−3,4091pp, IC[−13,23;6,412];5celdas mejores/11peores,
+298/352acciones cambian. INCONCLUSIVE_NOT_SELECTED. No envío para ambas.
+Máximos propios history360220ms/phase2198ms, lejos del límite1s.
+
+Daños reproducidos, tiendas iguales/caja conciliada: history360 vsTDS25,
+1014014/asiento0, primera diferencia655 y6acciones; margen+189→−61,
+mismas cantidades vendidas, leche−40/fresa+2 de ingreso propio. Phase2 vsars40,
+1014006/asiento0, primera430/11acciones; margen+492→−79, leche−79,
+fresa−74, lana−4 y dos huevos menos/−103. No son fallos de ejecución.
+Sondas `confirm8.{history360,phase2}.harm.json`; no redefinen el estimador.
+
+## Loop11: biblioteca reciente validada y en cola
+
+Tres fuentesets sobre top3:DSM4, rivales recientes8, ambas12. Ranking nativo
+intacto y prioridad de streams antiguos en empates.20juegos dirigidos,
+noop2.876turnos exactos; variantes también idénticas en par FARM/FARM sin
+datos. Máximo250ms. YARN/YARN: DSM se expone pero no se selecciona, ladder/all
+seleccionan113126108 en164ajustes por asiento y cambian18turnos. Uno de los
+mundos de desarrollo viene de un replay fuente: no presentarlo como OOS.
+
+Piloto1.920con32semillas1021000–031, cuatro rivales fuertes fijos;
+confirmación32semillas1022000–031,2.304/3.200con11rivales. Mayor diversidad
+de mundos porque sólo10/64pares tienen datos nuevos. Runner espera loop10.
+
+## Loop12: aperturas y actualización pública
+
+MarketEngine de ejecución02:50 es tds25 byte exacto: excluido. MarketShock
+cambió, pero su loader elegía instalador. Corrección de entrada verificada
+contra política nominal del autor en8juegos;0–4 contra top3 en2semillas,
+márgenes−4.517/−835, WR inerte. No es torneo de promoción/rechazo general.
+
+Tres aperturas sobre top3 (Original/EarlyCycle/TomatoInsteadOfCow) más ese
+paquete público se registran en loop12.12juegos de desarrollo, noop1.438turnos,
+max229ms, cero errores observados. Original cambia42turnos; EarlyCycle sólo1,
+mismos rewards; Tomato261, una vaca menos y4tomates cosechados/vendidos. No
+asumir mejora por mayor dinero total: también cambian tiendas/rival. MarketShock
+un escape de ganso647/asiento; se conserva el caso, no se oculta.
+
+Trigo temporal observado: base/cycle cosechan3unidades en87; el contador
+heredado espera cosecha53 y por eso marca0. Tomato/MarketShock cosechan2en53.
+No concluir que la rama no corrió porque ese contador sea0. Piloto1.008,
+semillas1025000–007; confirmación1026000–015. Runner detrás de loop11.
+
+## Piloto9 completo: seis rebaños inertes
+
+1.920episodios, noop320/320, cero errores, fuentes/cobertura verificadas.
+Cada una de las seis políticas conserva acciones propias/rivales en128/128
+partidas contra pool. Delta0, ICdos vías indefinido; no confirmar ni enviar.
+No se guardaron motivos de rechazo por cada juego: no atribuir toda inercia
+a la misma condición sin sonda. No repetir estos brazos para buscar seeds
+favorables. Piloto10 arranca04:29:14UTC con1.920partidas de conversión temprana.
+
+## Logística nocturna: mecanismo nuevo y desarrollo loop13
+
+c0nrad113107623:33unidades propias perdidas en cinco noches, rival0;
+720estados exactos/caja conciliada.395lanas cosechadas vs391vendidas y
+249fresas vs244vendidas. El inventario terminal0 no detecta esa pérdida.
+Motor vivo confirma las predicciones de guardas5/5; JSON aislado reordena
+inventarios y predice pérdida espuria de trigo en527. No alterar harness
+por esa observación ni vincularla sin prueba a la incidencia neutral pilot7.
+
+Loop13 propone cuatro reservas1/2días y venta de trigo o ambos inputs para
+liberar espacio. Cambia mezcla final y precio/timing: requiere competencia
+reactiva.36juegos dirigidos registrados,1.248piloto nuevo tras loop12 si valida.
+V1falló noop por entrada equivocada, omitiendo VQ. Se archiva como inválida;
+V2corrige sólo captura del último callable y repite desarrollo. No seleccionar
+por los diez resultados parciales de v1.
+
+V2validada:36juegos, noop4.314turnos exactos,22activaciones con predicción
+de pérdida/vector final exacta contra motor. Ventas aceptadas verificadas;
+max291ms, cero errores/escapes/inventario final. Perfil de animales sin
+alimentar al cierre y tiendas idénticos a base.1272457736:reserva1día27→8
+unidades perdidas,2días27→20.1004000:1día24→16,2días inerte.1027000:trigo1día
+y ambos inputs13→4; trigo2días inerte. FERT sí se vende con ambos inputs en
+último mundo. Mecanismo validado, no selección competitiva ni solución completa.
+Piloto1.248 encolado detrás de loop12, fuentev2 congelada.
+
+Snapshot real04:30:35UTC:top32022,5/46episodios listados;VQ2288,2/69,
+ambasCOMPLETE. Incluyen validación. Ficheros sufijo0431 con hora real en
+metadatos. No envío nuevo ni declaración de superioridad causal.
