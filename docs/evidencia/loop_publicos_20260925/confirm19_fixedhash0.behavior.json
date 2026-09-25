@@ -1,0 +1,110 @@
+{
+  "wheat_both": {
+    "pool_episodes": 704,
+    "own_action_hash_changed": 6,
+    "opponent_action_hash_changed": 6,
+    "changed_seeds": [
+      1047004,
+      1047024,
+      1047031
+    ],
+    "changed_cells": [
+      {
+        "opponent": "guru6",
+        "seed": 1047004,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1047004,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1047024,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1047024,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1047031,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1047031,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      }
+    ]
+  },
+  "wheat_front": {
+    "pool_episodes": 704,
+    "own_action_hash_changed": 6,
+    "opponent_action_hash_changed": 0,
+    "changed_seeds": [
+      1047004,
+      1047024,
+      1047031
+    ],
+    "changed_cells": [
+      {
+        "opponent": "guru6",
+        "seed": 1047004,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1047004,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1047024,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1047024,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1047031,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1047031,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      }
+    ]
+  }
+}

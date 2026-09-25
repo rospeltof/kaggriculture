@@ -1,5 +1,12 @@
 # Fronteras después de loops7–10
 
+Actualización09:28UTC: confirm19_fixedhash0cerrada/noop832, ambasdelta0,
+seis trayectorias propias distintas en tres semillas, todas ya ganadas; no
+selección.20corriendo y21–26en cola. No repetir.27en desarrollo: sincronizar
+_V9_RACE.prev.own/left con las órdenes finales, porque65desajustes en seis
+replays contaminaron observaciones rivales. No cambia biblioteca/umbrales ni
+resuelve ventas al mínimo. Preregistro27,48desarrollos antes de encolar.
+
 Estado 09:11 UTC: confirm19 original completo pero noop inválido; repetición
 confirm19_fixedhash0 en curso con runtime uniforme. Piloto +2,734375 pp
 conserva su selección; 20–26 en cola, ninguna partida duplicada.

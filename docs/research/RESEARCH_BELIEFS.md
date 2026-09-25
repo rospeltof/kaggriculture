@@ -4,6 +4,20 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, atribución de ventas] Una instantánea intermedia puede
+  contaminar el reconocimiento del rival.** Seis controles reales exactos,
+  65cantidades propias distintas de ventas aceptadas en20.821pares elegibles;
+  12eventos atribuidos al rival sin dos ventas rivales. Capas posteriores
+  cambian órdenes después deguardarV9. No confundir esto con la invisibilidad
+  de ventas al mínimo ni con ventaja competitiva de una corrección. Desarrollo27
+  registrado sobre ambas referencias; ver FEEDBACK_0914.
+
+- **[2026-09-25, confirm19 válida] Mejor caja puede dejar intacto W/L/T.**
+  Ambas políticas delta0/noop832, aunque6de704trayectorias propias cambian en
+  tres semillas y ganan margen. Todas ya eran victorias contra guru6. El piloto
+  +2,734375ppno se replica; no inertes, no seleccionadas. La medición inválida
+  anterior se conserva sin rescatar ni sumarN. Ver CIERRE_TRIGO19.
+
 - **[2026-09-25, semillas tardías] La reserva terminal existente mezcla cultivos.**
   E402 usa PLANT de trigo+zanahoria como cota de compra de cada uno;18replays
   conservan54semillasWHEATy7CARROT. Dos políticas nuevas sólo de trigo conservan

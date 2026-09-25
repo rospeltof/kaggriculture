@@ -1,5 +1,26 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte operativo09:28UTC — confirm19 cerrada,20corriendo,27en desarrollo
+
+Confirm19_fixedhash0terminó09:22:12UTC:3.200episodios,832noops exactos, delta0
+ambas políticas. Cambian6/704acciones propias cada una, sólo contraguru6en
+tres semillas; ya eran victorias. No inertes, tampoco seleccionadas/enviadas.
+No sumar la medición original inválida. Leer `CIERRE_TRIGO19_2026-09-25.md`.
+Pilot20arrancó automáticamente;21–26esperan. No duplicar procesos.
+
+Consulta09:13:39UTC:VQ2290,3/95episodios ytop32119,0/84, COMPLETE. Seis replays
+0914reproducidos719acciones/720estados/caja exactos, sin escapes propios.
+Las seis alternativas contra rival grabado favorecen margen top3en5/6, no
+prueba reactiva ni explicación causal del rating. Ver FEEDBACK_0914.
+
+Nueva auditoría identifica65cantidades propias mal registradas en20.821pares
+producto/turno elegibles,12falsos eventos rivales. Las capas finales modifican
+ventas después del snapshotV9. Las ventas al mínimo tienen otra ambigüedad
+que la corrección no resuelve. Loop27registrado, dos candidatas construidas
+sobreVQ/top3;48desarrollos en curso, aún sin autorización técnica de piloto.
+93variantes construidas (dos en desarrollo) más2prototipos17detenidos.
+No ejecutar runner27hasta validar. Leer PREREG_LOOP27_ATRIBUCION y logs.
+
 ## Corte operativo 09:11 UTC — loop26 validado, confirmación principal activa
 
 Confirm19_fixedhash0 continúa con sus3.200celdas registradas; no reiniciar ni

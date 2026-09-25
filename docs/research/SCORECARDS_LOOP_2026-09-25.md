@@ -1,9 +1,10 @@
 # Scorecards del loop continuo — 2026-09-25 UTC
 
-Estado09:11UTC:pilotos1–16/18/19y confirm1/5/7/8/10/13completos.
-Confirm19original completo pero INVÁLIDO por cuatro noops de hash rival.
-Confirm19_fixedhash0corre; mismo diseño, runtime fijado, no muestra adicional.
-20–26validados/encolados;17detenido. Objetivo activo.
+Estado09:28UTC: confirm19_fixedhash0 completa3.200/noop832. Ambas delta0,
+no seleccionadas; seis acciones propias distintas por brazo, tres semillas.
+Pilot20corriendo;21–26en cola;27desarrollo48en curso;17detenido. Objetivo activo.
+Originalconfirm19inválida queda archivada, no se combina con la repetición.
+
 
 48reproducciones/4hashseeds identifican orden de ventas rival dependiente del
 hash, mismos720estados económicos/acciones propias/rewards en seis celdas.
@@ -881,3 +882,12 @@ VQbase y top3control en piloto2.560/32semillas pendiente tras23.89variantes
 construidas más2prototipos detenidos. Reproducción rivalgrabadoGrimReaper
 −3070→313; no estima WRreactivo. Sonda384escenarios/1152piernas exactas explica
 interacción con horario rival/consumo; no selección por dinero sintético.
+
+## Confirm19 repetida bajo runtime fijo — cierre09:22UTC
+
+3.200episodios, noop832exactos, cero errores; fuentes y hashseed0 verificados.
+Wheat_both y wheat_front:86,0085%, base igual, delta0;0mejores/0peores/352iguales.
+ICdos vías indefinido; no prueba de efecto universal0. Ambas cambian6/704
+acciones propias en tres semillas contra guru6, ya ganadas. Márgenes suben
+769–3501enboth y853–2458enfront, sin W/L/T nuevos. INCONCLUSIVE_NOT_SELECTED.
+Ver CIERRE_TRIGO19; no enviar ni rescatar original inválida. Pilot20ya iniciado.

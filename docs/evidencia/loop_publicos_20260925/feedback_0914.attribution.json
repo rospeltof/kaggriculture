@@ -1,0 +1,134 @@
+{
+  "plan": {
+    "created_at": "2026-09-25T09:19:28.028603+00:00",
+    "rule": "Every original policy and recorded opponent in this recency sample, no outcome filter. Inspect internal own-sale snapshot, final action and accepted market inventory increments; no policy edits or candidate selection.",
+    "episodes": [
+      113221090,
+      113219913,
+      113212875,
+      113221275,
+      113218290,
+      113213016
+    ],
+    "sources": {
+      "top3": {
+        "path": "submission/main_publico_arshs3_vq_top3.py",
+        "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+      },
+      "vq": {
+        "path": "submission/main_publico_arshs3_vq.py",
+        "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+      }
+    }
+  },
+  "results": [
+    {
+      "episode": 113221090,
+      "policy": "top3",
+      "opponent": "Aderian Setiawan",
+      "source_sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
+      "exact_actions": 719,
+      "exact_states": 720,
+      "ledger_exact": true,
+      "summary": {
+        "eligible_item_turns": 3502,
+        "own_snapshot_differs_from_accepted_qty": 10,
+        "own_snapshot_differs_from_inventory_added": 28,
+        "false_event_vs_actual_sales": 1,
+        "missed_event_vs_actual_sales": 10,
+        "false_event_vs_inventory_added": 1,
+        "missed_event_vs_inventory_added": 6
+      }
+    },
+    {
+      "episode": 113219913,
+      "policy": "top3",
+      "opponent": "atl132",
+      "source_sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
+      "exact_actions": 719,
+      "exact_states": 720,
+      "ledger_exact": true,
+      "summary": {
+        "eligible_item_turns": 3309,
+        "own_snapshot_differs_from_accepted_qty": 10,
+        "own_snapshot_differs_from_inventory_added": 23,
+        "false_event_vs_actual_sales": 3,
+        "missed_event_vs_actual_sales": 9,
+        "false_event_vs_inventory_added": 3,
+        "missed_event_vs_inventory_added": 2
+      }
+    },
+    {
+      "episode": 113212875,
+      "policy": "top3",
+      "opponent": "PeterDreamHan",
+      "source_sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
+      "exact_actions": 719,
+      "exact_states": 720,
+      "ledger_exact": true,
+      "summary": {
+        "eligible_item_turns": 3516,
+        "own_snapshot_differs_from_accepted_qty": 7,
+        "own_snapshot_differs_from_inventory_added": 21,
+        "false_event_vs_actual_sales": 2,
+        "missed_event_vs_actual_sales": 4,
+        "false_event_vs_inventory_added": 2,
+        "missed_event_vs_inventory_added": 1
+      }
+    },
+    {
+      "episode": 113221275,
+      "policy": "vq",
+      "opponent": "Yasuhiro Manai",
+      "source_sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976",
+      "exact_actions": 719,
+      "exact_states": 720,
+      "ledger_exact": true,
+      "summary": {
+        "eligible_item_turns": 3440,
+        "own_snapshot_differs_from_accepted_qty": 16,
+        "own_snapshot_differs_from_inventory_added": 25,
+        "false_event_vs_actual_sales": 3,
+        "missed_event_vs_actual_sales": 5,
+        "false_event_vs_inventory_added": 3,
+        "missed_event_vs_inventory_added": 3
+      }
+    },
+    {
+      "episode": 113218290,
+      "policy": "vq",
+      "opponent": "NiA Farms",
+      "source_sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976",
+      "exact_actions": 719,
+      "exact_states": 720,
+      "ledger_exact": true,
+      "summary": {
+        "eligible_item_turns": 3491,
+        "own_snapshot_differs_from_accepted_qty": 17,
+        "own_snapshot_differs_from_inventory_added": 43,
+        "false_event_vs_actual_sales": 3,
+        "missed_event_vs_actual_sales": 19,
+        "false_event_vs_inventory_added": 3,
+        "missed_event_vs_inventory_added": 9
+      }
+    },
+    {
+      "episode": 113213016,
+      "policy": "vq",
+      "opponent": "Farmerjay",
+      "source_sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976",
+      "exact_actions": 719,
+      "exact_states": 720,
+      "ledger_exact": true,
+      "summary": {
+        "eligible_item_turns": 3563,
+        "own_snapshot_differs_from_accepted_qty": 5,
+        "own_snapshot_differs_from_inventory_added": 16,
+        "false_event_vs_actual_sales": 0,
+        "missed_event_vs_actual_sales": 4,
+        "false_event_vs_inventory_added": 0,
+        "missed_event_vs_inventory_added": 3
+      }
+    }
+  ]
+}

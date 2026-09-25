@@ -449,7 +449,7 @@
       "observed_at": "2026-09-25T00:22:13.462277+00:00"
     },
     "observed": "Desplazada por top3; score2275.7 en snapshot de retiro. Paquete exacto conservado.",
-    "conclusion": "Referencia hist\u00f3rica madura; paquete original conservado",
+    "conclusion": "Referencia histórica madura; paquete original conservado",
     "autorizacion": "usuario 2026-09-24 (AskUserQuestion): 'arshs3 + v13 (Recomendado)'",
     "submission_id": 56511619,
     "timestamp": "2026-09-24T04:28:57Z",
@@ -498,9 +498,9 @@
     },
     "reason": "VQ validada contra copias; arshs3 transfiere al ladder (2292.5 vs v13 1857.9). Desplaza v13, preserva arshs3 como referencia activa.",
     "leaderboard": {
-      "score": 2292.9,
+      "score": 2290.3,
       "rank": null,
-      "episodes": 92,
+      "episodes": 95,
       "lecturas": [
         [
           "initial",
@@ -579,15 +579,20 @@
           "2026-09-25T08:27:46.340961+00:00",
           2292.9,
           92
+        ],
+        [
+          "2026-09-25T09:13:39.355921+00:00",
+          2290.3,
+          95
         ]
       ],
       "status": "SubmissionStatus.COMPLETE"
     },
     "delta_vs_champion_ladder": null,
-    "observed": "COMPLETE, snapshot 2026-09-25T08:27:46.340961+00:00: score2292.9, 92 episodios listados (incluye validaci\u00f3n). Ratings no son comparaci\u00f3n causal. Tres replays nuevos0828 reproducen719acciones/720estados exactos; muestra por recencia, no WRglobal.",
-    "conclusion": "REAL_WORLD_CANDIDATE; ventaja local espec\u00edfica contra copias, sin promoci\u00f3n autom\u00e1tica",
-    "next_action": "Confirm19original inv\u00e1lido por cuatro hashes rivales noop; repetici\u00f3n confirm19_fixedhash0 en curso, mismas fuentes/semillas/gates.20\u201325encolados con runtime uniforme. Revisar ambos controles y sensibilidad de hash antes de otro env\u00edo que desplazar\u00edaVQ.",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0828.json"
+    "observed": "COMPLETE, snapshot 2026-09-25T09:13:39.355921+00:00: score2290.3, 95 episodios listados (incluye validación). Seis replays0914exactos; muestra por recencia, no WRglobal.",
+    "conclusion": "REAL_WORLD_CANDIDATE; ventaja local específica contra copias, sin promoción automática",
+    "next_action": "Confirm19_fixedhash0 válida: delta0ambas pese a seis acciones propias distintas, sin envío.20en curso;21–26en cola.27desarrollo de sincronización de ventas propias. Revisar ambos controles y hashes alternativos antes de desplazarVQ.",
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0914.json"
   },
   {
     "submission_id": 56537205,
@@ -721,10 +726,10 @@
         "equal_cells": 116
       }
     },
-    "reason": "Cumple gate registrado: delta>=3pp, ning\u00fan rival<-20pp, cero errores, revisi\u00f3n de mecanismos y runtime. Prueba real autorizada.",
+    "reason": "Cumple gate registrado: delta>=3pp, ningún rival<-20pp, cero errores, revisión de mecanismos y runtime. Prueba real autorizada.",
     "leaderboard": {
-      "score": 2103.4,
-      "episodes": 81,
+      "score": 2119.0,
+      "episodes": 84,
       "status": "SubmissionStatus.COMPLETE",
       "lecturas": [
         [
@@ -781,15 +786,20 @@
           "2026-09-25T08:27:46.340961+00:00",
           2103.4,
           81
+        ],
+        [
+          "2026-09-25T09:13:39.355921+00:00",
+          2119.0,
+          84
         ]
       ]
     },
-    "observed": "COMPLETE, snapshot 2026-09-25T08:27:46.340961+00:00: score2103.4, 81 episodios listados (incluye validaci\u00f3n). Ratings no son comparaci\u00f3n causal. Tres replays nuevos0828 reproducen719acciones/720estados exactos; muestra por recencia, no WRglobal.",
+    "observed": "COMPLETE, snapshot 2026-09-25T09:13:39.355921+00:00: score2119.0, 84 episodios listados (incluye validación). Seis replays0914exactos; muestra por recencia, no WRglobal.",
     "conclusion": "REAL_WORLD_CANDIDATE; no CHAMPION",
-    "next_action": "Confirm19original inv\u00e1lido por cuatro hashes rivales noop; repetici\u00f3n confirm19_fixedhash0 en curso, mismas fuentes/semillas/gates.20\u201325encolados con runtime uniforme. Revisar ambos controles y sensibilidad de hash antes de otro env\u00edo que desplazar\u00edaVQ.",
+    "next_action": "Confirm19_fixedhash0 válida: delta0ambas pese a seis acciones propias distintas, sin envío.20en curso;21–26en cola.27desarrollo de sincronización de ventas propias. Revisar ambos controles y hashes alternativos antes de desplazarVQ.",
     "replaces_submission": 56511619,
     "preserves_submission": 56535264,
     "evidence": "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0828.json"
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0914.json"
   }
 ]

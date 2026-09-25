@@ -4,8 +4,8 @@
 > Desde el 2026-09-21 el usuario autorizó un loop autónomo de investigación que
 > incluye submissions experimentales ("También tienes capacidad para crear y
 > subir submissions reales. Usa ambas cosas"). Referencias reales activas:
-> **VQ56535264** y **top3 56537205**, ambas COMPLETE. Snapshot08:27UTC:
-> 2292,9/92episodios y2103,4/81 respectivamente; incluyen validación.
+> **VQ56535264** y **top3 56537205**, ambas COMPLETE. Snapshot09:13UTC:
+> 2290,3/95episodios y2119,0/84 respectivamente; incluyen validación.
 > No volver al campeón histórico de1180. Creencias con evidencia:
 > `docs/research/RESEARCH_BELIEFS.md`; historial reproducible de envíos:
 > `docs/research/SUBMISSION_HISTORY.json`; qué métrica local predice el ladder:
@@ -13,6 +13,13 @@
 > del 2026-09-14 y se conserva como historia.
 
 ## Loop continuo vigente
+
+Actualización09:28UTC: confirm19_fixedhash0cerrada/noop832, ambasdelta0,
+seis trayectorias propias distintas en tres semillas, todas ya ganadas; no
+selección.20corriendo y21–26en cola. No repetir.27en desarrollo: sincronizar
+_V9_RACE.prev.own/left con las órdenes finales, porque65desajustes en seis
+replays contaminaron observaciones rivales. No cambia biblioteca/umbrales ni
+resuelve ventas al mínimo. Preregistro27,48desarrollos antes de encolar.
 
 El 2026-09-25 UTC el usuario pidió explícitamente investigar y probar muchas
 variantes en un loop continuo: **no parar al cerrar cada ronda**. Objetivo

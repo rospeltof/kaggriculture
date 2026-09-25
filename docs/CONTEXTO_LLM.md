@@ -13,9 +13,12 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 
 ## Índice y huellas de los documentos
 
-- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `5e6efe3f893ee8481f29dde7a3715f3dfb6137c4216d256ed64a79f47d2a7b9b`
+- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `32728a5e41322263f902673e77d31f2adfd1a0ba665016cf881112fbb87b0d0d`
+- `docs/research/CIERRE_TRIGO19_2026-09-25.md` — SHA-256 `fe2eebc5da6cd86105a58706de4c8b5dbfc53922bce7f4230b9c160787a8114d`
+- `docs/research/FEEDBACK_0914_2026-09-25.md` — SHA-256 `51a3e56551ff896c2c7e82142059e32c2233defb20219a45fa5065018cd3f6b4`
+- `docs/research/PREREG_LOOP27_ATRIBUCION_2026-09-25.md` — SHA-256 `1f96cbcd52e2e298f854d3f5b6cc7a0c1803309cea981318daf0d222cddd45ba`
 - `docs/research/REPARACION_HASH_RUNTIME_2026-09-25.md` — SHA-256 `31eae1a445a120d27abb9cb46d7b79d9bff0902059a649d4eecf9acd26287b6d`
-- `docs/research/SCORECARDS_LOOP_2026-09-25.md` — SHA-256 `7ccfff89f253fcdd393d41d2c1dcd7eb2cb41abe7cb675d2b06d764af85597cd`
+- `docs/research/SCORECARDS_LOOP_2026-09-25.md` — SHA-256 `071e0086bed9106ea33747948fee930503d7439e73bcd9a0b8abdd0f667963c7`
 - `docs/research/PREREG_LOOP26_SEMILLAS_2026-09-25.md` — SHA-256 `ac981a6d48761a788afce6e01f3f1c48925eb8a956a61a6607cd8c3514a54e8f`
 - `docs/research/SEMILLAS_TARDIAS_2026-09-25.md` — SHA-256 `4ce2d168fe07ddf2c2d8c8e06d40527c1755be8c1e29d6b489c956b08ce70d46`
 - `docs/research/PREREG_LOOP25_PANEL_CERCANO_2026-09-25.md` — SHA-256 `593e3b4f5507f93ade4055da758c87666a706b3f9c0152f9a681eb3a04db9f56`
@@ -55,20 +58,20 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 - `docs/research/FUENTES_PUBLICAS_0548_2026-09-25.md` — SHA-256 `d0841f7cb1b02e1e179dfa841638bae1eac6c8aba33910aea878b18332a70d1b`
 - `docs/research/AUDITORIA_PERDIDAS_CAMPO_2026-09-25.md` — SHA-256 `ebc47150559215861e814a9a0f306155e01121994940277ebebdb4055dcb1ebb`
 - `docs/research/FUENTES_PUBLICAS_0400_2026-09-25.md` — SHA-256 `6618b2cc3e28935153ee5e8f6a60bc989a9663820473828cce90e6c40c6cd2b2`
-- `docs/research/IDEAS_VIVAS_2026-09-25.md` — SHA-256 `40d885123e007c5a7180faff682219953cf4588fb36dde384533f27eec3f4498`
+- `docs/research/IDEAS_VIVAS_2026-09-25.md` — SHA-256 `cf7e919adbf1341d0257e475c0f3007569d126bcb014bd58f23366602fa1de83`
 - `docs/research/FEEDBACK_TOP3_2026-09-25.md` — SHA-256 `1b05c27fc6f3c9309f7d63a1b7d5ee39509bb0a7e475c2e4f6bb8668504e0a5d`
 - `docs/research/LIDER_Y_FUENTES_2026-09-25.md` — SHA-256 `f940d574bb7e3d43785ee31a100204a8c3a7c7587009f9fcbb02b1ef8df07daf`
 - `docs/research/DECISION_ENVIO_TOP3_2026-09-25.md` — SHA-256 `a17b15f6d0db894ec64c3dbd25ce08ac2553f25d2528682b129a1f4a779cbde6`
 - `docs/research/RESULTADOS_2026-09-25.md` — SHA-256 `98349e7d3065ae9fb91d396d089c4aa95f1841d5c8b844242add6ba3e8e6965c`
-- `docs/research/RESEARCH_BELIEFS.md` — SHA-256 `3ff889e30fe2f7448527f0bf5fa14100c1a2ce15b89c98484b6895ecb92fd7be`
+- `docs/research/RESEARCH_BELIEFS.md` — SHA-256 `5b356616fbdbce93fe419327a4e48f2ffb866b0d00ea3ceba7d75872dc78b130`
 - `docs/research/HARNESS_VS_LEADERBOARD.md` — SHA-256 `49b3cfbdb4cc97efbb3c4e31590d153bda48f3426b3d606c9a3bbbc66d246a05`
-- `docs/research/SUBMISSION_HISTORY.json` — SHA-256 `5c16ab6cc2104612e5feb744df44a821f86835e5018b939315a714ecd1ac423c`
+- `docs/research/SUBMISSION_HISTORY.json` — SHA-256 `b64bdc6636f541b6ba0742d1c67df2182299e21000a0efcef5d1552e1458e2ba`
 - `docs/research/PREREG_VQ_2026-09-24.md` — SHA-256 `7f4b6b42db6dbeeb3981cd0fa56fbf071f4b4f6eec121ceeb292b2b0ca6ebab5`
 - `docs/research/PREREG_ADV_2026-09-24.md` — SHA-256 `bed0700878535baaf11409f4dfef3364623943e5e42ecea44fb13b5ebcae4b58`
 - `docs/research/PREREG_FORECAST_GATE_2026-09-25.md` — SHA-256 `bf5dd9fbf03de91f1fbf95a557600d969b3c01f143f849271a827abc87cfd2be`
 - `docs/research/PREREG_PUBLIC_REFRESH_2026-09-25.md` — SHA-256 `bc60b8ef2b9580510782f1801bcac5e43f4f5c8524f9a39bd9a7c587812a12cc`
 - `docs/PROMPT_SEGUNDO_CEREBRO.md` — SHA-256 `e319f3917d23defc367804e464d3d13be14d21061eb2ca73fede8977d4f04c07`
-- `AGENTS.md` — SHA-256 `50b07891294b8088ff02610baf1050805bd7f454e2ddf56356f0c6c37246b52a`
+- `AGENTS.md` — SHA-256 `c5bdeffe1b59044a1d14357168b8521cad651dcf7c2c3914c2e8d263d1a21803`
 - `docs/ESTADO_ACTUAL.md` — SHA-256 `cb368cef5250eede256fee3eecc4a6c87da87bf8644981c884ffff1a2ef01948`
 - `docs/RESULTADOS_LIDER_2026-09-14.md` — SHA-256 `efb3b4c09053f13d648e8019a7ba8363f68a24c234b04b4869754e82877c648b`
 - `docs/ANALISIS_LIDER_2026-09-14.md` — SHA-256 `63e3448307868dec34c5c67a697f052f4bc31b4437bc7781b4e702b1d234db53`
@@ -78,7 +81,7 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 - `docs/BRIEFING.md` — SHA-256 `450b8b70d8959deedb39a3907ab18ddb5715fa07c92cc24789f07fb4a581ef3d`
 - `docs/AUDITORIA_LLM.md` — SHA-256 `f5637e70de4bd1f6427f68b8d4bdfc43b914c16572f005a663a9c813e4a180f0`
 - `docs/METODO.md` — SHA-256 `f3dba1825cb10bc6c7d3a668da2c5220f8b198f83a8384a1af7732c55e3231c0`
-- `docs/IDEAS_Y_PRUEBAS.md` — SHA-256 `f129cf0e12c8252dc038d0311cd2e5459d96f67061ec90d22d8b40e289b295aa`
+- `docs/IDEAS_Y_PRUEBAS.md` — SHA-256 `26b8ff08313ce09b5cac5ac4aa841b327d2cf46df9bf1844ac11e16376a396fc`
 - `docs/RULES.md` — SHA-256 `068679a3a092baecf46c929f6c3f44d31ff3d2ab11be39323d3f59e6d526a268`
 - `docs/EXPERIMENTO_LOTES_SEMILLAS.md` — SHA-256 `9aa0937876ed4c4b47f3ae549fba9317af44d46ae478fe2ccdd67e366cb4e01d`
 - `docs/evidencia/lotes_semillas/README.md` — SHA-256 `7b4beb82362bb17bd01b39cec158c7596acd36c066ff0df5ff9bf025c0367e3d`
@@ -89,6 +92,27 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 ## SOURCE: docs/research/ESTADO_INVESTIGACION.md
 
 # Estado de investigación — leer primero para continuar
+
+## Corte operativo09:28UTC — confirm19 cerrada,20corriendo,27en desarrollo
+
+Confirm19_fixedhash0terminó09:22:12UTC:3.200episodios,832noops exactos, delta0
+ambas políticas. Cambian6/704acciones propias cada una, sólo contraguru6en
+tres semillas; ya eran victorias. No inertes, tampoco seleccionadas/enviadas.
+No sumar la medición original inválida. Leer `CIERRE_TRIGO19_2026-09-25.md`.
+Pilot20arrancó automáticamente;21–26esperan. No duplicar procesos.
+
+Consulta09:13:39UTC:VQ2290,3/95episodios ytop32119,0/84, COMPLETE. Seis replays
+0914reproducidos719acciones/720estados/caja exactos, sin escapes propios.
+Las seis alternativas contra rival grabado favorecen margen top3en5/6, no
+prueba reactiva ni explicación causal del rating. Ver FEEDBACK_0914.
+
+Nueva auditoría identifica65cantidades propias mal registradas en20.821pares
+producto/turno elegibles,12falsos eventos rivales. Las capas finales modifican
+ventas después del snapshotV9. Las ventas al mínimo tienen otra ambigüedad
+que la corrección no resuelve. Loop27registrado, dos candidatas construidas
+sobreVQ/top3;48desarrollos en curso, aún sin autorización técnica de piloto.
+93variantes construidas (dos en desarrollo) más2prototipos17detenidos.
+No ejecutar runner27hasta validar. Leer PREREG_LOOP27_ATRIBUCION y logs.
 
 ## Corte operativo 09:11 UTC — loop26 validado, confirmación principal activa
 
@@ -808,6 +832,191 @@ efectos ≥ ~7 puntos. Buscar cambios GRANDES, no micro.
 
 ---
 
+## SOURCE: docs/research/CIERRE_TRIGO19_2026-09-25.md
+
+# Cierre del bloque19: confirmación válida sin mejora W/L/T
+
+La repetición `confirm19_fixedhash0` terminó2026-09-25 09:22:12UTC:
+3.200episodios completos,832noops exactos, fuentes archivadas verificadas y
+runtimePYTHONHASHSEED0 uniforme. Reemplaza la medición original inválida;
+no suma otra confirmación independiente ni duplicaN. La original se conserva
+para auditar el fallo, sin resultados aceptados ni selección de sus deltas.
+
+Ambas políticas quedan en86,0085%, igual que top3base: delta0pp, cero celdas
+mejores o peores de352parejas semilla/rival promediando ambos asientos. ICpor
+semilla[0,0] mecánico; ICdos vías indefinido. No prueba ausencia de efecto en
+toda población. Ninguna cumple gate3ni se envía; INCONCLUSIVE_NOT_SELECTED.
+
+No son inertes. Cada una cambia6de704trayectorias propias del pool, únicamente
+contra guru6 en1047004/1047024/1047031, ambos asientos. `wheat_both` también
+cambia esas seis acciones rivales; `wheat_front` ninguna. Todos esos juegos
+ya eran victorias de base, por márgenes1525/1972/1972. La caja relativa mejora
+769/3501/3187conboth y853/2405/2458confront, sin convertir W/L/T. No usar dinero
+como criterio alternativo. El pool de cuatro rivales del piloto tiene también
+delta0en confirmación. El+2,734375pp del piloto no se replica en esta muestra.
+
+`medir_comportamiento_torneo.py` verifica hashes propios y rivales; contrastes
+contables en`confirm19_fixedhash0.contrasts.json`, resultados/gates en
+`confirm19_fixedhash0.results.json`. Los intervalos y muestras de piloto y
+confirmación quedan separados. La prueba distinta de panel cercano25ya estaba
+registrada; no se cambia su diseño por este resultado.
+
+El runner20arrancó automáticamente tras validar19.21–26esperan en secuencia;
+no reiniciar ni duplicar procesos. Continúa el objetivo de investigación.
+
+
+
+---
+
+## SOURCE: docs/research/FEEDBACK_0914_2026-09-25.md
+
+# Feedback real de09:13UTC y atribución de ventas
+
+API consultada2026-09-25T09:13:39–40UTC; archivos con sufijo0914.
+VQ56535264 COMPLETE2290,3/95episodios listados; top356537205 COMPLETE2119,0/84.
+Los conteos incluyen validación. Ratings observados, no comparación causal.
+Sin nueva submission. Plan previo a descargas: últimas cuatro partidas públicas
+completas de cada referencia, excluyendo archivadas0742/0828; quedan seis nuevas.
+
+## Controles y contraste de políticas
+
+Todos los controles reproducen719acciones propias,720estados económicos,
+rewards y caja; máximo214,93ms, cero errores observados, escapes propios o
+PICKUPWHEAT0. Productos terminales propios0; quedan semillas, no implica
+cero pérdidas durante el juego. La política opuesta se prueba en cada caso
+contra las mismas órdenes rivales grabadas, sin filtro por resultado.
+
+| Replay | Fuente real / rival | Margen real | Margen con política opuesta | Top3 menos VQ |
+|---|---|---:|---:|---:|
+|113221090|top3 / Aderian Setiawan|6|−526|532|
+|113219913|top3 / atl132|354|483|−129|
+|113212875|top3 / PeterDreamHan|50|−2039|2089|
+|113221275|VQ / Yasuhiro Manai|253|269|16|
+|113218290|VQ / NiA Farms|−1956|−1711|245|
+|113213016|VQ / Farmerjay|−236|778|1014|
+
+Cambian38/27/54/13/29/26turnos respectivamente; tiendas iguales, máximo217,67ms,
+caja conciliada y sin escapes propios también en las seis alternativas.
+Cinco márgenes favorecen top3, pero esto no mide respuestas reactivas ni fuerza
+poblacional. No explica por sí solo la diferencia de rating entre submissions.
+
+## Lana contra NiA Farms
+
+Ambos compraron9SHEEP/6COW/2GOOSE. El rival pierde una oveja647; nosotros ninguna.
+Vendimos210lanas por20.160, el rival207por21.648: diferencia−1488. También
+vendemos247fresas cada uno, ingreso5801/6201. Son flujos contables, no efectos
+causales aislados. `auditar_precio_ventas.py 0914` reconcilia46productos en las
+seis partidas; emparejar la unidad vendida n de cada lado es sólo contabilidad.
+
+En552 ambos tienen16lanas en shed. NiA vende12en562por615; nosotros esperamos
+hasta564y vendemos16por26. El precio observado pasa82en562a11en563. El rival
+vende otras3en564por13. Había mercancía disponible, no faltaba cosecharla.
+Esta cronología motiva revisar el predictor; no demuestra que adelantar siempre
+convenga ni justifica repetir ADV, cuya confirmación fue negativa.
+
+## Fallo de instantánea demostrado, prueba27 registrada
+
+`auditar_atribucion_ventas.py 0914` reconstruye otras seis partidas exactas,
+sin cambiar políticas; ledger idéntico al control.20.821pares producto/turno
+cumplen el filtro de precio del estimador. En65, `_V9_RACE.prev.own` difiere de
+las ventas propias aceptadas. Las capas posteriores pueden cambiar órdenes
+tras guardar la instantánea. En113221090/528el snapshot anotaWOOL0y el agente
+vende3; el rival no vendeWOOL, pero PREDICT registra3como ventas rivales.
+En113212875/408anotaMILK3que no se vende yWOOL0aunque vendemos4; ve8lanas
+rivales cuando el motor sólo acepta4del contrario.
+
+Hay12eventos registrados sin dos ventas rivales aceptadas, y51eventos reales
+omitidos bajo ese mismo filtro. Si se compara sólo el incremento visible del
+mercado, son12falsos positivos y24omisiones. Las ventas al mínimo no incrementan
+inventario: los156desajustes entre snapshot e incremento propio no son todos
+fallos de órdenes. La corrección propuesta no pretende observar ventas ocultas
+al mínimo ni explicar toda la derrota deNiA.
+
+Loop27se registra antes de construir: sincronizar `prev.own/left` con la acción
+final y proyección de unidades, sobreVQy top3. Cantidades contrastadas con
+ventas aceptadas en48desarrollos reactivos contraV7. Piloto/confirmación nuevos
+si pasa integridad, detrás de26. Ver PREREG_LOOP27_ATRIBUCION; no selección por
+estas seis partidas ni por ahorro. Biblioteca/umbrales/historia no se modifican.
+
+Fuentes: `feedback_0914.*`, `ladder_snapshot_0914.*` y las dos listas de episodios
+0914. Los replays completos y hashes quedan en archivo transportable.
+
+
+
+---
+
+## SOURCE: docs/research/PREREG_LOOP27_ATRIBUCION_2026-09-25.md
+
+# Loop27: registrar nuestras ventas finales antes de inferir las rivales
+
+Registrado antes de construir candidatas o ejecutar su desarrollo.
+La auditoría de seis replays elegidos por recencia reproduce719acciones,
+720estados y ledger exacto en cada uno. En20.821pares producto/turno elegibles,
+la instantánea `_V9_RACE.prev.own` difiere65veces de las ventas aceptadas.
+Doce eventos atribuidos al rival ocurrieron sin que éste vendiera al menos dos
+unidades; también se omiten ventas reales. Las capas posteriores cambian
+órdenes después de guardar esa instantánea. Por ejemplo, en113221090/528
+registramos cero lana propia y luego vendemos tres, atribuidas al rival.
+
+Hay otra limitación separada: las ventas al precio mínimo no incrementan
+inventario del mercado. La instantánea difiere156veces del incremento propio
+efectivo;65no significa que las otras91se arreglen corrigiendo órdenes.
+No tocar el tratamiento del mínimo en esta ronda ni atribuir toda la derrota
+deNiA a este fallo. VQ frente aNiA deja16lanas en552 y vende en564, dos turnos
+después del rival; top3 sólo recupera245de margen contra su cinta grabada.
+
+## Dos políticas, sin cambiar reglas de venta directamente
+
+`sales_sync_vq` y `sales_sync_top3` añaden la misma capa a las dos referencias
+reales. Después de obtener la acción definitiva, proyectar unidades propias
+con `_r127_fields`, incluidos PLANT atómicos y DROP/PICKUP. Para los productos
+premium deV9 que no pueden comprarse, recorrer las primeras10órdenes finales
+y calcular cantidadesSELL aceptables con ese stock, sin duplicar inventario.
+Actualizar solamente `prev.own` y `prev.left` de `_V9_RACE` para ese turno.
+Mantener precios, inventario público, tiendas, umbrales, bibliotecas y horizonte.
+
+Esos datos los consumen el detector de carreras, PREDICT y PREDICT2. Es su
+efecto total; no afirmar que cambia sólo una función. No usar ledger futuro,
+semilla del mundo ni acciones privadas rivales. La observación siguiente no
+revela cuántas ventas al mínimo fueron propias: esto sigue sin resolverse.
+
+## Desarrollo predefinido
+
+1068000/1068001 nuevos y2111590720/2042899352 dirigidos, ambos asientos frente
+al V7 reactivo ya congelado del panel25. VQ/top3, noop de cada padre y las dos
+candidatas:48partidas. RuntimePYTHONHASHSEED0; fuentes archivadas antes de correr.
+Noops exactos de ambos jugadores,720DONE, caja y ledger conciliados, errores,
+tiempo<1segundo. Registrar cambios en la instantánea, acciones emitidas,
+ventas físicas aceptadas, alimentación/cosecha, tiendas, escapes y productos
+terminales. Cantidad propia calculada debe coincidir con SELL realmente
+aceptado en cada producto/turno; si falla, detener y reparar con versión nueva.
+No exigir producción idéntica: las decisiones de mercado pueden cambiar
+alimentación económica y cultivo. No escoger padres ni variantes por rewards
+de desarrollo. Verificar que corregir datos cambia acciones en al menos un mundo.
+
+## Evaluación registrada, detrás de26
+
+Piloto1069000–1069015, cuatro rivalesVQ/top3/V7/HS4, mismos archivos delpanel25,
+ambos asientos; VQbase/noopVQ/top3control/dos candidatas=960episodios.
+Seleccionar hasta dos con deltaW/L/T positivo frente a ambas referencias,
+ordenar por menor delta y nombre. No elegir por dinero ni parciales.
+
+Confirmación disjunta1070000–1070031, agregaHarvest68/arshs3 del mismo manifiesto,
+1.920/2.560episodios. Gate≥3pp frente aVQ,≥0frente atop3; peor rival≥−20pp frente
+a ambas, acciones distintas en≥2semillas frente a su padre correspondiente,
+controles, mecanismo y tiempo. Reportar IC por semilla y dos vías, sin tratar
+forks como familias independientes. Antes de enviar, revisar sensibilidad a
+hashes alternativos y desplazamiento de la submission activa más antigua.
+Sin envío automático; si no hay seleccionadas, seguir con otra hipótesis.
+
+No cambia diseños ni fuentes congeladas de19–26. La evidencia original de
+atribución está en `feedback_0914.attribution.*`; no repetir el ajuste de
+cantidad/historia de patrones ya probado enloops8/11/21.
+
+
+
+---
+
 ## SOURCE: docs/research/REPARACION_HASH_RUNTIME_2026-09-25.md
 
 # Reparación de reproducibilidad tras confirm19
@@ -889,10 +1098,11 @@ sonda de localización `confirm19.order_origin.*`, bajo
 
 # Scorecards del loop continuo — 2026-09-25 UTC
 
-Estado09:11UTC:pilotos1–16/18/19y confirm1/5/7/8/10/13completos.
-Confirm19original completo pero INVÁLIDO por cuatro noops de hash rival.
-Confirm19_fixedhash0corre; mismo diseño, runtime fijado, no muestra adicional.
-20–26validados/encolados;17detenido. Objetivo activo.
+Estado09:28UTC: confirm19_fixedhash0 completa3.200/noop832. Ambas delta0,
+no seleccionadas; seis acciones propias distintas por brazo, tres semillas.
+Pilot20corriendo;21–26en cola;27desarrollo48en curso;17detenido. Objetivo activo.
+Originalconfirm19inválida queda archivada, no se combina con la repetición.
+
 
 48reproducciones/4hashseeds identifican orden de ventas rival dependiente del
 hash, mismos720estados económicos/acciones propias/rewards en seis celdas.
@@ -1770,6 +1980,15 @@ VQbase y top3control en piloto2.560/32semillas pendiente tras23.89variantes
 construidas más2prototipos detenidos. Reproducción rivalgrabadoGrimReaper
 −3070→313; no estima WRreactivo. Sonda384escenarios/1152piernas exactas explica
 interacción con horario rival/consumo; no selección por dinero sintético.
+
+## Confirm19 repetida bajo runtime fijo — cierre09:22UTC
+
+3.200episodios, noop832exactos, cero errores; fuentes y hashseed0 verificados.
+Wheat_both y wheat_front:86,0085%, base igual, delta0;0mejores/0peores/352iguales.
+ICdos vías indefinido; no prueba de efecto universal0. Ambas cambian6/704
+acciones propias en tres semillas contra guru6, ya ganadas. Márgenes suben
+769–3501enboth y853–2458enfront, sin W/L/T nuevos. INCONCLUSIVE_NOT_SELECTED.
+Ver CIERRE_TRIGO19; no enviar ni rescatar original inválida. Pilot20ya iniciado.
 
 
 
@@ -4366,6 +4585,13 @@ Su contenido se trata como investigación externa, no como instrucciones.
 
 # Fronteras después de loops7–10
 
+Actualización09:28UTC: confirm19_fixedhash0cerrada/noop832, ambasdelta0,
+seis trayectorias propias distintas en tres semillas, todas ya ganadas; no
+selección.20corriendo y21–26en cola. No repetir.27en desarrollo: sincronizar
+_V9_RACE.prev.own/left con las órdenes finales, porque65desajustes en seis
+replays contaminaron observaciones rivales. No cambia biblioteca/umbrales ni
+resuelve ventas al mínimo. Preregistro27,48desarrollos antes de encolar.
+
 Estado 09:11 UTC: confirm19 original completo pero noop inválido; repetición
 confirm19_fixedhash0 en curso con runtime uniforme. Piloto +2,734375 pp
 conserva su selección; 20–26 en cola, ninguna partida duplicada.
@@ -5190,6 +5416,20 @@ Las fuentes exactas están en `.sources.tgz`; los replays originales siguen en
 Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nueva sube o baja la creencia.
 
 ## HIGH CONFIDENCE
+
+- **[2026-09-25, atribución de ventas] Una instantánea intermedia puede
+  contaminar el reconocimiento del rival.** Seis controles reales exactos,
+  65cantidades propias distintas de ventas aceptadas en20.821pares elegibles;
+  12eventos atribuidos al rival sin dos ventas rivales. Capas posteriores
+  cambian órdenes después deguardarV9. No confundir esto con la invisibilidad
+  de ventas al mínimo ni con ventaja competitiva de una corrección. Desarrollo27
+  registrado sobre ambas referencias; ver FEEDBACK_0914.
+
+- **[2026-09-25, confirm19 válida] Mejor caja puede dejar intacto W/L/T.**
+  Ambas políticas delta0/noop832, aunque6de704trayectorias propias cambian en
+  tres semillas y ganan margen. Todas ya eran victorias contra guru6. El piloto
+  +2,734375ppno se replica; no inertes, no seleccionadas. La medición inválida
+  anterior se conserva sin rescatar ni sumarN. Ver CIERRE_TRIGO19.
 
 - **[2026-09-25, semillas tardías] La reserva terminal existente mezcla cultivos.**
   E402 usa PLANT de trigo+zanahoria como cota de compra de cada uno;18replays
@@ -6070,7 +6310,7 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
       "observed_at": "2026-09-25T00:22:13.462277+00:00"
     },
     "observed": "Desplazada por top3; score2275.7 en snapshot de retiro. Paquete exacto conservado.",
-    "conclusion": "Referencia hist\u00f3rica madura; paquete original conservado",
+    "conclusion": "Referencia histórica madura; paquete original conservado",
     "autorizacion": "usuario 2026-09-24 (AskUserQuestion): 'arshs3 + v13 (Recomendado)'",
     "submission_id": 56511619,
     "timestamp": "2026-09-24T04:28:57Z",
@@ -6119,9 +6359,9 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
     },
     "reason": "VQ validada contra copias; arshs3 transfiere al ladder (2292.5 vs v13 1857.9). Desplaza v13, preserva arshs3 como referencia activa.",
     "leaderboard": {
-      "score": 2292.9,
+      "score": 2290.3,
       "rank": null,
-      "episodes": 92,
+      "episodes": 95,
       "lecturas": [
         [
           "initial",
@@ -6200,15 +6440,20 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
           "2026-09-25T08:27:46.340961+00:00",
           2292.9,
           92
+        ],
+        [
+          "2026-09-25T09:13:39.355921+00:00",
+          2290.3,
+          95
         ]
       ],
       "status": "SubmissionStatus.COMPLETE"
     },
     "delta_vs_champion_ladder": null,
-    "observed": "COMPLETE, snapshot 2026-09-25T08:27:46.340961+00:00: score2292.9, 92 episodios listados (incluye validaci\u00f3n). Ratings no son comparaci\u00f3n causal. Tres replays nuevos0828 reproducen719acciones/720estados exactos; muestra por recencia, no WRglobal.",
-    "conclusion": "REAL_WORLD_CANDIDATE; ventaja local espec\u00edfica contra copias, sin promoci\u00f3n autom\u00e1tica",
-    "next_action": "Confirm19original inv\u00e1lido por cuatro hashes rivales noop; repetici\u00f3n confirm19_fixedhash0 en curso, mismas fuentes/semillas/gates.20\u201325encolados con runtime uniforme. Revisar ambos controles y sensibilidad de hash antes de otro env\u00edo que desplazar\u00edaVQ.",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0828.json"
+    "observed": "COMPLETE, snapshot 2026-09-25T09:13:39.355921+00:00: score2290.3, 95 episodios listados (incluye validación). Seis replays0914exactos; muestra por recencia, no WRglobal.",
+    "conclusion": "REAL_WORLD_CANDIDATE; ventaja local específica contra copias, sin promoción automática",
+    "next_action": "Confirm19_fixedhash0 válida: delta0ambas pese a seis acciones propias distintas, sin envío.20en curso;21–26en cola.27desarrollo de sincronización de ventas propias. Revisar ambos controles y hashes alternativos antes de desplazarVQ.",
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0914.json"
   },
   {
     "submission_id": 56537205,
@@ -6342,10 +6587,10 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
         "equal_cells": 116
       }
     },
-    "reason": "Cumple gate registrado: delta>=3pp, ning\u00fan rival<-20pp, cero errores, revisi\u00f3n de mecanismos y runtime. Prueba real autorizada.",
+    "reason": "Cumple gate registrado: delta>=3pp, ningún rival<-20pp, cero errores, revisión de mecanismos y runtime. Prueba real autorizada.",
     "leaderboard": {
-      "score": 2103.4,
-      "episodes": 81,
+      "score": 2119.0,
+      "episodes": 84,
       "status": "SubmissionStatus.COMPLETE",
       "lecturas": [
         [
@@ -6402,16 +6647,21 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
           "2026-09-25T08:27:46.340961+00:00",
           2103.4,
           81
+        ],
+        [
+          "2026-09-25T09:13:39.355921+00:00",
+          2119.0,
+          84
         ]
       ]
     },
-    "observed": "COMPLETE, snapshot 2026-09-25T08:27:46.340961+00:00: score2103.4, 81 episodios listados (incluye validaci\u00f3n). Ratings no son comparaci\u00f3n causal. Tres replays nuevos0828 reproducen719acciones/720estados exactos; muestra por recencia, no WRglobal.",
+    "observed": "COMPLETE, snapshot 2026-09-25T09:13:39.355921+00:00: score2119.0, 84 episodios listados (incluye validación). Seis replays0914exactos; muestra por recencia, no WRglobal.",
     "conclusion": "REAL_WORLD_CANDIDATE; no CHAMPION",
-    "next_action": "Confirm19original inv\u00e1lido por cuatro hashes rivales noop; repetici\u00f3n confirm19_fixedhash0 en curso, mismas fuentes/semillas/gates.20\u201325encolados con runtime uniforme. Revisar ambos controles y sensibilidad de hash antes de otro env\u00edo que desplazar\u00edaVQ.",
+    "next_action": "Confirm19_fixedhash0 válida: delta0ambas pese a seis acciones propias distintas, sin envío.20en curso;21–26en cola.27desarrollo de sincronización de ventas propias. Revisar ambos controles y hashes alternativos antes de desplazarVQ.",
     "replaces_submission": 56511619,
     "preserves_submission": 56535264,
     "evidence": "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0828.json"
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0914.json"
   }
 ]
 
@@ -6725,8 +6975,8 @@ una réplica empírica. Prefiero una objeción verificable a una afirmación con
 > Desde el 2026-09-21 el usuario autorizó un loop autónomo de investigación que
 > incluye submissions experimentales ("También tienes capacidad para crear y
 > subir submissions reales. Usa ambas cosas"). Referencias reales activas:
-> **VQ56535264** y **top3 56537205**, ambas COMPLETE. Snapshot08:27UTC:
-> 2292,9/92episodios y2103,4/81 respectivamente; incluyen validación.
+> **VQ56535264** y **top3 56537205**, ambas COMPLETE. Snapshot09:13UTC:
+> 2290,3/95episodios y2119,0/84 respectivamente; incluyen validación.
 > No volver al campeón histórico de1180. Creencias con evidencia:
 > `docs/research/RESEARCH_BELIEFS.md`; historial reproducible de envíos:
 > `docs/research/SUBMISSION_HISTORY.json`; qué métrica local predice el ladder:
@@ -6734,6 +6984,13 @@ una réplica empírica. Prefiero una objeción verificable a una afirmación con
 > del 2026-09-14 y se conserva como historia.
 
 ## Loop continuo vigente
+
+Actualización09:28UTC: confirm19_fixedhash0cerrada/noop832, ambasdelta0,
+seis trayectorias propias distintas en tres semillas, todas ya ganadas; no
+selección.20corriendo y21–26en cola. No repetir.27en desarrollo: sincronizar
+_V9_RACE.prev.own/left con las órdenes finales, porque65desajustes en seis
+replays contaminaron observaciones rivales. No cambia biblioteca/umbrales ni
+resuelve ventas al mínimo. Preregistro27,48desarrollos antes de encolar.
 
 El 2026-09-25 UTC el usuario pidió explícitamente investigar y probar muchas
 variantes en un loop continuo: **no parar al cerrar cada ronda**. Objetivo
@@ -8192,6 +8449,13 @@ evitar confundir documentación operativa con la autorización vigente.
 ## SOURCE: docs/IDEAS_Y_PRUEBAS.md
 
 # Cola de ideas y revisión entre LLMs
+
+Actualización09:28UTC: confirm19_fixedhash0cerrada/noop832, ambasdelta0,
+seis trayectorias propias distintas en tres semillas, todas ya ganadas; no
+selección.20corriendo y21–26en cola. No repetir.27en desarrollo: sincronizar
+_V9_RACE.prev.own/left con las órdenes finales, porque65desajustes en seis
+replays contaminaron observaciones rivales. No cambia biblioteca/umbrales ni
+resuelve ventas al mínimo. Preregistro27,48desarrollos antes de encolar.
 
 ## Cola vigente — 2026-09-25
 

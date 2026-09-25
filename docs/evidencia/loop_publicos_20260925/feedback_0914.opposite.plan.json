@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-09-25T09:15:37.790310+00:00",
+  "audit": "docs/evidencia/loop_publicos_20260925/feedback_0914.audit.json",
+  "audit_sha256": "27dd72c4dba9595426316598f71ba29d387dace0c944e415a299e6ca6a6ff870",
+  "episodes": [
+    113221090,
+    113219913,
+    113212875,
+    113221275,
+    113218290,
+    113213016
+  ],
+  "sources": {
+    "top3": {
+      "path": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "vq": {
+      "path": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    }
+  },
+  "rule": "Every completed source-control game in this recency audit, no outcome filter. Opposite submitted policy against frozen rival. Conditional mechanism diagnostic, not reactive WLT."
+}

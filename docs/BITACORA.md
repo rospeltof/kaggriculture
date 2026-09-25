@@ -1,5 +1,25 @@
 # Bitácora de experimentos
 
+## 2026-09-25,09:28UTC — Confirm19neutral,20activo y fallo de atribución
+
+Confirm19_fixedhash0válida3.200/noop832,termina09:22:12UTC. Ambasdelta0,
+no inertes:6/704acciones distintas por brazo, tres semillas sólo contraguru6.
+Márgenes mejoran, pero base ya ganaba todas esas celdas. Sin selección/envío;
+original inválida no aumentaN. Bloque20arranca automáticamente.
+
+API09:13:39UTC:VQ2290,3/95,top32119,0/84. Seis nuevos replays por recencia,
+controles719acciones/720estados/caja exactos, max215ms, cero escapes propios.
+Seis políticas opuestas contra rival grabado:top3menosVQ532/−129/2089/16/245/1014.
+No inferir fuerza reactiva. Auditoría de precios reconcilia46productos.
+NiA vende12lanas dos turnos antes; nosotras16ya disponibles terminan a mínimo.
+
+Otra reconstrucción de los seis controles identifica65desajustes del snapshot
+propio,12falsos eventos rivales. Al precio mínimo hay también ventas invisibles;
+no atribuirlo todo a la instantánea. Dos políticas de sincronización sobreVQ/top3
+registradas antes de construir,48desarrollos reactivos en curso.93variantes
+construidas más2prototipos detenidos.27aún no encolado, requiere validación.
+Informes FEEDBACK_0914/CIERRE_TRIGO19 y preregistro27; investigación sigue.
+
 ## 2026-09-25, 09:11 UTC — Semillas tardías validadas y loop26 en espera
 
 Auditoría18replays de recencia concilia compras/consumo:54semillasWHEATy7CARROT

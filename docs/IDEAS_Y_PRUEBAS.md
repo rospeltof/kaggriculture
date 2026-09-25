@@ -1,5 +1,12 @@
 # Cola de ideas y revisión entre LLMs
 
+Actualización09:28UTC: confirm19_fixedhash0cerrada/noop832, ambasdelta0,
+seis trayectorias propias distintas en tres semillas, todas ya ganadas; no
+selección.20corriendo y21–26en cola. No repetir.27en desarrollo: sincronizar
+_V9_RACE.prev.own/left con las órdenes finales, porque65desajustes en seis
+replays contaminaron observaciones rivales. No cambia biblioteca/umbrales ni
+resuelve ventas al mínimo. Preregistro27,48desarrollos antes de encolar.
+
 ## Cola vigente — 2026-09-25
 
 El loop autónomo, incluidas submissions experimentales justificadas, está

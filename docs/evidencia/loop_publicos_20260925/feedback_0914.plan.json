@@ -1,0 +1,60 @@
+{
+  "created_at": "2026-09-25T09:14:01.121028+00:00",
+  "rule": "Latest four completed public episodes per active policy from snapshot0914, then exclude previously archived0742/0828 before downloading or examining new rewards; no outcome selection. Recency feedback, not WR estimate.",
+  "selected": [
+    {
+      "policy": "top3",
+      "submission_id": 56537205,
+      "id": 113221090,
+      "createTime": "2026-09-25T08:54:19.154000",
+      "endTime": "2026-09-25T08:59:12.113000",
+      "state": "EpisodeState.COMPLETED",
+      "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+    },
+    {
+      "policy": "top3",
+      "submission_id": 56537205,
+      "id": 113219913,
+      "createTime": "2026-09-25T08:50:13.231000",
+      "endTime": "2026-09-25T08:54:36.545000",
+      "state": "EpisodeState.COMPLETED",
+      "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+    },
+    {
+      "policy": "top3",
+      "submission_id": 56537205,
+      "id": 113212875,
+      "createTime": "2026-09-25T08:26:05.448000",
+      "endTime": "2026-09-25T08:28:50.260000",
+      "state": "EpisodeState.COMPLETED",
+      "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+    },
+    {
+      "policy": "vq",
+      "submission_id": 56535264,
+      "id": 113221275,
+      "createTime": "2026-09-25T08:54:19.487000",
+      "endTime": "2026-09-25T08:58:19.744000",
+      "state": "EpisodeState.COMPLETED",
+      "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+    },
+    {
+      "policy": "vq",
+      "submission_id": 56535264,
+      "id": 113218290,
+      "createTime": "2026-09-25T08:46:05.899000",
+      "endTime": "2026-09-25T08:51:17.896000",
+      "state": "EpisodeState.COMPLETED",
+      "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+    },
+    {
+      "policy": "vq",
+      "submission_id": 56535264,
+      "id": 113213016,
+      "createTime": "2026-09-25T08:26:05.715000",
+      "endTime": "2026-09-25T08:27:53.322000",
+      "state": "EpisodeState.COMPLETED",
+      "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+    }
+  ]
+}
