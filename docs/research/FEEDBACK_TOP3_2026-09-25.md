@@ -199,3 +199,9 @@ reconstruir inventario, órdenes aceptadas, decisiones y precios por turno.
 No repetir ADV de ventas ni desactivar forecast por una descomposición contable.
 
 Evidencia `top3_audit_0548.json`, cuatro ledgers y `top3_0548_wheat_gap.json`.
+
+
+Consulta posterior06:26:02UTC (sufijo0628):top32084,7/73episodios listados,
+VQ2294,3/85, ambasCOMPLETE. Incluyen validación. Sin nuevos envíos ni replays
+muestreados en esta consulta. La separación observada persiste, pero no es
+comparación pareada de mismos rivales/semillas ni medida causal del efecto.

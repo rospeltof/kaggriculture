@@ -4,6 +4,13 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, confirm13] Mejorar pérdidas/caja no garantiza cambiar W/L/T.**
+  1.600episodios, noop416/416: inputs1/2delta0. Cambian107/86acciones y el
+  margen sube103/82veces, baja4cada una. Mecanismo activo pero gate incumplido;
+  no cambiar después el criterio a dinero ni llamarlas inertes. Piloto+4,6875pp
+  no se confirmó; evidencia confirm13y diagnóstico físico del piloto.
+
+
 - **[2026-09-25, error temporal en loop17] Stock lleno ahora no implica
   bonus inútil esta noche.** En1039000, cap_full omite FEED682 por ver4huevos;
   HARVEST687 retira esos4 antes de producir. Resultado: cosecha700de2→1,

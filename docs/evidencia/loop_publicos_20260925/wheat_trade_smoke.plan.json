@@ -1,0 +1,35 @@
+{
+  "seeds": [
+    588616997,
+    1045000,
+    1028000
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "opponent": "submission/main_publico_arshs3_arsgorynich.py",
+  "purpose": "Feed mechanics with a reactive rival; no development reward selection.",
+  "agents": {
+    "base": {
+      "path": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "wheat_front": {
+      "path": "results/trigo_reventa_20260925/wheat_front.py",
+      "sha256": "ab5ab19cdc810f5a3f4940a7db31436c4b135b5a56bdcbc7cfa001eb187d56e5"
+    },
+    "wheat_half": {
+      "path": "results/trigo_reventa_20260925/wheat_half.py",
+      "sha256": "e3eaafb520ca16b60c81653d5eb49026a6ea64b47178886290a2b96ff1c50a75"
+    },
+    "wheat_both": {
+      "path": "results/trigo_reventa_20260925/wheat_both.py",
+      "sha256": "71129a9e0f3ce6dcce21d015326ada6a06fc0734377e31014d6623521e4359c6"
+    },
+    "wheat_noop": {
+      "path": "results/trigo_reventa_20260925/wheat_noop.py",
+      "sha256": "d80bc1e0cb1dc0b7853a6b761a4a2c58366b8ba70dbf6762a516f03bf18c1802"
+    }
+  }
+}

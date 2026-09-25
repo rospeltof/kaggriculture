@@ -1,7 +1,7 @@
 # Scorecards del loop continuo — 2026-09-25 UTC
 
-Estado06:08UTC: pilotos1–13 y confirm1/5/7/8/10 completos; confirm13 corriendo.
-Loops14–16 y18 validados y encolados;17detenido en desarrollo. Objetivo activo.
+Estado06:30UTC: pilotos1–13 y confirm1/5/7/8/10/13 completos; piloto14 corriendo.
+Loops15/16/18/19validados y encolados;17detenido en desarrollo. Objetivo activo.
 
 ## Confirmación disjunta terminada
 
@@ -657,3 +657,42 @@ no prueba escasez física: hay que separar orden omitida de FEED emitido fallido
 Las reservas no garantizan producción ni conducta futura, aunque aquí gane.
 Fuentes en `pilot13.sources.tgz`; resultados físicos/summary/plan y24archivos
 comprimidos de ledger/unidades bajo `pilot13.physical.*`. Diagnósticos no suman muestra estadística.
+
+
+## Confirm13 terminada: mecanismo activo, sin cambio de resultados
+
+1.600episodios1029000–015, noop416/416, cero errores, fuentes y cobertura
+verificadas. Base91,19318%. Ambos candidatos delta0, ICdos vías indefinido,
+0celdas mejores/peores,176iguales; **INCONCLUSIVE_NOT_SELECTED**, gatefalse.
+
+No son inertes: inputs1cambia107/352acciones propias y78rivales en7semillas;
+inputs2cambia86/352propias y66rivales en6semillas. Márgenes diagnósticos:
+inputs1sube103veces/baja4, rango[−133;+1.190], media+88,83;
+inputs2sube82/baja4, rango[−140;+1.183], media+76,47. No sustituir W/L/T por caja.
+
+Cuatro reproducciones, primera celda ordenada con cambio de acciones por
+candidato sin filtrar W/L: ars40/1029003/asiento0. Ambas cambian6turnos,
+primero575, reportan9unidades rescatadas y conservan tiendas. Recompensas
+base75.411/73.139→75.707/73.050: victoria antes y después. Ledger/caja exactos,
+telemetría sin errores observados. Estos diagnósticos no agregan muestra.
+Piloto14arrancó06:21:20UTC; no se envía almacén13.
+
+## Loop19: compras grandes de trigo, separado de ADV
+
+Nuevos brazos wheat_front/half/both sobre top3.30diagnósticos, noop4.314turnos,
+max305ms,720DONEsin errores, fuentes y cantidades/slots reales comprobados.
+En588616997vsarshs3reactivo, prioridad20turnos; mitad/ambas38compras editadas
+y79turnos distintos. Prioridad conserva cantidades/cosechas, reduce coste
+agregado de3.388compras152.918→151.703. Mitad/ambas compran2.011y venden2.304,
+frente a3.388/3.683base; también añaden2FEEDCOW/2MILK. Mismas tiendas/pérdidas,
+ningún escape ni producto terminal.1045000/1028000inertes en todos los brazos.
+Esto no selecciona por dinero ni estima ventaja contra today.
+
+Nuestra fuente exacta reprodujo719acciones/720estados del replay today. Sus
+44compras grandes tienen cantidades idénticas al plan nativo; rival compra
+mitad en11y prioriza slot en20. Cobertura estática sólo5/64pares de tiendas:
+enmienda anterior a cualquier episodio piloto19amplía16→32semillas por bloque,
+con rangos consecutivos/gate intactos. Se detuvo sólo el runner19en espera y
+se reinició con32, sin tocar14activo. Piloto1.9201046000–031, confirmación
+2.304/3.2001047000–031, en cola tras18. Total76variantes competitivas más2
+prototipos17detenidos. Ver TRIGO_REVENTA, protocolo y wheat_trade_coverage.json.

@@ -107,7 +107,11 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   +4,6875pp y wheat2+3,125pp; ICdos vías cruzan0. Tres celdas mejores en dos
   semillas, ninguna peor para inputs1/2. Cambian56/128acciones; ambas fuentes
   son distintas en32/128juegos. Desempate registrado selecciona inputs1/2:
-  **confirm13 de1.600episodios corriendo desde06:02:06UTC**,1029000–015.
+  **Confirm13 completa**,1.600episodios1029000–015, noop416/416, cero errores.
+  Ambas delta0/ICdos vías indefinido, ninguna celda mejor/peor; no pasa gate.
+  No son inertes: inputs1cambia107/352acciones einputs2cambia86/352.
+  Márgenes suben103/82partidas y bajan4cada una, pero ningún W/L/T cambia.
+  Dinero diagnóstico no sustituye criterio: inconclusas, sin selección/envío.
   Auditoría12juegos reproduce hashes propios/rewards/caja: pérdidas8→4/6,
   27→9/17 y9→5/6en las tres celdas positivas. Caso neutral6→3, pero omite
   tres FEED posteriores y cosecha3MILK/2EGGmenos; no afirmar alimentación
@@ -125,7 +129,8 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   0,5/2,5, conservar FEED ovino o conservar todo FEED nativo.36juegos, noop4.314,
   máximo271ms, cero errores/escapes/inventario final; todas cambian acciones
   en tres mundos, consumo de trigo y producción confirmados por motor.
-  Piloto1.248 semillas1031000–015 tras loop13. Total63variantes competitivas.
+  Piloto1.248 semillas1031000–015 **corriendo desde06:21:20UTC**.
+  Total63variantes competitivas al registrarlo.
   Auditoría previa de8replays top3: PASS no implica trabajo útil pendiente;
   ningún CARE útil omitido entre esas oportunidades y60huecos WATER sin
   efecto inmediato/próximo amanecer ni muerte evitada esa noche.261huecos
@@ -160,6 +165,16 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   1043000–015 y confirmación1044000–015. No sobrescribir rivales antiguos del pool.
   Total73variantes competitivas construidas más2prototipos17detenidos.
   Ver `FUENTES_PUBLICAS_0548_2026-09-25.md`; afirmaciones externas no son evidencia.
+- Loop19 validado/encolado tras18: prioridad de BUYWHEAT, mitad de cantidad y
+  ambas, sólo grandes compras de reventa planificada.30juegos/noop4.314/max305ms,
+  ejecución/slots/llenados aceptados verificados. En588616997actúan20/38compras;
+  otros dos mundos inertes. Sin escapes en desarrollo, mitad altera alimento
+  y añade2MILK. No elegir por rewards. Cobertura estática sólo5/64pares motivó
+  ampliar antes del piloto a32semillas por bloque; piloto1.9201046000–031,
+  confirmación1047000–031. Runner en espera reiniciado, activos intactos.
+  Total76variantes competitivas construidas más2prototipos17detenidos.
+  Ver `TRIGO_REVENTA_2026-09-25.md`; nuestra fuente reproduce exactamente el
+  replay real de origen, pero no conocemos ni copiamos su política rival.
 - Fuentes públicas nuevas: MasterEngine actualizado es tds25 byte exacto,
   excluido. MarketShock12ad317e diferente; loader elegía instalador. Corrección
   de entrada1c94b979 probada idéntica al `module.agent` del autor en8juegos.
@@ -217,7 +232,7 @@ Recuentos incluyen validación; ninguna submission nueva desde top3.
 Cuatro replays nuevos por recencia0515:4V,márgenes240–1.480,720estados exactos
 y caja conciliada cada uno; cero escapes propios/stock terminal. Originales
 archivados. No estima WR global ni ventaja causal sobre VQ; ver FEEDBACK_TOP3.
-Último snapshot **05:47:41UTC**:top3 **2093,6 /69episodios listados** y VQ
+Snapshot **05:47:41UTC**:top3 **2093,6 /69episodios listados** y VQ
 **2285,8 /83**, ambas COMPLETE. Sufijo0548, recuentos incluyen validación.
 Sin otra submission. Después se descargaron cuatro replays fijados por recencia
 de esa consulta:3V/1D, márgenes−1.702/+35/+1.230/+459;720estados exactos/caja
@@ -225,6 +240,12 @@ conciliada cada uno. Cero escapes propios/stock terminal de productos. Contra
 today, flujo neto de WHEAT propio12.308vsrival15.501; diferencia−3.193que se
 compensa parcialmente con otras ventas. No demuestra que sobreoperar trigo
 sea la causa ni justifica desactivar arbitraje sin auditoría temporal.
+
+Último snapshot **06:26:02UTC**:top3 **2084,7 /73episodios listados**, VQ
+**2294,3 /85**, ambas COMPLETE. Sufijo0628; incluyen validación. Sin envío
+nuevo ni nuevos replays descargados de esta consulta. La mejora local de top3
+no demuestra transferencia superior aVQ; conservar ese control para próximos
+candidatos y no elegir padre sólo por el panel histórico.
 
 Lo siguiente es el cierre de la ronda anterior; no significa parar este loop.
 

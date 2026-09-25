@@ -1,0 +1,19 @@
+  (extra, no entra en la estimacion) base vs night_inputs2: 40.6% (32 ep)
+  (extra, no entra en la estimacion) night_inputs1 vs night_inputs2: 59.4% (32 ep)
+  (extra, no entra en la estimacion) base vs noop: 50.0% (32 ep)
+  (extra, no entra en la estimacion) night_inputs1 vs noop: 62.5% (32 ep)
+night_inputs1 - base: 11 rivales x 16 semillas = 176 celdas; ref 91.2%
+  delta +0.00 pts | IC95 semilla [+0.00; +0.00] | dos vias [+nan; +nan]
+  celdas cambiadas 0/176: 0 a favor, 0 en contra
+    vs    ars40   +0.0
+    vs   arshs3   +0.0
+    vs    guru6   +0.0
+    vs    h2965   +0.0
+    vs     hl25   +0.0
+    vs     hsov   +0.0
+    vs     hybu   +0.0
+    vs      obr   +0.0
+    vs      tds   +0.0
+    vs    tds25   +0.0
+    vs      v13   +0.0
+  directo night_inputs1 vs base: 62.5% (32 ep)

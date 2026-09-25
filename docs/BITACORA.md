@@ -1,5 +1,28 @@
 # Bitácora de experimentos
 
+## 2026-09-25, 06:30 UTC — Confirm13sin mejora, trigo19y contraste real
+
+Confirm13completa1.600/noop416, cero errores: delta0ambas pese a107/86acciones
+distintas. Márgenes suben103/82partidas y bajan4cada una; no adoptar por caja.
+Primera celda cambiada reproducida para ambas: seis turnos distintos, margen
++2.272→+2.657; misma victoria. Piloto14arrancó06:21:20UTC.
+
+Derrota real today reproducida con fuente top3:719acciones/720estados exactos.
+44compras grandes nativas, rival pide mitad en11y adelanta slot en20. Loop19
+separa tres intervenciones (prioridad/mitad/ambas),30juegos/noop4.314/max305ms,
+transacciones aceptadas/slots/caja comprobados;0escapes. Activas en un mundo,
+inertes en dos. Mitad cambia también alimentación/producción. No elegir por
+rewards de desarrollo. Cobertura de tabla5/64pares motivó enmienda previa al
+piloto:32semillas en piloto/confirmación, mismos inicios/gate;1.920piloto en cola
+tras18. El runner16semillas fue terminado por SIGTERM, nuevo32en espera y
+estado14preservado.76variantes competitivas más2prototipos detenidos.
+
+Consulta API06:26:02UTC, sufijo0628:VQ2294,3/85episodios ytop32084,7/73,
+ambasCOMPLETE; incluyen validación. Sin nuevo envío ni replays en esta consulta.
+La ventaja local de top3no demuestra transferencia superior: no borrarVQcomo
+referencia. Próximo frente sin piloto: dimensión dinámica de reventas desde
+consumo/town e inventario observable, con coste lockstep verificado. Objetivo activo.
+
 ## 2026-09-25, 06:08 UTC — Señal nocturna y auditoría del mecanismo
 
 Piloto13 terminado1.248/noop256, cero errores. Wheat1/inputs1/inputs2+4,6875pp,

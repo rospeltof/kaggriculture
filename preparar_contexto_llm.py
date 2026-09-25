@@ -39,6 +39,8 @@ SOURCES = (
     "docs/research/PREREG_LOOP16_REBANO_INICIAL_2026-09-25.md",
     "docs/research/PREREG_LOOP17_BONUS_LIMITADO_2026-09-25.md",
     "docs/research/PREREG_LOOP18_PUBLICOS_0548_2026-09-25.md",
+    "docs/research/PREREG_LOOP19_TRIGO_2026-09-25.md",
+    "docs/research/TRIGO_REVENTA_2026-09-25.md",
     "docs/research/FUENTES_PUBLICAS_0548_2026-09-25.md",
     "docs/research/AUDITORIA_PERDIDAS_CAMPO_2026-09-25.md",
     "docs/research/FUENTES_PUBLICAS_0400_2026-09-25.md",

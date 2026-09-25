@@ -9,7 +9,7 @@ esta prueba. Los rivales emparentados limitan la diversidad efectiva del panel.
 
 Top3sobreVQ confirmó+10,795pp local (ICdos vías[−0,115;21,706]) y se envió
 56537205. VQ56535264se conserva; el original56511619ya fue desplazado. Snapshot
-05:47UTC:top32093,6/69episodios listados yVQ2285,8/83, ambasCOMPLETE; incluyen
+06:26UTC:top32084,7/73episodios listados yVQ2294,3/85, ambasCOMPLETE; incluyen
 validación. No es comparación causal ni rankings sincronizados por edad/rivales.
 Los conteos y lecturas fechadas están en SUBMISSION_HISTORY. La ventaja local
 todavía no demuestra superioridad real; no redefinir el gate según estos ratings.
@@ -20,6 +20,11 @@ MarketShock−64,063pp muestran regresión pese a las narrativas públicas. No
 adoptar por nombre/rating anunciado ni atribuir el daño a una sola capa sin
 ablarlo. Las fuentes nuevas se congelan y comparan como rivales/variantes nuevos,
 sin reemplazar fuentes en bloques ya iniciados.
+
+Confirm13 repite la diferencia entre mecanismo y objetivo:107/86juegos con
+acciones propias distintas, márgenes suben103/82y bajan4cada uno, pero delta
+W/L/T0en1.600episodios. No cambiar el criterio a caja después de verlo. El
+piloto+4,6875pp dependía de tres celdas en dos semillas; no se confirmó.
 
 Lo siguiente documenta la lectura anterior y el historial de calibración.
 

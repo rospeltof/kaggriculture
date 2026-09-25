@@ -17,7 +17,7 @@ TAG = 'feed_smoke'
 
 
 def main(manifest_path=None, tag=TAG, seeds=(1030000, 1004000, 1272457736),
-         noop_name='feed_noop', extra_reports=()):
+         noop_name='feed_noop', extra_reports=(), extra_events=()):
     manifest = json.loads(Path(manifest_path or AGENTS/'manifest.json').read_text())
     arms = {'base': str(BASE), **{n: r['path'] for n, r in manifest.items()}}
     plan = dict(seeds=list(seeds), seats=[0, 1],
@@ -129,6 +129,8 @@ def main(manifest_path=None, tag=TAG, seeds=(1030000, 1004000, 1272457736),
                            shops=env.steps[-1][0].observation.town.unlocked_shops,
                            max_turn_ms=max(elapsed), action_hash=hashlib.sha256(json.dumps(actions, sort_keys=True).encode()).hexdigest(),
                            changed_action_turns=sum(a[seat] != b[seat] for a, b in zip(actions, baseline[key][0])))
+                if extra_events:
+                    row['layer_events'] = {k: deepcopy(ns.get(k, [])) for k in extra_events}
                 results.append(row)
                 for kind, data in (('ledger', ledger), ('units', events)):
                     (OUT/f'{tag}.{seed}.{name}.{seat}.{kind}.jsonl.gz').write_bytes(gzip.compress(('\n'.join(json.dumps(e) for e in data)+'\n').encode(), mtime=0))

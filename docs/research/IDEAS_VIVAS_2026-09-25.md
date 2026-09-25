@@ -212,3 +212,27 @@ flujos compensa1.491. Auditoría futura: cronología de arbitraje/inventario y
 precio aceptado. Todavía no hay una ablación nueva registrada; no interpretar
 comprar/vender más como causa probada ni repetir ADV ya rechazado. Este frente
 es distinto del ahorro nocturno y puede investigarse mientras termina el panel.
+
+
+## Actualización06:28UTC: confirm13 sin mejora y trigo19 validado
+
+Confirm13:1.600/noop416, cero errores, delta0ambas. No inertes:107/86acciones
+distintas, margen sube103/82y baja4cada una, sin cambiar W/L/T. No adoptar ni
+redefinir criterio por dinero. Piloto14ya corre desde06:21:20UTC.
+
+La auditoría de trigo reprodujo nuestra fuente exacta719acciones/720estados.
+Rival today pide mitad en11de44compras grandes y anticipa slot en20. Loop19
+separa prioridad, mitad y ambas,30juegos/noop4.314/max305ms: actúan en el mundo
+dirigido, inertes en los otros dos; no selección por recompensas. Fuentes/caja,
+slots y transacciones físicas comprobados. Cobertura estática5/64pares motivó
+ampliar antes del piloto a32semillas en ambos bloques. Encolado después de18.
+No tratar cobertura de tabla como frecuencia poblacional ni reutilizar semillas.
+
+Nuevo frente todavía sin experimento registrado: las secuencias de reventa
+son cantidades de cinta en44/44decisiones grandes de la derrota. Podría
+estudiarse un criterio dinámico para proponer o dimensionar compras según
+consumo observable del town, inventario, capacidad y rival estimado, separado
+de loop19. Requiere verificar exactamente el coste de ida/vuelta lockstep;
+no asumir ganancia por la diferencia entre precios anunciados ni usar futuro
+rival real en la política. También vigilar transferencia: VQ2294,3/85frente
+a top32084,7/73en06:26UTC, comparación descriptiva, no efecto causal probado.

@@ -1,0 +1,3587 @@
+{
+  "passed": true,
+  "development_games": 30,
+  "noop_exact_turns": 4314,
+  "source_archive": "wheat_trade_smoke.sources.tgz",
+  "candidate_hashes": {
+    "wheat_front": "ab5ab19cdc810f5a3f4940a7db31436c4b135b5a56bdcbc7cfa001eb187d56e5",
+    "wheat_half": "e3eaafb520ca16b60c81653d5eb49026a6ea64b47178886290a2b96ff1c50a75",
+    "wheat_both": "71129a9e0f3ce6dcce21d015326ada6a06fc0734377e31014d6623521e4359c6"
+  },
+  "max_turn_ms": 304.9318329722155,
+  "note": "Execution, exact declared edits, cash and actual transactions verified. Harvest/feed differences and escapes are recorded; no guarantee of economic improvement or preserved production.",
+  "summary": [
+    {
+      "seed": 588616997,
+      "seat": 0,
+      "arm": "wheat_front",
+      "changed_action_turns": 20,
+      "feed_skips": 50,
+      "feed_base": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 128,
+        "FEED:GOOSE": 94
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 128,
+        "FEED:GOOSE": 94
+      },
+      "harvested_base": {
+        "WHEAT": 614,
+        "WOOL": 99,
+        "MILK": 180,
+        "EGG": 167,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 89
+      },
+      "harvested_candidate": {
+        "WHEAT": 614,
+        "WOOL": 99,
+        "MILK": 180,
+        "EGG": 167,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 89
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 2,
+        "EGG": 6,
+        "FERTILIZER": 3
+      },
+      "losses_candidate": {
+        "WHEAT": 2,
+        "EGG": 6,
+        "FERTILIZER": 3
+      }
+    },
+    {
+      "seed": 588616997,
+      "seat": 0,
+      "arm": "wheat_half",
+      "changed_action_turns": 79,
+      "feed_skips": 48,
+      "feed_base": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 128,
+        "FEED:GOOSE": 94
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 130,
+        "FEED:GOOSE": 94
+      },
+      "harvested_base": {
+        "WHEAT": 614,
+        "WOOL": 99,
+        "MILK": 180,
+        "EGG": 167,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 89
+      },
+      "harvested_candidate": {
+        "WHEAT": 614,
+        "WOOL": 99,
+        "MILK": 182,
+        "EGG": 167,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 89
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 2,
+        "EGG": 6,
+        "FERTILIZER": 3
+      },
+      "losses_candidate": {
+        "WHEAT": 2,
+        "EGG": 6,
+        "FERTILIZER": 3
+      }
+    },
+    {
+      "seed": 588616997,
+      "seat": 0,
+      "arm": "wheat_both",
+      "changed_action_turns": 79,
+      "feed_skips": 48,
+      "feed_base": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 128,
+        "FEED:GOOSE": 94
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 130,
+        "FEED:GOOSE": 94
+      },
+      "harvested_base": {
+        "WHEAT": 614,
+        "WOOL": 99,
+        "MILK": 180,
+        "EGG": 167,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 89
+      },
+      "harvested_candidate": {
+        "WHEAT": 614,
+        "WOOL": 99,
+        "MILK": 182,
+        "EGG": 167,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 89
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 2,
+        "EGG": 6,
+        "FERTILIZER": 3
+      },
+      "losses_candidate": {
+        "WHEAT": 2,
+        "EGG": 6,
+        "FERTILIZER": 3
+      }
+    },
+    {
+      "seed": 588616997,
+      "seat": 1,
+      "arm": "wheat_front",
+      "changed_action_turns": 20,
+      "feed_skips": 50,
+      "feed_base": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 128,
+        "FEED:GOOSE": 94
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 128,
+        "FEED:GOOSE": 94
+      },
+      "harvested_base": {
+        "WHEAT": 614,
+        "WOOL": 99,
+        "MILK": 180,
+        "EGG": 167,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 89
+      },
+      "harvested_candidate": {
+        "WHEAT": 614,
+        "WOOL": 99,
+        "MILK": 180,
+        "EGG": 167,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 89
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 2,
+        "EGG": 6,
+        "FERTILIZER": 3
+      },
+      "losses_candidate": {
+        "WHEAT": 2,
+        "EGG": 6,
+        "FERTILIZER": 3
+      }
+    },
+    {
+      "seed": 588616997,
+      "seat": 1,
+      "arm": "wheat_half",
+      "changed_action_turns": 79,
+      "feed_skips": 48,
+      "feed_base": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 128,
+        "FEED:GOOSE": 94
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 130,
+        "FEED:GOOSE": 94
+      },
+      "harvested_base": {
+        "WHEAT": 614,
+        "WOOL": 99,
+        "MILK": 180,
+        "EGG": 167,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 89
+      },
+      "harvested_candidate": {
+        "WHEAT": 614,
+        "WOOL": 99,
+        "MILK": 182,
+        "EGG": 167,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 89
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 2,
+        "EGG": 6,
+        "FERTILIZER": 3
+      },
+      "losses_candidate": {
+        "WHEAT": 2,
+        "EGG": 6,
+        "FERTILIZER": 3
+      }
+    },
+    {
+      "seed": 588616997,
+      "seat": 1,
+      "arm": "wheat_both",
+      "changed_action_turns": 79,
+      "feed_skips": 48,
+      "feed_base": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 128,
+        "FEED:GOOSE": 94
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 130,
+        "FEED:GOOSE": 94
+      },
+      "harvested_base": {
+        "WHEAT": 614,
+        "WOOL": 99,
+        "MILK": 180,
+        "EGG": 167,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 89
+      },
+      "harvested_candidate": {
+        "WHEAT": 614,
+        "WOOL": 99,
+        "MILK": 182,
+        "EGG": 167,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 89
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 2,
+        "EGG": 6,
+        "FERTILIZER": 3
+      },
+      "losses_candidate": {
+        "WHEAT": 2,
+        "EGG": 6,
+        "FERTILIZER": 3
+      }
+    },
+    {
+      "seed": 1045000,
+      "seat": 0,
+      "arm": "wheat_front",
+      "changed_action_turns": 0,
+      "feed_skips": 43,
+      "feed_base": {
+        "FEED:SHEEP": 108,
+        "FEED:COW": 164,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 108,
+        "FEED:COW": 164,
+        "FEED:GOOSE": 52
+      },
+      "harvested_base": {
+        "WHEAT": 506,
+        "WOOL": 124,
+        "MILK": 226,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 172,
+        "TOMATO": 80
+      },
+      "harvested_candidate": {
+        "WHEAT": 506,
+        "WOOL": 124,
+        "MILK": 226,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 172,
+        "TOMATO": 80
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "EGG": 1,
+        "FERTILIZER": 2
+      },
+      "losses_candidate": {
+        "EGG": 1,
+        "FERTILIZER": 2
+      }
+    },
+    {
+      "seed": 1045000,
+      "seat": 0,
+      "arm": "wheat_half",
+      "changed_action_turns": 0,
+      "feed_skips": 43,
+      "feed_base": {
+        "FEED:SHEEP": 108,
+        "FEED:COW": 164,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 108,
+        "FEED:COW": 164,
+        "FEED:GOOSE": 52
+      },
+      "harvested_base": {
+        "WHEAT": 506,
+        "WOOL": 124,
+        "MILK": 226,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 172,
+        "TOMATO": 80
+      },
+      "harvested_candidate": {
+        "WHEAT": 506,
+        "WOOL": 124,
+        "MILK": 226,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 172,
+        "TOMATO": 80
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "EGG": 1,
+        "FERTILIZER": 2
+      },
+      "losses_candidate": {
+        "EGG": 1,
+        "FERTILIZER": 2
+      }
+    },
+    {
+      "seed": 1045000,
+      "seat": 0,
+      "arm": "wheat_both",
+      "changed_action_turns": 0,
+      "feed_skips": 43,
+      "feed_base": {
+        "FEED:SHEEP": 108,
+        "FEED:COW": 164,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 108,
+        "FEED:COW": 164,
+        "FEED:GOOSE": 52
+      },
+      "harvested_base": {
+        "WHEAT": 506,
+        "WOOL": 124,
+        "MILK": 226,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 172,
+        "TOMATO": 80
+      },
+      "harvested_candidate": {
+        "WHEAT": 506,
+        "WOOL": 124,
+        "MILK": 226,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 172,
+        "TOMATO": 80
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "EGG": 1,
+        "FERTILIZER": 2
+      },
+      "losses_candidate": {
+        "EGG": 1,
+        "FERTILIZER": 2
+      }
+    },
+    {
+      "seed": 1045000,
+      "seat": 1,
+      "arm": "wheat_front",
+      "changed_action_turns": 0,
+      "feed_skips": 43,
+      "feed_base": {
+        "FEED:SHEEP": 108,
+        "FEED:COW": 164,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 108,
+        "FEED:COW": 164,
+        "FEED:GOOSE": 52
+      },
+      "harvested_base": {
+        "WHEAT": 506,
+        "WOOL": 124,
+        "MILK": 226,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 172,
+        "TOMATO": 80
+      },
+      "harvested_candidate": {
+        "WHEAT": 506,
+        "WOOL": 124,
+        "MILK": 226,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 172,
+        "TOMATO": 80
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "EGG": 1,
+        "FERTILIZER": 2
+      },
+      "losses_candidate": {
+        "EGG": 1,
+        "FERTILIZER": 2
+      }
+    },
+    {
+      "seed": 1045000,
+      "seat": 1,
+      "arm": "wheat_half",
+      "changed_action_turns": 0,
+      "feed_skips": 43,
+      "feed_base": {
+        "FEED:SHEEP": 108,
+        "FEED:COW": 164,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 108,
+        "FEED:COW": 164,
+        "FEED:GOOSE": 52
+      },
+      "harvested_base": {
+        "WHEAT": 506,
+        "WOOL": 124,
+        "MILK": 226,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 172,
+        "TOMATO": 80
+      },
+      "harvested_candidate": {
+        "WHEAT": 506,
+        "WOOL": 124,
+        "MILK": 226,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 172,
+        "TOMATO": 80
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "EGG": 1,
+        "FERTILIZER": 2
+      },
+      "losses_candidate": {
+        "EGG": 1,
+        "FERTILIZER": 2
+      }
+    },
+    {
+      "seed": 1045000,
+      "seat": 1,
+      "arm": "wheat_both",
+      "changed_action_turns": 0,
+      "feed_skips": 43,
+      "feed_base": {
+        "FEED:SHEEP": 108,
+        "FEED:COW": 164,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 108,
+        "FEED:COW": 164,
+        "FEED:GOOSE": 52
+      },
+      "harvested_base": {
+        "WHEAT": 506,
+        "WOOL": 124,
+        "MILK": 226,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 172,
+        "TOMATO": 80
+      },
+      "harvested_candidate": {
+        "WHEAT": 506,
+        "WOOL": 124,
+        "MILK": 226,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 172,
+        "TOMATO": 80
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "EGG": 1,
+        "FERTILIZER": 2
+      },
+      "losses_candidate": {
+        "EGG": 1,
+        "FERTILIZER": 2
+      }
+    },
+    {
+      "seed": 1028000,
+      "seat": 0,
+      "arm": "wheat_front",
+      "changed_action_turns": 0,
+      "feed_skips": 36,
+      "feed_base": {
+        "FEED:SHEEP": 93,
+        "FEED:COW": 106,
+        "FEED:GOOSE": 128
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 93,
+        "FEED:COW": 106,
+        "FEED:GOOSE": 128
+      },
+      "harvested_base": {
+        "WHEAT": 609,
+        "WOOL": 112,
+        "MILK": 156,
+        "MELON": 72,
+        "EGG": 225,
+        "STRAWBERRY": 251,
+        "CARROT": 90
+      },
+      "harvested_candidate": {
+        "WHEAT": 609,
+        "WOOL": 112,
+        "MILK": 156,
+        "MELON": 72,
+        "EGG": 225,
+        "STRAWBERRY": 251,
+        "CARROT": 90
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2,
+        "WHEAT": 2
+      },
+      "losses_candidate": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2,
+        "WHEAT": 2
+      }
+    },
+    {
+      "seed": 1028000,
+      "seat": 0,
+      "arm": "wheat_half",
+      "changed_action_turns": 0,
+      "feed_skips": 36,
+      "feed_base": {
+        "FEED:SHEEP": 93,
+        "FEED:COW": 106,
+        "FEED:GOOSE": 128
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 93,
+        "FEED:COW": 106,
+        "FEED:GOOSE": 128
+      },
+      "harvested_base": {
+        "WHEAT": 609,
+        "WOOL": 112,
+        "MILK": 156,
+        "MELON": 72,
+        "EGG": 225,
+        "STRAWBERRY": 251,
+        "CARROT": 90
+      },
+      "harvested_candidate": {
+        "WHEAT": 609,
+        "WOOL": 112,
+        "MILK": 156,
+        "MELON": 72,
+        "EGG": 225,
+        "STRAWBERRY": 251,
+        "CARROT": 90
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2,
+        "WHEAT": 2
+      },
+      "losses_candidate": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2,
+        "WHEAT": 2
+      }
+    },
+    {
+      "seed": 1028000,
+      "seat": 0,
+      "arm": "wheat_both",
+      "changed_action_turns": 0,
+      "feed_skips": 36,
+      "feed_base": {
+        "FEED:SHEEP": 93,
+        "FEED:COW": 106,
+        "FEED:GOOSE": 128
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 93,
+        "FEED:COW": 106,
+        "FEED:GOOSE": 128
+      },
+      "harvested_base": {
+        "WHEAT": 609,
+        "WOOL": 112,
+        "MILK": 156,
+        "MELON": 72,
+        "EGG": 225,
+        "STRAWBERRY": 251,
+        "CARROT": 90
+      },
+      "harvested_candidate": {
+        "WHEAT": 609,
+        "WOOL": 112,
+        "MILK": 156,
+        "MELON": 72,
+        "EGG": 225,
+        "STRAWBERRY": 251,
+        "CARROT": 90
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2,
+        "WHEAT": 2
+      },
+      "losses_candidate": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2,
+        "WHEAT": 2
+      }
+    },
+    {
+      "seed": 1028000,
+      "seat": 1,
+      "arm": "wheat_front",
+      "changed_action_turns": 0,
+      "feed_skips": 36,
+      "feed_base": {
+        "FEED:SHEEP": 93,
+        "FEED:COW": 106,
+        "FEED:GOOSE": 128
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 93,
+        "FEED:COW": 106,
+        "FEED:GOOSE": 128
+      },
+      "harvested_base": {
+        "WHEAT": 609,
+        "WOOL": 112,
+        "MILK": 156,
+        "MELON": 72,
+        "EGG": 225,
+        "STRAWBERRY": 251,
+        "CARROT": 90
+      },
+      "harvested_candidate": {
+        "WHEAT": 609,
+        "WOOL": 112,
+        "MILK": 156,
+        "MELON": 72,
+        "EGG": 225,
+        "STRAWBERRY": 251,
+        "CARROT": 90
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2,
+        "WHEAT": 2
+      },
+      "losses_candidate": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2,
+        "WHEAT": 2
+      }
+    },
+    {
+      "seed": 1028000,
+      "seat": 1,
+      "arm": "wheat_half",
+      "changed_action_turns": 0,
+      "feed_skips": 36,
+      "feed_base": {
+        "FEED:SHEEP": 93,
+        "FEED:COW": 106,
+        "FEED:GOOSE": 128
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 93,
+        "FEED:COW": 106,
+        "FEED:GOOSE": 128
+      },
+      "harvested_base": {
+        "WHEAT": 609,
+        "WOOL": 112,
+        "MILK": 156,
+        "MELON": 72,
+        "EGG": 225,
+        "STRAWBERRY": 251,
+        "CARROT": 90
+      },
+      "harvested_candidate": {
+        "WHEAT": 609,
+        "WOOL": 112,
+        "MILK": 156,
+        "MELON": 72,
+        "EGG": 225,
+        "STRAWBERRY": 251,
+        "CARROT": 90
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2,
+        "WHEAT": 2
+      },
+      "losses_candidate": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2,
+        "WHEAT": 2
+      }
+    },
+    {
+      "seed": 1028000,
+      "seat": 1,
+      "arm": "wheat_both",
+      "changed_action_turns": 0,
+      "feed_skips": 36,
+      "feed_base": {
+        "FEED:SHEEP": 93,
+        "FEED:COW": 106,
+        "FEED:GOOSE": 128
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 93,
+        "FEED:COW": 106,
+        "FEED:GOOSE": 128
+      },
+      "harvested_base": {
+        "WHEAT": 609,
+        "WOOL": 112,
+        "MILK": 156,
+        "MELON": 72,
+        "EGG": 225,
+        "STRAWBERRY": 251,
+        "CARROT": 90
+      },
+      "harvested_candidate": {
+        "WHEAT": 609,
+        "WOOL": 112,
+        "MILK": 156,
+        "MELON": 72,
+        "EGG": 225,
+        "STRAWBERRY": 251,
+        "CARROT": 90
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2,
+        "WHEAT": 2
+      },
+      "losses_candidate": {
+        "STRAWBERRY": 2,
+        "FERTILIZER": 2,
+        "WHEAT": 2
+      }
+    }
+  ],
+  "buy_events": [
+    {
+      "arm": "wheat_front",
+      "seed": 588616997,
+      "seat": 0,
+      "stats": {
+        "eligible": 38,
+        "changed": 20,
+        "cut_units": 0,
+        "moved": 20,
+        "errors": 0
+      },
+      "matches": [
+        {
+          "step": 300,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 48,
+          "new_request": 48,
+          "accepted_buy": 48,
+          "buy_cash": -2045,
+          "planned_next_sale": 48,
+          "accepted_next_sale": 48,
+          "next_sale_cash": 2084
+        },
+        {
+          "step": 304,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 48,
+          "new_request": 48,
+          "accepted_buy": 48,
+          "buy_cash": -2049,
+          "planned_next_sale": 48,
+          "accepted_next_sale": 48,
+          "next_sale_cash": 2090
+        },
+        {
+          "step": 324,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 63,
+          "new_request": 63,
+          "accepted_buy": 63,
+          "buy_cash": -2679,
+          "planned_next_sale": 63,
+          "accepted_next_sale": 63,
+          "next_sale_cash": 2741
+        },
+        {
+          "step": 352,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 59,
+          "new_request": 59,
+          "accepted_buy": 59,
+          "buy_cash": -2522,
+          "planned_next_sale": 59,
+          "accepted_next_sale": 59,
+          "next_sale_cash": 2579
+        },
+        {
+          "step": 368,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 89,
+          "new_request": 89,
+          "accepted_buy": 89,
+          "buy_cash": -3848,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 89,
+          "next_sale_cash": 3968
+        },
+        {
+          "step": 380,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 89,
+          "new_request": 89,
+          "accepted_buy": 89,
+          "buy_cash": -3892,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 89,
+          "next_sale_cash": 4001
+        },
+        {
+          "step": 396,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 80,
+          "accepted_buy": 80,
+          "buy_cash": -3530,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 80,
+          "next_sale_cash": 3622
+        },
+        {
+          "step": 404,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 80,
+          "accepted_buy": 80,
+          "buy_cash": -3526,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 80,
+          "next_sale_cash": 3618
+        },
+        {
+          "step": 444,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 80,
+          "accepted_buy": 80,
+          "buy_cash": -3578,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 80,
+          "next_sale_cash": 3668
+        },
+        {
+          "step": 468,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 84,
+          "new_request": 84,
+          "accepted_buy": 84,
+          "buy_cash": -3764,
+          "planned_next_sale": 84,
+          "accepted_next_sale": 84,
+          "next_sale_cash": 3860
+        },
+        {
+          "step": 492,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 83,
+          "new_request": 83,
+          "accepted_buy": 83,
+          "buy_cash": -3764,
+          "planned_next_sale": 83,
+          "accepted_next_sale": 83,
+          "next_sale_cash": 3860
+        },
+        {
+          "step": 520,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 90,
+          "new_request": 90,
+          "accepted_buy": 90,
+          "buy_cash": -4116,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 90,
+          "next_sale_cash": 4224
+        },
+        {
+          "step": 524,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 90,
+          "new_request": 90,
+          "accepted_buy": 90,
+          "buy_cash": -4130,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 90,
+          "next_sale_cash": 4236
+        },
+        {
+          "step": 540,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 85,
+          "new_request": 85,
+          "accepted_buy": 73,
+          "buy_cash": -3389,
+          "planned_next_sale": 85,
+          "accepted_next_sale": 85,
+          "next_sale_cash": 4003
+        },
+        {
+          "step": 548,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 90,
+          "new_request": 90,
+          "accepted_buy": 90,
+          "buy_cash": -4160,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 90,
+          "next_sale_cash": 4268
+        },
+        {
+          "step": 608,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 55,
+          "new_request": 55,
+          "accepted_buy": 55,
+          "buy_cash": -2547,
+          "planned_next_sale": 55,
+          "accepted_next_sale": 55,
+          "next_sale_cash": 2588
+        },
+        {
+          "step": 620,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 79,
+          "new_request": 79,
+          "accepted_buy": 79,
+          "buy_cash": -3582,
+          "planned_next_sale": 79,
+          "accepted_next_sale": 79,
+          "next_sale_cash": 3671
+        },
+        {
+          "step": 636,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 60,
+          "new_request": 60,
+          "accepted_buy": 60,
+          "buy_cash": -2648,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 60,
+          "next_sale_cash": 2705
+        },
+        {
+          "step": 640,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 60,
+          "new_request": 60,
+          "accepted_buy": 60,
+          "buy_cash": -2663,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 60,
+          "next_sale_cash": 2717
+        },
+        {
+          "step": 644,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 60,
+          "new_request": 60,
+          "accepted_buy": 60,
+          "buy_cash": -2671,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 60,
+          "next_sale_cash": 2729
+        }
+      ],
+      "escapes": [],
+      "changed_action_turns": 20,
+      "actual_wheat_buys": [
+        3388,
+        -151703
+      ],
+      "actual_wheat_sales": [
+        3683,
+        166989
+      ]
+    },
+    {
+      "arm": "wheat_front",
+      "seed": 588616997,
+      "seat": 1,
+      "stats": {
+        "eligible": 38,
+        "changed": 20,
+        "cut_units": 0,
+        "moved": 20,
+        "errors": 0
+      },
+      "matches": [
+        {
+          "step": 300,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 48,
+          "new_request": 48,
+          "accepted_buy": 48,
+          "buy_cash": -2045,
+          "planned_next_sale": 48,
+          "accepted_next_sale": 48,
+          "next_sale_cash": 2084
+        },
+        {
+          "step": 304,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 48,
+          "new_request": 48,
+          "accepted_buy": 48,
+          "buy_cash": -2049,
+          "planned_next_sale": 48,
+          "accepted_next_sale": 48,
+          "next_sale_cash": 2090
+        },
+        {
+          "step": 324,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 63,
+          "new_request": 63,
+          "accepted_buy": 63,
+          "buy_cash": -2679,
+          "planned_next_sale": 63,
+          "accepted_next_sale": 63,
+          "next_sale_cash": 2741
+        },
+        {
+          "step": 352,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 59,
+          "new_request": 59,
+          "accepted_buy": 59,
+          "buy_cash": -2522,
+          "planned_next_sale": 59,
+          "accepted_next_sale": 59,
+          "next_sale_cash": 2579
+        },
+        {
+          "step": 368,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 89,
+          "new_request": 89,
+          "accepted_buy": 89,
+          "buy_cash": -3848,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 89,
+          "next_sale_cash": 3968
+        },
+        {
+          "step": 380,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 89,
+          "new_request": 89,
+          "accepted_buy": 89,
+          "buy_cash": -3892,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 89,
+          "next_sale_cash": 4001
+        },
+        {
+          "step": 396,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 80,
+          "accepted_buy": 80,
+          "buy_cash": -3530,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 80,
+          "next_sale_cash": 3622
+        },
+        {
+          "step": 404,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 80,
+          "accepted_buy": 80,
+          "buy_cash": -3526,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 80,
+          "next_sale_cash": 3618
+        },
+        {
+          "step": 444,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 80,
+          "accepted_buy": 80,
+          "buy_cash": -3578,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 80,
+          "next_sale_cash": 3668
+        },
+        {
+          "step": 468,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 84,
+          "new_request": 84,
+          "accepted_buy": 84,
+          "buy_cash": -3764,
+          "planned_next_sale": 84,
+          "accepted_next_sale": 84,
+          "next_sale_cash": 3860
+        },
+        {
+          "step": 492,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 83,
+          "new_request": 83,
+          "accepted_buy": 83,
+          "buy_cash": -3764,
+          "planned_next_sale": 83,
+          "accepted_next_sale": 83,
+          "next_sale_cash": 3860
+        },
+        {
+          "step": 520,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 90,
+          "new_request": 90,
+          "accepted_buy": 90,
+          "buy_cash": -4116,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 90,
+          "next_sale_cash": 4224
+        },
+        {
+          "step": 524,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 90,
+          "new_request": 90,
+          "accepted_buy": 90,
+          "buy_cash": -4130,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 90,
+          "next_sale_cash": 4236
+        },
+        {
+          "step": 540,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 85,
+          "new_request": 85,
+          "accepted_buy": 73,
+          "buy_cash": -3389,
+          "planned_next_sale": 85,
+          "accepted_next_sale": 85,
+          "next_sale_cash": 4003
+        },
+        {
+          "step": 548,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 90,
+          "new_request": 90,
+          "accepted_buy": 90,
+          "buy_cash": -4160,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 90,
+          "next_sale_cash": 4268
+        },
+        {
+          "step": 608,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 55,
+          "new_request": 55,
+          "accepted_buy": 55,
+          "buy_cash": -2547,
+          "planned_next_sale": 55,
+          "accepted_next_sale": 55,
+          "next_sale_cash": 2588
+        },
+        {
+          "step": 620,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 79,
+          "new_request": 79,
+          "accepted_buy": 79,
+          "buy_cash": -3582,
+          "planned_next_sale": 79,
+          "accepted_next_sale": 79,
+          "next_sale_cash": 3671
+        },
+        {
+          "step": 636,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 60,
+          "new_request": 60,
+          "accepted_buy": 60,
+          "buy_cash": -2648,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 60,
+          "next_sale_cash": 2705
+        },
+        {
+          "step": 640,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 60,
+          "new_request": 60,
+          "accepted_buy": 60,
+          "buy_cash": -2663,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 60,
+          "next_sale_cash": 2717
+        },
+        {
+          "step": 644,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 60,
+          "new_request": 60,
+          "accepted_buy": 60,
+          "buy_cash": -2671,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 60,
+          "next_sale_cash": 2729
+        }
+      ],
+      "escapes": [],
+      "changed_action_turns": 20,
+      "actual_wheat_buys": [
+        3388,
+        -151703
+      ],
+      "actual_wheat_sales": [
+        3683,
+        166989
+      ]
+    },
+    {
+      "arm": "wheat_half",
+      "seed": 588616997,
+      "seat": 0,
+      "stats": {
+        "eligible": 38,
+        "changed": 38,
+        "cut_units": 1420,
+        "moved": 0,
+        "errors": 0
+      },
+      "matches": [
+        {
+          "step": 296,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 48,
+          "new_request": 24,
+          "accepted_buy": 24,
+          "buy_cash": -1020,
+          "planned_next_sale": 48,
+          "accepted_next_sale": 48,
+          "next_sale_cash": 2048
+        },
+        {
+          "step": 300,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 48,
+          "new_request": 24,
+          "accepted_buy": 24,
+          "buy_cash": -1005,
+          "planned_next_sale": 48,
+          "accepted_next_sale": 34,
+          "next_sale_cash": 1445
+        },
+        {
+          "step": 304,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 48,
+          "new_request": 24,
+          "accepted_buy": 24,
+          "buy_cash": -1000,
+          "planned_next_sale": 48,
+          "accepted_next_sale": 24,
+          "next_sale_cash": 1022
+        },
+        {
+          "step": 316,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 60,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1255,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1286
+        },
+        {
+          "step": 324,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 63,
+          "new_request": 32,
+          "accepted_buy": 32,
+          "buy_cash": -1353,
+          "planned_next_sale": 63,
+          "accepted_next_sale": 32,
+          "next_sale_cash": 1386
+        },
+        {
+          "step": 348,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 59,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1278,
+          "planned_next_sale": 59,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1307
+        },
+        {
+          "step": 352,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 59,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1282,
+          "planned_next_sale": 59,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1309
+        },
+        {
+          "step": 356,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 71,
+          "new_request": 36,
+          "accepted_buy": 36,
+          "buy_cash": -1550,
+          "planned_next_sale": 71,
+          "accepted_next_sale": 36,
+          "next_sale_cash": 1589
+        },
+        {
+          "step": 364,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 77,
+          "new_request": 39,
+          "accepted_buy": 39,
+          "buy_cash": -1692,
+          "planned_next_sale": 77,
+          "accepted_next_sale": 47,
+          "next_sale_cash": 2083
+        },
+        {
+          "step": 368,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 89,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -1946,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2009
+        },
+        {
+          "step": 380,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 89,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -1967,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2024
+        },
+        {
+          "step": 388,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 74,
+          "new_request": 37,
+          "accepted_buy": 37,
+          "buy_cash": -1620,
+          "planned_next_sale": 74,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2012
+        },
+        {
+          "step": 396,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1757,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1804
+        },
+        {
+          "step": 404,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1761,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1808
+        },
+        {
+          "step": 416,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 89,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -1988,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 54,
+          "next_sale_cash": 2441
+        },
+        {
+          "step": 424,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 89,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -1988,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2045
+        },
+        {
+          "step": 440,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 73,
+          "new_request": 37,
+          "accepted_buy": 37,
+          "buy_cash": -1648,
+          "planned_next_sale": 73,
+          "accepted_next_sale": 50,
+          "next_sale_cash": 2265
+        },
+        {
+          "step": 444,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1771,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1820
+        },
+        {
+          "step": 448,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 82,
+          "new_request": 41,
+          "accepted_buy": 41,
+          "buy_cash": -1822,
+          "planned_next_sale": 82,
+          "accepted_next_sale": 43,
+          "next_sale_cash": 1954
+        },
+        {
+          "step": 460,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 81,
+          "new_request": 41,
+          "accepted_buy": 41,
+          "buy_cash": -1834,
+          "planned_next_sale": 81,
+          "accepted_next_sale": 52,
+          "next_sale_cash": 2368
+        },
+        {
+          "step": 468,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 84,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1871,
+          "planned_next_sale": 84,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1921
+        },
+        {
+          "step": 492,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 83,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1896,
+          "planned_next_sale": 83,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2080
+        },
+        {
+          "step": 496,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 84,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1900,
+          "planned_next_sale": 84,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1949
+        },
+        {
+          "step": 500,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 88,
+          "new_request": 44,
+          "accepted_buy": 44,
+          "buy_cash": -1998,
+          "planned_next_sale": 88,
+          "accepted_next_sale": 44,
+          "next_sale_cash": 2054
+        },
+        {
+          "step": 520,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 90,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -2054,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2110
+        },
+        {
+          "step": 524,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 90,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -2062,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2116
+        },
+        {
+          "step": 540,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 85,
+          "new_request": 43,
+          "accepted_buy": 43,
+          "buy_cash": -1996,
+          "planned_next_sale": 85,
+          "accepted_next_sale": 60,
+          "next_sale_cash": 2816
+        },
+        {
+          "step": 544,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 84,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1925,
+          "planned_next_sale": 84,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1974
+        },
+        {
+          "step": 548,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 90,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -2074,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2128
+        },
+        {
+          "step": 560,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1860,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 60,
+          "next_sale_cash": 2816
+        },
+        {
+          "step": 564,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1837,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1882
+        },
+        {
+          "step": 568,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 83,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1935,
+          "planned_next_sale": 83,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1984
+        },
+        {
+          "step": 572,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 83,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1943,
+          "planned_next_sale": 83,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1990
+        },
+        {
+          "step": 608,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 55,
+          "new_request": 28,
+          "accepted_buy": 28,
+          "buy_cash": -1299,
+          "planned_next_sale": 55,
+          "accepted_next_sale": 55,
+          "next_sale_cash": 2561
+        },
+        {
+          "step": 620,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 79,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1798,
+          "planned_next_sale": 79,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1862
+        },
+        {
+          "step": 636,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 60,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1327,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1358
+        },
+        {
+          "step": 640,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 60,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1320,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1363
+        },
+        {
+          "step": 644,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 60,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1337,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1367
+        }
+      ],
+      "escapes": [],
+      "changed_action_turns": 79,
+      "actual_wheat_buys": [
+        2011,
+        -88571
+      ],
+      "actual_wheat_sales": [
+        2304,
+        103687
+      ]
+    },
+    {
+      "arm": "wheat_half",
+      "seed": 588616997,
+      "seat": 1,
+      "stats": {
+        "eligible": 38,
+        "changed": 38,
+        "cut_units": 1420,
+        "moved": 0,
+        "errors": 0
+      },
+      "matches": [
+        {
+          "step": 296,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 48,
+          "new_request": 24,
+          "accepted_buy": 24,
+          "buy_cash": -1020,
+          "planned_next_sale": 48,
+          "accepted_next_sale": 48,
+          "next_sale_cash": 2048
+        },
+        {
+          "step": 300,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 48,
+          "new_request": 24,
+          "accepted_buy": 24,
+          "buy_cash": -1005,
+          "planned_next_sale": 48,
+          "accepted_next_sale": 34,
+          "next_sale_cash": 1445
+        },
+        {
+          "step": 304,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 48,
+          "new_request": 24,
+          "accepted_buy": 24,
+          "buy_cash": -1000,
+          "planned_next_sale": 48,
+          "accepted_next_sale": 24,
+          "next_sale_cash": 1022
+        },
+        {
+          "step": 316,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 60,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1255,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1286
+        },
+        {
+          "step": 324,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 63,
+          "new_request": 32,
+          "accepted_buy": 32,
+          "buy_cash": -1353,
+          "planned_next_sale": 63,
+          "accepted_next_sale": 32,
+          "next_sale_cash": 1386
+        },
+        {
+          "step": 348,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 59,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1278,
+          "planned_next_sale": 59,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1307
+        },
+        {
+          "step": 352,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 59,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1282,
+          "planned_next_sale": 59,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1309
+        },
+        {
+          "step": 356,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 71,
+          "new_request": 36,
+          "accepted_buy": 36,
+          "buy_cash": -1550,
+          "planned_next_sale": 71,
+          "accepted_next_sale": 36,
+          "next_sale_cash": 1589
+        },
+        {
+          "step": 364,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 77,
+          "new_request": 39,
+          "accepted_buy": 39,
+          "buy_cash": -1692,
+          "planned_next_sale": 77,
+          "accepted_next_sale": 47,
+          "next_sale_cash": 2083
+        },
+        {
+          "step": 368,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 89,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -1946,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2009
+        },
+        {
+          "step": 380,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 89,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -1967,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2024
+        },
+        {
+          "step": 388,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 74,
+          "new_request": 37,
+          "accepted_buy": 37,
+          "buy_cash": -1620,
+          "planned_next_sale": 74,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2012
+        },
+        {
+          "step": 396,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1757,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1804
+        },
+        {
+          "step": 404,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1761,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1808
+        },
+        {
+          "step": 416,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 89,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -1988,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 54,
+          "next_sale_cash": 2441
+        },
+        {
+          "step": 424,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 89,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -1988,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2045
+        },
+        {
+          "step": 440,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 73,
+          "new_request": 37,
+          "accepted_buy": 37,
+          "buy_cash": -1648,
+          "planned_next_sale": 73,
+          "accepted_next_sale": 50,
+          "next_sale_cash": 2265
+        },
+        {
+          "step": 444,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1771,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1820
+        },
+        {
+          "step": 448,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 82,
+          "new_request": 41,
+          "accepted_buy": 41,
+          "buy_cash": -1822,
+          "planned_next_sale": 82,
+          "accepted_next_sale": 43,
+          "next_sale_cash": 1954
+        },
+        {
+          "step": 460,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 81,
+          "new_request": 41,
+          "accepted_buy": 41,
+          "buy_cash": -1834,
+          "planned_next_sale": 81,
+          "accepted_next_sale": 52,
+          "next_sale_cash": 2368
+        },
+        {
+          "step": 468,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 84,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1871,
+          "planned_next_sale": 84,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1921
+        },
+        {
+          "step": 492,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 83,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1896,
+          "planned_next_sale": 83,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2080
+        },
+        {
+          "step": 496,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 84,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1900,
+          "planned_next_sale": 84,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1949
+        },
+        {
+          "step": 500,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 88,
+          "new_request": 44,
+          "accepted_buy": 44,
+          "buy_cash": -1998,
+          "planned_next_sale": 88,
+          "accepted_next_sale": 44,
+          "next_sale_cash": 2054
+        },
+        {
+          "step": 520,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 90,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -2054,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2110
+        },
+        {
+          "step": 524,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 90,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -2062,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2116
+        },
+        {
+          "step": 540,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 85,
+          "new_request": 43,
+          "accepted_buy": 43,
+          "buy_cash": -1996,
+          "planned_next_sale": 85,
+          "accepted_next_sale": 60,
+          "next_sale_cash": 2816
+        },
+        {
+          "step": 544,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 84,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1925,
+          "planned_next_sale": 84,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1974
+        },
+        {
+          "step": 548,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 90,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -2074,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2128
+        },
+        {
+          "step": 560,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1860,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 60,
+          "next_sale_cash": 2816
+        },
+        {
+          "step": 564,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1837,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1882
+        },
+        {
+          "step": 568,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 83,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1935,
+          "planned_next_sale": 83,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1984
+        },
+        {
+          "step": 572,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 83,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1943,
+          "planned_next_sale": 83,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1990
+        },
+        {
+          "step": 608,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 55,
+          "new_request": 28,
+          "accepted_buy": 28,
+          "buy_cash": -1299,
+          "planned_next_sale": 55,
+          "accepted_next_sale": 55,
+          "next_sale_cash": 2561
+        },
+        {
+          "step": 620,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 79,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1798,
+          "planned_next_sale": 79,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1862
+        },
+        {
+          "step": 636,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 60,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1327,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1358
+        },
+        {
+          "step": 640,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 60,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1320,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1363
+        },
+        {
+          "step": 644,
+          "original_slot": 1,
+          "new_slot": 1,
+          "original_request": 60,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1337,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1367
+        }
+      ],
+      "escapes": [],
+      "changed_action_turns": 79,
+      "actual_wheat_buys": [
+        2011,
+        -88571
+      ],
+      "actual_wheat_sales": [
+        2304,
+        103687
+      ]
+    },
+    {
+      "arm": "wheat_both",
+      "seed": 588616997,
+      "seat": 0,
+      "stats": {
+        "eligible": 38,
+        "changed": 38,
+        "cut_units": 1420,
+        "moved": 20,
+        "errors": 0
+      },
+      "matches": [
+        {
+          "step": 296,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 48,
+          "new_request": 24,
+          "accepted_buy": 24,
+          "buy_cash": -1020,
+          "planned_next_sale": 48,
+          "accepted_next_sale": 48,
+          "next_sale_cash": 2048
+        },
+        {
+          "step": 300,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 48,
+          "new_request": 24,
+          "accepted_buy": 24,
+          "buy_cash": -999,
+          "planned_next_sale": 48,
+          "accepted_next_sale": 34,
+          "next_sale_cash": 1445
+        },
+        {
+          "step": 304,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 48,
+          "new_request": 24,
+          "accepted_buy": 24,
+          "buy_cash": -993,
+          "planned_next_sale": 48,
+          "accepted_next_sale": 24,
+          "next_sale_cash": 1022
+        },
+        {
+          "step": 316,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 60,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1255,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1286
+        },
+        {
+          "step": 324,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 63,
+          "new_request": 32,
+          "accepted_buy": 32,
+          "buy_cash": -1338,
+          "planned_next_sale": 63,
+          "accepted_next_sale": 32,
+          "next_sale_cash": 1386
+        },
+        {
+          "step": 348,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 59,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1278,
+          "planned_next_sale": 59,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1307
+        },
+        {
+          "step": 352,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 59,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1271,
+          "planned_next_sale": 59,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1309
+        },
+        {
+          "step": 356,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 71,
+          "new_request": 36,
+          "accepted_buy": 36,
+          "buy_cash": -1550,
+          "planned_next_sale": 71,
+          "accepted_next_sale": 36,
+          "next_sale_cash": 1589
+        },
+        {
+          "step": 364,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 77,
+          "new_request": 39,
+          "accepted_buy": 39,
+          "buy_cash": -1692,
+          "planned_next_sale": 77,
+          "accepted_next_sale": 47,
+          "next_sale_cash": 2083
+        },
+        {
+          "step": 368,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 89,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -1919,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2009
+        },
+        {
+          "step": 380,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 89,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -1942,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2024
+        },
+        {
+          "step": 388,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 74,
+          "new_request": 37,
+          "accepted_buy": 37,
+          "buy_cash": -1620,
+          "planned_next_sale": 74,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2012
+        },
+        {
+          "step": 396,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1736,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1804
+        },
+        {
+          "step": 404,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1740,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1808
+        },
+        {
+          "step": 416,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 89,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -1988,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 54,
+          "next_sale_cash": 2441
+        },
+        {
+          "step": 424,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 89,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -1988,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2045
+        },
+        {
+          "step": 440,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 73,
+          "new_request": 37,
+          "accepted_buy": 37,
+          "buy_cash": -1648,
+          "planned_next_sale": 73,
+          "accepted_next_sale": 50,
+          "next_sale_cash": 2265
+        },
+        {
+          "step": 444,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1751,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1820
+        },
+        {
+          "step": 448,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 82,
+          "new_request": 41,
+          "accepted_buy": 41,
+          "buy_cash": -1822,
+          "planned_next_sale": 82,
+          "accepted_next_sale": 43,
+          "next_sale_cash": 1954
+        },
+        {
+          "step": 460,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 81,
+          "new_request": 41,
+          "accepted_buy": 41,
+          "buy_cash": -1834,
+          "planned_next_sale": 81,
+          "accepted_next_sale": 52,
+          "next_sale_cash": 2368
+        },
+        {
+          "step": 468,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 84,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1848,
+          "planned_next_sale": 84,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1921
+        },
+        {
+          "step": 492,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 83,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1875,
+          "planned_next_sale": 83,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2080
+        },
+        {
+          "step": 496,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 84,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1900,
+          "planned_next_sale": 84,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1949
+        },
+        {
+          "step": 500,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 88,
+          "new_request": 44,
+          "accepted_buy": 44,
+          "buy_cash": -1998,
+          "planned_next_sale": 88,
+          "accepted_next_sale": 44,
+          "next_sale_cash": 2054
+        },
+        {
+          "step": 520,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 90,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -2031,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2110
+        },
+        {
+          "step": 524,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 90,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -2038,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2116
+        },
+        {
+          "step": 540,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 85,
+          "new_request": 43,
+          "accepted_buy": 43,
+          "buy_cash": -1975,
+          "planned_next_sale": 85,
+          "accepted_next_sale": 60,
+          "next_sale_cash": 2816
+        },
+        {
+          "step": 544,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 84,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1925,
+          "planned_next_sale": 84,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1974
+        },
+        {
+          "step": 548,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 90,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -2050,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2128
+        },
+        {
+          "step": 560,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1860,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 60,
+          "next_sale_cash": 2816
+        },
+        {
+          "step": 564,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1837,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1882
+        },
+        {
+          "step": 568,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 83,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1935,
+          "planned_next_sale": 83,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1984
+        },
+        {
+          "step": 572,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 83,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1943,
+          "planned_next_sale": 83,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1990
+        },
+        {
+          "step": 608,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 55,
+          "new_request": 28,
+          "accepted_buy": 28,
+          "buy_cash": -1288,
+          "planned_next_sale": 55,
+          "accepted_next_sale": 55,
+          "next_sale_cash": 2561
+        },
+        {
+          "step": 620,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 79,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1798,
+          "planned_next_sale": 79,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1862
+        },
+        {
+          "step": 636,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 60,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1317,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1358
+        },
+        {
+          "step": 640,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 60,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1320,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1363
+        },
+        {
+          "step": 644,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 60,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1325,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1367
+        }
+      ],
+      "escapes": [],
+      "changed_action_turns": 79,
+      "actual_wheat_buys": [
+        2011,
+        -88249
+      ],
+      "actual_wheat_sales": [
+        2304,
+        103687
+      ]
+    },
+    {
+      "arm": "wheat_both",
+      "seed": 588616997,
+      "seat": 1,
+      "stats": {
+        "eligible": 38,
+        "changed": 38,
+        "cut_units": 1420,
+        "moved": 20,
+        "errors": 0
+      },
+      "matches": [
+        {
+          "step": 296,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 48,
+          "new_request": 24,
+          "accepted_buy": 24,
+          "buy_cash": -1020,
+          "planned_next_sale": 48,
+          "accepted_next_sale": 48,
+          "next_sale_cash": 2048
+        },
+        {
+          "step": 300,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 48,
+          "new_request": 24,
+          "accepted_buy": 24,
+          "buy_cash": -999,
+          "planned_next_sale": 48,
+          "accepted_next_sale": 34,
+          "next_sale_cash": 1445
+        },
+        {
+          "step": 304,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 48,
+          "new_request": 24,
+          "accepted_buy": 24,
+          "buy_cash": -993,
+          "planned_next_sale": 48,
+          "accepted_next_sale": 24,
+          "next_sale_cash": 1022
+        },
+        {
+          "step": 316,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 60,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1255,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1286
+        },
+        {
+          "step": 324,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 63,
+          "new_request": 32,
+          "accepted_buy": 32,
+          "buy_cash": -1338,
+          "planned_next_sale": 63,
+          "accepted_next_sale": 32,
+          "next_sale_cash": 1386
+        },
+        {
+          "step": 348,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 59,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1278,
+          "planned_next_sale": 59,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1307
+        },
+        {
+          "step": 352,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 59,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1271,
+          "planned_next_sale": 59,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1309
+        },
+        {
+          "step": 356,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 71,
+          "new_request": 36,
+          "accepted_buy": 36,
+          "buy_cash": -1550,
+          "planned_next_sale": 71,
+          "accepted_next_sale": 36,
+          "next_sale_cash": 1589
+        },
+        {
+          "step": 364,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 77,
+          "new_request": 39,
+          "accepted_buy": 39,
+          "buy_cash": -1692,
+          "planned_next_sale": 77,
+          "accepted_next_sale": 47,
+          "next_sale_cash": 2083
+        },
+        {
+          "step": 368,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 89,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -1919,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2009
+        },
+        {
+          "step": 380,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 89,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -1942,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2024
+        },
+        {
+          "step": 388,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 74,
+          "new_request": 37,
+          "accepted_buy": 37,
+          "buy_cash": -1620,
+          "planned_next_sale": 74,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2012
+        },
+        {
+          "step": 396,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1736,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1804
+        },
+        {
+          "step": 404,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1740,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1808
+        },
+        {
+          "step": 416,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 89,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -1988,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 54,
+          "next_sale_cash": 2441
+        },
+        {
+          "step": 424,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 89,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -1988,
+          "planned_next_sale": 89,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2045
+        },
+        {
+          "step": 440,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 73,
+          "new_request": 37,
+          "accepted_buy": 37,
+          "buy_cash": -1648,
+          "planned_next_sale": 73,
+          "accepted_next_sale": 50,
+          "next_sale_cash": 2265
+        },
+        {
+          "step": 444,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1751,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1820
+        },
+        {
+          "step": 448,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 82,
+          "new_request": 41,
+          "accepted_buy": 41,
+          "buy_cash": -1822,
+          "planned_next_sale": 82,
+          "accepted_next_sale": 43,
+          "next_sale_cash": 1954
+        },
+        {
+          "step": 460,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 81,
+          "new_request": 41,
+          "accepted_buy": 41,
+          "buy_cash": -1834,
+          "planned_next_sale": 81,
+          "accepted_next_sale": 52,
+          "next_sale_cash": 2368
+        },
+        {
+          "step": 468,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 84,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1848,
+          "planned_next_sale": 84,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1921
+        },
+        {
+          "step": 492,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 83,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1875,
+          "planned_next_sale": 83,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2080
+        },
+        {
+          "step": 496,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 84,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1900,
+          "planned_next_sale": 84,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1949
+        },
+        {
+          "step": 500,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 88,
+          "new_request": 44,
+          "accepted_buy": 44,
+          "buy_cash": -1998,
+          "planned_next_sale": 88,
+          "accepted_next_sale": 44,
+          "next_sale_cash": 2054
+        },
+        {
+          "step": 520,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 90,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -2031,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2110
+        },
+        {
+          "step": 524,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 90,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -2038,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2116
+        },
+        {
+          "step": 540,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 85,
+          "new_request": 43,
+          "accepted_buy": 43,
+          "buy_cash": -1975,
+          "planned_next_sale": 85,
+          "accepted_next_sale": 60,
+          "next_sale_cash": 2816
+        },
+        {
+          "step": 544,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 84,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1925,
+          "planned_next_sale": 84,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1974
+        },
+        {
+          "step": 548,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 90,
+          "new_request": 45,
+          "accepted_buy": 45,
+          "buy_cash": -2050,
+          "planned_next_sale": 90,
+          "accepted_next_sale": 45,
+          "next_sale_cash": 2128
+        },
+        {
+          "step": 560,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1860,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 60,
+          "next_sale_cash": 2816
+        },
+        {
+          "step": 564,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 80,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1837,
+          "planned_next_sale": 80,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1882
+        },
+        {
+          "step": 568,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 83,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1935,
+          "planned_next_sale": 83,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1984
+        },
+        {
+          "step": 572,
+          "original_slot": 0,
+          "new_slot": 0,
+          "original_request": 83,
+          "new_request": 42,
+          "accepted_buy": 42,
+          "buy_cash": -1943,
+          "planned_next_sale": 83,
+          "accepted_next_sale": 42,
+          "next_sale_cash": 1990
+        },
+        {
+          "step": 608,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 55,
+          "new_request": 28,
+          "accepted_buy": 28,
+          "buy_cash": -1288,
+          "planned_next_sale": 55,
+          "accepted_next_sale": 55,
+          "next_sale_cash": 2561
+        },
+        {
+          "step": 620,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 79,
+          "new_request": 40,
+          "accepted_buy": 40,
+          "buy_cash": -1798,
+          "planned_next_sale": 79,
+          "accepted_next_sale": 40,
+          "next_sale_cash": 1862
+        },
+        {
+          "step": 636,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 60,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1317,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1358
+        },
+        {
+          "step": 640,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 60,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1320,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1363
+        },
+        {
+          "step": 644,
+          "original_slot": 1,
+          "new_slot": 0,
+          "original_request": 60,
+          "new_request": 30,
+          "accepted_buy": 30,
+          "buy_cash": -1325,
+          "planned_next_sale": 60,
+          "accepted_next_sale": 30,
+          "next_sale_cash": 1367
+        }
+      ],
+      "escapes": [],
+      "changed_action_turns": 79,
+      "actual_wheat_buys": [
+        2011,
+        -88249
+      ],
+      "actual_wheat_sales": [
+        2304,
+        103687
+      ]
+    },
+    {
+      "arm": "wheat_front",
+      "seed": 1045000,
+      "seat": 0,
+      "stats": {
+        "eligible": 0,
+        "changed": 0,
+        "cut_units": 0,
+        "moved": 0,
+        "errors": 0
+      },
+      "matches": [],
+      "escapes": [],
+      "changed_action_turns": 0,
+      "actual_wheat_buys": [
+        122,
+        -4382
+      ],
+      "actual_wheat_sales": [
+        304,
+        11703
+      ]
+    },
+    {
+      "arm": "wheat_front",
+      "seed": 1045000,
+      "seat": 1,
+      "stats": {
+        "eligible": 0,
+        "changed": 0,
+        "cut_units": 0,
+        "moved": 0,
+        "errors": 0
+      },
+      "matches": [],
+      "escapes": [],
+      "changed_action_turns": 0,
+      "actual_wheat_buys": [
+        122,
+        -4382
+      ],
+      "actual_wheat_sales": [
+        304,
+        11703
+      ]
+    },
+    {
+      "arm": "wheat_half",
+      "seed": 1045000,
+      "seat": 0,
+      "stats": {
+        "eligible": 0,
+        "changed": 0,
+        "cut_units": 0,
+        "moved": 0,
+        "errors": 0
+      },
+      "matches": [],
+      "escapes": [],
+      "changed_action_turns": 0,
+      "actual_wheat_buys": [
+        122,
+        -4382
+      ],
+      "actual_wheat_sales": [
+        304,
+        11703
+      ]
+    },
+    {
+      "arm": "wheat_half",
+      "seed": 1045000,
+      "seat": 1,
+      "stats": {
+        "eligible": 0,
+        "changed": 0,
+        "cut_units": 0,
+        "moved": 0,
+        "errors": 0
+      },
+      "matches": [],
+      "escapes": [],
+      "changed_action_turns": 0,
+      "actual_wheat_buys": [
+        122,
+        -4382
+      ],
+      "actual_wheat_sales": [
+        304,
+        11703
+      ]
+    },
+    {
+      "arm": "wheat_both",
+      "seed": 1045000,
+      "seat": 0,
+      "stats": {
+        "eligible": 0,
+        "changed": 0,
+        "cut_units": 0,
+        "moved": 0,
+        "errors": 0
+      },
+      "matches": [],
+      "escapes": [],
+      "changed_action_turns": 0,
+      "actual_wheat_buys": [
+        122,
+        -4382
+      ],
+      "actual_wheat_sales": [
+        304,
+        11703
+      ]
+    },
+    {
+      "arm": "wheat_both",
+      "seed": 1045000,
+      "seat": 1,
+      "stats": {
+        "eligible": 0,
+        "changed": 0,
+        "cut_units": 0,
+        "moved": 0,
+        "errors": 0
+      },
+      "matches": [],
+      "escapes": [],
+      "changed_action_turns": 0,
+      "actual_wheat_buys": [
+        122,
+        -4382
+      ],
+      "actual_wheat_sales": [
+        304,
+        11703
+      ]
+    },
+    {
+      "arm": "wheat_front",
+      "seed": 1028000,
+      "seat": 0,
+      "stats": {
+        "eligible": 0,
+        "changed": 0,
+        "cut_units": 0,
+        "moved": 0,
+        "errors": 0
+      },
+      "matches": [],
+      "escapes": [],
+      "changed_action_turns": 0,
+      "actual_wheat_buys": [
+        128,
+        -4645
+      ],
+      "actual_wheat_sales": [
+        408,
+        16064
+      ]
+    },
+    {
+      "arm": "wheat_front",
+      "seed": 1028000,
+      "seat": 1,
+      "stats": {
+        "eligible": 0,
+        "changed": 0,
+        "cut_units": 0,
+        "moved": 0,
+        "errors": 0
+      },
+      "matches": [],
+      "escapes": [],
+      "changed_action_turns": 0,
+      "actual_wheat_buys": [
+        128,
+        -4645
+      ],
+      "actual_wheat_sales": [
+        408,
+        16064
+      ]
+    },
+    {
+      "arm": "wheat_half",
+      "seed": 1028000,
+      "seat": 0,
+      "stats": {
+        "eligible": 0,
+        "changed": 0,
+        "cut_units": 0,
+        "moved": 0,
+        "errors": 0
+      },
+      "matches": [],
+      "escapes": [],
+      "changed_action_turns": 0,
+      "actual_wheat_buys": [
+        128,
+        -4645
+      ],
+      "actual_wheat_sales": [
+        408,
+        16064
+      ]
+    },
+    {
+      "arm": "wheat_half",
+      "seed": 1028000,
+      "seat": 1,
+      "stats": {
+        "eligible": 0,
+        "changed": 0,
+        "cut_units": 0,
+        "moved": 0,
+        "errors": 0
+      },
+      "matches": [],
+      "escapes": [],
+      "changed_action_turns": 0,
+      "actual_wheat_buys": [
+        128,
+        -4645
+      ],
+      "actual_wheat_sales": [
+        408,
+        16064
+      ]
+    },
+    {
+      "arm": "wheat_both",
+      "seed": 1028000,
+      "seat": 0,
+      "stats": {
+        "eligible": 0,
+        "changed": 0,
+        "cut_units": 0,
+        "moved": 0,
+        "errors": 0
+      },
+      "matches": [],
+      "escapes": [],
+      "changed_action_turns": 0,
+      "actual_wheat_buys": [
+        128,
+        -4645
+      ],
+      "actual_wheat_sales": [
+        408,
+        16064
+      ]
+    },
+    {
+      "arm": "wheat_both",
+      "seed": 1028000,
+      "seat": 1,
+      "stats": {
+        "eligible": 0,
+        "changed": 0,
+        "cut_units": 0,
+        "moved": 0,
+        "errors": 0
+      },
+      "matches": [],
+      "escapes": [],
+      "changed_action_turns": 0,
+      "actual_wheat_buys": [
+        128,
+        -4645
+      ],
+      "actual_wheat_sales": [
+        408,
+        16064
+      ]
+    }
+  ]
+}
