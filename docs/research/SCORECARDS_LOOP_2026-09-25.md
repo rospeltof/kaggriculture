@@ -1,5 +1,46 @@
 # Scorecards del loop continuo — 2026-09-25 UTC
 
+## Corte operativo 10:08 UTC — 29 validado y feedback real actualizado
+
+Confirm20 continúa (3.200episodios previstos);21–29esperan en secuencia.
+No duplicar ni reiniciar runners.29:48desarrollos/noop8.628/max331ms, los
+cuatro brazos activos6/6,368compras/cierres y13.720unidades exactas. Conservan
+trabajo/cosechas/pérdidas/tiendas en esta cuadrícula, cero escapes; sin cambios
+W/L/T. Dos fuentesVQ nuevas y dos top3reutilizadas;99variantes más2prototipos.
+Ver REVENTA_DOS_PADRES y preregistro29. Piloto1.568después de28, sin autoenvío.
+
+API10:02:07UTC:VQ2295,1/98episodios listados;top32135,7/88, COMPLETE. Siete
+replays nuevos reproducidos719acciones/720estados/caja, max214ms, cero errores
+observados/escapes/productos terminales propios. Alternativas contra rival
+fijo: top3mejora cinco márgenes, empeora dos; Farmerjay851→−340. Esto no mide
+respuesta reactiva ni fuerza poblacional. Leer FEEDBACK_1003; ninguna nueva
+submission. Las verificaciones de28/29y los diagnósticos están cerrados.
+
+## Corte operativo 10:01 UTC — confirm20 activa, 28 validado, 29 en desarrollo
+
+Pilot20 cerró1.920episodios/noop448: los tres tamaños+3,125pp, intervalos
+cruzan0, cuatro celdas mejores en tres semillas. Town20/50 seleccionadas por
+regla previa; confirm20 corre3.200juegos. No consultar deltas parciales ni
+reiniciar.21–28esperan en secuencia;28ya verificó sus fuentes congeladas.
+
+Auditoría20:12partidas exactas,150compras/cierres y7.722unidades conciliadas.
+Town20/50 conservan alimento/cosechas en los tres casos; town80pierde dos
+huevos en1049013. Los efectos sobre ventas nativas/rival impiden identificar
+todo el margen como beneficio aislado. Leer REVENTA_TOWN.
+
+Loop28: cuatro máscaras de evidencia negativa sobreVQ/top3;48desarrollos,
+noop8.628, max407ms,86.160checks y40.306pares floorobservables físicamente
+verificados. Todas activas; cero cambiosW/L/T. En mundoNiA, VQproduce una lana
+más pero empeora margen. No se combina arreglo27. Piloto1.568tras27; informe
+CENSURA_FORECAST y preregistro28.99variantes construidas más2prototipos17:
+las dos últimas son reventasVQ del loop29, todavía SIN validación/cola.
+
+Loop29 preinscrito antes de construir: factorial padresVQ/top3 × tamaños20/50,
+48desarrollos frente aV7corriendo; reutiliza fuentes top3exactas de20. Panel
+cercano y ambas referencias reales, no cambiar confirm20 ni sumar N. Leer
+preregistro29. Catálogo público09:49:34UTC:50entradas sin cambios vs09:01.
+Último snapshot de ladder sigue09:13UTC; sin nueva consulta ni envío.
+
 Estado09:28UTC: confirm19_fixedhash0 completa3.200/noop832. Ambas delta0,
 no seleccionadas; seis acciones propias distintas por brazo, tres semillas.
 Pilot20corriendo;21–27en cola;27validado72juegos;17detenido. Objetivo activo.

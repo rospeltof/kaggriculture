@@ -4,6 +4,19 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, loop20 piloto] Reventa nueva: señal positiva, todavía incierta.**
+  Tres tamaños+3,125pp en1.920episodios, ICdos vías[−4,647;10,897]; cuatro
+  celdas mejores en tres semillas. IgualesW/L/T no implica acciones iguales.
+ 150cierres/7.722unidades exactas en12diagnósticos; tamaño80pierde dos huevos
+  en un caso. No extrapolar preservación productiva ni beneficio garantizado.
+  Town20/50 en confirmación disjunta; revisión REVENTA_TOWN.
+- **[2026-09-25, loop28 desarrollo] Ausencia de observación no siempre es evidencia negativa.**
+  El ranking nativo penaliza ventas de biblioteca ausentes aun cuando su filtro
+  no observaba ese producto/turno. Auditoría reproduce1.650forecasts;48juegos
+  verifican máscaras/controles y acciones distintas. Todos conservanW/L/T,
+  algunas variantes empeoran margen y una aumenta producción. La corrección
+  estadística intuitiva tampoco demuestra ventaja estratégica. Ver CENSURA_FORECAST.
+
 - **[2026-09-25, desarrollo27] Inferencia más fiel no asegura estrategia mejor.**
   Sincronizar el snapshot elimina64eventos falsos de padres en los desarrollos
   auditados; las candidatas tienen0.72juegos/noop17.256,120.792cantidades propias

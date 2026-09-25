@@ -1,0 +1,88 @@
+{
+  "seeds": [
+    1071000,
+    1071001,
+    2111590720
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "expected_games": 48,
+  "runtime_hash_seed": "0",
+  "opponent": {
+    "path": "results/publicos_0548_20260925/haideptry_the-2965-master-hybrid-engine/main.py",
+    "sha256": "cda529cb6b359fc4a9ab124d4d7950d5912bd5de846dcec4be70ca83b7150b2d"
+  },
+  "agents": {
+    "base": {
+      "path": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "top3": {
+      "path": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "censor_native_vq": {
+      "path": "results/censura_forecast_20260925/censor_native_vq.py",
+      "sha256": "bb52c26a2011878e46135cc57553b476c3ead0bda1d08a607f13926619b83b5f",
+      "config": {
+        "parent": "vq",
+        "mode": "native",
+        "enabled": true
+      },
+      "behavior_reference": "base"
+    },
+    "censor_floor_vq": {
+      "path": "results/censura_forecast_20260925/censor_floor_vq.py",
+      "sha256": "86b4a857d7724472dad3ebf756e5f2e7ffb76d452946594fa2851cafe407ffee",
+      "config": {
+        "parent": "vq",
+        "mode": "floor",
+        "enabled": true
+      },
+      "behavior_reference": "base"
+    },
+    "censor_noop_vq": {
+      "path": "results/censura_forecast_20260925/censor_noop_vq.py",
+      "sha256": "c3d1326c7d9b4947903b831ebf305dc5996e0bd61bd7fa2fe61b5e1ed92bf6cd",
+      "config": {
+        "parent": "vq",
+        "mode": "native",
+        "enabled": false
+      },
+      "behavior_reference": "base"
+    },
+    "censor_native_top3": {
+      "path": "results/censura_forecast_20260925/censor_native_top3.py",
+      "sha256": "d4a8074e41e2484e384f2c4cb94cb40028adf9ef2f116da0c291f7b54a41ea19",
+      "config": {
+        "parent": "top3",
+        "mode": "native",
+        "enabled": true
+      },
+      "behavior_reference": "top3"
+    },
+    "censor_floor_top3": {
+      "path": "results/censura_forecast_20260925/censor_floor_top3.py",
+      "sha256": "ba531a69a53f3b3ca33dcb739e39b0332ad7f9b79a291b38a2e60fff3be019e7",
+      "config": {
+        "parent": "top3",
+        "mode": "floor",
+        "enabled": true
+      },
+      "behavior_reference": "top3"
+    },
+    "censor_noop_top3": {
+      "path": "results/censura_forecast_20260925/censor_noop_top3.py",
+      "sha256": "70f7511fdbf960e6217732879bd8ddbd41e7982f7184ae92207b2ee09752e46e",
+      "config": {
+        "parent": "top3",
+        "mode": "native",
+        "enabled": false
+      },
+      "behavior_reference": "top3"
+    }
+  },
+  "purpose": "Registered native/floor observation masks. Reactive mechanics and inference integrity, no reward selection."
+}

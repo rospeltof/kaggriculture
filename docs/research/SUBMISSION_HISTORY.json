@@ -498,9 +498,9 @@
     },
     "reason": "VQ validada contra copias; arshs3 transfiere al ladder (2292.5 vs v13 1857.9). Desplaza v13, preserva arshs3 como referencia activa.",
     "leaderboard": {
-      "score": 2290.3,
+      "score": 2295.1,
       "rank": null,
-      "episodes": 95,
+      "episodes": 98,
       "lecturas": [
         [
           "initial",
@@ -584,15 +584,20 @@
           "2026-09-25T09:13:39.355921+00:00",
           2290.3,
           95
+        ],
+        [
+          "2026-09-25T10:02:07.123076+00:00",
+          2295.1,
+          98
         ]
       ],
       "status": "SubmissionStatus.COMPLETE"
     },
     "delta_vs_champion_ladder": null,
-    "observed": "COMPLETE, snapshot 2026-09-25T09:13:39.355921+00:00: score2290.3, 95 episodios listados (incluye validación). Seis replays0914exactos; muestra por recencia, no WRglobal.",
+    "observed": "COMPLETE, snapshot 2026-09-25T10:02:07.123076+00:00: score2295.1, 98 episodios listados (incluye validación). Siete nuevos replays1003reproducidos exactos y siete alternativas contra rival fijo; muestra de recencia, no WRglobal.",
     "conclusion": "REAL_WORLD_CANDIDATE; ventaja local específica contra copias, sin promoción automática",
-    "next_action": "Confirm19_fixedhash0válida: delta0, sin envío.20corriendo;21–27en cola.27validado72juegos tras adenda de cobertura, sin ventaja W/L/T demostrada. Revisar ambas referencias reales y hashes alternativos antes de desplazarVQ.",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0914.json"
+    "next_action": "Confirm20 activa;21–29en cola.28/29validados48partidas cada uno. Siete controles reales1003exactos y siete alternativas contra rival fijo; no explicación causal de rating. Revisar ambas referencias reales y hashes alternativos antes de desplazarVQ.",
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_1003.json"
   },
   {
     "submission_id": 56537205,
@@ -728,8 +733,8 @@
     },
     "reason": "Cumple gate registrado: delta>=3pp, ningún rival<-20pp, cero errores, revisión de mecanismos y runtime. Prueba real autorizada.",
     "leaderboard": {
-      "score": 2119.0,
-      "episodes": 84,
+      "score": 2135.7,
+      "episodes": 88,
       "status": "SubmissionStatus.COMPLETE",
       "lecturas": [
         [
@@ -791,15 +796,20 @@
           "2026-09-25T09:13:39.355921+00:00",
           2119.0,
           84
+        ],
+        [
+          "2026-09-25T10:02:07.123076+00:00",
+          2135.7,
+          88
         ]
       ]
     },
-    "observed": "COMPLETE, snapshot 2026-09-25T09:13:39.355921+00:00: score2119.0, 84 episodios listados (incluye validación). Seis replays0914exactos; muestra por recencia, no WRglobal.",
+    "observed": "COMPLETE, snapshot 2026-09-25T10:02:07.123076+00:00: score2135.7, 88 episodios listados (incluye validación). Siete nuevos replays1003reproducidos exactos y siete alternativas contra rival fijo; muestra de recencia, no WRglobal.",
     "conclusion": "REAL_WORLD_CANDIDATE; no CHAMPION",
-    "next_action": "Confirm19_fixedhash0válida: delta0, sin envío.20corriendo;21–27en cola.27validado72juegos tras adenda de cobertura, sin ventaja W/L/T demostrada. Revisar ambas referencias reales y hashes alternativos antes de desplazarVQ.",
+    "next_action": "Confirm20 activa;21–29en cola.28/29validados48partidas cada uno. Siete controles reales1003exactos y siete alternativas contra rival fijo; no explicación causal de rating. Revisar ambas referencias reales y hashes alternativos antes de desplazarVQ.",
     "replaces_submission": 56511619,
     "preserves_submission": 56535264,
     "evidence": "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0914.json"
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_1003.json"
   }
 ]

@@ -1,0 +1,1666 @@
+{
+  "games": 12,
+  "candidate_games": 9,
+  "operations": 150,
+  "units_bought": 7722,
+  "units_sold": 7722,
+  "results": [
+    {
+      "case": "improved_1049004",
+      "arm": "town20",
+      "seed": 1049004,
+      "opponent": "tds",
+      "margin_before": -8.0,
+      "margin_after": 31.0,
+      "own_cash_delta": 39.0,
+      "rival_cash_delta": 0.0,
+      "flow_delta": {
+        "BUY_PRODUCT:WHEAT": [
+          200,
+          -8469
+        ],
+        "SELL:WHEAT": [
+          200,
+          8508
+        ]
+      },
+      "operations": [
+        {
+          "buy_step": 308,
+          "close_step": 309,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -815,
+          "received": 819
+        },
+        {
+          "buy_step": 328,
+          "close_step": 329,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 9,
+          "paid": -828,
+          "received": 832
+        },
+        {
+          "buy_step": 332,
+          "close_step": 333,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -832,
+          "received": 836
+        },
+        {
+          "buy_step": 348,
+          "close_step": 349,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 9,
+          "paid": -840,
+          "received": 841
+        },
+        {
+          "buy_step": 376,
+          "close_step": 377,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -854,
+          "received": 859
+        },
+        {
+          "buy_step": 420,
+          "close_step": 421,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -869,
+          "received": 874
+        },
+        {
+          "buy_step": 424,
+          "close_step": 425,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -874,
+          "received": 879
+        },
+        {
+          "buy_step": 436,
+          "close_step": 437,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -877,
+          "received": 880
+        },
+        {
+          "buy_step": 448,
+          "close_step": 449,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -880,
+          "received": 883
+        },
+        {
+          "buy_step": 660,
+          "close_step": 661,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -800,
+          "received": 805
+        }
+      ],
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "harvest_delta": {},
+      "same_shops": true,
+      "same_additions": true,
+      "escapes": []
+    },
+    {
+      "case": "improved_1049004",
+      "arm": "town50",
+      "seed": 1049004,
+      "opponent": "tds",
+      "margin_before": -8.0,
+      "margin_after": 79.0,
+      "own_cash_delta": 87.0,
+      "rival_cash_delta": 0.0,
+      "flow_delta": {
+        "BUY_PRODUCT:WHEAT": [
+          550,
+          -23452
+        ],
+        "SELL:WHEAT": [
+          550,
+          23539
+        ]
+      },
+      "operations": [
+        {
+          "buy_step": 308,
+          "close_step": 309,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2058,
+          "received": 2066
+        },
+        {
+          "buy_step": 316,
+          "close_step": 317,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2072,
+          "received": 2076
+        },
+        {
+          "buy_step": 328,
+          "close_step": 329,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 9,
+          "paid": -2092,
+          "received": 2100
+        },
+        {
+          "buy_step": 332,
+          "close_step": 333,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2100,
+          "received": 2108
+        },
+        {
+          "buy_step": 348,
+          "close_step": 349,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 9,
+          "paid": -2127,
+          "received": 2131
+        },
+        {
+          "buy_step": 376,
+          "close_step": 377,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2152,
+          "received": 2162
+        },
+        {
+          "buy_step": 420,
+          "close_step": 421,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2190,
+          "received": 2200
+        },
+        {
+          "buy_step": 424,
+          "close_step": 425,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2200,
+          "received": 2210
+        },
+        {
+          "buy_step": 436,
+          "close_step": 437,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2206,
+          "received": 2215
+        },
+        {
+          "buy_step": 448,
+          "close_step": 449,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2227,
+          "received": 2233
+        },
+        {
+          "buy_step": 660,
+          "close_step": 661,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2028,
+          "received": 2038
+        }
+      ],
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "harvest_delta": {},
+      "same_shops": true,
+      "same_additions": true,
+      "escapes": []
+    },
+    {
+      "case": "improved_1049004",
+      "arm": "town80",
+      "seed": 1049004,
+      "opponent": "tds",
+      "margin_before": -8.0,
+      "margin_after": 113.0,
+      "own_cash_delta": 121.0,
+      "rival_cash_delta": 0.0,
+      "flow_delta": {
+        "BUY_PRODUCT:WHEAT": [
+          848,
+          -36446
+        ],
+        "SELL:WHEAT": [
+          848,
+          36567
+        ]
+      },
+      "operations": [
+        {
+          "buy_step": 308,
+          "close_step": 309,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 19,
+          "paid": -3327,
+          "received": 3339
+        },
+        {
+          "buy_step": 316,
+          "close_step": 317,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3350,
+          "received": 3358
+        },
+        {
+          "buy_step": 328,
+          "close_step": 329,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 9,
+          "paid": -3382,
+          "received": 3392
+        },
+        {
+          "buy_step": 332,
+          "close_step": 333,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 14,
+          "paid": -3392,
+          "received": 3404
+        },
+        {
+          "buy_step": 348,
+          "close_step": 349,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 9,
+          "paid": -3438,
+          "received": 3446
+        },
+        {
+          "buy_step": 376,
+          "close_step": 377,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3472,
+          "received": 3487
+        },
+        {
+          "buy_step": 420,
+          "close_step": 421,
+          "bought": 78,
+          "sold": 78,
+          "inherited": 0,
+          "paid": -3450,
+          "received": 3460
+        },
+        {
+          "buy_step": 424,
+          "close_step": 425,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3550,
+          "received": 3561
+        },
+        {
+          "buy_step": 436,
+          "close_step": 437,
+          "bought": 65,
+          "sold": 65,
+          "inherited": 0,
+          "paid": -2881,
+          "received": 2890
+        },
+        {
+          "buy_step": 448,
+          "close_step": 449,
+          "bought": 69,
+          "sold": 69,
+          "inherited": 0,
+          "paid": -3088,
+          "received": 3100
+        },
+        {
+          "buy_step": 660,
+          "close_step": 661,
+          "bought": 76,
+          "sold": 76,
+          "inherited": 0,
+          "paid": -3116,
+          "received": 3130
+        }
+      ],
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "harvest_delta": {},
+      "same_shops": true,
+      "same_additions": true,
+      "escapes": []
+    },
+    {
+      "case": "improved_1049010",
+      "arm": "town20",
+      "seed": 1049010,
+      "opponent": "hybu",
+      "margin_before": -45.0,
+      "margin_after": 47.0,
+      "own_cash_delta": 96.0,
+      "rival_cash_delta": 4.0,
+      "flow_delta": {
+        "BUY_PRODUCT:WHEAT": [
+          460,
+          -19428
+        ],
+        "SELL:FERTILIZER": [
+          0,
+          16
+        ],
+        "SELL:STRAWBERRY": [
+          0,
+          -21
+        ],
+        "SELL:WHEAT": [
+          460,
+          19529
+        ]
+      },
+      "operations": [
+        {
+          "buy_step": 308,
+          "close_step": 309,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -776,
+          "received": 779
+        },
+        {
+          "buy_step": 316,
+          "close_step": 317,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -805,
+          "received": 808
+        },
+        {
+          "buy_step": 328,
+          "close_step": 329,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -814,
+          "received": 817
+        },
+        {
+          "buy_step": 332,
+          "close_step": 333,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -817,
+          "received": 820
+        },
+        {
+          "buy_step": 352,
+          "close_step": 353,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -821,
+          "received": 824
+        },
+        {
+          "buy_step": 376,
+          "close_step": 377,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -832,
+          "received": 836
+        },
+        {
+          "buy_step": 380,
+          "close_step": 381,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -836,
+          "received": 840
+        },
+        {
+          "buy_step": 388,
+          "close_step": 389,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -831,
+          "received": 835
+        },
+        {
+          "buy_step": 392,
+          "close_step": 393,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -835,
+          "received": 839
+        },
+        {
+          "buy_step": 396,
+          "close_step": 397,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -839,
+          "received": 840
+        },
+        {
+          "buy_step": 420,
+          "close_step": 421,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -844,
+          "received": 848
+        },
+        {
+          "buy_step": 436,
+          "close_step": 437,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -858,
+          "received": 860
+        },
+        {
+          "buy_step": 448,
+          "close_step": 449,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -860,
+          "received": 862
+        },
+        {
+          "buy_step": 460,
+          "close_step": 461,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -859,
+          "received": 860
+        },
+        {
+          "buy_step": 472,
+          "close_step": 473,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -860,
+          "received": 863
+        },
+        {
+          "buy_step": 484,
+          "close_step": 485,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -844,
+          "received": 849
+        },
+        {
+          "buy_step": 488,
+          "close_step": 489,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -849,
+          "received": 854
+        },
+        {
+          "buy_step": 496,
+          "close_step": 497,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -859,
+          "received": 860
+        },
+        {
+          "buy_step": 532,
+          "close_step": 533,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -865,
+          "received": 871
+        },
+        {
+          "buy_step": 536,
+          "close_step": 537,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -871,
+          "received": 877
+        },
+        {
+          "buy_step": 568,
+          "close_step": 569,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -882,
+          "received": 888
+        },
+        {
+          "buy_step": 572,
+          "close_step": 573,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 6,
+          "paid": -888,
+          "received": 894
+        },
+        {
+          "buy_step": 592,
+          "close_step": 593,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 12,
+          "paid": -883,
+          "received": 889
+        }
+      ],
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "harvest_delta": {},
+      "same_shops": true,
+      "same_additions": true,
+      "escapes": []
+    },
+    {
+      "case": "improved_1049010",
+      "arm": "town50",
+      "seed": 1049010,
+      "opponent": "hybu",
+      "margin_before": -45.0,
+      "margin_after": 166.0,
+      "own_cash_delta": 208.0,
+      "rival_cash_delta": -3.0,
+      "flow_delta": {
+        "BUY_PRODUCT:WHEAT": [
+          1450,
+          -62084
+        ],
+        "SELL:FERTILIZER": [
+          0,
+          29
+        ],
+        "SELL:STRAWBERRY": [
+          0,
+          -21
+        ],
+        "SELL:WHEAT": [
+          1450,
+          62284
+        ]
+      },
+      "operations": [
+        {
+          "buy_step": 308,
+          "close_step": 309,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -1964,
+          "received": 1970
+        },
+        {
+          "buy_step": 316,
+          "close_step": 317,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2038,
+          "received": 2044
+        },
+        {
+          "buy_step": 328,
+          "close_step": 329,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2056,
+          "received": 2062
+        },
+        {
+          "buy_step": 332,
+          "close_step": 333,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 12,
+          "paid": -2062,
+          "received": 2068
+        },
+        {
+          "buy_step": 352,
+          "close_step": 353,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2081,
+          "received": 2084
+        },
+        {
+          "buy_step": 376,
+          "close_step": 377,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2100,
+          "received": 2108
+        },
+        {
+          "buy_step": 380,
+          "close_step": 381,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 28,
+          "paid": -2108,
+          "received": 2116
+        },
+        {
+          "buy_step": 388,
+          "close_step": 389,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2098,
+          "received": 2106
+        },
+        {
+          "buy_step": 392,
+          "close_step": 393,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2106,
+          "received": 2114
+        },
+        {
+          "buy_step": 396,
+          "close_step": 397,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2114,
+          "received": 2119
+        },
+        {
+          "buy_step": 412,
+          "close_step": 413,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2126,
+          "received": 2130
+        },
+        {
+          "buy_step": 420,
+          "close_step": 421,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2134,
+          "received": 2140
+        },
+        {
+          "buy_step": 436,
+          "close_step": 437,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2160,
+          "received": 2167
+        },
+        {
+          "buy_step": 448,
+          "close_step": 449,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2177,
+          "received": 2182
+        },
+        {
+          "buy_step": 460,
+          "close_step": 461,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2162,
+          "received": 2168
+        },
+        {
+          "buy_step": 464,
+          "close_step": 465,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2168,
+          "received": 2173
+        },
+        {
+          "buy_step": 472,
+          "close_step": 473,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2178,
+          "received": 2183
+        },
+        {
+          "buy_step": 484,
+          "close_step": 485,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2134,
+          "received": 2142
+        },
+        {
+          "buy_step": 488,
+          "close_step": 489,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2142,
+          "received": 2152
+        },
+        {
+          "buy_step": 496,
+          "close_step": 497,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2162,
+          "received": 2168
+        },
+        {
+          "buy_step": 508,
+          "close_step": 509,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2174,
+          "received": 2180
+        },
+        {
+          "buy_step": 532,
+          "close_step": 533,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2185,
+          "received": 2194
+        },
+        {
+          "buy_step": 536,
+          "close_step": 537,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2194,
+          "received": 2206
+        },
+        {
+          "buy_step": 568,
+          "close_step": 569,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2232,
+          "received": 2238
+        },
+        {
+          "buy_step": 572,
+          "close_step": 573,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 36,
+          "paid": -2238,
+          "received": 2248
+        },
+        {
+          "buy_step": 580,
+          "close_step": 581,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 12,
+          "paid": -2215,
+          "received": 2221
+        },
+        {
+          "buy_step": 592,
+          "close_step": 593,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2233,
+          "received": 2239
+        },
+        {
+          "buy_step": 628,
+          "close_step": 629,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2171,
+          "received": 2177
+        },
+        {
+          "buy_step": 660,
+          "close_step": 661,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2172,
+          "received": 2178
+        }
+      ],
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "harvest_delta": {},
+      "same_shops": true,
+      "same_additions": true,
+      "escapes": []
+    },
+    {
+      "case": "improved_1049010",
+      "arm": "town80",
+      "seed": 1049010,
+      "opponent": "hybu",
+      "margin_before": -45.0,
+      "margin_after": 268.0,
+      "own_cash_delta": 310.0,
+      "rival_cash_delta": -3.0,
+      "flow_delta": {
+        "BUY_PRODUCT:WHEAT": [
+          2233,
+          -96414
+        ],
+        "SELL:FERTILIZER": [
+          0,
+          29
+        ],
+        "SELL:STRAWBERRY": [
+          0,
+          -21
+        ],
+        "SELL:WHEAT": [
+          2233,
+          96716
+        ]
+      },
+      "operations": [
+        {
+          "buy_step": 308,
+          "close_step": 309,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 21,
+          "paid": -3182,
+          "received": 3191
+        },
+        {
+          "buy_step": 316,
+          "close_step": 317,
+          "bought": 78,
+          "sold": 78,
+          "inherited": 0,
+          "paid": -3214,
+          "received": 3220
+        },
+        {
+          "buy_step": 328,
+          "close_step": 329,
+          "bought": 78,
+          "sold": 78,
+          "inherited": 0,
+          "paid": -3238,
+          "received": 3247
+        },
+        {
+          "buy_step": 332,
+          "close_step": 333,
+          "bought": 78,
+          "sold": 78,
+          "inherited": 40,
+          "paid": -3247,
+          "received": 3256
+        },
+        {
+          "buy_step": 352,
+          "close_step": 353,
+          "bought": 79,
+          "sold": 79,
+          "inherited": 0,
+          "paid": -3325,
+          "received": 3331
+        },
+        {
+          "buy_step": 376,
+          "close_step": 377,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3392,
+          "received": 3404
+        },
+        {
+          "buy_step": 380,
+          "close_step": 381,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 58,
+          "paid": -3404,
+          "received": 3416
+        },
+        {
+          "buy_step": 388,
+          "close_step": 389,
+          "bought": 78,
+          "sold": 78,
+          "inherited": 0,
+          "paid": -3302,
+          "received": 3313
+        },
+        {
+          "buy_step": 392,
+          "close_step": 393,
+          "bought": 78,
+          "sold": 78,
+          "inherited": 0,
+          "paid": -3313,
+          "received": 3325
+        },
+        {
+          "buy_step": 396,
+          "close_step": 397,
+          "bought": 78,
+          "sold": 78,
+          "inherited": 0,
+          "paid": -3325,
+          "received": 3334
+        },
+        {
+          "buy_step": 412,
+          "close_step": 413,
+          "bought": 75,
+          "sold": 75,
+          "inherited": 0,
+          "paid": -3216,
+          "received": 3224
+        },
+        {
+          "buy_step": 420,
+          "close_step": 421,
+          "bought": 75,
+          "sold": 75,
+          "inherited": 0,
+          "paid": -3232,
+          "received": 3240
+        },
+        {
+          "buy_step": 436,
+          "close_step": 437,
+          "bought": 67,
+          "sold": 67,
+          "inherited": 0,
+          "paid": -2908,
+          "received": 2915
+        },
+        {
+          "buy_step": 448,
+          "close_step": 449,
+          "bought": 67,
+          "sold": 67,
+          "inherited": 0,
+          "paid": -2931,
+          "received": 2941
+        },
+        {
+          "buy_step": 460,
+          "close_step": 461,
+          "bought": 72,
+          "sold": 72,
+          "inherited": 0,
+          "paid": -3130,
+          "received": 3138
+        },
+        {
+          "buy_step": 464,
+          "close_step": 465,
+          "bought": 72,
+          "sold": 72,
+          "inherited": 0,
+          "paid": -3138,
+          "received": 3148
+        },
+        {
+          "buy_step": 472,
+          "close_step": 473,
+          "bought": 70,
+          "sold": 70,
+          "inherited": 0,
+          "paid": -3068,
+          "received": 3078
+        },
+        {
+          "buy_step": 484,
+          "close_step": 485,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3452,
+          "received": 3462
+        },
+        {
+          "buy_step": 488,
+          "close_step": 489,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3462,
+          "received": 3472
+        },
+        {
+          "buy_step": 496,
+          "close_step": 497,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3487,
+          "received": 3498
+        },
+        {
+          "buy_step": 508,
+          "close_step": 509,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3510,
+          "received": 3522
+        },
+        {
+          "buy_step": 532,
+          "close_step": 533,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3532,
+          "received": 3544
+        },
+        {
+          "buy_step": 536,
+          "close_step": 537,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3544,
+          "received": 3556
+        },
+        {
+          "buy_step": 568,
+          "close_step": 569,
+          "bought": 76,
+          "sold": 76,
+          "inherited": 0,
+          "paid": -3420,
+          "received": 3432
+        },
+        {
+          "buy_step": 572,
+          "close_step": 573,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 66,
+          "paid": -3616,
+          "received": 3628
+        },
+        {
+          "buy_step": 580,
+          "close_step": 581,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 12,
+          "paid": -3570,
+          "received": 3582
+        },
+        {
+          "buy_step": 592,
+          "close_step": 593,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3606,
+          "received": 3618
+        },
+        {
+          "buy_step": 628,
+          "close_step": 629,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3504,
+          "received": 3516
+        },
+        {
+          "buy_step": 660,
+          "close_step": 661,
+          "bought": 72,
+          "sold": 72,
+          "inherited": 0,
+          "paid": -3146,
+          "received": 3158
+        }
+      ],
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "harvest_delta": {},
+      "same_shops": true,
+      "same_additions": true,
+      "escapes": []
+    },
+    {
+      "case": "improved_1049013",
+      "arm": "town20",
+      "seed": 1049013,
+      "opponent": "tds",
+      "margin_before": -33.0,
+      "margin_after": 8.0,
+      "own_cash_delta": 41.0,
+      "rival_cash_delta": 0.0,
+      "flow_delta": {
+        "BUY_PRODUCT:WHEAT": [
+          180,
+          -7769
+        ],
+        "SELL:WHEAT": [
+          180,
+          7810
+        ]
+      },
+      "operations": [
+        {
+          "buy_step": 308,
+          "close_step": 309,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -813,
+          "received": 817
+        },
+        {
+          "buy_step": 328,
+          "close_step": 329,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -826,
+          "received": 830
+        },
+        {
+          "buy_step": 332,
+          "close_step": 333,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -830,
+          "received": 834
+        },
+        {
+          "buy_step": 356,
+          "close_step": 357,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -843,
+          "received": 847
+        },
+        {
+          "buy_step": 420,
+          "close_step": 421,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -875,
+          "received": 880
+        },
+        {
+          "buy_step": 436,
+          "close_step": 437,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -877,
+          "received": 880
+        },
+        {
+          "buy_step": 488,
+          "close_step": 489,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -900,
+          "received": 905
+        },
+        {
+          "buy_step": 496,
+          "close_step": 497,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -911,
+          "received": 917
+        },
+        {
+          "buy_step": 568,
+          "close_step": 569,
+          "bought": 20,
+          "sold": 20,
+          "inherited": 0,
+          "paid": -894,
+          "received": 900
+        }
+      ],
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "harvest_delta": {},
+      "same_shops": true,
+      "same_additions": true,
+      "escapes": []
+    },
+    {
+      "case": "improved_1049013",
+      "arm": "town50",
+      "seed": 1049013,
+      "opponent": "tds",
+      "margin_before": -33.0,
+      "margin_after": 106.0,
+      "own_cash_delta": 121.0,
+      "rival_cash_delta": -18.0,
+      "flow_delta": {
+        "BUY_PRODUCT:WHEAT": [
+          700,
+          -30331
+        ],
+        "SELL:EGG": [
+          0,
+          -8
+        ],
+        "SELL:FERTILIZER": [
+          0,
+          27
+        ],
+        "SELL:MILK": [
+          0,
+          -2
+        ],
+        "SELL:WHEAT": [
+          700,
+          30435
+        ]
+      },
+      "operations": [
+        {
+          "buy_step": 308,
+          "close_step": 309,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2054,
+          "received": 2062
+        },
+        {
+          "buy_step": 316,
+          "close_step": 317,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2068,
+          "received": 2072
+        },
+        {
+          "buy_step": 328,
+          "close_step": 329,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2088,
+          "received": 2096
+        },
+        {
+          "buy_step": 332,
+          "close_step": 333,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2096,
+          "received": 2104
+        },
+        {
+          "buy_step": 348,
+          "close_step": 349,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2125,
+          "received": 2129
+        },
+        {
+          "buy_step": 356,
+          "close_step": 357,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 7,
+          "paid": -2133,
+          "received": 2138
+        },
+        {
+          "buy_step": 376,
+          "close_step": 377,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2164,
+          "received": 2169
+        },
+        {
+          "buy_step": 420,
+          "close_step": 421,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2202,
+          "received": 2212
+        },
+        {
+          "buy_step": 424,
+          "close_step": 425,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2212,
+          "received": 2217
+        },
+        {
+          "buy_step": 436,
+          "close_step": 437,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2206,
+          "received": 2215
+        },
+        {
+          "buy_step": 488,
+          "close_step": 489,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2279,
+          "received": 2285
+        },
+        {
+          "buy_step": 496,
+          "close_step": 497,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2291,
+          "received": 2302
+        },
+        {
+          "buy_step": 568,
+          "close_step": 569,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2248,
+          "received": 2261
+        },
+        {
+          "buy_step": 660,
+          "close_step": 661,
+          "bought": 50,
+          "sold": 50,
+          "inherited": 0,
+          "paid": -2165,
+          "received": 2173
+        }
+      ],
+      "same_accepted_work": true,
+      "same_harvest": true,
+      "harvest_delta": {},
+      "same_shops": true,
+      "same_additions": true,
+      "escapes": []
+    },
+    {
+      "case": "improved_1049013",
+      "arm": "town80",
+      "seed": 1049013,
+      "opponent": "tds",
+      "margin_before": -33.0,
+      "margin_after": 105.0,
+      "own_cash_delta": 125.0,
+      "rival_cash_delta": -13.0,
+      "flow_delta": {
+        "BUY_PRODUCT:FERTILIZER": [
+          0,
+          20
+        ],
+        "BUY_PRODUCT:WHEAT": [
+          1101,
+          -48076
+        ],
+        "SELL:EGG": [
+          -2,
+          -88
+        ],
+        "SELL:FERTILIZER": [
+          1,
+          40
+        ],
+        "SELL:MILK": [
+          0,
+          -2
+        ],
+        "SELL:WHEAT": [
+          1101,
+          48231
+        ]
+      },
+      "operations": [
+        {
+          "buy_step": 308,
+          "close_step": 309,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 22,
+          "paid": -3321,
+          "received": 3333
+        },
+        {
+          "buy_step": 316,
+          "close_step": 317,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3342,
+          "received": 3350
+        },
+        {
+          "buy_step": 328,
+          "close_step": 329,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3378,
+          "received": 3386
+        },
+        {
+          "buy_step": 332,
+          "close_step": 333,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 20,
+          "paid": -3386,
+          "received": 3398
+        },
+        {
+          "buy_step": 348,
+          "close_step": 349,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3434,
+          "received": 3442
+        },
+        {
+          "buy_step": 356,
+          "close_step": 357,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 37,
+          "paid": -3450,
+          "received": 3458
+        },
+        {
+          "buy_step": 376,
+          "close_step": 377,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3490,
+          "received": 3500
+        },
+        {
+          "buy_step": 420,
+          "close_step": 421,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3552,
+          "received": 3564
+        },
+        {
+          "buy_step": 424,
+          "close_step": 425,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3564,
+          "received": 3574
+        },
+        {
+          "buy_step": 436,
+          "close_step": 437,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3556,
+          "received": 3570
+        },
+        {
+          "buy_step": 488,
+          "close_step": 489,
+          "bought": 70,
+          "sold": 70,
+          "inherited": 0,
+          "paid": -3206,
+          "received": 3218
+        },
+        {
+          "buy_step": 496,
+          "close_step": 497,
+          "bought": 71,
+          "sold": 71,
+          "inherited": 0,
+          "paid": -3277,
+          "received": 3289
+        },
+        {
+          "buy_step": 568,
+          "close_step": 569,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3628,
+          "received": 3641
+        },
+        {
+          "buy_step": 660,
+          "close_step": 661,
+          "bought": 80,
+          "sold": 80,
+          "inherited": 0,
+          "paid": -3492,
+          "received": 3508
+        }
+      ],
+      "same_accepted_work": false,
+      "same_harvest": false,
+      "harvest_delta": {
+        "EGG": -2
+      },
+      "same_shops": true,
+      "same_additions": true,
+      "escapes": []
+    }
+  ],
+  "note": "Selected positive cells explain mechanism only. Cash deltas include all downstream effects; they are not isolated roundtrip profits or an independent WLT estimate."
+}

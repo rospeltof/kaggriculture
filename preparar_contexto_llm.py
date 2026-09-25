@@ -22,6 +22,11 @@ ARMS = ("base", "noop", "_peor", "partial_batch")
 CRITICAL = {4: 3.1824463052837078, 8: 2.364624251592784}
 SOURCES = (
     "docs/research/ESTADO_INVESTIGACION.md",
+    "docs/research/FEEDBACK_1003_2026-09-25.md",
+    "docs/research/CENSURA_FORECAST_2026-09-25.md",
+    "docs/research/PREREG_LOOP28_CENSURA_2026-09-25.md",
+    "docs/research/PREREG_LOOP29_REVENTA_DOS_PADRES_2026-09-25.md",
+    "docs/research/REVENTA_DOS_PADRES_2026-09-25.md",
     "docs/research/CIERRE_TRIGO19_2026-09-25.md",
     "docs/research/FEEDBACK_0914_2026-09-25.md",
     "docs/research/PREREG_LOOP27_ATRIBUCION_2026-09-25.md",

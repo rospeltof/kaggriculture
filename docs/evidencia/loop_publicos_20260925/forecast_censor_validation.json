@@ -1,0 +1,488 @@
+{
+  "passed": true,
+  "competitive_ready": true,
+  "games": 48,
+  "noop_exact_turns": 8628,
+  "max_turn_ms": 406.78891600691713,
+  "activated_cells": {
+    "censor_native_vq": 6,
+    "censor_floor_vq": 6,
+    "censor_native_top3": 4,
+    "censor_floor_top3": 4
+  },
+  "changed_rankings": {
+    "censor_native_vq": 294,
+    "censor_floor_vq": 306,
+    "censor_native_top3": 448,
+    "censor_floor_top3": 454
+  },
+  "mask_item_checks": 86160,
+  "observable_market_checks": 40306,
+  "candidate_hashes": {
+    "censor_native_vq": "bb52c26a2011878e46135cc57553b476c3ead0bda1d08a607f13926619b83b5f",
+    "censor_floor_vq": "86b4a857d7724472dad3ebf756e5f2e7ffb76d452946594fa2851cafe407ffee",
+    "censor_native_top3": "d4a8074e41e2484e384f2c4cb94cb40028adf9ef2f116da0c291f7b54a41ea19",
+    "censor_floor_top3": "ba531a69a53f3b3ca33dcb739e39b0332ad7f9b79a291b38a2e60fff3be019e7"
+  },
+  "base_hash": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976",
+  "control_hash": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
+  "summary": [
+    {
+      "arm": "censor_native_vq",
+      "seed": 1071000,
+      "seat": 0,
+      "changed_own_turns": 9,
+      "changed_rankings": 85,
+      "unobservable": 528,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": 115.0,
+      "candidate_margin": 258.0
+    },
+    {
+      "arm": "censor_native_vq",
+      "seed": 1071000,
+      "seat": 1,
+      "changed_own_turns": 9,
+      "changed_rankings": 85,
+      "unobservable": 528,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": 115.0,
+      "candidate_margin": 258.0
+    },
+    {
+      "arm": "censor_floor_vq",
+      "seed": 1071000,
+      "seat": 0,
+      "changed_own_turns": 9,
+      "changed_rankings": 85,
+      "unobservable": 546,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": 115.0,
+      "candidate_margin": 258.0
+    },
+    {
+      "arm": "censor_floor_vq",
+      "seed": 1071000,
+      "seat": 1,
+      "changed_own_turns": 9,
+      "changed_rankings": 85,
+      "unobservable": 546,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": 115.0,
+      "candidate_margin": 258.0
+    },
+    {
+      "arm": "censor_native_top3",
+      "seed": 1071000,
+      "seat": 0,
+      "changed_own_turns": 28,
+      "changed_rankings": 126,
+      "unobservable": 527,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": 669.0,
+      "candidate_margin": 508.0
+    },
+    {
+      "arm": "censor_native_top3",
+      "seed": 1071000,
+      "seat": 1,
+      "changed_own_turns": 28,
+      "changed_rankings": 126,
+      "unobservable": 527,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": 669.0,
+      "candidate_margin": 508.0
+    },
+    {
+      "arm": "censor_floor_top3",
+      "seed": 1071000,
+      "seat": 0,
+      "changed_own_turns": 28,
+      "changed_rankings": 126,
+      "unobservable": 542,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": 669.0,
+      "candidate_margin": 508.0
+    },
+    {
+      "arm": "censor_floor_top3",
+      "seed": 1071000,
+      "seat": 1,
+      "changed_own_turns": 28,
+      "changed_rankings": 126,
+      "unobservable": 542,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": 669.0,
+      "candidate_margin": 508.0
+    },
+    {
+      "arm": "censor_native_vq",
+      "seed": 1071001,
+      "seat": 0,
+      "changed_own_turns": 4,
+      "changed_rankings": 6,
+      "unobservable": 17,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -1298.0,
+      "candidate_margin": -1301.0
+    },
+    {
+      "arm": "censor_native_vq",
+      "seed": 1071001,
+      "seat": 1,
+      "changed_own_turns": 4,
+      "changed_rankings": 6,
+      "unobservable": 17,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -1298.0,
+      "candidate_margin": -1301.0
+    },
+    {
+      "arm": "censor_floor_vq",
+      "seed": 1071001,
+      "seat": 0,
+      "changed_own_turns": 4,
+      "changed_rankings": 5,
+      "unobservable": 33,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -1298.0,
+      "candidate_margin": -1301.0
+    },
+    {
+      "arm": "censor_floor_vq",
+      "seed": 1071001,
+      "seat": 1,
+      "changed_own_turns": 4,
+      "changed_rankings": 5,
+      "unobservable": 33,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -1298.0,
+      "candidate_margin": -1301.0
+    },
+    {
+      "arm": "censor_native_top3",
+      "seed": 1071001,
+      "seat": 0,
+      "changed_own_turns": 0,
+      "changed_rankings": 14,
+      "unobservable": 13,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": 323.0,
+      "candidate_margin": 323.0
+    },
+    {
+      "arm": "censor_native_top3",
+      "seed": 1071001,
+      "seat": 1,
+      "changed_own_turns": 0,
+      "changed_rankings": 14,
+      "unobservable": 13,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": 323.0,
+      "candidate_margin": 323.0
+    },
+    {
+      "arm": "censor_floor_top3",
+      "seed": 1071001,
+      "seat": 0,
+      "changed_own_turns": 0,
+      "changed_rankings": 14,
+      "unobservable": 28,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": 323.0,
+      "candidate_margin": 323.0
+    },
+    {
+      "arm": "censor_floor_top3",
+      "seed": 1071001,
+      "seat": 1,
+      "changed_own_turns": 0,
+      "changed_rankings": 14,
+      "unobservable": 28,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": 323.0,
+      "candidate_margin": 323.0
+    },
+    {
+      "arm": "censor_native_vq",
+      "seed": 2111590720,
+      "seat": 0,
+      "changed_own_turns": 24,
+      "changed_rankings": 56,
+      "unobservable": 86,
+      "same_shops": true,
+      "same_work": false,
+      "same_harvest": false,
+      "same_losses": false,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -1531.0,
+      "candidate_margin": -2772.0
+    },
+    {
+      "arm": "censor_native_vq",
+      "seed": 2111590720,
+      "seat": 1,
+      "changed_own_turns": 24,
+      "changed_rankings": 56,
+      "unobservable": 86,
+      "same_shops": true,
+      "same_work": false,
+      "same_harvest": false,
+      "same_losses": false,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -1569.0,
+      "candidate_margin": -2784.0
+    },
+    {
+      "arm": "censor_floor_vq",
+      "seed": 2111590720,
+      "seat": 0,
+      "changed_own_turns": 22,
+      "changed_rankings": 63,
+      "unobservable": 125,
+      "same_shops": true,
+      "same_work": false,
+      "same_harvest": false,
+      "same_losses": false,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -1531.0,
+      "candidate_margin": -2169.0
+    },
+    {
+      "arm": "censor_floor_vq",
+      "seed": 2111590720,
+      "seat": 1,
+      "changed_own_turns": 22,
+      "changed_rankings": 63,
+      "unobservable": 125,
+      "same_shops": true,
+      "same_work": false,
+      "same_harvest": false,
+      "same_losses": false,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -1569.0,
+      "candidate_margin": -2181.0
+    },
+    {
+      "arm": "censor_native_top3",
+      "seed": 2111590720,
+      "seat": 0,
+      "changed_own_turns": 6,
+      "changed_rankings": 84,
+      "unobservable": 74,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -708.0,
+      "candidate_margin": -792.0
+    },
+    {
+      "arm": "censor_native_top3",
+      "seed": 2111590720,
+      "seat": 1,
+      "changed_own_turns": 6,
+      "changed_rankings": 84,
+      "unobservable": 74,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -708.0,
+      "candidate_margin": -792.0
+    },
+    {
+      "arm": "censor_floor_top3",
+      "seed": 2111590720,
+      "seat": 0,
+      "changed_own_turns": 6,
+      "changed_rankings": 87,
+      "unobservable": 113,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -708.0,
+      "candidate_margin": -792.0
+    },
+    {
+      "arm": "censor_floor_top3",
+      "seed": 2111590720,
+      "seat": 1,
+      "changed_own_turns": 6,
+      "changed_rankings": 87,
+      "unobservable": 113,
+      "same_shops": true,
+      "same_work": true,
+      "same_harvest": true,
+      "same_losses": true,
+      "escapes": [
+        [],
+        []
+      ],
+      "terminal_products": 0,
+      "base_margin": -708.0,
+      "candidate_margin": -792.0
+    }
+  ],
+  "note": "Floor-observable item-turns never contain invisible accepted sales in development. No claim of improved prediction accuracy, WLT or unchanged future physical production."
+}

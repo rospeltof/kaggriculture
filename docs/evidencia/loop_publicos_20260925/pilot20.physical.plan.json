@@ -1,0 +1,64 @@
+{
+  "rule": "First sorted opponent/seat0 improved WLT cell in each seed having any improvement. Four arms per cell, mechanism only.",
+  "cases": {
+    "improved_1049004": [
+      "tds",
+      1049004,
+      0
+    ],
+    "improved_1049010": [
+      "hybu",
+      1049010,
+      0
+    ],
+    "improved_1049013": [
+      "tds",
+      1049013,
+      0
+    ]
+  },
+  "arms": [
+    "base",
+    "town20",
+    "town50",
+    "town80"
+  ],
+  "agents": {
+    "base": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "noop": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "town20": {
+      "ruta": "results/reventa_town_20260925/town20.py",
+      "sha256": "cc1b4374a924a8a2e40becada6f05988eff4e02b5112707f6afaea8ca8e601cd"
+    },
+    "town50": {
+      "ruta": "results/reventa_town_20260925/town50.py",
+      "sha256": "e3b74379d0b599a95faf4b5326d62d7020584e31258a133261f47f222cf2ef60"
+    },
+    "town80": {
+      "ruta": "results/reventa_town_20260925/town80.py",
+      "sha256": "a3af0ac5ccaae9bb43724c438b7752eb03da6b907dbad5aedc30a15a629b8e70"
+    },
+    "tds": {
+      "ruta": "submission/main_publico_tds_tetsutani.py",
+      "sha256": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a"
+    },
+    "hybu": {
+      "ruta": "results/publicos/wzhengbiao_kaggriculture-hybu-submit/main.py",
+      "sha256": "f6175fd1bc3850f74185e7a813bb5a87d54e7e15212c874133dafc6e1ce91d34"
+    },
+    "ars40": {
+      "ruta": "results/publicos/arsgorynich_kaggriculture-v40-challenger/main.py",
+      "sha256": "d5a192fac67f00da31fe2bc7b747b8c33766bf1024780c53e49f2292a97db2de"
+    },
+    "arshs3": {
+      "ruta": "submission/main_publico_arshs3_arsgorynich.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    }
+  }
+}

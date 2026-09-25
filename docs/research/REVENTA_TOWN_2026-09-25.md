@@ -1,5 +1,47 @@
 # Reventas nuevas: primero verificar economía y ejecución
 
+## Actualización: piloto completo y confirmación activa
+
+Pilot20 terminó a09:45:49UTC:1.920episodios,448noops exactos, cero errores y
+fuentes verificadas. Base91,40625%; los tres tamaños94,53125%, delta+3,125pp.
+IC95 por semilla[−0,672;6,922], dos vías[−4,647;10,897]. Cuatro celdas mejores,
+cero peores y124iguales tras promediar asientos; señal en tres semillas de32.
+No es una mejora confirmada. Desempate registrado selecciona town20/town50;
+confirm20 corre con3.200episodios disjuntos, sin modificar políticas ni gates.
+
+Las tres políticas tienen W/L/Tiguales en256/256celdas del panel, pero ninguna
+pareja coincide en acciones conjuntas ni rewards. Todas cambian acciones propias
+en256/256; cambian las del rival en72/134/148respectivamente. Igual delta no
+significa inercia ni tres corroboraciones independientes.
+
+Auditoría mecánica: primera celda positiva ordenada por rival, asiento0, en cada
+semilla mejorada; tres mundos×cuatro brazos=12partidas. Hash propio y rewards
+exactos frente al piloto, caja oficial reconciliada.150compras y150cierres,
+7.722trigos comprados y vendidos al turno siguiente;0errores/escapes, mismas
+tiendas y compras/colocaciones animales. Es muestra seleccionada para explicar
+mecanismo, no otra estimación de W/L/T.
+
+| Semilla/rival | Margen base | town20 | town50 | town80 |
+|---|---:|---:|---:|---:|
+| 1049004/tds | −8 | +31 | +79 | +113 |
+| 1049010/hybu | −45 | +47 | +166 | +268 |
+| 1049013/tds | −33 | +8 | +106 | +105 |
+
+En1049004todo el cambio de caja es trigo: +39/+87/+121 y caja rival igual.
+En1049010la ganancia propia total es96/208/310, rival+4/−3/−3; el flujo de las
+piernas de reventa suma85/193/295, también cambian ventas nativas. En1049013
+town50 gana121propias y resta18al rival; sus piernas suman104. No atribuir todo
+el margen a beneficio aislado del ciclo de compra/venta.
+
+Town20/50 conservan alimento y cosechas en estos tres mundos. Town80 en1049013
+omite una cosecha de ganso:227→225huevos, aunque su margen sube. La conservación
+observada en el desarrollo original no era universal. No adoptar80por caja.
+Evidencia: `pilot20.*`, auditoría `auditar_piloto_reventa_town.py` y conciliación
+sin nuevas partidas `resumir_mecanismo_town20.py` → `pilot20.physical.summary.json`.
+
+El preregistro29 evalúa dos tamaños sobreVQ/top3 contra el panel cercano. No
+reescribe la confirmación20 ni suma ambas como réplicas de una misma población.
+
 La operación comprar antes del consumo del pueblo y vender después gana la
 diferencia de curva **sólo en ausencia de transacciones rivales**, con llenado
 completo, fondos/espacio suficientes y sin consumo propio intermedio. No es

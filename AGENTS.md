@@ -4,8 +4,8 @@
 > Desde el 2026-09-21 el usuario autorizó un loop autónomo de investigación que
 > incluye submissions experimentales ("También tienes capacidad para crear y
 > subir submissions reales. Usa ambas cosas"). Referencias reales activas:
-> **VQ56535264** y **top3 56537205**, ambas COMPLETE. Snapshot09:13UTC:
-> 2290,3/95episodios y2119,0/84 respectivamente; incluyen validación.
+> **VQ56535264** y **top3 56537205**, ambas COMPLETE. Snapshot10:02UTC:
+> 2295,1/98episodios y2135,7/88 respectivamente; incluyen validación.
 > No volver al campeón histórico de1180. Creencias con evidencia:
 > `docs/research/RESEARCH_BELIEFS.md`; historial reproducible de envíos:
 > `docs/research/SUBMISSION_HISTORY.json`; qué métrica local predice el ladder:
@@ -13,6 +13,49 @@
 > del 2026-09-14 y se conserva como historia.
 
 ## Loop continuo vigente
+
+## Corte operativo 10:08 UTC — 29 validado y feedback real actualizado
+
+Confirm20 continúa (3.200episodios previstos);21–29esperan en secuencia.
+No duplicar ni reiniciar runners.29:48desarrollos/noop8.628/max331ms, los
+cuatro brazos activos6/6,368compras/cierres y13.720unidades exactas. Conservan
+trabajo/cosechas/pérdidas/tiendas en esta cuadrícula, cero escapes; sin cambios
+W/L/T. Dos fuentesVQ nuevas y dos top3reutilizadas;99variantes más2prototipos.
+Ver REVENTA_DOS_PADRES y preregistro29. Piloto1.568después de28, sin autoenvío.
+
+API10:02:07UTC:VQ2295,1/98episodios listados;top32135,7/88, COMPLETE. Siete
+replays nuevos reproducidos719acciones/720estados/caja, max214ms, cero errores
+observados/escapes/productos terminales propios. Alternativas contra rival
+fijo: top3mejora cinco márgenes, empeora dos; Farmerjay851→−340. Esto no mide
+respuesta reactiva ni fuerza poblacional. Leer FEEDBACK_1003; ninguna nueva
+submission. Las verificaciones de28/29y los diagnósticos están cerrados.
+
+
+## Corte operativo 10:01 UTC — confirm20 activa, 28 validado, 29 en desarrollo
+
+Pilot20 cerró1.920episodios/noop448: los tres tamaños+3,125pp, intervalos
+cruzan0, cuatro celdas mejores en tres semillas. Town20/50 seleccionadas por
+regla previa; confirm20 corre3.200juegos. No consultar deltas parciales ni
+reiniciar.21–28esperan en secuencia;28ya verificó sus fuentes congeladas.
+
+Auditoría20:12partidas exactas,150compras/cierres y7.722unidades conciliadas.
+Town20/50 conservan alimento/cosechas en los tres casos; town80pierde dos
+huevos en1049013. Los efectos sobre ventas nativas/rival impiden identificar
+todo el margen como beneficio aislado. Leer REVENTA_TOWN.
+
+Loop28: cuatro máscaras de evidencia negativa sobreVQ/top3;48desarrollos,
+noop8.628, max407ms,86.160checks y40.306pares floorobservables físicamente
+verificados. Todas activas; cero cambiosW/L/T. En mundoNiA, VQproduce una lana
+más pero empeora margen. No se combina arreglo27. Piloto1.568tras27; informe
+CENSURA_FORECAST y preregistro28.99variantes construidas más2prototipos17:
+las dos últimas son reventasVQ del loop29, todavía SIN validación/cola.
+
+Loop29 preinscrito antes de construir: factorial padresVQ/top3 × tamaños20/50,
+48desarrollos frente aV7corriendo; reutiliza fuentes top3exactas de20. Panel
+cercano y ambas referencias reales, no cambiar confirm20 ni sumar N. Leer
+preregistro29. Catálogo público09:49:34UTC:50entradas sin cambios vs09:01.
+Último snapshot de ladder sigue09:13UTC; sin nueva consulta ni envío.
+
 
 
 ## Actualización 09:36 UTC —27aprobado para piloto
@@ -49,7 +92,8 @@ y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_harvest68.py`, `continuar_loop_suministro_ovino.py` y
 `continuar_loop_adelanto_trigo.py`, `continuar_loop_panel_cercano.py` y
 `continuar_loop_semillas_tardias.py` y
-`continuar_loop_atribucion_ventas.py` encadenan bloques
+`continuar_loop_atribucion_ventas.py` y `continuar_loop_censura_forecast.py` y
+`continuar_loop_reventa_dos_padres.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
 terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
 (una de64 partidas cambia, +1,5625pp). Confirm5 tomate−21,591pp: REJECTED.
