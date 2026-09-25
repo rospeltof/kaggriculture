@@ -1,0 +1,64 @@
+{
+  "agentes": {
+    "base": {
+      "ruta": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "noop": {
+      "ruta": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "recover_now": {
+      "ruta": "results/recuperacion_turno_20260925/recover_now.py",
+      "sha256": "8b51470bea622add70d20f38030034a99139f3ff184a4a1689ac9657259485dd"
+    },
+    "arshs3": {
+      "ruta": "submission/main_publico_arshs3_arsgorynich.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    }
+  },
+  "seeds": [
+    1003000,
+    1003001,
+    1003002,
+    1003003,
+    1003004,
+    1003005,
+    1003006,
+    1003007,
+    1003008,
+    1003009,
+    1003010,
+    1003011,
+    1003012,
+    1003013,
+    1003014,
+    1003015,
+    1003016,
+    1003017,
+    1003018,
+    1003019,
+    1003020,
+    1003021,
+    1003022,
+    1003023,
+    1003024,
+    1003025,
+    1003026,
+    1003027,
+    1003028,
+    1003029,
+    1003030,
+    1003031
+  ],
+  "vs": "base,noop,recover_now",
+  "inicio": "2026-09-24 20:59:29",
+  "state": "complete",
+  "expected_episodes": 384,
+  "workers": 8,
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "cc2c653a1cce243e55d3d30effd5985405bb9db28bde7622cecc400a7298b025",
+  "completed_episodes": 384,
+  "fin": "2026-09-24 21:04:53"
+}

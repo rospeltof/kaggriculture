@@ -13,25 +13,26 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 
 ## Índice y huellas de los documentos
 
-- `docs/research/SCORECARDS_LOOP_2026-09-25.md` — SHA-256 `7e5247180d15ab1dcd21d8153fff5900421039739ada7a3566333e201041e676`
+- `docs/research/SCORECARDS_LOOP_2026-09-25.md` — SHA-256 `db054325755f933c6a5e3537c9980817718049004f2a82223dec19331820a4c2`
 - `docs/research/PREREG_LOOP1_2026-09-25.md` — SHA-256 `cb1d5a3afcb5e1b629ff72a40a91d2a785937c52cd4d3911574d0e0f43c7346b`
 - `docs/research/PREREG_LOOP2_2026-09-25.md` — SHA-256 `27584d8c9c7f8bca695c37e0506e42d29c31602c11805bfa086fa80f8b2dd328`
 - `docs/research/PREREG_LOOP3_2026-09-25.md` — SHA-256 `9fd1d074212b58e8d8664bc2aa2c959c683bb8b0ffa97d0814c01e470c2ea576`
 - `docs/research/PREREG_LOOP4_REPARACION_2026-09-25.md` — SHA-256 `93719809aa6133e9fb3e4dcbffe5c895366b6d93047b25633178bcca7ce508c2`
 - `docs/research/PREREG_LOOP5_TOMATE_TEMPRANO_2026-09-25.md` — SHA-256 `6fb66e4527dea8ab81ddb8150d2cb141de51471384ee3245eb04d28c0a871606`
+- `docs/research/PREREG_LOOP6_PRODUCTOS_2026-09-25.md` — SHA-256 `7a8a17f2c210a439a9e86a2bcfd0491ee289777011dc94ec53e9cb1306b12c60`
 - `docs/research/LIDER_Y_FUENTES_2026-09-25.md` — SHA-256 `f940d574bb7e3d43785ee31a100204a8c3a7c7587009f9fcbb02b1ef8df07daf`
-- `docs/research/DECISION_ENVIO_TOP3_2026-09-25.md` — SHA-256 `d924c93c482388f245684fd14aada0fabb63e74feb2fb79ff9710b932eec45c9`
+- `docs/research/DECISION_ENVIO_TOP3_2026-09-25.md` — SHA-256 `a17b15f6d0db894ec64c3dbd25ce08ac2553f25d2528682b129a1f4a779cbde6`
 - `docs/research/RESULTADOS_2026-09-25.md` — SHA-256 `98349e7d3065ae9fb91d396d089c4aa95f1841d5c8b844242add6ba3e8e6965c`
-- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `0c908b5675a697a9b25c8101dce1af58e5e931375089b9ed05c63e527694fbac`
-- `docs/research/RESEARCH_BELIEFS.md` — SHA-256 `31d27cdb1ae452541dc9bc86f72674e5b270a745cdd67fb663d15c13be147849`
+- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `787f788ac152f777bc89809e5b151edd3b3865a70752a9aa0fbb17f21d9a3041`
+- `docs/research/RESEARCH_BELIEFS.md` — SHA-256 `c9403fa97a8742f4a309ca9acbbc6b618edca73464a65513e1f5f95ca2931ca2`
 - `docs/research/HARNESS_VS_LEADERBOARD.md` — SHA-256 `bc8c5a4f096242f5d95851275b0e3ba401371edbe85796f447ec2eee94142518`
-- `docs/research/SUBMISSION_HISTORY.json` — SHA-256 `01ee18af54fcbd9c364a7c0ec975b20cba64473d437f721a657f9467b2a26cd3`
+- `docs/research/SUBMISSION_HISTORY.json` — SHA-256 `52a028bc7423a989d9bba1ff332fabe5269735efa1e7b0fb81b8e24f1ca0e39d`
 - `docs/research/PREREG_VQ_2026-09-24.md` — SHA-256 `7f4b6b42db6dbeeb3981cd0fa56fbf071f4b4f6eec121ceeb292b2b0ca6ebab5`
 - `docs/research/PREREG_ADV_2026-09-24.md` — SHA-256 `bed0700878535baaf11409f4dfef3364623943e5e42ecea44fb13b5ebcae4b58`
 - `docs/research/PREREG_FORECAST_GATE_2026-09-25.md` — SHA-256 `bf5dd9fbf03de91f1fbf95a557600d969b3c01f143f849271a827abc87cfd2be`
 - `docs/research/PREREG_PUBLIC_REFRESH_2026-09-25.md` — SHA-256 `bc60b8ef2b9580510782f1801bcac5e43f4f5c8524f9a39bd9a7c587812a12cc`
 - `docs/PROMPT_SEGUNDO_CEREBRO.md` — SHA-256 `e319f3917d23defc367804e464d3d13be14d21061eb2ca73fede8977d4f04c07`
-- `AGENTS.md` — SHA-256 `9d1664165885dd055ad385930e130f24700e0d1fb6f07f2deeea1ddb882736c7`
+- `AGENTS.md` — SHA-256 `0369eb682220359a9a66cdfe1a060ddcc2b942f587a7c4564f9f62eb21f050c5`
 - `docs/ESTADO_ACTUAL.md` — SHA-256 `db1a8944bbb8cf55131e96e009cfb164b38f7f8d72a015135b806a1852ef2e9d`
 - `docs/RESULTADOS_LIDER_2026-09-14.md` — SHA-256 `efb3b4c09053f13d648e8019a7ba8363f68a24c234b04b4869754e82877c648b`
 - `docs/ANALISIS_LIDER_2026-09-14.md` — SHA-256 `63e3448307868dec34c5c67a697f052f4bc31b4437bc7781b4e702b1d234db53`
@@ -53,7 +54,8 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 
 # Scorecards del loop continuo — 2026-09-25 UTC
 
-Estado: loop1, loop2 y confirm1 terminados; loop3 de animales corriendo; loops 4 y 5 encadenados.
+Estado: loops 1–4 y confirm1 terminados; loop5 de tomates corriendo;
+loop6 encadenado. Objetivo persistente activo.
 
 ## Confirmación disjunta terminada
 
@@ -67,8 +69,10 @@ Estado: loop1, loop2 y confirm1 terminados; loop3 de animales corriendo; loops 4
 Top3: base78,409% →89,205%, 20 celdas mejores y una peor. En ocho rivales
 originales +9,375 pp. Peor rival arshs3 −6,25; máximo turno757ms. Mecanismo
 favorable y desfavorable reproducidos, dinero conciliado y cero errores.
-Ver `DECISION_ENVIO_TOP3_2026-09-25.md`. Preparado archivo byte exacto para
-prueba real; no se mezcla con la investigación productiva en curso.
+Ver `DECISION_ENVIO_TOP3_2026-09-25.md`. **Enviada56537205**, commitba1fda8,
+01:56UTC, archivo byte exacto; **COMPLETE**, replay de validación720 pasos
+DONE/DONE sin errores ni timeouts. Conserva VQ como control activo.
+No se mezcla con la investigación productiva en curso.
 
 Snapshot real posterior: VQ2319,5 con24 episodios listados; original2275,7.
 No atribuir fuerza relativa al rating aún joven de VQ.
@@ -158,6 +162,54 @@ activa diez plantas y vende 60 tomates, sin errores. Noop y base empatan en
 comportamiento; la variante temprana pierde ese mundo, no prueba poblacional.
 Piloto disjunto 1005000–003 encolado tras loop4, confirmación condicional
 1006000–015. Nunca dos torneos grandes simultáneos.
+
+## Loop3: animales terminado
+
+504 episodios, noop exacto 96/96, cero errores. Base 87,5% en pool común.
+
+| Brazo | Delta pp | IC95 dos vías | Episodios con acciones propias distintas /64 |
+|---|---:|---|---:|
+| herd_future | −84,375 | [−114,33; −54,42] | 62 |
+| herd_ev600 | −34,375 | [−95,66; +26,91] | 62 |
+| herd_ev1500 | 0 | indefinido | 0 |
+| herd_ev_future | −40,625 | [−103,62; +22,37] | 64 |
+
+Ninguna seleccionada; no se gasta confirmación. herd_future REJECTED;
+EV600/EV_future son negativos con intervalo amplio, no refutación universal;
+EV1500 es inerte en este panel. Intervalos t lineales pueden salir del rango
+físico de deltas: se conservan sin presentarlos como probabilidades posibles.
+Sonda adicional de herd_future registrada por regla de primera regresión ordenada.
+
+Sonda completada: ars40/1001000/asiento0, primera diferencia step241,
+GOOSE2 → COW2. EV de vacas estimado674 →6371 por incorporar tiendas futuras;
+observado: leche261 →301 unidades, pero ingreso28.950 →26.820; huevos93 →0.
+Margen+1.808 →−2.020, mismas tiendas, caja conciliada, cero errores del módulo.
+La variante sí ejecuta su decisión; la evidencia cuestiona la proyección de
+valor, no justifica arreglar a ciegas la logística ni presumir que producir más gana.
+
+## Loop6 registrado tras la confirmación top3
+
+Cuatro nuevos brazos sobre top3: extender a EGG, MELON, ambos, y combinar
+top3 con fast2. Base/noop top3 y controles VQ/fast2 separados en la misma
+muestra, 736 episodios de piloto, confirmación condicional en semillas nuevas.
+Primario ahora es mejora frente a top3. Los pilotos productivos ya registrados
+mantienen VQ como padre. `continuar_loop_productos.py` espera a loop5.
+
+## Loop4: cobertura de reparación terminada
+
+384 episodios válidos, noop exacto 128/128, cero errores. 32 semillas, ambos
+asientos frente a arshs3. Recuperación cambia acciones en **1/64** partidas y
+convierte esa derrota en victoria: 93,75% →95,3125%, **+1,5625 pp**,
+IC95 por semilla [−1,62;4,75]. No hay intervalo de dos vías con un solo rival.
+Una semilla positiva y cero negativas; directo vs VQ50,78125% es diagnóstico.
+
+El preregistro exigía al menos dos semillas positivas para PROMISING: no se
+cumple. INCONCLUSIVE; hay mecanismo raro favorable, sin promoción ni envío.
+El caso dirigido previo no se suma para superar retrospectivamente ese gate.
+La única celda nueva modificada se reprodujo: seed1003008/asiento1, primera
+diferencia step186, una planta recuperada y cinco comandos desplazados.
+Margen −760 →+42. Cambian las tiendas y la economía de ambos jugadores;
+no atribuir su enorme aumento de dinero bruto al valor directo de una planta.
 
 
 
@@ -471,6 +523,52 @@ un veto absoluto a experimentar en ladder. Mantener los registros negativos.
 
 ---
 
+## SOURCE: docs/research/PREREG_LOOP6_PRODUCTOS_2026-09-25.md
+
+# Loop 6: cobertura de productos y combinación del predictor
+
+Nueva base local de esta ronda: **top3 confirmado**, sha9668e30a, enviado como
+56537205. No cambiar los padres de loops3–5, que siguen VQ según su preregistro.
+Se pregunta qué mejora a top3, no qué vuelve a superar a un padre más débil.
+
+Constructor `construir_forecast_productos.py`, cuatro brazos:
+
+- top3_egg: incluye EGG en las anticipaciones. Curva hinge y producción frecuente;
+  riesgo de vender antes de escasez mayor o contar oferta poco informativa.
+- top3_melon: incluye MELON. Cosechas grandes y concentradas pueden hundir precio;
+  riesgo de abandonar la ventana prevista de demanda.
+- top3_egg_melon: ambas coberturas, para detectar interacción y competencia por
+  slots de mercado. No inferir efecto de la suma sin evaluarla.
+- top3_fast2: top3 + umbral2/actualización cada turno. Fast2 solo dio +2,841pp
+  vs VQ en confirm1, sin pasar gate; ésta es una prueba nueva de interacción,
+  no una reinterpretación ni repetición de su confirmación individual.
+
+Piloto: base/noop top3, cuatro brazos nuevos y controles VQ/fast2 solos;
+ocho rivales habituales. **1007000–003**, ambos asientos: ocho brazos×ocho
+rivales +28 cruces entre brazos, **736 episodios**. VQ, A=top3, B=fast2 y A+B
+conviven en la misma muestra; ambos brazos de producto y su combinación también.
+Los controles VQ/fast2 no son rivales del estimador principal ni candidatos a
+selección. Reportar sus deltas frente a top3 como contraste experimental.
+
+Métrica primaria: delta W/L/T contra top3, ocho rivales equiponderados, unidad
+semilla con ambos asientos. Semillas disjuntas de desarrollo y rondas previas.
+Seleccionar hasta dos brazos nuevos con delta>0 (orden delta, empate alfabético).
+CI por semilla y dos vías si estimable; registrar activación/hash/runtime/errores.
+No aumentar muestra ni cambiar productos por resultados parciales.
+
+Confirmación condicional **1008000–015**, once rivales fijados en confirm1,
+base/noop top3 más seleccionadas: 1.152 si una, 1.600 si dos. Gate de prueba
+real: ≥3pp contra top3, ningún rival<−20pp, ejecución válida, runtime y mecanismo
+revisados. No garantizar superioridad de ladder por diferencias de panel.
+
+Runner `continuar_loop_productos.py` espera a loop5. No lanzar segundo torneo
+grande. No incluye envíos automáticos: antes de otro envío considerar evidencia
+y edad de top3/VQ activos, coste de perder un control y cupo real disponible.
+
+
+
+---
+
 ## SOURCE: docs/research/LIDER_Y_FUENTES_2026-09-25.md
 
 # Líder actual y fuentes públicas — 2026-09-25 UTC
@@ -561,6 +659,10 @@ evidencia (`public_notebooks_latest.json`, `public_deduplication.json`,
 ## SOURCE: docs/research/DECISION_ENVIO_TOP3_2026-09-25.md
 
 # Decisión de prueba real: VQ + predictor top3
+
+**Enviada 56537205**, 2026-09-25 01:56:34 UTC, commit `ba1fda8`.
+**COMPLETE**, verificado ~02:04 UTC. Replay de validación113099118: 720 pasos,
+DONE/DONE, sin errores ni timeouts. Recibo confirma tres envíos restantes.
 
 Envío experimental autorizado por el loop autónomo. Archivo exacto de
 confirmación: `submission/main_publico_arshs3_vq_top3.py`, SHA-256
@@ -779,17 +881,19 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   **+10,795 pp**, IC95 dos vías [−0,115;21,706], cumple gate de prueba real;
   fast2 +2,841 pp, no cumple gate. Top3 máximo757ms, mecanismo de mejora y
   única celda de daño reproducidos. Decisión en `DECISION_ENVIO_TOP3_2026-09-25.md`.
-- **En curso loop3**: cuatro variantes de elección económica de animales, 504 episodios;
-  `continuar_loop_herd.py` espera al pipeline anterior y luego ejecuta piloto y
-  confirmación según `PREREG_LOOP3_2026-09-25.md`.
-- Loop4: cobertura de recover_now en 32 semillas nuevas, 384 episodios;
-  `continuar_loop_recuperacion.py` espera a loop3. Protocolo separado después
-  de evidencia nueva del mecanismo, no reinterpretación del gate de loop2.
-- Loop5: cinco variantes de tomate temprano/tardío, 616 episodios y hasta dos
-  confirmaciones; `continuar_loop_tomate.py` espera a loop4. Ocho diagnósticos
+- Loop3 completo: 504 episodios; herd_future −84,375 pp, EV600 −34,375,
+  EV1500 0 (inerte), EV_future −40,625. No seleccionadas, sin confirmación.
+  Noop96/96, cero errores. Sonda para explicar el gran daño de herd_future.
+- Loop4 completo: 384 episodios, noop128/128; recover_now cambia una de64
+  partidas, +1,5625pp, IC95 semilla [−1,62;4,75]. Sólo una semilla positiva;
+  no pasa gate de dos. INCONCLUSIVE, no envío. No sumar el caso dirigido previo.
+- **En curso loop5**: cinco variantes de tomate temprano/tardío, 616 episodios y hasta dos
+  confirmaciones; `continuar_loop_tomate.py`. Ocho diagnósticos
   previos: noop exacto, diez plantas/60 unidades en el brazo temprano, cero
   errores, derrota en ese mundo. No elegir por esas partidas de desarrollo.
-  Total: 22 variantes diferentes preparadas, además de controles.
+- Loop6: cuatro brazos de cobertura EGG/MELON y combinación top3+fast2.
+  Nueva base explícita top3 para esa ronda, con VQ y fast2 como controles de
+  interacción. 736 episodios; espera a loop5. Total 26 variantes preparadas.
 - Scorecards actualizadas: `SCORECARDS_LOOP_2026-09-25.md`.
 - Estado máquina: `docs/evidencia/loop_publicos_20260925/pipeline_state.json`.
   Logs: `results/loop_publicos_20260925_pipeline.log` y los logs de cada bloque.
@@ -813,8 +917,11 @@ con nombre nuevo eran copias de tds25: se deduplicaron sin repetir torneo.
 
 Último snapshot real: VQ56535264 **2319,5 /24 episodios listados**, original
 56511619 **2275,7**. VQ aún joven, no afirmar superioridad por este rating.
-Top3 empaquetado byte exacto de confirmación, sha9668e30a; envío experimental
-en preparación. Desplazará al original y conservará VQ, su padre, como control.
+Top3 **56537205 COMPLETE**, enviada 2026-09-25 01:56:34 UTC, commit ba1fda8,
+sha9668e30a byte exacto de confirmación. Validación113099118: 720 pasos,
+DONE/DONE, cero errores/timeouts. Recibo confirma tres envíos restantes.
+Desplaza al original y conserva VQ, su padre, como control. Snapshot02:04UTC:
+VQ2364,6 y top3 729,5 inicial; no interpretar el rating de arranque como fuerza.
 
 Lo siguiente es el cierre de la ronda anterior; no significa parar este loop.
 
@@ -1156,6 +1263,13 @@ efectos ≥ ~7 puntos. Buscar cambios GRANDES, no micro.
 Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nueva sube o baja la creencia.
 
 ## HIGH CONFIDENCE
+
+- **[2026-09-25, loop3] El modelo HD2 con tiendas futuras a peso1 causa daño:**
+  −84,375 pp, IC dos vías [−114,33;−54,42], noop96/96, 504 episodios.
+  Diagnóstico reproducido: cambia dos gansos por vacas, EV estimado674→6371;
+  leche261→301 unidades pero ingreso28.950→26.820, huevos93→0 y margen
+  +1.808→−2.020. Tiendas iguales y cero errores. Refuta esta extrapolación
+  e implementación, no toda planificación con demanda futura.
 
 - **[2026-09-25 UTC] PREDICT aporta fuerza en el panel de públicos:** ablarlo
   sobre VQ pierde **68,75 puntos** (IC dos vías [−89,57; −47,93]); exigir
@@ -1826,8 +1940,8 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
       ],
       "observed_at": "2026-09-25T00:22:13.462277+00:00"
     },
-    "observed": null,
-    "conclusion": "Mejor referencia real observada; sigue activa y se compara con VQ",
+    "observed": "Desplazada por top3; score2275.7 en snapshot de retiro. Paquete exacto conservado.",
+    "conclusion": "Referencia histórica madura; paquete original conservado",
     "autorizacion": "usuario 2026-09-24 (AskUserQuestion): 'arshs3 + v13 (Recomendado)'",
     "submission_id": 56511619,
     "timestamp": "2026-09-24T04:28:57Z",
@@ -1848,7 +1962,7 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
       }
     },
     "reason": "Campeon del torneo en bucle cerrado contra el pool publico",
-    "next_action": "Comparar VQ a edad y rivales comparables"
+    "next_action": "Control local; no reenviar salvo evidencia nueva"
   },
   {
     "submission_id": 56535264,
@@ -1876,9 +1990,9 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
     },
     "reason": "VQ validada contra copias; arshs3 transfiere al ladder (2292.5 vs v13 1857.9). Desplaza v13, preserva arshs3 como referencia activa.",
     "leaderboard": {
-      "score": 1967.9,
+      "score": 2364.6,
       "rank": null,
-      "episodes": 14,
+      "episodes": null,
       "lecturas": [
         [
           "initial",
@@ -1892,14 +2006,182 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
           "2026-09-25T01:22:09.418425+00:00",
           1967.9,
           14
+        ],
+        [
+          "2026-09-25T01:52Z",
+          2319.5,
+          24
+        ],
+        [
+          "2026-09-25T01:57Z",
+          2268.9,
+          null
+        ],
+        [
+          "2026-09-25T02:05:31.666206+00:00",
+          2364.6,
+          null
         ]
       ]
     },
     "delta_vs_champion_ladder": null,
-    "observed": "COMPLETE; 1967.9 a 14 episodios en snapshot del loop. Sigue joven; original 2284.3.",
+    "observed": "COMPLETE; score2364.6 en snapshot02:04UTC, sin recuento sincronizado; control activo de top3.",
     "conclusion": "REAL_WORLD_CANDIDATE; ventaja local específica contra copias, sin promoción automática",
-    "next_action": "Leer partidas y comparar contra arshs3 original; no inferir fuerza de rating de arranque",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/submissions_snapshot.json"
+    "next_action": "Comparar top3 frente a este padre exacto, sin interpretar ratings de arranque",
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/submissions_after_top3.json"
+  },
+  {
+    "submission_id": 56537205,
+    "timestamp": "2026-09-25T01:56:34.180000Z",
+    "git_commit": "ba1fda83c38bd680d00293f81bc6afbbb89d7813",
+    "experiment_id": "arshs3vq_top3",
+    "config": {
+      "file": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
+      "changes": {
+        "_V92_P_TOP": 3
+      }
+    },
+    "local_harness": {
+      "reference": "base",
+      "candidate": "pred_top3",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "guru6",
+        "h2965",
+        "hl25",
+        "hsov",
+        "hybu",
+        "obr",
+        "tds",
+        "tds25",
+        "v13"
+      ],
+      "seeds": [
+        996000,
+        996001,
+        996002,
+        996003,
+        996004,
+        996005,
+        996006,
+        996007,
+        996008,
+        996009,
+        996010,
+        996011,
+        996012,
+        996013,
+        996014,
+        996015
+      ],
+      "base_wr": 78.4090909090909,
+      "candidate_wr": 89.20454545454545,
+      "delta_points": 10.795454545454545,
+      "ci95_seed": [
+        1.2340308210197328,
+        20.356878269889357
+      ],
+      "ci95_2way": [
+        -0.11529016571724426,
+        21.706199256626334
+      ],
+      "opponent_breakdown": {
+        "ars40": 6.25,
+        "arshs3": -6.25,
+        "guru6": 0.0,
+        "h2965": 6.25,
+        "hl25": 18.75,
+        "hsov": 6.25,
+        "hybu": 18.75,
+        "obr": 6.25,
+        "tds": 12.5,
+        "tds25": 31.25,
+        "v13": 18.75
+      },
+      "better_cells": 20,
+      "worse_cells": 1,
+      "equal_cells": 155,
+      "status": "REAL_WORLD_CANDIDATE",
+      "registered_submission_gate": true,
+      "original_pool_only": {
+        "reference": "base",
+        "candidate": "pred_top3",
+        "rivals": [
+          "ars40",
+          "guru6",
+          "h2965",
+          "hsov",
+          "hybu",
+          "obr",
+          "tds",
+          "v13"
+        ],
+        "seeds": [
+          996000,
+          996001,
+          996002,
+          996003,
+          996004,
+          996005,
+          996006,
+          996007,
+          996008,
+          996009,
+          996010,
+          996011,
+          996012,
+          996013,
+          996014,
+          996015
+        ],
+        "base_wr": 85.15625,
+        "candidate_wr": 94.53125,
+        "delta_points": 9.375,
+        "ci95_seed": [
+          -0.7995092526113545,
+          19.549509252611355
+        ],
+        "ci95_2way": [
+          -1.634345637938253,
+          20.384345637938253
+        ],
+        "opponent_breakdown": {
+          "ars40": 6.25,
+          "guru6": 0.0,
+          "h2965": 6.25,
+          "hsov": 6.25,
+          "hybu": 18.75,
+          "obr": 6.25,
+          "tds": 12.5,
+          "v13": 18.75
+        },
+        "better_cells": 12,
+        "worse_cells": 0,
+        "equal_cells": 116
+      }
+    },
+    "reason": "Cumple gate registrado: delta>=3pp, ningún rival<-20pp, cero errores, revisión de mecanismos y runtime. Prueba real autorizada.",
+    "leaderboard": {
+      "score": 729.5,
+      "episodes": null,
+      "status": "SubmissionStatus.COMPLETE",
+      "lecturas": [
+        [
+          "2026-09-25T02:05:31.666206+00:00",
+          729.5,
+          null
+        ]
+      ]
+    },
+    "observed": "COMPLETE. Replay de validación113099118: 720 pasos, DONE/DONE, sin ERROR/TIMEOUT/INVALID. Rating729.5 de arranque no estima fuerza.",
+    "conclusion": "REAL_WORLD_CANDIDATE; no CHAMPION",
+    "next_action": "Recoger feedback real a edad razonable junto a VQ, mientras siguen loops4–6.",
+    "replaces_submission": 56511619,
+    "preserves_submission": 56535264,
+    "evidence": "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/top3_status_0204.json"
   }
 ]
 
@@ -2227,9 +2509,14 @@ variantes en un loop continuo: **no parar al cerrar cada ronda**. Objetivo
 persistente activo. Leer `docs/evidencia/loop_publicos_20260925/pipeline_state.json`
 y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_publicos.py`, `continuar_loop_herd.py`,
-`continuar_loop_recuperacion.py` y `continuar_loop_tomate.py` encadenan bloques
+`continuar_loop_recuperacion.py`, `continuar_loop_tomate.py` y
+`continuar_loop_productos.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
-terminó: top3 +10,795 pp, candidata real; loop3 de animales está corriendo.
+terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
+(una de64 partidas cambia, +1,5625pp). Loop5 de tomates corre; loop6 espera.
+Top3 enviada **56537205 COMPLETE**, commit ba1fda8, sha9668e30a; validación720
+pasos DONE/DONE sin errores/timeouts. VQ2364,6 en snapshot02:04UTC, aún joven.
+Conserva VQ56535264 como control; tres envíos restantes reportados. Ver historial.
 Al completar los bloques, revisar resultados y seguir con la siguiente hipótesis
 o submission justificada. Cierre de bloque no equivale a cierre de investigación.
 

@@ -1,0 +1,20 @@
+  (extra, no entra en la estimacion) base vs herd_ev1500: 50.0% (8 ep)
+  (extra, no entra en la estimacion) herd_ev600 vs herd_ev1500: 25.0% (8 ep)
+  (extra, no entra en la estimacion) base vs herd_ev_future: 50.0% (8 ep)
+  (extra, no entra en la estimacion) herd_ev600 vs herd_ev_future: 50.0% (8 ep)
+  (extra, no entra en la estimacion) base vs herd_future: 100.0% (8 ep)
+  (extra, no entra en la estimacion) herd_ev600 vs herd_future: 50.0% (8 ep)
+  (extra, no entra en la estimacion) base vs noop: 50.0% (8 ep)
+  (extra, no entra en la estimacion) herd_ev600 vs noop: 25.0% (8 ep)
+herd_ev600 - base: 8 rivales x 4 semillas = 32 celdas; ref 87.5%
+  delta -34.38 pts | IC95 semilla [-98.05; +29.30] | dos vias [-95.66; +26.91]
+  celdas cambiadas 11/32: 0 a favor, 11 en contra
+    vs    ars40  -25.0
+    vs    guru6  -25.0
+    vs    h2965  -50.0
+    vs     hsov  -50.0
+    vs     hybu  -25.0
+    vs      obr  -50.0
+    vs      tds   +0.0
+    vs      v13  -50.0
+  directo herd_ev600 vs base: 25.0% (8 ep)

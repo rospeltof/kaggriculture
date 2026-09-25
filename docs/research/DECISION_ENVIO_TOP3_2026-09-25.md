@@ -1,5 +1,9 @@
 # Decisión de prueba real: VQ + predictor top3
 
+**Enviada 56537205**, 2026-09-25 01:56:34 UTC, commit `ba1fda8`.
+**COMPLETE**, verificado ~02:04 UTC. Replay de validación113099118: 720 pasos,
+DONE/DONE, sin errores ni timeouts. Recibo confirma tres envíos restantes.
+
 Envío experimental autorizado por el loop autónomo. Archivo exacto de
 confirmación: `submission/main_publico_arshs3_vq_top3.py`, SHA-256
 `9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145`.

@@ -4,6 +4,13 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, loop3] El modelo HD2 con tiendas futuras a peso1 causa daño:**
+  −84,375 pp, IC dos vías [−114,33;−54,42], noop96/96, 504 episodios.
+  Diagnóstico reproducido: cambia dos gansos por vacas, EV estimado674→6371;
+  leche261→301 unidades pero ingreso28.950→26.820, huevos93→0 y margen
+  +1.808→−2.020. Tiendas iguales y cero errores. Refuta esta extrapolación
+  e implementación, no toda planificación con demanda futura.
+
 - **[2026-09-25 UTC] PREDICT aporta fuerza en el panel de públicos:** ablarlo
   sobre VQ pierde **68,75 puntos** (IC dos vías [−89,57; −47,93]); exigir
   confianza adicional pierde **51,56** ([−78,92; −24,20]). 608 episodios, ocho

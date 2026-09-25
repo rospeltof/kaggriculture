@@ -1,0 +1,267 @@
+{
+  "candidate": "recover_now",
+  "direction": 1,
+  "rule": "First sorted opponent/seed/seat with WLT improvement or regression; mechanism only",
+  "opponent": "arshs3",
+  "seed": 1003008,
+  "seat": 1,
+  "first_difference": 186,
+  "changed_action_turns": 151,
+  "first_actions": [
+    {
+      "farmer": [
+        "NORTH"
+      ],
+      "hands": [
+        [
+          "DIG"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ]
+      ],
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    },
+    {
+      "farmer": [
+        "NORTH"
+      ],
+      "hands": [
+        [
+          "DIG"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PLANT",
+          "STRAWBERRY"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ]
+      ],
+      "market": [
+        [
+          "BUY_SEED",
+          "WHEAT",
+          1
+        ]
+      ]
+    }
+  ],
+  "first_market": {
+    "inventory": {
+      "WHEAT": 9934,
+      "CARROT": 9963,
+      "TOMATO": 9952,
+      "STRAWBERRY": 9963,
+      "MELON": 9992,
+      "EGG": 9992,
+      "MILK": 9981,
+      "WOOL": 10016,
+      "FERTILIZER": 10076
+    },
+    "prices": {
+      "WHEAT": 33,
+      "CARROT": 38,
+      "TOMATO": 66,
+      "STRAWBERRY": 171,
+      "MELON": 269,
+      "EGG": 50,
+      "MILK": 198,
+      "WOOL": 185,
+      "FERTILIZER": 85
+    }
+  },
+  "final_rewards": [
+    [
+      91260.0,
+      90500.0
+    ],
+    [
+      153620.0,
+      153662.0
+    ]
+  ],
+  "own_sale_units_cash": [
+    {
+      "WHEAT": [
+        391,
+        15276
+      ],
+      "FERTILIZER": [
+        336,
+        15891
+      ],
+      "WOOL": [
+        139,
+        21135
+      ],
+      "MILK": [
+        217,
+        13289
+      ],
+      "MELON": [
+        72,
+        14267
+      ],
+      "EGG": [
+        89,
+        4759
+      ],
+      "STRAWBERRY": [
+        243,
+        27200
+      ],
+      "TOMATO": [
+        80,
+        7978
+      ],
+      "CARROT": [
+        103,
+        4272
+      ]
+    },
+    {
+      "WHEAT": [
+        371,
+        15344
+      ],
+      "FERTILIZER": [
+        335,
+        15888
+      ],
+      "WOOL": [
+        99,
+        5488
+      ],
+      "MILK": [
+        233,
+        25361
+      ],
+      "MELON": [
+        72,
+        14267
+      ],
+      "EGG": [
+        87,
+        3826
+      ],
+      "STRAWBERRY": [
+        251,
+        40528
+      ],
+      "TOMATO": [
+        80,
+        59461
+      ],
+      "CARROT": [
+        129,
+        7157
+      ]
+    }
+  ],
+  "telemetry": [
+    {
+      "_V92_P_REPORT": {
+        "pred_units": 180,
+        "pred_fires": 24,
+        "pred_errors": 0
+      },
+      "_HP_STATS": {
+        "extension_signals": 83,
+        "rejected_signals": 38
+      },
+      "_CA_REPORT": {
+        "ca_swaps": 4,
+        "ca_rescues": 0,
+        "ca_harvested": 8,
+        "ca_sold": 7,
+        "ca_seed_bought": 56,
+        "ca_wheat_seed_saved": 2,
+        "ca_carrot_seed_saved": 2,
+        "ca_feed_block": 0,
+        "ca_errors": 0,
+        "ca_min_wheat": 4
+      },
+      "_HD2_REPORT": {
+        "hd2_decision": "keep@241",
+        "hd2_ev": "COW:-1152,GOOSE:3032,SHEEP:-1450",
+        "hd2_rewrites": 0,
+        "hd2_credit_units": 0,
+        "hd2_sold_units": 0,
+        "hd2_errors": 0
+      }
+    },
+    {
+      "_V92_P_REPORT": {
+        "pred_units": 107,
+        "pred_fires": 19,
+        "pred_errors": 0
+      },
+      "_HP_STATS": {
+        "extension_signals": 77,
+        "rejected_signals": 36
+      },
+      "_CA_REPORT": {
+        "ca_swaps": 13,
+        "ca_rescues": 1,
+        "ca_harvested": 34,
+        "ca_sold": 24,
+        "ca_seed_bought": 122,
+        "ca_wheat_seed_saved": 9,
+        "ca_carrot_seed_saved": 31,
+        "ca_feed_block": 0,
+        "ca_errors": 0,
+        "ca_min_wheat": 0
+      },
+      "_RT_REPORT": {
+        "intents": 1,
+        "planted": 1,
+        "shifted": 5,
+        "expired": 0,
+        "unsafe_suffix": 0
+      },
+      "_HD2_REPORT": {
+        "hd2_decision": "keep@241",
+        "hd2_ev": "COW:-1152,GOOSE:2459,SHEEP:-1450",
+        "hd2_rewrites": 0,
+        "hd2_credit_units": 0,
+        "hd2_sold_units": 0,
+        "hd2_errors": 0
+      }
+    }
+  ],
+  "shops_preserved": false
+}

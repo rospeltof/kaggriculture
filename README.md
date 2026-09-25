@@ -6,6 +6,8 @@ medición y el registro de experimentos.
 
 **Estado vigente, 2026-09-25 UTC:** mejor referencia real **arshs3 56511619**
 (2292,5 @148 partidas); variante **VQ 56535264** enviada y validada por Kaggle.
+**VQ + top3 56537205 COMPLETE** tras confirmar +10,795 pp localmente;
+conserva VQ como control. Loops de producción y reparación siguen encadenados.
 El loop autónomo permite investigación y submissions experimentales. Leer primero
 [ESTADO_INVESTIGACION](docs/research/ESTADO_INVESTIGACION.md),
 [creencias](docs/research/RESEARCH_BELIEFS.md) y
@@ -17,7 +19,7 @@ El loop autónomo permite investigación y submissions experimentales. Leer prim
 
 1. Darle acceso al repo y pedir que lea [AGENTS.md](AGENTS.md), o generar el
    archivo único de contexto con el comando de abajo.
-2. Compartir los [resultados de la ronda actual](docs/research/RESULTADOS_2026-09-25.md).
+2. Compartir las [scorecards del loop activo](docs/research/SCORECARDS_LOOP_2026-09-25.md).
 3. Revisar el historial y registrar una hipótesis nueva antes de ejecutarla,
    dentro del loop autónomo autorizado. El prompt `REVISION_LIDER_PARA_LLM.md`
    corresponde a la ronda histórica del 14 de septiembre.

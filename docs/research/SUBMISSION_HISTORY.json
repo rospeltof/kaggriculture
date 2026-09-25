@@ -448,8 +448,8 @@
       ],
       "observed_at": "2026-09-25T00:22:13.462277+00:00"
     },
-    "observed": null,
-    "conclusion": "Mejor referencia real observada; sigue activa y se compara con VQ",
+    "observed": "Desplazada por top3; score2275.7 en snapshot de retiro. Paquete exacto conservado.",
+    "conclusion": "Referencia histórica madura; paquete original conservado",
     "autorizacion": "usuario 2026-09-24 (AskUserQuestion): 'arshs3 + v13 (Recomendado)'",
     "submission_id": 56511619,
     "timestamp": "2026-09-24T04:28:57Z",
@@ -470,7 +470,7 @@
       }
     },
     "reason": "Campeon del torneo en bucle cerrado contra el pool publico",
-    "next_action": "Comparar VQ a edad y rivales comparables"
+    "next_action": "Control local; no reenviar salvo evidencia nueva"
   },
   {
     "submission_id": 56535264,
@@ -498,9 +498,9 @@
     },
     "reason": "VQ validada contra copias; arshs3 transfiere al ladder (2292.5 vs v13 1857.9). Desplaza v13, preserva arshs3 como referencia activa.",
     "leaderboard": {
-      "score": 1967.9,
+      "score": 2364.6,
       "rank": null,
-      "episodes": 14,
+      "episodes": null,
       "lecturas": [
         [
           "initial",
@@ -514,13 +514,181 @@
           "2026-09-25T01:22:09.418425+00:00",
           1967.9,
           14
+        ],
+        [
+          "2026-09-25T01:52Z",
+          2319.5,
+          24
+        ],
+        [
+          "2026-09-25T01:57Z",
+          2268.9,
+          null
+        ],
+        [
+          "2026-09-25T02:05:31.666206+00:00",
+          2364.6,
+          null
         ]
       ]
     },
     "delta_vs_champion_ladder": null,
-    "observed": "COMPLETE; 1967.9 a 14 episodios en snapshot del loop. Sigue joven; original 2284.3.",
+    "observed": "COMPLETE; score2364.6 en snapshot02:04UTC, sin recuento sincronizado; control activo de top3.",
     "conclusion": "REAL_WORLD_CANDIDATE; ventaja local específica contra copias, sin promoción automática",
-    "next_action": "Leer partidas y comparar contra arshs3 original; no inferir fuerza de rating de arranque",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/submissions_snapshot.json"
+    "next_action": "Comparar top3 frente a este padre exacto, sin interpretar ratings de arranque",
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/submissions_after_top3.json"
+  },
+  {
+    "submission_id": 56537205,
+    "timestamp": "2026-09-25T01:56:34.180000Z",
+    "git_commit": "ba1fda83c38bd680d00293f81bc6afbbb89d7813",
+    "experiment_id": "arshs3vq_top3",
+    "config": {
+      "file": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
+      "changes": {
+        "_V92_P_TOP": 3
+      }
+    },
+    "local_harness": {
+      "reference": "base",
+      "candidate": "pred_top3",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "guru6",
+        "h2965",
+        "hl25",
+        "hsov",
+        "hybu",
+        "obr",
+        "tds",
+        "tds25",
+        "v13"
+      ],
+      "seeds": [
+        996000,
+        996001,
+        996002,
+        996003,
+        996004,
+        996005,
+        996006,
+        996007,
+        996008,
+        996009,
+        996010,
+        996011,
+        996012,
+        996013,
+        996014,
+        996015
+      ],
+      "base_wr": 78.4090909090909,
+      "candidate_wr": 89.20454545454545,
+      "delta_points": 10.795454545454545,
+      "ci95_seed": [
+        1.2340308210197328,
+        20.356878269889357
+      ],
+      "ci95_2way": [
+        -0.11529016571724426,
+        21.706199256626334
+      ],
+      "opponent_breakdown": {
+        "ars40": 6.25,
+        "arshs3": -6.25,
+        "guru6": 0.0,
+        "h2965": 6.25,
+        "hl25": 18.75,
+        "hsov": 6.25,
+        "hybu": 18.75,
+        "obr": 6.25,
+        "tds": 12.5,
+        "tds25": 31.25,
+        "v13": 18.75
+      },
+      "better_cells": 20,
+      "worse_cells": 1,
+      "equal_cells": 155,
+      "status": "REAL_WORLD_CANDIDATE",
+      "registered_submission_gate": true,
+      "original_pool_only": {
+        "reference": "base",
+        "candidate": "pred_top3",
+        "rivals": [
+          "ars40",
+          "guru6",
+          "h2965",
+          "hsov",
+          "hybu",
+          "obr",
+          "tds",
+          "v13"
+        ],
+        "seeds": [
+          996000,
+          996001,
+          996002,
+          996003,
+          996004,
+          996005,
+          996006,
+          996007,
+          996008,
+          996009,
+          996010,
+          996011,
+          996012,
+          996013,
+          996014,
+          996015
+        ],
+        "base_wr": 85.15625,
+        "candidate_wr": 94.53125,
+        "delta_points": 9.375,
+        "ci95_seed": [
+          -0.7995092526113545,
+          19.549509252611355
+        ],
+        "ci95_2way": [
+          -1.634345637938253,
+          20.384345637938253
+        ],
+        "opponent_breakdown": {
+          "ars40": 6.25,
+          "guru6": 0.0,
+          "h2965": 6.25,
+          "hsov": 6.25,
+          "hybu": 18.75,
+          "obr": 6.25,
+          "tds": 12.5,
+          "v13": 18.75
+        },
+        "better_cells": 12,
+        "worse_cells": 0,
+        "equal_cells": 116
+      }
+    },
+    "reason": "Cumple gate registrado: delta>=3pp, ningún rival<-20pp, cero errores, revisión de mecanismos y runtime. Prueba real autorizada.",
+    "leaderboard": {
+      "score": 729.5,
+      "episodes": null,
+      "status": "SubmissionStatus.COMPLETE",
+      "lecturas": [
+        [
+          "2026-09-25T02:05:31.666206+00:00",
+          729.5,
+          null
+        ]
+      ]
+    },
+    "observed": "COMPLETE. Replay de validación113099118: 720 pasos, DONE/DONE, sin ERROR/TIMEOUT/INVALID. Rating729.5 de arranque no estima fuerza.",
+    "conclusion": "REAL_WORLD_CANDIDATE; no CHAMPION",
+    "next_action": "Recoger feedback real a edad razonable junto a VQ, mientras siguen loops4–6.",
+    "replaces_submission": 56511619,
+    "preserves_submission": 56535264,
+    "evidence": "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/top3_status_0204.json"
   }
 ]

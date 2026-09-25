@@ -1,6 +1,7 @@
 # Scorecards del loop continuo — 2026-09-25 UTC
 
-Estado: loop1, loop2 y confirm1 terminados; loop3 de animales corriendo; loops 4 y 5 encadenados.
+Estado: loops 1–4 y confirm1 terminados; loop5 de tomates corriendo;
+loop6 encadenado. Objetivo persistente activo.
 
 ## Confirmación disjunta terminada
 
@@ -14,8 +15,10 @@ Estado: loop1, loop2 y confirm1 terminados; loop3 de animales corriendo; loops 4
 Top3: base78,409% →89,205%, 20 celdas mejores y una peor. En ocho rivales
 originales +9,375 pp. Peor rival arshs3 −6,25; máximo turno757ms. Mecanismo
 favorable y desfavorable reproducidos, dinero conciliado y cero errores.
-Ver `DECISION_ENVIO_TOP3_2026-09-25.md`. Preparado archivo byte exacto para
-prueba real; no se mezcla con la investigación productiva en curso.
+Ver `DECISION_ENVIO_TOP3_2026-09-25.md`. **Enviada56537205**, commitba1fda8,
+01:56UTC, archivo byte exacto; **COMPLETE**, replay de validación720 pasos
+DONE/DONE sin errores ni timeouts. Conserva VQ como control activo.
+No se mezcla con la investigación productiva en curso.
 
 Snapshot real posterior: VQ2319,5 con24 episodios listados; original2275,7.
 No atribuir fuerza relativa al rating aún joven de VQ.
@@ -105,3 +108,51 @@ activa diez plantas y vende 60 tomates, sin errores. Noop y base empatan en
 comportamiento; la variante temprana pierde ese mundo, no prueba poblacional.
 Piloto disjunto 1005000–003 encolado tras loop4, confirmación condicional
 1006000–015. Nunca dos torneos grandes simultáneos.
+
+## Loop3: animales terminado
+
+504 episodios, noop exacto 96/96, cero errores. Base 87,5% en pool común.
+
+| Brazo | Delta pp | IC95 dos vías | Episodios con acciones propias distintas /64 |
+|---|---:|---|---:|
+| herd_future | −84,375 | [−114,33; −54,42] | 62 |
+| herd_ev600 | −34,375 | [−95,66; +26,91] | 62 |
+| herd_ev1500 | 0 | indefinido | 0 |
+| herd_ev_future | −40,625 | [−103,62; +22,37] | 64 |
+
+Ninguna seleccionada; no se gasta confirmación. herd_future REJECTED;
+EV600/EV_future son negativos con intervalo amplio, no refutación universal;
+EV1500 es inerte en este panel. Intervalos t lineales pueden salir del rango
+físico de deltas: se conservan sin presentarlos como probabilidades posibles.
+Sonda adicional de herd_future registrada por regla de primera regresión ordenada.
+
+Sonda completada: ars40/1001000/asiento0, primera diferencia step241,
+GOOSE2 → COW2. EV de vacas estimado674 →6371 por incorporar tiendas futuras;
+observado: leche261 →301 unidades, pero ingreso28.950 →26.820; huevos93 →0.
+Margen+1.808 →−2.020, mismas tiendas, caja conciliada, cero errores del módulo.
+La variante sí ejecuta su decisión; la evidencia cuestiona la proyección de
+valor, no justifica arreglar a ciegas la logística ni presumir que producir más gana.
+
+## Loop6 registrado tras la confirmación top3
+
+Cuatro nuevos brazos sobre top3: extender a EGG, MELON, ambos, y combinar
+top3 con fast2. Base/noop top3 y controles VQ/fast2 separados en la misma
+muestra, 736 episodios de piloto, confirmación condicional en semillas nuevas.
+Primario ahora es mejora frente a top3. Los pilotos productivos ya registrados
+mantienen VQ como padre. `continuar_loop_productos.py` espera a loop5.
+
+## Loop4: cobertura de reparación terminada
+
+384 episodios válidos, noop exacto 128/128, cero errores. 32 semillas, ambos
+asientos frente a arshs3. Recuperación cambia acciones en **1/64** partidas y
+convierte esa derrota en victoria: 93,75% →95,3125%, **+1,5625 pp**,
+IC95 por semilla [−1,62;4,75]. No hay intervalo de dos vías con un solo rival.
+Una semilla positiva y cero negativas; directo vs VQ50,78125% es diagnóstico.
+
+El preregistro exigía al menos dos semillas positivas para PROMISING: no se
+cumple. INCONCLUSIVE; hay mecanismo raro favorable, sin promoción ni envío.
+El caso dirigido previo no se suma para superar retrospectivamente ese gate.
+La única celda nueva modificada se reprodujo: seed1003008/asiento1, primera
+diferencia step186, una planta recuperada y cinco comandos desplazados.
+Margen −760 →+42. Cambian las tiendas y la economía de ambos jugadores;
+no atribuir su enorme aumento de dinero bruto al valor directo de una planta.

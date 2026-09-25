@@ -18,9 +18,14 @@ variantes en un loop continuo: **no parar al cerrar cada ronda**. Objetivo
 persistente activo. Leer `docs/evidencia/loop_publicos_20260925/pipeline_state.json`
 y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_publicos.py`, `continuar_loop_herd.py`,
-`continuar_loop_recuperacion.py` y `continuar_loop_tomate.py` encadenan bloques
+`continuar_loop_recuperacion.py`, `continuar_loop_tomate.py` y
+`continuar_loop_productos.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
-terminó: top3 +10,795 pp, candidata real; loop3 de animales está corriendo.
+terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
+(una de64 partidas cambia, +1,5625pp). Loop5 de tomates corre; loop6 espera.
+Top3 enviada **56537205 COMPLETE**, commit ba1fda8, sha9668e30a; validación720
+pasos DONE/DONE sin errores/timeouts. VQ2364,6 en snapshot02:04UTC, aún joven.
+Conserva VQ56535264 como control; tres envíos restantes reportados. Ver historial.
 Al completar los bloques, revisar resultados y seguir con la siguiente hipótesis
 o submission justificada. Cierre de bloque no equivale a cierre de investigación.
 

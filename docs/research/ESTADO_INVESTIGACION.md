@@ -19,17 +19,19 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   **+10,795 pp**, IC95 dos vías [−0,115;21,706], cumple gate de prueba real;
   fast2 +2,841 pp, no cumple gate. Top3 máximo757ms, mecanismo de mejora y
   única celda de daño reproducidos. Decisión en `DECISION_ENVIO_TOP3_2026-09-25.md`.
-- **En curso loop3**: cuatro variantes de elección económica de animales, 504 episodios;
-  `continuar_loop_herd.py` espera al pipeline anterior y luego ejecuta piloto y
-  confirmación según `PREREG_LOOP3_2026-09-25.md`.
-- Loop4: cobertura de recover_now en 32 semillas nuevas, 384 episodios;
-  `continuar_loop_recuperacion.py` espera a loop3. Protocolo separado después
-  de evidencia nueva del mecanismo, no reinterpretación del gate de loop2.
-- Loop5: cinco variantes de tomate temprano/tardío, 616 episodios y hasta dos
-  confirmaciones; `continuar_loop_tomate.py` espera a loop4. Ocho diagnósticos
+- Loop3 completo: 504 episodios; herd_future −84,375 pp, EV600 −34,375,
+  EV1500 0 (inerte), EV_future −40,625. No seleccionadas, sin confirmación.
+  Noop96/96, cero errores. Sonda para explicar el gran daño de herd_future.
+- Loop4 completo: 384 episodios, noop128/128; recover_now cambia una de64
+  partidas, +1,5625pp, IC95 semilla [−1,62;4,75]. Sólo una semilla positiva;
+  no pasa gate de dos. INCONCLUSIVE, no envío. No sumar el caso dirigido previo.
+- **En curso loop5**: cinco variantes de tomate temprano/tardío, 616 episodios y hasta dos
+  confirmaciones; `continuar_loop_tomate.py`. Ocho diagnósticos
   previos: noop exacto, diez plantas/60 unidades en el brazo temprano, cero
   errores, derrota en ese mundo. No elegir por esas partidas de desarrollo.
-  Total: 22 variantes diferentes preparadas, además de controles.
+- Loop6: cuatro brazos de cobertura EGG/MELON y combinación top3+fast2.
+  Nueva base explícita top3 para esa ronda, con VQ y fast2 como controles de
+  interacción. 736 episodios; espera a loop5. Total 26 variantes preparadas.
 - Scorecards actualizadas: `SCORECARDS_LOOP_2026-09-25.md`.
 - Estado máquina: `docs/evidencia/loop_publicos_20260925/pipeline_state.json`.
   Logs: `results/loop_publicos_20260925_pipeline.log` y los logs de cada bloque.
@@ -53,8 +55,11 @@ con nombre nuevo eran copias de tds25: se deduplicaron sin repetir torneo.
 
 Último snapshot real: VQ56535264 **2319,5 /24 episodios listados**, original
 56511619 **2275,7**. VQ aún joven, no afirmar superioridad por este rating.
-Top3 empaquetado byte exacto de confirmación, sha9668e30a; envío experimental
-en preparación. Desplazará al original y conservará VQ, su padre, como control.
+Top3 **56537205 COMPLETE**, enviada 2026-09-25 01:56:34 UTC, commit ba1fda8,
+sha9668e30a byte exacto de confirmación. Validación113099118: 720 pasos,
+DONE/DONE, cero errores/timeouts. Recibo confirma tres envíos restantes.
+Desplaza al original y conserva VQ, su padre, como control. Snapshot02:04UTC:
+VQ2364,6 y top3 729,5 inicial; no interpretar el rating de arranque como fuerza.
 
 Lo siguiente es el cierre de la ronda anterior; no significa parar este loop.
 

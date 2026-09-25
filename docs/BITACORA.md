@@ -1,5 +1,34 @@
 # Bitácora de experimentos
 
+## 2026-09-25, 02:05 UTC — Validación real completa y reparación rara
+
+Top3 **56537205 COMPLETE**. Replay de validación113099118: 720 pasos,
+DONE/DONE, cero errores y timeouts. VQ2364,6 en snapshot02:04, top3 apenas
+729,5 inicial; no comparar ambos ratings como políticas maduras.
+
+Loop4 completo: 384 episodios, noop128/128. Reparación se activa en una de64
+partidas del pool y gana esa celda: +1,5625pp, IC semilla[−1,62;4,75]. Gate
+exigía dos semillas positivas y sólo hay una: INCONCLUSIVE, sin promoción.
+No sumar el caso real dirigido para forzar el criterio. Loop5 ya corre y
+loop6 espera. Más de cuatro mil episodios de este loop completados; sigue activo.
+
+## 2026-09-25, 02:03 UTC — Top3 enviada y loop3 cerrado sin promoción
+
+Submission **56537205** recibida01:56:34UTC, commitba1fda8, sha9668e30a;
+PENDING en consultas iniciales, tres envíos restantes. Se conserva VQ como padre
+activo de comparación. No se mezclaron parches productivos en ese archivo.
+
+Loop3: 504 episodios, noop96/96, cero errores. herd_future−84,375pp,
+EV600−34,375, EV1500=0 sin cambios de acciones, EV_future−40,625. Ninguna
+confirmación. La sonda del gran daño muestra gansos→vacas, más leche con menos
+ingresos, mismas tiendas y cero errores: problema de valor esperado/modelo,
+no ausencia de ejecución. Evidencia y límites en scorecards.
+
+Loop4 de cobertura corre; loop5 tomate espera. Loop6 registrado/encolado con
+cuatro brazos sobre top3 (EGG, MELON, ambos, fast2 combinado), 736 episodios,
+controles VQ/A/B/A+B y confirmación condicional. Ya hay26 variantes preparadas.
+La base de loops3–5 sigue siendo VQ; sólo loop6 cambia a top3 explícitamente.
+
 ## 2026-09-25 — Confirmación top3 positiva; prueba real preparada
 
 Confirm1 completa: 1.600 episodios, noop416/416, cero errores. Top3 +10,795 pp

@@ -26,6 +26,7 @@ SOURCES = (
     "docs/research/PREREG_LOOP3_2026-09-25.md",
     "docs/research/PREREG_LOOP4_REPARACION_2026-09-25.md",
     "docs/research/PREREG_LOOP5_TOMATE_TEMPRANO_2026-09-25.md",
+    "docs/research/PREREG_LOOP6_PRODUCTOS_2026-09-25.md",
     "docs/research/LIDER_Y_FUENTES_2026-09-25.md",
     "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",
     "docs/research/RESULTADOS_2026-09-25.md",

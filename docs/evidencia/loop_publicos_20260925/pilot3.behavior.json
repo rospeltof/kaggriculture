@@ -1,0 +1,22 @@
+{
+  "herd_future": {
+    "pool_episodes": 64,
+    "own_action_hash_changed": 62,
+    "opponent_action_hash_changed": 62
+  },
+  "herd_ev600": {
+    "pool_episodes": 64,
+    "own_action_hash_changed": 62,
+    "opponent_action_hash_changed": 62
+  },
+  "herd_ev1500": {
+    "pool_episodes": 64,
+    "own_action_hash_changed": 0,
+    "opponent_action_hash_changed": 0
+  },
+  "herd_ev_future": {
+    "pool_episodes": 64,
+    "own_action_hash_changed": 64,
+    "opponent_action_hash_changed": 64
+  }
+}
