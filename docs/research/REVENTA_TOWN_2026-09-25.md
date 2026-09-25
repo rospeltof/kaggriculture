@@ -1,5 +1,11 @@
 # Reventas nuevas: primero verificar economía y ejecución
 
+**Actualización10:25UTC:** confirm20 cerró3.200/noop832; town20+0,2841pp,
+town50+1,1364pp, gatefalse en ambas. No enviar. Leer CIERRE_REVENTAS20 para
+los18diagnósticos y el daño causado por prioridad de cierre; el preregistro31
+trata esa nueva hipótesis sin reescribir este experimento. Lo siguiente conserva
+el desarrollo y piloto anteriores.
+
 ## Actualización: piloto completo y confirmación activa
 
 Pilot20 terminó a09:45:49UTC:1.920episodios,448noops exactos, cero errores y

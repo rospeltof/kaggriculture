@@ -596,7 +596,7 @@
     "delta_vs_champion_ladder": null,
     "observed": "COMPLETE, snapshot 2026-09-25T10:02:07.123076+00:00: score2295.1, 98 episodios listados (incluye validación). Siete nuevos replays1003reproducidos exactos y siete alternativas contra rival fijo; muestra de recencia, no WRglobal.",
     "conclusion": "REAL_WORLD_CANDIDATE; ventaja local específica contra copias, sin promoción automática",
-    "next_action": "Confirm20 activa;21–29en cola.28/29validados48partidas cada uno. Siete controles reales1003exactos y siete alternativas contra rival fijo; no explicación causal de rating. Revisar ambas referencias reales y hashes alternativos antes de desplazarVQ.",
+    "next_action": "Confirm20 cerrada: +0,284/+1,136pp, gatefalse; sin envío.21activa,22–30en cola.31preregistrada por daño de prioridad del cierre, todavía por construir/validar. Revisar ambas referencias reales y hashes alternativos antes de desplazarVQ.",
     "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_1003.json"
   },
   {
@@ -806,7 +806,7 @@
     },
     "observed": "COMPLETE, snapshot 2026-09-25T10:02:07.123076+00:00: score2135.7, 88 episodios listados (incluye validación). Siete nuevos replays1003reproducidos exactos y siete alternativas contra rival fijo; muestra de recencia, no WRglobal.",
     "conclusion": "REAL_WORLD_CANDIDATE; no CHAMPION",
-    "next_action": "Confirm20 activa;21–29en cola.28/29validados48partidas cada uno. Siete controles reales1003exactos y siete alternativas contra rival fijo; no explicación causal de rating. Revisar ambas referencias reales y hashes alternativos antes de desplazarVQ.",
+    "next_action": "Confirm20 cerrada: +0,284/+1,136pp, gatefalse; sin envío.21activa,22–30en cola.31preregistrada por daño de prioridad del cierre, todavía por construir/validar. Revisar ambas referencias reales y hashes alternativos antes de desplazarVQ.",
     "replaces_submission": 56511619,
     "preserves_submission": 56535264,
     "evidence": "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",

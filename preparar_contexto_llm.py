@@ -22,6 +22,11 @@ ARMS = ("base", "noop", "_peor", "partial_batch")
 CRITICAL = {4: 3.1824463052837078, 8: 2.364624251592784}
 SOURCES = (
     "docs/research/ESTADO_INVESTIGACION.md",
+    "docs/research/CIERRE_REVENTAS20_2026-09-25.md",
+    "docs/research/PREREG_LOOP30_APERTURA12_2026-09-25.md",
+    "docs/research/APERTURA_MERCADO_2026-09-25.md",
+    "docs/research/PREREG_LOOP31_PRIORIDAD_CIERRE_2026-09-25.md",
+    "docs/research/LECTURA_PUBLICA_1018_2026-09-25.md",
     "docs/research/COTA_STOCK_RIVAL_2026-09-25.md",
     "docs/research/FEEDBACK_1003_2026-09-25.md",
     "docs/research/CENSURA_FORECAST_2026-09-25.md",

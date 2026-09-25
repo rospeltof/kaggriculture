@@ -1,0 +1,250 @@
+{
+  "town20": {
+    "panel_cells": 704,
+    "changed_own_cells": 704,
+    "changed_rival_cells": 206,
+    "changed_seeds": [
+      1050000,
+      1050001,
+      1050002,
+      1050003,
+      1050004,
+      1050005,
+      1050006,
+      1050007,
+      1050008,
+      1050009,
+      1050010,
+      1050011,
+      1050012,
+      1050013,
+      1050014,
+      1050015,
+      1050016,
+      1050017,
+      1050018,
+      1050019,
+      1050020,
+      1050021,
+      1050022,
+      1050023,
+      1050024,
+      1050025,
+      1050026,
+      1050027,
+      1050028,
+      1050029,
+      1050030,
+      1050031
+    ],
+    "better_seat_cells": 4,
+    "worse_seat_cells": 2,
+    "contrasts": [
+      {
+        "rival": "v13",
+        "seed": 1050019,
+        "seat": 0,
+        "score_before": 1.0,
+        "score_after": 0.0,
+        "base_margin": 265.0,
+        "margin": -79.0
+      },
+      {
+        "rival": "v13",
+        "seed": 1050019,
+        "seat": 1,
+        "score_before": 1.0,
+        "score_after": 0.0,
+        "base_margin": 265.0,
+        "margin": -79.0
+      },
+      {
+        "rival": "tds25",
+        "seed": 1050001,
+        "seat": 0,
+        "score_before": 0.0,
+        "score_after": 1.0,
+        "base_margin": -3.0,
+        "margin": 46.0
+      },
+      {
+        "rival": "tds25",
+        "seed": 1050001,
+        "seat": 1,
+        "score_before": 0.0,
+        "score_after": 1.0,
+        "base_margin": -3.0,
+        "margin": 46.0
+      },
+      {
+        "rival": "hl25",
+        "seed": 1050022,
+        "seat": 0,
+        "score_before": 0.0,
+        "score_after": 1.0,
+        "base_margin": -181.0,
+        "margin": 1004.0
+      },
+      {
+        "rival": "hl25",
+        "seed": 1050022,
+        "seat": 1,
+        "score_before": 0.0,
+        "score_after": 1.0,
+        "base_margin": -181.0,
+        "margin": 1004.0
+      }
+    ]
+  },
+  "town50": {
+    "panel_cells": 704,
+    "changed_own_cells": 704,
+    "changed_rival_cells": 306,
+    "changed_seeds": [
+      1050000,
+      1050001,
+      1050002,
+      1050003,
+      1050004,
+      1050005,
+      1050006,
+      1050007,
+      1050008,
+      1050009,
+      1050010,
+      1050011,
+      1050012,
+      1050013,
+      1050014,
+      1050015,
+      1050016,
+      1050017,
+      1050018,
+      1050019,
+      1050020,
+      1050021,
+      1050022,
+      1050023,
+      1050024,
+      1050025,
+      1050026,
+      1050027,
+      1050028,
+      1050029,
+      1050030,
+      1050031
+    ],
+    "better_seat_cells": 10,
+    "worse_seat_cells": 2,
+    "contrasts": [
+      {
+        "rival": "hsov",
+        "seed": 1050027,
+        "seat": 0,
+        "score_before": 0.0,
+        "score_after": 1.0,
+        "base_margin": -32.0,
+        "margin": 8.0
+      },
+      {
+        "rival": "hsov",
+        "seed": 1050027,
+        "seat": 1,
+        "score_before": 0.0,
+        "score_after": 1.0,
+        "base_margin": -32.0,
+        "margin": 8.0
+      },
+      {
+        "rival": "v13",
+        "seed": 1050019,
+        "seat": 1,
+        "score_before": 1.0,
+        "score_after": 0.0,
+        "base_margin": 265.0,
+        "margin": -35.0
+      },
+      {
+        "rival": "v13",
+        "seed": 1050019,
+        "seat": 0,
+        "score_before": 1.0,
+        "score_after": 0.0,
+        "base_margin": 265.0,
+        "margin": -35.0
+      },
+      {
+        "rival": "h2965",
+        "seed": 1050027,
+        "seat": 0,
+        "score_before": 0.0,
+        "score_after": 1.0,
+        "base_margin": -24.0,
+        "margin": 16.0
+      },
+      {
+        "rival": "h2965",
+        "seed": 1050027,
+        "seat": 1,
+        "score_before": 0.0,
+        "score_after": 1.0,
+        "base_margin": -24.0,
+        "margin": 16.0
+      },
+      {
+        "rival": "tds25",
+        "seed": 1050001,
+        "seat": 0,
+        "score_before": 0.0,
+        "score_after": 1.0,
+        "base_margin": -3.0,
+        "margin": 120.0
+      },
+      {
+        "rival": "tds25",
+        "seed": 1050001,
+        "seat": 1,
+        "score_before": 0.0,
+        "score_after": 1.0,
+        "base_margin": -3.0,
+        "margin": 120.0
+      },
+      {
+        "rival": "tds25",
+        "seed": 1050010,
+        "seat": 1,
+        "score_before": 0.0,
+        "score_after": 1.0,
+        "base_margin": -54.0,
+        "margin": 32.0
+      },
+      {
+        "rival": "tds25",
+        "seed": 1050010,
+        "seat": 0,
+        "score_before": 0.0,
+        "score_after": 1.0,
+        "base_margin": -54.0,
+        "margin": 32.0
+      },
+      {
+        "rival": "hl25",
+        "seed": 1050022,
+        "seat": 0,
+        "score_before": 0.0,
+        "score_after": 1.0,
+        "base_margin": -181.0,
+        "margin": 1022.0
+      },
+      {
+        "rival": "hl25",
+        "seed": 1050022,
+        "seat": 1,
+        "score_before": 0.0,
+        "score_after": 1.0,
+        "base_margin": -181.0,
+        "margin": 1022.0
+      }
+    ]
+  }
+}

@@ -2,7 +2,8 @@
 
 Hipótesis investigada después de validar29: usar producción visible para
 descartar previsiones imposibles de ventas animales. No es el bonus de alimento
-del loop17, ni la censura de observaciones28. No se construyó una política30.
+del loop17, ni la censura de observaciones28. No se construyó una política a
+partir de esta cota.
 
 El auditor usa exclusivamente granja/posiciones públicas, inventario de mercado,
 tiendas y nuestras órdenes finales anteriores. Suma posibles cosechas visibles

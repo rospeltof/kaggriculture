@@ -1,0 +1,20 @@
+{
+  "open12_vq": {
+    "path": "results/apertura12_20260925/open12_vq.py",
+    "sha256": "f5983c4a24c42a2b9f855588e5e234401fa459b30d16b2c73716e7310d496b5b",
+    "config": {
+      "quantity": 12,
+      "enabled": true
+    },
+    "behavior_reference": "base"
+  },
+  "open12_top3": {
+    "path": "results/apertura12_20260925/open12_top3.py",
+    "sha256": "020ce609f8a28de7ee96ac3e0f0846dcd5264c3a7c39a864d93d4623252309ec",
+    "config": {
+      "quantity": 12,
+      "enabled": true
+    },
+    "behavior_reference": "top3"
+  }
+}

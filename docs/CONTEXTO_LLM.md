@@ -13,8 +13,13 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 
 ## Índice y huellas de los documentos
 
-- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `ddb1081d93e3cddae09e7b15b4a54b68fa98366115090b6fe37955c5e36a70bd`
-- `docs/research/COTA_STOCK_RIVAL_2026-09-25.md` — SHA-256 `ab26e518d08965ce2b2c31254bfa415333b7424adb9d2c54f12c47686582f70a`
+- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `1d0d6772fd0760f6cceae2d71b1f1b58d20210e2973ba941f201b5c62967b362`
+- `docs/research/CIERRE_REVENTAS20_2026-09-25.md` — SHA-256 `fa3acddf00caac722e655bf95793518bf333da2a665e9edb6a7260b36c6a6504`
+- `docs/research/PREREG_LOOP30_APERTURA12_2026-09-25.md` — SHA-256 `e0e589cc2e33ca9fb26e9b03acb55d08f681b974ebfb98398e1f137b0bdeaaa4`
+- `docs/research/APERTURA_MERCADO_2026-09-25.md` — SHA-256 `8f64eacb87b91761a73a73ee062aee506557ef238ff28b648378234d5d7a6fe6`
+- `docs/research/PREREG_LOOP31_PRIORIDAD_CIERRE_2026-09-25.md` — SHA-256 `bcfaf5e7e8bb2584f379ac6533a7a7bb7d2acceddec242faf64523c14195fc2d`
+- `docs/research/LECTURA_PUBLICA_1018_2026-09-25.md` — SHA-256 `84e442eb4b032864df89d43ae235b87e04ce713618857cb9470f3073ba54c6aa`
+- `docs/research/COTA_STOCK_RIVAL_2026-09-25.md` — SHA-256 `08dedad51a3a6e993d30dc9a1c0aa7424d6a545ed55f9eeb7f61a6c31ca6d731`
 - `docs/research/FEEDBACK_1003_2026-09-25.md` — SHA-256 `d81253c6b9cc999bc787c8f3080ef34465900661b8b45bcf570cd05bb7aed464`
 - `docs/research/CENSURA_FORECAST_2026-09-25.md` — SHA-256 `5ee815fd4f67cc8a1f65e8883981fe6abc04acacea0f5dca2020ac20de0806a6`
 - `docs/research/PREREG_LOOP28_CENSURA_2026-09-25.md` — SHA-256 `b48b0e48bdb988029c84a7d08e78a39d7aac2270163e499b9d3f52e5911ed454`
@@ -26,7 +31,7 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 - `docs/research/ADENDA_LOOP27_COBERTURA_2026-09-25.md` — SHA-256 `2217fed8f89aeffec7da9fcc1f62374c5353f50cc44e4ce7bcf28028914d4b33`
 - `docs/research/ATRIBUCION_VENTAS_2026-09-25.md` — SHA-256 `448d34b1a4e98998499832a844ef5554c67e4d834f143c5e8976f8fb00f403dc`
 - `docs/research/REPARACION_HASH_RUNTIME_2026-09-25.md` — SHA-256 `31eae1a445a120d27abb9cb46d7b79d9bff0902059a649d4eecf9acd26287b6d`
-- `docs/research/SCORECARDS_LOOP_2026-09-25.md` — SHA-256 `2f2bec6a390965877b01efedf2bf1eaa330ff02cb6929db89feed79f9f2d9999`
+- `docs/research/SCORECARDS_LOOP_2026-09-25.md` — SHA-256 `5b28911f604faab6827ed0313c5cc1673b0075d47eafbaa00ea449f89e99c890`
 - `docs/research/PREREG_LOOP26_SEMILLAS_2026-09-25.md` — SHA-256 `ac981a6d48761a788afce6e01f3f1c48925eb8a956a61a6607cd8c3514a54e8f`
 - `docs/research/SEMILLAS_TARDIAS_2026-09-25.md` — SHA-256 `4ce2d168fe07ddf2c2d8c8e06d40527c1755be8c1e29d6b489c956b08ce70d46`
 - `docs/research/PREREG_LOOP25_PANEL_CERCANO_2026-09-25.md` — SHA-256 `593e3b4f5507f93ade4055da758c87666a706b3f9c0152f9a681eb3a04db9f56`
@@ -40,7 +45,7 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 - `docs/research/FUENTES_PUBLICAS_0712_2026-09-25.md` — SHA-256 `52daff82a9306cdc473123a965b486fc1bace9ab7385e9563a7a2b558515c730`
 - `docs/research/PREREG_LOOP21_SENALES_EXTRA_2026-09-25.md` — SHA-256 `9659a516c3cb2bb1cd41539c48be60d2a270bd8908ad72b50ca7a34da880e22f`
 - `docs/research/PREREG_LOOP20_REVENTA_TOWN_2026-09-25.md` — SHA-256 `352b1b447b19e8d87d24c2a92601768943c92991df16a65db5257816ed311402`
-- `docs/research/REVENTA_TOWN_2026-09-25.md` — SHA-256 `29eaa6debf5781ded584ddcda097e23dfc2d4eeef11094aab6650ee2d765210f`
+- `docs/research/REVENTA_TOWN_2026-09-25.md` — SHA-256 `5103a2a9f25b3183034bb9d0db779710b8d24db8a4ef2ab6f1b5121222915200`
 - `docs/research/FEEDBACK_0742_2026-09-25.md` — SHA-256 `939dbf5f0a6a1d46c6b6284ca76c58f7f985baecf17e0081ad3010438f5b3a18`
 - `docs/research/FEEDBACK_PAREADO_0653_2026-09-25.md` — SHA-256 `9c89a4b2b90169c06141af5162687f3ba77b843ff2f17e6eec882544fa2c70cf`
 - `docs/research/PREREG_LOOP1_2026-09-25.md` — SHA-256 `cb1d5a3afcb5e1b629ff72a40a91d2a785937c52cd4d3911574d0e0f43c7346b`
@@ -66,20 +71,20 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 - `docs/research/FUENTES_PUBLICAS_0548_2026-09-25.md` — SHA-256 `d0841f7cb1b02e1e179dfa841638bae1eac6c8aba33910aea878b18332a70d1b`
 - `docs/research/AUDITORIA_PERDIDAS_CAMPO_2026-09-25.md` — SHA-256 `ebc47150559215861e814a9a0f306155e01121994940277ebebdb4055dcb1ebb`
 - `docs/research/FUENTES_PUBLICAS_0400_2026-09-25.md` — SHA-256 `6618b2cc3e28935153ee5e8f6a60bc989a9663820473828cce90e6c40c6cd2b2`
-- `docs/research/IDEAS_VIVAS_2026-09-25.md` — SHA-256 `4728bc63d1e9c220f0d966c2de029931bdb8f3c4d75ed88b0cb051015c52e1e9`
+- `docs/research/IDEAS_VIVAS_2026-09-25.md` — SHA-256 `08a482bfb9d8e456927f02dff3b5cfbc1d7ebc00991c1383e1547620d1506d96`
 - `docs/research/FEEDBACK_TOP3_2026-09-25.md` — SHA-256 `1b05c27fc6f3c9309f7d63a1b7d5ee39509bb0a7e475c2e4f6bb8668504e0a5d`
 - `docs/research/LIDER_Y_FUENTES_2026-09-25.md` — SHA-256 `f940d574bb7e3d43785ee31a100204a8c3a7c7587009f9fcbb02b1ef8df07daf`
 - `docs/research/DECISION_ENVIO_TOP3_2026-09-25.md` — SHA-256 `a17b15f6d0db894ec64c3dbd25ce08ac2553f25d2528682b129a1f4a779cbde6`
 - `docs/research/RESULTADOS_2026-09-25.md` — SHA-256 `98349e7d3065ae9fb91d396d089c4aa95f1841d5c8b844242add6ba3e8e6965c`
-- `docs/research/RESEARCH_BELIEFS.md` — SHA-256 `bc39365ca6744ca92538ae21e48a43b50c61165260b8fd483fc5b3802a0daa06`
+- `docs/research/RESEARCH_BELIEFS.md` — SHA-256 `d927cd4c6d07049ea92920d6df7354c31870c9350594c16265d1464ab064b13f`
 - `docs/research/HARNESS_VS_LEADERBOARD.md` — SHA-256 `49b3cfbdb4cc97efbb3c4e31590d153bda48f3426b3d606c9a3bbbc66d246a05`
-- `docs/research/SUBMISSION_HISTORY.json` — SHA-256 `faf30028103fa0c16f291915b69a204478011693bfd5ca207ab76a9a0c4916e6`
+- `docs/research/SUBMISSION_HISTORY.json` — SHA-256 `2ae72385de6c4a0c518e75520811f216e433fa2013bcfcf7dea7479bb9bcfe66`
 - `docs/research/PREREG_VQ_2026-09-24.md` — SHA-256 `7f4b6b42db6dbeeb3981cd0fa56fbf071f4b4f6eec121ceeb292b2b0ca6ebab5`
 - `docs/research/PREREG_ADV_2026-09-24.md` — SHA-256 `bed0700878535baaf11409f4dfef3364623943e5e42ecea44fb13b5ebcae4b58`
 - `docs/research/PREREG_FORECAST_GATE_2026-09-25.md` — SHA-256 `bf5dd9fbf03de91f1fbf95a557600d969b3c01f143f849271a827abc87cfd2be`
 - `docs/research/PREREG_PUBLIC_REFRESH_2026-09-25.md` — SHA-256 `bc60b8ef2b9580510782f1801bcac5e43f4f5c8524f9a39bd9a7c587812a12cc`
 - `docs/PROMPT_SEGUNDO_CEREBRO.md` — SHA-256 `e319f3917d23defc367804e464d3d13be14d21061eb2ca73fede8977d4f04c07`
-- `AGENTS.md` — SHA-256 `12a07ba57d88ac4d2ad062fc0ae624882e7e38db5344654083bd846f7520043f`
+- `AGENTS.md` — SHA-256 `8de048e2ebaca305b4e18d563f0ad2f16aa75632a9e3fd05fef8d9bb0999decf`
 - `docs/ESTADO_ACTUAL.md` — SHA-256 `cb368cef5250eede256fee3eecc4a6c87da87bf8644981c884ffff1a2ef01948`
 - `docs/RESULTADOS_LIDER_2026-09-14.md` — SHA-256 `efb3b4c09053f13d648e8019a7ba8363f68a24c234b04b4869754e82877c648b`
 - `docs/ANALISIS_LIDER_2026-09-14.md` — SHA-256 `63e3448307868dec34c5c67a697f052f4bc31b4437bc7781b4e702b1d234db53`
@@ -100,6 +105,30 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 ## SOURCE: docs/research/ESTADO_INVESTIGACION.md
 
 # Estado de investigación — leer primero para continuar
+
+## Corte operativo 10:36 UTC — confirm20 cerrada, 21 activo, nueva prioridad31
+
+Confirm20 terminó10:25:05UTC:3.200episodios/noop832. Town20+0,2841pp,
+town50+1,1364pp; ambos ICdos vías cruzan0 y gatefalse. Ambas cambian704/704
+acciones propias, no inertes. No envío; contra los cuatro rivales del piloto,
+delta0. Seis celdas W/L/Tdistintas auditadas con tres brazos:18partidas exactas,
+167compras/cierres y6.280unidades. Leer CIERRE_REVENTAS20.
+
+Daño v13/1050019: cierre de trigo delante de leche661pierde198propias y gana
+171al rival. Dos fases idénticas salvo prioridad verifican recuperación369
+con leche primero, mismos inventarios. Preregistro31fija dos variantes sobre
+los town50 de VQ/top3, con controles originales adicionales. TODAVÍA no se
+han construido ni hay runner31; siguiente trabajo: implementar/validar48juegos
+sin tocar20–30. V1del capturador falló por wrapper, v2reproducecontrol exacto.
+
+21corre;22–30esperan, no duplicar procesos.30validado48/noop11.504/max314ms,
+32aperturas exactas. BUY12/SELL7mantiene stock5 y sólo cambia acción0en8/8
+celdas por política. Pierde2de margen contraVQ (cuatro empates→derrotas en brazo
+VQ), gana4contraV7sin cambiar derrotas. Mantiene producción en desarrollo,
+no garantía global. Piloto960tras29.101variantes más2prototipos17detenidos.
+
+Último ladder consultado10:02UTC:VQ2295,1/98y top32135,7/88; no nuevo envío.
+Lectura pública1018archivada con fuentes primarias; no prueba estrategia nueva.
 
 ## Nota 10:15 UTC — cota rival auditada; sin nueva variante
 
@@ -892,13 +921,298 @@ efectos ≥ ~7 puntos. Buscar cambios GRANDES, no micro.
 
 ---
 
+## SOURCE: docs/research/CIERRE_REVENTAS20_2026-09-25.md
+
+# Confirmación20: mejora pequeña, sin criterio de envío
+
+Terminó el2026-09-25 a10:25:05UTC.3.200episodios completos,32semillas nuevas,
+11rivales, ambos asientos;832noops exactos, hashes archivados verificados,
+cero errores observados, runtimePYTHONHASHSEED0uniforme. Base85,3693%.
+
+| Variante | Resultado | Delta pp | IC95 por semilla | IC95 dos vías | Celdas mejores / peores |
+|---|---:|---:|---|---|---:|
+| town20 |85,6534%|+0,2841|[−0,730;1,298]|[−0,859;1,427]|2 /1|
+| town50 |86,5057%|+1,1364|[−0,476;2,749]|[−0,759;3,032]|5 /1|
+
+El piloto+3,125pp no se sostiene con la misma magnitud. Ambas quedan PROMISING
+según el clasificador, pero `registered_submission_gate=false`: no se envían.
+Inconcluso no equivale a refutado. En los cuatro rivales del piloto, ambas
+dan delta0 y128celdas iguales; el ICdos vías indefinido no prueba efecto nulo.
+
+No son inertes: ambas cambian acciones propias en704/704partidas del panel,
+en las32semillas. Cambian acciones rivales en206/306. Los conteos de celdas de
+la tabla promedian asientos; los cambios por asiento son4/2 y10/2respectivamente.
+Se conserva20sin modificar políticas, muestras ni criterios.29ya estaba
+registrado con otra población y VQcomo segundo padre; no reinterpreta este bloque.
+
+## Ejecución de todos los cambios W/L/T
+
+Seis combinaciones rival/semilla cambian algún W/L/T. Sus dos asientos tienen
+el mismo resultado: se reproduce asiento0 con base y las dos variantes,
+18partidas. Hashes propios, rewards y caja exactos.167compras y167cierres,
+6.280unidades compradas/revendidas al turno siguiente. Cero errores de capas;
+esto no significa que toda operación beneficie el resultado.
+
+| Rival / semilla | Base | town20 | town50 |
+|---|---:|---:|---:|
+| tds25 /1050001 |−3|46|120|
+| tds25 /1050010 |−54|−19|32|
+| hl25 /1050022 |−181|1.004|1.022|
+| hsov /1050027 |−32|−14|8|
+| h2965 /1050027 |−24|−6|16|
+| v13 /1050019 |265|−79|−35|
+
+En hl25, nuestras cajas ganan53/71, pero el rival pierde1.132: gran parte del
+margen procede del efecto sobre él. Cambiamos tres trigos cosechados por tres
+zanahorias. El ganso que escapa en695ya escapaba en base y sigue escapando en
+ambas candidatas; no se oculta. En los otros casos auditados no hay escapes
+propios y las cosechas coinciden. No inferir invariancia universal del campo.
+
+## Daño por posición de la orden de cierre
+
+En v13/1050019 se conservan cantidades cosechadas/vendidas de leche. Las
+reventas aportan25/69monedas, pero en661 añadimos SELLWHEAT20/50 delante de
+SELLMILK13. Ambos lados venden13leches ese turno: nuestra caja de leche pasa
+1.815→1.617, la rival1.815→1.986. Total propio−173/−129, rival+171; margen
+−344/−300. No fue una reventa de trigo que perdiera dinero por sí sola.
+
+`sonda_prioridad_cierre_town.py` reproduce un control completo adicional de
+town50 y captura la fase661después de unidades. Sobre dos copias idénticas,
+procesa trigo primero o leche primero: cajas propias de esa fase3.611/3.809,
+rivales1.986/1.815, margen mejora369. Inventarios privados y mercado finales
+idénticos. Sólo se aísla causalmente esa fase; una política nueva puede alterar
+trayectorias posteriores. Motiva el preregistro31, sin construirla todavía.
+
+El primer intento del capturador omitió el wrapper de ledger entre el motor y
+su hook y no capturó estado. V1/plan/traceback se conservan; v2corrige la captura,
+reproduce719acciones/rewards y ledger entero exactos antes del contraste.
+No contar el intento ni la fase aislada como una réplica competitiva.
+
+Fuentes: `confirm20.*`, `town_close_priority_probe_v2.*`, los auditores de
+confirmación y sus scripts de resumen.21comenzó automáticamente después;
+22–30esperan en secuencia. Objetivo continuo activo.
+
+
+
+---
+
+## SOURCE: docs/research/PREREG_LOOP30_APERTURA12_2026-09-25.md
+
+# Loop30: tamaño de la reventa inicial, conservando cinco trigos
+
+Registrado antes de construir candidatas y jugar partidas completas. La auditoría
+previa evaluó q=5/8/12/20/43 en el primer turno de los13replays de recencia0914
+y1003, ambos asientos:130escenarios parciales. El control8 reproduce los13
+estados originales. Stock final, semillas y trabajo son iguales; sólo difiere caja.
+Q12 da margen medio+1,231, peor−6;5/20/43 tienen media negativa y ninguna celda
+positiva. Esto es descubrimiento sobre aperturas grabadas, no una estimación
+de fuerza ni prueba de dominancia. Conservar todos los resultados explorados.
+
+Probar sólo `open12_vq` y `open12_top3`: cambiar la constante de apertura de
+BUY8/SELL3 a BUY12/SELL7, dejando el mismo stock5 y todas las demás órdenes.
+Nada de nueva producción, modificación de la primera vaca, reventa posterior,
+adelanto de compras, señales extra, semillas o correcciones de inferencia.
+Loop12 cambió cultivos/apertura productiva;19excluyó expresamente aperturas;
+20/29 operan después de288. Esta variable aún no tuvo torneo competitivo.
+
+## Desarrollo y controles
+
+1077000nuevo y362118074dirigido, ambos asientos frente a mirrorVQ yV7reactivos
+del manifiesto25. Dos padres, sus noops de apertura8 y dos candidatas:48juegos.
+Fuentes/acciones archivadas, runtimehash0,720DONE/caja conciliada,0errores y
+max<1s. Noops exactos de ambos jugadores. Confirmar que BUY12/SELL7 llegan al
+motor en0, ambas cantidades llenan y el stock es5en1; no vuelve a cambiarse
+la apertura en pasos posteriores. Registrar mínimas cajas por día, compras,
+semillas, HIRE, campo/alimento/cosecha/pérdidas/tiendas/escapes y stock final.
+No exigir producción idéntica: pequeñas diferencias de caja pueden cambiar
+decisiones. Ambas políticas deben cambiar acciones antes del piloto.
+No elegir por rewards ni excluir una pérdida como supuesto fallo técnico.
+
+## Panel, selección y confirmación
+
+Después de29, único torneo principal. Piloto1078000–1078015contra mirrorVQ,
+mirrorTop3,V7,HS4del panel25, ambos asientos:VQbase/noopVQ/top3control y las dos
+candidatas=960episodios. Seleccionar hasta dos con deltaW/L/Testrictamente
+positivo frente a ambas referencias; ordenar por menor delta y nombre.
+
+Confirmación1079000–1079031contra los cuatro másHarvest68/arshs3;1.920/2.560
+episodios con una/dos seleccionadas. Gate≥3ppvsVQ y≥0vstop3, peor rival≥−20pp
+contra ambas, acciones propias distintas en≥2semillas contra su padre,
+controles exactos, mecanismo y runtime. ICpor semilla y dos vías; no tratar
+forks como linajes independientes. No ampliar muestras mirando resultados.
+
+No añadir nuevas cantidades por resultados de desarrollo/piloto. No cambiar
+fuentes/paneles20–29. Antes de enviar: hashes alternativos, cuota y referencia
+desplazada, además de las comprobaciones anteriores. Sin autoenvío.
+
+
+
+---
+
+## SOURCE: docs/research/APERTURA_MERCADO_2026-09-25.md
+
+# Apertura de mercado: tamaño del ciclo con stock final fijo
+
+La fuente actual usa BUYWHEAT8 ySELLWHEAT3 en0, conservando cinco trigos.
+Sus comentarios históricos justifican tamaños10/20frente a otra población;
+no son una garantía vigente. La ronda12 cambió apertura productiva/cultivos,
+no esta cantidad. No se modifica la parcela, la vaca ni el resto de órdenes.
+
+Plan previo: todos los13replays de los cortes0914/1003, cantidades5/8/12/20/43,
+ambos asientos.130escenarios oficiales de un turno; NO130partidas completas.
+El control8 reproduce exactamente los13estados grabados en su asiento real.
+Las alternativas conservan stock privado y semillas de ambos jugadores. El
+rival usa su orden inicial grabada, no una política completa. La apertura es
+simultánea, así que no puede reaccionar a nuestra orden de ese mismo turno.
+
+| Cantidad comprada / revendida | Cambio medio de margen | Peor margen | Peor caja propia | Celdas mejores / peores |
+|---|---:|---:|---:|---:|
+| 5 /0 | −5,231 | −8 | −4 | 0 /20 |
+| 8 /3 | 0 | 0 | 0 | 0 /0 |
+| 12 /7 | +1,231 | −6 | −3 | 16 /8 |
+| 20 /15 | −8,308 | −14 | −7 | 0 /24 |
+| 43 /38 | −50,154 | −68 | −33 | 0 /24 |
+
+Cada fila tiene26celdas; las faltantes son iguales. Los dos asientos dan el
+mismo resultado aquí y varias aperturas rivales son idénticas: no hay26
+observaciones independientes ni una estimación poblacional. Q12gana4de margen
+frente aBUY20/SELL15, pierde2contra8/3y6contra10/5, empata contraBUY5. Ocho de
+los13rivales de la muestra usan20/15; eso pesa en el promedio y no garantiza
+su frecuencia futura. Los nombres distintos no representan mercados distintos.
+
+Q43 deja hasta33monedas menos al final de0, antes de una secuencia nativa de
+compras con poco margen. Mantener stock5 no conserva solvencia. No se atribuye
+un efecto de cosecha todavía: estas simulaciones terminan después de0.
+
+Se registra loop30 únicamente paraQ12 sobreVQ/top3. No se declara campeón por
++1,231monedas iniciales. Desarrollo48juegos frente aVQ/V7, piloto cercano960,
+confirmación disjunta condicionada; ver preregistro30. Las cantidades5/20/43
+quedan documentadas como hallazgos económicos de esta muestra, sin torneo.
+Auditor reproducible: `auditar_apertura_mercado.py`, `opening_market_audit.*`.
+
+## Desarrollo30 validado y en cola
+
+48partidas completas,2mundos×2rivales×2asientos×6brazos. Noops exactos en
+11.504turnos de ambos jugadores,32aperturas verificadas entre candidatas y
+noops, caja reconciliada,0errores, máximo313,77ms. Las dos candidatas cambian
+exactamente la acción0en sus8/8celdas;BUY12ySELL7llenan, stock5en1, sin otra
+compra/venta de trigo en1. Se conserva alimento/cosechas/pérdidas/tiendas;
+cero escapes o productos propios terminales en48juegos. No garantía universal.
+
+Contra mirrorVQ, ambas pierden2de margen y llegan a mínimo de caja7. En VQ
+eso convierte cuatro empates (dos mundos, ambos asientos) en derrotas−2.
+Top3 conserva sus resultados anteriores. Contra V7 ambas ganan4de margen,
+caja mínima14; siguen perdiendo las cuatro partidas de cada candidata.
+La microventaja depende del rival: no seleccionar por promedio de caja ni
+ocultar los empates perdidos. No se cambiaron brazos/panel/gates por este dato.
+
+`verificar_apertura12.py` registra PASSED; fuentes y ledgers en
+`opening12_smoke.*`. Runner30verificó fuentes y espera tras29 para el piloto960.
+Total101variantes construidas y dos prototipos17detenidos. La nueva idea31
+sobre orden del cierre está preregistrada; aún no tiene candidata ni proceso.
+
+
+
+---
+
+## SOURCE: docs/research/PREREG_LOOP31_PRIORIDAD_CIERRE_2026-09-25.md
+
+# Loop31: respetar la cola nativa al cerrar la reventa
+
+Registro previo a construir candidatas y ejecutar desarrollo. Confirm20 queda
+cerrada con sus resultados originales:20unidades+0,284pp,50+1,136pp; ninguna
+pasa gate. En v13/1050019 ambas pierden una victoria al poner SELLWHEAT delante
+de SELLMILK13 en661. El diagnóstico aislado sobre la fase real de town50
+mantiene estado inicial e inventarios finales y mejora369de margen al preservar
+MILK primero. No es un W/L/T de una política corregida ni una estimación global.
+
+## Políticas y controles
+
+Dos candidatas: `close_queue_vq` y `close_queue_top3`, basadas en las fuentes
+town50_vq/top3 exactas de29. Tamaño50 fijo; no probar nuevas cantidades aquí.
+Sólo en un cierre ya solicitado, mantener la posición de la primera orden
+nativa SELLWHEAT, si existía; sustituir su cantidad por el máximo calculado por
+TR y retirar duplicados como hacía TR. Si no existía, añadir el cierre al final
+de las otras órdenes nativas. Respetar su orden relativo y límite10; no sumar
+dos veces trigo ni cambiar compras, unidades, señales o reservas.
+
+La nueva posición puede afectar compras o ventas de otros productos. Medirlo,
+sin asumir que el buffer5000 o una fase favorable garantizan invariancia.
+Registrar cola que calculó TR y acción finalmente emitida por la nueva capa.
+No combinar arreglos de atribución27 ni censura28, ni tocar fuentes20–30.
+
+Desarrollo:1080000/1080001nuevos y1050019dirigido, ambos asientos contra v13
+reactivo congelado en20. VQ/top3, sus dos town50 originales, noops de las dos
+town50 y las dos candidatas:48partidas. Noops de ambos jugadores exactos,
+720DONE/caja conciliada,0errores, max<1s; cantidades solicitadas, compradas y
+vendidas, prioridades emitidas, alimento/cosechas/tiendas/pérdidas/escapes.
+Cada nueva capa debe cambiar acciones frente a su town50 en al menos un mundo.
+No seleccionar por dinero ni resultados de desarrollo.
+
+## Piloto y confirmación
+
+Después de30, único torneo principal. Piloto1081000–1081015contra panel25:
+mirrorVQ/mirrorTop3/V7/HS4. VQbase/noop,top3control, dos town50 como controles
+ineligibles y dos candidatas=1.568episodios, ambos asientos. Estimar todos los
+contrastes exclusivamente sobre los cuatro rivales, excluyendo otros brazos.
+Elegir hasta dos con deltaW/L/Tpositivo frente aVQy top3 y≥0frente a su town50;
+ordenar por mínimo delta de las dos referencias reales y nombre.
+
+Confirmación1082000–1082031, añadeHarvest68/arshs3. Conservar sólo las town50
+correspondientes a candidatas seleccionadas: una=5brazos/2.560episodios;
+dos=7brazos/4.032. Gate≥3ppvsVQ,≥0vstop3 y≥0vs su town50; peor rival≥−20pp
+frente a las tres referencias, acciones propias distintas en≥2semillas contra
+su town50. Controles, ICpor semilla/dos vías, fuente/runtime y revisión física.
+Comprobar explícitamente exclusión de controles en el analizador antes de correr.
+
+No redefinir20ni29, sumar Nentre poblaciones o ampliar muestra por resultados.
+Antes de un envío, revisar hashes alternativos, cuota y submission desplazada.
+Sin autoenvío. Sin selección se conserva la evidencia y continúa otra hipótesis.
+
+
+
+---
+
+## SOURCE: docs/research/LECTURA_PUBLICA_1018_2026-09-25.md
+
+# Lectura pública consultada el2026-09-25 alrededor de10:18 UTC
+
+La búsqueda de discusiones no aporta una estrategia ganadora verificada.
+[Thomas Tschinkel](https://www.kaggle.com/competitions/kaggriculture/discussion/735366)
+recomienda contrastar cambios localmente y revisar mercado/fin de día en el
+motor. Coincide con nuestro método; no justifica una nueva arquitectura.
+
+La discusión de [c0nrad y Yusuke Hayashi](https://www.kaggle.com/competitions/kaggriculture/discussion/738727)
+contrasta ramificar al principio con adaptar la producción tarde. Son opiniones
+sobre el diseño y sus políticas, no evidencia de que otra capa nuestra mejore.
+No adoptar propuestas de cambio de reglas como reglas efectivas del motor.
+
+La conversación sobre [cuarto cuadrante](https://www.kaggle.com/competitions/kaggriculture/discussion/734308)
+señala coste del terreno, personal y recorridos. Ya tenemos pruebas productivas
+7/9/15 y antecedentes negativos; no repetir expansión sólo por esa sugerencia.
+
+El [notebook de evaluación público](https://www.kaggle.com/code/raykkretzschmar/kaggriculture-rank-your-agent/output)
+muestra un chasis con cintas y capas de mercado, además de una apertura marcada
+EXP173. La página está truncada y no se ejecutó ni incorporó ese código. El
+experimento30 procede de leer nuestra apertura existente y simular sus órdenes,
+no de asumir una ventaja por el nombre o rating anunciado de un notebook.
+
+Las edades/rankings que muestra el buscador son snapshots de rastreo; no se
+usan como fechas exactas o clasificación actual. Catálogo API09:49y último
+ladderAPI10:02siguen siendo nuestras consultas fechadas guardadas.
+
+
+
+---
+
 ## SOURCE: docs/research/COTA_STOCK_RIVAL_2026-09-25.md
 
 # Cota pública del stock rival: mecánica válida, cobertura útil sin demostrar
 
 Hipótesis investigada después de validar29: usar producción visible para
 descartar previsiones imposibles de ventas animales. No es el bonus de alimento
-del loop17, ni la censura de observaciones28. No se construyó una política30.
+del loop17, ni la censura de observaciones28. No se construyó una política a
+partir de esta cota.
 
 El auditor usa exclusivamente granja/posiciones públicas, inventario de mercado,
 tiendas y nuestras órdenes finales anteriores. Suma posibles cosechas visibles
@@ -1605,6 +1919,30 @@ sonda de localización `confirm19.order_origin.*`, bajo
 ## SOURCE: docs/research/SCORECARDS_LOOP_2026-09-25.md
 
 # Scorecards del loop continuo — 2026-09-25 UTC
+
+## Corte operativo 10:36 UTC — confirm20 cerrada, 21 activo, nueva prioridad31
+
+Confirm20 terminó10:25:05UTC:3.200episodios/noop832. Town20+0,2841pp,
+town50+1,1364pp; ambos ICdos vías cruzan0 y gatefalse. Ambas cambian704/704
+acciones propias, no inertes. No envío; contra los cuatro rivales del piloto,
+delta0. Seis celdas W/L/Tdistintas auditadas con tres brazos:18partidas exactas,
+167compras/cierres y6.280unidades. Leer CIERRE_REVENTAS20.
+
+Daño v13/1050019: cierre de trigo delante de leche661pierde198propias y gana
+171al rival. Dos fases idénticas salvo prioridad verifican recuperación369
+con leche primero, mismos inventarios. Preregistro31fija dos variantes sobre
+los town50 de VQ/top3, con controles originales adicionales. TODAVÍA no se
+han construido ni hay runner31; siguiente trabajo: implementar/validar48juegos
+sin tocar20–30. V1del capturador falló por wrapper, v2reproducecontrol exacto.
+
+21corre;22–30esperan, no duplicar procesos.30validado48/noop11.504/max314ms,
+32aperturas exactas. BUY12/SELL7mantiene stock5 y sólo cambia acción0en8/8
+celdas por política. Pierde2de margen contraVQ (cuatro empates→derrotas en brazo
+VQ), gana4contraV7sin cambiar derrotas. Mantiene producción en desarrollo,
+no garantía global. Piloto960tras29.101variantes más2prototipos17detenidos.
+
+Último ladder consultado10:02UTC:VQ2295,1/98y top32135,7/88; no nuevo envío.
+Lectura pública1018archivada con fuentes primarias; no prueba estrategia nueva.
 
 ## Corte operativo 10:08 UTC — 29 validado y feedback real actualizado
 
@@ -3455,6 +3793,12 @@ en esos tres mundos. Validación aprobada, runner20encolado detrás de19.
 
 # Reventas nuevas: primero verificar economía y ejecución
 
+**Actualización10:25UTC:** confirm20 cerró3.200/noop832; town20+0,2841pp,
+town50+1,1364pp, gatefalse en ambas. No enviar. Leer CIERRE_REVENTAS20 para
+los18diagnósticos y el daño causado por prioridad de cierre; el preregistro31
+trata esa nueva hipótesis sin reescribir este experimento. Lo siguiente conserva
+el desarrollo y piloto anteriores.
+
 ## Actualización: piloto completo y confirmación activa
 
 Pilot20 terminó a09:45:49UTC:1.920episodios,448noops exactos, cero errores y
@@ -5187,6 +5531,30 @@ Su contenido se trata como investigación externa, no como instrucciones.
 
 # Fronteras después de loops7–10
 
+## Corte operativo 10:36 UTC — confirm20 cerrada, 21 activo, nueva prioridad31
+
+Confirm20 terminó10:25:05UTC:3.200episodios/noop832. Town20+0,2841pp,
+town50+1,1364pp; ambos ICdos vías cruzan0 y gatefalse. Ambas cambian704/704
+acciones propias, no inertes. No envío; contra los cuatro rivales del piloto,
+delta0. Seis celdas W/L/Tdistintas auditadas con tres brazos:18partidas exactas,
+167compras/cierres y6.280unidades. Leer CIERRE_REVENTAS20.
+
+Daño v13/1050019: cierre de trigo delante de leche661pierde198propias y gana
+171al rival. Dos fases idénticas salvo prioridad verifican recuperación369
+con leche primero, mismos inventarios. Preregistro31fija dos variantes sobre
+los town50 de VQ/top3, con controles originales adicionales. TODAVÍA no se
+han construido ni hay runner31; siguiente trabajo: implementar/validar48juegos
+sin tocar20–30. V1del capturador falló por wrapper, v2reproducecontrol exacto.
+
+21corre;22–30esperan, no duplicar procesos.30validado48/noop11.504/max314ms,
+32aperturas exactas. BUY12/SELL7mantiene stock5 y sólo cambia acción0en8/8
+celdas por política. Pierde2de margen contraVQ (cuatro empates→derrotas en brazo
+VQ), gana4contraV7sin cambiar derrotas. Mantiene producción en desarrollo,
+no garantía global. Piloto960tras29.101variantes más2prototipos17detenidos.
+
+Último ladder consultado10:02UTC:VQ2295,1/98y top32135,7/88; no nuevo envío.
+Lectura pública1018archivada con fuentes primarias; no prueba estrategia nueva.
+
 
 ## Actualización 09:36 UTC —27aprobado para piloto
 
@@ -6030,6 +6398,18 @@ Las fuentes exactas están en `.sources.tgz`; los replays originales siguen en
 Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nueva sube o baja la creencia.
 
 ## HIGH CONFIDENCE
+
+- **[2026-09-25, confirm20] Un ciclo rentable puede perjudicar otra venta simultánea.**
+  3.200partidas/noop832:20unidades+0,284pp y50+1,136pp, ICcruzan0, no envío.
+  En la pérdida compartida, la reventa gana25/69pero anteponer trigo retrasa
+  leche:−198propias,+171rivales. Dos fases de mercado con el mismo estado
+  aíslan369de margen recuperable al preservar leche primero. No extrapolar
+  ese resultado a una política completa; preregistro31, aún por construir.
+- **[2026-09-25, apertura30] Stock idéntico no significa caja o W/L/T iguales.**
+  Q12/SELL7preserva cinco trigos y toda producción en48desarrollos, pero contra
+  mirrorVQpierde2monedas de margen y convierte cuatro empates en derrotas.
+  Frente aV7gana4sin cambiar derrotas. Prueba competitiva con gates originales,
+  no escoger cantidades por un promedio inicial dominado por aperturas repetidas.
 
 - **[2026-09-25, cota rival] Una señal imposible puede ser irrelevante para la acción.**
   La cota pública de stock animal pasa12.942checks de inventario y otros12.942
@@ -7098,7 +7478,7 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
     "delta_vs_champion_ladder": null,
     "observed": "COMPLETE, snapshot 2026-09-25T10:02:07.123076+00:00: score2295.1, 98 episodios listados (incluye validación). Siete nuevos replays1003reproducidos exactos y siete alternativas contra rival fijo; muestra de recencia, no WRglobal.",
     "conclusion": "REAL_WORLD_CANDIDATE; ventaja local específica contra copias, sin promoción automática",
-    "next_action": "Confirm20 activa;21–29en cola.28/29validados48partidas cada uno. Siete controles reales1003exactos y siete alternativas contra rival fijo; no explicación causal de rating. Revisar ambas referencias reales y hashes alternativos antes de desplazarVQ.",
+    "next_action": "Confirm20 cerrada: +0,284/+1,136pp, gatefalse; sin envío.21activa,22–30en cola.31preregistrada por daño de prioridad del cierre, todavía por construir/validar. Revisar ambas referencias reales y hashes alternativos antes de desplazarVQ.",
     "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_1003.json"
   },
   {
@@ -7308,7 +7688,7 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
     },
     "observed": "COMPLETE, snapshot 2026-09-25T10:02:07.123076+00:00: score2135.7, 88 episodios listados (incluye validación). Siete nuevos replays1003reproducidos exactos y siete alternativas contra rival fijo; muestra de recencia, no WRglobal.",
     "conclusion": "REAL_WORLD_CANDIDATE; no CHAMPION",
-    "next_action": "Confirm20 activa;21–29en cola.28/29validados48partidas cada uno. Siete controles reales1003exactos y siete alternativas contra rival fijo; no explicación causal de rating. Revisar ambas referencias reales y hashes alternativos antes de desplazarVQ.",
+    "next_action": "Confirm20 cerrada: +0,284/+1,136pp, gatefalse; sin envío.21activa,22–30en cola.31preregistrada por daño de prioridad del cierre, todavía por construir/validar. Revisar ambas referencias reales y hashes alternativos antes de desplazarVQ.",
     "replaces_submission": 56511619,
     "preserves_submission": 56535264,
     "evidence": "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",
@@ -7636,6 +8016,31 @@ una réplica empírica. Prefiero una objeción verificable a una afirmación con
 
 ## Loop continuo vigente
 
+## Corte operativo 10:36 UTC — confirm20 cerrada, 21 activo, nueva prioridad31
+
+Confirm20 terminó10:25:05UTC:3.200episodios/noop832. Town20+0,2841pp,
+town50+1,1364pp; ambos ICdos vías cruzan0 y gatefalse. Ambas cambian704/704
+acciones propias, no inertes. No envío; contra los cuatro rivales del piloto,
+delta0. Seis celdas W/L/Tdistintas auditadas con tres brazos:18partidas exactas,
+167compras/cierres y6.280unidades. Leer CIERRE_REVENTAS20.
+
+Daño v13/1050019: cierre de trigo delante de leche661pierde198propias y gana
+171al rival. Dos fases idénticas salvo prioridad verifican recuperación369
+con leche primero, mismos inventarios. Preregistro31fija dos variantes sobre
+los town50 de VQ/top3, con controles originales adicionales. TODAVÍA no se
+han construido ni hay runner31; siguiente trabajo: implementar/validar48juegos
+sin tocar20–30. V1del capturador falló por wrapper, v2reproducecontrol exacto.
+
+21corre;22–30esperan, no duplicar procesos.30validado48/noop11.504/max314ms,
+32aperturas exactas. BUY12/SELL7mantiene stock5 y sólo cambia acción0en8/8
+celdas por política. Pierde2de margen contraVQ (cuatro empates→derrotas en brazo
+VQ), gana4contraV7sin cambiar derrotas. Mantiene producción en desarrollo,
+no garantía global. Piloto960tras29.101variantes más2prototipos17detenidos.
+
+Último ladder consultado10:02UTC:VQ2295,1/98y top32135,7/88; no nuevo envío.
+Lectura pública1018archivada con fuentes primarias; no prueba estrategia nueva.
+
+
 ## Corte operativo 10:08 UTC — 29 validado y feedback real actualizado
 
 Confirm20 continúa (3.200episodios previstos);21–29esperan en secuencia.
@@ -7715,7 +8120,7 @@ y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_adelanto_trigo.py`, `continuar_loop_panel_cercano.py` y
 `continuar_loop_semillas_tardias.py` y
 `continuar_loop_atribucion_ventas.py` y `continuar_loop_censura_forecast.py` y
-`continuar_loop_reventa_dos_padres.py` encadenan bloques
+`continuar_loop_reventa_dos_padres.py` y `continuar_loop_apertura12.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
 terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
 (una de64 partidas cambia, +1,5625pp). Confirm5 tomate−21,591pp: REJECTED.

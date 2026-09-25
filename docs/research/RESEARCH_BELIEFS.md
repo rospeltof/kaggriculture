@@ -4,6 +4,18 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, confirm20] Un ciclo rentable puede perjudicar otra venta simultánea.**
+  3.200partidas/noop832:20unidades+0,284pp y50+1,136pp, ICcruzan0, no envío.
+  En la pérdida compartida, la reventa gana25/69pero anteponer trigo retrasa
+  leche:−198propias,+171rivales. Dos fases de mercado con el mismo estado
+  aíslan369de margen recuperable al preservar leche primero. No extrapolar
+  ese resultado a una política completa; preregistro31, aún por construir.
+- **[2026-09-25, apertura30] Stock idéntico no significa caja o W/L/T iguales.**
+  Q12/SELL7preserva cinco trigos y toda producción en48desarrollos, pero contra
+  mirrorVQpierde2monedas de margen y convierte cuatro empates en derrotas.
+  Frente aV7gana4sin cambiar derrotas. Prueba competitiva con gates originales,
+  no escoger cantidades por un promedio inicial dominado por aperturas repetidas.
+
 - **[2026-09-25, cota rival] Una señal imposible puede ser irrelevante para la acción.**
   La cota pública de stock animal pasa12.942checks de inventario y otros12.942
   de ventas futuras en seis controles. Descarta31cantidades de biblioteca,

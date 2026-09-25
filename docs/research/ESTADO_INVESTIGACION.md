@@ -1,5 +1,29 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte operativo 10:36 UTC — confirm20 cerrada, 21 activo, nueva prioridad31
+
+Confirm20 terminó10:25:05UTC:3.200episodios/noop832. Town20+0,2841pp,
+town50+1,1364pp; ambos ICdos vías cruzan0 y gatefalse. Ambas cambian704/704
+acciones propias, no inertes. No envío; contra los cuatro rivales del piloto,
+delta0. Seis celdas W/L/Tdistintas auditadas con tres brazos:18partidas exactas,
+167compras/cierres y6.280unidades. Leer CIERRE_REVENTAS20.
+
+Daño v13/1050019: cierre de trigo delante de leche661pierde198propias y gana
+171al rival. Dos fases idénticas salvo prioridad verifican recuperación369
+con leche primero, mismos inventarios. Preregistro31fija dos variantes sobre
+los town50 de VQ/top3, con controles originales adicionales. TODAVÍA no se
+han construido ni hay runner31; siguiente trabajo: implementar/validar48juegos
+sin tocar20–30. V1del capturador falló por wrapper, v2reproducecontrol exacto.
+
+21corre;22–30esperan, no duplicar procesos.30validado48/noop11.504/max314ms,
+32aperturas exactas. BUY12/SELL7mantiene stock5 y sólo cambia acción0en8/8
+celdas por política. Pierde2de margen contraVQ (cuatro empates→derrotas en brazo
+VQ), gana4contraV7sin cambiar derrotas. Mantiene producción en desarrollo,
+no garantía global. Piloto960tras29.101variantes más2prototipos17detenidos.
+
+Último ladder consultado10:02UTC:VQ2295,1/98y top32135,7/88; no nuevo envío.
+Lectura pública1018archivada con fuentes primarias; no prueba estrategia nueva.
+
 ## Nota 10:15 UTC — cota rival auditada; sin nueva variante
 
 `COTA_STOCK_RIVAL_2026-09-25.md` cierra una auditoría offline:12.942checks de
