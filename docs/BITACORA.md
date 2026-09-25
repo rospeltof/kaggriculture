@@ -1,5 +1,65 @@
 # Bitácora de experimentos
 
+## 2026-09-25, 08:24 UTC — Panel separado contra políticas cercanas
+
+Auditoría de15replays ya seleccionados por recencia en0653/0742, sin filtrar
+W/L ni agregar partidas: mediana99,17%vector de campo igual,71,27%mercado
+activo. Comandos individuales emparejados99,91%pueden omitir peones extra;
+Fateyongheng/ZeroGrain muestran esa limitación. No identifica código ni causa
+de victoria. Evidencia `recent_rival_similarity.*`, informe SIMILITUD_RIVALES.
+
+Registrado loop25antes de sus juegos: history360/wheat_front/advance_vq/
+sheep_supply_buy/Harvest68, fuentes ya validadas y congeladas. Rivalesreactivos
+VQ/top3/V7/HS4; confirmación añadeHarvest68/arshs3. Piloto1.9201063000–015,
+confirmación1064000–031, hasta dos elegibles frente a ambas referencias.
+Gate≥3ppcontra cada referencia, peor rival≥−20en ambas, comportamiento activo,
+integridad y mecanismo. No revisar paneles19–24ni seleccionar brazos por sus
+resultados pendientes. Total89variantes, no se cuentan otra vez.
+
+Analizador de dos referencias validado con copia temporal de piloto19:
+wheat_half renombrado únicamente como control de fixture. Front/bothmejoran
+2,734375ppvs primera yempatansegunda: ninguna seleccionada. Fuentes archivadas,
+1.920filas/noop448verificados, cero simulaciones nuevas. Se corrigió un orden
+alfabético equivocado en la aserción del fixture antes de validar. Runner25
+en espera tras24; confirm19continúa. Sin submission nueva. Objetivo activo.
+
+El generador de contexto ahora incluye los informes/protocolos20–25 y feedback
+0653/0742 que faltaban, empezando por estado vigente. Su verificación de lotes
+históricos sigue limitada a3840episodios; no sustituye verificadores nuevos.
+
+## 2026-09-25, 08:11 UTC — Trigo19a confirmación; adelanto24validado
+
+Piloto19completo1920juegos/noop448, ceroerrores,32semillas. Front/half/both
++2,734375pp cada una, ICdos vías[−3,903;9,372],4celdas mejores y0peores.
+Activas16/256en1046006/1046028; mismosW/L/T, acciones/rewards sólo240/256iguales
+entre variantes. Desempate preregistrado elige both/front: confirmación3200
+activa07:57UTC. Ocho auditorías, primera celda positiva por semilla, cuatro
+brazos: hashes/rewards/caja exactos, mismas tiendas/0escapes. Frontahorra1508/941
+con igual volumen y producción. Half/bothcambian3trigos/3zanahorias en un caso.
+No adoptar ni combinar hasta confirmación.
+
+Loop24registrado antes de construir:adelantar compra nativa de trigo y cancelar
+sólo llenado real al turno siguiente, en `_route_action` antes de guardas.
+Dos padresVQ/top3, fuentea35c696c/106aa563.36pruebas/noop8628/max308ms válidas,
+64adelantos/4480unidades llenadas y canceladas. Cuatro casos86/89mantienen
+residual3que no llena por capacidad. Activos sólo593858505de tres mundos,
+ambos asientos; conserva alimento/tiendas/escapes0/productosfinales0, pero
+cosecha453cambia3CARROT→3WHEAT. Las ventas también se adelantan gracias al stock.
+Rivalreactivoarshs3: márgenesVQ281→1508y top3240→1467, siguen victorias.
+Sonda contraGrimReapergrabado−3070→313; cantidades de transacciones intactas,
+propio+1638(608compra/1030ventaW),rival−1745. No es WRreactivo.
+
+Sonda sintética384escenarios de horarios compra/venta contra cuatro rivales,
+1152pasos exactos contra motor oficial. Adelantar sólo compra pierde dinero
+32/128casos; adelantar ambos pierde beneficio por consumo del pueblo24/32con
+rival pasivo. No son frecuencias poblacionales ni criterio de selección.
+Runner24validado/encolado tras23:2560piloto,32semillas nuevas, VQbase/top3control,
+confirmación3712/4800disjunta. Requiere mejora real sobre el propio padre y
+actividad en2semillas para evitar repetir top3inerte.89variantes construidas,
+2prototipos17detenidos. Catálogo08:02:50UTC(sufijo0803)sin cambios de ref/fecha
+en50entradas; no descargas duplicadas. Sin nueva submission. Objetivo activo.
+
+
 ## 2026-09-25, 07:49 UTC — Rebaño16cerrado; suministro23y compras anticipadas
 
 Piloto16completo2.496/noop512/errores0: sheep1−86,71875pp, otras tres−92,1875,

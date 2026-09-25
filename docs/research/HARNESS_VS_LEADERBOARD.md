@@ -40,6 +40,14 @@ piloto+4,6875pp dependía de tres celdas en dos semillas; no se confirmó.
 
 Lo siguiente documenta la lectura anterior y el historial de calibración.
 
+Auditoría de los 15 replays recientes ya seleccionados: mediana de coincidencia
+del vector completo de órdenes de campo 99,17%, frente a 71,27% de órdenes de
+mercado en turnos activos. Hay excepciones con trabajadores adicionales; comparar
+sólo comandos emparejados oculta esa diferencia. Esto motiva una prueba separada
+contra VQ/top3 reactivos y fuentes recientes, sin alterar los paneles congelados
+19–24. No identifica código rival ni demuestra que el mercado cause toda la
+diferencia. Ver `SIMILITUD_RIVALES_2026-09-25.md` y su evidencia por replay.
+
 Arshs3 **2292,5 @148 episodios**, v13 **1857,9 @136**, tras aproximadamente 20 h
 activos. Ambos superan las cintas propias (seek 1324,8, decem 1285,9); el orden
 arshs3 > v13 coincide con el torneo cerrado (20-0 directo). Evidencia API:

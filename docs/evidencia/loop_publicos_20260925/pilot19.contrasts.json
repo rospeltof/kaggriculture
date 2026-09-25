@@ -1,0 +1,26 @@
+{
+  "note": "All common rival/seed/seat cells, no outcome filter. Same WLT does not make policies behaviorally identical.",
+  "pairs": [
+    {
+      "a": "wheat_front",
+      "b": "wheat_half",
+      "pool_games": 256,
+      "action_and_rewards_equal": 240,
+      "same_wlt": 256
+    },
+    {
+      "a": "wheat_front",
+      "b": "wheat_both",
+      "pool_games": 256,
+      "action_and_rewards_equal": 240,
+      "same_wlt": 256
+    },
+    {
+      "a": "wheat_half",
+      "b": "wheat_both",
+      "pool_games": 256,
+      "action_and_rewards_equal": 240,
+      "same_wlt": 256
+    }
+  ]
+}

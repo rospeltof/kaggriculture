@@ -60,3 +60,27 @@ y `continuar_loop_trigo_reventa.py`. Evidencia bajo
 `top3_0548_wheat_policy_trace.json`, `wheat_trade_coverage.json`,
 `wheat_trade_smoke.*`, `wheat_trade_validation.json`, `wheat_trade_variants.json`.
 Encolado después de18. No hubo envío ni combinación con almacén13.
+
+
+## Piloto19completo, confirmación activa desde07:57UTC
+
+1.920episodios/32semillas, noop448/448, cero errores. Base87,109375%; las tres
+variantes89,84375%, delta+2,734375pp, ICdos vías[−3,903;9,372]. Cuatro celdas
+mejores, ninguna peor; señal sólo en1046006y1046028. Cada variante cambia16/256
+acciones propias. Frontno cambia acciones rivales; half/bothcambian8/256.
+Comparten W/L/T256/256pero sólo240/256pares de acciones/rewards entre ellas;
+no son tres réplicas independientes. Desempate registrado elige both/front.
+Confirmación3.200juegos1047000–031contra11rivales en curso; no usar parciales.
+
+Ocho reproducciones, primera celda positiva ordenada en cada semilla, cuatro
+brazos: hashes propios/rewards/caja exactos, tiendas preservadas, cero escapes.
+Hybu1046006: margenbase−1805; front1189, half1627, both3786. Frontcompra3385
+trigos en ambos pero coste148423→146915; ventas3667/158866iguales. Half/both
+compran2050y venden2332; producción conservada en este caso.
+Tds1046028:base−439, front1416, half2945, both4308. Frontcoste145680→144739
+con3382comprados/3578vendidos idénticos y misma producción. Half/bothreducen
+compras a2011y ventas a2210; trigo cosechado505→508y zanahoria180→177.
+No afirmar que reducir cantidad preserve todas las decisiones de cultivo.
+
+Evidencia `pilot19.*`, incluida auditoría física y contrastes de igualdad.
+Esto no autoriza sumar las tres ventajas ni combinar con20/24sin nuevo test.

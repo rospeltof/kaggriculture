@@ -1,0 +1,14 @@
+  (extra, no entra en la estimacion) base vs noop: 50.0% (64 ep)
+  (extra, no entra en la estimacion) wheat_half vs noop: 53.1% (64 ep)
+  (extra, no entra en la estimacion) base vs wheat_both: 46.9% (64 ep)
+  (extra, no entra en la estimacion) wheat_half vs wheat_both: 46.9% (64 ep)
+  (extra, no entra en la estimacion) base vs wheat_front: 46.9% (64 ep)
+  (extra, no entra en la estimacion) wheat_half vs wheat_front: 53.1% (64 ep)
+wheat_half - base: 4 rivales x 32 semillas = 128 celdas; ref 87.1%
+  delta +2.73 pts | IC95 semilla [-1.19; +6.66] | dos vias [-3.90; +9.37]
+  celdas cambiadas 4/128: 4 a favor, 0 en contra
+    vs    ars40   +0.0
+    vs   arshs3   +0.0
+    vs     hybu   +4.7
+    vs      tds   +6.2
+  directo wheat_half vs base: 53.1% (64 ep)

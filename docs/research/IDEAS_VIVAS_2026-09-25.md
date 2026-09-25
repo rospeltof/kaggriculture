@@ -1,10 +1,16 @@
 # Fronteras después de loops7–10
 
-Estado07:09UTC:15completo, night/24−12,5pp(inconcluso),48/all24inertes.
-Corre16composición inicial;18fuentes nuevas,19compras nativas,20reventas nuevas
-y21señales extra están validados/en cola.17detenido por modelo temporal erróneo.
-No duplicar corridas.83variantes construidas más2prototipos detenidos. Leer
+Estado 08:24 UTC: confirm19 en curso tras piloto +2,734375 pp; 20–25 en cola.
+16/18 completos sin seleccionadas; 17 detenido por modelo temporal erróneo.
+No duplicar corridas. 89 variantes construidas más 2 prototipos detenidos. Leer
 estado y scorecards actuales antes de usar las propuestas históricas de abajo.
+
+Loop25 prueba cinco fuentes existentes contra copias reactivas de VQ/top3 y
+V7/HS4, confirmación con Harvest68/arshs3 adicionales. Fuentes fijadas antes de
+resultados pendientes; no escoger las ganadoras de 19–24. Motiva auditoría de
+15 replays con campo muy parecido y mercado distinto. No presume código
+compartido ni altera gates anteriores. Piloto1.920 tras24, confirmación nueva;
+ver preregistro25 y `SIMILITUD_RIVALES_2026-09-25.md`.
 
 Nueva frontera21: moderar sólo señales de patrones secundarios, mantener
 la regla del principal.42juegos/noop4.314/max293ms, cuatro brazos activos en
@@ -272,7 +278,7 @@ si mecanismos raros requieren pruebas estratificadas por situaciones observables
 con población/ponderación fijadas de antemano, sin mezclar con panelglobal.
 
 
-## Siguiente hipótesis: adelantar compras nativas de trigo (aún sin construir)
+## Hipótesis ya construida: adelantar compras nativas de trigo (loop24)
 
 Feedback0742, VQcontraGrimReaper:19/19compras grandes iguales por cantidad
 solicitada, rival un turno antes;2988monedas menos con1359vs1361unidades.
@@ -281,3 +287,12 @@ y20(nuevas operaciones), y deADV(ventas). Revisar cancelación del compromiso
 nativo al turno siguiente, capacidad nocturna, insumos y fondos. Probar sobreVQ
 con top3como control, no escoger padre sólo por panel local. Registrar antes de
 crear variantes; no inferir algoritmos de una trayectoria ni adoptar por ahorro.
+
+
+Actualización08:11UTC: loop24validado36juegos/noop8.628/max308ms;64adelantos,
+4480unidades descontadas del compromiso. VQy top3probados, piloto conVQbase.
+No repetir. El adelanto permite también SELLantes, y cambia3CARROTpor3WHEAT;
+no separar causalmente sin intervención adicional. Sonda384mercados temporales
+valida dependencia del rival y efecto de perder consumo del pueblo.19piloto
++2,734375pp en dos semillas: confirmacióncorre, aún sin adoptar/componer.
+Catálogo08:02no tiene nuevas ejecuciones en50entradas; no descargar duplicados.

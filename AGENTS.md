@@ -27,7 +27,8 @@ y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_caja_alimento.py`, `continuar_loop_rebano_inicial.py` y
 `continuar_loop_publicos_0548.py`, `continuar_loop_trigo_reventa.py` y
 `continuar_loop_reventa_town.py`, `continuar_loop_senales_extra.py` y
-`continuar_loop_harvest68.py` y `continuar_loop_suministro_ovino.py` encadenan bloques
+`continuar_loop_harvest68.py`, `continuar_loop_suministro_ovino.py` y
+`continuar_loop_adelanto_trigo.py` y `continuar_loop_panel_cercano.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
 terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
 (una de64 partidas cambia, +1,5625pp). Confirm5 tomate−21,591pp: REJECTED.
@@ -48,7 +49,11 @@ half−12,5pp(inconcluso), double−26,5625, keep_sheep−50,78125, all−64,843
 (últimas tres REJECTED). Sin confirmación. Piloto15terminó1.568/noop288:
 night/24−12,5pp(inconcluso),48/all24inertes128/128; ninguna seleccionada.
 16terminó2.496/noop512: todas REJECTED.18terminó704/noop192:V7−21,875pp
-(inconcluso), HS4−30,46875(REJECTED), ninguna seleccionada. Corre19desde07:33UTC;20/21/22en cola. Doce diagnósticos validan reducción de pérdidas,
+(inconcluso), HS4−30,46875(REJECTED), ninguna seleccionada. Piloto19cerró+2,734375pp las tres variantes; confirm19corre desde07:57UTC,
+3.200juegos/bothyfront.20–25en cola. Loop25congela cinco fuentes existentes
+contra VQ/top3/V7/HS4; confirmación agrega Harvest68/arshs3, sin modificar
+paneles anteriores. Leer preregistro25; no depende de ganadores19–24.
+Doce diagnósticos validan reducción de pérdidas,
 pero una celda neutral omite3FEEDposteriores: no garantiza preservar producción.
 Loop14 modifica sólo filtro económico FEED:36juegos/noop4.314turnos,
 consumo/producción aceptados comprobados; todas activas128/128en piloto.
@@ -112,6 +117,14 @@ contra acciones grabadas.48juegos reactivos/noop8.628/max327ms: activo sólo
 contraV7en mundo dirigido, recupera24lanas/margen−5090→−1093ambos asientos,
 conserva derrota. Piloto2.560tras22, controlesVQ; no seleccionar por desarrollo.
 87variantes construidas más2prototipos detenidos. Ver estado y preregistros22/23.
+
+
+Loop24adelanto de compras nativas sobreVQy top3:36juegos/noop8.628/max308ms,
+64compras/4480unidades canceladas del compromiso posterior, cero errores/escapes
+ni productos finales. Activa en1/3mundos; cambia una cosecha3CARROT→3WHEATy
+permite adelantar ventas. Piloto2560tras23con VQbase/top3control; no mezclar19/20.
+89variantes más2prototipos. Sonda384escenariosde mercado separa compra/venta;
+no hay mejora garantizada sin considerar rival. Catálogo08:02sin cambios.
 
 ## Estado y autorización
 

@@ -1,7 +1,14 @@
 # Scorecards del loop continuo — 2026-09-25 UTC
 
-Estado07:40UTC: pilotos1–16/18 y confirm1/5/7/8/10/13 completos; piloto19corre.
-20/21/22/23validados y encolados;17detenido. Objetivo activo.
+Estado08:24UTC:pilotos1–16/18/19y confirm1/5/7/8/10/13completos; confirm19corre.
+20–25validados/encolados;17detenido. Objetivo activo.
+
+Loop25 reutiliza cinco fuentes validadas, sin aumentar el total89. Panel distinto
+contra VQ/top3/V7/HS4 reactivos, confirmación con dos fuentes adicionales.
+Piloto1.920 y confirmación1.920/2.560 pendientes; no hay resultados nuevos aún.
+Analizador comprobado con fixture de1.920partidas históricas: +2,734375ppcontra
+primera referencia y0contra segunda selecciona ninguna. Noop448exacto, cero
+simulaciones nuevas. No cambiar los gates/resultados históricos de otros paneles.
 
 ## Confirmación disjunta terminada
 
@@ -835,3 +842,25 @@ finales, mismas tiendas. Ambos brazos activos sólo contraV7reactivo en mundo
 WOOL389→413cosechada. Margen−5090→−1093; sigue derrota. Buy/holdequivalentes
 12/12celdas de desarrollo; rama de venta retenida sin cobertura aún. Runner23
 encolado tras22, piloto2.560con32semillas nuevas yVQcontrol. No es envío aprobado.
+
+
+## Piloto19positivo y loop24validado
+
+Piloto19:1.920/noop448/ceroerrores,32semillas. Base87,109375%, cada variante
+89,84375%; delta+2,734375pp, ICdos vías[−3,903;9,372],4celdas mejores/0peores.
+Las tres activas16/256en2semillas; igualesW/L/T256/256pero sólo240/256pares de
+acciones/rewards. Desempate registrado selecciona both/front; confirmación3.200
+1047000–031contra11rivales activa07:57UTC. No adopción antes de confirmación.
+Ocho auditorías físicas reproducen hashes/rewards/caja, mismas tiendas, cero
+escapes:frontahorra1508/941por las mismas3385/3382compras de trigo. Half/both
+reducen volumen; en1046028cambian cosechaWHEAT505→508yCARROT180→177.
+
+Loop24:advanceVQ/advanceTop3, adelanto de compra nativa y descuento del llenado
+real antes de guardas.36juegos/noop8.628/max307,58ms,64compras/4480unidades
+confirmadas. Activa sólo593858505, dos mundos inertes. Cuatro adelantos parciales
+86/89con residual3que no llena por capacidad; resto total. Alimento igual,
+una cosecha3CARROT→3WHEAT, ventas también adelantadas. Noop separado por padre.
+VQbase y top3control en piloto2.560/32semillas pendiente tras23.89variantes
+construidas más2prototipos detenidos. Reproducción rivalgrabadoGrimReaper
+−3070→313; no estima WRreactivo. Sonda384escenarios/1152piernas exactas explica
+interacción con horario rival/consumo; no selección por dinero sintético.

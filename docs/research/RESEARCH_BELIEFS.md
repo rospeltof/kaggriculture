@@ -4,6 +4,26 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, 15 replays recientes] Campo parecido puede coexistir con
+  mercados distintos.** Mediana de igualdad del vector completo de órdenes
+  de campo99,17%, mercado activo71,27%. Comparar sólo comandos emparejados
+  omite peones extra; no identifica código privado ni demuestra causalidad.
+  Motiva panel separado25contra políticas cercanas. Ver `SIMILITUD_RIVALES_2026-09-25.md`.
+
+- **[2026-09-25, loop19] Priorizar una compra puede mejorar precios sin
+  aumentar producción.** Piloto+2,734375pp(no confirmado), sólo2/32semillas;
+  auditorías físicas verifican1508/941monedas menos por igual volumen de trigo,
+  misma cosecha/tiendas y ceroescapes. Reducir cantidad también altera cultivos
+  en un caso. Mismo W/L/T no hace tres políticas independientes ni equivalentes.
+
+- **[2026-09-25, loop24] Comprar antes también puede permitir vender antes.**
+  36desarrollos/noop8.628,64compras/4480unidades llenadas y canceladas del plan
+  posterior. En replayGrimReaper, propio+1638=608ahorrocompra+1030ventas; rival
+  pierde1745. No aislar el efecto en compra.384escenarios sintéticos/1152piernas
+  exactas: adelantar ambas pierde ingreso del pueblo24/32casos contra pasivo;
+  comprar antes pero mantener venta puede perder dinero. Piloto real pendiente.
+
+
 - **[2026-09-25, suministro ovino] Cero FEEDfallidos no implica alimento suficiente.**
   Replaydavion113174624reproducido: trabajador12recibe1/6trigos y espera21turnos
   en PICKUP0; seis ovejas sin alimento/cuidado. Sonda compra6→11recupera24lanas

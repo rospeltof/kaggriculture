@@ -9,8 +9,8 @@ son históricas. Confirm10 terminó inerte y biblioteca11sin mejora W/L/T;
 piloto12 terminó sin seleccionadas. Confirm13 terminó delta0 pese a
 107/86acciones distintas; no enviar. Piloto14sin seleccionadas: dar más alimento
 perjudica en este panel.15sin seleccionadas: reserva de caja no garantiza
-conversión rentable.16terminócon cuatro REJECTED;18sin seleccionadas. Corre19,
-20/21/22/23en cola.23valida suministro del peón ovino adicional, omitido por
+conversión rentable.16terminócon cuatro REJECTED;18sin seleccionadas. Confirm19corre tras+2,734375ppdel piloto;
+20–25en cola.23valida suministro del peón ovino adicional, omitido por
 la guarda de retiros nativos:48desarrollos/noop8.628/max327ms. ContraV7recupera
 24lanas pero conserva derrota; piloto32semillas pendiente. No repetir alimentación indiscriminada14. Loop21modera señales extra
 del forecast, con VQcomo control y rivales nuevos. Loop20validó146compras/cierres. Loop17
@@ -18,9 +18,14 @@ se detuvo por confundir stock actual con stock nocturno: una cosecha intermedia
 libera capacidad y hace valiosa la alimentación omitida. No repetir ese modelo.
 Loop18cerró704juegos:V7−21,875ppinconcluso, HS4−30,46875REJECTED.
 Loop22compara Harvest V68y selector-off, fuente distinta; Master07:12duplicado.
-Siguiente pista0742:GrimReaper compra trigo un turno antes en19/19órdenes
-grandes de VQ; distinto a prioridad19. Revisar compromisos y preregistrar
-antes de construir. No duplicar los bloques congelados ni repetir experimentos ya registrados.
+Pista0742ya es loop24:adelanto sobreVQy top3,36pruebas/noop8.628válidas.
+Compras/compromisos verificados; también cambia ventas y una cosecha.
+No repetir ni asumir beneficio universal: prueba sintética revela dependencia del rival. No duplicar los bloques congelados ni repetir experimentos ya registrados.
+
+Loop25: prueba separada de cinco fuentes existentes contra VQ/top3 y fuentes
+públicas recientes, fijadas antes de resultados pendientes. Motiva similitud
+de campo observada en15replays, no supuesto de código idéntico. Mantener intactos
+los paneles19–24. Preregistro25 y manifiesto `close_panel_manifest.json`.
 
 ## Ronda vigente — 2026-09-14
 

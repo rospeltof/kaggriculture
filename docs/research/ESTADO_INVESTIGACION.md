@@ -1,14 +1,22 @@
 # Estado de investigación — leer primero para continuar
 
-## Corte operativo07:50UTC
+## Corte operativo 08:24 UTC
 
-Pilotos16/18cerrados sin candidatas. Corre19;20/21/22/23validados y en cola,
-un solo torneo grande. No iniciar duplicados.87variantes construidas más2
-prototipos17detenidos. Suministro23rescata6alimentaciones/24lanas contraV7
-reactivo pero aún pierde; falta piloto global. Nueva pista para investigar:
-adelantar compras nativas de trigo, observada19/19veces en rivalGrimReaper;
-aún no hay implementación24. Último feedback real07:41:40UTC:VQ2296,9/91,
-top32094,4/79, ambasCOMPLETE. No se ha enviado otra submission.
+Piloto19completo: tres variantes+2,734375pp, señal en2/32semillas; ambas
+seleccionadas (both/front) en confirmación3.200desde07:57UTC.20–24validados y
+en cola; un solo torneo grande, no duplicar.89variantes construidas más2
+prototipos17detenidos. Adelanto24compra antes y permite ventas más tempranas:
+36juegos/noop8.628/64llenados,4.480unidades descontadas del compromiso nativo,
+max308ms. Nuevo catálogo público08:02UTCno cambia las50entradas anteriores.
+Último ladder07:41:40UTC:VQ2296,9/91, top32094,4/79; no nuevo envío.
+
+Loop25 registrado y en espera tras24: cinco fuentes existentes, panel reactivo
+VQ/top3/V7/HS4 y confirmación agregando Harvest68/arshs3. Piloto1.920,
+semillas1063000–015; confirmación1064000–031. No depende de quién gane19–24.
+Auditoría15replays: mediana99,17%de vector de campo idéntico,71,27%mercado
+activo. Descriptivo, no código identificado ni efecto causal. Validación del
+analizador con1.920partidas históricas/noop448, sin nuevas simulaciones.
+Ver `PREREG_LOOP25_PANEL_CERCANO_2026-09-25.md`; ningún envío automático.
 
 ## Loop activo desde 2026-09-25 01:02 UTC
 
@@ -202,6 +210,12 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   y añade2MILK. No elegir por rewards. Cobertura estática sólo5/64pares motivó
   ampliar antes del piloto a32semillas por bloque; piloto1.9201046000–031,
   confirmación1047000–031. Runner en espera reiniciado, activos intactos.
+  Piloto1.920**completo**, noop448/448, cero errores: las tres+2,734375pp,
+  ICdos vías[−3,903;9,372],4celdas mejores/0peores, sólo2/32semillas activas.
+  Cambian16/256acciones; compartenW/L/Tpero sólo240/256acciones/rewards.
+  Desempate selecciona both/front: **confirmación3.200corriendo desde07:57UTC**.
+  Ocho mecanismos reproducen hashes/rewards/caja: frontahorra1508/941de trigo
+  con igual cantidad y producción; half/bothalteran3WHEAT/3CARROTen un caso.
   Total76variantes competitivas construidas más2prototipos17detenidos.
   Ver `TRIGO_REVENTA_2026-09-25.md`; nuestra fuente reproduce exactamente el
   replay real de origen, pero no conocemos ni copiamos su política rival.
@@ -244,6 +258,19 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   no convierte esa derrota. Base/arshs3/VQ/HS4inertes. Piloto2.560tras22,
   controlVQy confirmación disjunta.87variantes construidas
   más2prototipos; ver `SUMINISTRO_OVINO_2026-09-25.md`. No es mejora OOS aún.
+- Loop24validado/encolado: adelantar compra nativa de trigo sobreVQy top3,
+  cancelar sólo llenado observado en origen antes de guardas de alimento.
+  36juegos/noop8.628/max308ms,64adelantos/4.480unidades compradas y descontadas
+  del plan nativo. Cuatro casos dejan3de89sin adelantar, solicitud posterior
+  no llena por capacidad; no duplican lo comprado. Activos sólo en593858505,
+  ambos asientos;16eventos por juego, otros dos mundos inertes. Alimento
+  preservado, cosecha453de3CARROT→3WHEAT; ventas también se adelantan por stock.
+  Sonda contraGrimReapergrabado margen−3070→+313; reactivoarshs3mantieneW.
+  Piloto2.560tras23,32semillas, VQbase/top3control; confirmación disjunta.
+  89variantes construidas más2prototipos. Ver `ADELANTO_TRIGO_2026-09-25.md`.
+  Sonda sintética384casos/1.152piernas exactas: comprar antes sin vender antes
+  pierde dinero32/128; adelantar ambas pierde beneficio contra rival pasivo24/32.
+  No son tasas poblacionales. Catálogo08:02sin cambios en50entradas; no duplicados.
 - Fuentes públicas nuevas: MasterEngine actualizado es tds25 byte exacto,
   excluido. MarketShock12ad317e diferente; loader elegía instalador. Corrección
   de entrada1c94b979 probada idéntica al `module.agent` del autor en8juegos.

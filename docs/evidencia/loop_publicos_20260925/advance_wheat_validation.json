@@ -1,0 +1,1558 @@
+{
+  "passed": true,
+  "development_games": 36,
+  "noop_exact_turns": 8628,
+  "source_archive": "advance_wheat_smoke.sources.tgz",
+  "candidate_hashes": {
+    "advance_vq": "a35c696c210cc508fe42907e49916625f204ea379ed54b8e8100962f7d041ded",
+    "advance_top3": "106aa5635596eef362a4b09b79d7831f27c917e75c0c128c5c8ab9718aec92d7"
+  },
+  "max_turn_ms": 307.57845801417716,
+  "note": "Both parent noops, sources, actual earlier fills and no duplicated native purchase verified. Earlier stock can also advance sales and change production; development outcomes do not select arms.",
+  "summary": [
+    {
+      "arm": "advance_vq",
+      "seed": 1060000,
+      "seat": 0,
+      "reference": "base",
+      "advances": 0,
+      "both_actions_and_rewards_equal": true,
+      "same_shops": true,
+      "feed_base": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 162,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 162,
+        "FEED:GOOSE": 52
+      },
+      "harvest_base": {
+        "WHEAT": 583,
+        "WOOL": 99,
+        "MILK": 219,
+        "MELON": 72,
+        "EGG": 89,
+        "STRAWBERRY": 249,
+        "TOMATO": 80,
+        "CARROT": 114
+      },
+      "harvest_candidate": {
+        "WHEAT": 583,
+        "WOOL": 99,
+        "MILK": 219,
+        "MELON": 72,
+        "EGG": 89,
+        "STRAWBERRY": 249,
+        "TOMATO": 80,
+        "CARROT": 114
+      },
+      "losses_base": {},
+      "losses_candidate": {},
+      "wheat_buy_base": [
+        122,
+        -4403
+      ],
+      "wheat_buy_candidate": [
+        122,
+        -4403
+      ],
+      "wheat_sale_base": [
+        396,
+        16513
+      ],
+      "wheat_sale_candidate": [
+        396,
+        16513
+      ],
+      "escapes": []
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 1060000,
+      "seat": 1,
+      "reference": "base",
+      "advances": 0,
+      "both_actions_and_rewards_equal": true,
+      "same_shops": true,
+      "feed_base": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 162,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 162,
+        "FEED:GOOSE": 52
+      },
+      "harvest_base": {
+        "WHEAT": 583,
+        "WOOL": 99,
+        "MILK": 219,
+        "MELON": 72,
+        "EGG": 89,
+        "STRAWBERRY": 249,
+        "TOMATO": 80,
+        "CARROT": 114
+      },
+      "harvest_candidate": {
+        "WHEAT": 583,
+        "WOOL": 99,
+        "MILK": 219,
+        "MELON": 72,
+        "EGG": 89,
+        "STRAWBERRY": 249,
+        "TOMATO": 80,
+        "CARROT": 114
+      },
+      "losses_base": {},
+      "losses_candidate": {},
+      "wheat_buy_base": [
+        122,
+        -4403
+      ],
+      "wheat_buy_candidate": [
+        122,
+        -4403
+      ],
+      "wheat_sale_base": [
+        396,
+        16513
+      ],
+      "wheat_sale_candidate": [
+        396,
+        16513
+      ],
+      "escapes": []
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 1060000,
+      "seat": 0,
+      "reference": "ref_top3",
+      "advances": 0,
+      "both_actions_and_rewards_equal": true,
+      "same_shops": true,
+      "feed_base": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 162,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 162,
+        "FEED:GOOSE": 52
+      },
+      "harvest_base": {
+        "WHEAT": 583,
+        "WOOL": 99,
+        "MILK": 219,
+        "MELON": 72,
+        "EGG": 89,
+        "STRAWBERRY": 249,
+        "TOMATO": 80,
+        "CARROT": 114
+      },
+      "harvest_candidate": {
+        "WHEAT": 583,
+        "WOOL": 99,
+        "MILK": 219,
+        "MELON": 72,
+        "EGG": 89,
+        "STRAWBERRY": 249,
+        "TOMATO": 80,
+        "CARROT": 114
+      },
+      "losses_base": {},
+      "losses_candidate": {},
+      "wheat_buy_base": [
+        122,
+        -4403
+      ],
+      "wheat_buy_candidate": [
+        122,
+        -4403
+      ],
+      "wheat_sale_base": [
+        396,
+        16513
+      ],
+      "wheat_sale_candidate": [
+        396,
+        16513
+      ],
+      "escapes": []
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 1060000,
+      "seat": 1,
+      "reference": "ref_top3",
+      "advances": 0,
+      "both_actions_and_rewards_equal": true,
+      "same_shops": true,
+      "feed_base": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 162,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 162,
+        "FEED:GOOSE": 52
+      },
+      "harvest_base": {
+        "WHEAT": 583,
+        "WOOL": 99,
+        "MILK": 219,
+        "MELON": 72,
+        "EGG": 89,
+        "STRAWBERRY": 249,
+        "TOMATO": 80,
+        "CARROT": 114
+      },
+      "harvest_candidate": {
+        "WHEAT": 583,
+        "WOOL": 99,
+        "MILK": 219,
+        "MELON": 72,
+        "EGG": 89,
+        "STRAWBERRY": 249,
+        "TOMATO": 80,
+        "CARROT": 114
+      },
+      "losses_base": {},
+      "losses_candidate": {},
+      "wheat_buy_base": [
+        122,
+        -4403
+      ],
+      "wheat_buy_candidate": [
+        122,
+        -4403
+      ],
+      "wheat_sale_base": [
+        396,
+        16513
+      ],
+      "wheat_sale_candidate": [
+        396,
+        16513
+      ],
+      "escapes": []
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 1060001,
+      "seat": 0,
+      "reference": "base",
+      "advances": 0,
+      "both_actions_and_rewards_equal": true,
+      "same_shops": true,
+      "feed_base": {
+        "FEED:SHEEP": 338,
+        "FEED:COW": 108
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 338,
+        "FEED:COW": 108
+      },
+      "harvest_base": {
+        "WHEAT": 576,
+        "WOOL": 408,
+        "MILK": 157,
+        "CARROT": 91,
+        "MELON": 72,
+        "STRAWBERRY": 249
+      },
+      "harvest_candidate": {
+        "WHEAT": 576,
+        "WOOL": 408,
+        "MILK": 157,
+        "CARROT": 91,
+        "MELON": 72,
+        "STRAWBERRY": 249
+      },
+      "losses_base": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 12
+      },
+      "losses_candidate": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 12
+      },
+      "wheat_buy_base": [
+        259,
+        -10070
+      ],
+      "wheat_buy_candidate": [
+        259,
+        -10070
+      ],
+      "wheat_sale_base": [
+        385,
+        15871
+      ],
+      "wheat_sale_candidate": [
+        385,
+        15871
+      ],
+      "escapes": []
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 1060001,
+      "seat": 1,
+      "reference": "base",
+      "advances": 0,
+      "both_actions_and_rewards_equal": true,
+      "same_shops": true,
+      "feed_base": {
+        "FEED:SHEEP": 338,
+        "FEED:COW": 108
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 338,
+        "FEED:COW": 108
+      },
+      "harvest_base": {
+        "WHEAT": 576,
+        "WOOL": 408,
+        "MILK": 157,
+        "CARROT": 91,
+        "MELON": 72,
+        "STRAWBERRY": 249
+      },
+      "harvest_candidate": {
+        "WHEAT": 576,
+        "WOOL": 408,
+        "MILK": 157,
+        "CARROT": 91,
+        "MELON": 72,
+        "STRAWBERRY": 249
+      },
+      "losses_base": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 12
+      },
+      "losses_candidate": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 12
+      },
+      "wheat_buy_base": [
+        259,
+        -10070
+      ],
+      "wheat_buy_candidate": [
+        259,
+        -10070
+      ],
+      "wheat_sale_base": [
+        385,
+        15871
+      ],
+      "wheat_sale_candidate": [
+        385,
+        15871
+      ],
+      "escapes": []
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 1060001,
+      "seat": 0,
+      "reference": "ref_top3",
+      "advances": 0,
+      "both_actions_and_rewards_equal": true,
+      "same_shops": true,
+      "feed_base": {
+        "FEED:SHEEP": 338,
+        "FEED:COW": 107
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 338,
+        "FEED:COW": 107
+      },
+      "harvest_base": {
+        "WHEAT": 576,
+        "WOOL": 408,
+        "MILK": 156,
+        "CARROT": 91,
+        "MELON": 72,
+        "STRAWBERRY": 249
+      },
+      "harvest_candidate": {
+        "WHEAT": 576,
+        "WOOL": 408,
+        "MILK": 156,
+        "CARROT": 91,
+        "MELON": 72,
+        "STRAWBERRY": 249
+      },
+      "losses_base": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 12
+      },
+      "losses_candidate": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 12
+      },
+      "wheat_buy_base": [
+        259,
+        -10068
+      ],
+      "wheat_buy_candidate": [
+        259,
+        -10068
+      ],
+      "wheat_sale_base": [
+        386,
+        15906
+      ],
+      "wheat_sale_candidate": [
+        386,
+        15906
+      ],
+      "escapes": []
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 1060001,
+      "seat": 1,
+      "reference": "ref_top3",
+      "advances": 0,
+      "both_actions_and_rewards_equal": true,
+      "same_shops": true,
+      "feed_base": {
+        "FEED:SHEEP": 338,
+        "FEED:COW": 107
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 338,
+        "FEED:COW": 107
+      },
+      "harvest_base": {
+        "WHEAT": 576,
+        "WOOL": 408,
+        "MILK": 156,
+        "CARROT": 91,
+        "MELON": 72,
+        "STRAWBERRY": 249
+      },
+      "harvest_candidate": {
+        "WHEAT": 576,
+        "WOOL": 408,
+        "MILK": 156,
+        "CARROT": 91,
+        "MELON": 72,
+        "STRAWBERRY": 249
+      },
+      "losses_base": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 12
+      },
+      "losses_candidate": {
+        "WHEAT": 4,
+        "STRAWBERRY": 3,
+        "WOOL": 4,
+        "FERTILIZER": 12
+      },
+      "wheat_buy_base": [
+        259,
+        -10068
+      ],
+      "wheat_buy_candidate": [
+        259,
+        -10068
+      ],
+      "wheat_sale_base": [
+        386,
+        15906
+      ],
+      "wheat_sale_candidate": [
+        386,
+        15906
+      ],
+      "escapes": []
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "reference": "base",
+      "advances": 16,
+      "both_actions_and_rewards_equal": false,
+      "same_shops": true,
+      "feed_base": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 107,
+        "FEED:GOOSE": 94
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 107,
+        "FEED:GOOSE": 94
+      },
+      "harvest_base": {
+        "WHEAT": 483,
+        "WOOL": 99,
+        "MILK": 159,
+        "MELON": 72,
+        "EGG": 167,
+        "STRAWBERRY": 247,
+        "CARROT": 200
+      },
+      "harvest_candidate": {
+        "WHEAT": 486,
+        "WOOL": 99,
+        "MILK": 159,
+        "MELON": 72,
+        "EGG": 167,
+        "STRAWBERRY": 247,
+        "CARROT": 197
+      },
+      "losses_base": {},
+      "losses_candidate": {},
+      "wheat_buy_base": [
+        1492,
+        -62618
+      ],
+      "wheat_buy_candidate": [
+        1492,
+        -61466
+      ],
+      "wheat_sale_base": [
+        1679,
+        70838
+      ],
+      "wheat_sale_candidate": [
+        1682,
+        70312
+      ],
+      "escapes": []
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "reference": "base",
+      "advances": 16,
+      "both_actions_and_rewards_equal": false,
+      "same_shops": true,
+      "feed_base": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 107,
+        "FEED:GOOSE": 94
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 107,
+        "FEED:GOOSE": 94
+      },
+      "harvest_base": {
+        "WHEAT": 483,
+        "WOOL": 99,
+        "MILK": 159,
+        "MELON": 72,
+        "EGG": 167,
+        "STRAWBERRY": 247,
+        "CARROT": 200
+      },
+      "harvest_candidate": {
+        "WHEAT": 486,
+        "WOOL": 99,
+        "MILK": 159,
+        "MELON": 72,
+        "EGG": 167,
+        "STRAWBERRY": 247,
+        "CARROT": 197
+      },
+      "losses_base": {},
+      "losses_candidate": {},
+      "wheat_buy_base": [
+        1492,
+        -62618
+      ],
+      "wheat_buy_candidate": [
+        1492,
+        -61466
+      ],
+      "wheat_sale_base": [
+        1679,
+        70838
+      ],
+      "wheat_sale_candidate": [
+        1682,
+        70312
+      ],
+      "escapes": []
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "reference": "ref_top3",
+      "advances": 16,
+      "both_actions_and_rewards_equal": false,
+      "same_shops": true,
+      "feed_base": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 105,
+        "FEED:GOOSE": 94
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 105,
+        "FEED:GOOSE": 94
+      },
+      "harvest_base": {
+        "WHEAT": 483,
+        "WOOL": 99,
+        "MILK": 157,
+        "MELON": 72,
+        "EGG": 167,
+        "STRAWBERRY": 247,
+        "CARROT": 200
+      },
+      "harvest_candidate": {
+        "WHEAT": 486,
+        "WOOL": 99,
+        "MILK": 157,
+        "MELON": 72,
+        "EGG": 167,
+        "STRAWBERRY": 247,
+        "CARROT": 197
+      },
+      "losses_base": {},
+      "losses_candidate": {},
+      "wheat_buy_base": [
+        1492,
+        -62618
+      ],
+      "wheat_buy_candidate": [
+        1492,
+        -61466
+      ],
+      "wheat_sale_base": [
+        1681,
+        70903
+      ],
+      "wheat_sale_candidate": [
+        1684,
+        70378
+      ],
+      "escapes": []
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "reference": "ref_top3",
+      "advances": 16,
+      "both_actions_and_rewards_equal": false,
+      "same_shops": true,
+      "feed_base": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 105,
+        "FEED:GOOSE": 94
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 95,
+        "FEED:COW": 105,
+        "FEED:GOOSE": 94
+      },
+      "harvest_base": {
+        "WHEAT": 483,
+        "WOOL": 99,
+        "MILK": 157,
+        "MELON": 72,
+        "EGG": 167,
+        "STRAWBERRY": 247,
+        "CARROT": 200
+      },
+      "harvest_candidate": {
+        "WHEAT": 486,
+        "WOOL": 99,
+        "MILK": 157,
+        "MELON": 72,
+        "EGG": 167,
+        "STRAWBERRY": 247,
+        "CARROT": 197
+      },
+      "losses_base": {},
+      "losses_candidate": {},
+      "wheat_buy_base": [
+        1492,
+        -62618
+      ],
+      "wheat_buy_candidate": [
+        1492,
+        -61466
+      ],
+      "wheat_sale_base": [
+        1681,
+        70903
+      ],
+      "wheat_sale_candidate": [
+        1684,
+        70378
+      ],
+      "escapes": []
+    }
+  ],
+  "competitive_ready": true,
+  "activation": {
+    "advance_vq": 32,
+    "advance_top3": 32
+  },
+  "transaction_checks": [
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 295,
+      "requested": 48,
+      "bought": 48,
+      "cancelled": 48,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2008
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 299,
+      "requested": 48,
+      "bought": 48,
+      "cancelled": 48,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2012
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 303,
+      "requested": 48,
+      "bought": 48,
+      "cancelled": 48,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2016
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 315,
+      "requested": 60,
+      "bought": 60,
+      "cancelled": 60,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2480
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 323,
+      "requested": 63,
+      "bought": 63,
+      "cancelled": 63,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2614
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 347,
+      "requested": 59,
+      "bought": 59,
+      "cancelled": 59,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2432
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 351,
+      "requested": 59,
+      "bought": 59,
+      "cancelled": 59,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2436
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 355,
+      "requested": 71,
+      "bought": 71,
+      "cancelled": 71,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2936
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 363,
+      "requested": 77,
+      "bought": 77,
+      "cancelled": 77,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3210
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 367,
+      "requested": 89,
+      "bought": 89,
+      "cancelled": 89,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3669
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 379,
+      "requested": 89,
+      "bought": 89,
+      "cancelled": 89,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3696
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 387,
+      "requested": 74,
+      "bought": 74,
+      "cancelled": 74,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3072
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 395,
+      "requested": 80,
+      "bought": 80,
+      "cancelled": 80,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3346
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 403,
+      "requested": 80,
+      "bought": 80,
+      "cancelled": 80,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3330
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 415,
+      "requested": 86,
+      "bought": 86,
+      "cancelled": 86,
+      "native_remaining": 3,
+      "following_request": 3,
+      "following_accepted": 0,
+      "buy_cash": -3576
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 423,
+      "requested": 89,
+      "bought": 89,
+      "cancelled": 89,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3705
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 295,
+      "requested": 48,
+      "bought": 48,
+      "cancelled": 48,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2008
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 299,
+      "requested": 48,
+      "bought": 48,
+      "cancelled": 48,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2012
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 303,
+      "requested": 48,
+      "bought": 48,
+      "cancelled": 48,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2016
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 315,
+      "requested": 60,
+      "bought": 60,
+      "cancelled": 60,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2480
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 323,
+      "requested": 63,
+      "bought": 63,
+      "cancelled": 63,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2614
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 347,
+      "requested": 59,
+      "bought": 59,
+      "cancelled": 59,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2432
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 351,
+      "requested": 59,
+      "bought": 59,
+      "cancelled": 59,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2436
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 355,
+      "requested": 71,
+      "bought": 71,
+      "cancelled": 71,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2936
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 363,
+      "requested": 77,
+      "bought": 77,
+      "cancelled": 77,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3210
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 367,
+      "requested": 89,
+      "bought": 89,
+      "cancelled": 89,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3669
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 379,
+      "requested": 89,
+      "bought": 89,
+      "cancelled": 89,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3696
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 387,
+      "requested": 74,
+      "bought": 74,
+      "cancelled": 74,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3072
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 395,
+      "requested": 80,
+      "bought": 80,
+      "cancelled": 80,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3346
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 403,
+      "requested": 80,
+      "bought": 80,
+      "cancelled": 80,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3330
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 415,
+      "requested": 86,
+      "bought": 86,
+      "cancelled": 86,
+      "native_remaining": 3,
+      "following_request": 3,
+      "following_accepted": 0,
+      "buy_cash": -3576
+    },
+    {
+      "arm": "advance_vq",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 423,
+      "requested": 89,
+      "bought": 89,
+      "cancelled": 89,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3705
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 295,
+      "requested": 48,
+      "bought": 48,
+      "cancelled": 48,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2008
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 299,
+      "requested": 48,
+      "bought": 48,
+      "cancelled": 48,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2012
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 303,
+      "requested": 48,
+      "bought": 48,
+      "cancelled": 48,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2016
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 315,
+      "requested": 60,
+      "bought": 60,
+      "cancelled": 60,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2480
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 323,
+      "requested": 63,
+      "bought": 63,
+      "cancelled": 63,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2614
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 347,
+      "requested": 59,
+      "bought": 59,
+      "cancelled": 59,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2432
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 351,
+      "requested": 59,
+      "bought": 59,
+      "cancelled": 59,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2436
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 355,
+      "requested": 71,
+      "bought": 71,
+      "cancelled": 71,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2936
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 363,
+      "requested": 77,
+      "bought": 77,
+      "cancelled": 77,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3210
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 367,
+      "requested": 89,
+      "bought": 89,
+      "cancelled": 89,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3669
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 379,
+      "requested": 89,
+      "bought": 89,
+      "cancelled": 89,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3696
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 387,
+      "requested": 74,
+      "bought": 74,
+      "cancelled": 74,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3072
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 395,
+      "requested": 80,
+      "bought": 80,
+      "cancelled": 80,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3346
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 403,
+      "requested": 80,
+      "bought": 80,
+      "cancelled": 80,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3330
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 415,
+      "requested": 86,
+      "bought": 86,
+      "cancelled": 86,
+      "native_remaining": 3,
+      "following_request": 3,
+      "following_accepted": 0,
+      "buy_cash": -3576
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 0,
+      "step": 423,
+      "requested": 89,
+      "bought": 89,
+      "cancelled": 89,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3705
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 295,
+      "requested": 48,
+      "bought": 48,
+      "cancelled": 48,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2008
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 299,
+      "requested": 48,
+      "bought": 48,
+      "cancelled": 48,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2012
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 303,
+      "requested": 48,
+      "bought": 48,
+      "cancelled": 48,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2016
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 315,
+      "requested": 60,
+      "bought": 60,
+      "cancelled": 60,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2480
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 323,
+      "requested": 63,
+      "bought": 63,
+      "cancelled": 63,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2614
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 347,
+      "requested": 59,
+      "bought": 59,
+      "cancelled": 59,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2432
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 351,
+      "requested": 59,
+      "bought": 59,
+      "cancelled": 59,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2436
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 355,
+      "requested": 71,
+      "bought": 71,
+      "cancelled": 71,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -2936
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 363,
+      "requested": 77,
+      "bought": 77,
+      "cancelled": 77,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3210
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 367,
+      "requested": 89,
+      "bought": 89,
+      "cancelled": 89,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3669
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 379,
+      "requested": 89,
+      "bought": 89,
+      "cancelled": 89,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3696
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 387,
+      "requested": 74,
+      "bought": 74,
+      "cancelled": 74,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3072
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 395,
+      "requested": 80,
+      "bought": 80,
+      "cancelled": 80,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3346
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 403,
+      "requested": 80,
+      "bought": 80,
+      "cancelled": 80,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3330
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 415,
+      "requested": 86,
+      "bought": 86,
+      "cancelled": 86,
+      "native_remaining": 3,
+      "following_request": 3,
+      "following_accepted": 0,
+      "buy_cash": -3576
+    },
+    {
+      "arm": "advance_top3",
+      "seed": 593858505,
+      "seat": 1,
+      "step": 423,
+      "requested": 89,
+      "bought": 89,
+      "cancelled": 89,
+      "native_remaining": 0,
+      "following_request": 0,
+      "following_accepted": 0,
+      "buy_cash": -3705
+    }
+  ],
+  "control_hash": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+}
