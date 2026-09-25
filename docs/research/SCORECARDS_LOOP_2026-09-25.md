@@ -696,3 +696,45 @@ con rangos consecutivos/gate intactos. Se detuvo sólo el runner19en espera y
 se reinició con32, sin tocar14activo. Piloto1.9201046000–031, confirmación
 2.304/3.2001047000–031, en cola tras18. Total76variantes competitivas más2
 prototipos17detenidos. Ver TRIGO_REVENTA, protocolo y wheat_trade_coverage.json.
+
+
+## Piloto14 terminado: alimentación adicional no paga en este panel
+
+1.248episodios1031000–015, noop256/256, cero errores, fuentes/cobertura válidas.
+Base91,40625%. Todos los brazos cambian128/128acciones propias.
+
+| Brazo | Delta pp | IC95dos vías | Decisión |
+|---|---:|---|---|
+| half | −12,5 | [−33,693;8,693] | Inconcluso, no seleccionado |
+| double | −26,5625 | [−51,898;−1,227] | REJECTED |
+| keep_sheep | −50,78125 | [−81,903;−19,66] | REJECTED |
+| all | −64,84375 | [−92,17;−37,518] | REJECTED |
+
+Ninguna confirmación/envío. Ocho diagnósticos: primera celda ordenada de daño
+por brazo,720DONE/caja y rewards exactos, tiendas preservadas. Half/ars40/1031006
+margen+738→−318; caja propia+1.989y rival+3.045. Double/1031002margen+333→−322,
+MILK151→171vendidas pero8.038→7.785monedas. Keep_sheep/all/1031001coinciden:
+WOOL259→278por sólo183monedas más, WHEAT384→365y−634monedas; margen322→−391.
+Estos casos explican daños particulares; no suman muestra ni generalizan su
+mecanismo a todas las derrotas. Archivos `pilot14.*.harm.*` y behavior.json.
+Piloto15de1.568episodios arrancó06:36:09UTC. Objetivo continuo activo.
+
+
+## Desarrollo20 completo y en cola
+
+30juegos en1048000/1048001/588616997, ambos asientos frente a arshs3reactivo;
+noop4.314turnos exactos, máximo357,83ms, fuentes verificadas,720DONE/caja
+conciliada, cero errores/escapes/producto final. Tres brazos activos en tres
+mundos:20unidades34operaciones/680unidades;50→56/2.800;80→56/4.382. Total146
+compras y146cierres,7.862unidades, todas compradas y vendidas al turno siguiente.
+42cierres ya contenían SELLWHEAT reactivo del padre por cantidad menor a la
+comprada: se amplió hasta lo comprado mediante máximo, sin sumar ni duplicar
+órdenes. Ninguna cantidad desviada a comida.
+
+Alimento, cosecha, pérdidas y tiendas iguales a base en los18juegos candidatos.
+En estos mundos la caja de cada operación coincide con el modelo sin rival;
+no generalizar esa ausencia de interferencia. Rentas por juego/asiento:
+1048000=26/64/105monedas,1048001=24/68/103,588616997=8/24/36. Son diagnóstico
+mecánico, no criterio de selección ni efecto competitivo probado. No elegir80
+por esos ingresos. Piloto1.920/32semillas1049000–031en cola tras19; confirmación
+condicional1050000–031. Total79variantes competitivas más2prototipos17detenidos.

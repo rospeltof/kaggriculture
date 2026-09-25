@@ -1,0 +1,9602 @@
+[
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        0
+      ],
+      [
+        210,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -630,
+        0
+      ],
+      [
+        630,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 60,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1286,
+        0
+      ],
+      [
+        1286,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 90,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1956,
+        0
+      ],
+      [
+        1956,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -630
+      ],
+      [
+        0,
+        630
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 10,
+    "own_net": 3.0,
+    "rival_net": -3.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        -636
+      ],
+      [
+        213,
+        633
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -643,
+        -643
+      ],
+      [
+        643,
+        643
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 60,
+    "own_net": -20.0,
+    "rival_net": 20.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1313,
+        -643
+      ],
+      [
+        1293,
+        663
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -40.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 90,
+    "own_net": -90.0,
+    "rival_net": 91.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -2110,
+        -643
+      ],
+      [
+        2020,
+        734
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -181.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -1956
+      ],
+      [
+        0,
+        1956
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 10,
+    "own_net": 24.0,
+    "rival_net": -23.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        -1983
+      ],
+      [
+        234,
+        1960
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 47.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 30,
+    "own_net": 91.0,
+    "rival_net": -90.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -643,
+        -2110
+      ],
+      [
+        734,
+        2020
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 181.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 60,
+    "own_net": 150.0,
+    "rival_net": -148.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1376,
+        -2304
+      ],
+      [
+        1526,
+        2156
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 298.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 90,
+    "own_net": 1.0,
+    "rival_net": 1.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -2336,
+        -2336
+      ],
+      [
+        2337,
+        2337
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        630
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        630
+      ],
+      [
+        210,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -630,
+        630
+      ],
+      [
+        630,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 60,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1260,
+        630
+      ],
+      [
+        1260,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 90,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1916,
+        630
+      ],
+      [
+        1916,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        630
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        0
+      ],
+      [
+        210,
+        630
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -630,
+        0
+      ],
+      [
+        630,
+        630
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 60,
+    "own_net": -13.0,
+    "rival_net": 643.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1286,
+        0
+      ],
+      [
+        1273,
+        643
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -26.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 90,
+    "own_net": -33.0,
+    "rival_net": 663.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1956,
+        0
+      ],
+      [
+        1923,
+        663
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -66.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        0
+      ],
+      [
+        210,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -630,
+        0
+      ],
+      [
+        630,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 60,
+    "own_net": 1.0,
+    "rival_net": 0.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -1286,
+        0
+      ],
+      [
+        1287,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 1.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 90,
+    "own_net": 2.0,
+    "rival_net": 0.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -1956,
+        0
+      ],
+      [
+        1958,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -630
+      ],
+      [
+        0,
+        630
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 10,
+    "own_net": 4.0,
+    "rival_net": -2.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        -636
+      ],
+      [
+        214,
+        634
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 30,
+    "own_net": 1.0,
+    "rival_net": 1.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -643,
+        -643
+      ],
+      [
+        644,
+        644
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 60,
+    "own_net": -18.0,
+    "rival_net": 22.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -1313,
+        -643
+      ],
+      [
+        1295,
+        665
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -40.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 90,
+    "own_net": -82.0,
+    "rival_net": 98.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -2110,
+        -643
+      ],
+      [
+        2028,
+        741
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -180.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 2.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -1956
+      ],
+      [
+        0,
+        1958
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 10,
+    "own_net": 26.0,
+    "rival_net": -19.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        -1983
+      ],
+      [
+        236,
+        1964
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 47.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 30,
+    "own_net": 98.0,
+    "rival_net": -82.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -643,
+        -2110
+      ],
+      [
+        741,
+        2028
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 182.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 60,
+    "own_net": 160.0,
+    "rival_net": -138.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -1376,
+        -2304
+      ],
+      [
+        1536,
+        2166
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 300.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 90,
+    "own_net": 13.0,
+    "rival_net": 13.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -2336,
+        -2336
+      ],
+      [
+        2349,
+        2349
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        630
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        630
+      ],
+      [
+        210,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -630,
+        630
+      ],
+      [
+        630,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 60,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -1260,
+        630
+      ],
+      [
+        1260,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 90,
+    "own_net": 1.0,
+    "rival_net": 630.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -1916,
+        630
+      ],
+      [
+        1917,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 1.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        630
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        0
+      ],
+      [
+        210,
+        630
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -630,
+        0
+      ],
+      [
+        630,
+        630
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 60,
+    "own_net": -12.0,
+    "rival_net": 644.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -1286,
+        0
+      ],
+      [
+        1274,
+        644
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -26.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 90,
+    "own_net": -31.0,
+    "rival_net": 665.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -1956,
+        0
+      ],
+      [
+        1925,
+        665
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -66.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        0
+      ],
+      [
+        210,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -630,
+        0
+      ],
+      [
+        630,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 60,
+    "own_net": 3.0,
+    "rival_net": 0.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -1286,
+        0
+      ],
+      [
+        1289,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 3.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 90,
+    "own_net": 6.0,
+    "rival_net": 0.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -1956,
+        0
+      ],
+      [
+        1962,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -630
+      ],
+      [
+        0,
+        630
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 10,
+    "own_net": 5.0,
+    "rival_net": -1.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        -636
+      ],
+      [
+        215,
+        635
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 30,
+    "own_net": 2.0,
+    "rival_net": 2.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -643,
+        -643
+      ],
+      [
+        645,
+        645
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 60,
+    "own_net": -16.0,
+    "rival_net": 24.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -1313,
+        -643
+      ],
+      [
+        1297,
+        667
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -40.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 90,
+    "own_net": -72.0,
+    "rival_net": 106.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -2110,
+        -643
+      ],
+      [
+        2038,
+        749
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -178.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 6.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -1956
+      ],
+      [
+        0,
+        1962
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 10,
+    "own_net": 30.0,
+    "rival_net": -11.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        -1983
+      ],
+      [
+        240,
+        1972
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 47.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 30,
+    "own_net": 106.0,
+    "rival_net": -72.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -643,
+        -2110
+      ],
+      [
+        749,
+        2038
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 184.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 60,
+    "own_net": 171.0,
+    "rival_net": -127.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -1376,
+        -2304
+      ],
+      [
+        1547,
+        2177
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 304.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 90,
+    "own_net": 26.0,
+    "rival_net": 26.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -2336,
+        -2336
+      ],
+      [
+        2362,
+        2362
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        630
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        630
+      ],
+      [
+        210,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -630,
+        630
+      ],
+      [
+        630,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 60,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -1260,
+        630
+      ],
+      [
+        1260,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 90,
+    "own_net": 3.0,
+    "rival_net": 630.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -1916,
+        630
+      ],
+      [
+        1919,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 3.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        630
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        0
+      ],
+      [
+        210,
+        630
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -630,
+        0
+      ],
+      [
+        630,
+        630
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 60,
+    "own_net": -11.0,
+    "rival_net": 645.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -1286,
+        0
+      ],
+      [
+        1275,
+        645
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -26.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 90,
+    "own_net": -29.0,
+    "rival_net": 667.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -1956,
+        0
+      ],
+      [
+        1927,
+        667
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -66.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        0
+      ],
+      [
+        210,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 30,
+    "own_net": 2.0,
+    "rival_net": 0.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -630,
+        0
+      ],
+      [
+        632,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 60,
+    "own_net": 6.0,
+    "rival_net": 0.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -1286,
+        0
+      ],
+      [
+        1292,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 90,
+    "own_net": 14.0,
+    "rival_net": 0.0,
+    "no_rival_model": 14,
+    "receipts": [
+      [
+        -1956,
+        0
+      ],
+      [
+        1970,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 14.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 2.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -630
+      ],
+      [
+        0,
+        632
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 10,
+    "own_net": 6.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        -636
+      ],
+      [
+        216,
+        636
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 8.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 30,
+    "own_net": 3.0,
+    "rival_net": 3.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -643,
+        -643
+      ],
+      [
+        646,
+        646
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 60,
+    "own_net": -12.0,
+    "rival_net": 26.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -1313,
+        -643
+      ],
+      [
+        1301,
+        669
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -36.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 90,
+    "own_net": -60.0,
+    "rival_net": 115.0,
+    "no_rival_model": 14,
+    "receipts": [
+      [
+        -2110,
+        -643
+      ],
+      [
+        2050,
+        758
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -173.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 14.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -1956
+      ],
+      [
+        0,
+        1970
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 10,
+    "own_net": 35.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        -1983
+      ],
+      [
+        245,
+        1983
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 49.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 30,
+    "own_net": 115.0,
+    "rival_net": -60.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -643,
+        -2110
+      ],
+      [
+        758,
+        2050
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 189.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 60,
+    "own_net": 182.0,
+    "rival_net": -114.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -1376,
+        -2304
+      ],
+      [
+        1558,
+        2190
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 310.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 90,
+    "own_net": 40.0,
+    "rival_net": 40.0,
+    "no_rival_model": 14,
+    "receipts": [
+      [
+        -2336,
+        -2336
+      ],
+      [
+        2376,
+        2376
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 14.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        630
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        630
+      ],
+      [
+        210,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -630,
+        630
+      ],
+      [
+        630,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 60,
+    "own_net": 2.0,
+    "rival_net": 630.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -1260,
+        630
+      ],
+      [
+        1262,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 90,
+    "own_net": 6.0,
+    "rival_net": 630.0,
+    "no_rival_model": 14,
+    "receipts": [
+      [
+        -1916,
+        630
+      ],
+      [
+        1922,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        630
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 630.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -210,
+        0
+      ],
+      [
+        210,
+        630
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 30,
+    "own_net": 1.0,
+    "rival_net": 631.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -630,
+        0
+      ],
+      [
+        631,
+        631
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 60,
+    "own_net": -10.0,
+    "rival_net": 646.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -1286,
+        0
+      ],
+      [
+        1276,
+        646
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -26.0
+  },
+  {
+    "inventory": 10100,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 90,
+    "own_net": -25.0,
+    "rival_net": 669.0,
+    "no_rival_model": 14,
+    "receipts": [
+      [
+        -1956,
+        0
+      ],
+      [
+        1931,
+        669
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -64.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -272,
+        0
+      ],
+      [
+        272,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -860,
+        0
+      ],
+      [
+        860,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 60,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1812,
+        0
+      ],
+      [
+        1812,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 90,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -2820,
+        0
+      ],
+      [
+        2820,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -860
+      ],
+      [
+        0,
+        860
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 10,
+    "own_net": 25.0,
+    "rival_net": -25.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -280,
+        -890
+      ],
+      [
+        305,
+        865
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 50.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -906,
+        -906
+      ],
+      [
+        906,
+        906
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 60,
+    "own_net": -74.0,
+    "rival_net": 74.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1914,
+        -906
+      ],
+      [
+        1840,
+        980
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -148.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 90,
+    "own_net": -128.0,
+    "rival_net": 128.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -2974,
+        -906
+      ],
+      [
+        2846,
+        1034
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -256.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -2820
+      ],
+      [
+        0,
+        2820
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 10,
+    "own_net": 65.0,
+    "rival_net": -65.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -280,
+        -2890
+      ],
+      [
+        345,
+        2825
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 130.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 30,
+    "own_net": 128.0,
+    "rival_net": -128.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -906,
+        -2974
+      ],
+      [
+        1034,
+        2846
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 256.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 60,
+    "own_net": 119.0,
+    "rival_net": -119.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1940,
+        -3038
+      ],
+      [
+        2059,
+        2919
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 238.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 90,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -3056,
+        -3056
+      ],
+      [
+        3056,
+        3056
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 687.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        687
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 10,
+    "own_net": -40.0,
+    "rival_net": 717.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -260,
+        717
+      ],
+      [
+        220,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -70.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 30,
+    "own_net": -93.0,
+    "rival_net": 750.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -780,
+        750
+      ],
+      [
+        687,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -156.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 60,
+    "own_net": -93.0,
+    "rival_net": 750.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1640,
+        750
+      ],
+      [
+        1547,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -156.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 90,
+    "own_net": -93.0,
+    "rival_net": 750.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -2592,
+        750
+      ],
+      [
+        2499,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -156.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 687.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        687
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 10,
+    "own_net": -17.0,
+    "rival_net": 705.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -272,
+        0
+      ],
+      [
+        255,
+        705
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -35.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 30,
+    "own_net": -86.0,
+    "rival_net": 774.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -860,
+        0
+      ],
+      [
+        774,
+        774
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -173.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 60,
+    "own_net": -219.0,
+    "rival_net": 906.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1812,
+        0
+      ],
+      [
+        1593,
+        906
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -438.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 90,
+    "own_net": -293.0,
+    "rival_net": 980.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -2820,
+        0
+      ],
+      [
+        2527,
+        980
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -586.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 10,
+    "own_net": 2.0,
+    "rival_net": 0.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -272,
+        0
+      ],
+      [
+        274,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 30,
+    "own_net": 5.0,
+    "rival_net": 0.0,
+    "no_rival_model": 5,
+    "receipts": [
+      [
+        -860,
+        0
+      ],
+      [
+        865,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 5.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 60,
+    "own_net": 7.0,
+    "rival_net": 0.0,
+    "no_rival_model": 7,
+    "receipts": [
+      [
+        -1812,
+        0
+      ],
+      [
+        1819,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 7.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 90,
+    "own_net": 9.0,
+    "rival_net": 0.0,
+    "no_rival_model": 9,
+    "receipts": [
+      [
+        -2820,
+        0
+      ],
+      [
+        2829,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 9.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 5.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -860
+      ],
+      [
+        0,
+        865
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 10,
+    "own_net": 26.0,
+    "rival_net": -20.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -280,
+        -890
+      ],
+      [
+        306,
+        870
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 51.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 30,
+    "own_net": 7.0,
+    "rival_net": 7.0,
+    "no_rival_model": 5,
+    "receipts": [
+      [
+        -906,
+        -906
+      ],
+      [
+        913,
+        913
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 5.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 60,
+    "own_net": -65.0,
+    "rival_net": 78.0,
+    "no_rival_model": 7,
+    "receipts": [
+      [
+        -1914,
+        -906
+      ],
+      [
+        1849,
+        984
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -138.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 90,
+    "own_net": -118.0,
+    "rival_net": 131.0,
+    "no_rival_model": 9,
+    "receipts": [
+      [
+        -2974,
+        -906
+      ],
+      [
+        2856,
+        1037
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -244.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 9.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -2820
+      ],
+      [
+        0,
+        2829
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 10,
+    "own_net": 66.0,
+    "rival_net": -56.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -280,
+        -2890
+      ],
+      [
+        346,
+        2834
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 131.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 30,
+    "own_net": 131.0,
+    "rival_net": -118.0,
+    "no_rival_model": 5,
+    "receipts": [
+      [
+        -906,
+        -2974
+      ],
+      [
+        1037,
+        2856
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 258.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 60,
+    "own_net": 125.0,
+    "rival_net": -108.0,
+    "no_rival_model": 7,
+    "receipts": [
+      [
+        -1940,
+        -3038
+      ],
+      [
+        2065,
+        2930
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 242.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 90,
+    "own_net": 12.0,
+    "rival_net": 12.0,
+    "no_rival_model": 9,
+    "receipts": [
+      [
+        -3056,
+        -3056
+      ],
+      [
+        3068,
+        3068
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 9.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 687.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        687
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 10,
+    "own_net": -39.0,
+    "rival_net": 717.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -260,
+        717
+      ],
+      [
+        221,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -69.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 30,
+    "own_net": -89.0,
+    "rival_net": 750.0,
+    "no_rival_model": 5,
+    "receipts": [
+      [
+        -780,
+        750
+      ],
+      [
+        691,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -152.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 60,
+    "own_net": -84.0,
+    "rival_net": 750.0,
+    "no_rival_model": 7,
+    "receipts": [
+      [
+        -1640,
+        750
+      ],
+      [
+        1556,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -147.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 90,
+    "own_net": -82.0,
+    "rival_net": 750.0,
+    "no_rival_model": 9,
+    "receipts": [
+      [
+        -2592,
+        750
+      ],
+      [
+        2510,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -145.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 691.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        691
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 10,
+    "own_net": -13.0,
+    "rival_net": 710.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -272,
+        0
+      ],
+      [
+        259,
+        710
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -32.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 30,
+    "own_net": -78.0,
+    "rival_net": 782.0,
+    "no_rival_model": 5,
+    "receipts": [
+      [
+        -860,
+        0
+      ],
+      [
+        782,
+        782
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -169.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 60,
+    "own_net": -208.0,
+    "rival_net": 913.0,
+    "no_rival_model": 7,
+    "receipts": [
+      [
+        -1812,
+        0
+      ],
+      [
+        1604,
+        913
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -430.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 90,
+    "own_net": -280.0,
+    "rival_net": 984.0,
+    "no_rival_model": 9,
+    "receipts": [
+      [
+        -2820,
+        0
+      ],
+      [
+        2540,
+        984
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -573.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 10,
+    "own_net": 6.0,
+    "rival_net": 0.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -272,
+        0
+      ],
+      [
+        278,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 30,
+    "own_net": 14.0,
+    "rival_net": 0.0,
+    "no_rival_model": 14,
+    "receipts": [
+      [
+        -860,
+        0
+      ],
+      [
+        874,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 14.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 60,
+    "own_net": 20.0,
+    "rival_net": 0.0,
+    "no_rival_model": 20,
+    "receipts": [
+      [
+        -1812,
+        0
+      ],
+      [
+        1832,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 20.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 90,
+    "own_net": 26.0,
+    "rival_net": 0.0,
+    "no_rival_model": 26,
+    "receipts": [
+      [
+        -2820,
+        0
+      ],
+      [
+        2846,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 26.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 14.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -860
+      ],
+      [
+        0,
+        874
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 10,
+    "own_net": 28.0,
+    "rival_net": -11.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -280,
+        -890
+      ],
+      [
+        308,
+        879
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 53.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 30,
+    "own_net": 13.0,
+    "rival_net": 13.0,
+    "no_rival_model": 14,
+    "receipts": [
+      [
+        -906,
+        -906
+      ],
+      [
+        919,
+        919
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 14.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 60,
+    "own_net": -52.0,
+    "rival_net": 82.0,
+    "no_rival_model": 20,
+    "receipts": [
+      [
+        -1914,
+        -906
+      ],
+      [
+        1862,
+        988
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -120.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 90,
+    "own_net": -102.0,
+    "rival_net": 134.0,
+    "no_rival_model": 26,
+    "receipts": [
+      [
+        -2974,
+        -906
+      ],
+      [
+        2872,
+        1040
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -222.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 26.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -2820
+      ],
+      [
+        0,
+        2846
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 10,
+    "own_net": 67.0,
+    "rival_net": -40.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -280,
+        -2890
+      ],
+      [
+        347,
+        2850
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 133.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 30,
+    "own_net": 134.0,
+    "rival_net": -102.0,
+    "no_rival_model": 14,
+    "receipts": [
+      [
+        -906,
+        -2974
+      ],
+      [
+        1040,
+        2872
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 262.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 60,
+    "own_net": 131.0,
+    "rival_net": -93.0,
+    "no_rival_model": 20,
+    "receipts": [
+      [
+        -1940,
+        -3038
+      ],
+      [
+        2071,
+        2945
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 250.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 90,
+    "own_net": 24.0,
+    "rival_net": 24.0,
+    "no_rival_model": 26,
+    "receipts": [
+      [
+        -3056,
+        -3056
+      ],
+      [
+        3080,
+        3080
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 26.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 687.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        687
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 10,
+    "own_net": -37.0,
+    "rival_net": 717.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -260,
+        717
+      ],
+      [
+        223,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -67.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 30,
+    "own_net": -80.0,
+    "rival_net": 750.0,
+    "no_rival_model": 14,
+    "receipts": [
+      [
+        -780,
+        750
+      ],
+      [
+        700,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -143.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 60,
+    "own_net": -66.0,
+    "rival_net": 750.0,
+    "no_rival_model": 20,
+    "receipts": [
+      [
+        -1640,
+        750
+      ],
+      [
+        1574,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -129.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 90,
+    "own_net": -60.0,
+    "rival_net": 750.0,
+    "no_rival_model": 26,
+    "receipts": [
+      [
+        -2592,
+        750
+      ],
+      [
+        2532,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -123.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 700.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        700
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 10,
+    "own_net": -7.0,
+    "rival_net": 718.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -272,
+        0
+      ],
+      [
+        265,
+        718
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -25.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 30,
+    "own_net": -69.0,
+    "rival_net": 791.0,
+    "no_rival_model": 14,
+    "receipts": [
+      [
+        -860,
+        0
+      ],
+      [
+        791,
+        791
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -160.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 60,
+    "own_net": -193.0,
+    "rival_net": 919.0,
+    "no_rival_model": 20,
+    "receipts": [
+      [
+        -1812,
+        0
+      ],
+      [
+        1619,
+        919
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -412.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 90,
+    "own_net": -258.0,
+    "rival_net": 988.0,
+    "no_rival_model": 26,
+    "receipts": [
+      [
+        -2820,
+        0
+      ],
+      [
+        2562,
+        988
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -546.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 10,
+    "own_net": 12.0,
+    "rival_net": 0.0,
+    "no_rival_model": 12,
+    "receipts": [
+      [
+        -272,
+        0
+      ],
+      [
+        284,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 12.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 30,
+    "own_net": 26.0,
+    "rival_net": 0.0,
+    "no_rival_model": 26,
+    "receipts": [
+      [
+        -860,
+        0
+      ],
+      [
+        886,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 26.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 60,
+    "own_net": 38.0,
+    "rival_net": 0.0,
+    "no_rival_model": 38,
+    "receipts": [
+      [
+        -1812,
+        0
+      ],
+      [
+        1850,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 38.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 90,
+    "own_net": 50.0,
+    "rival_net": 0.0,
+    "no_rival_model": 50,
+    "receipts": [
+      [
+        -2820,
+        0
+      ],
+      [
+        2870,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 50.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 26.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -860
+      ],
+      [
+        0,
+        886
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 10,
+    "own_net": 30.0,
+    "rival_net": 0.0,
+    "no_rival_model": 12,
+    "receipts": [
+      [
+        -280,
+        -890
+      ],
+      [
+        310,
+        890
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 56.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 30,
+    "own_net": 19.0,
+    "rival_net": 19.0,
+    "no_rival_model": 26,
+    "receipts": [
+      [
+        -906,
+        -906
+      ],
+      [
+        925,
+        925
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 26.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 60,
+    "own_net": -36.0,
+    "rival_net": 86.0,
+    "no_rival_model": 38,
+    "receipts": [
+      [
+        -1914,
+        -906
+      ],
+      [
+        1878,
+        992
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -96.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 90,
+    "own_net": -81.0,
+    "rival_net": 137.0,
+    "no_rival_model": 50,
+    "receipts": [
+      [
+        -2974,
+        -906
+      ],
+      [
+        2893,
+        1043
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -192.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 50.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -2820
+      ],
+      [
+        0,
+        2870
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 10,
+    "own_net": 68.0,
+    "rival_net": -18.0,
+    "no_rival_model": 12,
+    "receipts": [
+      [
+        -280,
+        -2890
+      ],
+      [
+        348,
+        2872
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 136.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 30,
+    "own_net": 137.0,
+    "rival_net": -81.0,
+    "no_rival_model": 26,
+    "receipts": [
+      [
+        -906,
+        -2974
+      ],
+      [
+        1043,
+        2893
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 268.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 60,
+    "own_net": 137.0,
+    "rival_net": -75.0,
+    "no_rival_model": 38,
+    "receipts": [
+      [
+        -1940,
+        -3038
+      ],
+      [
+        2077,
+        2963
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 262.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 90,
+    "own_net": 36.0,
+    "rival_net": 36.0,
+    "no_rival_model": 50,
+    "receipts": [
+      [
+        -3056,
+        -3056
+      ],
+      [
+        3092,
+        3092
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 50.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 687.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        687
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 10,
+    "own_net": -34.0,
+    "rival_net": 717.0,
+    "no_rival_model": 12,
+    "receipts": [
+      [
+        -260,
+        717
+      ],
+      [
+        226,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -64.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 30,
+    "own_net": -65.0,
+    "rival_net": 750.0,
+    "no_rival_model": 26,
+    "receipts": [
+      [
+        -780,
+        750
+      ],
+      [
+        715,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -128.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 60,
+    "own_net": -39.0,
+    "rival_net": 750.0,
+    "no_rival_model": 38,
+    "receipts": [
+      [
+        -1640,
+        750
+      ],
+      [
+        1601,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -102.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 90,
+    "own_net": -27.0,
+    "rival_net": 750.0,
+    "no_rival_model": 50,
+    "receipts": [
+      [
+        -2592,
+        750
+      ],
+      [
+        2565,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -90.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 715.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        715
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 10,
+    "own_net": -1.0,
+    "rival_net": 729.0,
+    "no_rival_model": 12,
+    "receipts": [
+      [
+        -272,
+        0
+      ],
+      [
+        271,
+        729
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -15.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 30,
+    "own_net": -59.0,
+    "rival_net": 801.0,
+    "no_rival_model": 26,
+    "receipts": [
+      [
+        -860,
+        0
+      ],
+      [
+        801,
+        801
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -145.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 60,
+    "own_net": -172.0,
+    "rival_net": 925.0,
+    "no_rival_model": 38,
+    "receipts": [
+      [
+        -1812,
+        0
+      ],
+      [
+        1640,
+        925
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -382.0
+  },
+  {
+    "inventory": 10000,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 90,
+    "own_net": -227.0,
+    "rival_net": 992.0,
+    "no_rival_model": 50,
+    "receipts": [
+      [
+        -2820,
+        0
+      ],
+      [
+        2593,
+        992
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -504.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -424,
+        0
+      ],
+      [
+        424,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1284,
+        0
+      ],
+      [
+        1284,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 60,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -2592,
+        0
+      ],
+      [
+        2592,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 90,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -3922,
+        0
+      ],
+      [
+        3922,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -1284
+      ],
+      [
+        0,
+        1284
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 10,
+    "own_net": 3.0,
+    "rival_net": -3.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -427,
+        -1287
+      ],
+      [
+        430,
+        1284
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1296,
+        -1296
+      ],
+      [
+        1296,
+        1296
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 60,
+    "own_net": -23.0,
+    "rival_net": 23.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -2626,
+        -1296
+      ],
+      [
+        2603,
+        1319
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -46.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 90,
+    "own_net": -44.0,
+    "rival_net": 44.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -3976,
+        -1296
+      ],
+      [
+        3932,
+        1340
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -88.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -3922
+      ],
+      [
+        0,
+        3922
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 10,
+    "own_net": 23.0,
+    "rival_net": -23.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -427,
+        -3945
+      ],
+      [
+        450,
+        3922
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 46.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 30,
+    "own_net": 44.0,
+    "rival_net": -44.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1296,
+        -3976
+      ],
+      [
+        1340,
+        3932
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 88.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 60,
+    "own_net": 48.0,
+    "rival_net": -48.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -2636,
+        -4016
+      ],
+      [
+        2684,
+        3968
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 96.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 90,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -4025,
+        -4025
+      ],
+      [
+        4025,
+        4025
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1258.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        1258
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 10,
+    "own_net": -2.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -420,
+        1260
+      ],
+      [
+        418,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -4.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 30,
+    "own_net": -2.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1260,
+        1260
+      ],
+      [
+        1258,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -4.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 60,
+    "own_net": -2.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -2544,
+        1260
+      ],
+      [
+        2542,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -4.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 90,
+    "own_net": -2.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -3852,
+        1260
+      ],
+      [
+        3850,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -4.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1258.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1258
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 10,
+    "own_net": -2.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -424,
+        0
+      ],
+      [
+        422,
+        1260
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -4.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 30,
+    "own_net": -13.0,
+    "rival_net": 1271.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1284,
+        0
+      ],
+      [
+        1271,
+        1271
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -26.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 60,
+    "own_net": -38.0,
+    "rival_net": 1296.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -2592,
+        0
+      ],
+      [
+        2554,
+        1296
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -76.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 90,
+    "own_net": -61.0,
+    "rival_net": 1319.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -3922,
+        0
+      ],
+      [
+        3861,
+        1319
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -122.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 10,
+    "own_net": 1.0,
+    "rival_net": 0.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -424,
+        0
+      ],
+      [
+        425,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 1.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 30,
+    "own_net": 1.0,
+    "rival_net": 0.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -1284,
+        0
+      ],
+      [
+        1285,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 1.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 60,
+    "own_net": 2.0,
+    "rival_net": 0.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -2592,
+        0
+      ],
+      [
+        2594,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 90,
+    "own_net": 3.0,
+    "rival_net": 0.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -3922,
+        0
+      ],
+      [
+        3925,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 3.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -1284
+      ],
+      [
+        0,
+        1285
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 10,
+    "own_net": 3.0,
+    "rival_net": -2.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -427,
+        -1287
+      ],
+      [
+        430,
+        1285
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 30,
+    "own_net": 2.0,
+    "rival_net": 2.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -1296,
+        -1296
+      ],
+      [
+        1298,
+        1298
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 1.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 60,
+    "own_net": -20.0,
+    "rival_net": 25.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -2626,
+        -1296
+      ],
+      [
+        2606,
+        1321
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -44.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 90,
+    "own_net": -40.0,
+    "rival_net": 46.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -3976,
+        -1296
+      ],
+      [
+        3936,
+        1342
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -85.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 3.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -3922
+      ],
+      [
+        0,
+        3925
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 10,
+    "own_net": 23.0,
+    "rival_net": -20.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -427,
+        -3945
+      ],
+      [
+        450,
+        3925
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 46.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 30,
+    "own_net": 46.0,
+    "rival_net": -40.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -1296,
+        -3976
+      ],
+      [
+        1342,
+        3936
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 89.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 60,
+    "own_net": 51.0,
+    "rival_net": -44.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -2636,
+        -4016
+      ],
+      [
+        2687,
+        3972
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 98.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 90,
+    "own_net": 5.0,
+    "rival_net": 5.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -4025,
+        -4025
+      ],
+      [
+        4030,
+        4030
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 3.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1258.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        1258
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 10,
+    "own_net": -1.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -420,
+        1260
+      ],
+      [
+        419,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -3.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 30,
+    "own_net": -1.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -1260,
+        1260
+      ],
+      [
+        1259,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -3.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 60,
+    "own_net": 0.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -2544,
+        1260
+      ],
+      [
+        2544,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -2.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 90,
+    "own_net": 1.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -3852,
+        1260
+      ],
+      [
+        3853,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -1.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1259.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1259
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 10,
+    "own_net": -1.0,
+    "rival_net": 1262.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -424,
+        0
+      ],
+      [
+        423,
+        1262
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -4.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 30,
+    "own_net": -11.0,
+    "rival_net": 1273.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -1284,
+        0
+      ],
+      [
+        1273,
+        1273
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -25.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 60,
+    "own_net": -35.0,
+    "rival_net": 1298.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -2592,
+        0
+      ],
+      [
+        2557,
+        1298
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -74.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 90,
+    "own_net": -57.0,
+    "rival_net": 1321.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -3922,
+        0
+      ],
+      [
+        3865,
+        1321
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -119.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 10,
+    "own_net": 3.0,
+    "rival_net": 0.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -424,
+        0
+      ],
+      [
+        427,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 3.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 30,
+    "own_net": 3.0,
+    "rival_net": 0.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -1284,
+        0
+      ],
+      [
+        1287,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 3.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 60,
+    "own_net": 6.0,
+    "rival_net": 0.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -2592,
+        0
+      ],
+      [
+        2598,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 90,
+    "own_net": 9.0,
+    "rival_net": 0.0,
+    "no_rival_model": 9,
+    "receipts": [
+      [
+        -3922,
+        0
+      ],
+      [
+        3931,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 9.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 3.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -1284
+      ],
+      [
+        0,
+        1287
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 10,
+    "own_net": 4.0,
+    "rival_net": 1.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -427,
+        -1287
+      ],
+      [
+        431,
+        1288
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 30,
+    "own_net": 4.0,
+    "rival_net": 4.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -1296,
+        -1296
+      ],
+      [
+        1300,
+        1300
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 3.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 60,
+    "own_net": -16.0,
+    "rival_net": 27.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -2626,
+        -1296
+      ],
+      [
+        2610,
+        1323
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -40.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 90,
+    "own_net": -34.0,
+    "rival_net": 48.0,
+    "no_rival_model": 9,
+    "receipts": [
+      [
+        -3976,
+        -1296
+      ],
+      [
+        3942,
+        1344
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -79.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 9.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -3922
+      ],
+      [
+        0,
+        3931
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 10,
+    "own_net": 23.0,
+    "rival_net": -14.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -427,
+        -3945
+      ],
+      [
+        450,
+        3931
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 46.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 30,
+    "own_net": 48.0,
+    "rival_net": -34.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -1296,
+        -3976
+      ],
+      [
+        1344,
+        3942
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 91.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 60,
+    "own_net": 54.0,
+    "rival_net": -39.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -2636,
+        -4016
+      ],
+      [
+        2690,
+        3977
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 102.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 90,
+    "own_net": 10.0,
+    "rival_net": 10.0,
+    "no_rival_model": 9,
+    "receipts": [
+      [
+        -4025,
+        -4025
+      ],
+      [
+        4035,
+        4035
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 9.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1258.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        1258
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -420,
+        1260
+      ],
+      [
+        420,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -2.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -1260,
+        1260
+      ],
+      [
+        1260,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -2.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 60,
+    "own_net": 3.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -2544,
+        1260
+      ],
+      [
+        2547,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 1.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 90,
+    "own_net": 6.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 9,
+    "receipts": [
+      [
+        -3852,
+        1260
+      ],
+      [
+        3858,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 4.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1260
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 1264.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -424,
+        0
+      ],
+      [
+        424,
+        1264
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -4.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 30,
+    "own_net": -10.0,
+    "rival_net": 1274.0,
+    "no_rival_model": 3,
+    "receipts": [
+      [
+        -1284,
+        0
+      ],
+      [
+        1274,
+        1274
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -24.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 60,
+    "own_net": -32.0,
+    "rival_net": 1300.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -2592,
+        0
+      ],
+      [
+        2560,
+        1300
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -72.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 90,
+    "own_net": -52.0,
+    "rival_net": 1323.0,
+    "no_rival_model": 9,
+    "receipts": [
+      [
+        -3922,
+        0
+      ],
+      [
+        3870,
+        1323
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -115.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 10,
+    "own_net": 6.0,
+    "rival_net": 0.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -424,
+        0
+      ],
+      [
+        430,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 30,
+    "own_net": 6.0,
+    "rival_net": 0.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -1284,
+        0
+      ],
+      [
+        1290,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 60,
+    "own_net": 12.0,
+    "rival_net": 0.0,
+    "no_rival_model": 12,
+    "receipts": [
+      [
+        -2592,
+        0
+      ],
+      [
+        2604,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 12.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 90,
+    "own_net": 18.0,
+    "rival_net": 0.0,
+    "no_rival_model": 18,
+    "receipts": [
+      [
+        -3922,
+        0
+      ],
+      [
+        3940,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 18.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 6.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -1284
+      ],
+      [
+        0,
+        1290
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 10,
+    "own_net": 5.0,
+    "rival_net": 5.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -427,
+        -1287
+      ],
+      [
+        432,
+        1292
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 30,
+    "own_net": 6.0,
+    "rival_net": 6.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -1296,
+        -1296
+      ],
+      [
+        1302,
+        1302
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 60,
+    "own_net": -11.0,
+    "rival_net": 29.0,
+    "no_rival_model": 12,
+    "receipts": [
+      [
+        -2626,
+        -1296
+      ],
+      [
+        2615,
+        1325
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -34.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 90,
+    "own_net": -26.0,
+    "rival_net": 50.0,
+    "no_rival_model": 18,
+    "receipts": [
+      [
+        -3976,
+        -1296
+      ],
+      [
+        3950,
+        1346
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -70.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 18.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -3922
+      ],
+      [
+        0,
+        3940
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 10,
+    "own_net": 23.0,
+    "rival_net": -5.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -427,
+        -3945
+      ],
+      [
+        450,
+        3940
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 46.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 30,
+    "own_net": 50.0,
+    "rival_net": -26.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -1296,
+        -3976
+      ],
+      [
+        1346,
+        3950
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 94.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 60,
+    "own_net": 57.0,
+    "rival_net": -33.0,
+    "no_rival_model": 12,
+    "receipts": [
+      [
+        -2636,
+        -4016
+      ],
+      [
+        2693,
+        3983
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 108.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 90,
+    "own_net": 15.0,
+    "rival_net": 15.0,
+    "no_rival_model": 18,
+    "receipts": [
+      [
+        -4025,
+        -4025
+      ],
+      [
+        4040,
+        4040
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 18.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1258.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        1258
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -420,
+        1260
+      ],
+      [
+        420,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -2.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -1260,
+        1260
+      ],
+      [
+        1260,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -2.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 60,
+    "own_net": 6.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 12,
+    "receipts": [
+      [
+        -2544,
+        1260
+      ],
+      [
+        2550,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 4.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 90,
+    "own_net": 12.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 18,
+    "receipts": [
+      [
+        -3852,
+        1260
+      ],
+      [
+        3864,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 10.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1260.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1260
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 10,
+    "own_net": 1.0,
+    "rival_net": 1265.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -424,
+        0
+      ],
+      [
+        425,
+        1265
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -4.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 30,
+    "own_net": -9.0,
+    "rival_net": 1275.0,
+    "no_rival_model": 6,
+    "receipts": [
+      [
+        -1284,
+        0
+      ],
+      [
+        1275,
+        1275
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -24.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 60,
+    "own_net": -30.0,
+    "rival_net": 1302.0,
+    "no_rival_model": 12,
+    "receipts": [
+      [
+        -2592,
+        0
+      ],
+      [
+        2562,
+        1302
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -72.0
+  },
+  {
+    "inventory": 9700,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 90,
+    "own_net": -47.0,
+    "rival_net": 1325.0,
+    "no_rival_model": 18,
+    "receipts": [
+      [
+        -3922,
+        0
+      ],
+      [
+        3875,
+        1325
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -112.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -518,
+        0
+      ],
+      [
+        518,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1558,
+        0
+      ],
+      [
+        1558,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 60,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -3122,
+        0
+      ],
+      [
+        3122,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "passive",
+    "quantity": 90,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -4712,
+        0
+      ],
+      [
+        4712,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -1558
+      ],
+      [
+        0,
+        1558
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 10,
+    "own_net": 1.0,
+    "rival_net": -1.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -519,
+        -1559
+      ],
+      [
+        520,
+        1558
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1561,
+        -1561
+      ],
+      [
+        1561,
+        1561
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 60,
+    "own_net": -16.0,
+    "rival_net": 16.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -3151,
+        -1561
+      ],
+      [
+        3135,
+        1577
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -32.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "buy30_sell30",
+    "quantity": 90,
+    "own_net": -33.0,
+    "rival_net": 33.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -4749,
+        -1561
+      ],
+      [
+        4716,
+        1594
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -66.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -4712
+      ],
+      [
+        0,
+        4712
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 10,
+    "own_net": 11.0,
+    "rival_net": -11.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -519,
+        -4723
+      ],
+      [
+        530,
+        4712
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 22.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 30,
+    "own_net": 33.0,
+    "rival_net": -33.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1561,
+        -4749
+      ],
+      [
+        1594,
+        4716
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 66.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 60,
+    "own_net": 31.0,
+    "rival_net": -31.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -3155,
+        -4775
+      ],
+      [
+        3186,
+        4744
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 62.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "buy90_sell90",
+    "quantity": 90,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -4780,
+        -4780
+      ],
+      [
+        4780,
+        4780
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        1530
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -510,
+        1530
+      ],
+      [
+        510,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1530,
+        1530
+      ],
+      [
+        1530,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 60,
+    "own_net": 0.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -3088,
+        1530
+      ],
+      [
+        3088,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "sell30_now",
+    "quantity": 90,
+    "own_net": 0.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -4652,
+        1530
+      ],
+      [
+        4652,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1530
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 10,
+    "own_net": -4.0,
+    "rival_net": 1534.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -518,
+        0
+      ],
+      [
+        514,
+        1534
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -8.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 30,
+    "own_net": -14.0,
+    "rival_net": 1544.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -1558,
+        0
+      ],
+      [
+        1544,
+        1544
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -28.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 60,
+    "own_net": -31.0,
+    "rival_net": 1561.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -3122,
+        0
+      ],
+      [
+        3091,
+        1561
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -62.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 0,
+    "scenario": "sell30_next",
+    "quantity": 90,
+    "own_net": -47.0,
+    "rival_net": 1577.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        -4712,
+        0
+      ],
+      [
+        4665,
+        1577
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -94.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 10,
+    "own_net": 1.0,
+    "rival_net": 0.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -518,
+        0
+      ],
+      [
+        519,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 1.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 30,
+    "own_net": 1.0,
+    "rival_net": 0.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -1558,
+        0
+      ],
+      [
+        1559,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 1.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 60,
+    "own_net": 2.0,
+    "rival_net": 0.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -3122,
+        0
+      ],
+      [
+        3124,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "passive",
+    "quantity": 90,
+    "own_net": 2.0,
+    "rival_net": 0.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -4712,
+        0
+      ],
+      [
+        4714,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -1558
+      ],
+      [
+        0,
+        1559
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 10,
+    "own_net": 1.0,
+    "rival_net": 0.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -519,
+        -1559
+      ],
+      [
+        520,
+        1559
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 30,
+    "own_net": 2.0,
+    "rival_net": 2.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -1561,
+        -1561
+      ],
+      [
+        1563,
+        1563
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 1.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 60,
+    "own_net": -14.0,
+    "rival_net": 17.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -3151,
+        -1561
+      ],
+      [
+        3137,
+        1578
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -30.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "buy30_sell30",
+    "quantity": 90,
+    "own_net": -30.0,
+    "rival_net": 34.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -4749,
+        -1561
+      ],
+      [
+        4719,
+        1595
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -63.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 2.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -4712
+      ],
+      [
+        0,
+        4714
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 10,
+    "own_net": 11.0,
+    "rival_net": -9.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -519,
+        -4723
+      ],
+      [
+        530,
+        4714
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 22.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 30,
+    "own_net": 34.0,
+    "rival_net": -30.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -1561,
+        -4749
+      ],
+      [
+        1595,
+        4719
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 66.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 60,
+    "own_net": 33.0,
+    "rival_net": -28.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -3155,
+        -4775
+      ],
+      [
+        3188,
+        4747
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 63.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "buy90_sell90",
+    "quantity": 90,
+    "own_net": 4.0,
+    "rival_net": 4.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -4780,
+        -4780
+      ],
+      [
+        4784,
+        4784
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        1530
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -510,
+        1530
+      ],
+      [
+        510,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 30,
+    "own_net": 0.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -1530,
+        1530
+      ],
+      [
+        1530,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 60,
+    "own_net": 1.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -3088,
+        1530
+      ],
+      [
+        3089,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 1.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "sell30_now",
+    "quantity": 90,
+    "own_net": 2.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -4652,
+        1530
+      ],
+      [
+        4654,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1530
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 10,
+    "own_net": -3.0,
+    "rival_net": 1535.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -518,
+        0
+      ],
+      [
+        515,
+        1535
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -8.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 30,
+    "own_net": -13.0,
+    "rival_net": 1545.0,
+    "no_rival_model": 1,
+    "receipts": [
+      [
+        -1558,
+        0
+      ],
+      [
+        1545,
+        1545
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -28.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 60,
+    "own_net": -29.0,
+    "rival_net": 1563.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -3122,
+        0
+      ],
+      [
+        3093,
+        1563
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -62.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 1,
+    "scenario": "sell30_next",
+    "quantity": 90,
+    "own_net": -45.0,
+    "rival_net": 1578.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -4712,
+        0
+      ],
+      [
+        4667,
+        1578
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -93.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 10,
+    "own_net": 2.0,
+    "rival_net": 0.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -518,
+        0
+      ],
+      [
+        520,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 30,
+    "own_net": 2.0,
+    "rival_net": 0.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -1558,
+        0
+      ],
+      [
+        1560,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 60,
+    "own_net": 5.0,
+    "rival_net": 0.0,
+    "no_rival_model": 5,
+    "receipts": [
+      [
+        -3122,
+        0
+      ],
+      [
+        3127,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 5.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "passive",
+    "quantity": 90,
+    "own_net": 5.0,
+    "rival_net": 0.0,
+    "no_rival_model": 5,
+    "receipts": [
+      [
+        -4712,
+        0
+      ],
+      [
+        4717,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 5.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 2.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -1558
+      ],
+      [
+        0,
+        1560
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 10,
+    "own_net": 1.0,
+    "rival_net": 1.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -519,
+        -1559
+      ],
+      [
+        520,
+        1560
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 30,
+    "own_net": 3.0,
+    "rival_net": 3.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -1561,
+        -1561
+      ],
+      [
+        1564,
+        1564
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 60,
+    "own_net": -12.0,
+    "rival_net": 18.0,
+    "no_rival_model": 5,
+    "receipts": [
+      [
+        -3151,
+        -1561
+      ],
+      [
+        3139,
+        1579
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -28.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "buy30_sell30",
+    "quantity": 90,
+    "own_net": -26.0,
+    "rival_net": 35.0,
+    "no_rival_model": 5,
+    "receipts": [
+      [
+        -4749,
+        -1561
+      ],
+      [
+        4723,
+        1596
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -59.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 5.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -4712
+      ],
+      [
+        0,
+        4717
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 10,
+    "own_net": 11.0,
+    "rival_net": -6.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -519,
+        -4723
+      ],
+      [
+        530,
+        4717
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 22.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 30,
+    "own_net": 35.0,
+    "rival_net": -26.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -1561,
+        -4749
+      ],
+      [
+        1596,
+        4723
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 66.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 60,
+    "own_net": 35.0,
+    "rival_net": -25.0,
+    "no_rival_model": 5,
+    "receipts": [
+      [
+        -3155,
+        -4775
+      ],
+      [
+        3190,
+        4750
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 65.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "buy90_sell90",
+    "quantity": 90,
+    "own_net": 7.0,
+    "rival_net": 7.0,
+    "no_rival_model": 5,
+    "receipts": [
+      [
+        -4780,
+        -4780
+      ],
+      [
+        4787,
+        4787
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 5.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        1530
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -510,
+        1530
+      ],
+      [
+        510,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 30,
+    "own_net": 1.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -1530,
+        1530
+      ],
+      [
+        1531,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 1.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 60,
+    "own_net": 3.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 5,
+    "receipts": [
+      [
+        -3088,
+        1530
+      ],
+      [
+        3091,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 3.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "sell30_now",
+    "quantity": 90,
+    "own_net": 6.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 5,
+    "receipts": [
+      [
+        -4652,
+        1530
+      ],
+      [
+        4658,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1531.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1531
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 10,
+    "own_net": -2.0,
+    "rival_net": 1536.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -518,
+        0
+      ],
+      [
+        516,
+        1536
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -7.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 30,
+    "own_net": -12.0,
+    "rival_net": 1546.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -1558,
+        0
+      ],
+      [
+        1546,
+        1546
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -27.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 60,
+    "own_net": -27.0,
+    "rival_net": 1564.0,
+    "no_rival_model": 5,
+    "receipts": [
+      [
+        -3122,
+        0
+      ],
+      [
+        3095,
+        1564
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -60.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 3,
+    "scenario": "sell30_next",
+    "quantity": 90,
+    "own_net": -42.0,
+    "rival_net": 1579.0,
+    "no_rival_model": 5,
+    "receipts": [
+      [
+        -4712,
+        0
+      ],
+      [
+        4670,
+        1579
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -90.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 0.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 10,
+    "own_net": 2.0,
+    "rival_net": 0.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -518,
+        0
+      ],
+      [
+        520,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 30,
+    "own_net": 2.0,
+    "rival_net": 0.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -1558,
+        0
+      ],
+      [
+        1560,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 60,
+    "own_net": 8.0,
+    "rival_net": 0.0,
+    "no_rival_model": 8,
+    "receipts": [
+      [
+        -3122,
+        0
+      ],
+      [
+        3130,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 8.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "passive",
+    "quantity": 90,
+    "own_net": 8.0,
+    "rival_net": 0.0,
+    "no_rival_model": 8,
+    "receipts": [
+      [
+        -4712,
+        0
+      ],
+      [
+        4720,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 8.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 2.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -1558
+      ],
+      [
+        0,
+        1560
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 10,
+    "own_net": 1.0,
+    "rival_net": 1.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -519,
+        -1559
+      ],
+      [
+        520,
+        1560
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 30,
+    "own_net": 4.0,
+    "rival_net": 4.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -1561,
+        -1561
+      ],
+      [
+        1565,
+        1565
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 2.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 60,
+    "own_net": -11.0,
+    "rival_net": 19.0,
+    "no_rival_model": 8,
+    "receipts": [
+      [
+        -3151,
+        -1561
+      ],
+      [
+        3140,
+        1580
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -28.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "buy30_sell30",
+    "quantity": 90,
+    "own_net": -22.0,
+    "rival_net": 36.0,
+    "no_rival_model": 8,
+    "receipts": [
+      [
+        -4749,
+        -1561
+      ],
+      [
+        4727,
+        1597
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -56.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 8.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        -4712
+      ],
+      [
+        0,
+        4720
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 10,
+    "own_net": 11.0,
+    "rival_net": -3.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -519,
+        -4723
+      ],
+      [
+        530,
+        4720
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 22.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 30,
+    "own_net": 36.0,
+    "rival_net": -22.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -1561,
+        -4749
+      ],
+      [
+        1597,
+        4727
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 66.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 60,
+    "own_net": 37.0,
+    "rival_net": -23.0,
+    "no_rival_model": 8,
+    "receipts": [
+      [
+        -3155,
+        -4775
+      ],
+      [
+        3192,
+        4752
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 68.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "buy90_sell90",
+    "quantity": 90,
+    "own_net": 10.0,
+    "rival_net": 10.0,
+    "no_rival_model": 8,
+    "receipts": [
+      [
+        -4780,
+        -4780
+      ],
+      [
+        4790,
+        4790
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 8.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        1530
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 10,
+    "own_net": 0.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -510,
+        1530
+      ],
+      [
+        510,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 30,
+    "own_net": 4.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -1530,
+        1530
+      ],
+      [
+        1534,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 4.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 60,
+    "own_net": 6.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 8,
+    "receipts": [
+      [
+        -3088,
+        1530
+      ],
+      [
+        3094,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 6.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "sell30_now",
+    "quantity": 90,
+    "own_net": 12.0,
+    "rival_net": 1530.0,
+    "no_rival_model": 8,
+    "receipts": [
+      [
+        -4652,
+        1530
+      ],
+      [
+        4664,
+        0
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 12.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 0,
+    "own_net": 0.0,
+    "rival_net": 1534.0,
+    "no_rival_model": 0,
+    "receipts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1534
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": 0.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 10,
+    "own_net": -1.0,
+    "rival_net": 1537.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -518,
+        0
+      ],
+      [
+        517,
+        1537
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -4.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 30,
+    "own_net": -11.0,
+    "rival_net": 1547.0,
+    "no_rival_model": 2,
+    "receipts": [
+      [
+        -1558,
+        0
+      ],
+      [
+        1547,
+        1547
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -24.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 60,
+    "own_net": -23.0,
+    "rival_net": 1565.0,
+    "no_rival_model": 8,
+    "receipts": [
+      [
+        -3122,
+        0
+      ],
+      [
+        3099,
+        1565
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -54.0
+  },
+  {
+    "inventory": 9300,
+    "drain": 6,
+    "scenario": "sell30_next",
+    "quantity": 90,
+    "own_net": -38.0,
+    "rival_net": 1580.0,
+    "no_rival_model": 8,
+    "receipts": [
+      [
+        -4712,
+        0
+      ],
+      [
+        4674,
+        1580
+      ]
+    ],
+    "ending_stocks": [
+      0,
+      0
+    ],
+    "margin_delta_vs_no_trade": -84.0
+  }
+]

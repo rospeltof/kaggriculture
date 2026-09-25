@@ -4,6 +4,18 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, loop14] Conservar más FEED no mejora por sí solo.**
+  1.248episodios/noop256, todas activas128/128. Double−26,5625pp, ovino−50,78125
+  yall−64,84375con ICdos vías negativos. Half−12,5pero intervalo cruza0: no
+  llamarlo refutado. Ocho reproducciones verifican caja/rewards/tiendas. En
+  double/ars40/1031002, MILK151→171pero ingresos8.038→7.785. En half/1031006
+  sube nuestra caja1.989, pero rival3.045: victoria pasa a derrota.
+
+- **[2026-09-25, mercado sintético] Consumo del pueblo no garantiza reventa
+  rentable contra rival.** 400escenarios/800piernas exactas;78pérdidas con
+  modelo sin rival positivo y2beneficios propios con margen relativo negativo.
+  No son frecuencias poblacionales. Ver `REVENTA_TOWN_2026-09-25.md`.
+
 - **[2026-09-25, confirm13] Mejorar pérdidas/caja no garantiza cambiar W/L/T.**
   1.600episodios, noop416/416: inputs1/2delta0. Cambian107/86acciones y el
   margen sube103/82veces, baja4cada una. Mecanismo activo pero gate incumplido;

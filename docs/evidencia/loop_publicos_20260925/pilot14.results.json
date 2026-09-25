@@ -1,0 +1,201 @@
+{
+  "results": {
+    "feed_half": {
+      "reference": "base",
+      "candidate": "feed_half",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "tds"
+      ],
+      "seeds": [
+        1031000,
+        1031001,
+        1031002,
+        1031003,
+        1031004,
+        1031005,
+        1031006,
+        1031007,
+        1031008,
+        1031009,
+        1031010,
+        1031011,
+        1031012,
+        1031013,
+        1031014,
+        1031015
+      ],
+      "base_wr": 91.40625,
+      "candidate_wr": 78.90625,
+      "delta_points": -12.5,
+      "ci95_seed": [
+        -24.415165186206735,
+        -0.5848348137932646
+      ],
+      "ci95_2way": [
+        -33.6933573378978,
+        8.693357337897801
+      ],
+      "opponent_breakdown": {
+        "ars40": -12.5,
+        "arshs3": -28.125,
+        "hybu": -9.375,
+        "tds": 0.0
+      },
+      "better_cells": 1,
+      "worse_cells": 10,
+      "equal_cells": 53,
+      "status": "INCONCLUSIVE_NOT_SELECTED"
+    },
+    "feed_double": {
+      "reference": "base",
+      "candidate": "feed_double",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "tds"
+      ],
+      "seeds": [
+        1031000,
+        1031001,
+        1031002,
+        1031003,
+        1031004,
+        1031005,
+        1031006,
+        1031007,
+        1031008,
+        1031009,
+        1031010,
+        1031011,
+        1031012,
+        1031013,
+        1031014,
+        1031015
+      ],
+      "base_wr": 91.40625,
+      "candidate_wr": 64.84375,
+      "delta_points": -26.5625,
+      "ci95_seed": [
+        -43.03587122689025,
+        -10.08912877310975
+      ],
+      "ci95_2way": [
+        -51.897612254793394,
+        -1.227387745206606
+      ],
+      "opponent_breakdown": {
+        "ars40": -31.25,
+        "arshs3": -40.625,
+        "hybu": -15.625,
+        "tds": -18.75
+      },
+      "better_cells": 0,
+      "worse_cells": 18,
+      "equal_cells": 46,
+      "status": "REJECTED"
+    },
+    "feed_keep_sheep": {
+      "reference": "base",
+      "candidate": "feed_keep_sheep",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "tds"
+      ],
+      "seeds": [
+        1031000,
+        1031001,
+        1031002,
+        1031003,
+        1031004,
+        1031005,
+        1031006,
+        1031007,
+        1031008,
+        1031009,
+        1031010,
+        1031011,
+        1031012,
+        1031013,
+        1031014,
+        1031015
+      ],
+      "base_wr": 91.40625,
+      "candidate_wr": 40.625,
+      "delta_points": -50.78125,
+      "ci95_seed": [
+        -75.1599164963553,
+        -26.402583503644706
+      ],
+      "ci95_2way": [
+        -81.90281416821598,
+        -19.659685831784014
+      ],
+      "opponent_breakdown": {
+        "ars40": -56.25,
+        "arshs3": -50.0,
+        "hybu": -46.875,
+        "tds": -50.0
+      },
+      "better_cells": 0,
+      "worse_cells": 33,
+      "equal_cells": 31,
+      "status": "REJECTED"
+    },
+    "feed_all": {
+      "reference": "base",
+      "candidate": "feed_all",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "tds"
+      ],
+      "seeds": [
+        1031000,
+        1031001,
+        1031002,
+        1031003,
+        1031004,
+        1031005,
+        1031006,
+        1031007,
+        1031008,
+        1031009,
+        1031010,
+        1031011,
+        1031012,
+        1031013,
+        1031014,
+        1031015
+      ],
+      "base_wr": 91.40625,
+      "candidate_wr": 26.5625,
+      "delta_points": -64.84375,
+      "ci95_seed": [
+        -84.78441616065561,
+        -44.9030838393444
+      ],
+      "ci95_2way": [
+        -92.16992691610042,
+        -37.51757308389958
+      ],
+      "opponent_breakdown": {
+        "ars40": -62.5,
+        "arshs3": -75.0,
+        "hybu": -53.125,
+        "tds": -68.75
+      },
+      "better_cells": 0,
+      "worse_cells": 42,
+      "equal_cells": 22,
+      "status": "REJECTED"
+    }
+  },
+  "selected_for_confirmation": []
+}

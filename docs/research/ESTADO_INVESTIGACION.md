@@ -129,7 +129,12 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   0,5/2,5, conservar FEED ovino o conservar todo FEED nativo.36juegos, noop4.314,
   máximo271ms, cero errores/escapes/inventario final; todas cambian acciones
   en tres mundos, consumo de trigo y producción confirmados por motor.
-  Piloto1.248 semillas1031000–015 **corriendo desde06:21:20UTC**.
+  **Piloto14 completo**:1.248episodios, noop256/256, cero errores. Half−12,5pp
+  (ICdos vías[−33,693;8,693], inconcluso no seleccionado); double−26,5625,
+  keep_sheep−50,78125, all−64,84375con ICdos vías negativos: REJECTED.
+  Todas cambian128/128acciones propias. Sin confirmación ni envío. Ocho
+  diagnósticos reproducen rewards/caja y conservan tiendas: producir más
+  puede reducir ingresos; producir menos puede beneficiar más al rival.
   Total63variantes competitivas al registrarlo.
   Auditoría previa de8replays top3: PASS no implica trabajo útil pendiente;
   ningún CARE útil omitido entre esas oportunidades y60huecos WATER sin
@@ -140,7 +145,8 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   noop4.314, max294ms. En caso adverso:night permite una oveja, compra4trigos
   y evita tres escapes; resto conserva base. En caso solvente:night/24permiten
   dos ovejas,48/all24inertes. No seleccionar por esos rewards. Piloto1.568
-  con control antiguo, semillas1034000–015 tras14. Total67variantes construidas.
+  con control antiguo, semillas1034000–015, **corriendo desde06:36:09UTC**.
+  Total67variantes construidas.
 - Loop16 validado/encolado: cuatro mezclas iniciales (1/2vacas→ovejas o viceversa),
   sin más peones/rutas.48juegos/noop5.752turnos, max329ms, compras/colocaciones
   y costes±100/200aceptados, crédito0al día1. Todas cambian acciones en4mundos.
@@ -175,6 +181,16 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   Total76variantes competitivas construidas más2prototipos17detenidos.
   Ver `TRIGO_REVENTA_2026-09-25.md`; nuestra fuente reproduce exactamente el
   replay real de origen, pero no conocemos ni copiamos su política rival.
+- Loop20 validado/encolado: tres nuevas reventas de trigo alrededor del consumo
+  conocido del pueblo, topes20/50/80, sin tocar compras nativas19.30juegos,
+  noop4.314turnos, max358ms, cero errores/escapes/stock final.146compras y cierres,
+  7.862unidades llenadas/liquidadas;42ventas heredadas integradas sin duplicar.
+  Tres brazos activos en tres mundos, alimentación/producción/tiendas/pérdidas
+  preservadas allí. Piloto1.9201049000–031tras19, confirmación1050000–031.
+  Sonda sintética400escenarios/800piernas exactas demuestra riesgo rival:
+  78pérdidas pese a pronóstico positivo sin rival. No seleccionar por caja.
+  Total79variantes construidas más2prototipos detenidos.
+  Ver `REVENTA_TOWN_2026-09-25.md`; no afirmar beneficio por spread anunciado.
 - Fuentes públicas nuevas: MasterEngine actualizado es tds25 byte exacto,
   excluido. MarketShock12ad317e diferente; loader elegía instalador. Corrección
   de entrada1c94b979 probada idéntica al `module.agent` del autor en8juegos.

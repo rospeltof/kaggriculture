@@ -25,7 +25,8 @@ y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_biblioteca.py`, `continuar_loop_aperturas.py` y
 `continuar_loop_almacen.py`, `continuar_loop_alimentacion.py` y
 `continuar_loop_caja_alimento.py`, `continuar_loop_rebano_inicial.py` y
-`continuar_loop_publicos_0548.py` y `continuar_loop_trigo_reventa.py` encadenan bloques
+`continuar_loop_publicos_0548.py`, `continuar_loop_trigo_reventa.py` y
+`continuar_loop_reventa_town.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
 terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
 (una de64 partidas cambia, +1,5625pp). Confirm5 tomate−21,591pp: REJECTED.
@@ -41,11 +42,12 @@ Sin confirmación. Piloto12 completo1.008/noop192, ninguna seleccionada:
 Original−3,125pp, cycle0, tomate−80,46875, MarketShock−64,0625; últimos dos REJECTED.
 Piloto13 completo1.248/noop256: inputs1/2+4,6875pp. Confirm13completa1.600,
 noop416/416: ambas delta0sin cambiosW/L/T, pese a107/86acciones distintas.
-No seleccionadas ni enviadas; no son inertes. Corre14desde06:21UTC.
-Loops15–16 y18–19 encolados. Doce diagnósticos validan reducción de pérdidas,
+No seleccionadas ni enviadas; no son inertes. Piloto14terminó1.248/noop256,
+half−12,5pp(inconcluso), double−26,5625, keep_sheep−50,78125, all−64,84375
+(últimas tres REJECTED). Sin confirmación. Corre15desde06:36UTC;16/18/19en cola. Doce diagnósticos validan reducción de pérdidas,
 pero una celda neutral omite3FEEDposteriores: no garantiza preservar producción.
 Loop14 modifica sólo filtro económico FEED:36juegos/noop4.314turnos,
-consumo/producción aceptados comprobados; piloto1.248 en cola.
+consumo/producción aceptados comprobados; todas activas128/128en piloto.
 Loop13 almacén: versión1 inválida
 por capturar entrada antigua y omitir VQ, detectado por noop; versión2 usa
 último callable correcto,36juegos completos, noop4.314turnos y22predicciones
@@ -68,7 +70,7 @@ fallan alimentaciones y escapan tres vacas239. Próxima hipótesis requiere
 reserva de insumos futuros. Loop15 validado: cuatro reservas, control antiguo,
 42diagnósticos/noop4.314, max294ms. Night/24evitan los escapes del caso adverso
 y permiten conversión en el solvente;48/all24inertes en desarrollo. Piloto1.568
-encolado tras14. Loop16 mezcla inicial:48juegos/noop5.752, max329ms,
+corriendo tras14. Loop16 mezcla inicial:48juegos/noop5.752, max329ms,
 cantidades/costes físicos comprobados;2.496piloto detrás de15. Sheep2pierde
 una vaca215en1272457736; registrar escapes, no ocultarlos. Total71variantes.
 Doce replays muestran33MILKtruncadas por banco excesivo antes del primer yield
@@ -83,6 +85,12 @@ válidos/noop4.314/max305ms; activa en uno de tres mundos. Cobertura estática
 5/64pares: antes del piloto se amplió a32semillas por bloque (1.920piloto).
 El runner actual es el de32; no duplicar el antiguo terminado. Total76variantes
 competitivas más2prototipos detenidos. No enviar por rewards de desarrollo.
+Loop20validado/encolado: nuevas reventas de trigo20/50/80unidades.30juegos,
+noop4.314/max358ms,146compras/cierres y7.862unidades verificadas. Alimento,
+producción y tiendas iguales a base en tres mundos; cero escapes/stock final.
+1.920piloto tras19. Sonda400escenarios/800piernas exactas refuta beneficio
+garantizado sin modelar rival.79variantes construidas;
+ver protocolo/REVENTA_TOWN. No cambiar fuentes congeladas de otros bloques.
 
 ## Estado y autorización
 

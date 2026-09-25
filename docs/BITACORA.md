@@ -1,5 +1,27 @@
 # Bitácora de experimentos
 
+## 2026-09-25, 06:49 UTC — Alimentación14negativa; nuevas reventas20
+
+Piloto14completo1.248/noop256, cero errores. Half−12,5pp(inconcluso), double
+−26,5625, keep_sheep−50,78125, all−64,84375(REJECTED). Ninguna confirmación.
+Ocho diagnósticos reproducen rewards/caja y mismas tiendas; más leche puede
+recaudar menos, menos producción puede beneficiar más al rival. Corre15desde
+06:36:09UTC,1.568episodios.16/18/19continúan en cola;17detenido.
+
+Sonda de reventa:400escenarios/800piernas coinciden con motor.78casos pierden
+pese a modelo sin rival positivo, dos ganan caja propia pero pierden margen.
+V1leyó atributos escalares obsoletos de Struct al llamar motor interno: error
+de instrumentación archivado, corregido leyendo claves. No invalida los
+ledgers completos previos. Loop20registra compras nuevas en pulsos town con
+topes20/50/80y liquidación siguiente.30juegos/noop4.314/max358ms,146pares de
+compras/cierres y7.862unidades exactas;42ventas del padre integradas sin duplicar.
+Alimento/cosecha/tiendas/pérdidas conservados en tres mundos, cero errores,
+escapes/stock final. No adoptar por los pequeños ingresos diagnósticos.
+
+Piloto1.920semillas1049000–031encolado tras19; confirmación1050000–031.
+79variantes competitivas construidas más2prototipos detenidos. No nuevos
+envíos; VQcontinúa referencia real imprescindible. Objetivo continuo activo.
+
 ## 2026-09-25, 06:30 UTC — Confirm13sin mejora, trigo19y contraste real
 
 Confirm13completa1.600/noop416, cero errores: delta0ambas pese a107/86acciones

@@ -7,7 +7,9 @@ autorizado. Leer `research/ESTADO_INVESTIGACION.md` y la cola actual en
 `research/IDEAS_VIVAS_2026-09-25.md`. Las restricciones y propuestas de abajo
 son históricas. Confirm10 terminó inerte y biblioteca11sin mejora W/L/T;
 piloto12 terminó sin seleccionadas. Confirm13 terminó delta0 pese a
-107/86acciones distintas; no enviar. Corre14;15/16/18/19están en cola. Loop17
+107/86acciones distintas; no enviar. Piloto14sin seleccionadas: dar más alimento
+perjudica en este panel. Corre15;16/18/19en cola. Loop20nuevas reventas está en
+cola tras19:30juegos validan146compras/cierres. Loop17
 se detuvo por confundir stock actual con stock nocturno: una cosecha intermedia
 libera capacidad y hace valiosa la alimentación omitida. No repetir ese modelo.
 Loop18 compara dos fuentes públicas nuevas con entradas verificadas.

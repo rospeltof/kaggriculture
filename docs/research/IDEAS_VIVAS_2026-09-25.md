@@ -1,8 +1,19 @@
 # Fronteras después de loops7–10
 
-Estado05:38UTC: confirm10 completa, ambas y2 inertes352/352. Biblioteca11
-completa sin W/L/T distinto. Aperturas12corriendo; loops13–16validados/encolados.
-No duplicar corridas.71variantes construidas.
+Estado06:49UTC: loops12–14completos, sin seleccionadas. Confirm13delta0pese
+al mecanismo activo; alimentación14negativa. Corre15reservas de caja;
+16composición inicial,18fuentes nuevas,19compras nativas y20reventas nuevas
+están validados/en cola.17detenido por modelo temporal erróneo. No duplicar
+corridas.79variantes construidas más2prototipos detenidos. Leer estado y
+scorecards actuales antes de usar las propuestas históricas de abajo.
+
+Nueva frontera20: crear compras en pulsos de consumo observable del pueblo.
+30juegos/noop4.314/max358ms,146compras/cierres y7.862unidades verificados.
+Sonda sintética prueba que una previsión sin rival positiva puede perder caja
+propia y margen: no llamarlo arbitraje garantizado. Piloto1.920tras19,
+semillas1049000–031. Mantener VQcomo referencia real: top3gana localmente,
+pero no demostró superar su rating actual. Todo próximo envío debe valorar
+que desplazaría VQ. No cambiar los paneles de bloques ya registrados.
 
 ## Nueva prioridad: financiar alimento antes de cambiar vacas por ovejas
 
@@ -25,7 +36,7 @@ y reserva de todas las obligaciones24h.42diagnósticos antes del piloto1.568
 (1034000–015), control antiguo incluido sólo para atribuir reparación. No
 acredita ingresos futuros ni cambia alimento/rutas.42diagnósticos válidos,
 noop4.314, max294ms:night/24evitan escapes en el caso adverso y permiten
-conversión en el solvente;48/all24inertes en desarrollo. Piloto1.568encolado.
+conversión en el solvente;48/all24inertes en desarrollo. Piloto1.568corriendo.
 Consultar protocolo15, no presentar estas sondas como ganancia competitiva.
 
 Las tres parejas D3/D6 fueron idénticas128/128por pareja; no contarlas como

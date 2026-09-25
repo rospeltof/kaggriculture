@@ -1,0 +1,72 @@
+{
+  "agentes": {
+    "base": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "noop": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "feed_half": {
+      "ruta": "results/alimentacion_economica_20260925/feed_half.py",
+      "sha256": "2f10f6631175cf7a9af3b996b0e6b25ad7ef759468882ef9d4da08f241fa4f0e"
+    },
+    "feed_double": {
+      "ruta": "results/alimentacion_economica_20260925/feed_double.py",
+      "sha256": "1513125b2584cd616fb2a4920f3e19967c540b7392996a39c33c0a8a0761261c"
+    },
+    "feed_keep_sheep": {
+      "ruta": "results/alimentacion_economica_20260925/feed_keep_sheep.py",
+      "sha256": "d53ca005654284996bc562087bb7a9ab7c8bdb9e67a9a067cbbb8e56310ea223"
+    },
+    "feed_all": {
+      "ruta": "results/alimentacion_economica_20260925/feed_all.py",
+      "sha256": "5b5dff86bb41cc252f3dca21ca43c46c57c7fdb109cbcf681be1afebbebaa36b"
+    },
+    "tds": {
+      "ruta": "submission/main_publico_tds_tetsutani.py",
+      "sha256": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a"
+    },
+    "hybu": {
+      "ruta": "results/publicos/wzhengbiao_kaggriculture-hybu-submit/main.py",
+      "sha256": "f6175fd1bc3850f74185e7a813bb5a87d54e7e15212c874133dafc6e1ce91d34"
+    },
+    "ars40": {
+      "ruta": "results/publicos/arsgorynich_kaggriculture-v40-challenger/main.py",
+      "sha256": "d5a192fac67f00da31fe2bc7b747b8c33766bf1024780c53e49f2292a97db2de"
+    },
+    "arshs3": {
+      "ruta": "submission/main_publico_arshs3_arsgorynich.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    }
+  },
+  "seeds": [
+    1031000,
+    1031001,
+    1031002,
+    1031003,
+    1031004,
+    1031005,
+    1031006,
+    1031007,
+    1031008,
+    1031009,
+    1031010,
+    1031011,
+    1031012,
+    1031013,
+    1031014,
+    1031015
+  ],
+  "vs": "base,noop,feed_half,feed_double,feed_keep_sheep,feed_all",
+  "inicio": "2026-09-25 01:21:20",
+  "state": "complete",
+  "expected_episodes": 1248,
+  "workers": 8,
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "cc2c653a1cce243e55d3d30effd5985405bb9db28bde7622cecc400a7298b025",
+  "completed_episodes": 1248,
+  "fin": "2026-09-25 01:36:04"
+}

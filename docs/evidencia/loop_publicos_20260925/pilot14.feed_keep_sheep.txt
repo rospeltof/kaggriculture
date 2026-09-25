@@ -1,0 +1,16 @@
+  (extra, no entra en la estimacion) base vs feed_all: 100.0% (32 ep)
+  (extra, no entra en la estimacion) feed_keep_sheep vs feed_all: 90.6% (32 ep)
+  (extra, no entra en la estimacion) base vs feed_double: 87.5% (32 ep)
+  (extra, no entra en la estimacion) feed_keep_sheep vs feed_double: 25.0% (32 ep)
+  (extra, no entra en la estimacion) base vs feed_half: 56.2% (32 ep)
+  (extra, no entra en la estimacion) feed_keep_sheep vs feed_half: 31.2% (32 ep)
+  (extra, no entra en la estimacion) base vs noop: 50.0% (32 ep)
+  (extra, no entra en la estimacion) feed_keep_sheep vs noop: 12.5% (32 ep)
+feed_keep_sheep - base: 4 rivales x 16 semillas = 64 celdas; ref 91.4%
+  delta -50.78 pts | IC95 semilla [-75.16; -26.40] | dos vias [-81.90; -19.66]
+  celdas cambiadas 33/64: 0 a favor, 33 en contra
+    vs    ars40  -56.2
+    vs   arshs3  -50.0
+    vs     hybu  -46.9
+    vs      tds  -50.0
+  directo feed_keep_sheep vs base: 12.5% (32 ep)
