@@ -10,7 +10,10 @@ piloto12 terminó sin seleccionadas. Confirm13 terminó delta0 pese a
 107/86acciones distintas; no enviar. Piloto14sin seleccionadas: dar más alimento
 perjudica en este panel.15sin seleccionadas: reserva de caja no garantiza
 conversión rentable.16terminócon cuatro REJECTED;18sin seleccionadas. Confirm19corre tras+2,734375ppdel piloto;
-20–25en cola.23valida suministro del peón ovino adicional, omitido por
+Originalconfirm19terminópero quedó inválido por hash rival noop; ahora corre
+confirm19_fixedhash0con mismos agentes/semillas/gates.48sondas identifican
+sorted(set)sin desempate, runtime0fijado para bloques nuevos.20–25en cola
+reiniciada; ver adendaREPARACION_HASH_RUNTIME.23valida suministro del peón ovino adicional, omitido por
 la guarda de retiros nativos:48desarrollos/noop8.628/max327ms. ContraV7recupera
 24lanas pero conserva derrota; piloto32semillas pendiente. No repetir alimentación indiscriminada14. Loop21modera señales extra
 del forecast, con VQcomo control y rivales nuevos. Loop20validó146compras/cierres. Loop17

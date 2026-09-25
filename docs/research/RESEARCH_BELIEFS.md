@@ -4,6 +4,14 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, confirm19] Hashes de proceso distintos pueden alterar la
+  acción emitida por la misma fuente externa.** Cuatro noops difieren sólo
+  en hash rival;48reproducciones/4hashseeds reproducen ambas trazas, mismas
+  acciones propias/rewards/720estados económicos en seis celdas. Perfilado
+  encuentra sorted(set)por precio sin desempatar nombres. No prueba inocuidad
+  general. Original inválido; repetición íntegra con hashseed0y verificación
+  por worker, sin cambiar agentes ni gates. Ver REPARACION_HASH_RUNTIME.
+
 - **[2026-09-25, 15 replays recientes] Campo parecido puede coexistir con
   mercados distintos.** Mediana de igualdad del vector completo de órdenes
   de campo99,17%, mercado activo71,27%. Comparar sólo comandos emparejados

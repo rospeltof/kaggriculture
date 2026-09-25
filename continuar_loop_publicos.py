@@ -7,6 +7,7 @@ import contextlib
 from datetime import datetime, timezone
 import io
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -67,7 +68,8 @@ def run(name,variants,seed0,seeds,pool=None):
     cmd.extend(n+'='+p for n,p in agents.items())
     save(name,state='running',command=cmd)
     with (ROOT/'results'/f'{name}_20260925.log').open('x') as log:
-        subprocess.run(cmd,cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,check=True)
+        subprocess.run(cmd,cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,check=True,
+                       env=dict(os.environ, PYTHONHASHSEED='0'))
     return prefix
 
 

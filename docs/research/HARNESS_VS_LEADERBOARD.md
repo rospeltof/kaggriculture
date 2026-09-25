@@ -14,6 +14,13 @@ validación. No es comparación causal ni rankings sincronizados por edad/rivale
 Los conteos y lecturas fechadas están en SUBMISSION_HISTORY. La ventaja local
 todavía no demuestra superioridad real; no redefinir el gate según estos ratings.
 
+Confirm19original fue invalidado por cuatro controles de acciones rivales,
+aunque caja y acciones propias coinciden.48reproducciones aíslan hashseeddel
+proceso y sorted(set)sin desempate. Desde la repeticiónconfirm19_fixedhash0y
+los bloques20–25se fija y registra hashseed0en proceso y workers. Es una condición
+del runtime local, no prueba de invariancia de esas fuentes en Kaggle. Mantener
+controles literales y revisar hashes alternativos antes de otro envío.
+
 Ocho replays posteriores seleccionados por recencia (cuatro por fuente):
 los códigos enviados reproducen719acciones/720estados exactos. Contrafactual
 con rival grabado favorece margen top3en7/8, sin garantizar respuesta adaptativa

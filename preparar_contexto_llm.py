@@ -22,6 +22,7 @@ ARMS = ("base", "noop", "_peor", "partial_batch")
 CRITICAL = {4: 3.1824463052837078, 8: 2.364624251592784}
 SOURCES = (
     "docs/research/ESTADO_INVESTIGACION.md",
+    "docs/research/REPARACION_HASH_RUNTIME_2026-09-25.md",
     "docs/research/SCORECARDS_LOOP_2026-09-25.md",
     "docs/research/PREREG_LOOP25_PANEL_CERCANO_2026-09-25.md",
     "docs/research/SIMILITUD_RIVALES_2026-09-25.md",

@@ -1,0 +1,349 @@
+{
+  "noop_mismatches": [
+    {
+      "opponent": "tds",
+      "seed": 1047024,
+      "seat": 0,
+      "fields": [
+        "action_hashes"
+      ],
+      "base": {
+        "a": "base",
+        "b": "tds",
+        "seed": 1047024,
+        "seat": 0,
+        "valid": true,
+        "rewards": [
+          94781.0,
+          93830.0
+        ],
+        "statuses": [
+          "DONE",
+          "DONE"
+        ],
+        "n_err": 0,
+        "errors": [],
+        "steps": 720,
+        "score": 1.0,
+        "margin": 951.0,
+        "ms": [
+          {
+            "mean": 1.450068150208623,
+            "max": 101.074
+          },
+          {
+            "mean": 1.2864144645340752,
+            "max": 190.00900000000001
+          }
+        ],
+        "action_hashes": [
+          "c3054885276cab803a397391667a9eca27b5d79280dbea6e54094bc0ef16be1a",
+          "da687cd6836599dd07356d3a6342c886aba40a8b148383a4df5ee28147ffed07"
+        ],
+        "action_counts": [
+          719,
+          719
+        ],
+        "seconds": 5.67601145899971
+      },
+      "noop": {
+        "a": "noop",
+        "b": "tds",
+        "seed": 1047024,
+        "seat": 0,
+        "valid": true,
+        "rewards": [
+          94781.0,
+          93830.0
+        ],
+        "statuses": [
+          "DONE",
+          "DONE"
+        ],
+        "n_err": 0,
+        "errors": [],
+        "steps": 720,
+        "score": 1.0,
+        "margin": 951.0,
+        "ms": [
+          {
+            "mean": 1.6635980528511822,
+            "max": 123.61
+          },
+          {
+            "mean": 1.2314923504867872,
+            "max": 105.161
+          }
+        ],
+        "action_hashes": [
+          "c3054885276cab803a397391667a9eca27b5d79280dbea6e54094bc0ef16be1a",
+          "ed58205cf302a9718e4e6f149ef5938a127079dceec6c455902cd93d708db1c3"
+        ],
+        "action_counts": [
+          719,
+          719
+        ],
+        "seconds": 5.918343833996914
+      }
+    },
+    {
+      "opponent": "tds",
+      "seed": 1047024,
+      "seat": 1,
+      "fields": [
+        "action_hashes"
+      ],
+      "base": {
+        "a": "base",
+        "b": "tds",
+        "seed": 1047024,
+        "seat": 1,
+        "valid": true,
+        "rewards": [
+          93830.0,
+          94781.0
+        ],
+        "statuses": [
+          "DONE",
+          "DONE"
+        ],
+        "n_err": 0,
+        "errors": [],
+        "steps": 720,
+        "score": 1.0,
+        "margin": 951.0,
+        "ms": [
+          {
+            "mean": 1.5083421418636995,
+            "max": 101.66600000000001
+          },
+          {
+            "mean": 1.3208094575799723,
+            "max": 109.154
+          }
+        ],
+        "action_hashes": [
+          "8cd82479ff1be93f0878600c3ce1e49e35077bcd89c729f60153e2634ae0862c",
+          "69921d1fe1a3b8e95fe7f5ea54c11ad1f79b3f38f98b2c043259b7a39ecdd017"
+        ],
+        "action_counts": [
+          719,
+          719
+        ],
+        "seconds": 5.749676750012441
+      },
+      "noop": {
+        "a": "noop",
+        "b": "tds",
+        "seed": 1047024,
+        "seat": 1,
+        "valid": true,
+        "rewards": [
+          93830.0,
+          94781.0
+        ],
+        "statuses": [
+          "DONE",
+          "DONE"
+        ],
+        "n_err": 0,
+        "errors": [],
+        "steps": 720,
+        "score": 1.0,
+        "margin": 951.0,
+        "ms": [
+          {
+            "mean": 1.398808066759388,
+            "max": 88.92999999999999
+          },
+          {
+            "mean": 1.3532753824756607,
+            "max": 86.28099999999999
+          }
+        ],
+        "action_hashes": [
+          "09ba2fd77815f47679cb01e55d8fd911614fb0790405c652d53a1967ae4b767d",
+          "69921d1fe1a3b8e95fe7f5ea54c11ad1f79b3f38f98b2c043259b7a39ecdd017"
+        ],
+        "action_counts": [
+          719,
+          719
+        ],
+        "seconds": 5.69529670799966
+      }
+    },
+    {
+      "opponent": "hl25",
+      "seed": 1047024,
+      "seat": 0,
+      "fields": [
+        "action_hashes"
+      ],
+      "base": {
+        "a": "base",
+        "b": "hl25",
+        "seed": 1047024,
+        "seat": 0,
+        "valid": true,
+        "rewards": [
+          94799.0,
+          93839.0
+        ],
+        "statuses": [
+          "DONE",
+          "DONE"
+        ],
+        "n_err": 0,
+        "errors": [],
+        "steps": 720,
+        "score": 1.0,
+        "margin": 960.0,
+        "ms": [
+          {
+            "mean": 1.5171279554937414,
+            "max": 92.271
+          },
+          {
+            "mean": 1.1698497913769124,
+            "max": 96.343
+          }
+        ],
+        "action_hashes": [
+          "c3054885276cab803a397391667a9eca27b5d79280dbea6e54094bc0ef16be1a",
+          "3f24488806cfb13fe30010e1ea45222465320fb91d8475f107c0c18792fd5dfa"
+        ],
+        "action_counts": [
+          719,
+          719
+        ],
+        "seconds": 5.585801916982746
+      },
+      "noop": {
+        "a": "noop",
+        "b": "hl25",
+        "seed": 1047024,
+        "seat": 0,
+        "valid": true,
+        "rewards": [
+          94799.0,
+          93839.0
+        ],
+        "statuses": [
+          "DONE",
+          "DONE"
+        ],
+        "n_err": 0,
+        "errors": [],
+        "steps": 720,
+        "score": 1.0,
+        "margin": 960.0,
+        "ms": [
+          {
+            "mean": 1.5434659248956883,
+            "max": 94.649
+          },
+          {
+            "mean": 1.171993045897079,
+            "max": 101.43599999999999
+          }
+        ],
+        "action_hashes": [
+          "c3054885276cab803a397391667a9eca27b5d79280dbea6e54094bc0ef16be1a",
+          "f94036f26c4e16431c8243fd76fb77b5d42ac3a89124bde614ee31824f1d9056"
+        ],
+        "action_counts": [
+          719,
+          719
+        ],
+        "seconds": 5.531716333003715
+      }
+    },
+    {
+      "opponent": "hybu",
+      "seed": 1047024,
+      "seat": 0,
+      "fields": [
+        "action_hashes"
+      ],
+      "base": {
+        "a": "base",
+        "b": "hybu",
+        "seed": 1047024,
+        "seat": 0,
+        "valid": true,
+        "rewards": [
+          94889.0,
+          93900.0
+        ],
+        "statuses": [
+          "DONE",
+          "DONE"
+        ],
+        "n_err": 0,
+        "errors": [],
+        "steps": 720,
+        "score": 1.0,
+        "margin": 989.0,
+        "ms": [
+          {
+            "mean": 1.6727941585535466,
+            "max": 99.951
+          },
+          {
+            "mean": 1.2679596662030599,
+            "max": 83.261
+          }
+        ],
+        "action_hashes": [
+          "7680e5dc15899f0b148198ee9c4bad8bd290819faa8b46c269df91c99aeabf9e",
+          "0d30608cf64c159bfddc19e8fb71469f1e1dbdff8d6f72e19682a03dd94c9ba3"
+        ],
+        "action_counts": [
+          719,
+          719
+        ],
+        "seconds": 5.806122209003661
+      },
+      "noop": {
+        "a": "noop",
+        "b": "hybu",
+        "seed": 1047024,
+        "seat": 0,
+        "valid": true,
+        "rewards": [
+          94889.0,
+          93900.0
+        ],
+        "statuses": [
+          "DONE",
+          "DONE"
+        ],
+        "n_err": 0,
+        "errors": [],
+        "steps": 720,
+        "score": 1.0,
+        "margin": 989.0,
+        "ms": [
+          {
+            "mean": 1.657596662030598,
+            "max": 90.667
+          },
+          {
+            "mean": 1.3469165507649512,
+            "max": 118.749
+          }
+        ],
+        "action_hashes": [
+          "7680e5dc15899f0b148198ee9c4bad8bd290819faa8b46c269df91c99aeabf9e",
+          "927b5c4ea97ccd3dfb682ab36ef8bb2dfa318b5e98f4b9cc7441b9c4251f4070"
+        ],
+        "action_counts": [
+          719,
+          719
+        ],
+        "seconds": 5.862105707987212
+      }
+    }
+  ],
+  "decision": "QUARANTINED_PENDING_REPRODUCTION; do not accept WLT conclusions or restart full block."
+}

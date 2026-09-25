@@ -20,6 +20,10 @@ def validate(prefix,ref='base',noop='noop'):
     assert set(keyed)==expected and len(rows)==len(expected)==meta['expected_episodes']==meta['completed_episodes']
     normalized={}
     for r in rows:
+        runtime=meta.get('runtime',{})
+        if runtime.get('python_hash_seed') not in (None, 'random'):
+            assert r.get('runtime',{}).get('python_hash_seed')==runtime['python_hash_seed']
+            assert r['runtime']['wheat_hash']==runtime['wheat_hash'],'Worker con hash seed distinto'
         assert r['valid'] and r['n_err']==0 and not r['errors'] and r['statuses']==['DONE','DONE']
         assert r['steps']==720 and r['action_counts']==[719,719]
         assert len(r['action_hashes'])==2 and all(len(h)==64 for h in r['action_hashes'])

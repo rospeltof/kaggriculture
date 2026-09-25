@@ -1,5 +1,29 @@
 # Bitácora de experimentos
 
+## 2026-09-25, 08:44 UTC — Fallo noop identificado y confirmación recuperada
+
+Confirm19cerró3.200episodios08:35UTC. El verificador abortó por4/832noops:
+hybu/0,tds/0y1,hl25/0, todos1047024. Sólo hash rival distinto; mismo propio,
+rewards, W/L/T,720pasos y estados terminales reportados. No se analizaron
+deltas para selección. Cola20–25se detuvo; todos los procesos verificados
+terminados antes de reiniciar. Bloque y estado de fallo archivados intactos.
+
+Sonda48juegos predefinida, tres rivales/ambos asientos/dos repeticiones/hashseed
+0–3: reproduce ambos hashes originales de las cuatro discrepancias. Cada
+hashes estable entre repeticiones. Todas seis celdas mantienen hashes de los
+720estados económicos decompact_state, acciones propias y rewards. Cambia
+una cola rival en465(TDS/HL)o466(Hybu). Perfilado2juegos localiza primer cambio
+enHybu_v12_advance, sorted(set)por precio sin desempate (línea7900); mismo
+patrónTDS6949/HL6952. No alterar fuentes públicas congeladas.
+
+Adenda antes de repetir: hashseed0uniforme mediante lanzador, metadata/testigo
+en proceso/worker y validación estricta adicional. Smoke6juegos/noop2exacto
+confirma mismo hash8460755321718155249. Nueva confirm19_fixedhash0arrancó08:43,
+3.200episodios idénticos por diseño; reemplaza medición inválida, no aumentaN
+ni es réplica independiente. Gate y selecciónprevia intactos. No rescatar
+original relajarnoops ni cambiar criterio a dinero.20–25reiniciados con logs
+nuevos, sin partidas previas. Objetivo activo; ver REPARACION_HASH_RUNTIME.
+
 ## 2026-09-25, 08:27 UTC — Snapshot real y tres replays posteriores
 
 Consulta08:27:46UTC(sufijo0828):VQ2292,9/92episodios,top32103,4/81, ambas

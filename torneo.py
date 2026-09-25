@@ -10,14 +10,15 @@ Uso:
 contra todo el pool y los brazos entre si; sin --vs, todos contra todos.
 Escribe <out>.jsonl (una fila por episodio) y <out>.meta.json (sha256 de cada fichero).
 """
-import argparse, hashlib, itertools, json, math, multiprocessing as mp, statistics as st, sys, time, tarfile
+import argparse, hashlib, itertools, json, math, multiprocessing as mp, os, statistics as st, sys, time, tarfile
 from pathlib import Path
 
 
 def episodio(job):
     a, pa, b, pb, seed, seat = job
     t0 = time.monotonic()
-    r = dict(a=a, b=b, seed=seed, seat=seat, valid=False)
+    r = dict(a=a, b=b, seed=seed, seat=seat, valid=False,
+             runtime=dict(python_hash_seed=os.environ.get('PYTHONHASHSEED'), wheat_hash=hash('WHEAT')))
     try:
         from kaggle_environments import make
         from kaggle_environments.agent import build_agent
@@ -118,6 +119,8 @@ def main():
     from importlib.metadata import version
     engine=Path(importlib.import_module('kaggle_environments.envs.kaggriculture.kaggriculture').__file__)
     meta.update(state='running',expected_episodes=len(jobs),workers=args.workers,
+                runtime=dict(python_version=sys.version, multiprocessing_start_method=mp.get_start_method(),
+                             python_hash_seed=os.environ.get('PYTHONHASHSEED'), wheat_hash=hash('WHEAT')),
                 engine_sha256=hashlib.sha256(engine.read_bytes()).hexdigest(),
                 kaggle_environments=version('kaggle-environments'),
                 runner_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())

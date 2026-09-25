@@ -1,0 +1,108 @@
+{
+  "agentes": {
+    "base": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "noop": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "wheat_both": {
+      "ruta": "results/trigo_reventa_20260925/wheat_both.py",
+      "sha256": "71129a9e0f3ce6dcce21d015326ada6a06fc0734377e31014d6623521e4359c6"
+    },
+    "wheat_front": {
+      "ruta": "results/trigo_reventa_20260925/wheat_front.py",
+      "sha256": "ab5ab19cdc810f5a3f4940a7db31436c4b135b5a56bdcbc7cfa001eb187d56e5"
+    },
+    "tds": {
+      "ruta": "submission/main_publico_tds_tetsutani.py",
+      "sha256": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a"
+    },
+    "hybu": {
+      "ruta": "results/publicos/wzhengbiao_kaggriculture-hybu-submit/main.py",
+      "sha256": "f6175fd1bc3850f74185e7a813bb5a87d54e7e15212c874133dafc6e1ce91d34"
+    },
+    "ars40": {
+      "ruta": "results/publicos/arsgorynich_kaggriculture-v40-challenger/main.py",
+      "sha256": "d5a192fac67f00da31fe2bc7b747b8c33766bf1024780c53e49f2292a97db2de"
+    },
+    "hsov": {
+      "ruta": "results/publicos/haideptry_the-shepherds-ledger-herd-safe-sovereign/main.py",
+      "sha256": "5f2b51a2beaf5e08cb73e82f0e03e02e56de601563b28344e49b7058e371b247"
+    },
+    "v13": {
+      "ruta": "submission/main_publico_v13_thomastschinkel.py",
+      "sha256": "9d63494603f88219857a3101d7dc19cc750ded04e5886732ee428580326967d9"
+    },
+    "obr": {
+      "ruta": "results/publicos/arsgorynich_order-book-v3-response-improvement/main.py",
+      "sha256": "8045c8872406044cb0b6bf9f80e440f07c250e325618894f4a91141af6d3b6ad"
+    },
+    "h2965": {
+      "ruta": "results/publicos/haideptry_the-2965-master-hybrid-engine/main.py",
+      "sha256": "a58ee3a1e78dbbd0e5a27a37eb7d3ae16cc3064f5101d7b955608f23719e9dba"
+    },
+    "guru6": {
+      "ruta": "results/publicos/guruprasaathas111_kaggriculture-master-engine-v3/main.py",
+      "sha256": "ffbb800db22f6f0d390415b1bd7188c2df1ad41d5b7f6f33ca43d6513ba673fe"
+    },
+    "tds25": {
+      "ruta": "results/publicos_20260925/tds/main.py",
+      "sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652"
+    },
+    "hl25": {
+      "ruta": "results/publicos_20260925/hl/main.py",
+      "sha256": "1dfd463070024f85879d642fc294e1848ccfab00aad3f3980a04b0a8eca37fdd"
+    },
+    "arshs3": {
+      "ruta": "submission/main_publico_arshs3_arsgorynich.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    }
+  },
+  "seeds": [
+    1047000,
+    1047001,
+    1047002,
+    1047003,
+    1047004,
+    1047005,
+    1047006,
+    1047007,
+    1047008,
+    1047009,
+    1047010,
+    1047011,
+    1047012,
+    1047013,
+    1047014,
+    1047015,
+    1047016,
+    1047017,
+    1047018,
+    1047019,
+    1047020,
+    1047021,
+    1047022,
+    1047023,
+    1047024,
+    1047025,
+    1047026,
+    1047027,
+    1047028,
+    1047029,
+    1047030,
+    1047031
+  ],
+  "vs": "base,noop,wheat_both,wheat_front",
+  "inicio": "2026-09-25 02:57:01",
+  "state": "complete",
+  "expected_episodes": 3200,
+  "workers": 8,
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "cc2c653a1cce243e55d3d30effd5985405bb9db28bde7622cecc400a7298b025",
+  "completed_episodes": 3200,
+  "fin": "2026-09-25 03:35:02"
+}

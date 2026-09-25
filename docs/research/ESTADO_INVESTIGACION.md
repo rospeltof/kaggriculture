@@ -1,9 +1,18 @@
 # Estado de investigación — leer primero para continuar
 
-## Corte operativo 08:24 UTC
+## Corte operativo 08:44 UTC — confirmación repetida por control inválido
 
 Piloto19completo: tres variantes+2,734375pp, señal en2/32semillas; ambas
-seleccionadas (both/front) en confirmación3.200desde07:57UTC.20–24validados y
+seleccionadas (both/front). Originalconfirm19cerró3.200pero FALLÓnoop: cuatro
+hashes rivales distintos, mismasacciones propias/rewards. Se conserva inválido.
+48reproducciones aislaron orden de set dependiente de PYTHONHASHSEED; todos
+los720estados económicos comparados coinciden, fuentes externas intactas.
+Nueva **confirm19_fixedhash0**corre desde08:43UTC, mismas3.200celdas/gates,
+runtime fijo y registrado; no es otra confirmación independiente ni suma N.
+Seis partidas técnicas/noop2exacto comprobaron el arreglo. Los seis waiters
+20–25anteriores terminaron por cascada y se reiniciaron con logs nuevos; no
+hubo partidas20–25antes del fallo. Leer `REPARACION_HASH_RUNTIME_2026-09-25.md`.
+20–24validados y
 en cola; un solo torneo grande, no duplicar.89variantes construidas más2
 prototipos17detenidos. Adelanto24compra antes y permite ventas más tempranas:
 36juegos/noop8.628/64llenados,4.480unidades descontadas del compromiso nativo,
@@ -217,6 +226,9 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   ICdos vías[−3,903;9,372],4celdas mejores/0peores, sólo2/32semillas activas.
   Cambian16/256acciones; compartenW/L/Tpero sólo240/256acciones/rewards.
   Desempate selecciona both/front: **confirmación3.200corriendo desde07:57UTC**.
+  Actualización08:44: original completo pero noop inválido por hash del runtime;
+  nueva confirm19_fixedhash0corriendo, mismos agentes/muestra/gates. No usar
+  el bloque original para promoción ni relajar igualdad literal.
   Ocho mecanismos reproducen hashes/rewards/caja: frontahorra1508/941de trigo
   con igual cantidad y producción; half/bothalteran3WHEAT/3CARROTen un caso.
   Total76variantes competitivas construidas más2prototipos17detenidos.

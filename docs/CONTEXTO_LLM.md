@@ -13,8 +13,9 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 
 ## Índice y huellas de los documentos
 
-- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `92f4579c3d10ea80f0d01d7678d555b3c7b48621b7de687a30b437bbd23bd18c`
-- `docs/research/SCORECARDS_LOOP_2026-09-25.md` — SHA-256 `4a62e1b0af74b80da14c32e7cfe39b25e0d8eef28ea40fae603c1109ac775efd`
+- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `28909d5fb5e07a75ab5c8311c076668fe8e90ddad9b17ac768cd274bc81e05c6`
+- `docs/research/REPARACION_HASH_RUNTIME_2026-09-25.md` — SHA-256 `31eae1a445a120d27abb9cb46d7b79d9bff0902059a649d4eecf9acd26287b6d`
+- `docs/research/SCORECARDS_LOOP_2026-09-25.md` — SHA-256 `cad39961c2bcc6681d45b63e942196109bab518138d85c9bf39a5ea2e6471271`
 - `docs/research/PREREG_LOOP25_PANEL_CERCANO_2026-09-25.md` — SHA-256 `593e3b4f5507f93ade4055da758c87666a706b3f9c0152f9a681eb3a04db9f56`
 - `docs/research/SIMILITUD_RIVALES_2026-09-25.md` — SHA-256 `80bdd1e4c26375fb3599cbb3f12ca499d64a0093d97009d58cd944b3cbae1277`
 - `docs/research/FEEDBACK_0828_2026-09-25.md` — SHA-256 `cf976ee23c56488b84dacf642bf6941850216cc87128a1abeaed190ad171c5ac`
@@ -48,24 +49,24 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 - `docs/research/PREREG_LOOP17_BONUS_LIMITADO_2026-09-25.md` — SHA-256 `46047397849dc28aff3219271e693b26f34d89568e01c5b738e34a2d6439c812`
 - `docs/research/PREREG_LOOP18_PUBLICOS_0548_2026-09-25.md` — SHA-256 `b62919ee2ba7159129d08885c8b88430230c67218b7185e41d084b70208eac37`
 - `docs/research/PREREG_LOOP19_TRIGO_2026-09-25.md` — SHA-256 `a41092c53b6e7476a57aa015702b923959b7965f17471c2b25b5f39e07a72454`
-- `docs/research/TRIGO_REVENTA_2026-09-25.md` — SHA-256 `b60f455d221bb7b3480281b0fce18008cc0fd76cbd7f1aac08aa124876f7b5c9`
+- `docs/research/TRIGO_REVENTA_2026-09-25.md` — SHA-256 `cb9413a3e3e035ef4a6f7b7f1ea75dded155105b5edf16007b300c1096dceee9`
 - `docs/research/FUENTES_PUBLICAS_0548_2026-09-25.md` — SHA-256 `d0841f7cb1b02e1e179dfa841638bae1eac6c8aba33910aea878b18332a70d1b`
 - `docs/research/AUDITORIA_PERDIDAS_CAMPO_2026-09-25.md` — SHA-256 `ebc47150559215861e814a9a0f306155e01121994940277ebebdb4055dcb1ebb`
 - `docs/research/FUENTES_PUBLICAS_0400_2026-09-25.md` — SHA-256 `6618b2cc3e28935153ee5e8f6a60bc989a9663820473828cce90e6c40c6cd2b2`
-- `docs/research/IDEAS_VIVAS_2026-09-25.md` — SHA-256 `0347896a4282f3b9dab57458e17cb748e12e27bb1f0777e171db53aea7a41a97`
+- `docs/research/IDEAS_VIVAS_2026-09-25.md` — SHA-256 `19da81f8c2192c9ac538b7f9a431a9726f37b3e5af3f1f889b9030976dd488f1`
 - `docs/research/FEEDBACK_TOP3_2026-09-25.md` — SHA-256 `1b05c27fc6f3c9309f7d63a1b7d5ee39509bb0a7e475c2e4f6bb8668504e0a5d`
 - `docs/research/LIDER_Y_FUENTES_2026-09-25.md` — SHA-256 `f940d574bb7e3d43785ee31a100204a8c3a7c7587009f9fcbb02b1ef8df07daf`
 - `docs/research/DECISION_ENVIO_TOP3_2026-09-25.md` — SHA-256 `a17b15f6d0db894ec64c3dbd25ce08ac2553f25d2528682b129a1f4a779cbde6`
 - `docs/research/RESULTADOS_2026-09-25.md` — SHA-256 `98349e7d3065ae9fb91d396d089c4aa95f1841d5c8b844242add6ba3e8e6965c`
-- `docs/research/RESEARCH_BELIEFS.md` — SHA-256 `2702768714ab4aef4dcae4025fef7351cc90a568838db0981ecc23024c0d2c6c`
-- `docs/research/HARNESS_VS_LEADERBOARD.md` — SHA-256 `2cf4bcc5168322976ca7d6f31c7a62b85d92eead5771fbd86f321ce5b1ca0a0a`
-- `docs/research/SUBMISSION_HISTORY.json` — SHA-256 `801b359fd1d68e3305b53de6737045b3c7ce1f095cb44491257035ee8768a228`
+- `docs/research/RESEARCH_BELIEFS.md` — SHA-256 `d0ceca7890b23b1d949a0a9bf0b44cc090efd62731250bd0bebedda5a67d7909`
+- `docs/research/HARNESS_VS_LEADERBOARD.md` — SHA-256 `49b3cfbdb4cc97efbb3c4e31590d153bda48f3426b3d606c9a3bbbc66d246a05`
+- `docs/research/SUBMISSION_HISTORY.json` — SHA-256 `5c16ab6cc2104612e5feb744df44a821f86835e5018b939315a714ecd1ac423c`
 - `docs/research/PREREG_VQ_2026-09-24.md` — SHA-256 `7f4b6b42db6dbeeb3981cd0fa56fbf071f4b4f6eec121ceeb292b2b0ca6ebab5`
 - `docs/research/PREREG_ADV_2026-09-24.md` — SHA-256 `bed0700878535baaf11409f4dfef3364623943e5e42ecea44fb13b5ebcae4b58`
 - `docs/research/PREREG_FORECAST_GATE_2026-09-25.md` — SHA-256 `bf5dd9fbf03de91f1fbf95a557600d969b3c01f143f849271a827abc87cfd2be`
 - `docs/research/PREREG_PUBLIC_REFRESH_2026-09-25.md` — SHA-256 `bc60b8ef2b9580510782f1801bcac5e43f4f5c8524f9a39bd9a7c587812a12cc`
 - `docs/PROMPT_SEGUNDO_CEREBRO.md` — SHA-256 `e319f3917d23defc367804e464d3d13be14d21061eb2ca73fede8977d4f04c07`
-- `AGENTS.md` — SHA-256 `5e4a860c185ff64ec44e4df7333c635a2e0b55731ac8c85bad1f37e117787e00`
+- `AGENTS.md` — SHA-256 `4198320b223793bf552a388089057041cff9dbce95fea57661951871306ca6c1`
 - `docs/ESTADO_ACTUAL.md` — SHA-256 `cb368cef5250eede256fee3eecc4a6c87da87bf8644981c884ffff1a2ef01948`
 - `docs/RESULTADOS_LIDER_2026-09-14.md` — SHA-256 `efb3b4c09053f13d648e8019a7ba8363f68a24c234b04b4869754e82877c648b`
 - `docs/ANALISIS_LIDER_2026-09-14.md` — SHA-256 `63e3448307868dec34c5c67a697f052f4bc31b4437bc7781b4e702b1d234db53`
@@ -75,7 +76,7 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 - `docs/BRIEFING.md` — SHA-256 `450b8b70d8959deedb39a3907ab18ddb5715fa07c92cc24789f07fb4a581ef3d`
 - `docs/AUDITORIA_LLM.md` — SHA-256 `f5637e70de4bd1f6427f68b8d4bdfc43b914c16572f005a663a9c813e4a180f0`
 - `docs/METODO.md` — SHA-256 `f3dba1825cb10bc6c7d3a668da2c5220f8b198f83a8384a1af7732c55e3231c0`
-- `docs/IDEAS_Y_PRUEBAS.md` — SHA-256 `b9b99fca4db3e60c79be7a319d6916fd4f4c0391de1f55b97ebf589a102e5f28`
+- `docs/IDEAS_Y_PRUEBAS.md` — SHA-256 `88897345a01ea8d3b8782db03e5cbc3cbbd4a9d0caf9a56e89a69132a9bdbcb1`
 - `docs/RULES.md` — SHA-256 `068679a3a092baecf46c929f6c3f44d31ff3d2ab11be39323d3f59e6d526a268`
 - `docs/EXPERIMENTO_LOTES_SEMILLAS.md` — SHA-256 `9aa0937876ed4c4b47f3ae549fba9317af44d46ae478fe2ccdd67e366cb4e01d`
 - `docs/evidencia/lotes_semillas/README.md` — SHA-256 `7b4beb82362bb17bd01b39cec158c7596acd36c066ff0df5ff9bf025c0367e3d`
@@ -87,10 +88,19 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 
 # Estado de investigación — leer primero para continuar
 
-## Corte operativo 08:24 UTC
+## Corte operativo 08:44 UTC — confirmación repetida por control inválido
 
 Piloto19completo: tres variantes+2,734375pp, señal en2/32semillas; ambas
-seleccionadas (both/front) en confirmación3.200desde07:57UTC.20–24validados y
+seleccionadas (both/front). Originalconfirm19cerró3.200pero FALLÓnoop: cuatro
+hashes rivales distintos, mismasacciones propias/rewards. Se conserva inválido.
+48reproducciones aislaron orden de set dependiente de PYTHONHASHSEED; todos
+los720estados económicos comparados coinciden, fuentes externas intactas.
+Nueva **confirm19_fixedhash0**corre desde08:43UTC, mismas3.200celdas/gates,
+runtime fijo y registrado; no es otra confirmación independiente ni suma N.
+Seis partidas técnicas/noop2exacto comprobaron el arreglo. Los seis waiters
+20–25anteriores terminaron por cascada y se reiniciaron con logs nuevos; no
+hubo partidas20–25antes del fallo. Leer `REPARACION_HASH_RUNTIME_2026-09-25.md`.
+20–24validados y
 en cola; un solo torneo grande, no duplicar.89variantes construidas más2
 prototipos17detenidos. Adelanto24compra antes y permite ventas más tempranas:
 36juegos/noop8.628/64llenados,4.480unidades descontadas del compromiso nativo,
@@ -304,6 +314,9 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   ICdos vías[−3,903;9,372],4celdas mejores/0peores, sólo2/32semillas activas.
   Cambian16/256acciones; compartenW/L/Tpero sólo240/256acciones/rewards.
   Desempate selecciona both/front: **confirmación3.200corriendo desde07:57UTC**.
+  Actualización08:44: original completo pero noop inválido por hash del runtime;
+  nueva confirm19_fixedhash0corriendo, mismos agentes/muestra/gates. No usar
+  el bloque original para promoción ni relajar igualdad literal.
   Ocho mecanismos reproducen hashes/rewards/caja: frontahorra1508/941de trigo
   con igual cantidad y producción; half/bothalteran3WHEAT/3CARROTen un caso.
   Total76variantes competitivas construidas más2prototipos17detenidos.
@@ -780,12 +793,97 @@ efectos ≥ ~7 puntos. Buscar cambios GRANDES, no micro.
 
 ---
 
+## SOURCE: docs/research/REPARACION_HASH_RUNTIME_2026-09-25.md
+
+# Reparación de reproducibilidad tras confirm19
+
+El bloque original terminó3.200episodios a las08:35UTC, todos válidos para el
+motor, pero el verificador estricto rechazó cuatro de832comparaciones noop:
+hybu/asiento0, tds/ambos y hl25/asiento0, siempre semilla1047024. Sólo difiere
+el hash de acciones RIVAL; las acciones propias, rewards, estados terminales
+reportados, número de pasos y W/L/T coinciden entre base/noop.
+
+El pipeline se detuvo, propagando el fallo a los seis runners pendientes20–25.
+Se comprobó la terminación de todos antes de cualquier reinicio. No comenzaron
+partidas20–25. Se conserva `confirm19` completo, el primer diagnóstico y el
+estado de fallo. No se ejecutó selección sobre sus deltas ni se cambia el gate.
+
+Sonda registrada48juegos: tres rivales afectados, ambos asientos, dos réplicas
+por combinación, PYTHONHASHSEED0/1/2/3 en procesos separados. Reproduce ambos
+hashes originales de las cuatro discrepancias. Las dos réplicas de cada hash
+coinciden; entre hashes, las seis celdas conservan acciones propias, rewards y
+los **720estados económicos de `compact_state`** comparados por digest. La única
+diferencia rival se ubica en466paraHybu y465paraTDS/HL: orden de ventas de
+MILK/WOOL. Esto identifica el mecanismo en estas celdas, no garantiza que toda
+permutación de órdenes sea inocua ni que todo código externo sea determinista.
+
+Dos juegos adicionales perfilan los retornos del agente Hybu en466, hashes0/2:
+primera diferencia en `_v12_advance` (línea7861), orden generado por
+`sorted({item ...}, key=lambda name: -int(prices.get(name, 0)))` en7900.
+El precio no desempata nombres con la misma cotización; `set` hereda el orden
+del hash del proceso. TDS6949/HL6952 contienen el mismo patrón. Las capas
+posteriores cambian otra vez la cola; la diferencia emitida final es la
+permutaciónMILK/WOOL descrita arriba. Fuentes externas intactas.
+
+## Decisión fijada antes de la nueva ejecución
+
+El control original sigue incumpliendo igualdad literal. No se borra la acción
+distinta ni se relaja `validar_torneo.py` para darlo por aprobado. Se repetirá
+**toda** la confirmación registrada con runtime fijo bajo el nombre nuevo
+`confirm19_fixedhash0`: mismas fuentes, base/noop, dos candidatas, once rivales,
+32semillas1047000–031 y ambos asientos;3.200episodios. No es una confirmación
+estadística adicional ni una ampliación de muestra: reemplaza la medición
+invalidada. La selección del piloto19y gates≥3pp/peor rival≥−20se conservan.
+
+Antes de arrancar se fija PYTHONHASHSEED=0 para el proceso del torneo y todos
+sus workers mediante el entorno del lanzador común. `torneo.py` registra
+versión de Python, método de multiprocessing, semilla de hash y hash testigo
+de WHEAT en proceso padre y cada episodio. El verificador exige coherencia de
+ese entorno cuando esos nuevos campos existen, además de los controles
+literales previos. Los agentes quedan byte por byte iguales.
+
+Verificación técnica previa: torneo `runtime_fixed_smoke`, seis episodios con
+base/noop/Hybu en1047024, ambos asientos y dos workers. Completo, noop2/2exacto,
+cero errores; proceso padre y todos los workers registran hashseed0y el mismo
+testigo8460755321718155249. No se usa su puntuación para elegir una política.
+Dos copias temporales con hashseed/testigo alterados fueron rechazadas por el
+verificador. También se comprobó que el confirm19original sigue rechazado:
+la reparación no debilitó noop. `runtime_guard_checks.json`, cero juegos nuevos.
+
+La misma configuración se aplica prospectivamente a20–25, aún sin partidas.
+No cambian sus brazos, rivales, semillas ni reglas. Sus fuentes, manifiestos y
+preregistros anteriores se conservan; esta nota es la adenda de runtime común.
+Una sola confirmación grande, seguida de la cola anterior. Runners nuevos con
+logs separados; no duplicar procesos antiguos ni reutilizar el prefijo original.
+
+Los resultados serán condicionales a ese runtime. Antes de enviar una futura
+candidata, comprobar sensibilidad a hashes alternativos en celdas de mecanismo
+y daño; un cambio de mercado puede ser relevante en otros contextos. No basta
+haber encontrado aquí permutaciones económicamente neutras.
+
+Evidencia: `confirm19.control_failure.json`, `confirm19.pipeline_failure.json`,
+`confirm19.noop_probe.plan.json`, `.results.json`, `confirm19_hash0–3.*`, y
+sonda de localización `confirm19.order_origin.*`, bajo
+`docs/evidencia/loop_publicos_20260925/`.
+
+
+
+---
+
 ## SOURCE: docs/research/SCORECARDS_LOOP_2026-09-25.md
 
 # Scorecards del loop continuo — 2026-09-25 UTC
 
-Estado08:24UTC:pilotos1–16/18/19y confirm1/5/7/8/10/13completos; confirm19corre.
+Estado08:44UTC:pilotos1–16/18/19y confirm1/5/7/8/10/13completos.
+Confirm19original completo pero INVÁLIDO por cuatro noops de hash rival.
+Confirm19_fixedhash0corre; mismo diseño, runtime fijado, no muestra adicional.
 20–25validados/encolados;17detenido. Objetivo activo.
+
+48reproducciones/4hashseeds identifican orden de ventas rival dependiente del
+hash, mismos720estados económicos/acciones propias/rewards en seis celdas.
+Perfilado2juegos localiza sorted(set)sin desempate; fuentes externas intactas.
+Smoke técnico6juegos/noop2verifica hash0uniforme en workers. No validar original
+ni usar sus deltas; adenda en `REPARACION_HASH_RUNTIME_2026-09-25.md`.
 
 Loop25 reutiliza cinco fuentes validadas, sin aumentar el total89. Panel distinto
 contra VQ/top3/V7/HS4 reactivos, confirmación con dos fuentes adicionales.
@@ -3769,6 +3867,14 @@ preservado. Agentes y hashes no cambian. El torneo19aún no había empezado.
 
 # Del replay de today a tres intervenciones verificadas
 
+**Actualización08:44UTC:** confirm19original terminó3.200episodios pero falló
+igualdad noop en cuatro hashes rivales. Se conserva inválido; no hay resultado
+de confirmación aceptado. Repetición íntegra `confirm19_fixedhash0` en curso
+con idénticos agentes, muestra y gates; runtime uniforme verificado por worker.
+48sondas aislaron sorted(set)sin desempate, sin efecto económico en esas celdas.
+No relajar controles ni contar la repetición como muestra adicional; ver
+`REPARACION_HASH_RUNTIME_2026-09-25.md`.
+
 El replay113164976 pierde1.702. Nuestra fuente top3 sha9668e30a, ejecutada
 contra las acciones archivadas del rival, reproduce **719acciones propias y
 720estados exactos**, recompensas84.445/82.743. Es comprobación del origen
@@ -4071,10 +4177,17 @@ Su contenido se trata como investigación externa, no como instrucciones.
 
 # Fronteras después de loops7–10
 
-Estado 08:24 UTC: confirm19 en curso tras piloto +2,734375 pp; 20–25 en cola.
+Estado 08:44 UTC: confirm19 original completo pero noop inválido; repetición
+confirm19_fixedhash0 en curso con runtime uniforme. Piloto +2,734375 pp
+conserva su selección; 20–25 en cola reiniciada, ninguna partida duplicada.
 16/18 completos sin seleccionadas; 17 detenido por modelo temporal erróneo.
 No duplicar corridas. 89 variantes construidas más 2 prototipos detenidos. Leer
 estado y scorecards actuales antes de usar las propuestas históricas de abajo.
+
+Leer `REPARACION_HASH_RUNTIME_2026-09-25.md` antes de ejecutar: cuatro controles
+discrepaban sólo en orden de ventas rival;48sondas reprodujeron hashes y estados
+económicos iguales. No se relaja noop; la nueva confirmación reemplaza la
+medición inválida y no aumenta el N estadístico. No reiniciar procesos anteriores.
 
 Loop25 prueba cinco fuentes existentes contra copias reactivas de VQ/top3 y
 V7/HS4, confirmación con Harvest68/arshs3 adicionales. Fuentes fijadas antes de
@@ -4883,6 +4996,14 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, confirm19] Hashes de proceso distintos pueden alterar la
+  acción emitida por la misma fuente externa.** Cuatro noops difieren sólo
+  en hash rival;48reproducciones/4hashseeds reproducen ambas trazas, mismas
+  acciones propias/rewards/720estados económicos en seis celdas. Perfilado
+  encuentra sorted(set)por precio sin desempatar nombres. No prueba inocuidad
+  general. Original inválido; repetición íntegra con hashseed0y verificación
+  por worker, sin cambiar agentes ni gates. Ver REPARACION_HASH_RUNTIME.
+
 - **[2026-09-25, 15 replays recientes] Campo parecido puede coexistir con
   mercados distintos.** Mediana de igualdad del vector completo de órdenes
   de campo99,17%, mercado activo71,27%. Comparar sólo comandos emparejados
@@ -5166,6 +5287,13 @@ Top3sobreVQ confirmó+10,795pp local (ICdos vías[−0,115;21,706]) y se envió
 validación. No es comparación causal ni rankings sincronizados por edad/rivales.
 Los conteos y lecturas fechadas están en SUBMISSION_HISTORY. La ventaja local
 todavía no demuestra superioridad real; no redefinir el gate según estos ratings.
+
+Confirm19original fue invalidado por cuatro controles de acciones rivales,
+aunque caja y acciones propias coinciden.48reproducciones aíslan hashseeddel
+proceso y sorted(set)sin desempate. Desde la repeticiónconfirm19_fixedhash0y
+los bloques20–25se fija y registra hashseed0en proceso y workers. Es una condición
+del runtime local, no prueba de invariancia de esas fuentes en Kaggle. Mantener
+controles literales y revisar hashes alternativos antes de otro envío.
 
 Ocho replays posteriores seleccionados por recencia (cuatro por fuente):
 los códigos enviados reproducen719acciones/720estados exactos. Contrafactual
@@ -5877,7 +6005,7 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
     "delta_vs_champion_ladder": null,
     "observed": "COMPLETE, snapshot 2026-09-25T08:27:46.340961+00:00: score2292.9, 92 episodios listados (incluye validaci\u00f3n). Ratings no son comparaci\u00f3n causal. Tres replays nuevos0828 reproducen719acciones/720estados exactos; muestra por recencia, no WRglobal.",
     "conclusion": "REAL_WORLD_CANDIDATE; ventaja local espec\u00edfica contra copias, sin promoci\u00f3n autom\u00e1tica",
-    "next_action": "Confirm19corriendo;20\u201325encolados. Panel25separado contra copias reactivas VQ/top3y fuentes recientes, sin alterar bloques19\u201324. Revisar ambos controles y riesgo de desplazarVQantes de un nuevo env\u00edo justificado.",
+    "next_action": "Confirm19original inv\u00e1lido por cuatro hashes rivales noop; repetici\u00f3n confirm19_fixedhash0 en curso, mismas fuentes/semillas/gates.20\u201325encolados con runtime uniforme. Revisar ambos controles y sensibilidad de hash antes de otro env\u00edo que desplazar\u00edaVQ.",
     "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0828.json"
   },
   {
@@ -6077,7 +6205,7 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
     },
     "observed": "COMPLETE, snapshot 2026-09-25T08:27:46.340961+00:00: score2103.4, 81 episodios listados (incluye validaci\u00f3n). Ratings no son comparaci\u00f3n causal. Tres replays nuevos0828 reproducen719acciones/720estados exactos; muestra por recencia, no WRglobal.",
     "conclusion": "REAL_WORLD_CANDIDATE; no CHAMPION",
-    "next_action": "Confirm19corriendo;20\u201325encolados. Panel25separado contra copias reactivas VQ/top3y fuentes recientes, sin alterar bloques19\u201324. Revisar ambos controles y riesgo de desplazarVQantes de un nuevo env\u00edo justificado.",
+    "next_action": "Confirm19original inv\u00e1lido por cuatro hashes rivales noop; repetici\u00f3n confirm19_fixedhash0 en curso, mismas fuentes/semillas/gates.20\u201325encolados con runtime uniforme. Revisar ambos controles y sensibilidad de hash antes de otro env\u00edo que desplazar\u00edaVQ.",
     "replaces_submission": 56511619,
     "preserves_submission": 56535264,
     "evidence": "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",
@@ -6441,7 +6569,14 @@ half−12,5pp(inconcluso), double−26,5625, keep_sheep−50,78125, all−64,843
 night/24−12,5pp(inconcluso),48/all24inertes128/128; ninguna seleccionada.
 16terminó2.496/noop512: todas REJECTED.18terminó704/noop192:V7−21,875pp
 (inconcluso), HS4−30,46875(REJECTED), ninguna seleccionada. Piloto19cerró+2,734375pp las tres variantes; confirm19corre desde07:57UTC,
-3.200juegos/bothyfront.20–25en cola. Loop25congela cinco fuentes existentes
+3.200juegos/bothyfront. **Actualización08:44UTC:confirm19original quedó inválido
+por cuatro hashes rivales noop; misma caja/acciones propias.48reproducciones
+localizan sorted(set)sin desempate y estados económicos idénticos. Corre
+`recuperar_confirm19.py` → `confirm19_fixedhash0`, misma muestra/gates, runtime0.
+No reiniciar runner19viejo ni relajar controles.20–25waiters reiniciados una vez
+tras verificar salida de todos, con logs `_fixedhash_0843.log`.**
+Leer `docs/research/REPARACION_HASH_RUNTIME_2026-09-25.md`.
+Loop25congela cinco fuentes existentes
 contra VQ/top3/V7/HS4; confirmación agrega Harvest68/arshs3, sin modificar
 paneles anteriores. Leer preregistro25; no depende de ganadores19–24.
 Doce diagnósticos validan reducción de pérdidas,
@@ -7859,7 +7994,10 @@ piloto12 terminó sin seleccionadas. Confirm13 terminó delta0 pese a
 107/86acciones distintas; no enviar. Piloto14sin seleccionadas: dar más alimento
 perjudica en este panel.15sin seleccionadas: reserva de caja no garantiza
 conversión rentable.16terminócon cuatro REJECTED;18sin seleccionadas. Confirm19corre tras+2,734375ppdel piloto;
-20–25en cola.23valida suministro del peón ovino adicional, omitido por
+Originalconfirm19terminópero quedó inválido por hash rival noop; ahora corre
+confirm19_fixedhash0con mismos agentes/semillas/gates.48sondas identifican
+sorted(set)sin desempate, runtime0fijado para bloques nuevos.20–25en cola
+reiniciada; ver adendaREPARACION_HASH_RUNTIME.23valida suministro del peón ovino adicional, omitido por
 la guarda de retiros nativos:48desarrollos/noop8.628/max327ms. ContraV7recupera
 24lanas pero conserva derrota; piloto32semillas pendiente. No repetir alimentación indiscriminada14. Loop21modera señales extra
 del forecast, con VQcomo control y rivales nuevos. Loop20validó146compras/cierres. Loop17

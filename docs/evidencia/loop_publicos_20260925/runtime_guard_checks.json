@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "new_simulations": 0,
+  "checks": {
+    "reject_wrong_python_hash_seed": true,
+    "reject_wrong_wheat_hash": true,
+    "original_strict_noop_still_rejected": true
+  },
+  "validator_sha256": "44798938fd528b527c9d5753d3437b9fcab788a343e7c0a3201c131bc96db2f6"
+}

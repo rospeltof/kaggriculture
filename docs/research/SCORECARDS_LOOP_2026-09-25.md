@@ -1,7 +1,15 @@
 # Scorecards del loop continuo — 2026-09-25 UTC
 
-Estado08:24UTC:pilotos1–16/18/19y confirm1/5/7/8/10/13completos; confirm19corre.
+Estado08:44UTC:pilotos1–16/18/19y confirm1/5/7/8/10/13completos.
+Confirm19original completo pero INVÁLIDO por cuatro noops de hash rival.
+Confirm19_fixedhash0corre; mismo diseño, runtime fijado, no muestra adicional.
 20–25validados/encolados;17detenido. Objetivo activo.
+
+48reproducciones/4hashseeds identifican orden de ventas rival dependiente del
+hash, mismos720estados económicos/acciones propias/rewards en seis celdas.
+Perfilado2juegos localiza sorted(set)sin desempate; fuentes externas intactas.
+Smoke técnico6juegos/noop2verifica hash0uniforme en workers. No validar original
+ni usar sus deltas; adenda en `REPARACION_HASH_RUNTIME_2026-09-25.md`.
 
 Loop25 reutiliza cinco fuentes validadas, sin aumentar el total89. Panel distinto
 contra VQ/top3/V7/HS4 reactivos, confirmación con dos fuentes adicionales.

@@ -50,7 +50,14 @@ half−12,5pp(inconcluso), double−26,5625, keep_sheep−50,78125, all−64,843
 night/24−12,5pp(inconcluso),48/all24inertes128/128; ninguna seleccionada.
 16terminó2.496/noop512: todas REJECTED.18terminó704/noop192:V7−21,875pp
 (inconcluso), HS4−30,46875(REJECTED), ninguna seleccionada. Piloto19cerró+2,734375pp las tres variantes; confirm19corre desde07:57UTC,
-3.200juegos/bothyfront.20–25en cola. Loop25congela cinco fuentes existentes
+3.200juegos/bothyfront. **Actualización08:44UTC:confirm19original quedó inválido
+por cuatro hashes rivales noop; misma caja/acciones propias.48reproducciones
+localizan sorted(set)sin desempate y estados económicos idénticos. Corre
+`recuperar_confirm19.py` → `confirm19_fixedhash0`, misma muestra/gates, runtime0.
+No reiniciar runner19viejo ni relajar controles.20–25waiters reiniciados una vez
+tras verificar salida de todos, con logs `_fixedhash_0843.log`.**
+Leer `docs/research/REPARACION_HASH_RUNTIME_2026-09-25.md`.
+Loop25congela cinco fuentes existentes
 contra VQ/top3/V7/HS4; confirmación agrega Harvest68/arshs3, sin modificar
 paneles anteriores. Leer preregistro25; no depende de ganadores19–24.
 Doce diagnósticos validan reducción de pérdidas,

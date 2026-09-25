@@ -1,9 +1,16 @@
 # Fronteras después de loops7–10
 
-Estado 08:24 UTC: confirm19 en curso tras piloto +2,734375 pp; 20–25 en cola.
+Estado 08:44 UTC: confirm19 original completo pero noop inválido; repetición
+confirm19_fixedhash0 en curso con runtime uniforme. Piloto +2,734375 pp
+conserva su selección; 20–25 en cola reiniciada, ninguna partida duplicada.
 16/18 completos sin seleccionadas; 17 detenido por modelo temporal erróneo.
 No duplicar corridas. 89 variantes construidas más 2 prototipos detenidos. Leer
 estado y scorecards actuales antes de usar las propuestas históricas de abajo.
+
+Leer `REPARACION_HASH_RUNTIME_2026-09-25.md` antes de ejecutar: cuatro controles
+discrepaban sólo en orden de ventas rival;48sondas reprodujeron hashes y estados
+económicos iguales. No se relaja noop; la nueva confirmación reemplaza la
+medición inválida y no aumenta el N estadístico. No reiniciar procesos anteriores.
 
 Loop25 prueba cinco fuentes existentes contra copias reactivas de VQ/top3 y
 V7/HS4, confirmación con Harvest68/arshs3 adicionales. Fuentes fijadas antes de

@@ -1,5 +1,13 @@
 # Del replay de today a tres intervenciones verificadas
 
+**Actualización08:44UTC:** confirm19original terminó3.200episodios pero falló
+igualdad noop en cuatro hashes rivales. Se conserva inválido; no hay resultado
+de confirmación aceptado. Repetición íntegra `confirm19_fixedhash0` en curso
+con idénticos agentes, muestra y gates; runtime uniforme verificado por worker.
+48sondas aislaron sorted(set)sin desempate, sin efecto económico en esas celdas.
+No relajar controles ni contar la repetición como muestra adicional; ver
+`REPARACION_HASH_RUNTIME_2026-09-25.md`.
+
 El replay113164976 pierde1.702. Nuestra fuente top3 sha9668e30a, ejecutada
 contra las acciones archivadas del rival, reproduce **719acciones propias y
 720estados exactos**, recompensas84.445/82.743. Es comprobación del origen
