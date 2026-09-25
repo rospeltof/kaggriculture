@@ -144,3 +144,29 @@ Snapshot posterior04:30:35UTC:top32022,5/46episodios listados y VQ2288,2/69,
 ambas COMPLETE. Incluyen validación. Sin nuevo muestreo de replays en esta
 consulta ni inferencia causal entre sus ratings; ficheros sufijo0431 con
 metadatos de hora real.
+
+## Consulta05:13UTC y cuatro partidas recientes
+
+Top356537205:2068,8/58episodios listados;VQ56535264:2287,2/81, ambasCOMPLETE.
+El sufijo0515es una etiqueta; la consulta real empezó05:13:31UTC. Incluyen
+validación. No es un experimento pareado entre submissions ni prueba de que
+la ventaja local se traduzca al ladder.
+
+Cuatro episodios fijados por endTime/id antes de leer rewards, todos públicos
+y completados; plan `top3_feedback_0515.plan.json`. Reconstrucción exacta de
+720estados cada uno y flujo de caja conciliado; originales comprimidos en
+`top3_feedback_0515.replays.tgz`. Cero escapes propios y stock terminal0.
+
+| Episodio | Rival | Margen propio |
+|---:|---|---:|
+|113155577|Aderian Setiawan|+823|
+|113154362|ShadowT_T|+240|
+|113153102|xsong2020|+1.480|
+|113151865|Aleix López|+971|
+
+Cuatro victorias de una ventana temporal corta; no estimador del WR global ni
+de fuerza vsVQ. En113151865ambos venden idénticas cantidades de cada producto
+y pagan mismos jornales; cobro de fresa20.537vs19.535explica gran parte de la
+diferencia, compensada por otros flujos. En otras partidas hay diferencias de
+cantidades; no atribuir toda victoria a forecast. Sin nuevos fallos mecánicos
+observados en esos cuatro; mantener investigación con rivales/contextos nuevos.

@@ -1,7 +1,7 @@
 # Scorecards del loop continuo — 2026-09-25 UTC
 
-Estado: pilotos1–7, confirm1/5 terminados; confirm7 corriendo;
-loops8/9 validados y encolados. Objetivo persistente activo.
+Estado05:17UTC: pilotos1–10 y confirm1/5/7/8/10 completos; piloto11 corriendo.
+Loops12–15 validados y encolados. Objetivo persistente activo.
 
 ## Confirmación disjunta terminada
 
@@ -457,3 +457,77 @@ Piloto1.248 encolado detrás de loop12, fuentev2 congelada.
 Snapshot real04:30:35UTC:top32022,5/46episodios listados;VQ2288,2/69,
 ambasCOMPLETE. Incluyen validación. Ficheros sufijo0431 con hora real en
 metadatos. No envío nuevo ni declaración de superioridad causal.
+
+## Piloto10 completo y financiación de alimento
+
+1.920episodios, noop320/320, cero errores. Base88,28125%. Cada pareja D3/D6
+es idéntica en acciones propias/rivales y rewards128/128; no son réplicas.
+
+| Configuración (ambas fechas) | Delta pp | IC95 dos vías | Celdas mejores/peores | Acción cambia /128 |
+|---|---:|---|---|---:|
+| y2_m100 | +2,34375 | [−4,57;9,26] | 2/0 | 8 |
+| y1_m100 | −8,59375 | [−32,30;15,11] | 2/7 | 32 |
+| y1_m500 | −2,34375 | [−18,95;14,26] | 2/3 | 24 |
+
+Y2activa sólo1018011. Las dos fechas seleccionadas por regla previa van a
+confirm10 (1.600,1019000–015), desde04:52:36UTC. No intercambiar brazos tras
+observar equivalencia ni presentar ocho celdas como ocho mundos independientes.
+
+Mecanismo positivo reproducido hybu/1018011/asiento1: compras173/178,
+SHEEP17→19/COW6→4, lana410→459, leche166→121, cero escapes, margen−355→+6.895.
+Mecanismo adverso ars40/1018001/asiento0, y1_m100: mismos dos swaps, lana254→283
+pero leche164→44, margen+1.037→−22.858. Tiendas idénticas, caja conciliada.
+La auditoría física encuentra tres vacas escapadas239 sólo en candidato.
+
+Cadena de financiación verificada: gasto extra200; antes de191 caja220→20,
+ambos piden WHEAT8 y reciben7→0. En194/197/218/222/226, el actor base dispone
+de5/4/5/4/3trigos y el candidato0. Tres vacas pasan dos noches sin alimento y
+escapan239. No reducir este resultado a saturación de lana. Evidencia:
+`pilot10.physical_audit.json`, `pilot10.funding_failure.json` y replays archivados.
+La próxima política requerirá reservar insumos futuros; confirm10 queda intacta.
+
+## PASS productivos y loop14 alimentación
+
+Ocho replays previamente fijados por recencia,720estados exactos cada uno y
+caja conciliada. Auditar antes del refresh elimina falsos huecos de trabajo
+que otros actores completan después. Entre esas oportunidades no quedan CARE
+útiles omitidos;60huecos WATER no mejoran yield inmediato/próximo amanecer ni
+evitan muerte esa noche. No generalizar a rutas mejores o efectos posteriores.
+261huecos FEED sí existen, pero pueden ser ahorro intencional del filtro nativo.
+
+Loop14 abla esa valoración:0,5/2,5frente a1,25, conservar todo FEED ovino o
+todo FEED nativo.36juegos en3mundos/ambos asientos, noop4.314turnos exactos,
+max271ms, cero errores/escapes/stock terminal; todas activan en los3mundos.
+Cada FEED aceptado consume1trigo según motor, cosechas también medidas. En
+1030000, leche242→228/256/266 con half/double/all. Cantidad no equivale a
+beneficio. Piloto1.248(1031000–015) encolado tras loop13; confirmación condicional
+1032000–015. Fuentes y ledgers congelados antes del piloto.
+
+## Confirm10 completa: contexto raro sin activación
+
+1.600episodios, noop416/416, cero errores, cobertura/fuentes verificadas. Ambas
+y2 conservan acciones propias/rivales352/352contra11rivales; delta0, ICdos vías
+indefinido. No envío ni rechazo universal del mecanismo: no se activó aquí.
+Piloto11 arrancó05:11:34UTC,1.920episodios/32semillas, biblioteca reciente.
+
+Snapshot real05:13:31UTC:top32068,8/58episodios listados yVQ2287,2/81,
+ambasCOMPLETE. Incluyen validación. Fuentes sufijo0515; no atribuir diferencia
+de ratings a causalidad ni cambiar agente base de los bloques ya registrados.
+
+## Loop15: reserva de caja para insumos próximos
+
+Cuatro nuevas políticas reservan compras programadas de alimento hasta cierre,
+24/48turnos, o todas las obligaciones24turnos. Costes visibles con colchón,
+sin ingresos futuros acreditados; no es una simulación exacta de acciones
+adaptativas futuras. Control antiguo y1_m100 se incluye sólo para atribución.
+
+42juegos completos, noop4.314turnos exactos, máximo293,94ms, cero errores y
+stock terminal0. El caso adverso reproduce compra191=0 y tres escapes en
+antigua, frente a7compras/0escapes en base. Night convierte una vaca, compra
+4trigos/0escapes; no financia todo el pedido8. Las otras tres conservan base.
+En el solvente, night/24convierten ambas vacas y compran8trigos, sin escapes;
+48/all24inertes allí. Nuevo1033000noactiva ninguna. No seleccionar por rewards.
+
+Fuentes/ledgers congelados, `cash_validation.json` aprobada. Piloto1.568
+(1034000–015) encolado tras14, control antiguo excluido de promoción;
+confirmación1035000–015. Total67variantes competitivas distintas construidas.

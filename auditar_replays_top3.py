@@ -1,6 +1,7 @@
 """Exact accepted transactions from the four replays selected by recency."""
 from collections import defaultdict
 from copy import deepcopy
+import argparse
 import gzip
 import json
 from pathlib import Path
@@ -11,9 +12,10 @@ from sonda_fallo_forecast import run
 OUT = Path('docs/evidencia/loop_publicos_20260925')
 
 
-def main():
-    summaries = json.loads((OUT / 'top3_real_diagnostics_0234.json').read_text())
-    output = OUT / 'top3_accepted_transactions_0234.json'
+def main(summaries_path=None, output=None):
+    summaries_path = summaries_path or OUT / 'top3_real_diagnostics_0234.json'
+    summaries = json.loads(Path(summaries_path).read_text())
+    output = Path(output) if output else OUT / 'top3_accepted_transactions_0234.json'
     if output.exists():
         raise FileExistsError(output)
     for row in summaries:
@@ -45,4 +47,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--summaries')
+    parser.add_argument('--out')
+    args = parser.parse_args()
+    main(args.summaries, args.out)

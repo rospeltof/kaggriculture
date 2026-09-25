@@ -1,0 +1,16 @@
+{
+  "cow_d3_y2_m100": {
+    "pool_episodes": 352,
+    "own_action_hash_changed": 0,
+    "opponent_action_hash_changed": 0,
+    "changed_seeds": [],
+    "changed_cells": []
+  },
+  "cow_d6_y2_m100": {
+    "pool_episodes": 352,
+    "own_action_hash_changed": 0,
+    "opponent_action_hash_changed": 0,
+    "changed_seeds": [],
+    "changed_cells": []
+  }
+}

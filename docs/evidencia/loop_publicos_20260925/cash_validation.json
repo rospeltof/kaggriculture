@@ -1,0 +1,3508 @@
+{
+  "passed": true,
+  "development_games": 42,
+  "noop_exact_turns": 4314,
+  "candidate_hashes": {
+    "cash_food_night": "60d8ad69567fc541dcd0d2ff21c26cda944a07e16fdd4e1c18e27eff923b01df",
+    "cash_food_24": "57bb9a03dad3d177db4f52c8dd7a28c15512c0677864c2ea8230b9425eb5558f",
+    "cash_food_48": "bbc04390907dc59210bbf49cf3ea4f942a5f70ba95e5ad6948ea0982aefbbeef",
+    "cash_all_24": "bd7ab4df304baa49fe01192597fb3d1646de9838847c1412224f48e9a002a89c"
+  },
+  "legacy_hash": "c5feb3ddf0c508b9cbbd19aa829dd9d8ba0cf71d1b0f80e1fe4bc29bd9b85b9a",
+  "max_turn_ms": 293.93324998090975,
+  "note": "Development confirms implementation and describes funding/escapes; no competitive promotion from these worlds.",
+  "summary": [
+    {
+      "seed": 1018001,
+      "seat": 0,
+      "arm": "legacy",
+      "changed_action_turns": 163,
+      "early_swaps": [
+        {
+          "step": 173,
+          "yarn": 1,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "yarn": 1,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "wheat_bought_191": 0,
+      "feed_accepted": 274,
+      "same_shops": true,
+      "escapes": [
+        {
+          "step": 239,
+          "xy": [
+            4,
+            2
+          ],
+          "animal": "COW"
+        },
+        {
+          "step": 239,
+          "xy": [
+            4,
+            3
+          ],
+          "animal": "COW"
+        },
+        {
+          "step": 239,
+          "xy": [
+            4,
+            4
+          ],
+          "animal": "COW"
+        }
+      ]
+    },
+    {
+      "seed": 1018001,
+      "seat": 0,
+      "arm": "cash_food_night",
+      "changed_action_turns": 76,
+      "early_swaps": [
+        {
+          "step": 173,
+          "yarn": 1,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "step": 173,
+          "end": 191,
+          "margin": 404.0,
+          "money": 928.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "end": 191,
+          "margin": 404.0,
+          "money": 764.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            }
+          ]
+        }
+      ],
+      "wheat_bought_191": 4,
+      "feed_accepted": 320,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018001,
+      "seat": 0,
+      "arm": "cash_food_24",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [
+        {
+          "step": 173,
+          "end": 197,
+          "margin": 518.0,
+          "money": 928.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "end": 202,
+          "margin": 556.0,
+          "money": 864.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            }
+          ]
+        }
+      ],
+      "wheat_bought_191": 7,
+      "feed_accepted": 324,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018001,
+      "seat": 0,
+      "arm": "cash_food_48",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [
+        {
+          "step": 173,
+          "end": 221,
+          "margin": 1050.0,
+          "money": 928.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 207,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 214,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 215,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                9
+              ],
+              "cost": 342.0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "end": 226,
+          "margin": 1050.0,
+          "money": 864.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 207,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 214,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 215,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                9
+              ],
+              "cost": 342.0
+            }
+          ]
+        }
+      ],
+      "wheat_bought_191": 7,
+      "feed_accepted": 324,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018001,
+      "seat": 0,
+      "arm": "cash_all_24",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [
+        {
+          "step": 173,
+          "end": 197,
+          "margin": 2446.0,
+          "money": 928.0,
+          "obligations": [
+            {
+              "step": 177,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 178,
+              "order": [
+                "BUY_ANIMAL",
+                "COW",
+                1
+              ],
+              "cost": 400
+            },
+            {
+              "step": 180,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 181,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                3
+              ],
+              "cost": 30
+            },
+            {
+              "step": 183,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 184,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                1
+              ],
+              "cost": 10
+            },
+            {
+              "step": 186,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 2
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 3
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 5
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 8
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 13
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 21
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 195,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 34
+            },
+            {
+              "step": 196,
+              "order": [
+                "BUY_ANIMAL",
+                "SHEEP",
+                2
+              ],
+              "cost": 1000
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "end": 202,
+          "margin": 2184.0,
+          "money": 864.0,
+          "obligations": [
+            {
+              "step": 180,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 181,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                3
+              ],
+              "cost": 30
+            },
+            {
+              "step": 183,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 184,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                1
+              ],
+              "cost": 10
+            },
+            {
+              "step": 186,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 2
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 3
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 5
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 8
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 13
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 21
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 195,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 34
+            },
+            {
+              "step": 196,
+              "order": [
+                "BUY_ANIMAL",
+                "SHEEP",
+                2
+              ],
+              "cost": 1000
+            },
+            {
+              "step": 199,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            }
+          ]
+        }
+      ],
+      "wheat_bought_191": 7,
+      "feed_accepted": 324,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018001,
+      "seat": 1,
+      "arm": "legacy",
+      "changed_action_turns": 163,
+      "early_swaps": [
+        {
+          "step": 173,
+          "yarn": 1,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "yarn": 1,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "wheat_bought_191": 0,
+      "feed_accepted": 274,
+      "same_shops": true,
+      "escapes": [
+        {
+          "step": 239,
+          "xy": [
+            4,
+            2
+          ],
+          "animal": "COW"
+        },
+        {
+          "step": 239,
+          "xy": [
+            4,
+            3
+          ],
+          "animal": "COW"
+        },
+        {
+          "step": 239,
+          "xy": [
+            4,
+            4
+          ],
+          "animal": "COW"
+        }
+      ]
+    },
+    {
+      "seed": 1018001,
+      "seat": 1,
+      "arm": "cash_food_night",
+      "changed_action_turns": 76,
+      "early_swaps": [
+        {
+          "step": 173,
+          "yarn": 1,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "step": 173,
+          "end": 191,
+          "margin": 404.0,
+          "money": 928.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "end": 191,
+          "margin": 404.0,
+          "money": 764.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            }
+          ]
+        }
+      ],
+      "wheat_bought_191": 4,
+      "feed_accepted": 320,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018001,
+      "seat": 1,
+      "arm": "cash_food_24",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [
+        {
+          "step": 173,
+          "end": 197,
+          "margin": 518.0,
+          "money": 928.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "end": 202,
+          "margin": 556.0,
+          "money": 864.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            }
+          ]
+        }
+      ],
+      "wheat_bought_191": 7,
+      "feed_accepted": 324,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018001,
+      "seat": 1,
+      "arm": "cash_food_48",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [
+        {
+          "step": 173,
+          "end": 221,
+          "margin": 1050.0,
+          "money": 928.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 207,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 214,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 215,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                9
+              ],
+              "cost": 342.0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "end": 226,
+          "margin": 1050.0,
+          "money": 864.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 207,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 214,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 215,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                9
+              ],
+              "cost": 342.0
+            }
+          ]
+        }
+      ],
+      "wheat_bought_191": 7,
+      "feed_accepted": 324,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018001,
+      "seat": 1,
+      "arm": "cash_all_24",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [
+        {
+          "step": 173,
+          "end": 197,
+          "margin": 2446.0,
+          "money": 928.0,
+          "obligations": [
+            {
+              "step": 177,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 178,
+              "order": [
+                "BUY_ANIMAL",
+                "COW",
+                1
+              ],
+              "cost": 400
+            },
+            {
+              "step": 180,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 181,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                3
+              ],
+              "cost": 30
+            },
+            {
+              "step": 183,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 184,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                1
+              ],
+              "cost": 10
+            },
+            {
+              "step": 186,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 2
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 3
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 5
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 8
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 13
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 21
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 195,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 34
+            },
+            {
+              "step": 196,
+              "order": [
+                "BUY_ANIMAL",
+                "SHEEP",
+                2
+              ],
+              "cost": 1000
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "end": 202,
+          "margin": 2184.0,
+          "money": 864.0,
+          "obligations": [
+            {
+              "step": 180,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 181,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                3
+              ],
+              "cost": 30
+            },
+            {
+              "step": 183,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 184,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                1
+              ],
+              "cost": 10
+            },
+            {
+              "step": 186,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 2
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 3
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 5
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 8
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 13
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 21
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 195,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 34
+            },
+            {
+              "step": 196,
+              "order": [
+                "BUY_ANIMAL",
+                "SHEEP",
+                2
+              ],
+              "cost": 1000
+            },
+            {
+              "step": 199,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            }
+          ]
+        }
+      ],
+      "wheat_bought_191": 7,
+      "feed_accepted": 324,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018011,
+      "seat": 0,
+      "arm": "legacy",
+      "changed_action_turns": 78,
+      "early_swaps": [
+        {
+          "step": 173,
+          "yarn": 2,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "yarn": 2,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "wheat_bought_191": 8,
+      "feed_accepted": 463,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018011,
+      "seat": 0,
+      "arm": "cash_food_night",
+      "changed_action_turns": 78,
+      "early_swaps": [
+        {
+          "step": 173,
+          "yarn": 2,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "yarn": 2,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "step": 88,
+          "end": 95,
+          "margin": 100.0,
+          "money": 255.0,
+          "obligations": []
+        },
+        {
+          "step": 173,
+          "end": 191,
+          "margin": 404.0,
+          "money": 1234.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "end": 191,
+          "margin": 404.0,
+          "money": 1070.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            }
+          ]
+        }
+      ],
+      "wheat_bought_191": 8,
+      "feed_accepted": 463,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018011,
+      "seat": 0,
+      "arm": "cash_food_24",
+      "changed_action_turns": 78,
+      "early_swaps": [
+        {
+          "step": 173,
+          "yarn": 2,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "yarn": 2,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "step": 88,
+          "end": 112,
+          "margin": 217.0,
+          "money": 255.0,
+          "obligations": [
+            {
+              "step": 108,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 110,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 112,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            }
+          ]
+        },
+        {
+          "step": 173,
+          "end": 197,
+          "margin": 518.0,
+          "money": 1234.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "end": 202,
+          "margin": 556.0,
+          "money": 1070.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            }
+          ]
+        }
+      ],
+      "wheat_bought_191": 8,
+      "feed_accepted": 463,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018011,
+      "seat": 0,
+      "arm": "cash_food_48",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [
+        {
+          "step": 88,
+          "end": 136,
+          "margin": 334.0,
+          "money": 255.0,
+          "obligations": [
+            {
+              "step": 108,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 110,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 112,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 114,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 116,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 118,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            }
+          ]
+        },
+        {
+          "step": 173,
+          "end": 221,
+          "margin": 1050.0,
+          "money": 1234.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 207,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 214,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 215,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                9
+              ],
+              "cost": 342.0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "end": 226,
+          "margin": 1050.0,
+          "money": 1170.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 207,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 214,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 215,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                9
+              ],
+              "cost": 342.0
+            }
+          ]
+        }
+      ],
+      "wheat_bought_191": 8,
+      "feed_accepted": 455,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018011,
+      "seat": 0,
+      "arm": "cash_all_24",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [
+        {
+          "step": 88,
+          "end": 112,
+          "margin": 254.0,
+          "money": 255.0,
+          "obligations": [
+            {
+              "step": 96,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 96,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 96,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 2
+            },
+            {
+              "step": 96,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 3
+            },
+            {
+              "step": 105,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                1
+              ],
+              "cost": 10
+            },
+            {
+              "step": 106,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                1
+              ],
+              "cost": 10
+            },
+            {
+              "step": 108,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 110,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 110,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                1
+              ],
+              "cost": 10
+            },
+            {
+              "step": 112,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            }
+          ]
+        },
+        {
+          "step": 173,
+          "end": 197,
+          "margin": 2446.0,
+          "money": 1234.0,
+          "obligations": [
+            {
+              "step": 177,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 178,
+              "order": [
+                "BUY_ANIMAL",
+                "COW",
+                1
+              ],
+              "cost": 400
+            },
+            {
+              "step": 180,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 181,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                3
+              ],
+              "cost": 30
+            },
+            {
+              "step": 183,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 184,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                1
+              ],
+              "cost": 10
+            },
+            {
+              "step": 186,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 2
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 3
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 5
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 8
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 13
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 21
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 195,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 34
+            },
+            {
+              "step": 196,
+              "order": [
+                "BUY_ANIMAL",
+                "SHEEP",
+                2
+              ],
+              "cost": 1000
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "end": 202,
+          "margin": 2184.0,
+          "money": 1170.0,
+          "obligations": [
+            {
+              "step": 180,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 181,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                3
+              ],
+              "cost": 30
+            },
+            {
+              "step": 183,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 184,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                1
+              ],
+              "cost": 10
+            },
+            {
+              "step": 186,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 2
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 3
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 5
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 8
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 13
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 21
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 195,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 34
+            },
+            {
+              "step": 196,
+              "order": [
+                "BUY_ANIMAL",
+                "SHEEP",
+                2
+              ],
+              "cost": 1000
+            },
+            {
+              "step": 199,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            }
+          ]
+        }
+      ],
+      "wheat_bought_191": 8,
+      "feed_accepted": 455,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018011,
+      "seat": 1,
+      "arm": "legacy",
+      "changed_action_turns": 77,
+      "early_swaps": [
+        {
+          "step": 173,
+          "yarn": 2,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "yarn": 2,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "wheat_bought_191": 8,
+      "feed_accepted": 463,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018011,
+      "seat": 1,
+      "arm": "cash_food_night",
+      "changed_action_turns": 77,
+      "early_swaps": [
+        {
+          "step": 173,
+          "yarn": 2,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "yarn": 2,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "step": 88,
+          "end": 95,
+          "margin": 100.0,
+          "money": 255.0,
+          "obligations": []
+        },
+        {
+          "step": 173,
+          "end": 191,
+          "margin": 404.0,
+          "money": 1234.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "end": 191,
+          "margin": 404.0,
+          "money": 1070.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            }
+          ]
+        }
+      ],
+      "wheat_bought_191": 8,
+      "feed_accepted": 463,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018011,
+      "seat": 1,
+      "arm": "cash_food_24",
+      "changed_action_turns": 77,
+      "early_swaps": [
+        {
+          "step": 173,
+          "yarn": 2,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "yarn": 2,
+          "before": [
+            [
+              "BUY_ANIMAL",
+              "COW",
+              1
+            ]
+          ],
+          "after": [
+            [
+              "BUY_ANIMAL",
+              "SHEEP",
+              1
+            ]
+          ],
+          "pending": [
+            {
+              "from": "COW",
+              "to": "SHEEP",
+              "qty": 1,
+              "before": 0
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "step": 88,
+          "end": 112,
+          "margin": 217.0,
+          "money": 255.0,
+          "obligations": [
+            {
+              "step": 108,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 110,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 112,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            }
+          ]
+        },
+        {
+          "step": 173,
+          "end": 197,
+          "margin": 518.0,
+          "money": 1234.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "end": 202,
+          "margin": 556.0,
+          "money": 1070.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            }
+          ]
+        }
+      ],
+      "wheat_bought_191": 8,
+      "feed_accepted": 463,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018011,
+      "seat": 1,
+      "arm": "cash_food_48",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [
+        {
+          "step": 88,
+          "end": 136,
+          "margin": 334.0,
+          "money": 255.0,
+          "obligations": [
+            {
+              "step": 108,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 110,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 112,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 114,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 116,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 118,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            }
+          ]
+        },
+        {
+          "step": 173,
+          "end": 221,
+          "margin": 1050.0,
+          "money": 1234.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 207,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 214,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 215,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                9
+              ],
+              "cost": 342.0
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "end": 226,
+          "margin": 1050.0,
+          "money": 1170.0,
+          "obligations": [
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 207,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 214,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 215,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                9
+              ],
+              "cost": 342.0
+            }
+          ]
+        }
+      ],
+      "wheat_bought_191": 8,
+      "feed_accepted": 455,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1018011,
+      "seat": 1,
+      "arm": "cash_all_24",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [
+        {
+          "step": 88,
+          "end": 112,
+          "margin": 254.0,
+          "money": 255.0,
+          "obligations": [
+            {
+              "step": 96,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 96,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 96,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 2
+            },
+            {
+              "step": 96,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 3
+            },
+            {
+              "step": 105,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                1
+              ],
+              "cost": 10
+            },
+            {
+              "step": 106,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                1
+              ],
+              "cost": 10
+            },
+            {
+              "step": 108,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 110,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            },
+            {
+              "step": 110,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                1
+              ],
+              "cost": 10
+            },
+            {
+              "step": 112,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 39.0
+            }
+          ]
+        },
+        {
+          "step": 173,
+          "end": 197,
+          "margin": 2446.0,
+          "money": 1234.0,
+          "obligations": [
+            {
+              "step": 177,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 178,
+              "order": [
+                "BUY_ANIMAL",
+                "COW",
+                1
+              ],
+              "cost": 400
+            },
+            {
+              "step": 180,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 181,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                3
+              ],
+              "cost": 30
+            },
+            {
+              "step": 183,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 184,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                1
+              ],
+              "cost": 10
+            },
+            {
+              "step": 186,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 2
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 3
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 5
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 8
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 13
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 21
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 195,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 34
+            },
+            {
+              "step": 196,
+              "order": [
+                "BUY_ANIMAL",
+                "SHEEP",
+                2
+              ],
+              "cost": 1000
+            }
+          ]
+        },
+        {
+          "step": 178,
+          "end": 202,
+          "margin": 2184.0,
+          "money": 1170.0,
+          "obligations": [
+            {
+              "step": 180,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 181,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                3
+              ],
+              "cost": 30
+            },
+            {
+              "step": 183,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 184,
+              "order": [
+                "BUY_SEED",
+                "WHEAT",
+                1
+              ],
+              "cost": 10
+            },
+            {
+              "step": 186,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 191,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                8
+              ],
+              "cost": 304.0
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 1
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 2
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 3
+            },
+            {
+              "step": 192,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 5
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 8
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 13
+            },
+            {
+              "step": 193,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 21
+            },
+            {
+              "step": 194,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                3
+              ],
+              "cost": 114.0
+            },
+            {
+              "step": 195,
+              "order": [
+                "HIRE"
+              ],
+              "cost": 34
+            },
+            {
+              "step": 196,
+              "order": [
+                "BUY_ANIMAL",
+                "SHEEP",
+                2
+              ],
+              "cost": 1000
+            },
+            {
+              "step": 199,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_PRODUCT",
+                "WHEAT",
+                1
+              ],
+              "cost": 38.0
+            },
+            {
+              "step": 201,
+              "order": [
+                "BUY_SEED",
+                "STRAWBERRY",
+                1
+              ],
+              "cost": 100
+            }
+          ]
+        }
+      ],
+      "wheat_bought_191": 8,
+      "feed_accepted": 455,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1033000,
+      "seat": 0,
+      "arm": "legacy",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [],
+      "wheat_bought_191": 0,
+      "feed_accepted": 339,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1033000,
+      "seat": 0,
+      "arm": "cash_food_night",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [],
+      "wheat_bought_191": 0,
+      "feed_accepted": 339,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1033000,
+      "seat": 0,
+      "arm": "cash_food_24",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [],
+      "wheat_bought_191": 0,
+      "feed_accepted": 339,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1033000,
+      "seat": 0,
+      "arm": "cash_food_48",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [],
+      "wheat_bought_191": 0,
+      "feed_accepted": 339,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1033000,
+      "seat": 0,
+      "arm": "cash_all_24",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [],
+      "wheat_bought_191": 0,
+      "feed_accepted": 339,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1033000,
+      "seat": 1,
+      "arm": "legacy",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [],
+      "wheat_bought_191": 0,
+      "feed_accepted": 339,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1033000,
+      "seat": 1,
+      "arm": "cash_food_night",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [],
+      "wheat_bought_191": 0,
+      "feed_accepted": 339,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1033000,
+      "seat": 1,
+      "arm": "cash_food_24",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [],
+      "wheat_bought_191": 0,
+      "feed_accepted": 339,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1033000,
+      "seat": 1,
+      "arm": "cash_food_48",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [],
+      "wheat_bought_191": 0,
+      "feed_accepted": 339,
+      "same_shops": true,
+      "escapes": []
+    },
+    {
+      "seed": 1033000,
+      "seat": 1,
+      "arm": "cash_all_24",
+      "changed_action_turns": 0,
+      "early_swaps": [],
+      "quotes": [],
+      "wheat_bought_191": 0,
+      "feed_accepted": 339,
+      "same_shops": true,
+      "escapes": []
+    }
+  ]
+}

@@ -1,0 +1,968 @@
+{
+  "cow_d3_y1_m100": {
+    "pool_episodes": 128,
+    "own_action_hash_changed": 32,
+    "opponent_action_hash_changed": 32,
+    "changed_seeds": [
+      1018001,
+      1018011,
+      1018012,
+      1018013
+    ],
+    "changed_cells": [
+      {
+        "opponent": "tds",
+        "seed": 1018001,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018001,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018013,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018013,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018012,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018012,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018001,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018001,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018013,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018013,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018001,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018001,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018013,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018013,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018001,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018001,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018013,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018013,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      }
+    ]
+  },
+  "cow_d3_y2_m100": {
+    "pool_episodes": 128,
+    "own_action_hash_changed": 8,
+    "opponent_action_hash_changed": 8,
+    "changed_seeds": [
+      1018011
+    ],
+    "changed_cells": [
+      {
+        "opponent": "tds",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      }
+    ]
+  },
+  "cow_d3_y1_m500": {
+    "pool_episodes": 128,
+    "own_action_hash_changed": 24,
+    "opponent_action_hash_changed": 24,
+    "changed_seeds": [
+      1018011,
+      1018012,
+      1018013
+    ],
+    "changed_cells": [
+      {
+        "opponent": "tds",
+        "seed": 1018013,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018013,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018012,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018012,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018013,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018013,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018013,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018013,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018013,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018013,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      }
+    ]
+  },
+  "cow_d6_y1_m100": {
+    "pool_episodes": 128,
+    "own_action_hash_changed": 32,
+    "opponent_action_hash_changed": 32,
+    "changed_seeds": [
+      1018001,
+      1018011,
+      1018012,
+      1018013
+    ],
+    "changed_cells": [
+      {
+        "opponent": "tds",
+        "seed": 1018001,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018001,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018013,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018013,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018012,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018012,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018001,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018001,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018013,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018013,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018001,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018001,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018013,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018013,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018001,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018001,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018013,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018013,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      }
+    ]
+  },
+  "cow_d6_y2_m100": {
+    "pool_episodes": 128,
+    "own_action_hash_changed": 8,
+    "opponent_action_hash_changed": 8,
+    "changed_seeds": [
+      1018011
+    ],
+    "changed_cells": [
+      {
+        "opponent": "tds",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      }
+    ]
+  },
+  "cow_d6_y1_m500": {
+    "pool_episodes": 128,
+    "own_action_hash_changed": 24,
+    "opponent_action_hash_changed": 24,
+    "changed_seeds": [
+      1018011,
+      1018012,
+      1018013
+    ],
+    "changed_cells": [
+      {
+        "opponent": "tds",
+        "seed": 1018013,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018013,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018012,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018012,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018013,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018013,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018013,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018013,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018013,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018013,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018011,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018011,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1018012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      }
+    ]
+  }
+}

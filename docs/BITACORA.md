@@ -1,5 +1,47 @@
 # Bitácora de experimentos
 
+## 2026-09-25, 05:20 UTC — Confirm10 inerte, reserva15 y feedback real
+
+Confirm10 terminó1.600episodios, noop416/416, cero errores, ambas políticas
+inertes352/352contra pool. Delta0, ICdos vías indefinido, sin envío. Piloto11
+arrancó05:11:34UTC,1.920episodios/32semillas. Loops12–14 siguen en cola.
+
+Loop15 validado y encolado: cuatro reservas de caja sobre conversión temprana.
+42juegos/noop4.314, max294ms. Caso adverso:night admite una oveja, compra4trigos
+y evita los tres escapes; reserva24/48/all24conserva base. Caso solvente:
+night/24admiten ambas ovejas,48/all24inertes.1033000todas inertes. Conservamos
+los cuatro brazos según registro, sin elegir por rewards dirigidos. Piloto1.568
+tras14 con antigua sólo como control, confirmación disjunta si procede.67variantes.
+
+Snapshot05:13:31UTC:top32068,8/58episodios listados yVQ2287,2/81, ambasCOMPLETE.
+Cuatro replays nuevos por recencia:4V,márgenes240–1.480,720estados exactos/caja
+conciliada cada uno, cero escapes propios/stock final. Una partida con cantidades
+y jornales idénticos se decide en precios de ejecución. No inferir WR global
+ni ventaja causal vsVQ. Plan, originales, hashes y ledgers archivados. Sin envío.
+Objetivo persistente activo; no detenerse al cerrar este checkpoint.
+
+## 2026-09-25, 05:06 UTC — Conversión, hambre y alimentación económica
+
+Piloto10 completo1.920: noop320/320, cero errores. Y2_m100+2,34375pp para
+D3/D6; y1_m100−8,59375, y1_m500−2,34375. Cada pareja de fechas equivale
+en128/128acciones/rewards; ambas y2 pasan a confirmación según regla fijada,
+no como réplicas independientes. Confirm10 inició04:52:36UTC,1.600episodios.
+
+Diagnósticos reproducen mejora−355→+6.895 y daño+1.037→−22.858. En el daño,
+pagar200extra por ovejas deja20en vez de220antes de compra191: trigo7→0.
+Los FEED siguientes llegan vacíos y tres vacas escapan239. Mismo mundo,
+rewards originales y caja conciliados; registros físicos archivados. Próxima
+hipótesis reserva obligaciones futuras antes de convertir; no editar confirm10.
+
+Auditoría de8replays top3 con estados exactos: PASS agregado engaña. Ningún
+CARE útil quedó pendiente entre esas oportunidades;60huecos WATER no aportan
+producción inmediata/próximo amanecer ni evitan muerte esa noche.261huecos
+FEED motivan ablar filtro económico existente, sin asumir error por omisión.
+
+Loop14 listo: cuatro brazos,36juegos/noop4.314turnos, max271ms, cero errores,
+consumo/producción aceptados verificados;1.248piloto tras loops11–13. Total63
+variantes competitivas construidas. Objetivo continuo activo, sin envío nuevo.
+
 ## 2026-09-25, 04:39 UTC — Rebaños inertes, logística nocturna y loop13
 
 Piloto9 termina1.920episodios, noop320/320, cero errores. Seis variantes sin

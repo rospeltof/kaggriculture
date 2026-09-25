@@ -26,7 +26,7 @@ def main(prefix,candidate,direction,tag='mechanism'):
         env,ledger=run(entry,meta['agentes'][opponent]['ruta'],seed,seat)
         assert [s.reward for s in env.steps[-1]]==keyed[arm,opponent,seed,seat]['rewards']
         envs.append(env);ledgers.append(ledger)
-        telemetry.append({k:ns[k] for k in ('_V92_P_REPORT','_HP_STATS','_CA_REPORT','_RP_REPORT','_RT_REPORT','_HE_REPORT','_HD2_REPORT','_CXTB_REPORT','_V219_REPORT','_V233_REPORT','_IF_REPORT','_PM_REPORT') if k in ns})
+        telemetry.append({k:ns[k] for k in ('_V92_P_REPORT','_HP_STATS','_CA_REPORT','_RP_REPORT','_RT_REPORT','_HE_REPORT','_HD2_REPORT','_CXTB_REPORT','_V219_REPORT','_V233_REPORT','_IF_REPORT','_PM_REPORT','_EC_REPORT','_Y_REPORT','_R85_REPORT','_NF_REPORT','_LB_REPORT') if k in ns})
         dest=Path(str(prefix)+f'.{candidate}.{tag}.{arm}.ledger.jsonl.gz')
         if dest.exists():raise FileExistsError(dest)
         dest.write_bytes(gzip.compress(('\n'.join(json.dumps(r) for r in ledger)+'\n').encode(),mtime=0))

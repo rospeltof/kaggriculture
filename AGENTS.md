@@ -4,8 +4,8 @@
 > Desde el 2026-09-21 el usuario autorizó un loop autónomo de investigación que
 > incluye submissions experimentales ("También tienes capacidad para crear y
 > subir submissions reales. Usa ambas cosas"). Referencias reales activas:
-> **VQ56535264** y **top3 56537205**, ambas COMPLETE. Snapshot04:30UTC:
-> 2288,2/69episodios y2022,5/46 respectivamente; incluyen validación.
+> **VQ56535264** y **top3 56537205**, ambas COMPLETE. Snapshot05:13UTC:
+> 2287,2/81episodios y2068,8/58 respectivamente; incluyen validación.
 > No volver al campeón histórico de1180. Creencias con evidencia:
 > `docs/research/RESEARCH_BELIEFS.md`; historial reproducible de envíos:
 > `docs/research/SUBMISSION_HISTORY.json`; qué métrica local predice el ladder:
@@ -23,15 +23,21 @@ y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_productos.py`, `continuar_loop_relleno.py` y
 `continuar_loop_patrones.py`, `continuar_loop_rebano.py`, `continuar_loop_vacas.py`,
 `continuar_loop_biblioteca.py`, `continuar_loop_aperturas.py` y
-`continuar_loop_almacen.py` encadenan bloques
+`continuar_loop_almacen.py`, `continuar_loop_alimentacion.py` y
+`continuar_loop_caja_alimento.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
 terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
 (una de64 partidas cambia, +1,5625pp). Confirm5 tomate−21,591pp: REJECTED.
 Loop6 sin seleccionadas; confirm7 completa, ambas d18 inertes352/352,
 sin selección. Confirm8 completa:history360+2,8409pp no supera gate3,
 phase2−3,4091pp; sin envío. Piloto9 completo1.920episodios, seis variantes
-inertes128/128contra pool, sin selección. Piloto10 corre desde04:29UTC;
-loops11–13 validados/encolados. Loop13 almacén: versión1 inválida
+inertes128/128contra pool, sin selección. Piloto10 completo: y2_m100+2,34375pp,
+y1_m100−8,59375pp, y1_m500−2,34375pp; D3/D6 equivalentes en128/128celdas.
+Confirm10 completa1.600, noop416/416, ambas inertes352/352contra pool,
+sin selección/envío. Piloto11 corre desde05:11UTC; loops12–14 encolados.
+Loop14 modifica sólo filtro económico FEED:36juegos/noop4.314turnos,
+consumo/producción aceptados comprobados; piloto1.248 en cola.
+Loop13 almacén: versión1 inválida
 por capturar entrada antigua y omitir VQ, detectado por noop; versión2 usa
 último callable correcto,36juegos completos, noop4.314turnos y22predicciones
 de descarga exactas contra motor. Piloto1.248 encolado. No reutilizar resultados v1.
@@ -48,6 +54,12 @@ Auditoría nueva: al reconstruir113107623,33unidades propias se destruyen de
 noche; no detectadas por inventario terminal0. Orden de bolsas del JSON del
 replay difiere del motor vivo y cambia overflow: usar reconstrucción, no JSON
 aislado. Ver `c0nrad_guard_audit.json` y FEEDBACK_TOP3.
+Daño de conversión temprana:200monedas extra dejan sin fondos trigo191;
+fallan alimentaciones y escapan tres vacas239. Próxima hipótesis requiere
+reserva de insumos futuros. Loop15 validado: cuatro reservas, control antiguo,
+42diagnósticos/noop4.314, max294ms. Night/24evitan los escapes del caso adverso
+y permiten conversión en el solvente;48/all24inertes en desarrollo. Piloto1.568
+encolado tras14. Total67variantes competitivas. No inferir W/L de esas sondas.
 
 ## Estado y autorización
 

@@ -498,9 +498,9 @@
     },
     "reason": "VQ validada contra copias; arshs3 transfiere al ladder (2292.5 vs v13 1857.9). Desplaza v13, preserva arshs3 como referencia activa.",
     "leaderboard": {
-      "score": 2288.2,
+      "score": 2287.2,
       "rank": null,
-      "episodes": 69,
+      "episodes": 81,
       "lecturas": [
         [
           "initial",
@@ -549,15 +549,20 @@
           "2026-09-25T04:30:35.556796+00:00",
           2288.2,
           69
+        ],
+        [
+          "2026-09-25T05:13:31.121416+00:00",
+          2287.2,
+          81
         ]
       ],
       "status": "SubmissionStatus.COMPLETE"
     },
     "delta_vs_champion_ladder": null,
-    "observed": "COMPLETE, snapshot 2026-09-25T04:30:35.556796+00:00: score2288.2, 69 episodios listados (incluye validaci\u00f3n). No demuestra superioridad de top3 frente a VQ.",
+    "observed": "COMPLETE, snapshot 2026-09-25T05:13:31.121416+00:00: score2287.2, 81 episodios listados (incluye validaci\u00f3n). No demuestra superioridad causal entre VQ y top3.",
     "conclusion": "REAL_WORLD_CANDIDATE; ventaja local espec\u00edfica contra copias, sin promoci\u00f3n autom\u00e1tica",
-    "next_action": "Seguir feedback real; loop10 corriendo y loops11\u201313 validados/encolados. Conservar ambos hasta justificar siguiente env\u00edo.",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0431.txt"
+    "next_action": "Seguir feedback real; piloto11 corriendo, loops12\u201315 validados y encolados. Conservar ambas hasta justificar siguiente env\u00edo.",
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0515.txt"
   },
   {
     "submission_id": 56537205,
@@ -693,8 +698,8 @@
     },
     "reason": "Cumple gate registrado: delta>=3pp, ning\u00fan rival<-20pp, cero errores, revisi\u00f3n de mecanismos y runtime. Prueba real autorizada.",
     "leaderboard": {
-      "score": 2022.5,
-      "episodes": 46,
+      "score": 2068.8,
+      "episodes": 58,
       "status": "SubmissionStatus.COMPLETE",
       "lecturas": [
         [
@@ -721,15 +726,20 @@
           "2026-09-25T04:30:35.556796+00:00",
           2022.5,
           46
+        ],
+        [
+          "2026-09-25T05:13:31.121416+00:00",
+          2068.8,
+          58
         ]
       ]
     },
-    "observed": "COMPLETE, snapshot 2026-09-25T04:30:35.556796+00:00: score2022.5, 46 episodios listados (incluye validaci\u00f3n). No demuestra superioridad de top3 frente a VQ.",
+    "observed": "COMPLETE, snapshot 2026-09-25T05:13:31.121416+00:00: score2068.8, 58 episodios listados (incluye validaci\u00f3n). No demuestra superioridad causal entre VQ y top3.",
     "conclusion": "REAL_WORLD_CANDIDATE; no CHAMPION",
-    "next_action": "Seguir feedback real; loop10 corriendo y loops11\u201313 validados/encolados. Conservar ambos hasta justificar siguiente env\u00edo.",
+    "next_action": "Seguir feedback real; piloto11 corriendo, loops12\u201315 validados y encolados. Conservar ambas hasta justificar siguiente env\u00edo.",
     "replaces_submission": 56511619,
     "preserves_submission": 56535264,
     "evidence": "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0431.txt"
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0515.txt"
   }
 ]

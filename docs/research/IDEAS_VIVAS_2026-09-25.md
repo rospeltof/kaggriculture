@@ -1,8 +1,41 @@
-# Fronteras después de loops7–9
+# Fronteras después de loops7–10
 
-Estado04:39UTC: piloto9 completo, seis variantes inertes128/128; conversión
-temprana loop10 corriendo. Biblioteca reciente loop11 y aperturas loop12
-validadas/encoladas. Loop13 almacén también validado y en cola. No duplicar corridas.
+Estado05:17UTC: confirm10 completa, ambas y2 inertes352/352. Biblioteca reciente
+corriendo; aperturas, almacén y alimentación (loops12–14) validados/encolados.
+Loop15 financiación validado/encolado. No duplicar corridas.67variantes construidas.
+
+## Nueva prioridad: financiar alimento antes de cambiar vacas por ovejas
+
+Piloto10 demuestra un fallo concreto en ars40/1018001/asiento0: dos ovejas
+cuestan200más; la caja220→20 antes de191 impide comprar trigo (7unidades→0).
+FEED194/197/218/222/226 llegan sin trigo y tres vacas escapan239. Margen
++1.037→−22.858. En hybu/1018011/asiento1 el mismo tipo de conversión con
+dosYARN eleva lana410→459 y margen−355→+6.895, sin escapes. Son diagnósticos
+dirigidos, no estimadores. `pilot10.funding_failure.json` guarda la cadena.
+
+Hipótesis nueva: reserva de caja para las compras de insumos próximas antes de
+autorizar sustitución temprana. El margen estático100/500 no mide obligaciones
+de alimento. Auditar la cinta futura y el coste de compra, sin contar cosechas
+inciertas ni inyectar trigo. Validar que evita la compra fallida del caso adverso
+y permite activación en mundos solventes; después semillas disjuntas. No tocar
+confirm10 (ya completa/inactiva) ni rescatar y1 por el caso positivo.
+
+**Implementación registrada loop15:** reserva de alimento hasta cierre,24/48h
+y reserva de todas las obligaciones24h.42diagnósticos antes del piloto1.568
+(1034000–015), control antiguo incluido sólo para atribuir reparación. No
+acredita ingresos futuros ni cambia alimento/rutas.42diagnósticos válidos,
+noop4.314, max294ms:night/24evitan escapes en el caso adverso y permiten
+conversión en el solvente;48/all24inertes en desarrollo. Piloto1.568encolado.
+Consultar protocolo15, no presentar estas sondas como ganancia competitiva.
+
+Las tres parejas D3/D6 fueron idénticas128/128por pareja; no contarlas como
+réplicas independientes. Y2 sólo cambió8/128celdas de pool en una semilla.
+Si las dos primeras tiendas fueran independientes/uniformes entre8opciones,
+YARN/YARN sería1/64: una política exclusiva de ese contexto tendría techo
+global nominal1,56pp aun corrigiendo todas sus derrotas. Es una deducción bajo
+supuesto, no prevalencia medida; el gate3actual se conserva. Diseños futuros
+para efectos raros necesitan estratos definidos sin mirar resultados y pesos
+poblacionales, no escoger semillas favorables después del torneo.
 
 ## Reasignar compras futuras de vacas con demanda de lana ya visible
 
@@ -99,6 +132,13 @@ La auditoría de trabajo encuentra759PASS/3.186movimientos propios frente a
 ovinos con menos jornales. Próxima frontera estructural: reemplazar cultivos o
 rutas futuras por cuidado ovino con las mismas horas, previa auditoría de
 factibilidad por posición/hora. No tratar PASS agregado como peón disponible.
+Auditoría posterior de los mismos8replays: no queda CARE útil omitido al cierre
+entre oportunidades PASS observadas.60huecos de WATER no aumentan producción
+inmediata/próximo amanecer ni evitan muerte esa noche. No prueba ausencia de
+beneficio a mayor horizonte ni rutas óptimas.261huecos FEED motivan **loop14**:
+cuatro ablaciones del filtro económico nativo,36juegos de mecánica válidos,
+noop4.314turnos y piloto1.248encolado. No añadir fallback ciego a cada PASS.
+
 El piloto9 inerte no refuta todas las inversiones: no activó cambios en este
 panel. Sus razones de rechazo por caso no se guardaron en el torneo; no
 atribuir todo a un gate específico sin sonda. Repetirlo sin política nueva

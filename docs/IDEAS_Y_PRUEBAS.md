@@ -1,5 +1,14 @@
 # Cola de ideas y revisión entre LLMs
 
+## Cola vigente — 2026-09-25
+
+El loop autónomo, incluidas submissions experimentales justificadas, está
+autorizado. Leer `research/ESTADO_INVESTIGACION.md` y la cola actual en
+`research/IDEAS_VIVAS_2026-09-25.md`. Las restricciones y propuestas de abajo
+son históricas. Confirm10 terminó inerte; piloto11 corre y loops12–14 están
+en cola. Loop15 diagnostica caja futura de alimento antes de convertir vacas en ovejas.
+No duplicar los bloques congelados ni repetir experimentos ya registrados.
+
 ## Ronda vigente — 2026-09-14
 
 El usuario autorizó los experimentos locales de la ronda del líder. Consultar

@@ -1,0 +1,20 @@
+  (extra, no entra en la estimacion) base vs cow_d3_y1_m100: 50.0% (32 ep)
+  (extra, no entra en la estimacion) cow_d6_y1_m100 vs cow_d3_y1_m100: 50.0% (32 ep)
+  (extra, no entra en la estimacion) base vs cow_d3_y1_m500: 46.9% (32 ep)
+  (extra, no entra en la estimacion) cow_d6_y1_m100 vs cow_d3_y1_m500: 46.9% (32 ep)
+  (extra, no entra en la estimacion) base vs cow_d3_y2_m100: 46.9% (32 ep)
+  (extra, no entra en la estimacion) cow_d6_y1_m100 vs cow_d3_y2_m100: 46.9% (32 ep)
+  (extra, no entra en la estimacion) base vs cow_d6_y1_m500: 46.9% (32 ep)
+  (extra, no entra en la estimacion) cow_d6_y1_m100 vs cow_d6_y1_m500: 46.9% (32 ep)
+  (extra, no entra en la estimacion) base vs cow_d6_y2_m100: 46.9% (32 ep)
+  (extra, no entra en la estimacion) cow_d6_y1_m100 vs cow_d6_y2_m100: 46.9% (32 ep)
+  (extra, no entra en la estimacion) base vs noop: 50.0% (32 ep)
+  (extra, no entra en la estimacion) cow_d6_y1_m100 vs noop: 50.0% (32 ep)
+cow_d6_y1_m100 - base: 4 rivales x 16 semillas = 64 celdas; ref 88.3%
+  delta -8.59 pts | IC95 semilla [-25.91; +8.73] | dos vias [-32.30; +15.11]
+  celdas cambiadas 9/64: 2 a favor, 7 en contra
+    vs    ars40  -12.5
+    vs   arshs3  -12.5
+    vs     hybu   -9.4
+    vs      tds   +0.0
+  directo cow_d6_y1_m100 vs base: 50.0% (32 ep)

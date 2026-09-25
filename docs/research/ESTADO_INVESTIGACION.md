@@ -62,20 +62,28 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   antes del piloto9. **1.920 completos**, noop320/320, cero errores; las seis
   inertes128/128contra pool, acciones propias/rivales idénticas, delta0 e IC
   dos vías indefinido. Sin selección/confirmación. Total42variantes competitivas.
-- Loop10 corriendo desde04:29:14UTC: adelantar conversión COW→SHEEP a días3–7,
+- Loop10 piloto completo: adelantar conversión COW→SHEEP a días3–7,
   fuera de la regla8–11 ya existente. Seis políticas de fecha/demanda/caja.
  48 juegos dirigidos, noop4.314 turnos exactos, max284ms. En mundo YARN/YARN:
   dos compras/colocaciones aceptadas,49 lanas cosechadas, cero escapes/créditos
   pendientes/inventario final. En dos mundos sin YARN temprano son inertes.
-  Piloto1.920 semillas1018000–015 después de loop9; ver protocolo y manifiesto.
-  Total48 variantes competitivas construidas. No tratar la sonda como W/L poblacional.
+  Piloto1.920 válido, noop320/320, cero errores: y2_m100 +2,34375pp (ambas
+  fechas), y1_m100 −8,59375pp, y1_m500 −2,34375pp. D3/D6 tienen acciones y
+  rewards idénticos128/128por pareja: no son réplicas independientes.
+  **Confirm10 completa**,1.600episodios nuevos1019000–015, noop416/416,
+  cero errores. Ambas y2 inertes352/352contra pool; delta0, ICdos vías indefinido.
+  INCONCLUSIVE_NOT_SELECTED, sin envío. No refuta beneficio en contextos ausentes.
+  Auditoría del daño y1:200monedas extra impiden compra de trigo191 (7→0),
+  fallan alimentaciones y escapan tres vacas239; base0. No atribuirlo sólo
+  a precios de lana. Próxima hipótesis: reservar insumos futuros antes del swap.
+  Y2 sólo actúa en una de16semillas; cobertura rara limita inferencia/gate global.
 - Biblioteca auditada:2.398 streams,64/64 pares de tiendas,24–63 por par.
   Doce streams recientes de ventas aceptadas son nuevos por fingerprint; no
   agregan pares de tiendas. Fecha de biblioteca original desconocida (ids−1).
   Loop11 ahora valida tres bibliotecas (DSM4, ladder8, todas12):20juegos,
   noop2.876turnos exactos, max250ms; ladder/all sí seleccionan un stream nuevo.
   Piloto1.920 con32semillas1021000–031, luego confirmación de32semillas;
-  runner encolado detrás de loop10. No mezclar con history360 aún no promovida.
+  **Piloto11 corriendo desde05:11:34UTC**. No mezclar con history360 aún no promovida.
 - Loop12 validado/encolado: tres aperturas nativas sobre top3 y MarketShock
   público con entrada corregida.12juegos, noop1.438turnos, max229ms; tomate
   inicial produjo4unidades y sustituye una vaca. Trigo temporal de base/cycle
@@ -96,6 +104,21 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   En mundo dirigido1272457736 contra arshs3 reactivo, reserva1día reduce
   pérdida27→8, reserva2días27→20; quedan pérdidas residuales. En1004000
   brazo2días inerte;1027000 permite diferenciar trigo/fertilizante. No es W/L OOS.
+- Loop14 validado/encolado: cuatro reglas de valor del alimento, multiplicador
+  0,5/2,5, conservar FEED ovino o conservar todo FEED nativo.36juegos, noop4.314,
+  máximo271ms, cero errores/escapes/inventario final; todas cambian acciones
+  en tres mundos, consumo de trigo y producción confirmados por motor.
+  Piloto1.248 semillas1031000–015 tras loop13. Total63variantes competitivas.
+  Auditoría previa de8replays top3: PASS no implica trabajo útil pendiente;
+  ningún CARE útil omitido entre esas oportunidades y60huecos WATER sin
+  efecto inmediato/próximo amanecer ni muerte evitada esa noche.261huecos
+  FEED motivan ablar filtro económico, sin asumir que todos fueran errores.
+- Loop15 validado/encolado: cuatro reservas de caja antes de sustituir vacas,
+  alimento hasta cierre/24/48h o todas las obligaciones24h.42juegos válidos,
+  noop4.314, max294ms. En caso adverso:night permite una oveja, compra4trigos
+  y evita tres escapes; resto conserva base. En caso solvente:night/24permiten
+  dos ovejas,48/all24inertes. No seleccionar por esos rewards. Piloto1.568
+  con control antiguo, semillas1034000–015 tras14. Total67variantes construidas.
 - Fuentes públicas nuevas: MasterEngine actualizado es tds25 byte exacto,
   excluido. MarketShock12ad317e diferente; loader elegía instalador. Corrección
   de entrada1c94b979 probada idéntica al `module.agent` del autor en8juegos.
@@ -145,9 +168,14 @@ partidas seleccionadas por endTime antes de leer rewards:4V, márgenes923–2891
 720 estados exactos×4, caja conciliada, cero escapes propios/inventario final.
 Producción muy similar a rivales en esa muestra; no es superioridad causal vsVQ.
 Archivos con sufijo0333 se consultaron03:39; metadatos `.fetch.json` dan hora real.
-Último snapshot **04:30:35UTC**:top3 **2022,5 /46episodios listados** y VQ
+Snapshot **04:30:35UTC**:top3 **2022,5 /46episodios listados** y VQ
 **2288,2 /69**, ambas COMPLETE. Archivos sufijo0431; hora real en metadatos.
+Último snapshot **05:13:31UTC**:top3 **2068,8 /58episodios listados** y VQ
+**2287,2 /81**, ambas COMPLETE. Archivos sufijo0515; hora real en metadatos.
 Recuentos incluyen validación; ninguna submission nueva desde top3.
+Cuatro replays nuevos por recencia0515:4V,márgenes240–1.480,720estados exactos
+y caja conciliada cada uno; cero escapes propios/stock terminal. Originales
+archivados. No estima WR global ni ventaja causal sobre VQ; ver FEEDBACK_TOP3.
 
 Lo siguiente es el cierre de la ronda anterior; no significa parar este loop.
 

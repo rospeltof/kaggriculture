@@ -4,6 +4,24 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, PASS auditado] Ocio emitido no equivale a trabajo marginal
+  perdido.** Ocho replays top3 ya seleccionados,720estados exactos cada uno:
+  al cerrar el día no queda CARE omitido en un animal alimentado con futuro
+  útil entre las oportunidades de la misma tile.60casos sin WATER no añaden
+  producción inmediata/al siguiente amanecer ni evitan muerte esa noche.
+  No prueba ausencia de mejoras de rutas o efectos posteriores. Evidencia
+  `pass_opportunities_v2.json`, `pass_marginal_water.json`. No añadir trabajo
+  indiscriminado ni repetir el viejo work_steal que rompía recorridos.
+
+- **[2026-09-25, liquidez diferida] Una sustitución asequible ahora puede
+  quitar alimento a otros animales.** Piloto10,ars40/1018001/asiento0:
+  dos COW→SHEEP cuestan200más; compra WHEAT8en191 pasa7aceptadas→0,
+  tres vacas quedan sin alimentar dos noches y escapan239. Margen+1.037→−22.858,
+  mismas tiendas, recompensas/ledger reproducidos. No atribuir todo a precio
+  de lana ni llamar irrelevante el coste adicional porque la compra se aceptó.
+  Gate monetario por acción no garantiza financiación de inputs próximos.
+  Ver `pilot10.physical_audit.json` y `pilot10.funding_failure.json`.
+
 - **[2026-09-25, oferta comprometida] Mirar sólo animales/plantas colocados
   puede sobreestimar una inversión adicional.** En el desarrollo ovino había
   seis ovejas pagadas aún en transporte y8 lanas privadas. Incorporarlas cambia
