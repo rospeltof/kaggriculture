@@ -36,6 +36,8 @@ SOURCES = (
     "docs/research/PREREG_LOOP13_ALMACEN_2026-09-25.md",
     "docs/research/PREREG_LOOP14_ALIMENTACION_2026-09-25.md",
     "docs/research/PREREG_LOOP15_CAJA_ALIMENTO_2026-09-25.md",
+    "docs/research/PREREG_LOOP16_REBANO_INICIAL_2026-09-25.md",
+    "docs/research/AUDITORIA_PERDIDAS_CAMPO_2026-09-25.md",
     "docs/research/FUENTES_PUBLICAS_0400_2026-09-25.md",
     "docs/research/IDEAS_VIVAS_2026-09-25.md",
     "docs/research/FEEDBACK_TOP3_2026-09-25.md",

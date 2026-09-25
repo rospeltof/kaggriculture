@@ -1,4 +1,4 @@
-"""Reproduce una celda de cambio W/L/T y concilia sus transacciones reales."""
+"""Reproduce una celda de cambio W/L/T o acciones y concilia transacciones."""
 import argparse
 from collections import defaultdict
 import gzip
@@ -17,7 +17,9 @@ def main(prefix,candidate,direction,tag='mechanism'):
     for r in rows:
         if r['a']!='base' or r['b'] in arms:continue
         c=keyed[candidate,r['b'],r['seed'],r['seat']]
-        if (c['score']-r['score'])*direction>0:selected.append((r['b'],r['seed'],r['seat']))
+        changed=r['action_hashes'][r['seat']]!=c['action_hashes'][c['seat']]
+        if (direction==0 and changed) or (c['score']-r['score'])*direction>0:
+            selected.append((r['b'],r['seed'],r['seat']))
     opponent,seed,seat=sorted(selected)[0];envs=[];ledgers=[];telemetry=[]
     for arm in ('base',candidate):
         path=Path(meta['agentes'][arm]['ruta']);ns={}
@@ -37,7 +39,9 @@ def main(prefix,candidate,direction,tag='mechanism'):
         for r in ledger:
             if r['player']==seat and r['op']=='SELL':products[r['item']][0]+=1;products[r['item']][1]+=r['value']
         sales.append(dict(products))
-    report=dict(candidate=candidate,direction=direction,rule='First sorted opponent/seed/seat with WLT improvement or regression; mechanism only',
+    rule=('First sorted opponent/seed/seat with a changed own action hash; no outcome filter, mechanism only'
+          if direction==0 else 'First sorted opponent/seed/seat with WLT improvement or regression; mechanism only')
+    report=dict(candidate=candidate,direction=direction,rule=rule,
         opponent=opponent,seed=seed,seat=seat,first_difference=first,changed_action_turns=len(different),
         first_actions=[e.steps[first+1][seat].action for e in envs],first_market=b.steps[first][0].observation.market,
         final_rewards=[[s.reward for s in e.steps[-1]] for e in envs],own_sale_units_cash=sales,
@@ -47,6 +51,6 @@ def main(prefix,candidate,direction,tag='mechanism'):
 
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('prefix');ap.add_argument('candidate');ap.add_argument('--direction',type=int,choices=(-1,1),default=1)
+    ap=argparse.ArgumentParser();ap.add_argument('prefix');ap.add_argument('candidate');ap.add_argument('--direction',type=int,choices=(-1,0,1),default=1)
     ap.add_argument('--tag',default='mechanism')
     a=ap.parse_args();main(a.prefix,a.candidate,a.direction,a.tag)

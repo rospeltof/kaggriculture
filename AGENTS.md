@@ -24,7 +24,7 @@ y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_patrones.py`, `continuar_loop_rebano.py`, `continuar_loop_vacas.py`,
 `continuar_loop_biblioteca.py`, `continuar_loop_aperturas.py` y
 `continuar_loop_almacen.py`, `continuar_loop_alimentacion.py` y
-`continuar_loop_caja_alimento.py` encadenan bloques
+`continuar_loop_caja_alimento.py` y `continuar_loop_rebano_inicial.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
 terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
 (una de64 partidas cambia, +1,5625pp). Confirm5 tomate−21,591pp: REJECTED.
@@ -34,7 +34,9 @@ phase2−3,4091pp; sin envío. Piloto9 completo1.920episodios, seis variantes
 inertes128/128contra pool, sin selección. Piloto10 completo: y2_m100+2,34375pp,
 y1_m100−8,59375pp, y1_m500−2,34375pp; D3/D6 equivalentes en128/128celdas.
 Confirm10 completa1.600, noop416/416, ambas inertes352/352contra pool,
-sin selección/envío. Piloto11 corre desde05:11UTC; loops12–14 encolados.
+sin selección/envío. Piloto11 completo1.920, noop448/448, tres deltas0:
+DSM inerte256/256; ladder/all cambian18/256pero noW/L/T, equivalentes entre sí.
+Sin confirmación. Piloto12 corre desde05:35UTC; loops13–16 encolados.
 Loop14 modifica sólo filtro económico FEED:36juegos/noop4.314turnos,
 consumo/producción aceptados comprobados; piloto1.248 en cola.
 Loop13 almacén: versión1 inválida
@@ -59,7 +61,12 @@ fallan alimentaciones y escapan tres vacas239. Próxima hipótesis requiere
 reserva de insumos futuros. Loop15 validado: cuatro reservas, control antiguo,
 42diagnósticos/noop4.314, max294ms. Night/24evitan los escapes del caso adverso
 y permiten conversión en el solvente;48/all24inertes en desarrollo. Piloto1.568
-encolado tras14. Total67variantes competitivas. No inferir W/L de esas sondas.
+encolado tras14. Loop16 mezcla inicial:48juegos/noop5.752, max329ms,
+cantidades/costes físicos comprobados;2.496piloto detrás de15. Sheep2pierde
+una vaca215en1272457736; registrar escapes, no ocultarlos. Total71variantes.
+Doce replays muestran33MILKtruncadas por banco excesivo antes del primer yield
+con inventario previo0. Próxima hipótesis de alimento marginal en auditoría
+de campo; no parchear cosecha indiscriminada ni tocar loop14 congelado.
 
 ## Estado y autorización
 

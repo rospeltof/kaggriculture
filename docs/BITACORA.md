@@ -1,5 +1,26 @@
 # Bitácora de experimentos
 
+## 2026-09-25, 05:38 UTC — Biblioteca11sin mejora, composición inicial16
+
+Piloto11 terminó1.920episodios, noop448/448, cero errores. Tres deltas0;
+DSM inerte256/256, ladder/all cambian18/256acciones pero noW/L/T. Ambas son
+equivalentes en256/256acciones propias/rivales yrewards. Sin confirmación.
+Diagnóstico de primera acción distinta:12turnos, stream nuevo13veces, mismas
+cantidades, margen1.111→1.098; mismo resultado. Piloto12arrancó05:35:02UTC.
+
+Auditoría nueva de12replays:33MILKperdidas por cap con inventario previo0,
+antes de primer yield tardío; cosechar antes no ayuda.14EGGcon stock previo,
+3CARROTdecay,1sequía y4MILKmaduras al final. Próxima hipótesis: no pagar
+alimento por bonus de cuidado que no cabe. Todavía sin piloto registrado;
+conservar loop14 de multiplicadores intacto.
+
+Loop16 preparado/validado: cuatro composiciones iniciales,48juegos/noop5.752,
+max329ms. Cantidades/costes/colocaciones/créditos verificados por motor. Cambian
+posteriores cultivos/tiendas; sheep2pierde una vaca215en1272457736 y hay escapes
+tardíos en base/cow1de1036000. Datos conservados, no selección por desarrollo.
+Piloto2.496con32seeds encolado tras15;71variantes competitivas construidas.
+Objetivo activo; continuar con lectura de aperturas y valor marginal del alimento.
+
 ## 2026-09-25, 05:20 UTC — Confirm10 inerte, reserva15 y feedback real
 
 Confirm10 terminó1.600episodios, noop416/416, cero errores, ambas políticas

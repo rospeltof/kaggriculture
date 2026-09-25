@@ -1,0 +1,41 @@
+{
+  "seeds": [
+    1036000,
+    1004000,
+    1272457736,
+    1018001
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "opponent": "submission/main_publico_arshs3_arsgorynich.py",
+  "purpose": "Physical initial composition, noop and diagnostics; no selection by rewards.",
+  "agents": {
+    "base": {
+      "path": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "initial_sheep1": {
+      "path": "results/rebano_inicial_20260925/initial_sheep1.py",
+      "sha256": "51fc6bf6651f22239c59e7b05a1c6987a14a97defd7a47af86fe8c65e5327447"
+    },
+    "initial_sheep2": {
+      "path": "results/rebano_inicial_20260925/initial_sheep2.py",
+      "sha256": "d6c0b24f47cd01763df361b79de717a9c9fb17caf2e378d8fb480a4852196078"
+    },
+    "initial_cow1": {
+      "path": "results/rebano_inicial_20260925/initial_cow1.py",
+      "sha256": "bacf602086d66f80ba4f4dea2a206df639ec533d81ccb26978102f8d5759cd76"
+    },
+    "initial_cow2": {
+      "path": "results/rebano_inicial_20260925/initial_cow2.py",
+      "sha256": "737e5727cd72e15bf58a28479c510afaa81d8729d5498cf372b66987d8d5ff7f"
+    },
+    "initial_noop": {
+      "path": "results/rebano_inicial_20260925/initial_noop.py",
+      "sha256": "620de52b791bafaf3a821a2cdd7ba117354ea1a2322c11159acbf3cf3c0e0c55"
+    }
+  },
+  "opponent_sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+}

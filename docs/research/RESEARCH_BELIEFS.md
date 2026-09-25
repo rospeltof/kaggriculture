@@ -4,6 +4,14 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, pérdida en campo] No todo cap se arregla cosechando más.**
+  Doce replays top3 reproducidos exactamente:33MILK truncados al primer yield
+  de vacas tardías con inventario previo0; es exceso de banco de cuidado.
+  Sólo14EGG se truncan con inventario acumulado; su rescate necesita ruta y
+  entrega.3CARROTperdidas por decay,1por sequía y4MILKmaduras en campo al final.
+  No es ingreso marginal realizable ni cobertura universal. Ver
+  `AUDITORIA_PERDIDAS_CAMPO_2026-09-25.md` y `field_loss_audit.json`.
+
 - **[2026-09-25, PASS auditado] Ocio emitido no equivale a trabajo marginal
   perdido.** Ocho replays top3 ya seleccionados,720estados exactos cada uno:
   al cerrar el día no queda CARE omitido en un animal alimentado con futuro

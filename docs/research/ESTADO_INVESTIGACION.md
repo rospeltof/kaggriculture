@@ -83,13 +83,16 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   Loop11 ahora valida tres bibliotecas (DSM4, ladder8, todas12):20juegos,
   noop2.876turnos exactos, max250ms; ladder/all sí seleccionan un stream nuevo.
   Piloto1.920 con32semillas1021000–031, luego confirmación de32semillas;
-  **Piloto11 corriendo desde05:11:34UTC**. No mezclar con history360 aún no promovida.
+  **Piloto11 completo**:1.920episodios, noop448/448, cero errores. Tres deltas0,
+  ICdos vías indefinido. DSM inerte256/256; ladder/all cambian18/256acciones
+  propias y10rivales en tres semillas, sin W/L/T distintos. Ladder/all son
+  equivalentes256/256en ambas acciones/rewards. Sin selección/confirmación.
 - Loop12 validado/encolado: tres aperturas nativas sobre top3 y MarketShock
   público con entrada corregida.12juegos, noop1.438turnos, max229ms; tomate
   inicial produjo4unidades y sustituye una vaca. Trigo temporal de base/cycle
   se cosecha en87, distinto al contador heredado que esperaba53. MarketShock
   tiene un escape tardío de ganso; no se oculta.1.008episodios, semillas1025000–007,
-  después de loop11. Total55variantes competitivas construidas en este loop.
+  **Piloto12 corriendo desde05:35:02UTC**. Total55variantes construidas al registrarlo.
 - Loop13 validado/encolado: cuatro ventas preventivas de excedente WHEAT/FERTILIZER
   con reservas1/2días. V1 inválida por omitir VQ al capturar entrada antigua;
   fuente/evidencia conservadas. **V2**36juegos completos, noop4.314turnos,
@@ -119,6 +122,18 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   y evita tres escapes; resto conserva base. En caso solvente:night/24permiten
   dos ovejas,48/all24inertes. No seleccionar por esos rewards. Piloto1.568
   con control antiguo, semillas1034000–015 tras14. Total67variantes construidas.
+- Loop16 validado/encolado: cuatro mezclas iniciales (1/2vacas→ovejas o viceversa),
+  sin más peones/rutas.48juegos/noop5.752turnos, max329ms, compras/colocaciones
+  y costes±100/200aceptados, crédito0al día1. Todas cambian acciones en4mundos.
+  Cambiar caja inicial altera cultivos y tiendas: es efecto total, no sólo lana
+  por leche. Sheep2pierde una vaca215en1272457736;1036000tiene escapes tardíos
+  en base/cow1. Se conservan, no ocultarlos. Piloto2.496con32semillas1037000–031,
+  confirmación32semillas1038000–031, detrás de15. Total71variantes construidas.
+- Auditoría de12replays top3:3CARROTpor decay,1por sequía y4MILKen campo final.
+  33MILKtruncadas con inventario previo0son exceso de cuidado antes de primer
+  yield; no se arreglan cosechando antes.14EGGcon cap sí requerirían ruta/entrega.
+  Próxima hipótesis: valorar bonus marginal limitado por capacidad. Sin nuevo
+  piloto registrado aún; ver `AUDITORIA_PERDIDAS_CAMPO_2026-09-25.md`.
 - Fuentes públicas nuevas: MasterEngine actualizado es tds25 byte exacto,
   excluido. MarketShock12ad317e diferente; loader elegía instalador. Corrección
   de entrada1c94b979 probada idéntica al `module.agent` del autor en8juegos.

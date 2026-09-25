@@ -1,0 +1,285 @@
+{
+  "library_dsm": {
+    "pool_episodes": 256,
+    "own_action_hash_changed": 0,
+    "opponent_action_hash_changed": 0,
+    "changed_seeds": [],
+    "changed_cells": []
+  },
+  "library_ladder": {
+    "pool_episodes": 256,
+    "own_action_hash_changed": 18,
+    "opponent_action_hash_changed": 10,
+    "changed_seeds": [
+      1021015,
+      1021024,
+      1021025
+    ],
+    "changed_cells": [
+      {
+        "opponent": "tds",
+        "seed": 1021015,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1021015,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1021024,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1021024,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1021025,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1021025,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1021015,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1021015,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1021025,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1021025,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1021015,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1021015,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1021025,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1021025,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1021015,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1021015,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1021025,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1021025,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      }
+    ]
+  },
+  "library_all": {
+    "pool_episodes": 256,
+    "own_action_hash_changed": 18,
+    "opponent_action_hash_changed": 10,
+    "changed_seeds": [
+      1021015,
+      1021024,
+      1021025
+    ],
+    "changed_cells": [
+      {
+        "opponent": "tds",
+        "seed": 1021015,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1021015,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1021024,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1021024,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1021025,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1021025,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1021015,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1021015,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1021025,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1021025,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1021015,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1021015,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1021025,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1021025,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1021015,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1021015,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1021025,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1021025,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      }
+    ]
+  }
+}

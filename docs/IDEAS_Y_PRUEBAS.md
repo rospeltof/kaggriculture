@@ -5,8 +5,9 @@
 El loop autónomo, incluidas submissions experimentales justificadas, está
 autorizado. Leer `research/ESTADO_INVESTIGACION.md` y la cola actual en
 `research/IDEAS_VIVAS_2026-09-25.md`. Las restricciones y propuestas de abajo
-son históricas. Confirm10 terminó inerte; piloto11 corre y loops12–14 están
-en cola. Loop15 diagnostica caja futura de alimento antes de convertir vacas en ovejas.
+son históricas. Confirm10 terminó inerte y biblioteca11sin mejora W/L/T;
+piloto12 corre y loops13–16están en cola. La siguiente hipótesis de alimento
+marginal evita pagar bonus de cuidado que no cabe en la primera producción.
 No duplicar los bloques congelados ni repetir experimentos ya registrados.
 
 ## Ronda vigente — 2026-09-14

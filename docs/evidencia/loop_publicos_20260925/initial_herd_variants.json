@@ -1,0 +1,42 @@
+{
+  "initial_sheep1": {
+    "path": "results/rebano_inicial_20260925/initial_sheep1.py",
+    "sha256": "51fc6bf6651f22239c59e7b05a1c6987a14a97defd7a47af86fe8c65e5327447",
+    "config": {
+      "source": "COW",
+      "target": "SHEEP",
+      "qty": 1
+    },
+    "layer_sha256": "2efee1352b5d3777352011118756a306de0b9574bdfcf75ba67eba41d7c833c7"
+  },
+  "initial_sheep2": {
+    "path": "results/rebano_inicial_20260925/initial_sheep2.py",
+    "sha256": "d6c0b24f47cd01763df361b79de717a9c9fb17caf2e378d8fb480a4852196078",
+    "config": {
+      "source": "COW",
+      "target": "SHEEP",
+      "qty": 2
+    },
+    "layer_sha256": "2efee1352b5d3777352011118756a306de0b9574bdfcf75ba67eba41d7c833c7"
+  },
+  "initial_cow1": {
+    "path": "results/rebano_inicial_20260925/initial_cow1.py",
+    "sha256": "bacf602086d66f80ba4f4dea2a206df639ec533d81ccb26978102f8d5759cd76",
+    "config": {
+      "source": "SHEEP",
+      "target": "COW",
+      "qty": 1
+    },
+    "layer_sha256": "2efee1352b5d3777352011118756a306de0b9574bdfcf75ba67eba41d7c833c7"
+  },
+  "initial_cow2": {
+    "path": "results/rebano_inicial_20260925/initial_cow2.py",
+    "sha256": "737e5727cd72e15bf58a28479c510afaa81d8729d5498cf372b66987d8d5ff7f",
+    "config": {
+      "source": "SHEEP",
+      "target": "COW",
+      "qty": 2
+    },
+    "layer_sha256": "2efee1352b5d3777352011118756a306de0b9574bdfcf75ba67eba41d7c833c7"
+  }
+}

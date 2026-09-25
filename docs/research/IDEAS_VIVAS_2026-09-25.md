@@ -1,8 +1,8 @@
 # Fronteras después de loops7–10
 
-Estado05:17UTC: confirm10 completa, ambas y2 inertes352/352. Biblioteca reciente
-corriendo; aperturas, almacén y alimentación (loops12–14) validados/encolados.
-Loop15 financiación validado/encolado. No duplicar corridas.67variantes construidas.
+Estado05:38UTC: confirm10 completa, ambas y2 inertes352/352. Biblioteca11
+completa sin W/L/T distinto. Aperturas12corriendo; loops13–16validados/encolados.
+No duplicar corridas.71variantes construidas.
 
 ## Nueva prioridad: financiar alimento antes de cambiar vacas por ovejas
 
@@ -101,6 +101,13 @@ validados. Ladder/all sí seleccionan streams nuevos. Piloto/confirmación con
 32semillas por bloque, fuentes congeladas. No repetir desarrollo ni confundir
 inclusión de nuevos datos con mejora de precisión o W/L. Ver protocolo loop11.
 
+Piloto11terminó:1.920, noop448/448, cero errores; DSM inerte256/256,
+ladder/all cambian18acciones propias/10rivales, cero diferenciasW/L/T. Ambas
+son equivalentes256/256en este pool. Sin selección, no confirmar bibliotecas
+por el solo hecho de añadir datos. ICdos vías indefinido, no evidencia de efecto0
+en todos los contextos. La interacción con history360no se registra sin nueva
+motivación: biblioteca no confirmó ventaja para justificarla aquí.
+
 ## Señal residual y diagnóstico pendientes, sin nueva corrida registrada
 
 History360 terminó confirm8 en+2,8409pp, IC dos vías[−1,249;6,931], debajo
@@ -148,6 +155,24 @@ La predicción de overflow requiere observaciones del motor reconstruido:
 el JSON ordena bolsas alfabéticamente y produjo pérdida/acción falsa en527.
 Cinco comparaciones de observación viva coinciden con el motor. Mantener esta
 distinción al diseñar diagnósticos futuros; no se demostró vínculo con pilot7.
+
+## Composición inicial y cuidado que excede capacidad
+
+Loop16 registra cuatro mezclas iniciales:1/2vacas→ovejas y1/2ovejas→vacas,
+sin nuevos trabajadores ni rutas, costes reales±100/200. Se verifica compra
+y colocación con créditos nativos; no se conocen aún las tiendas. Desarrollo
+48juegos válidos/noop5.752/max329ms, piloto2.496con32semillas1037000–031en cola
+tras15. Las cuatro composiciones compradas/colocadas correctamente; sheep2pierde
+una vaca215en1272457736. No confundir
+desarrollo con ventaja poblacional ni omitir cambios de cultivos/RNG posteriores.
+
+La auditoría de12replays encuentra33MILK truncadas con yield previo0: exceso
+de cuidado antes del primer yield de vacas tardías. Cosecha adicional no ayuda
+en esas tiles vacías. Próxima hipótesis aún sin piloto registrado: valorar el
+bonus marginal limitado por cap y ahorrar FEED cuando no suma producción,
+con hambre previa0y alimentación siguiente verificada. Ver auditoría de campo;
+no repetir los multiplicadores de loop14 bajo otro nombre.14EGG sí se pierden
+con inventario previo, pero rescatar requiere ruta/entrega factible.
 
 ## Incidencia neutral pendiente del harness
 

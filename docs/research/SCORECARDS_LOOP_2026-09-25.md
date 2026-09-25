@@ -1,7 +1,7 @@
 # Scorecards del loop continuo — 2026-09-25 UTC
 
-Estado05:17UTC: pilotos1–10 y confirm1/5/7/8/10 completos; piloto11 corriendo.
-Loops12–15 validados y encolados. Objetivo persistente activo.
+Estado05:38UTC: pilotos1–11 y confirm1/5/7/8/10 completos; piloto12 corriendo.
+Loops13–16 validados y encolados. Objetivo persistente activo.
 
 ## Confirmación disjunta terminada
 
@@ -531,3 +531,39 @@ En el solvente, night/24convierten ambas vacas y compran8trigos, sin escapes;
 Fuentes/ledgers congelados, `cash_validation.json` aprobada. Piloto1.568
 (1034000–015) encolado tras14, control antiguo excluido de promoción;
 confirmación1035000–015. Total67variantes competitivas distintas construidas.
+
+## Piloto11 completo: datos nuevos, sin cambio W/L/T
+
+1.920episodios,32semillas/4rivales/ambos asientos, noop448/448, cero errores.
+Base89,453125%; DSM/ladder/all mismo WR, delta0 e ICdos vías indefinido. DSM
+inerte256/256. Ladder/all cambian18/256acciones propias y10rivales, en semillas
+1021015/024/025. Ambas coinciden en todos los hashes/rewards256/256del pool;
+no son réplicas independientes. Sin selección/confirmación ni nuevo envío.
+
+Primera celda ordenada con acción distinta, sin filtro W/L:ars40/1021015/asiento0.
+Reproducción completa/caja conciliada, primeras diferencias436,12turnos distintos,
+iguales tiendas y cantidades vendidas. Un stream nuevo se selecciona13veces;
+forecast134→135unidades/21activaciones. Caja propia132.326→132.335; rival
+131.215→131.237; margen1.111→1.098, ambas victorias. No inferir mejora de
+precisión o fuerza sólo de añadir fuentes. `pilot11.library_ladder.changed.json`.
+
+Piloto12comenzó05:35:02UTC,1.008episodios de aperturas.
+
+## Campo y composición inicial (loop16)
+
+Doce replays top3 reproducidos720estados cada uno:3CARROTdecay,1sequía,
+4MILKmaduras al final.33MILKse truncan en primer yield de vacas tardías con
+inventario previo0; cosechar antes no rescata ese exceso de cuidado.14EGGcon
+inventario previo podrían requerir nuevas rutas/entregas. Ningún parche general
+de cosecha registrado; siguiente hipótesis valora bonus limitado por capacidad.
+
+Loop16: cuatro mezclas iniciales con±1/2vacas/ovejas, iguales trabajadores y
+pasturas.48juegos, noop5.752turnos, max328,55ms, cero errores. Costes reales
+±100/200 y cantidades exactas compradas/colocadas; crédito0al día1. Todas
+cambian acciones en4mundos. Sheep1/2cambian primeras tiendas4/4: no es sólo
+intercambiar producción sobre un mercado idéntico. Sheep2pierde una vaca215
+en1272457736; base/cow1también tienen escapes tardíos en1036000. Se archivan
+sin descartar esos episodios ni escoger por rewards. Stock privado final0.
+
+Piloto2.496(1037000–031) encolado detrás de15, confirmación condicional32seeds
+1038000–031. Total71variantes competitivas construidas, no71mejoras.
