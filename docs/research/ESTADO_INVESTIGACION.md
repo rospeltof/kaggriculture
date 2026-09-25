@@ -40,12 +40,17 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   completos, plantas y ventas16/32 confirmadas, R51 y ovejas conservados.
   Piloto1.248 completo, noop256/256. D16 inertes; d18 +1,5625pp cada una,
   IC dos vías[−3,41;6,54], cambia16/128 partidas en dos semillas.
-  **Confirm7 corriendo**:1.600 episodios, dos d18, semillas1011000–015.
-- Loop8 registrado: seis variantes de patrones (rank5/7, historia120/360,
+  **Confirm7 completa**:1.600 episodios, noop416/416, cero errores. Ambas
+  d18 inertes en352/352 partidas del pool; delta0, IC dos vías indefinido.
+  INCONCLUSIVE_NOT_SELECTED: no prueba de beneficio, no envío.
+- Loop8: seis variantes de patrones (rank5/7, historia120/360,
   ajuste por producto y desfase temporal). Validación16 juegos completa,
   noop1.438 acciones idénticas, cero errores, máximo271ms. Piloto1.472
-  encolado detrás de loop7. Total36 variantes competitivas construidas.
-- Loop9 en desarrollo: seis rebaños incrementales (2/3/6 ovejas, día12/14),
+  completo:1.472 episodios, noop224/224, cero errores. History360, phase2 y
+  rank5 +1,5625pp cada uno (una celda mejor); rank7−3,125, history120−10,9375,
+  product3−1,5625. Desempate registrado selecciona history360/phase2.
+  **Confirm8 corriendo** desde03:45:23UTC:1.600 episodios disjuntos.
+- Loop9 validado/encolado: seis rebaños incrementales (2/3/6 ovejas, día12/14),
   sin comprar tierra y con demanda YARN ya visible. Se validan22 partidas
   dirigidas por versión antes de encolar1.920. V2 corrige cosechas tardías;
   motor confirmó36/53/83 entregas completas en ambos asientos. **V3** incluye
@@ -53,6 +58,17 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   Otros22 juegos válidos, forzadas byte de acciones/rewards idéntico a v2;
   seis variantes normales inertes en ese mundo. Manifiesto v3 actualizado
   antes del piloto9; runner espera a loop8. Total42 variantes competitivas.
+- Loop10 validado/encolado: adelantar conversión COW→SHEEP a días3–7,
+  fuera de la regla8–11 ya existente. Seis políticas de fecha/demanda/caja.
+ 48 juegos dirigidos, noop4.314 turnos exactos, max284ms. En mundo YARN/YARN:
+  dos compras/colocaciones aceptadas,49 lanas cosechadas, cero escapes/créditos
+  pendientes/inventario final. En dos mundos sin YARN temprano son inertes.
+  Piloto1.920 semillas1018000–015 después de loop9; ver protocolo y manifiesto.
+  Total48 variantes competitivas construidas. No tratar la sonda como W/L poblacional.
+- Biblioteca auditada:2.398 streams,64/64 pares de tiendas,24–63 por par.
+  Doce streams recientes de ventas aceptadas son nuevos por fingerprint; no
+  agregan pares de tiendas. Fecha de biblioteca original desconocida (ids−1).
+  `recent_sale_streams.json` preparado; aún sin candidata ni piloto registrado.
 - Auditoría piloto7: cuatro filas TDS con acción propia idéntica y hash rival
   distinto, pero rewards/WLT idénticos. Ocho reproducciones (hashseeds0–3)
   dieron acciones/estados idénticos; origen de la variación neutral no resuelto.
@@ -92,6 +108,12 @@ Cuatro reproducciones exactas y caja conciliada. Lana391/759 unidades,
 ingresos69.502/113.264; rival paga menos jornales y tierra. Ver
 `FEEDBACK_TOP3_2026-09-25.md`. Muestra pequeña, no WR ni fuerza estable.
 Snapshot posterior02:58UTC: top3 1738,5 / VQ2268,6, sin recuento nuevo sincronizado.
+Snapshot **03:39:41UTC**: top3 **1941,6 /30 episodios listados**, VQ
+**2259,1 /56**, ambos COMPLETE; recuentos incluyen validación. Cuatro nuevas
+partidas seleccionadas por endTime antes de leer rewards:4V, márgenes923–2891.
+720 estados exactos×4, caja conciliada, cero escapes propios/inventario final.
+Producción muy similar a rivales en esa muestra; no es superioridad causal vsVQ.
+Archivos con sufijo0333 se consultaron03:39; metadatos `.fetch.json` dan hora real.
 
 Lo siguiente es el cierre de la ronda anterior; no significa parar este loop.
 

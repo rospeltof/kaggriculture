@@ -1,0 +1,429 @@
+{
+  "candidate": "history360",
+  "direction": 1,
+  "rule": "First sorted opponent/seed/seat with WLT improvement or regression; mechanism only",
+  "opponent": "tds",
+  "seed": 1013006,
+  "seat": 0,
+  "first_difference": 625,
+  "changed_action_turns": 3,
+  "first_actions": [
+    {
+      "farmer": [
+        "PICKUP",
+        "WHEAT",
+        2
+      ],
+      "hands": [
+        [
+          "SOUTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PICKUP",
+          "WHEAT",
+          4
+        ],
+        [
+          "PICKUP",
+          "WHEAT",
+          4
+        ],
+        [
+          "PICKUP",
+          "FERTILIZER",
+          2
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "market": [
+        [
+          "SELL",
+          "EGG",
+          4
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          2
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          2
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          1
+        ]
+      ]
+    },
+    {
+      "farmer": [
+        "PICKUP",
+        "WHEAT",
+        2
+      ],
+      "hands": [
+        [
+          "SOUTH"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "PICKUP",
+          "WHEAT",
+          4
+        ],
+        [
+          "PICKUP",
+          "WHEAT",
+          4
+        ],
+        [
+          "PICKUP",
+          "FERTILIZER",
+          2
+        ],
+        [
+          "PASS"
+        ]
+      ],
+      "market": [
+        [
+          "SELL",
+          "MILK",
+          5
+        ],
+        [
+          "SELL",
+          "EGG",
+          4
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          2
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          2
+        ],
+        [
+          "SELL",
+          "FERTILIZER",
+          1
+        ]
+      ]
+    }
+  ],
+  "first_market": {
+    "inventory": {
+      "WHEAT": 9754,
+      "CARROT": 9790,
+      "TOMATO": 9749,
+      "STRAWBERRY": 10047,
+      "MELON": 10117,
+      "EGG": 9874,
+      "MILK": 10072,
+      "WOOL": 10003,
+      "FERTILIZER": 10418
+    },
+    "prices": {
+      "WHEAT": 41,
+      "CARROT": 51,
+      "TOMATO": 103,
+      "STRAWBERRY": 30,
+      "MELON": 113,
+      "EGG": 58,
+      "MILK": 9,
+      "WOOL": 199,
+      "FERTILIZER": 16
+    }
+  },
+  "final_rewards": [
+    [
+      82276.0,
+      82530.0
+    ],
+    [
+      82580.0,
+      82325.0
+    ]
+  ],
+  "own_sale_units_cash": [
+    {
+      "WHEAT": [
+        394,
+        15538
+      ],
+      "FERTILIZER": [
+        339,
+        15569
+      ],
+      "WOOL": [
+        151,
+        22246
+      ],
+      "MILK": [
+        169,
+        11995
+      ],
+      "MELON": [
+        72,
+        14267
+      ],
+      "EGG": [
+        93,
+        5303
+      ],
+      "STRAWBERRY": [
+        249,
+        17288
+      ],
+      "CARROT": [
+        117,
+        5500
+      ]
+    },
+    {
+      "WHEAT": [
+        394,
+        15543
+      ],
+      "FERTILIZER": [
+        339,
+        15569
+      ],
+      "WOOL": [
+        151,
+        22246
+      ],
+      "MILK": [
+        169,
+        11983
+      ],
+      "MELON": [
+        72,
+        14267
+      ],
+      "EGG": [
+        93,
+        5303
+      ],
+      "STRAWBERRY": [
+        249,
+        17599
+      ],
+      "CARROT": [
+        117,
+        5500
+      ]
+    }
+  ],
+  "telemetry": [
+    {
+      "_V92_P_REPORT": {
+        "pred_units": 174,
+        "pred_fires": 27,
+        "pred_errors": 0
+      },
+      "_HP_STATS": {
+        "extension_signals": 144,
+        "rejected_signals": 244
+      },
+      "_CA_REPORT": {
+        "ca_swaps": 9,
+        "ca_rescues": 0,
+        "ca_harvested": 19,
+        "ca_sold": 11,
+        "ca_seed_bought": 100,
+        "ca_wheat_seed_saved": 5,
+        "ca_carrot_seed_saved": 13,
+        "ca_feed_block": 0,
+        "ca_errors": 0,
+        "ca_min_wheat": 0
+      },
+      "_HD2_REPORT": {
+        "hd2_decision": "keep@241",
+        "hd2_ev": "COW:-912,GOOSE:3469,SHEEP:-1450",
+        "hd2_rewrites": 0,
+        "hd2_credit_units": 0,
+        "hd2_sold_units": 0,
+        "hd2_errors": 0
+      },
+      "_CXTB_REPORT": {
+        "cxtb_calls": 1,
+        "cxtb_opened": 0,
+        "cxtb_blocked": 1,
+        "cxtb_errors": 0,
+        "cxtb_features": [
+          {
+            "opened": false,
+            "base": false,
+            "revenue": 7463,
+            "shops": 2,
+            "price": 77,
+            "inventory": 9856,
+            "their_tomatoes": 0
+          }
+        ]
+      },
+      "_V219_REPORT": {
+        "commitments": 0,
+        "hire_requests": 0,
+        "confirmed_workers": 0,
+        "hire_shortfalls": 0,
+        "plant_requests": 0,
+        "confirmed_plants": 0,
+        "water_requests": 0,
+        "fertilize_requests": 0,
+        "harvest_requests": 0,
+        "confirmed_harvest_units": 0,
+        "drop_requests": 0,
+        "tomato_sale_requests": 0,
+        "budget_declines": 0,
+        "lost_plants": 0,
+        "extra_fertilizer_days": 0,
+        "reordered_market_turns": 118,
+        "errors": 0
+      },
+      "_V233_REPORT": {
+        "sheep_commit_requests": 0,
+        "sheep_committed": 0,
+        "sheep_hire_requests": 0,
+        "sheep_workers_confirmed": 0,
+        "sheep_hire_shortfalls": 0,
+        "sheep_budget_declines": 0,
+        "sheep_capacity_declines": 0,
+        "sheep_purchase_shortfalls": 0,
+        "sheep_feed_buy_requests": 0,
+        "sheep_wool_harvested": 0,
+        "sheep_fert_collected": 0,
+        "sheep_extra_wool_sales": 0,
+        "sheep_extra_fert_sales": 0,
+        "sheep_rescue_feed_requests": 0
+      }
+    },
+    {
+      "_V92_P_REPORT": {
+        "pred_units": 179,
+        "pred_fires": 28,
+        "pred_errors": 0
+      },
+      "_HP_STATS": {
+        "extension_signals": 147,
+        "rejected_signals": 251
+      },
+      "_CA_REPORT": {
+        "ca_swaps": 9,
+        "ca_rescues": 0,
+        "ca_harvested": 19,
+        "ca_sold": 11,
+        "ca_seed_bought": 100,
+        "ca_wheat_seed_saved": 5,
+        "ca_carrot_seed_saved": 13,
+        "ca_feed_block": 0,
+        "ca_errors": 0,
+        "ca_min_wheat": 0
+      },
+      "_HD2_REPORT": {
+        "hd2_decision": "keep@241",
+        "hd2_ev": "COW:-912,GOOSE:3469,SHEEP:-1450",
+        "hd2_rewrites": 0,
+        "hd2_credit_units": 0,
+        "hd2_sold_units": 0,
+        "hd2_errors": 0
+      },
+      "_CXTB_REPORT": {
+        "cxtb_calls": 1,
+        "cxtb_opened": 0,
+        "cxtb_blocked": 1,
+        "cxtb_errors": 0,
+        "cxtb_features": [
+          {
+            "opened": false,
+            "base": false,
+            "revenue": 7463,
+            "shops": 2,
+            "price": 77,
+            "inventory": 9856,
+            "their_tomatoes": 0
+          }
+        ]
+      },
+      "_V219_REPORT": {
+        "commitments": 0,
+        "hire_requests": 0,
+        "confirmed_workers": 0,
+        "hire_shortfalls": 0,
+        "plant_requests": 0,
+        "confirmed_plants": 0,
+        "water_requests": 0,
+        "fertilize_requests": 0,
+        "harvest_requests": 0,
+        "confirmed_harvest_units": 0,
+        "drop_requests": 0,
+        "tomato_sale_requests": 0,
+        "budget_declines": 0,
+        "lost_plants": 0,
+        "extra_fertilizer_days": 0,
+        "reordered_market_turns": 118,
+        "errors": 0
+      },
+      "_V233_REPORT": {
+        "sheep_commit_requests": 0,
+        "sheep_committed": 0,
+        "sheep_hire_requests": 0,
+        "sheep_workers_confirmed": 0,
+        "sheep_hire_shortfalls": 0,
+        "sheep_budget_declines": 0,
+        "sheep_capacity_declines": 0,
+        "sheep_purchase_shortfalls": 0,
+        "sheep_feed_buy_requests": 0,
+        "sheep_wool_harvested": 0,
+        "sheep_fert_collected": 0,
+        "sheep_extra_wool_sales": 0,
+        "sheep_extra_fert_sales": 0,
+        "sheep_rescue_feed_requests": 0
+      },
+      "_PM_REPORT": {
+        "calls": 275,
+        "product_fits": 0,
+        "shifted_patterns": 0
+      }
+    }
+  ],
+  "shops_preserved": true
+}

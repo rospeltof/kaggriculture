@@ -20,12 +20,14 @@ y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_publicos.py`, `continuar_loop_herd.py`,
 `continuar_loop_recuperacion.py`, `continuar_loop_tomate.py` y
 `continuar_loop_productos.py`, `continuar_loop_relleno.py` y
-`continuar_loop_patrones.py` y `continuar_loop_rebano.py` encadenan bloques
+`continuar_loop_patrones.py`, `continuar_loop_rebano.py` y `continuar_loop_vacas.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
 terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
 (una de64 partidas cambia, +1,5625pp). Confirm5 tomate−21,591pp: REJECTED.
-Loop6 sin seleccionadas; confirm7 corre (dos d18, piloto+1,5625pp);
-loops8/9 validados y encolados. Rebaño vigente v3 incluye oferta propia
+Loop6 sin seleccionadas; confirm7 completa, ambas d18 inertes352/352,
+sin selección. Confirm8 corre (history360/phase2, piloto+1,5625pp), loops9/10
+validados/encolados. Loop10 extiende COW→SHEEP a días3–7;48 juegos dirigidos
+y dos colocaciones/49 lanas confirmadas en mundo con YARN. Rebaño vigente v3 incluye oferta propia
 ya comprada: no volver a versiones1/2 ni a sus manifiestos históricos. No repetir las
 versiones infill2/3: v4 corrige interferencia R51 y overflow de cosecha.
 Top3 enviada **56537205 COMPLETE**, commit ba1fda8, sha9668e30a; validación720

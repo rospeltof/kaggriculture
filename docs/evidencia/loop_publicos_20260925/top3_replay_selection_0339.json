@@ -1,0 +1,35 @@
+{
+  "recorded_at": "2026-09-25T03:41:36.017605+00:00",
+  "rule": "Four completed episodes with latest endTime in 03:39:41UTC snapshot, before reading rewards.",
+  "source": "top3_episodes_0333.txt",
+  "episodes": [
+    {
+      "id": 113127276,
+      "createTime": "2026-09-25T03:34:00.587000",
+      "endTime": "2026-09-25T03:35:55.776000",
+      "state": "EpisodeState.COMPLETED",
+      "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+    },
+    {
+      "id": 113126108,
+      "createTime": "2026-09-25T03:30:01.047000",
+      "endTime": "2026-09-25T03:34:46.784000",
+      "state": "EpisodeState.COMPLETED",
+      "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+    },
+    {
+      "id": 113124966,
+      "createTime": "2026-09-25T03:26:00.505000",
+      "endTime": "2026-09-25T03:31:10.772000",
+      "state": "EpisodeState.COMPLETED",
+      "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+    },
+    {
+      "id": 113125627,
+      "createTime": "2026-09-25T03:26:01.502000",
+      "endTime": "2026-09-25T03:28:32.398000",
+      "state": "EpisodeState.COMPLETED",
+      "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+    }
+  ]
+}

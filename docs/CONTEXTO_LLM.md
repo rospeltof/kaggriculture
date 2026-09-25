@@ -13,7 +13,7 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 
 ## Índice y huellas de los documentos
 
-- `docs/research/SCORECARDS_LOOP_2026-09-25.md` — SHA-256 `645211a876e52a29e8f729b0c0fb3556c1f243193e83b85c712796615fe71af8`
+- `docs/research/SCORECARDS_LOOP_2026-09-25.md` — SHA-256 `6f96f593c3a2cbeb1aa1c1fe457ccb886fb3a71a5482f4c6d07b64cef71abac7`
 - `docs/research/PREREG_LOOP1_2026-09-25.md` — SHA-256 `cb1d5a3afcb5e1b629ff72a40a91d2a785937c52cd4d3911574d0e0f43c7346b`
 - `docs/research/PREREG_LOOP2_2026-09-25.md` — SHA-256 `27584d8c9c7f8bca695c37e0506e42d29c31602c11805bfa086fa80f8b2dd328`
 - `docs/research/PREREG_LOOP3_2026-09-25.md` — SHA-256 `9fd1d074212b58e8d8664bc2aa2c959c683bb8b0ffa97d0814c01e470c2ea576`
@@ -23,21 +23,22 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 - `docs/research/PREREG_LOOP7_RELLENO_2026-09-25.md` — SHA-256 `ac40ef7f3112c4d8388017b64cc0b7120a8c4186f30b9669fcc5c6fa85f2d2b0`
 - `docs/research/PREREG_LOOP8_PATRONES_2026-09-25.md` — SHA-256 `a993c7b152fc3f1b18bca8ba5b244d2825c1ecc67b1839fe9792fc2561b9dba2`
 - `docs/research/PREREG_LOOP9_REBANO_2026-09-25.md` — SHA-256 `2cafdc0c8050330a0d54518f47ca23f77fb276169eae77ab17c883eeb8c10723`
-- `docs/research/IDEAS_VIVAS_2026-09-25.md` — SHA-256 `8547bb2c12dba7f3c96e297438faeeef03aa671f3676a279698a98fa461421ea`
-- `docs/research/FEEDBACK_TOP3_2026-09-25.md` — SHA-256 `1be69dc994d85fd92abad16d70163acd31f4cc3b5d26dfe9815b58d90f1ceea2`
+- `docs/research/PREREG_LOOP10_VACAS_2026-09-25.md` — SHA-256 `a7d411e36d0355b5e7b9d7b873ecba2fb6a7e44575ea43edfc06b4da936b138c`
+- `docs/research/IDEAS_VIVAS_2026-09-25.md` — SHA-256 `ced760f95841e1ed06116f5fa9ad7bd8385658c7c18c180277f66ec7d7f0c5ed`
+- `docs/research/FEEDBACK_TOP3_2026-09-25.md` — SHA-256 `657708d485916dddf6e6be3c32171394dfd57c120ec4d5c541e9180721d4c7e5`
 - `docs/research/LIDER_Y_FUENTES_2026-09-25.md` — SHA-256 `f940d574bb7e3d43785ee31a100204a8c3a7c7587009f9fcbb02b1ef8df07daf`
 - `docs/research/DECISION_ENVIO_TOP3_2026-09-25.md` — SHA-256 `a17b15f6d0db894ec64c3dbd25ce08ac2553f25d2528682b129a1f4a779cbde6`
 - `docs/research/RESULTADOS_2026-09-25.md` — SHA-256 `98349e7d3065ae9fb91d396d089c4aa95f1841d5c8b844242add6ba3e8e6965c`
-- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `3c14762e9ef6f5a2610eb644b90fa9b4edc5feeb27fe284ab5df6d46306094f0`
+- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `535e67242db97733ad78cfdadbbb28000d47cb5a3da75aa0f983f8915a64d371`
 - `docs/research/RESEARCH_BELIEFS.md` — SHA-256 `59c4b31f5c5d29e045c86c36dd499dd727feb3c6419cd24ab83de1048dce4491`
 - `docs/research/HARNESS_VS_LEADERBOARD.md` — SHA-256 `bc8c5a4f096242f5d95851275b0e3ba401371edbe85796f447ec2eee94142518`
-- `docs/research/SUBMISSION_HISTORY.json` — SHA-256 `d5134bafa8dda2bf57beb9b1cce345704461d618b4d0af0a115a4c0ff52eb21d`
+- `docs/research/SUBMISSION_HISTORY.json` — SHA-256 `9ba7756082d73ac6f026054be6a8e16f0dd57ed1a16f3dc51f4a002ba7754792`
 - `docs/research/PREREG_VQ_2026-09-24.md` — SHA-256 `7f4b6b42db6dbeeb3981cd0fa56fbf071f4b4f6eec121ceeb292b2b0ca6ebab5`
 - `docs/research/PREREG_ADV_2026-09-24.md` — SHA-256 `bed0700878535baaf11409f4dfef3364623943e5e42ecea44fb13b5ebcae4b58`
 - `docs/research/PREREG_FORECAST_GATE_2026-09-25.md` — SHA-256 `bf5dd9fbf03de91f1fbf95a557600d969b3c01f143f849271a827abc87cfd2be`
 - `docs/research/PREREG_PUBLIC_REFRESH_2026-09-25.md` — SHA-256 `bc60b8ef2b9580510782f1801bcac5e43f4f5c8524f9a39bd9a7c587812a12cc`
 - `docs/PROMPT_SEGUNDO_CEREBRO.md` — SHA-256 `e319f3917d23defc367804e464d3d13be14d21061eb2ca73fede8977d4f04c07`
-- `AGENTS.md` — SHA-256 `b957c36c991bd95554fcb992f84f2281b88e762fbd9e6e674576125e2b632a74`
+- `AGENTS.md` — SHA-256 `f236b55129d245a3213b895a20312310453d857b84eca43cdb50d957eb25afed`
 - `docs/ESTADO_ACTUAL.md` — SHA-256 `db1a8944bbb8cf55131e96e009cfb164b38f7f8d72a015135b806a1852ef2e9d`
 - `docs/RESULTADOS_LIDER_2026-09-14.md` — SHA-256 `efb3b4c09053f13d648e8019a7ba8363f68a24c234b04b4869754e82877c648b`
 - `docs/ANALISIS_LIDER_2026-09-14.md` — SHA-256 `63e3448307868dec34c5c67a697f052f4bc31b4437bc7781b4e702b1d234db53`
@@ -365,6 +366,68 @@ Búsqueda pública adicional no identificó un código inequívoco de c0nrad.
 [V35](https://www.kaggle.com/code/ahmedberatozer/kaggriculture-v35-reactive-sales-sheep-expansi)
 describe expansión financiada ya presente en nuestra genealogía; no se repite
 como candidata nueva. La fuente útil para esta ronda es el replay auditado.
+
+## Confirm7: sin activación en muestra disjunta
+
+1.600 episodios, noop416/416, cobertura y hashes archivados verificados.
+Ambas d18 conservan acciones propias/rivales y rewards en352/352 partidas
+contra el pool; base79,545%, delta0. IC95 dos vías indefinido, no evidencia
+de precisión perfecta. INCONCLUSIVE_NOT_SELECTED: no beneficio confirmado;
+no enviar ni bajar el gate a posteriori. La omisión de oferta V219 sigue
+siendo un defecto del modelo, pero no justifica repetir el bloque sin una
+hipótesis nueva. Piloto8 empezó03:23:41UTC tras cerrar confirm7.
+
+## Piloto8: memoria larga y ajuste temporal a confirmación
+
+1.472 episodios, noop224/224, cero errores, fuentes verificadas. Base96,875%:
+techo alto del panel. Rank5/history360/phase2 empatan+1,5625pp (IC dos vías
+[−2,13;5,26]), una celda mejor y ninguna peor. Desempate alfabético registrado
+elige history360/phase2; no subir rank5 por parecer simple a posteriori.
+Rank7−3,125pp, history120−10,9375, product3−1,5625; IC amplios cruzan cero.
+Todas alteran acciones; history36086/128, phase296/128, demás128/128.
+Confirm8 desde03:45:23UTC,1.600 episodios,16 semillas disjuntas/11rivales.
+
+Cuatro reproducciones de mecanismo completas, rewards originales y caja
+conciliados. History360 vsTDS/1013006/asiento0: tres acciones distintas desde625,
+margen−254→+255, mismas tiendas/unidades vendidas; fresa+311de ingreso,
+leche−12 y trigo+5. Phase2 vsTDS/1013007/asiento0:17acciones desde388,
+margen−444→+69, tiendas iguales,142patrones desplazados; leche+263, dos
+huevos extra/+88, lana+4 y fresa−12. Una activación forecast adicional en
+cada caso. No atribuir todo el margen al precio propio: también cambia el
+dinero del rival. Evidencia `pilot8.{history360,phase2}.mechanism.json`.
+
+## Loop10: conversión temprana, desarrollo y cola
+
+La base YA convierte vacas/gansos a ovejas con YARN entre días8–11. El hueco
+nuevo es3–7, compras nativas de1–2 vacas; se conserva logística y no se compran
+más peones/tierra. Seis políticas: inicio3/6 ×(mínimoYARN,reserva)=(1,100),
+(2,100),(1,500). No es el modelo de futuras tiendas/EV del loop3.
+
+48 juegos mecánicos:1004000/1017000 inertes por no haber YARN temprano;
+1272457736, escogido por YARN/YARN del replay c0nrad, con rival arshs3 reactivo:
+seis variantes idénticas en ese mundo, dos COW→SHEEP en173/178, dos colocaciones
+aceptadas y49 lanas cosechadas. Sin escapes, créditos pendientes ni inventario
+privado final. Noop4.314 turnos exactos, máximo284ms, sin errores. No se afirma
+que sean idénticas en todos los mundos.1.920 partidas encoladas detrás de loop9.
+
+La sonda ilustra el precio endógeno: lana propia410→459, ingreso94.662→93.400;
+dinero114.856→112.753. Rival114.184→104.003 y margen+672→+8.750. Ambos ya
+eran victorias; no seleccionar por ese margen ni confundir más lana con más
+ingreso propio. Archivo `early_cow_validation.json`, protocolo loop10.
+
+## Feedback03:39 y auditoría de biblioteca
+
+Top31941,6/30episodios listados, VQ2259,1/56; consulta real03:39:41UTC,
+aunque nombres de archivos dicen0333. Muestra fija por endTime: cuatro
+victorias,923–2891de margen.720 estados exactos y caja conciliada por partida,
+cero escapes propios/inventario final. Producción parecida a sus rivales;
+no representa la diversidad de todo el ladder ni comparación causal conVQ.
+
+Biblioteca original2.398streams,24–63por cada uno de64pares. Sin fechas/ids
+originales recuperables (ids−1): no afirmar antigüedad. Doce streams aceptados
+recientes (DSM4, rivales top3 ocho) son distintos semánticamente; Jaccard de
+eventos más cercano0,118–0,573. No agregan pares de tiendas. Preparados en
+`recent_sale_streams.json`, aún sin agente ni evaluación. No es precisión OOS.
 
 
 
@@ -948,12 +1011,76 @@ Runner aún esperaba loop8; piloto9 no había iniciado. Regla competitiva intact
 
 ---
 
+## SOURCE: docs/research/PREREG_LOOP10_VACAS_2026-09-25.md
+
+# Loop10: adelantar sustituciones de compras COW por SHEEP
+
+La hipótesis inicial de IDEAS_VIVAS se precisa tras auditar la base: ya existe
+`_y_controller`, que convierte vacas/gansos en ovejas con YARN entre días8–11.
+Las cintas nativas aún compran vacas en pasos88(d3),150(d6),169/176(d7), con
+variaciones por ruta. El hueco nuevo es **d3–7**, sin tocar compras iniciales,
+sin agregar terreno, trabajadores ni convertir animales que ya existen.
+No repetir loop3: allí se cambiaba el modelo EV/tiendas futuras y las compras
+que la ventana8–11 ya permitía. Aquí se reutiliza el controlador físico nativo.
+
+Base top3 sha9668e30a. Seis brazos, inicio3/6 × políticas de(YARN mínimo,
+reserva residual):(1,100),(2,100),(1,500). Sólo compras COW de1–2 unidades,
+con demanda ya visible y sin animales en almacén/inventarios ni créditos
+anteriores sin recoger, para evitar confundir cohortes. Mantiene8–11 intacto.
+La reserva usa la estimación nativa de caja tras órdenes; no implica compra
+garantizada. La regla por tiendas es una hipótesis, no una proyección de lucro.
+
+Reutiliza confirmación física de compra, reescritura PICKUP/PLACE y ventas
+del padre. Auditar compras realmente aceptadas, colocaciones observadas,
+lana cosechada por el motor, alimentación/escapes, inventario y créditos al
+cierre, coste y errores. La cadencia nativa puede no ser óptima para ovejas;
+esa es una limitación a medir, no asumir neutralidad por conservar rutas.
+
+Desarrollo fijado: mundo conocido1004000, arshs3 original reactivo, ambos
+asientos; base/seis candidatas/noop con inicio8=16 episodios. Noop exige
+acciones completas de ambos jugadores y rewards idénticos. No seleccionar
+por rewards en ese mundo. Si faltase cobertura, fijar sondas dirigidas nuevas
+antes de congelar; ninguna formará parte del estimador competitivo.
+
+Piloto **1018000–1018015**, cuatro rivales fijados arshs3 original, tds,
+hybu, ars40; ambos asientos,8brazos×4+28cruces,×32=**1.920 episodios**.
+Semillas1017000–003 reservadas sólo para desarrollo adicional si hace falta.
+Primario W/L/T pareado contra top3; unidad semilla, reportar IC semilla/dos
+vías, cambios de acciones y runtime. Hasta dos candidatas con delta>0,
+ordenadas por delta y después nombre. Cero errores y noop exacto obligatorios.
+
+Confirmación **1019000–1019015**, once rivales fijos de confirm1, ambos
+asientos;1.152/1.600 episodios. Gate≥3pp, ningún rival<−20pp. Revisar
+mecanismo y tiempo antes de cualquier envío real. Subpanel del piloto sólo
+diagnóstico. No cambiar reglas por resultados, dinero o rival favorable.
+
+Después de validar desarrollo, encadenar detrás de loop9. Un solo torneo
+grande; fuentes congeladas durante cada bloque. No envíos automáticos.
+
+Desarrollo adicional antes del piloto:1004000 no tenía YARN hasta d9; las
+seis variantes son inertes y noop exacto.1017000 tampoco activó las primeras
+variantes observadas; completar la sonda. Para validar mecánica activa usar
+el seed1272457736 del replay c0nrad ya auditado, escogido porque tiene YARN
+temprano, con arshs3 reactivo en ambos asientos. No entra en el piloto ni
+se escogerá variante por su W/L. Mismos seis brazos y noop, sin cambiar fuentes.
+
+Desarrollo completo:48juegos; ambos primeros mundos inertes. Mundo YARN:
+dos compras efectivas/colocaciones aceptadas por variante/asiento,49lanas
+cosechadas; sin escapes/créditos/inventario final. Noop4.314turnos exactos,
+max283,385ms y cero errores. `verificar_vacas_tempranas.py` valida archivos,
+hashes archivados, compras, colocación, cosecha, inventario y controles.
+Manifiesto `early_cow_variants.json` congelado y runner en espera de loop9.
+
+
+
+---
+
 ## SOURCE: docs/research/IDEAS_VIVAS_2026-09-25.md
 
 # Fronteras después de loops7–9
 
-Son hipótesis pendientes, no protocolos registrados ni autorizaciones nuevas.
-Primero leer resultados completos de los bloques en curso; no duplicar corridas.
+Estado03:49UTC: la primera idea ya se convirtió en loop10, validado/encolado.
+Las demás siguen pendientes. Leer bloques completos; no duplicar corridas.
 
 ## Reasignar compras futuras de vacas con demanda de lana ya visible
 
@@ -978,6 +1105,13 @@ luego registrar semillas/rivales nuevos antes de competir. Comparar efecto
 total W/L/T, oferta comprometida propia/rival y coste de oportunidad. Ningún
 delta local anterior garantiza esta combinación ni su Elo.
 
+**Implementada como loop10:** auditoría encontró que `_y_controller` YA
+convierte compras entre8–11. La novedad se limita3–7, sin modelo EV ni tiendas
+futuras. Seis políticas,48juegos dirigidos válidos; primera activación observada
+en173/178, dos animales colocados y49lanas cosechadas. Piloto1018000–015,
+confirmación1019000–015 registrados. Runner espera loop9. No reinventar otro
+controlador ni repetir desarrollo; consultar `PREREG_LOOP10_VACAS_2026-09-25.md`.
+
 ## Revisar oferta comprometida del tomate adicional
 
 En pilot7/ars40/1010001/infill4_d18, el padre ya comprometió su campaña V219
@@ -987,6 +1121,9 @@ de9.756 para4 plantas no es ingreso incremental observado. El total de tomate
 vendido pasa80→96 y su ingreso30.024→34.386; también cambian tiendas y otros
 ingresos. Conservar confirm7 íntegra, después considerar una nueva versión
 con oferta comprometida si la evidencia justifica dedicarle otro bloque.
+
+Confirm7 terminó inerte352/352por variante, sin selección. Corregir oferta
+solamente estrecharía el gate: no gastar otro piloto idéntico por esa corrección.
 
 ## Actualizar biblioteca de ventas rivales sin volver a cintas pasivas
 
@@ -998,6 +1135,16 @@ No usar replays de entrenamiento como confirmación ni interpretar predicción
 offline como fuerza competitiva. La comparación competitiva exige rivales
 reactivos y mundos nuevos, además de revisar coste de cómputo. El gate de
 confianza/off ya perdió mucho en la ronda anterior: no repetir esa poda.
+
+Auditoría hecha:2.398streams,64/64pares de tiendas,24–63por par. No se conoce
+fecha original porque los ids están sustituidos por−1. Doce fuentes fijadas
+por recencia (DSM4 y rivales top3 ocho) son nuevas con fingerprint que preserva
+umbrales nativos de cantidades; no agregan pares de tiendas. Artefactos
+`forecast_library_audit.json` y `recent_sale_streams.json`. Siguiente paso
+posible: agregar streams con desempate que preserve prioridad de los existentes,
+medir si llegan a seleccionarse, validar noop cuando no hay datos nuevos para
+el par, y registrar mundo nuevo/confirmación. No confundir inclusión de nuevos
+datos con una mejora de predicción ni de W/L. Aún no existe candidata loop11.
 
 ## Incidencia neutral pendiente del harness
 
@@ -1079,6 +1226,30 @@ replays en cada resumen. Reconstrucción: `auditar_replays_top3.py`; utiliza
 el ledger aceptado de `sonda_fallo_forecast.run`. El antiguo `ventas_reales.py`
 no se utilizó: su aproximación con precios previos y órdenes emitidas no es
 equivalente a transacciones aceptadas por el motor.
+
+## Actualización03:39:41UTC
+
+Top31941,6/30episodios listados; VQ2259,1/56. Ambos COMPLETE. Los recuentos
+incluyen validaciones, no equivalen a partidas competitivas ganadas. Los
+archivos tienen sufijo0333, pero sus `.fetch.json` registran la hora real.
+
+Cuatro nuevas completadas por endTime, fijadas ANTES de leer rewards:
+
+| Episodio | Rival | Margen propio |
+|---|---|---:|
+| 113127276 | shikaikaikaikai | +1.659 |
+| 113126108 | 62326368 | +923 |
+| 113124966 | wqlun06 | +1.279 |
+| 113125627 | Clement Lau | +2.891 |
+
+Motor reproduce720 estados×4, caja conciliada, DONE/DONE, sin escapes propios
+ni inventario privado final. Contrataciones/tierra coinciden por pareja y
+cantidades de producción son muy similares: por ejemplo410lanas/162leches
+en ambos lados contra62326368. El precio/timing y pequeñas diferencias de
+otras producciones importan en esa muestra. No atribuir causalmente las
+victorias a top3 sin contrafactual; tampoco generalizarlas a adversarios de
+economía diferente como c0nrad. Evidencia `top3_audit_0339.json` y ledgers;
+reconstrucción `auditar_replays_recientes.py` con selección archivada.
 
 
 
@@ -1417,12 +1588,17 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   completos, plantas y ventas16/32 confirmadas, R51 y ovejas conservados.
   Piloto1.248 completo, noop256/256. D16 inertes; d18 +1,5625pp cada una,
   IC dos vías[−3,41;6,54], cambia16/128 partidas en dos semillas.
-  **Confirm7 corriendo**:1.600 episodios, dos d18, semillas1011000–015.
-- Loop8 registrado: seis variantes de patrones (rank5/7, historia120/360,
+  **Confirm7 completa**:1.600 episodios, noop416/416, cero errores. Ambas
+  d18 inertes en352/352 partidas del pool; delta0, IC dos vías indefinido.
+  INCONCLUSIVE_NOT_SELECTED: no prueba de beneficio, no envío.
+- Loop8: seis variantes de patrones (rank5/7, historia120/360,
   ajuste por producto y desfase temporal). Validación16 juegos completa,
   noop1.438 acciones idénticas, cero errores, máximo271ms. Piloto1.472
-  encolado detrás de loop7. Total36 variantes competitivas construidas.
-- Loop9 en desarrollo: seis rebaños incrementales (2/3/6 ovejas, día12/14),
+  completo:1.472 episodios, noop224/224, cero errores. History360, phase2 y
+  rank5 +1,5625pp cada uno (una celda mejor); rank7−3,125, history120−10,9375,
+  product3−1,5625. Desempate registrado selecciona history360/phase2.
+  **Confirm8 corriendo** desde03:45:23UTC:1.600 episodios disjuntos.
+- Loop9 validado/encolado: seis rebaños incrementales (2/3/6 ovejas, día12/14),
   sin comprar tierra y con demanda YARN ya visible. Se validan22 partidas
   dirigidas por versión antes de encolar1.920. V2 corrige cosechas tardías;
   motor confirmó36/53/83 entregas completas en ambos asientos. **V3** incluye
@@ -1430,6 +1606,17 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   Otros22 juegos válidos, forzadas byte de acciones/rewards idéntico a v2;
   seis variantes normales inertes en ese mundo. Manifiesto v3 actualizado
   antes del piloto9; runner espera a loop8. Total42 variantes competitivas.
+- Loop10 validado/encolado: adelantar conversión COW→SHEEP a días3–7,
+  fuera de la regla8–11 ya existente. Seis políticas de fecha/demanda/caja.
+ 48 juegos dirigidos, noop4.314 turnos exactos, max284ms. En mundo YARN/YARN:
+  dos compras/colocaciones aceptadas,49 lanas cosechadas, cero escapes/créditos
+  pendientes/inventario final. En dos mundos sin YARN temprano son inertes.
+  Piloto1.920 semillas1018000–015 después de loop9; ver protocolo y manifiesto.
+  Total48 variantes competitivas construidas. No tratar la sonda como W/L poblacional.
+- Biblioteca auditada:2.398 streams,64/64 pares de tiendas,24–63 por par.
+  Doce streams recientes de ventas aceptadas son nuevos por fingerprint; no
+  agregan pares de tiendas. Fecha de biblioteca original desconocida (ids−1).
+  `recent_sale_streams.json` preparado; aún sin candidata ni piloto registrado.
 - Auditoría piloto7: cuatro filas TDS con acción propia idéntica y hash rival
   distinto, pero rewards/WLT idénticos. Ocho reproducciones (hashseeds0–3)
   dieron acciones/estados idénticos; origen de la variación neutral no resuelto.
@@ -1469,6 +1656,12 @@ Cuatro reproducciones exactas y caja conciliada. Lana391/759 unidades,
 ingresos69.502/113.264; rival paga menos jornales y tierra. Ver
 `FEEDBACK_TOP3_2026-09-25.md`. Muestra pequeña, no WR ni fuerza estable.
 Snapshot posterior02:58UTC: top3 1738,5 / VQ2268,6, sin recuento nuevo sincronizado.
+Snapshot **03:39:41UTC**: top3 **1941,6 /30 episodios listados**, VQ
+**2259,1 /56**, ambos COMPLETE; recuentos incluyen validación. Cuatro nuevas
+partidas seleccionadas por endTime antes de leer rewards:4V, márgenes923–2891.
+720 estados exactos×4, caja conciliada, cero escapes propios/inventario final.
+Producción muy similar a rivales en esa muestra; no es superioridad causal vsVQ.
+Archivos con sufijo0333 se consultaron03:39; metadatos `.fetch.json` dan hora real.
 
 Lo siguiente es el cierre de la ronda anterior; no significa parar este loop.
 
@@ -2562,9 +2755,9 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
     },
     "reason": "VQ validada contra copias; arshs3 transfiere al ladder (2292.5 vs v13 1857.9). Desplaza v13, preserva arshs3 como referencia activa.",
     "leaderboard": {
-      "score": 2268.6,
+      "score": 2259.1,
       "rank": null,
-      "episodes": null,
+      "episodes": 56,
       "lecturas": [
         [
           "initial",
@@ -2603,14 +2796,19 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
           "2026-09-25T02:58:12.081738+00:00",
           2268.6,
           null
+        ],
+        [
+          "2026-09-25T03:39:41.436397+00:00",
+          2259.1,
+          56
         ]
       ]
     },
     "delta_vs_champion_ladder": null,
-    "observed": "COMPLETE, snapshot 2026-09-25T02:58:12.081738+00:00: score2268.6. Sin recuento sincronizado nuevo; no comparar ratings como políticas maduras.",
+    "observed": "COMPLETE, snapshot 2026-09-25T03:39:41.436397+00:00: score2259.1, 56 episodios listados (incluye validación). No demuestra superioridad de top3 frente a VQ.",
     "conclusion": "REAL_WORLD_CANDIDATE; ventaja local específica contra copias, sin promoción automática",
-    "next_action": "Recoger feedback real a edad razonable; loops6–8 siguen activos. Rating joven no establece superioridad.",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0300.txt"
+    "next_action": "Seguir feedback real, diagnosticar pérdidas; loops8–10 investigan nuevas familias. Conservar ambos controles hasta justificar siguiente envío.",
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0333.txt"
   },
   {
     "submission_id": 56537205,
@@ -2746,8 +2944,8 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
     },
     "reason": "Cumple gate registrado: delta>=3pp, ningún rival<-20pp, cero errores, revisión de mecanismos y runtime. Prueba real autorizada.",
     "leaderboard": {
-      "score": 1738.5,
-      "episodes": null,
+      "score": 1941.6,
+      "episodes": 30,
       "status": "SubmissionStatus.COMPLETE",
       "lecturas": [
         [
@@ -2764,16 +2962,21 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
           "2026-09-25T02:58:12.081738+00:00",
           1738.5,
           null
+        ],
+        [
+          "2026-09-25T03:39:41.436397+00:00",
+          1941.6,
+          30
         ]
       ]
     },
-    "observed": "COMPLETE, snapshot 2026-09-25T02:58:12.081738+00:00: score1738.5. Sin recuento sincronizado nuevo; no comparar ratings como políticas maduras.",
+    "observed": "COMPLETE, snapshot 2026-09-25T03:39:41.436397+00:00: score1941.6, 30 episodios listados (incluye validación). No demuestra superioridad de top3 frente a VQ.",
     "conclusion": "REAL_WORLD_CANDIDATE; no CHAMPION",
-    "next_action": "Recoger feedback real a edad razonable; loops6–8 siguen activos. Rating joven no establece superioridad.",
+    "next_action": "Seguir feedback real, diagnosticar pérdidas; loops8–10 investigan nuevas familias. Conservar ambos controles hasta justificar siguiente envío.",
     "replaces_submission": 56511619,
     "preserves_submission": 56535264,
     "evidence": "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0300.txt"
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0333.txt"
   }
 ]
 
@@ -3103,12 +3306,14 @@ y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_publicos.py`, `continuar_loop_herd.py`,
 `continuar_loop_recuperacion.py`, `continuar_loop_tomate.py` y
 `continuar_loop_productos.py`, `continuar_loop_relleno.py` y
-`continuar_loop_patrones.py` y `continuar_loop_rebano.py` encadenan bloques
+`continuar_loop_patrones.py`, `continuar_loop_rebano.py` y `continuar_loop_vacas.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
 terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
 (una de64 partidas cambia, +1,5625pp). Confirm5 tomate−21,591pp: REJECTED.
-Loop6 sin seleccionadas; confirm7 corre (dos d18, piloto+1,5625pp);
-loops8/9 validados y encolados. Rebaño vigente v3 incluye oferta propia
+Loop6 sin seleccionadas; confirm7 completa, ambas d18 inertes352/352,
+sin selección. Confirm8 corre (history360/phase2, piloto+1,5625pp), loops9/10
+validados/encolados. Loop10 extiende COW→SHEEP a días3–7;48 juegos dirigidos
+y dos colocaciones/49 lanas confirmadas en mundo con YARN. Rebaño vigente v3 incluye oferta propia
 ya comprada: no volver a versiones1/2 ni a sus manifiestos históricos. No repetir las
 versiones infill2/3: v4 corrige interferencia R51 y overflow de cosecha.
 Top3 enviada **56537205 COMPLETE**, commit ba1fda8, sha9668e30a; validación720

@@ -498,9 +498,9 @@
     },
     "reason": "VQ validada contra copias; arshs3 transfiere al ladder (2292.5 vs v13 1857.9). Desplaza v13, preserva arshs3 como referencia activa.",
     "leaderboard": {
-      "score": 2268.6,
+      "score": 2259.1,
       "rank": null,
-      "episodes": null,
+      "episodes": 56,
       "lecturas": [
         [
           "initial",
@@ -539,14 +539,19 @@
           "2026-09-25T02:58:12.081738+00:00",
           2268.6,
           null
+        ],
+        [
+          "2026-09-25T03:39:41.436397+00:00",
+          2259.1,
+          56
         ]
       ]
     },
     "delta_vs_champion_ladder": null,
-    "observed": "COMPLETE, snapshot 2026-09-25T02:58:12.081738+00:00: score2268.6. Sin recuento sincronizado nuevo; no comparar ratings como políticas maduras.",
+    "observed": "COMPLETE, snapshot 2026-09-25T03:39:41.436397+00:00: score2259.1, 56 episodios listados (incluye validación). No demuestra superioridad de top3 frente a VQ.",
     "conclusion": "REAL_WORLD_CANDIDATE; ventaja local específica contra copias, sin promoción automática",
-    "next_action": "Recoger feedback real a edad razonable; loops6–8 siguen activos. Rating joven no establece superioridad.",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0300.txt"
+    "next_action": "Seguir feedback real, diagnosticar pérdidas; loops8–10 investigan nuevas familias. Conservar ambos controles hasta justificar siguiente envío.",
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0333.txt"
   },
   {
     "submission_id": 56537205,
@@ -682,8 +687,8 @@
     },
     "reason": "Cumple gate registrado: delta>=3pp, ningún rival<-20pp, cero errores, revisión de mecanismos y runtime. Prueba real autorizada.",
     "leaderboard": {
-      "score": 1738.5,
-      "episodes": null,
+      "score": 1941.6,
+      "episodes": 30,
       "status": "SubmissionStatus.COMPLETE",
       "lecturas": [
         [
@@ -700,15 +705,20 @@
           "2026-09-25T02:58:12.081738+00:00",
           1738.5,
           null
+        ],
+        [
+          "2026-09-25T03:39:41.436397+00:00",
+          1941.6,
+          30
         ]
       ]
     },
-    "observed": "COMPLETE, snapshot 2026-09-25T02:58:12.081738+00:00: score1738.5. Sin recuento sincronizado nuevo; no comparar ratings como políticas maduras.",
+    "observed": "COMPLETE, snapshot 2026-09-25T03:39:41.436397+00:00: score1941.6, 30 episodios listados (incluye validación). No demuestra superioridad de top3 frente a VQ.",
     "conclusion": "REAL_WORLD_CANDIDATE; no CHAMPION",
-    "next_action": "Recoger feedback real a edad razonable; loops6–8 siguen activos. Rating joven no establece superioridad.",
+    "next_action": "Seguir feedback real, diagnosticar pérdidas; loops8–10 investigan nuevas familias. Conservar ambos controles hasta justificar siguiente envío.",
     "replaces_submission": 56511619,
     "preserves_submission": 56535264,
     "evidence": "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0300.txt"
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0333.txt"
   }
 ]

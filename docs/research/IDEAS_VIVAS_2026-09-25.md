@@ -1,7 +1,7 @@
 # Fronteras después de loops7–9
 
-Son hipótesis pendientes, no protocolos registrados ni autorizaciones nuevas.
-Primero leer resultados completos de los bloques en curso; no duplicar corridas.
+Estado03:49UTC: la primera idea ya se convirtió en loop10, validado/encolado.
+Las demás siguen pendientes. Leer bloques completos; no duplicar corridas.
 
 ## Reasignar compras futuras de vacas con demanda de lana ya visible
 
@@ -26,6 +26,13 @@ luego registrar semillas/rivales nuevos antes de competir. Comparar efecto
 total W/L/T, oferta comprometida propia/rival y coste de oportunidad. Ningún
 delta local anterior garantiza esta combinación ni su Elo.
 
+**Implementada como loop10:** auditoría encontró que `_y_controller` YA
+convierte compras entre8–11. La novedad se limita3–7, sin modelo EV ni tiendas
+futuras. Seis políticas,48juegos dirigidos válidos; primera activación observada
+en173/178, dos animales colocados y49lanas cosechadas. Piloto1018000–015,
+confirmación1019000–015 registrados. Runner espera loop9. No reinventar otro
+controlador ni repetir desarrollo; consultar `PREREG_LOOP10_VACAS_2026-09-25.md`.
+
 ## Revisar oferta comprometida del tomate adicional
 
 En pilot7/ars40/1010001/infill4_d18, el padre ya comprometió su campaña V219
@@ -35,6 +42,9 @@ de9.756 para4 plantas no es ingreso incremental observado. El total de tomate
 vendido pasa80→96 y su ingreso30.024→34.386; también cambian tiendas y otros
 ingresos. Conservar confirm7 íntegra, después considerar una nueva versión
 con oferta comprometida si la evidencia justifica dedicarle otro bloque.
+
+Confirm7 terminó inerte352/352por variante, sin selección. Corregir oferta
+solamente estrecharía el gate: no gastar otro piloto idéntico por esa corrección.
 
 ## Actualizar biblioteca de ventas rivales sin volver a cintas pasivas
 
@@ -46,6 +56,16 @@ No usar replays de entrenamiento como confirmación ni interpretar predicción
 offline como fuerza competitiva. La comparación competitiva exige rivales
 reactivos y mundos nuevos, además de revisar coste de cómputo. El gate de
 confianza/off ya perdió mucho en la ronda anterior: no repetir esa poda.
+
+Auditoría hecha:2.398streams,64/64pares de tiendas,24–63por par. No se conoce
+fecha original porque los ids están sustituidos por−1. Doce fuentes fijadas
+por recencia (DSM4 y rivales top3 ocho) son nuevas con fingerprint que preserva
+umbrales nativos de cantidades; no agregan pares de tiendas. Artefactos
+`forecast_library_audit.json` y `recent_sale_streams.json`. Siguiente paso
+posible: agregar streams con desempate que preserve prioridad de los existentes,
+medir si llegan a seleccionarse, validar noop cuando no hay datos nuevos para
+el par, y registrar mundo nuevo/confirmación. No confundir inclusión de nuevos
+datos con una mejora de predicción ni de W/L. Aún no existe candidata loop11.
 
 ## Incidencia neutral pendiente del harness
 

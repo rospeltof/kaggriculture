@@ -1,0 +1,43 @@
+{
+  "seed": 1272457736,
+  "seats": [
+    0,
+    1
+  ],
+  "opponent": "submission/main_publico_arshs3_arsgorynich.py",
+  "purpose": "Known sheep world, physical execution and exact noop only. No performance selection.",
+  "agents": {
+    "base": {
+      "path": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "cow_d3_y1_m100": {
+      "path": "results/vacas_tempranas_20260925/cow_d3_y1_m100.py",
+      "sha256": "c5feb3ddf0c508b9cbbd19aa829dd9d8ba0cf71d1b0f80e1fe4bc29bd9b85b9a"
+    },
+    "cow_d3_y2_m100": {
+      "path": "results/vacas_tempranas_20260925/cow_d3_y2_m100.py",
+      "sha256": "111b689b1b08641be0fd09e27dad3d2eabd91ec1488bd26181f2f1ff63c87a4f"
+    },
+    "cow_d3_y1_m500": {
+      "path": "results/vacas_tempranas_20260925/cow_d3_y1_m500.py",
+      "sha256": "f372800efd3743dcb9d059c4df24f658fa3391d58bd68c11c204a5b11d1066a8"
+    },
+    "cow_d6_y1_m100": {
+      "path": "results/vacas_tempranas_20260925/cow_d6_y1_m100.py",
+      "sha256": "02469df36f19b2bacdbef6edb9ecca5d90b0330c7fa44f43e35467eaf4611669"
+    },
+    "cow_d6_y2_m100": {
+      "path": "results/vacas_tempranas_20260925/cow_d6_y2_m100.py",
+      "sha256": "0a302070c74dc5bb3c88b3746677422ca68ee14a57103663dd29e80853b45eda"
+    },
+    "cow_d6_y1_m500": {
+      "path": "results/vacas_tempranas_20260925/cow_d6_y1_m500.py",
+      "sha256": "7a12877987413de3e8f83eba892b9214b3b60edc465fe0e1b712ded14cc6d783"
+    },
+    "noop": {
+      "path": "results/vacas_tempranas_20260925/noop.py",
+      "sha256": "ed101f5fc4662de61f9ac6c8694f8f4676f79c3f8d3be73c3cd2929aa9b11126"
+    }
+  }
+}

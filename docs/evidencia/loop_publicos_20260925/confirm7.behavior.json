@@ -1,0 +1,16 @@
+{
+  "infill4_d18": {
+    "pool_episodes": 352,
+    "own_action_hash_changed": 0,
+    "opponent_action_hash_changed": 0,
+    "changed_seeds": [],
+    "changed_cells": []
+  },
+  "infill8_d18": {
+    "pool_episodes": 352,
+    "own_action_hash_changed": 0,
+    "opponent_action_hash_changed": 0,
+    "changed_seeds": [],
+    "changed_cells": []
+  }
+}

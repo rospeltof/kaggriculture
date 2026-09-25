@@ -1,5 +1,33 @@
 # Bitácora de experimentos
 
+## 2026-09-25, 03:49 UTC — Confirmación inerte, patrones y conversión ovina
+
+Confirm7 completa:1.600 episodios, noop416/416; ambas d18 inertes352/352
+contra el pool, delta0. No selección/envío. Piloto8 completo1.472, noop224/224,
+cero errores; history360/phase2/rank5 empatan+1,5625pp, una celda mejor.
+Desempate registrado escoge history360/phase2; confirm8 de1.600 arrancó03:45.
+Rank7−3,125, historia120−10,9375, producto−1,5625. Techo base96,875%.
+
+Loop10: base ya cambiaba COW→SHEEP entre8–11. Se extiende sólo3–7 con demanda
+YARN/caja, usando controlador nativo y sin peones/tierra nuevos.48 partidas
+dirigidas (16×3mundos); dos sin YARN temprano inertes, seedc0nrad1272457736
+contra arshs3 reactivo activa las seis políticas. Dos compras y colocaciones
+aceptadas,49lanas cosechadas; cero escapes/créditos/inventario final, max284ms.
+Noop4.314turnos exactos. Precio endógeno: más lana propia pero menor ingreso
+y caja propia; cae más la caja rival. Sonda no selecciona por margen/W/L.
+1.920partidas registradas encoladas tras loop9, aún esperando confirm8.
+
+Snapshot API03:39:41UTC:top31941,6/30episodios listados; VQ2259,1/56.
+Cuatro nuevas partidas fijadas por endTime son victorias923–2891;720estados
+exactos y caja conciliada cada una. Producción muy parecida a rivales, sin
+escapes propios/stock final. No demuestra superioridad causal sobreVQ.
+
+Auditoría de biblioteca:2.398streams/64pares, sin metadatos originales de fecha.
+Doce streams recientes aceptados (DSM4+otros ocho rivales de top3) no son
+duplicados semánticos, pero tampoco agregan pares nuevos. Preparados para
+hipótesis posterior, aún sin candidata ni piloto11. No se tocaron fuentes de
+bloques activos. Objetivo persistente y runners siguen activos; ningún envío.
+
 ## 2026-09-25, 03:21 UTC — Rebaños validados, tomate espacial a confirmación
 
 Piloto7 terminado:1.248 episodios, noop256/256. Infill d16 inertes; d18

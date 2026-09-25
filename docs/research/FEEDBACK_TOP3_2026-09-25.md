@@ -63,3 +63,27 @@ replays en cada resumen. Reconstrucción: `auditar_replays_top3.py`; utiliza
 el ledger aceptado de `sonda_fallo_forecast.run`. El antiguo `ventas_reales.py`
 no se utilizó: su aproximación con precios previos y órdenes emitidas no es
 equivalente a transacciones aceptadas por el motor.
+
+## Actualización03:39:41UTC
+
+Top31941,6/30episodios listados; VQ2259,1/56. Ambos COMPLETE. Los recuentos
+incluyen validaciones, no equivalen a partidas competitivas ganadas. Los
+archivos tienen sufijo0333, pero sus `.fetch.json` registran la hora real.
+
+Cuatro nuevas completadas por endTime, fijadas ANTES de leer rewards:
+
+| Episodio | Rival | Margen propio |
+|---|---|---:|
+| 113127276 | shikaikaikaikai | +1.659 |
+| 113126108 | 62326368 | +923 |
+| 113124966 | wqlun06 | +1.279 |
+| 113125627 | Clement Lau | +2.891 |
+
+Motor reproduce720 estados×4, caja conciliada, DONE/DONE, sin escapes propios
+ni inventario privado final. Contrataciones/tierra coinciden por pareja y
+cantidades de producción son muy similares: por ejemplo410lanas/162leches
+en ambos lados contra62326368. El precio/timing y pequeñas diferencias de
+otras producciones importan en esa muestra. No atribuir causalmente las
+victorias a top3 sin contrafactual; tampoco generalizarlas a adversarios de
+economía diferente como c0nrad. Evidencia `top3_audit_0339.json` y ledgers;
+reconstrucción `auditar_replays_recientes.py` con selección archivada.

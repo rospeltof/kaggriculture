@@ -306,3 +306,65 @@ Búsqueda pública adicional no identificó un código inequívoco de c0nrad.
 [V35](https://www.kaggle.com/code/ahmedberatozer/kaggriculture-v35-reactive-sales-sheep-expansi)
 describe expansión financiada ya presente en nuestra genealogía; no se repite
 como candidata nueva. La fuente útil para esta ronda es el replay auditado.
+
+## Confirm7: sin activación en muestra disjunta
+
+1.600 episodios, noop416/416, cobertura y hashes archivados verificados.
+Ambas d18 conservan acciones propias/rivales y rewards en352/352 partidas
+contra el pool; base79,545%, delta0. IC95 dos vías indefinido, no evidencia
+de precisión perfecta. INCONCLUSIVE_NOT_SELECTED: no beneficio confirmado;
+no enviar ni bajar el gate a posteriori. La omisión de oferta V219 sigue
+siendo un defecto del modelo, pero no justifica repetir el bloque sin una
+hipótesis nueva. Piloto8 empezó03:23:41UTC tras cerrar confirm7.
+
+## Piloto8: memoria larga y ajuste temporal a confirmación
+
+1.472 episodios, noop224/224, cero errores, fuentes verificadas. Base96,875%:
+techo alto del panel. Rank5/history360/phase2 empatan+1,5625pp (IC dos vías
+[−2,13;5,26]), una celda mejor y ninguna peor. Desempate alfabético registrado
+elige history360/phase2; no subir rank5 por parecer simple a posteriori.
+Rank7−3,125pp, history120−10,9375, product3−1,5625; IC amplios cruzan cero.
+Todas alteran acciones; history36086/128, phase296/128, demás128/128.
+Confirm8 desde03:45:23UTC,1.600 episodios,16 semillas disjuntas/11rivales.
+
+Cuatro reproducciones de mecanismo completas, rewards originales y caja
+conciliados. History360 vsTDS/1013006/asiento0: tres acciones distintas desde625,
+margen−254→+255, mismas tiendas/unidades vendidas; fresa+311de ingreso,
+leche−12 y trigo+5. Phase2 vsTDS/1013007/asiento0:17acciones desde388,
+margen−444→+69, tiendas iguales,142patrones desplazados; leche+263, dos
+huevos extra/+88, lana+4 y fresa−12. Una activación forecast adicional en
+cada caso. No atribuir todo el margen al precio propio: también cambia el
+dinero del rival. Evidencia `pilot8.{history360,phase2}.mechanism.json`.
+
+## Loop10: conversión temprana, desarrollo y cola
+
+La base YA convierte vacas/gansos a ovejas con YARN entre días8–11. El hueco
+nuevo es3–7, compras nativas de1–2 vacas; se conserva logística y no se compran
+más peones/tierra. Seis políticas: inicio3/6 ×(mínimoYARN,reserva)=(1,100),
+(2,100),(1,500). No es el modelo de futuras tiendas/EV del loop3.
+
+48 juegos mecánicos:1004000/1017000 inertes por no haber YARN temprano;
+1272457736, escogido por YARN/YARN del replay c0nrad, con rival arshs3 reactivo:
+seis variantes idénticas en ese mundo, dos COW→SHEEP en173/178, dos colocaciones
+aceptadas y49 lanas cosechadas. Sin escapes, créditos pendientes ni inventario
+privado final. Noop4.314 turnos exactos, máximo284ms, sin errores. No se afirma
+que sean idénticas en todos los mundos.1.920 partidas encoladas detrás de loop9.
+
+La sonda ilustra el precio endógeno: lana propia410→459, ingreso94.662→93.400;
+dinero114.856→112.753. Rival114.184→104.003 y margen+672→+8.750. Ambos ya
+eran victorias; no seleccionar por ese margen ni confundir más lana con más
+ingreso propio. Archivo `early_cow_validation.json`, protocolo loop10.
+
+## Feedback03:39 y auditoría de biblioteca
+
+Top31941,6/30episodios listados, VQ2259,1/56; consulta real03:39:41UTC,
+aunque nombres de archivos dicen0333. Muestra fija por endTime: cuatro
+victorias,923–2891de margen.720 estados exactos y caja conciliada por partida,
+cero escapes propios/inventario final. Producción parecida a sus rivales;
+no representa la diversidad de todo el ladder ni comparación causal conVQ.
+
+Biblioteca original2.398streams,24–63por cada uno de64pares. Sin fechas/ids
+originales recuperables (ids−1): no afirmar antigüedad. Doce streams aceptados
+recientes (DSM4, rivales top3 ocho) son distintos semánticamente; Jaccard de
+eventos más cercano0,118–0,573. No agregan pares de tiendas. Preparados en
+`recent_sale_streams.json`, aún sin agente ni evaluación. No es precisión OOS.

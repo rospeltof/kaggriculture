@@ -1,0 +1,24 @@
+  (extra, no entra en la estimacion) base vs history120: 75.0% (16 ep)
+  (extra, no entra en la estimacion) rank7 vs history120: 75.0% (16 ep)
+  (extra, no entra en la estimacion) base vs history360: 50.0% (16 ep)
+  (extra, no entra en la estimacion) rank7 vs history360: 75.0% (16 ep)
+  (extra, no entra en la estimacion) base vs noop: 50.0% (16 ep)
+  (extra, no entra en la estimacion) rank7 vs noop: 87.5% (16 ep)
+  (extra, no entra en la estimacion) base vs phase2: 18.8% (16 ep)
+  (extra, no entra en la estimacion) rank7 vs phase2: 75.0% (16 ep)
+  (extra, no entra en la estimacion) base vs product3: 50.0% (16 ep)
+  (extra, no entra en la estimacion) rank7 vs product3: 62.5% (16 ep)
+  (extra, no entra en la estimacion) base vs rank5: 0.0% (16 ep)
+  (extra, no entra en la estimacion) rank7 vs rank5: 87.5% (16 ep)
+rank7 - base: 8 rivales x 8 semillas = 64 celdas; ref 96.9%
+  delta -3.12 pts | IC95 semilla [-15.30; +9.05] | dos vias [-15.30; +9.05]
+  celdas cambiadas 4/64: 1 a favor, 3 en contra
+    vs    ars40  -12.5
+    vs    guru6   +0.0
+    vs    h2965  -12.5
+    vs     hsov  -12.5
+    vs     hybu   +0.0
+    vs      obr   +0.0
+    vs      tds  +12.5
+    vs      v13   +0.0
+  directo rank7 vs base: 87.5% (16 ep)
