@@ -13,10 +13,11 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 
 ## Índice y huellas de los documentos
 
-- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `3bae523a7d3d34f42259f7de42d3ff144fd9d346342cbb51b4c6403ab809eac4`
+- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `92f4579c3d10ea80f0d01d7678d555b3c7b48621b7de687a30b437bbd23bd18c`
 - `docs/research/SCORECARDS_LOOP_2026-09-25.md` — SHA-256 `4a62e1b0af74b80da14c32e7cfe39b25e0d8eef28ea40fae603c1109ac775efd`
 - `docs/research/PREREG_LOOP25_PANEL_CERCANO_2026-09-25.md` — SHA-256 `593e3b4f5507f93ade4055da758c87666a706b3f9c0152f9a681eb3a04db9f56`
 - `docs/research/SIMILITUD_RIVALES_2026-09-25.md` — SHA-256 `80bdd1e4c26375fb3599cbb3f12ca499d64a0093d97009d58cd944b3cbae1277`
+- `docs/research/FEEDBACK_0828_2026-09-25.md` — SHA-256 `cf976ee23c56488b84dacf642bf6941850216cc87128a1abeaed190ad171c5ac`
 - `docs/research/PREREG_LOOP24_ADELANTO_TRIGO_2026-09-25.md` — SHA-256 `9860de7959869b5f1bfbf6f2b2de3bb0fa6e4198f5215337900e8c23fa25dd5f`
 - `docs/research/ADELANTO_TRIGO_2026-09-25.md` — SHA-256 `739e7e1826595c807e2e1317a182a7781ca6d3e290ec0698ff800aa8d2449889`
 - `docs/research/PREREG_LOOP23_SUMINISTRO_OVINO_2026-09-25.md` — SHA-256 `3269a37fed1da29e1ab5ef988efad17d9b0b54aad9347cc87f03e575d1660c74`
@@ -57,14 +58,14 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 - `docs/research/DECISION_ENVIO_TOP3_2026-09-25.md` — SHA-256 `a17b15f6d0db894ec64c3dbd25ce08ac2553f25d2528682b129a1f4a779cbde6`
 - `docs/research/RESULTADOS_2026-09-25.md` — SHA-256 `98349e7d3065ae9fb91d396d089c4aa95f1841d5c8b844242add6ba3e8e6965c`
 - `docs/research/RESEARCH_BELIEFS.md` — SHA-256 `2702768714ab4aef4dcae4025fef7351cc90a568838db0981ecc23024c0d2c6c`
-- `docs/research/HARNESS_VS_LEADERBOARD.md` — SHA-256 `53b5c85b2f8e5320f9d4cb810d203deeb2a35730bcf988edb1dad3fc18f47a5a`
-- `docs/research/SUBMISSION_HISTORY.json` — SHA-256 `0ec942f75efcd8a5deac5ff144160da4df5975bf140c23ed9a83ed944f2849b8`
+- `docs/research/HARNESS_VS_LEADERBOARD.md` — SHA-256 `2cf4bcc5168322976ca7d6f31c7a62b85d92eead5771fbd86f321ce5b1ca0a0a`
+- `docs/research/SUBMISSION_HISTORY.json` — SHA-256 `801b359fd1d68e3305b53de6737045b3c7ce1f095cb44491257035ee8768a228`
 - `docs/research/PREREG_VQ_2026-09-24.md` — SHA-256 `7f4b6b42db6dbeeb3981cd0fa56fbf071f4b4f6eec121ceeb292b2b0ca6ebab5`
 - `docs/research/PREREG_ADV_2026-09-24.md` — SHA-256 `bed0700878535baaf11409f4dfef3364623943e5e42ecea44fb13b5ebcae4b58`
 - `docs/research/PREREG_FORECAST_GATE_2026-09-25.md` — SHA-256 `bf5dd9fbf03de91f1fbf95a557600d969b3c01f143f849271a827abc87cfd2be`
 - `docs/research/PREREG_PUBLIC_REFRESH_2026-09-25.md` — SHA-256 `bc60b8ef2b9580510782f1801bcac5e43f4f5c8524f9a39bd9a7c587812a12cc`
 - `docs/PROMPT_SEGUNDO_CEREBRO.md` — SHA-256 `e319f3917d23defc367804e464d3d13be14d21061eb2ca73fede8977d4f04c07`
-- `AGENTS.md` — SHA-256 `f9d2cd51ae0b7311106a6daf606eee0e2cd96ccb60dd63342a6709a02d04f6ff`
+- `AGENTS.md` — SHA-256 `5e4a860c185ff64ec44e4df7333c635a2e0b55731ac8c85bad1f37e117787e00`
 - `docs/ESTADO_ACTUAL.md` — SHA-256 `cb368cef5250eede256fee3eecc4a6c87da87bf8644981c884ffff1a2ef01948`
 - `docs/RESULTADOS_LIDER_2026-09-14.md` — SHA-256 `efb3b4c09053f13d648e8019a7ba8363f68a24c234b04b4869754e82877c648b`
 - `docs/ANALISIS_LIDER_2026-09-14.md` — SHA-256 `63e3448307868dec34c5c67a697f052f4bc31b4437bc7781b4e702b1d234db53`
@@ -94,7 +95,10 @@ en cola; un solo torneo grande, no duplicar.89variantes construidas más2
 prototipos17detenidos. Adelanto24compra antes y permite ventas más tempranas:
 36juegos/noop8.628/64llenados,4.480unidades descontadas del compromiso nativo,
 max308ms. Nuevo catálogo público08:02UTCno cambia las50entradas anteriores.
-Último ladder07:41:40UTC:VQ2296,9/91, top32094,4/79; no nuevo envío.
+Último ladder08:27:46UTC:VQ2292,9/92, top32103,4/81; no nuevo envío.
+Tres replays nuevos0828reproducidos719acciones/720estados; máximo181ms,
+cero errores observados/escapes propios/productos finales. Dos victorias top3,
+derrotaVQpor409; muestras de recencia, no estimación global. Ver informe0828.
 
 Loop25 registrado y en espera tras24: cinco fuentes existentes, panel reactivo
 VQ/top3/V7/HS4 y confirmación agregando Harvest68/arshs3. Piloto1.920,
@@ -1783,6 +1787,75 @@ Reproducción: `auditar_similitud_rivales.py`; evidencia
 `recent_rival_similarity.plan.json` y `recent_rival_similarity.json` en
 `docs/evidencia/loop_publicos_20260925/`. Los replays originales están
 archivados en los paquetes de feedback 0653 y 0742.
+
+
+
+---
+
+## SOURCE: docs/research/FEEDBACK_0828_2026-09-25.md
+
+# Feedback real de las 08:27 UTC: tres episodios nuevos
+
+Consulta iniciada a las 08:27:46 UTC, sufijo0828. VQ56535264 marca2292,9
+con92episodios listados; top356537205 marca2103,4 con81. AmbasCOMPLETE;
+los conteos incluyen validación. No se hizo otro envío ni se infiere una
+diferencia causal de fuerza de estos ratings.
+
+Selección fijada antes de descargar: últimos cuatro episodios públicos
+completos de cada fuente, excluyendo los ya archivados0653/0742. Quedaron
+tres nuevos. `auditar_feedback_real.py 0828` reproduce exactamente las719
+acciones propias y720estados por episodio, rewards/caja conciliados. Máximo
+180,71ms; cero errores en los contadores observados, cero escapes propios,
+cero productos finales y ningún PICKUPWHEAT0. Quedan5/5/5semillas propias.
+
+| Episodio | Fuente | Rival | Semilla / asiento propio | Margen |
+|---|---|---|---|---:|
+|113205258|top3|[HSE Lyceum ML] zaepupno|102886466 / 0|+221|
+|113205022|top3|ykhnkf|1320068163 / 1|+137|
+|113206011|VQ|Dmitry Volovikov|335883418 / 0|−409|
+
+Contra zaepupno, mismos animales finales y mismas cantidades vendidas de leche,
+lana, melón, huevo y fresa. Nosotros vendemos117zanahorias frente a97; esto
+impide atribuir todo el resultado a ordenar ventas. Rival cobra221más por las
+mismas155leches; nosotros404más por247fresas.
+
+Contra ykhnkf, ambos compran8vacas/6ovejas/3gansos. El rival pierde un ganso
+en647; nosotros ninguno. Ambos venden168leches,99lanas y249fresas, con precios
+distintos; la diferencia de zanahorias es149propias frente a158rivales.
+No usar el escape rival para explicar automáticamente el margen final.
+
+Contra Dmitry, mismos8vacas/6ovejas/3gansos y ningún escape. Ambos venden209
+leches: ingresos propios14921frente a15445rivales, diferencia−524. Lana99cada
+uno:5461/5506; fresa251cadauno:45172/44909. También hay87/89huevos vendidos y
+pequeñas diferencias en trigo/fertilizante. Son descomposiciones contables;
+no identifican la regla rival ni demuestran que una sola venta cause la derrota.
+
+Estas tres partidas no cambian la selección ya congelada del panel25 ni el
+diseño de los bloques19–24. No constituyen una nueva estimación de WRglobal.
+
+Diagnóstico posterior registrado para las TRES partidas, sin escoger sólo la
+derrota: ejecutar la otra fuente enviada contra las mismas acciones rivales
+grabadas. `auditar_forecast_feedback.py 0828`, tres juegos nuevos, caja válida,
+máximo232,82ms y sin errores observados. Conserva tiendas y escapes de cada
+caso; cambia13/47/41turnos propios. Los controles originales exactos se reutilizan.
+
+| Rival | Margen VQ | Margen top3 | top3 menos VQ, rival fijo |
+|---|---:|---:|---:|
+|zaepupno|+85|+221|+136|
+|ykhnkf|−296|+137|+433|
+|Dmitry|−409|−548|−139|
+
+Con zaepupno, cantidades de todas las transacciones preservadas; top3 mejora
+nuestra caja393y la rival257. Con ykhnkf, VQ vende175leches frente a168de top3,
+pero recibe57menos por ellas; no es sólo precio de la misma cantidad. Con
+Dmitry, top3aumenta nuestra caja50pero la rival189, conserva derrota; vende
+2leches/2fresas menos y2huevos/1trigo más. El signo de la caja propia no decide
+la mejora. Tampoco estas tres comparaciones prueban respuesta de rival reactivo.
+
+Evidencia: `feedback_0828.plan.json`, `.fetch.json`, `.replays.tgz`, `.audit.json`,
+tres ledgers reales, `feedback_0828.opposite.*` y tres ledgers contrafactuales,
+además de snapshots de submissions/episodios, todos en
+`docs/evidencia/loop_publicos_20260925/`.
 
 
 
@@ -5089,7 +5162,7 @@ esta prueba. Los rivales emparentados limitan la diversidad efectiva del panel.
 
 Top3sobreVQ confirmó+10,795pp local (ICdos vías[−0,115;21,706]) y se envió
 56537205. VQ56535264se conserva; el original56511619ya fue desplazado. Snapshot
-07:41UTC:top32094,4/79episodios listados yVQ2296,9/91, ambasCOMPLETE; incluyen
+08:27UTC:top32103,4/81episodios listados yVQ2292,9/92, ambasCOMPLETE; incluyen
 validación. No es comparación causal ni rankings sincronizados por edad/rivales.
 Los conteos y lecturas fechadas están en SUBMISSION_HISTORY. La ventaja local
 todavía no demuestra superioridad real; no redefinir el gate según estos ratings.
@@ -5667,7 +5740,7 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
       "observed_at": "2026-09-25T00:22:13.462277+00:00"
     },
     "observed": "Desplazada por top3; score2275.7 en snapshot de retiro. Paquete exacto conservado.",
-    "conclusion": "Referencia histórica madura; paquete original conservado",
+    "conclusion": "Referencia hist\u00f3rica madura; paquete original conservado",
     "autorizacion": "usuario 2026-09-24 (AskUserQuestion): 'arshs3 + v13 (Recomendado)'",
     "submission_id": 56511619,
     "timestamp": "2026-09-24T04:28:57Z",
@@ -5716,9 +5789,9 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
     },
     "reason": "VQ validada contra copias; arshs3 transfiere al ladder (2292.5 vs v13 1857.9). Desplaza v13, preserva arshs3 como referencia activa.",
     "leaderboard": {
-      "score": 2296.9,
+      "score": 2292.9,
       "rank": null,
-      "episodes": 91,
+      "episodes": 92,
       "lecturas": [
         [
           "initial",
@@ -5792,15 +5865,20 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
           "2026-09-25T07:41:40.360131+00:00",
           2296.9,
           91
+        ],
+        [
+          "2026-09-25T08:27:46.340961+00:00",
+          2292.9,
+          92
         ]
       ],
       "status": "SubmissionStatus.COMPLETE"
     },
     "delta_vs_champion_ladder": null,
-    "observed": "COMPLETE, snapshot 2026-09-25T06:52:55.181043+00:00: score2289.1, 88 episodios listados (incluye validación). Comparación de ratings no causal. Ocho replays recientes reproducen fuente enviada exactamente; diagnóstico contra rival grabado favorece margen top3 en7/8, no es WLT reactivo.",
-    "conclusion": "REAL_WORLD_CANDIDATE; ventaja local específica contra copias, sin promoción automática",
-    "next_action": "Piloto15sin seleccionadas,16corriendo;18/19/20en cola. Loop21modera señales adicionales, incorpora controlVQy dos fuentes nuevas. Conservar VQ como referencia real y revisar gate/riesgo de desplazamiento antes de otro envío.",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0742.json"
+    "observed": "COMPLETE, snapshot 2026-09-25T08:27:46.340961+00:00: score2292.9, 92 episodios listados (incluye validaci\u00f3n). Ratings no son comparaci\u00f3n causal. Tres replays nuevos0828 reproducen719acciones/720estados exactos; muestra por recencia, no WRglobal.",
+    "conclusion": "REAL_WORLD_CANDIDATE; ventaja local espec\u00edfica contra copias, sin promoci\u00f3n autom\u00e1tica",
+    "next_action": "Confirm19corriendo;20\u201325encolados. Panel25separado contra copias reactivas VQ/top3y fuentes recientes, sin alterar bloques19\u201324. Revisar ambos controles y riesgo de desplazarVQantes de un nuevo env\u00edo justificado.",
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0828.json"
   },
   {
     "submission_id": 56537205,
@@ -5934,10 +6012,10 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
         "equal_cells": 116
       }
     },
-    "reason": "Cumple gate registrado: delta>=3pp, ningún rival<-20pp, cero errores, revisión de mecanismos y runtime. Prueba real autorizada.",
+    "reason": "Cumple gate registrado: delta>=3pp, ning\u00fan rival<-20pp, cero errores, revisi\u00f3n de mecanismos y runtime. Prueba real autorizada.",
     "leaderboard": {
-      "score": 2094.4,
-      "episodes": 79,
+      "score": 2103.4,
+      "episodes": 81,
       "status": "SubmissionStatus.COMPLETE",
       "lecturas": [
         [
@@ -5989,16 +6067,21 @@ ahora: toda candidata se mide también en `torneo.py` contra el pool público.
           "2026-09-25T07:41:40.360131+00:00",
           2094.4,
           79
+        ],
+        [
+          "2026-09-25T08:27:46.340961+00:00",
+          2103.4,
+          81
         ]
       ]
     },
-    "observed": "COMPLETE, snapshot 2026-09-25T06:52:55.181043+00:00: score2094.7, 75 episodios listados (incluye validación). Comparación de ratings no causal. Ocho replays recientes reproducen fuente enviada exactamente; diagnóstico contra rival grabado favorece margen top3 en7/8, no es WLT reactivo.",
+    "observed": "COMPLETE, snapshot 2026-09-25T08:27:46.340961+00:00: score2103.4, 81 episodios listados (incluye validaci\u00f3n). Ratings no son comparaci\u00f3n causal. Tres replays nuevos0828 reproducen719acciones/720estados exactos; muestra por recencia, no WRglobal.",
     "conclusion": "REAL_WORLD_CANDIDATE; no CHAMPION",
-    "next_action": "Piloto15sin seleccionadas,16corriendo;18/19/20en cola. Loop21modera señales adicionales, incorpora controlVQy dos fuentes nuevas. Conservar VQ como referencia real y revisar gate/riesgo de desplazamiento antes de otro envío.",
+    "next_action": "Confirm19corriendo;20\u201325encolados. Panel25separado contra copias reactivas VQ/top3y fuentes recientes, sin alterar bloques19\u201324. Revisar ambos controles y riesgo de desplazarVQantes de un nuevo env\u00edo justificado.",
     "replaces_submission": 56511619,
     "preserves_submission": 56535264,
     "evidence": "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0742.json"
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0828.json"
   }
 ]
 
@@ -6312,8 +6395,8 @@ una réplica empírica. Prefiero una objeción verificable a una afirmación con
 > Desde el 2026-09-21 el usuario autorizó un loop autónomo de investigación que
 > incluye submissions experimentales ("También tienes capacidad para crear y
 > subir submissions reales. Usa ambas cosas"). Referencias reales activas:
-> **VQ56535264** y **top3 56537205**, ambas COMPLETE. Snapshot07:41UTC:
-> 2296,9/91episodios y2094,4/79 respectivamente; incluyen validación.
+> **VQ56535264** y **top3 56537205**, ambas COMPLETE. Snapshot08:27UTC:
+> 2292,9/92episodios y2103,4/81 respectivamente; incluyen validación.
 > No volver al campeón histórico de1180. Creencias con evidencia:
 > `docs/research/RESEARCH_BELIEFS.md`; historial reproducible de envíos:
 > `docs/research/SUBMISSION_HISTORY.json`; qué métrica local predice el ladder:

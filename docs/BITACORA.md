@@ -1,5 +1,25 @@
 # Bitácora de experimentos
 
+## 2026-09-25, 08:27 UTC — Snapshot real y tres replays posteriores
+
+Consulta08:27:46UTC(sufijo0828):VQ2292,9/92episodios,top32103,4/81, ambas
+COMPLETE. Sin submission nueva. Selección por recencia previa a descargas deja
+tres replays nuevos:top3zaepupno+221,ykhnkf+137,VQDmitry−409. Reconstrucción
+719acciones/720estados exactos, caja/rewards, máximo180,71ms, cero errores
+observados/escapes propios/productos finales. Ningún PICKUPWHEAT0.
+
+Dmitry vende las mismas209leches por524monedas más; hay otras diferencias
+de precios/cantidades. No es atribución causal. Con zaepupno difieren20zanahorias;
+ykhnkf pierde un ganso647. InformeFEEDBACK_0828y evidencia archivada. No altera
+paneles19–25ni justifica adoptar por tres resultados. Investigación continúa.
+
+Contrafactual registrado en las tres nuevas partidas con fuente opuesta y rival
+grabado: top3menosVQen margen+136/+433/−139,13/47/41turnos distintos, tiendas
+iguales, caja válida y máximo233ms. ContraDmitrytop3gana50monedas propiaspero
+rival189; conserva derrota. Cantidades vendidas cambian en dos de tres mundos;
+no atribuirlo todo a precios. Tres controles exactos previos reutilizados,
+no estimación competitiva reactiva. `auditar_forecast_feedback.py 0828`.
+
 ## 2026-09-25, 08:24 UTC — Panel separado contra políticas cercanas
 
 Auditoría de15replays ya seleccionados por recencia en0653/0742, sin filtrar

@@ -8,7 +8,10 @@ en cola; un solo torneo grande, no duplicar.89variantes construidas más2
 prototipos17detenidos. Adelanto24compra antes y permite ventas más tempranas:
 36juegos/noop8.628/64llenados,4.480unidades descontadas del compromiso nativo,
 max308ms. Nuevo catálogo público08:02UTCno cambia las50entradas anteriores.
-Último ladder07:41:40UTC:VQ2296,9/91, top32094,4/79; no nuevo envío.
+Último ladder08:27:46UTC:VQ2292,9/92, top32103,4/81; no nuevo envío.
+Tres replays nuevos0828reproducidos719acciones/720estados; máximo181ms,
+cero errores observados/escapes propios/productos finales. Dos victorias top3,
+derrotaVQpor409; muestras de recencia, no estimación global. Ver informe0828.
 
 Loop25 registrado y en espera tras24: cinco fuentes existentes, panel reactivo
 VQ/top3/V7/HS4 y confirmación agregando Harvest68/arshs3. Piloto1.920,

@@ -25,6 +25,7 @@ SOURCES = (
     "docs/research/SCORECARDS_LOOP_2026-09-25.md",
     "docs/research/PREREG_LOOP25_PANEL_CERCANO_2026-09-25.md",
     "docs/research/SIMILITUD_RIVALES_2026-09-25.md",
+    "docs/research/FEEDBACK_0828_2026-09-25.md",
     "docs/research/PREREG_LOOP24_ADELANTO_TRIGO_2026-09-25.md",
     "docs/research/ADELANTO_TRIGO_2026-09-25.md",
     "docs/research/PREREG_LOOP23_SUMINISTRO_OVINO_2026-09-25.md",

@@ -9,7 +9,7 @@ esta prueba. Los rivales emparentados limitan la diversidad efectiva del panel.
 
 Top3sobreVQ confirmó+10,795pp local (ICdos vías[−0,115;21,706]) y se envió
 56537205. VQ56535264se conserva; el original56511619ya fue desplazado. Snapshot
-07:41UTC:top32094,4/79episodios listados yVQ2296,9/91, ambasCOMPLETE; incluyen
+08:27UTC:top32103,4/81episodios listados yVQ2292,9/92, ambasCOMPLETE; incluyen
 validación. No es comparación causal ni rankings sincronizados por edad/rivales.
 Los conteos y lecturas fechadas están en SUBMISSION_HISTORY. La ventaja local
 todavía no demuestra superioridad real; no redefinir el gate según estos ratings.
