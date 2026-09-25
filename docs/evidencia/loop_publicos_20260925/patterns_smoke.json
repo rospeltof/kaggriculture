@@ -1,0 +1,362 @@
+[
+  {
+    "arm": "base",
+    "seat": 0,
+    "rewards": [
+      108794.0,
+      108389.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 140.19254202139564,
+    "mean_turn_ms": 2.269011708010462,
+    "patterns": {},
+    "forecast": {
+      "pred_units": 142,
+      "pred_fires": 22,
+      "pred_errors": 0
+    },
+    "action_hash": "a1534609308262a32dc42ba1e98f3b3c4fa3e86665eca2cd8fc8cedfa449f8a6",
+    "ledger_operations": 4626
+  },
+  {
+    "arm": "base",
+    "seat": 1,
+    "rewards": [
+      108389.0,
+      108794.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 69.09887501387857,
+    "mean_turn_ms": 1.5698091698287804,
+    "patterns": {},
+    "forecast": {
+      "pred_units": 142,
+      "pred_fires": 22,
+      "pred_errors": 0
+    },
+    "action_hash": "3080051e12242dd55238ebe762f6c7ec80e9373fdffb1caf8791ee73f259a0dd",
+    "ledger_operations": 4626
+  },
+  {
+    "arm": "rank5",
+    "seat": 0,
+    "rewards": [
+      108006.0,
+      108174.0
+    ],
+    "changed_action_turns": 21,
+    "max_turn_ms": 227.8013750037644,
+    "mean_turn_ms": 2.495922358511974,
+    "patterns": {
+      "calls": 275,
+      "product_fits": 0,
+      "shifted_patterns": 0
+    },
+    "forecast": {
+      "pred_units": 146,
+      "pred_fires": 24,
+      "pred_errors": 0
+    },
+    "action_hash": "3cd7d057be84fbd21be4ebb21e9c73169de0df5539e2f18f83ca095b08f03c41",
+    "ledger_operations": 4626
+  },
+  {
+    "arm": "rank5",
+    "seat": 1,
+    "rewards": [
+      108174.0,
+      108006.0
+    ],
+    "changed_action_turns": 21,
+    "max_turn_ms": 96.14041598979384,
+    "mean_turn_ms": 1.6848172975709903,
+    "patterns": {
+      "calls": 275,
+      "product_fits": 0,
+      "shifted_patterns": 0
+    },
+    "forecast": {
+      "pred_units": 146,
+      "pred_fires": 24,
+      "pred_errors": 0
+    },
+    "action_hash": "c98ba280ce4ab930fdad17f87746cdf50d937e971dcb3657c7eebfd0d94c6fda",
+    "ledger_operations": 4626
+  },
+  {
+    "arm": "rank7",
+    "seat": 0,
+    "rewards": [
+      107997.0,
+      108171.0
+    ],
+    "changed_action_turns": 24,
+    "max_turn_ms": 108.80070898565464,
+    "mean_turn_ms": 2.070916387037489,
+    "patterns": {
+      "calls": 275,
+      "product_fits": 0,
+      "shifted_patterns": 0
+    },
+    "forecast": {
+      "pred_units": 147,
+      "pred_fires": 25,
+      "pred_errors": 0
+    },
+    "action_hash": "ce936ffb1f5e526a7d30132fbcba859e61a300fb1b1eb21c7bb74c267a6b8fac",
+    "ledger_operations": 4626
+  },
+  {
+    "arm": "rank7",
+    "seat": 1,
+    "rewards": [
+      108171.0,
+      107997.0
+    ],
+    "changed_action_turns": 24,
+    "max_turn_ms": 118.30579201341607,
+    "mean_turn_ms": 1.728729689009656,
+    "patterns": {
+      "calls": 275,
+      "product_fits": 0,
+      "shifted_patterns": 0
+    },
+    "forecast": {
+      "pred_units": 147,
+      "pred_fires": 25,
+      "pred_errors": 0
+    },
+    "action_hash": "fad8e4a0d4f3e6e3317fba0bb7849b8bb2144709a4ad2721a3395e0d2a3c0bcc",
+    "ledger_operations": 4626
+  },
+  {
+    "arm": "history120",
+    "seat": 0,
+    "rewards": [
+      107948.0,
+      108599.0
+    ],
+    "changed_action_turns": 22,
+    "max_turn_ms": 270.8038749988191,
+    "mean_turn_ms": 2.602878312521351,
+    "patterns": {
+      "calls": 275,
+      "product_fits": 0,
+      "shifted_patterns": 0
+    },
+    "forecast": {
+      "pred_units": 133,
+      "pred_fires": 20,
+      "pred_errors": 0
+    },
+    "action_hash": "84074629f1681deccc96982d350b15476e16b3d9d144c71bf7e843c6c8c1d12f",
+    "ledger_operations": 4626
+  },
+  {
+    "arm": "history120",
+    "seat": 1,
+    "rewards": [
+      108599.0,
+      107948.0
+    ],
+    "changed_action_turns": 22,
+    "max_turn_ms": 100.72133401990868,
+    "mean_turn_ms": 1.5981203695255304,
+    "patterns": {
+      "calls": 275,
+      "product_fits": 0,
+      "shifted_patterns": 0
+    },
+    "forecast": {
+      "pred_units": 133,
+      "pred_fires": 20,
+      "pred_errors": 0
+    },
+    "action_hash": "c29c64985a320ec1dee653a0238fd239380b145a1680a3897467de7a28209125",
+    "ledger_operations": 4626
+  },
+  {
+    "arm": "history360",
+    "seat": 0,
+    "rewards": [
+      108794.0,
+      108389.0
+    ],
+    "changed_action_turns": 2,
+    "max_turn_ms": 233.40858399751596,
+    "mean_turn_ms": 2.871446458612127,
+    "patterns": {
+      "calls": 275,
+      "product_fits": 0,
+      "shifted_patterns": 0
+    },
+    "forecast": {
+      "pred_units": 142,
+      "pred_fires": 22,
+      "pred_errors": 0
+    },
+    "action_hash": "f65567c1175f553f8ebc144ea7a4e615d992eb2aff043a188be1412c0ad060ff",
+    "ledger_operations": 4626
+  },
+  {
+    "arm": "history360",
+    "seat": 1,
+    "rewards": [
+      108389.0,
+      108794.0
+    ],
+    "changed_action_turns": 2,
+    "max_turn_ms": 93.28237498993985,
+    "mean_turn_ms": 1.6288196390186422,
+    "patterns": {
+      "calls": 275,
+      "product_fits": 0,
+      "shifted_patterns": 0
+    },
+    "forecast": {
+      "pred_units": 142,
+      "pred_fires": 22,
+      "pred_errors": 0
+    },
+    "action_hash": "8cbecb138383d27b5eb7e3037737856407f5946d10ceb13cba4f3e4db3dbf4c2",
+    "ledger_operations": 4626
+  },
+  {
+    "arm": "product3",
+    "seat": 0,
+    "rewards": [
+      107749.0,
+      108310.0
+    ],
+    "changed_action_turns": 29,
+    "max_turn_ms": 230.60637500020675,
+    "mean_turn_ms": 3.440808720487754,
+    "patterns": {
+      "calls": 275,
+      "product_fits": 833,
+      "shifted_patterns": 0
+    },
+    "forecast": {
+      "pred_units": 136,
+      "pred_fires": 19,
+      "pred_errors": 0
+    },
+    "action_hash": "fcdd236ce9ae00c54e2f73cf4fd5040392d1f376f65e1d46689127c7f6fee6a0",
+    "ledger_operations": 4626
+  },
+  {
+    "arm": "product3",
+    "seat": 1,
+    "rewards": [
+      108310.0,
+      107749.0
+    ],
+    "changed_action_turns": 29,
+    "max_turn_ms": 98.47041699686088,
+    "mean_turn_ms": 2.39257569231646,
+    "patterns": {
+      "calls": 275,
+      "product_fits": 833,
+      "shifted_patterns": 0
+    },
+    "forecast": {
+      "pred_units": 136,
+      "pred_fires": 19,
+      "pred_errors": 0
+    },
+    "action_hash": "ae3ea86360be5dc7b4a45abe5627363bee9c8f43cc991518b29feebfc58c3d37",
+    "ledger_operations": 4626
+  },
+  {
+    "arm": "phase2",
+    "seat": 0,
+    "rewards": [
+      108767.0,
+      108328.0
+    ],
+    "changed_action_turns": 2,
+    "max_turn_ms": 220.9240000229329,
+    "mean_turn_ms": 4.5012788825149626,
+    "patterns": {
+      "calls": 275,
+      "product_fits": 0,
+      "shifted_patterns": 114
+    },
+    "forecast": {
+      "pred_units": 142,
+      "pred_fires": 22,
+      "pred_errors": 0
+    },
+    "action_hash": "50487cd54bd9d197d548927f41caf2a57d1b8ab84c45c664459949eebe433bda",
+    "ledger_operations": 4626
+  },
+  {
+    "arm": "phase2",
+    "seat": 1,
+    "rewards": [
+      108328.0,
+      108767.0
+    ],
+    "changed_action_turns": 2,
+    "max_turn_ms": 90.77475001686253,
+    "mean_turn_ms": 3.6996482978011476,
+    "patterns": {
+      "calls": 275,
+      "product_fits": 0,
+      "shifted_patterns": 114
+    },
+    "forecast": {
+      "pred_units": 142,
+      "pred_fires": 22,
+      "pred_errors": 0
+    },
+    "action_hash": "440b510ac6adcc4b39a3f90acc098ccc998fe07d8fa53d6631370d7cc53259ef",
+    "ledger_operations": 4626
+  },
+  {
+    "arm": "transform_noop",
+    "seat": 0,
+    "rewards": [
+      108794.0,
+      108389.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 233.78224999760278,
+    "mean_turn_ms": 2.3502912782799705,
+    "patterns": {
+      "calls": 275,
+      "product_fits": 0,
+      "shifted_patterns": 0
+    },
+    "forecast": {
+      "pred_units": 142,
+      "pred_fires": 22,
+      "pred_errors": 0
+    },
+    "action_hash": "a1534609308262a32dc42ba1e98f3b3c4fa3e86665eca2cd8fc8cedfa449f8a6",
+    "ledger_operations": 4626
+  },
+  {
+    "arm": "transform_noop",
+    "seat": 1,
+    "rewards": [
+      108389.0,
+      108794.0
+    ],
+    "changed_action_turns": 0,
+    "max_turn_ms": 123.0912090104539,
+    "mean_turn_ms": 1.7283674145262475,
+    "patterns": {
+      "calls": 275,
+      "product_fits": 0,
+      "shifted_patterns": 0
+    },
+    "forecast": {
+      "pred_units": 142,
+      "pred_fires": 22,
+      "pred_errors": 0
+    },
+    "action_hash": "3080051e12242dd55238ebe762f6c7ec80e9373fdffb1caf8791ee73f259a0dd",
+    "ledger_operations": 4626
+  }
+]

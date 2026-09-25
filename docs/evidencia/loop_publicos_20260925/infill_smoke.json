@@ -1,0 +1,2268 @@
+[
+  {
+    "arm": "base",
+    "seat": 0,
+    "rewards": [
+      93353.0,
+      93191.0
+    ],
+    "changed_action_turns": 0,
+    "report": {},
+    "project_report": {
+      "sheep_commit_requests": 1,
+      "sheep_committed": 1,
+      "sheep_hire_requests": 26,
+      "sheep_workers_confirmed": 26,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 102,
+      "sheep_wool_harvested": 108,
+      "sheep_fert_collected": 65,
+      "sheep_extra_wool_sales": 108,
+      "sheep_extra_fert_sales": 65,
+      "sheep_rescue_feed_requests": 3
+    },
+    "crops": [
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "money": 10736.0,
+        "sheep": 15
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "money": 14330.0,
+        "sheep": 15
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "money": 16584.0,
+        "sheep": 15
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "money": 25281.0,
+        "sheep": 15
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "money": 34188.0,
+        "sheep": 15
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "money": 47080.0,
+        "sheep": 15
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "money": 51520.0,
+        "sheep": 15
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "money": 57367.0,
+        "sheep": 15
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "money": 65608.0,
+        "sheep": 15
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "money": 66024.0,
+        "sheep": 15
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "money": 67929.0,
+        "sheep": 15
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "money": 68996.0,
+        "sheep": 15
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "money": 70221.0,
+        "sheep": 15
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "money": 72151.0,
+        "sheep": 15
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "money": 77998.0,
+        "sheep": 15
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "money": 84513.0,
+        "sheep": 15
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "base",
+    "seat": 1,
+    "rewards": [
+      93191.0,
+      93353.0
+    ],
+    "changed_action_turns": 0,
+    "report": {},
+    "project_report": {
+      "sheep_commit_requests": 1,
+      "sheep_committed": 1,
+      "sheep_hire_requests": 26,
+      "sheep_workers_confirmed": 26,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 102,
+      "sheep_wool_harvested": 108,
+      "sheep_fert_collected": 65,
+      "sheep_extra_wool_sales": 108,
+      "sheep_extra_fert_sales": 65,
+      "sheep_rescue_feed_requests": 3
+    },
+    "crops": [
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "money": 10736.0,
+        "sheep": 15
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "money": 14330.0,
+        "sheep": 15
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "money": 16584.0,
+        "sheep": 15
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "money": 25281.0,
+        "sheep": 15
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "money": 34188.0,
+        "sheep": 15
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "money": 47080.0,
+        "sheep": 15
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "money": 51520.0,
+        "sheep": 15
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "money": 57367.0,
+        "sheep": 15
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "money": 65608.0,
+        "sheep": 15
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "money": 66024.0,
+        "sheep": 15
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "money": 67929.0,
+        "sheep": 15
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "money": 68996.0,
+        "sheep": 15
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "money": 70221.0,
+        "sheep": 15
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "money": 72151.0,
+        "sheep": 15
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "money": 77998.0,
+        "sheep": 15
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "money": 84513.0,
+        "sheep": 15
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "infill4_d16",
+    "seat": 0,
+    "rewards": [
+      93353.0,
+      93191.0
+    ],
+    "changed_action_turns": 0,
+    "report": {
+      "commit_requests": 0,
+      "committed": 0,
+      "confirmed_plants": 0,
+      "hire_requests": 0,
+      "hires_confirmed": 0,
+      "hire_shortfalls": 0,
+      "harvested": 0,
+      "economic_declines": 1,
+      "budget_declines": 0,
+      "time_declines": 0,
+      "quotes": [
+        {
+          "day": 16,
+          "revenue": 2085,
+          "cost": 3072
+        }
+      ]
+    },
+    "project_report": {
+      "sheep_commit_requests": 1,
+      "sheep_committed": 1,
+      "sheep_hire_requests": 26,
+      "sheep_workers_confirmed": 26,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 102,
+      "sheep_wool_harvested": 108,
+      "sheep_fert_collected": 65,
+      "sheep_extra_wool_sales": 108,
+      "sheep_extra_fert_sales": 65,
+      "sheep_rescue_feed_requests": 3
+    },
+    "crops": [
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "money": 10736.0,
+        "sheep": 15
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "money": 14330.0,
+        "sheep": 15
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "money": 16584.0,
+        "sheep": 15
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "money": 25281.0,
+        "sheep": 15
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "money": 34188.0,
+        "sheep": 15
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "money": 47080.0,
+        "sheep": 15
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "money": 51520.0,
+        "sheep": 15
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "money": 57367.0,
+        "sheep": 15
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "money": 65608.0,
+        "sheep": 15
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "money": 66024.0,
+        "sheep": 15
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "money": 67929.0,
+        "sheep": 15
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "money": 68996.0,
+        "sheep": 15
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "money": 70221.0,
+        "sheep": 15
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "money": 72151.0,
+        "sheep": 15
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "money": 77998.0,
+        "sheep": 15
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "money": 84513.0,
+        "sheep": 15
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "infill4_d16",
+    "seat": 1,
+    "rewards": [
+      93191.0,
+      93353.0
+    ],
+    "changed_action_turns": 0,
+    "report": {
+      "commit_requests": 0,
+      "committed": 0,
+      "confirmed_plants": 0,
+      "hire_requests": 0,
+      "hires_confirmed": 0,
+      "hire_shortfalls": 0,
+      "harvested": 0,
+      "economic_declines": 1,
+      "budget_declines": 0,
+      "time_declines": 0,
+      "quotes": [
+        {
+          "day": 16,
+          "revenue": 2085,
+          "cost": 3072
+        }
+      ]
+    },
+    "project_report": {
+      "sheep_commit_requests": 1,
+      "sheep_committed": 1,
+      "sheep_hire_requests": 26,
+      "sheep_workers_confirmed": 26,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 102,
+      "sheep_wool_harvested": 108,
+      "sheep_fert_collected": 65,
+      "sheep_extra_wool_sales": 108,
+      "sheep_extra_fert_sales": 65,
+      "sheep_rescue_feed_requests": 3
+    },
+    "crops": [
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "money": 10736.0,
+        "sheep": 15
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "money": 14330.0,
+        "sheep": 15
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "money": 16584.0,
+        "sheep": 15
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "money": 25281.0,
+        "sheep": 15
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "money": 34188.0,
+        "sheep": 15
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "money": 47080.0,
+        "sheep": 15
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "money": 51520.0,
+        "sheep": 15
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "money": 57367.0,
+        "sheep": 15
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "money": 65608.0,
+        "sheep": 15
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "money": 66024.0,
+        "sheep": 15
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "money": 67929.0,
+        "sheep": 15
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "money": 68996.0,
+        "sheep": 15
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "money": 70221.0,
+        "sheep": 15
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "money": 72151.0,
+        "sheep": 15
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "money": 77998.0,
+        "sheep": 15
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "money": 84513.0,
+        "sheep": 15
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "infill8_d16",
+    "seat": 0,
+    "rewards": [
+      93353.0,
+      93191.0
+    ],
+    "changed_action_turns": 0,
+    "report": {
+      "commit_requests": 0,
+      "committed": 0,
+      "confirmed_plants": 0,
+      "hire_requests": 0,
+      "hires_confirmed": 0,
+      "hire_shortfalls": 0,
+      "harvested": 0,
+      "economic_declines": 1,
+      "budget_declines": 0,
+      "time_declines": 0,
+      "quotes": [
+        {
+          "day": 16,
+          "revenue": 3929,
+          "cost": 7919
+        }
+      ]
+    },
+    "project_report": {
+      "sheep_commit_requests": 1,
+      "sheep_committed": 1,
+      "sheep_hire_requests": 26,
+      "sheep_workers_confirmed": 26,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 102,
+      "sheep_wool_harvested": 108,
+      "sheep_fert_collected": 65,
+      "sheep_extra_wool_sales": 108,
+      "sheep_extra_fert_sales": 65,
+      "sheep_rescue_feed_requests": 3
+    },
+    "crops": [
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "money": 10736.0,
+        "sheep": 15
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "money": 14330.0,
+        "sheep": 15
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "money": 16584.0,
+        "sheep": 15
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "money": 25281.0,
+        "sheep": 15
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "money": 34188.0,
+        "sheep": 15
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "money": 47080.0,
+        "sheep": 15
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "money": 51520.0,
+        "sheep": 15
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "money": 57367.0,
+        "sheep": 15
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "money": 65608.0,
+        "sheep": 15
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "money": 66024.0,
+        "sheep": 15
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "money": 67929.0,
+        "sheep": 15
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "money": 68996.0,
+        "sheep": 15
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "money": 70221.0,
+        "sheep": 15
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "money": 72151.0,
+        "sheep": 15
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "money": 77998.0,
+        "sheep": 15
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "money": 84513.0,
+        "sheep": 15
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "infill8_d16",
+    "seat": 1,
+    "rewards": [
+      93191.0,
+      93353.0
+    ],
+    "changed_action_turns": 0,
+    "report": {
+      "commit_requests": 0,
+      "committed": 0,
+      "confirmed_plants": 0,
+      "hire_requests": 0,
+      "hires_confirmed": 0,
+      "hire_shortfalls": 0,
+      "harvested": 0,
+      "economic_declines": 1,
+      "budget_declines": 0,
+      "time_declines": 0,
+      "quotes": [
+        {
+          "day": 16,
+          "revenue": 3929,
+          "cost": 7919
+        }
+      ]
+    },
+    "project_report": {
+      "sheep_commit_requests": 1,
+      "sheep_committed": 1,
+      "sheep_hire_requests": 26,
+      "sheep_workers_confirmed": 26,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 102,
+      "sheep_wool_harvested": 108,
+      "sheep_fert_collected": 65,
+      "sheep_extra_wool_sales": 108,
+      "sheep_extra_fert_sales": 65,
+      "sheep_rescue_feed_requests": 3
+    },
+    "crops": [
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "money": 10736.0,
+        "sheep": 15
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "money": 14330.0,
+        "sheep": 15
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "money": 16584.0,
+        "sheep": 15
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "money": 25281.0,
+        "sheep": 15
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "money": 34188.0,
+        "sheep": 15
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "money": 47080.0,
+        "sheep": 15
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "money": 51520.0,
+        "sheep": 15
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "money": 57367.0,
+        "sheep": 15
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "money": 65608.0,
+        "sheep": 15
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "money": 66024.0,
+        "sheep": 15
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "money": 67929.0,
+        "sheep": 15
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "money": 68996.0,
+        "sheep": 15
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "money": 70221.0,
+        "sheep": 15
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "money": 72151.0,
+        "sheep": 15
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "money": 77998.0,
+        "sheep": 15
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "money": 84513.0,
+        "sheep": 15
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "infill4_d18",
+    "seat": 0,
+    "rewards": [
+      93353.0,
+      93191.0
+    ],
+    "changed_action_turns": 0,
+    "report": {
+      "commit_requests": 0,
+      "committed": 0,
+      "confirmed_plants": 0,
+      "hire_requests": 0,
+      "hires_confirmed": 0,
+      "hire_shortfalls": 0,
+      "harvested": 0,
+      "economic_declines": 1,
+      "budget_declines": 0,
+      "time_declines": 0,
+      "quotes": [
+        {
+          "day": 18,
+          "revenue": 2402,
+          "cost": 3072
+        }
+      ]
+    },
+    "project_report": {
+      "sheep_commit_requests": 1,
+      "sheep_committed": 1,
+      "sheep_hire_requests": 26,
+      "sheep_workers_confirmed": 26,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 102,
+      "sheep_wool_harvested": 108,
+      "sheep_fert_collected": 65,
+      "sheep_extra_wool_sales": 108,
+      "sheep_extra_fert_sales": 65,
+      "sheep_rescue_feed_requests": 3
+    },
+    "crops": [
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "money": 10736.0,
+        "sheep": 15
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "money": 14330.0,
+        "sheep": 15
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "money": 16584.0,
+        "sheep": 15
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "money": 25281.0,
+        "sheep": 15
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "money": 34188.0,
+        "sheep": 15
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "money": 47080.0,
+        "sheep": 15
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "money": 51520.0,
+        "sheep": 15
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "money": 57367.0,
+        "sheep": 15
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "money": 65608.0,
+        "sheep": 15
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "money": 66024.0,
+        "sheep": 15
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "money": 67929.0,
+        "sheep": 15
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "money": 68996.0,
+        "sheep": 15
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "money": 70221.0,
+        "sheep": 15
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "money": 72151.0,
+        "sheep": 15
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "money": 77998.0,
+        "sheep": 15
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "money": 84513.0,
+        "sheep": 15
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "infill4_d18",
+    "seat": 1,
+    "rewards": [
+      93191.0,
+      93353.0
+    ],
+    "changed_action_turns": 0,
+    "report": {
+      "commit_requests": 0,
+      "committed": 0,
+      "confirmed_plants": 0,
+      "hire_requests": 0,
+      "hires_confirmed": 0,
+      "hire_shortfalls": 0,
+      "harvested": 0,
+      "economic_declines": 1,
+      "budget_declines": 0,
+      "time_declines": 0,
+      "quotes": [
+        {
+          "day": 18,
+          "revenue": 2402,
+          "cost": 3072
+        }
+      ]
+    },
+    "project_report": {
+      "sheep_commit_requests": 1,
+      "sheep_committed": 1,
+      "sheep_hire_requests": 26,
+      "sheep_workers_confirmed": 26,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 102,
+      "sheep_wool_harvested": 108,
+      "sheep_fert_collected": 65,
+      "sheep_extra_wool_sales": 108,
+      "sheep_extra_fert_sales": 65,
+      "sheep_rescue_feed_requests": 3
+    },
+    "crops": [
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "money": 10736.0,
+        "sheep": 15
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "money": 14330.0,
+        "sheep": 15
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "money": 16584.0,
+        "sheep": 15
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "money": 25281.0,
+        "sheep": 15
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "money": 34188.0,
+        "sheep": 15
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "money": 47080.0,
+        "sheep": 15
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "money": 51520.0,
+        "sheep": 15
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "money": 57367.0,
+        "sheep": 15
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "money": 65608.0,
+        "sheep": 15
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "money": 66024.0,
+        "sheep": 15
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "money": 67929.0,
+        "sheep": 15
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "money": 68996.0,
+        "sheep": 15
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "money": 70221.0,
+        "sheep": 15
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "money": 72151.0,
+        "sheep": 15
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "money": 77998.0,
+        "sheep": 15
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "money": 84513.0,
+        "sheep": 15
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "infill8_d18",
+    "seat": 0,
+    "rewards": [
+      93353.0,
+      93191.0
+    ],
+    "changed_action_turns": 0,
+    "report": {
+      "commit_requests": 0,
+      "committed": 0,
+      "confirmed_plants": 0,
+      "hire_requests": 0,
+      "hires_confirmed": 0,
+      "hire_shortfalls": 0,
+      "harvested": 0,
+      "economic_declines": 1,
+      "budget_declines": 0,
+      "time_declines": 0,
+      "quotes": [
+        {
+          "day": 18,
+          "revenue": 4517,
+          "cost": 7919
+        }
+      ]
+    },
+    "project_report": {
+      "sheep_commit_requests": 1,
+      "sheep_committed": 1,
+      "sheep_hire_requests": 26,
+      "sheep_workers_confirmed": 26,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 102,
+      "sheep_wool_harvested": 108,
+      "sheep_fert_collected": 65,
+      "sheep_extra_wool_sales": 108,
+      "sheep_extra_fert_sales": 65,
+      "sheep_rescue_feed_requests": 3
+    },
+    "crops": [
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "money": 10736.0,
+        "sheep": 15
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "money": 14330.0,
+        "sheep": 15
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "money": 16584.0,
+        "sheep": 15
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "money": 25281.0,
+        "sheep": 15
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "money": 34188.0,
+        "sheep": 15
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "money": 47080.0,
+        "sheep": 15
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "money": 51520.0,
+        "sheep": 15
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "money": 57367.0,
+        "sheep": 15
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "money": 65608.0,
+        "sheep": 15
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "money": 66024.0,
+        "sheep": 15
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "money": 67929.0,
+        "sheep": 15
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "money": 68996.0,
+        "sheep": 15
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "money": 70221.0,
+        "sheep": 15
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "money": 72151.0,
+        "sheep": 15
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "money": 77998.0,
+        "sheep": 15
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "money": 84513.0,
+        "sheep": 15
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "infill8_d18",
+    "seat": 1,
+    "rewards": [
+      93191.0,
+      93353.0
+    ],
+    "changed_action_turns": 0,
+    "report": {
+      "commit_requests": 0,
+      "committed": 0,
+      "confirmed_plants": 0,
+      "hire_requests": 0,
+      "hires_confirmed": 0,
+      "hire_shortfalls": 0,
+      "harvested": 0,
+      "economic_declines": 1,
+      "budget_declines": 0,
+      "time_declines": 0,
+      "quotes": [
+        {
+          "day": 18,
+          "revenue": 4517,
+          "cost": 7919
+        }
+      ]
+    },
+    "project_report": {
+      "sheep_commit_requests": 1,
+      "sheep_committed": 1,
+      "sheep_hire_requests": 26,
+      "sheep_workers_confirmed": 26,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 102,
+      "sheep_wool_harvested": 108,
+      "sheep_fert_collected": 65,
+      "sheep_extra_wool_sales": 108,
+      "sheep_extra_fert_sales": 65,
+      "sheep_rescue_feed_requests": 3
+    },
+    "crops": [
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "money": 10736.0,
+        "sheep": 15
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "money": 14330.0,
+        "sheep": 15
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "money": 16584.0,
+        "sheep": 15
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "money": 25281.0,
+        "sheep": 15
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "money": 34188.0,
+        "sheep": 15
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "money": 47080.0,
+        "sheep": 15
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "money": 51520.0,
+        "sheep": 15
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "money": 57367.0,
+        "sheep": 15
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "money": 65608.0,
+        "sheep": 15
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "money": 66024.0,
+        "sheep": 15
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "money": 67929.0,
+        "sheep": 15
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "money": 68996.0,
+        "sheep": 15
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "money": 70221.0,
+        "sheep": 15
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "money": 72151.0,
+        "sheep": 15
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "money": 77998.0,
+        "sheep": 15
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "money": 84513.0,
+        "sheep": 15
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "infill_noop",
+    "seat": 0,
+    "rewards": [
+      93353.0,
+      93191.0
+    ],
+    "changed_action_turns": 0,
+    "report": {
+      "commit_requests": 0,
+      "committed": 0,
+      "confirmed_plants": 0,
+      "hire_requests": 0,
+      "hires_confirmed": 0,
+      "hire_shortfalls": 0,
+      "harvested": 0,
+      "economic_declines": 0,
+      "budget_declines": 0,
+      "time_declines": 0,
+      "quotes": []
+    },
+    "project_report": {
+      "sheep_commit_requests": 1,
+      "sheep_committed": 1,
+      "sheep_hire_requests": 26,
+      "sheep_workers_confirmed": 26,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 102,
+      "sheep_wool_harvested": 108,
+      "sheep_fert_collected": 65,
+      "sheep_extra_wool_sales": 108,
+      "sheep_extra_fert_sales": 65,
+      "sheep_rescue_feed_requests": 3
+    },
+    "crops": [
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "money": 10736.0,
+        "sheep": 15
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "money": 14330.0,
+        "sheep": 15
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "money": 16584.0,
+        "sheep": 15
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "money": 25281.0,
+        "sheep": 15
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "money": 34188.0,
+        "sheep": 15
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "money": 47080.0,
+        "sheep": 15
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "money": 51520.0,
+        "sheep": 15
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "money": 57367.0,
+        "sheep": 15
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "money": 65608.0,
+        "sheep": 15
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "money": 66024.0,
+        "sheep": 15
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "money": 67929.0,
+        "sheep": 15
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "money": 68996.0,
+        "sheep": 15
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "money": 70221.0,
+        "sheep": 15
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "money": 72151.0,
+        "sheep": 15
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "money": 77998.0,
+        "sheep": 15
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "money": 84513.0,
+        "sheep": 15
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "infill_noop",
+    "seat": 1,
+    "rewards": [
+      93191.0,
+      93353.0
+    ],
+    "changed_action_turns": 0,
+    "report": {
+      "commit_requests": 0,
+      "committed": 0,
+      "confirmed_plants": 0,
+      "hire_requests": 0,
+      "hires_confirmed": 0,
+      "hire_shortfalls": 0,
+      "harvested": 0,
+      "economic_declines": 0,
+      "budget_declines": 0,
+      "time_declines": 0,
+      "quotes": []
+    },
+    "project_report": {
+      "sheep_commit_requests": 1,
+      "sheep_committed": 1,
+      "sheep_hire_requests": 26,
+      "sheep_workers_confirmed": 26,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 102,
+      "sheep_wool_harvested": 108,
+      "sheep_fert_collected": 65,
+      "sheep_extra_wool_sales": 108,
+      "sheep_extra_fert_sales": 65,
+      "sheep_rescue_feed_requests": 3
+    },
+    "crops": [
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "money": 10736.0,
+        "sheep": 15
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "money": 14330.0,
+        "sheep": 15
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "money": 16584.0,
+        "sheep": 15
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "money": 25281.0,
+        "sheep": 15
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "money": 34188.0,
+        "sheep": 15
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "money": 47080.0,
+        "sheep": 15
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "money": 51520.0,
+        "sheep": 15
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "money": 57367.0,
+        "sheep": 15
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "money": 65608.0,
+        "sheep": 15
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "money": 66024.0,
+        "sheep": 15
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "money": 67929.0,
+        "sheep": 15
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "money": 68996.0,
+        "sheep": 15
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "money": 70221.0,
+        "sheep": 15
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "money": 72151.0,
+        "sheep": 15
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "money": 77998.0,
+        "sheep": 15
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "money": 84513.0,
+        "sheep": 15
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "forced4",
+    "seat": 0,
+    "rewards": [
+      94259.0,
+      93489.0
+    ],
+    "changed_action_turns": 218,
+    "report": {
+      "commit_requests": 1,
+      "committed": 1,
+      "confirmed_plants": 4,
+      "hire_requests": 8,
+      "hires_confirmed": 8,
+      "hire_shortfalls": 0,
+      "harvested": 16,
+      "economic_declines": 0,
+      "budget_declines": 0,
+      "time_declines": 0,
+      "quotes": [
+        {
+          "day": 16,
+          "revenue": 2085,
+          "cost": 3072
+        }
+      ]
+    },
+    "project_report": {
+      "sheep_commit_requests": 1,
+      "sheep_committed": 1,
+      "sheep_hire_requests": 25,
+      "sheep_workers_confirmed": 25,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 102,
+      "sheep_wool_harvested": 108,
+      "sheep_fert_collected": 65,
+      "sheep_extra_wool_sales": 108,
+      "sheep_extra_fert_sales": 59,
+      "sheep_rescue_feed_requests": 0
+    },
+    "crops": [
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "money": 10736.0,
+        "sheep": 15
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "money": 14330.0,
+        "sheep": 15
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "money": 16584.0,
+        "sheep": 15
+      },
+      {
+        "day": 17,
+        "tomatoes": 4,
+        "money": 24848.0,
+        "sheep": 15
+      },
+      {
+        "day": 18,
+        "tomatoes": 4,
+        "money": 33755.0,
+        "sheep": 15
+      },
+      {
+        "day": 19,
+        "tomatoes": 4,
+        "money": 46275.0,
+        "sheep": 15
+      },
+      {
+        "day": 20,
+        "tomatoes": 4,
+        "money": 50719.0,
+        "sheep": 15
+      },
+      {
+        "day": 21,
+        "tomatoes": 4,
+        "money": 56333.0,
+        "sheep": 15
+      },
+      {
+        "day": 22,
+        "tomatoes": 4,
+        "money": 64827.0,
+        "sheep": 15
+      },
+      {
+        "day": 23,
+        "tomatoes": 4,
+        "money": 65890.0,
+        "sheep": 15
+      },
+      {
+        "day": 24,
+        "tomatoes": 4,
+        "money": 68160.0,
+        "sheep": 15
+      },
+      {
+        "day": 25,
+        "tomatoes": 4,
+        "money": 69476.0,
+        "sheep": 15
+      },
+      {
+        "day": 26,
+        "tomatoes": 4,
+        "money": 70850.0,
+        "sheep": 15
+      },
+      {
+        "day": 27,
+        "tomatoes": 4,
+        "money": 72662.0,
+        "sheep": 15
+      },
+      {
+        "day": 28,
+        "tomatoes": 4,
+        "money": 81120.0,
+        "sheep": 15
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "money": 85703.0,
+        "sheep": 15
+      }
+    ],
+    "tomato_sold": 16,
+    "tomato_revenue": 2032
+  },
+  {
+    "arm": "forced4",
+    "seat": 1,
+    "rewards": [
+      93489.0,
+      94259.0
+    ],
+    "changed_action_turns": 218,
+    "report": {
+      "commit_requests": 1,
+      "committed": 1,
+      "confirmed_plants": 4,
+      "hire_requests": 8,
+      "hires_confirmed": 8,
+      "hire_shortfalls": 0,
+      "harvested": 16,
+      "economic_declines": 0,
+      "budget_declines": 0,
+      "time_declines": 0,
+      "quotes": [
+        {
+          "day": 16,
+          "revenue": 2085,
+          "cost": 3072
+        }
+      ]
+    },
+    "project_report": {
+      "sheep_commit_requests": 1,
+      "sheep_committed": 1,
+      "sheep_hire_requests": 25,
+      "sheep_workers_confirmed": 25,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 102,
+      "sheep_wool_harvested": 108,
+      "sheep_fert_collected": 65,
+      "sheep_extra_wool_sales": 108,
+      "sheep_extra_fert_sales": 59,
+      "sheep_rescue_feed_requests": 0
+    },
+    "crops": [
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "money": 10736.0,
+        "sheep": 15
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "money": 14330.0,
+        "sheep": 15
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "money": 16584.0,
+        "sheep": 15
+      },
+      {
+        "day": 17,
+        "tomatoes": 4,
+        "money": 24848.0,
+        "sheep": 15
+      },
+      {
+        "day": 18,
+        "tomatoes": 4,
+        "money": 33755.0,
+        "sheep": 15
+      },
+      {
+        "day": 19,
+        "tomatoes": 4,
+        "money": 46275.0,
+        "sheep": 15
+      },
+      {
+        "day": 20,
+        "tomatoes": 4,
+        "money": 50719.0,
+        "sheep": 15
+      },
+      {
+        "day": 21,
+        "tomatoes": 4,
+        "money": 56333.0,
+        "sheep": 15
+      },
+      {
+        "day": 22,
+        "tomatoes": 4,
+        "money": 64827.0,
+        "sheep": 15
+      },
+      {
+        "day": 23,
+        "tomatoes": 4,
+        "money": 65890.0,
+        "sheep": 15
+      },
+      {
+        "day": 24,
+        "tomatoes": 4,
+        "money": 68160.0,
+        "sheep": 15
+      },
+      {
+        "day": 25,
+        "tomatoes": 4,
+        "money": 69476.0,
+        "sheep": 15
+      },
+      {
+        "day": 26,
+        "tomatoes": 4,
+        "money": 70850.0,
+        "sheep": 15
+      },
+      {
+        "day": 27,
+        "tomatoes": 4,
+        "money": 72662.0,
+        "sheep": 15
+      },
+      {
+        "day": 28,
+        "tomatoes": 4,
+        "money": 81120.0,
+        "sheep": 15
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "money": 85703.0,
+        "sheep": 15
+      }
+    ],
+    "tomato_sold": 16,
+    "tomato_revenue": 2032
+  },
+  {
+    "arm": "forced8",
+    "seat": 0,
+    "rewards": [
+      93413.0,
+      94094.0
+    ],
+    "changed_action_turns": 186,
+    "report": {
+      "commit_requests": 1,
+      "committed": 1,
+      "confirmed_plants": 8,
+      "hire_requests": 16,
+      "hires_confirmed": 16,
+      "hire_shortfalls": 0,
+      "harvested": 32,
+      "economic_declines": 0,
+      "budget_declines": 0,
+      "time_declines": 0,
+      "quotes": [
+        {
+          "day": 18,
+          "revenue": 4517,
+          "cost": 7919
+        },
+        {
+          "day": 18,
+          "revenue": 4517,
+          "cost": 7919
+        }
+      ]
+    },
+    "project_report": {
+      "sheep_commit_requests": 1,
+      "sheep_committed": 1,
+      "sheep_hire_requests": 26,
+      "sheep_workers_confirmed": 26,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 102,
+      "sheep_wool_harvested": 108,
+      "sheep_fert_collected": 65,
+      "sheep_extra_wool_sales": 108,
+      "sheep_extra_fert_sales": 65,
+      "sheep_rescue_feed_requests": 3
+    },
+    "crops": [
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "money": 10736.0,
+        "sheep": 15
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "money": 14330.0,
+        "sheep": 15
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "money": 16584.0,
+        "sheep": 15
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "money": 25281.0,
+        "sheep": 15
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "money": 34188.0,
+        "sheep": 15
+      },
+      {
+        "day": 19,
+        "tomatoes": 8,
+        "money": 45693.0,
+        "sheep": 15
+      },
+      {
+        "day": 20,
+        "tomatoes": 8,
+        "money": 50133.0,
+        "sheep": 15
+      },
+      {
+        "day": 21,
+        "tomatoes": 8,
+        "money": 55370.0,
+        "sheep": 15
+      },
+      {
+        "day": 22,
+        "tomatoes": 8,
+        "money": 63826.0,
+        "sheep": 15
+      },
+      {
+        "day": 23,
+        "tomatoes": 8,
+        "money": 64268.0,
+        "sheep": 15
+      },
+      {
+        "day": 24,
+        "tomatoes": 8,
+        "money": 66406.0,
+        "sheep": 15
+      },
+      {
+        "day": 25,
+        "tomatoes": 8,
+        "money": 66636.0,
+        "sheep": 15
+      },
+      {
+        "day": 26,
+        "tomatoes": 8,
+        "money": 67833.0,
+        "sheep": 15
+      },
+      {
+        "day": 27,
+        "tomatoes": 8,
+        "money": 69529.0,
+        "sheep": 15
+      },
+      {
+        "day": 28,
+        "tomatoes": 8,
+        "money": 77096.0,
+        "sheep": 15
+      },
+      {
+        "day": 29,
+        "tomatoes": 8,
+        "money": 83180.0,
+        "sheep": 15
+      }
+    ],
+    "tomato_sold": 32,
+    "tomato_revenue": 4639
+  },
+  {
+    "arm": "forced8",
+    "seat": 1,
+    "rewards": [
+      94094.0,
+      93413.0
+    ],
+    "changed_action_turns": 186,
+    "report": {
+      "commit_requests": 1,
+      "committed": 1,
+      "confirmed_plants": 8,
+      "hire_requests": 16,
+      "hires_confirmed": 16,
+      "hire_shortfalls": 0,
+      "harvested": 32,
+      "economic_declines": 0,
+      "budget_declines": 0,
+      "time_declines": 0,
+      "quotes": [
+        {
+          "day": 18,
+          "revenue": 4517,
+          "cost": 7919
+        },
+        {
+          "day": 18,
+          "revenue": 4517,
+          "cost": 7919
+        }
+      ]
+    },
+    "project_report": {
+      "sheep_commit_requests": 1,
+      "sheep_committed": 1,
+      "sheep_hire_requests": 26,
+      "sheep_workers_confirmed": 26,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 102,
+      "sheep_wool_harvested": 108,
+      "sheep_fert_collected": 65,
+      "sheep_extra_wool_sales": 108,
+      "sheep_extra_fert_sales": 65,
+      "sheep_rescue_feed_requests": 3
+    },
+    "crops": [
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "money": 10736.0,
+        "sheep": 15
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "money": 14330.0,
+        "sheep": 15
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "money": 16584.0,
+        "sheep": 15
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "money": 25281.0,
+        "sheep": 15
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "money": 34188.0,
+        "sheep": 15
+      },
+      {
+        "day": 19,
+        "tomatoes": 8,
+        "money": 45693.0,
+        "sheep": 15
+      },
+      {
+        "day": 20,
+        "tomatoes": 8,
+        "money": 50133.0,
+        "sheep": 15
+      },
+      {
+        "day": 21,
+        "tomatoes": 8,
+        "money": 55370.0,
+        "sheep": 15
+      },
+      {
+        "day": 22,
+        "tomatoes": 8,
+        "money": 63826.0,
+        "sheep": 15
+      },
+      {
+        "day": 23,
+        "tomatoes": 8,
+        "money": 64268.0,
+        "sheep": 15
+      },
+      {
+        "day": 24,
+        "tomatoes": 8,
+        "money": 66406.0,
+        "sheep": 15
+      },
+      {
+        "day": 25,
+        "tomatoes": 8,
+        "money": 66636.0,
+        "sheep": 15
+      },
+      {
+        "day": 26,
+        "tomatoes": 8,
+        "money": 67833.0,
+        "sheep": 15
+      },
+      {
+        "day": 27,
+        "tomatoes": 8,
+        "money": 69529.0,
+        "sheep": 15
+      },
+      {
+        "day": 28,
+        "tomatoes": 8,
+        "money": 77096.0,
+        "sheep": 15
+      },
+      {
+        "day": 29,
+        "tomatoes": 8,
+        "money": 83180.0,
+        "sheep": 15
+      }
+    ],
+    "tomato_sold": 32,
+    "tomato_revenue": 4639
+  }
+]

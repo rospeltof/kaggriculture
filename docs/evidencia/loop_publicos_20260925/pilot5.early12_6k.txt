@@ -1,0 +1,22 @@
+  (extra, no entra en la estimacion) base vs early12_9k: 50.0% (8 ep)
+  (extra, no entra en la estimacion) early12_6k vs early12_9k: 37.5% (8 ep)
+  (extra, no entra en la estimacion) base vs early14_6k: 62.5% (8 ep)
+  (extra, no entra en la estimacion) early12_6k vs early14_6k: 62.5% (8 ep)
+  (extra, no entra en la estimacion) base vs early16_6k: 62.5% (8 ep)
+  (extra, no entra en la estimacion) early12_6k vs early16_6k: 37.5% (8 ep)
+  (extra, no entra en la estimacion) base vs late18_6k: 37.5% (8 ep)
+  (extra, no entra en la estimacion) early12_6k vs late18_6k: 37.5% (8 ep)
+  (extra, no entra en la estimacion) base vs noop: 50.0% (8 ep)
+  (extra, no entra en la estimacion) early12_6k vs noop: 37.5% (8 ep)
+early12_6k - base: 8 rivales x 4 semillas = 32 celdas; ref 90.6%
+  delta -18.75 pts | IC95 semilla [-78.42; +40.92] | dos vias [-75.60; +38.10]
+  celdas cambiadas 6/32: 0 a favor, 6 en contra
+    vs    ars40  -25.0
+    vs    guru6   +0.0
+    vs    h2965  -25.0
+    vs     hsov  -25.0
+    vs     hybu  -25.0
+    vs      obr  -25.0
+    vs      tds   +0.0
+    vs      v13  -25.0
+  directo early12_6k vs base: 37.5% (8 ep)

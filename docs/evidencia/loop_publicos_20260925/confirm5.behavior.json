@@ -1,0 +1,1114 @@
+{
+  "late18_6k": {
+    "pool_episodes": 352,
+    "own_action_hash_changed": 156,
+    "opponent_action_hash_changed": 156,
+    "changed_seeds": [
+      1006000,
+      1006001,
+      1006002,
+      1006004,
+      1006005,
+      1006006,
+      1006007,
+      1006008,
+      1006012,
+      1006014,
+      1006015
+    ],
+    "changed_cells": [
+      {
+        "opponent": "tds",
+        "seed": 1006000,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1006000,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1006002,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1006002,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1006004,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1006004,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1006007,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1006007,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1006012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1006012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1006014,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1006014,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1006015,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds",
+        "seed": 1006015,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1006000,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1006000,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1006002,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1006002,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1006004,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1006004,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1006007,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1006007,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1006012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1006012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1006014,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1006014,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1006015,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hybu",
+        "seed": 1006015,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1006000,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1006000,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1006002,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1006002,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1006004,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1006004,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1006007,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1006007,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1006012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1006012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1006014,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1006014,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1006015,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hsov",
+        "seed": 1006000,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "ars40",
+        "seed": 1006015,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hsov",
+        "seed": 1006000,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hsov",
+        "seed": 1006002,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hsov",
+        "seed": 1006002,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hsov",
+        "seed": 1006004,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hsov",
+        "seed": 1006004,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hsov",
+        "seed": 1006007,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hsov",
+        "seed": 1006007,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hsov",
+        "seed": 1006012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hsov",
+        "seed": 1006012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hsov",
+        "seed": 1006014,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hsov",
+        "seed": 1006014,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "v13",
+        "seed": 1006000,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "v13",
+        "seed": 1006000,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hsov",
+        "seed": 1006015,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hsov",
+        "seed": 1006015,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "v13",
+        "seed": 1006002,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "v13",
+        "seed": 1006002,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "v13",
+        "seed": 1006004,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "v13",
+        "seed": 1006004,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "v13",
+        "seed": 1006007,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "v13",
+        "seed": 1006007,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "v13",
+        "seed": 1006012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "v13",
+        "seed": 1006012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "v13",
+        "seed": 1006014,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "v13",
+        "seed": 1006014,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "v13",
+        "seed": 1006015,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "v13",
+        "seed": 1006015,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "obr",
+        "seed": 1006000,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "obr",
+        "seed": 1006000,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "obr",
+        "seed": 1006002,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "obr",
+        "seed": 1006002,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "obr",
+        "seed": 1006004,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "obr",
+        "seed": 1006004,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "obr",
+        "seed": 1006007,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "obr",
+        "seed": 1006007,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "obr",
+        "seed": 1006012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "obr",
+        "seed": 1006012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "obr",
+        "seed": 1006014,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "obr",
+        "seed": 1006014,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "obr",
+        "seed": 1006015,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "obr",
+        "seed": 1006015,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "h2965",
+        "seed": 1006000,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "h2965",
+        "seed": 1006000,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "h2965",
+        "seed": 1006002,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "h2965",
+        "seed": 1006002,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "h2965",
+        "seed": 1006004,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "h2965",
+        "seed": 1006004,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "h2965",
+        "seed": 1006007,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "h2965",
+        "seed": 1006007,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "h2965",
+        "seed": 1006012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "h2965",
+        "seed": 1006012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "h2965",
+        "seed": 1006014,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "h2965",
+        "seed": 1006014,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "h2965",
+        "seed": 1006015,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "h2965",
+        "seed": 1006015,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1006000,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1006000,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1006001,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1006002,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1006001,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1006002,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1006004,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1006004,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1006006,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1006005,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1006005,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1006006,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1006008,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1006008,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1006012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "guru6",
+        "seed": 1006012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "tds25",
+        "seed": 1006000,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds25",
+        "seed": 1006000,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds25",
+        "seed": 1006002,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds25",
+        "seed": 1006004,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds25",
+        "seed": 1006004,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds25",
+        "seed": 1006002,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds25",
+        "seed": 1006007,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds25",
+        "seed": 1006007,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds25",
+        "seed": 1006012,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds25",
+        "seed": 1006012,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds25",
+        "seed": 1006014,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds25",
+        "seed": 1006014,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds25",
+        "seed": 1006015,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hl25",
+        "seed": 1006000,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "tds25",
+        "seed": 1006015,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hl25",
+        "seed": 1006000,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hl25",
+        "seed": 1006002,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hl25",
+        "seed": 1006002,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hl25",
+        "seed": 1006004,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hl25",
+        "seed": 1006004,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hl25",
+        "seed": 1006007,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hl25",
+        "seed": 1006007,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "hl25",
+        "seed": 1006012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hl25",
+        "seed": 1006012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hl25",
+        "seed": 1006014,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hl25",
+        "seed": 1006015,
+        "seat": 0,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hl25",
+        "seed": 1006014,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "hl25",
+        "seed": 1006015,
+        "seat": 1,
+        "base_score": 0.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1006000,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1006000,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1006004,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1006002,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1006002,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1006004,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1006007,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1006007,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1006012,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1006012,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1006014,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1006015,
+        "seat": 0,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1006015,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 1.0
+      },
+      {
+        "opponent": "arshs3",
+        "seed": 1006014,
+        "seat": 1,
+        "base_score": 1.0,
+        "candidate_score": 0.0
+      }
+    ]
+  }
+}

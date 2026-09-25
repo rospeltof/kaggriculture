@@ -1,0 +1,24 @@
+  (extra, no entra en la estimacion) base vs fast2_control: 50.0% (8 ep)
+  (extra, no entra en la estimacion) vq_control vs fast2_control: 50.0% (8 ep)
+  (extra, no entra en la estimacion) base vs noop: 50.0% (8 ep)
+  (extra, no entra en la estimacion) vq_control vs noop: 0.0% (8 ep)
+  (extra, no entra en la estimacion) base vs top3_egg: 37.5% (8 ep)
+  (extra, no entra en la estimacion) vq_control vs top3_egg: 0.0% (8 ep)
+  (extra, no entra en la estimacion) base vs top3_egg_melon: 37.5% (8 ep)
+  (extra, no entra en la estimacion) vq_control vs top3_egg_melon: 0.0% (8 ep)
+  (extra, no entra en la estimacion) base vs top3_fast2: 50.0% (8 ep)
+  (extra, no entra en la estimacion) vq_control vs top3_fast2: 0.0% (8 ep)
+  (extra, no entra en la estimacion) base vs top3_melon: 50.0% (8 ep)
+  (extra, no entra en la estimacion) vq_control vs top3_melon: 0.0% (8 ep)
+vq_control - base: 8 rivales x 4 semillas = 32 celdas; ref 96.9%
+  delta -18.75 pts | IC95 semilla [-66.10; +28.60] | dos vias [-69.88; +32.38]
+  celdas cambiadas 8/32: 1 a favor, 7 en contra
+    vs    ars40  -25.0
+    vs    guru6   +0.0
+    vs    h2965  -25.0
+    vs     hsov  -25.0
+    vs     hybu  +25.0
+    vs      obr  -25.0
+    vs      tds  -75.0
+    vs      v13   +0.0
+  directo vq_control vs base: 0.0% (8 ep)

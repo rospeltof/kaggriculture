@@ -19,10 +19,13 @@ persistente activo. Leer `docs/evidencia/loop_publicos_20260925/pipeline_state.j
 y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_publicos.py`, `continuar_loop_herd.py`,
 `continuar_loop_recuperacion.py`, `continuar_loop_tomate.py` y
-`continuar_loop_productos.py` encadenan bloques
+`continuar_loop_productos.py`, `continuar_loop_relleno.py` y
+`continuar_loop_patrones.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
 terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
-(una de64 partidas cambia, +1,5625pp). Loop5 de tomates corre; loop6 espera.
+(una de64 partidas cambia, +1,5625pp). Confirm5 tomate−21,591pp: REJECTED.
+Loop6 sin seleccionadas; loop7 corre y loop8 está validado/encolado. No repetir las
+versiones infill2/3: v4 corrige interferencia R51 y overflow de cosecha.
 Top3 enviada **56537205 COMPLETE**, commit ba1fda8, sha9668e30a; validación720
 pasos DONE/DONE sin errores/timeouts. VQ2364,6 en snapshot02:04UTC, aún joven.
 Conserva VQ56535264 como control; tres envíos restantes reportados. Ver historial.

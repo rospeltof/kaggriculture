@@ -1,0 +1,310 @@
+[
+  {
+    "arm": "base",
+    "report": {},
+    "rewards": [
+      93353.0,
+      93191.0
+    ],
+    "sums": {
+      "BUY_ANIMAL": -10500,
+      "SELL": 150789,
+      "BUY_PRODUCT": -28132,
+      "HIRE": -8044.0,
+      "BUY_SEED": -6760,
+      "BUY_LAND": -7000.0
+    },
+    "hires": [
+      {
+        "day": 16,
+        "n": 12,
+        "cost": 376.0
+      },
+      {
+        "day": 17,
+        "n": 12,
+        "cost": 376.0
+      },
+      {
+        "day": 18,
+        "n": 13,
+        "cost": 609.0
+      },
+      {
+        "day": 19,
+        "n": 12,
+        "cost": 376.0
+      },
+      {
+        "day": 20,
+        "n": 12,
+        "cost": 376.0
+      },
+      {
+        "day": 21,
+        "n": 13,
+        "cost": 609.0
+      },
+      {
+        "day": 22,
+        "n": 13,
+        "cost": 609.0
+      },
+      {
+        "day": 23,
+        "n": 12,
+        "cost": 376.0
+      },
+      {
+        "day": 24,
+        "n": 13,
+        "cost": 609.0
+      },
+      {
+        "day": 25,
+        "n": 12,
+        "cost": 376.0
+      },
+      {
+        "day": 26,
+        "n": 13,
+        "cost": 609.0
+      },
+      {
+        "day": 27,
+        "n": 12,
+        "cost": 376.0
+      },
+      {
+        "day": 28,
+        "n": 13,
+        "cost": 609.0
+      },
+      {
+        "day": 29,
+        "n": 11,
+        "cost": 232.0
+      }
+    ],
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "forced4",
+    "report": {
+      "commit_requests": 1,
+      "committed": 1,
+      "confirmed_plants": 4,
+      "hire_requests": 8,
+      "hires_confirmed": 8,
+      "hire_shortfalls": 0,
+      "harvested": 16,
+      "economic_declines": 0,
+      "budget_declines": 0,
+      "time_declines": 0,
+      "quotes": [
+        {
+          "day": 16,
+          "revenue": 2085,
+          "cost": 3072
+        }
+      ]
+    },
+    "rewards": [
+      94259.0,
+      93489.0
+    ],
+    "sums": {
+      "BUY_ANIMAL": -10500,
+      "SELL": 153399,
+      "BUY_PRODUCT": -27916,
+      "HIRE": -9874.0,
+      "BUY_SEED": -6850,
+      "BUY_LAND": -7000.0
+    },
+    "hires": [
+      {
+        "day": 16,
+        "n": 13,
+        "cost": 609.0
+      },
+      {
+        "day": 17,
+        "n": 12,
+        "cost": 376.0
+      },
+      {
+        "day": 18,
+        "n": 14,
+        "cost": 986.0
+      },
+      {
+        "day": 19,
+        "n": 12,
+        "cost": 376.0
+      },
+      {
+        "day": 20,
+        "n": 13,
+        "cost": 609.0
+      },
+      {
+        "day": 21,
+        "n": 13,
+        "cost": 609.0
+      },
+      {
+        "day": 22,
+        "n": 13,
+        "cost": 609.0
+      },
+      {
+        "day": 23,
+        "n": 12,
+        "cost": 376.0
+      },
+      {
+        "day": 24,
+        "n": 14,
+        "cost": 986.0
+      },
+      {
+        "day": 25,
+        "n": 13,
+        "cost": 609.0
+      },
+      {
+        "day": 26,
+        "n": 14,
+        "cost": 986.0
+      },
+      {
+        "day": 27,
+        "n": 13,
+        "cost": 609.0
+      },
+      {
+        "day": 28,
+        "n": 12,
+        "cost": 376.0
+      },
+      {
+        "day": 29,
+        "n": 11,
+        "cost": 232.0
+      }
+    ],
+    "tomato_revenue": 2032
+  },
+  {
+    "arm": "forced8",
+    "report": {
+      "commit_requests": 1,
+      "committed": 1,
+      "confirmed_plants": 8,
+      "hire_requests": 16,
+      "hires_confirmed": 16,
+      "hire_shortfalls": 0,
+      "harvested": 32,
+      "economic_declines": 0,
+      "budget_declines": 0,
+      "time_declines": 0,
+      "quotes": [
+        {
+          "day": 18,
+          "revenue": 4517,
+          "cost": 7919
+        },
+        {
+          "day": 18,
+          "revenue": 4517,
+          "cost": 7919
+        }
+      ]
+    },
+    "rewards": [
+      93413.0,
+      94094.0
+    ],
+    "sums": {
+      "BUY_ANIMAL": -10500,
+      "SELL": 157037,
+      "BUY_PRODUCT": -27978,
+      "HIRE": -13966.0,
+      "BUY_SEED": -7180,
+      "BUY_LAND": -7000.0
+    },
+    "hires": [
+      {
+        "day": 16,
+        "n": 12,
+        "cost": 376.0
+      },
+      {
+        "day": 17,
+        "n": 12,
+        "cost": 376.0
+      },
+      {
+        "day": 18,
+        "n": 15,
+        "cost": 1596.0
+      },
+      {
+        "day": 19,
+        "n": 12,
+        "cost": 376.0
+      },
+      {
+        "day": 20,
+        "n": 14,
+        "cost": 986.0
+      },
+      {
+        "day": 21,
+        "n": 13,
+        "cost": 609.0
+      },
+      {
+        "day": 22,
+        "n": 14,
+        "cost": 986.0
+      },
+      {
+        "day": 23,
+        "n": 12,
+        "cost": 376.0
+      },
+      {
+        "day": 24,
+        "n": 15,
+        "cost": 1596.0
+      },
+      {
+        "day": 25,
+        "n": 12,
+        "cost": 376.0
+      },
+      {
+        "day": 26,
+        "n": 15,
+        "cost": 1596.0
+      },
+      {
+        "day": 27,
+        "n": 14,
+        "cost": 986.0
+      },
+      {
+        "day": 28,
+        "n": 15,
+        "cost": 1596.0
+      },
+      {
+        "day": 29,
+        "n": 13,
+        "cost": 609.0
+      }
+    ],
+    "tomato_revenue": 4639
+  }
+]

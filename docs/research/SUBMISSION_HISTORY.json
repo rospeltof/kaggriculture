@@ -498,7 +498,7 @@
     },
     "reason": "VQ validada contra copias; arshs3 transfiere al ladder (2292.5 vs v13 1857.9). Desplaza v13, preserva arshs3 como referencia activa.",
     "leaderboard": {
-      "score": 2364.6,
+      "score": 2306.3,
       "rank": null,
       "episodes": null,
       "lecturas": [
@@ -529,14 +529,19 @@
           "2026-09-25T02:05:31.666206+00:00",
           2364.6,
           null
+        ],
+        [
+          "2026-09-25T02:33:17.349601+00:00",
+          2306.3,
+          null
         ]
       ]
     },
     "delta_vs_champion_ladder": null,
-    "observed": "COMPLETE; score2364.6 en snapshot02:04UTC, sin recuento sincronizado; control activo de top3.",
+    "observed": "COMPLETE, snapshot02:33UTC. Score2306.3. Sin recuento actualizado de episodios. Control activo de top3.",
     "conclusion": "REAL_WORLD_CANDIDATE; ventaja local específica contra copias, sin promoción automática",
-    "next_action": "Comparar top3 frente a este padre exacto, sin interpretar ratings de arranque",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/submissions_after_top3.json"
+    "next_action": "Recoger feedback real a edad razonable; loops6–8 siguen activos. Rating joven no establece superioridad.",
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0233.txt"
   },
   {
     "submission_id": 56537205,
@@ -672,7 +677,7 @@
     },
     "reason": "Cumple gate registrado: delta>=3pp, ningún rival<-20pp, cero errores, revisión de mecanismos y runtime. Prueba real autorizada.",
     "leaderboard": {
-      "score": 729.5,
+      "score": 1459.1,
       "episodes": null,
       "status": "SubmissionStatus.COMPLETE",
       "lecturas": [
@@ -680,15 +685,20 @@
           "2026-09-25T02:05:31.666206+00:00",
           729.5,
           null
+        ],
+        [
+          "2026-09-25T02:33:17.349601+00:00",
+          1459.1,
+          null
         ]
       ]
     },
-    "observed": "COMPLETE. Replay de validación113099118: 720 pasos, DONE/DONE, sin ERROR/TIMEOUT/INVALID. Rating729.5 de arranque no estima fuerza.",
+    "observed": "COMPLETE, snapshot02:33UTC. Score1459.1. Diez episodios listados02:34, incluida validación. Cuatro replays por recencia en revisión.",
     "conclusion": "REAL_WORLD_CANDIDATE; no CHAMPION",
-    "next_action": "Recoger feedback real a edad razonable junto a VQ, mientras siguen loops4–6.",
+    "next_action": "Recoger feedback real a edad razonable; loops6–8 siguen activos. Rating joven no establece superioridad.",
     "replaces_submission": 56511619,
     "preserves_submission": 56535264,
     "evidence": "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/top3_status_0204.json"
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0233.txt"
   }
 ]

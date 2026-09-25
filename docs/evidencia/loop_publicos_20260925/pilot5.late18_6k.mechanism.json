@@ -1,0 +1,321 @@
+{
+  "candidate": "late18_6k",
+  "direction": 1,
+  "rule": "First sorted opponent/seed/seat with WLT improvement or regression; mechanism only",
+  "opponent": "tds",
+  "seed": 1005002,
+  "seat": 0,
+  "first_difference": 433,
+  "changed_action_turns": 205,
+  "first_actions": [
+    {
+      "farmer": [
+        "EAST"
+      ],
+      "hands": [
+        [
+          "NORTH"
+        ],
+        [
+          "PICKUP",
+          "FERTILIZER",
+          2
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "PICKUP",
+          "WHEAT",
+          3
+        ],
+        [
+          "PICKUP",
+          "WHEAT"
+        ],
+        [
+          "PICKUP",
+          "WHEAT",
+          3
+        ],
+        [
+          "PICKUP",
+          "WHEAT",
+          2
+        ],
+        [
+          "EAST"
+        ]
+      ],
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          12
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          1
+        ]
+      ]
+    },
+    {
+      "farmer": [
+        "EAST"
+      ],
+      "hands": [
+        [
+          "NORTH"
+        ],
+        [
+          "PICKUP",
+          "FERTILIZER",
+          2
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "PICKUP",
+          "WHEAT",
+          3
+        ],
+        [
+          "PICKUP",
+          "WHEAT"
+        ],
+        [
+          "PICKUP",
+          "WHEAT",
+          3
+        ],
+        [
+          "PICKUP",
+          "WHEAT",
+          2
+        ],
+        [
+          "EAST"
+        ]
+      ],
+      "market": [
+        [
+          "SELL",
+          "FERTILIZER",
+          12
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "BUY_PRODUCT",
+          "FERTILIZER",
+          1
+        ],
+        [
+          "BUY_LAND"
+        ],
+        [
+          "BUY_SEED",
+          "TOMATO",
+          10
+        ],
+        [
+          "HIRE"
+        ],
+        [
+          "HIRE"
+        ]
+      ]
+    }
+  ],
+  "first_market": {
+    "inventory": {
+      "WHEAT": 9771,
+      "CARROT": 9888,
+      "TOMATO": 9835,
+      "STRAWBERRY": 9897,
+      "MELON": 10125,
+      "EGG": 10018,
+      "MILK": 10057,
+      "WOOL": 10001,
+      "FERTILIZER": 10302
+    },
+    "prices": {
+      "WHEAT": 40,
+      "CARROT": 44,
+      "TOMATO": 80,
+      "STRAWBERRY": 205,
+      "MELON": 94,
+      "EGG": 45,
+      "MILK": 40,
+      "WOOL": 200,
+      "FERTILIZER": 40
+    }
+  },
+  "final_rewards": [
+    [
+      101218.0,
+      101438.0
+    ],
+    [
+      104662.0,
+      103141.0
+    ]
+  ],
+  "own_sale_units_cash": [
+    {
+      "WHEAT": [
+        312,
+        10953
+      ],
+      "FERTILIZER": [
+        341,
+        15206
+      ],
+      "WOOL": [
+        161,
+        33909
+      ],
+      "MILK": [
+        203,
+        15303
+      ],
+      "MELON": [
+        72,
+        14267
+      ],
+      "EGG": [
+        91,
+        3968
+      ],
+      "STRAWBERRY": [
+        249,
+        24766
+      ],
+      "CARROT": [
+        158,
+        7851
+      ]
+    },
+    {
+      "WHEAT": [
+        304,
+        11036
+      ],
+      "FERTILIZER": [
+        333,
+        15337
+      ],
+      "WOOL": [
+        161,
+        33774
+      ],
+      "MILK": [
+        217,
+        16797
+      ],
+      "MELON": [
+        72,
+        14267
+      ],
+      "EGG": [
+        91,
+        3967
+      ],
+      "STRAWBERRY": [
+        249,
+        24690
+      ],
+      "CARROT": [
+        153,
+        7640
+      ],
+      "TOMATO": [
+        80,
+        10283
+      ]
+    }
+  ],
+  "telemetry": [
+    {
+      "_V92_P_REPORT": {
+        "pred_units": 47,
+        "pred_fires": 6,
+        "pred_errors": 0
+      },
+      "_HP_STATS": {
+        "extension_signals": 72,
+        "rejected_signals": 25
+      },
+      "_CA_REPORT": {
+        "ca_swaps": 20,
+        "ca_rescues": 1,
+        "ca_harvested": 58,
+        "ca_sold": 41,
+        "ca_seed_bought": 129,
+        "ca_wheat_seed_saved": 17,
+        "ca_carrot_seed_saved": 31,
+        "ca_feed_block": 4,
+        "ca_errors": 0,
+        "ca_min_wheat": 0
+      },
+      "_HD2_REPORT": {
+        "hd2_decision": "keep@241",
+        "hd2_ev": "COW:558,GOOSE:2459,SHEEP:-1450",
+        "hd2_rewrites": 0,
+        "hd2_credit_units": 0,
+        "hd2_sold_units": 0,
+        "hd2_errors": 0
+      }
+    },
+    {
+      "_V92_P_REPORT": {
+        "pred_units": 47,
+        "pred_fires": 6,
+        "pred_errors": 0
+      },
+      "_HP_STATS": {
+        "extension_signals": 72,
+        "rejected_signals": 25
+      },
+      "_CA_REPORT": {
+        "ca_swaps": 20,
+        "ca_rescues": 1,
+        "ca_harvested": 58,
+        "ca_sold": 38,
+        "ca_seed_bought": 129,
+        "ca_wheat_seed_saved": 17,
+        "ca_carrot_seed_saved": 31,
+        "ca_feed_block": 3,
+        "ca_errors": 0,
+        "ca_min_wheat": 0
+      },
+      "_HD2_REPORT": {
+        "hd2_decision": "keep@241",
+        "hd2_ev": "COW:558,GOOSE:2459,SHEEP:-1450",
+        "hd2_rewrites": 0,
+        "hd2_credit_units": 0,
+        "hd2_sold_units": 0,
+        "hd2_errors": 0
+      }
+    }
+  ],
+  "shops_preserved": false
+}

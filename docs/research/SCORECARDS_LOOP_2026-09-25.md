@@ -1,7 +1,7 @@
 # Scorecards del loop continuo — 2026-09-25 UTC
 
-Estado: loops 1–4 y confirm1 terminados; loop5 de tomates corriendo;
-loop6 encadenado. Objetivo persistente activo.
+Estado: loops1–6, confirm1/5 terminados; loop7 corriendo;
+loop8 validado y encolado. Objetivo persistente activo.
 
 ## Confirmación disjunta terminada
 
@@ -156,3 +156,111 @@ La única celda nueva modificada se reprodujo: seed1003008/asiento1, primera
 diferencia step186, una planta recuperada y cinco comandos desplazados.
 Margen −760 →+42. Cambian las tiendas y la economía de ambos jugadores;
 no atribuir su enorme aumento de dinero bruto al valor directo de una planta.
+
+## Loop5: piloto completo, confirma sólo la variante tardía
+
+616 episodios, noop104/104, cero errores. Base90,625%. early12_9k es inerte
+en64/64; las otras cuatro cambian acciones en14/64, todas en seed1005002.
+
+| Brazo | Delta pp | IC95 dos vías | Decisión |
+|---|---:|---|---|
+| early12_9k | 0 | indefinido | Inerte, no seleccionada |
+| early12_6k | −18,75 | [−75,60;38,10] | No seleccionada |
+| early14_6k | −18,75 | [−75,60;38,10] | No seleccionada |
+| early16_6k | −18,75 | [−75,60;38,10] | No seleccionada |
+| late18_6k | +3,125 | [−6,82;13,07] | PROMISING, confirmación disjunta |
+
+La señal tardía sólo voltea una celda rival×semilla, frente a tds. Confirm5
+seeds1006000–015 y once rivales, 1.152 episodios, ya en curso. Aunque cumpla
+el gate frente a VQ, no reemplazar automáticamente al nuevo top3: examinar
+comparación y eventual combinación con esa base más fuerte antes de otro envío.
+
+Sonda tds/1005002/asiento0: −220 →+1.521, primera diferencia433, vende80
+tomates por10.283. Cambian tiendas y otros productos; efecto total del agente,
+no ganancia aislada de tomates. Caja conciliada y rewards exactos del piloto.
+
+## Loop7: relleno SE en desarrollo
+
+Nueva capa conserva filas5–6 del padre y usa4/8 tiles de filas7–8, sembradas
+d16/d18, sin fertilizante. Compra sólo semillas/jornales si el modelo cubre
+coste+600; no compra otra tierra. Dieciséis diagnósticos v2: noop exacto,
+plantas4/8 y cosechas16/32 al forzar la activación, sin errores. Las versiones
+normales rechazan invertir en ese mundo por coste. No usar las forzadas como
+evidencia de rendimiento ni como candidatas.
+
+Auditoría de jornales detecta interacción no deseada: contratar antes de hora4
+bloquea el módulo R51, cuya ventana de HIRE es1–3. V3 espera a hora4 y está
+repitiendo validación. V2 y ledgers se conservan. Preregistro de piloto fijado:
+16 semillas nuevas×cuatro rivales, 1.248 episodios; no lanzar hasta validar v3.
+
+## Confirm5: el tomate tardío no replica
+
+1.152 episodios, noop384/384, fuentes archivadas verificadas, cero errores.
+Late18_6k: base69,886% →48,295%, **−21,591pp**, IC95 semilla[−36,38;−6,80],
+dos vías[−36,90;−6,28]. Ninguna celda rival×semilla mejor y38 peores.
+Subpanel original−22,656pp; no es daño explicado por añadir tres rivales.
+Cambia156/352 partidas repartidas en11 de16 semillas. **REJECTED; no enviar.**
+
+Primer daño por orden fijado: ars40/1006000/asiento0, primera acción distinta433.
+Compra tierra y10 semillas, confirma80 tomates cosechados y80 vendidos; caja
+conciliada, cero errores. Margen+190→−1.416. Ingreso bruto tomate6.493; tiendas
+posteriores cambian, lana y otros ingresos también. No atribuir todo el daño al
+coste directo ni rescatar por producir más. Diagnóstico favorable del piloto
+predecía ingreso8.288; caso negativo6.010 apenas cruza el umbral6.000.
+
+## Loop7: validación mecánica de inversión en espacio libre
+
+V2 inhibía al fertilizador R51 contratando antes de terminar su ventana; V3
+espera a hora4 y conserva un peón/siete aplicaciones, pero un trabajador
+lejano perdió cuatro tomates al amanecer por overflow. V4 alterna riego
+y cosecha, vende16/16 y32/32 tomates en brazos forzados y conserva ovejas
+(108 lanas) y R51.16 juegos completos, noop exacto1.438 acciones.
+Cuatro variantes con gate económico son inertes en ese mundo de desarrollo: no
+hay evidencia de mejora de rendimiento allí. Versiones forzadas sólo validan
+el controlador y están excluidas del piloto/submission. Piloto1.248 encolado,
+16 semillas nuevas, cuatro rivales fijados. Manifiesto `infill_variants.json`.
+
+## Loop8: nueva familia en desarrollo
+
+Seis variantes de selección de patrones sobre top3: rank5/7, historia120/360,
+patrones por producto y desplazamiento±2 ajustado exclusivamente al pasado.
+Piloto1.472 con ocho semillas y ocho rivales; máximo dos a confirmación
+disjunta. Protocolo `PREREG_LOOP8_PATRONES_2026-09-25.md`. Validación de
+transformación y runtime antes de congelar/encolar.
+
+Desarrollo loop8 completo:16 juegos, noop exacto1.438 acciones, cero errores,
+máximo271ms. Todas las variantes cambian acciones; no se selecciona por rewards
+en ese mundo dirigido. Piloto encadenado detrás de loop7.
+
+## Loop6: sin selección, base explícita top3
+
+736 episodios, noop112/112, fuentes archivadas, cero errores. Base96,875%.
+EGG, MELON y ambos quedan en0pp. EGG y combinado cambian46/64 partidas;
+MELON es inerte64/64. No confundir igualdad W/L con ausencia de ejecución.
+Top3+fast2:90,625%, −6,25pp, IC95 dos vías[−25,58;13,08], inconcluso sin
+selección. No confirm6 ni envío. El techo de este panel reduce sensibilidad
+a mejoras pequeñas; no refuta cualquier utilidad de anticipar huevos.
+
+Controles factoriales en el mismo bloque: VQ78,125%, fast2 70,313%, top3
+96,875%, top3+fast2 90,625%. Interacción puntual+1,5625pp; fast2 no muestra
+ventaja marginal aquí con ninguno de los dos padres. No combinar por sumar
+los deltas de confirmaciones distintas. Máximos de los brazos nuevos≤270ms.
+
+## Feedback real top3, muestra fijada02:34UTC
+
+Cuatro completadas recientes, sin filtro por resultado:3V/1D. Márgenes
++26.420 contra Neglected Turtle, −23.180 contra c0nrad, +4.037 contra
+StephenNedumpally y +7.776 contra Platycerium.720 pasos cada una, DONE/DONE,
+sin estados ERROR/TIMEOUT/INVALID. Cero escapes propios y valor terminal0.
+No estima WR global ni compara top3 con VQ; adversarios y edad diferentes.
+
+La derrota tiene cuatro YARN y tres BRUNCH entre las ocho tiendas finales.
+Al día15 el rival ya tiene32 ovejas frente a17 nuestras; al día20 posee75.280
+frente a56.505. Tiene sólo un tomate tardío: copiar tomate no responde a esta
+derrota. Auditoría exacta de transacciones para separar volumen, precio y costes.
+
+Auditoría completada:720 estados exactos×4 y caja conciliada. En la derrota,
+lana391/759 unidades y69.502/113.264 de ingreso; rival8.273 de jornales frente
+a10.217 propios, tierra3.000 frente a7.000. Hipótesis nueva: especialización
+ovina con demanda visible y trabajo marginal viable. Aún no implementada;
+ver `FEEDBACK_TOP3_2026-09-25.md`, no repetir herd_future del loop3.

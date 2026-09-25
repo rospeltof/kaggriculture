@@ -4,6 +4,18 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, confirm5] La relajación late18_6k perjudica a VQ:** −21,591pp,
+  IC95 dos vías[−36,90;−6,28],1.152 episodios, noop384/384,16 semillas nuevas.
+  Piloto+3,125 dependía de una semilla; confirmación cambia156/352 partidas,
+  cero celdas mejores y38 peores. Caso negativo ejecuta80 tomates sin errores,
+  pero margen+190→−1.416. Refuta este criterio de inversión, no todo tomate.
+- **[2026-09-25, infill] Agregar peones puede desactivar módulos del padre:**
+  R51 acepta contratación sólo si todos los peones presentes pertenecen a módulos
+  conocidos. Contratar después de hora3 conserva su fertilizador en el caso
+  auditado. Correcta ejecución del módulo nuevo no asegura preservar al padre.
+  Asimismo cosechar+regar juntos dejó4 tomates sin entregar y hubo overflow;
+  alternar días de madurez entregó32/32. Evidencia dirigida, no mejora W/L.
+
 - **[2026-09-25, loop3] El modelo HD2 con tiendas futuras a peso1 causa daño:**
   −84,375 pp, IC dos vías [−114,33;−54,42], noop96/96, 504 episodios.
   Diagnóstico reproducido: cambia dos gansos por vacas, EV estimado674→6371;

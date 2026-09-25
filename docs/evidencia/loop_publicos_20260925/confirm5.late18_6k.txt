@@ -1,0 +1,17 @@
+  (extra, no entra en la estimacion) base vs noop: 50.0% (32 ep)
+  (extra, no entra en la estimacion) late18_6k vs noop: 28.1% (32 ep)
+late18_6k - base: 11 rivales x 16 semillas = 176 celdas; ref 69.9%
+  delta -21.59 pts | IC95 semilla [-36.38; -6.80] | dos vias [-36.90; -6.28]
+  celdas cambiadas 38/176: 0 a favor, 38 en contra
+    vs    ars40  -25.0
+    vs   arshs3  -37.5
+    vs    guru6  -18.8
+    vs    h2965  -31.2
+    vs     hl25  -12.5
+    vs     hsov  -31.2
+    vs     hybu  -12.5
+    vs      obr  -25.0
+    vs      tds  -12.5
+    vs    tds25   -6.2
+    vs      v13  -25.0
+  directo late18_6k vs base: 28.1% (32 ep)

@@ -1,5 +1,42 @@
 # Bitácora de experimentos
 
+## 2026-09-25, 02:43 UTC — Loop6 completo, loop7 corriendo, patrones encolados
+
+736 episodios válidos, noop112/112. EGG/MELON/ambos delta0; EGG sí cambia
+46/64 acciones, MELON inerte. Top3+fast2−6,25pp: ninguna seleccionada, no
+confirm6. Controles VQ78,125%, fast2 70,313%, top3 96,875%, combinado90,625%.
+No sumar efectos de bloques distintos. Piloto7 arrancó02:41 con1.248 partidas.
+
+Loop8 validado:16 juegos, noop1.438 acciones idénticas, cero errores, max271ms.
+Seis variantes cambian decisiones; product3 ajusta833 veces/asiento, phase2
+usa114 patrones desplazados/asiento. Piloto1.472 encolado tras loop7.
+
+Cuatro replays top3 por recencia:3V/1D, ningún error fatal, escapes propios0,
+inventario terminal0. La derrota c0nrad−23.180 muestra32 ovejas frente a17
+al día15 y sólo un tomate tardío. No generalizar producción de tomate de DSM
+a todas las derrotas; se auditan transacciones para escoger nueva hipótesis.
+
+## 2026-09-25, 02:38 UTC — Confirmación negativa y dos nuevas familias
+
+Confirm5 late18_6k cae−21,591pp en1.152 episodios nuevos; noop384/384,
+cero errores. Descartada, sin envío. Piloto dependía de una semilla favorable;
+confirmación cambia156/352 partidas y ningún rival×semilla mejora. Sonda
+ars40/1006000:80 tomates reales vendidos, margen+190→−1.416, tiendas cambian.
+
+Tomate en suelo SE libre se desarrolló en tres versiones: v2 interfería con
+R51, v3 conservaba R51 pero perdía4 tomates por overflow nocturno, v4 alterna
+riego/cosecha y vende32/32.16 diagnósticos por versión, más un flujo dirigido
+del fallo v3. Noop preservado, ovejas y fertilizador conservados en v4. Piloto
+loop7 de1.248 encolado detrás de loop6 de736, que arrancó02:30UTC.
+
+Loop8 registrado con seis variantes de patrones: más candidatos, memoria
+120/360, ajuste por producto y fase±2. Control de transformación y tiempo
+en16 juegos antes de encolar1.472. No prometer mejoras por el mecanismo.
+
+Snapshot real02:33:VQ2306,3/top3 1459,1. Top3 tiene10 episodios listados
+02:34 incluida validación; sigue joven. Cuatro replays fijados por recencia
+para diagnóstico. Investigación y objetivo persistente continúan activos.
+
 ## 2026-09-25, 02:05 UTC — Validación real completa y reparación rara
 
 Top3 **56537205 COMPLETE**. Replay de validación113099118: 720 pasos,

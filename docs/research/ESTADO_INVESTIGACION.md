@@ -25,13 +25,24 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
 - Loop4 completo: 384 episodios, noop128/128; recover_now cambia una de64
   partidas, +1,5625pp, IC95 semilla [−1,62;4,75]. Sólo una semilla positiva;
   no pasa gate de dos. INCONCLUSIVE, no envío. No sumar el caso dirigido previo.
-- **En curso loop5**: cinco variantes de tomate temprano/tardío, 616 episodios y hasta dos
-  confirmaciones; `continuar_loop_tomate.py`. Ocho diagnósticos
-  previos: noop exacto, diez plantas/60 unidades en el brazo temprano, cero
-  errores, derrota en ese mundo. No elegir por esas partidas de desarrollo.
-- Loop6: cuatro brazos de cobertura EGG/MELON y combinación top3+fast2.
-  Nueva base explícita top3 para esa ronda, con VQ y fast2 como controles de
-  interacción. 736 episodios; espera a loop5. Total 26 variantes preparadas.
+- Piloto loop5 completo: 616 episodios, noop104/104, cero errores. Early12_9k
+  inerte; early12/14/16_6k −18,75pp, late18_6k +3,125pp. Sólo seed1005002
+  activa cambios. **Confirm5 completa**: late18_6k −21,591pp, IC95 dos vías
+  [−36,90;−6,28], 1.152 episodios, noop384/384, cero errores. REJECTED.
+  Cambió156/352 partidas; ninguna celda mejor y38 peores. No enviar.
+- Loop6 completo:736 episodios, noop112/112, cero errores. EGG/MELON/ambos
+  delta0; EGG cambia46/64 acciones y MELON es inerte. Top3+fast2 −6,25pp.
+  Ninguna seleccionada. Controles factoriales: VQ78,125%, fast2 70,313%,
+  top3 96,875%, combinado90,625%. No asumir suma de efectos de rondas previas.
+- Loop7 en desarrollo: cuatro políticas de tomates en suelo SE libre, 4/8
+  plantas d16/d18, sobre top3. V2 podía inhibir R51; v3 corrigió contratación
+  pero perdió cuatro tomates por overflow. V4 separa riego/cosecha:16 diagnósticos
+  completos, plantas y ventas16/32 confirmadas, R51 y ovejas conservados.
+  1.248 episodios corriendo desde02:41UTC, `continuar_loop_relleno.py`.
+- Loop8 registrado: seis variantes de patrones (rank5/7, historia120/360,
+  ajuste por producto y desfase temporal). Validación16 juegos completa,
+  noop1.438 acciones idénticas, cero errores, máximo271ms. Piloto1.472
+  encolado detrás de loop7. Total36 variantes competitivas construidas.
 - Scorecards actualizadas: `SCORECARDS_LOOP_2026-09-25.md`.
 - Estado máquina: `docs/evidencia/loop_publicos_20260925/pipeline_state.json`.
   Logs: `results/loop_publicos_20260925_pipeline.log` y los logs de cada bloque.
@@ -59,7 +70,13 @@ Top3 **56537205 COMPLETE**, enviada 2026-09-25 01:56:34 UTC, commit ba1fda8,
 sha9668e30a byte exacto de confirmación. Validación113099118: 720 pasos,
 DONE/DONE, cero errores/timeouts. Recibo confirma tres envíos restantes.
 Desplaza al original y conserva VQ, su padre, como control. Snapshot02:04UTC:
-VQ2364,6 y top3 729,5 inicial; no interpretar el rating de arranque como fuerza.
+VQ2364,6 y top3 729,5 inicial. Snapshot02:33UTC: VQ2306,3 y top3 1459,1;
+top3 tiene10 episodios listados02:34, incluida validación. Cuatro replays
+por recencia:3V/1D, cero escapes propios, inventario terminal0 y cero errores
+fatales. Derrota contra c0nrad−23.180: rival32 ovejas frente a17, casi sin tomate.
+Cuatro reproducciones exactas y caja conciliada. Lana391/759 unidades,
+ingresos69.502/113.264; rival paga menos jornales y tierra. Ver
+`FEEDBACK_TOP3_2026-09-25.md`. Muestra pequeña, no WR ni fuerza estable.
 
 Lo siguiente es el cierre de la ronda anterior; no significa parar este loop.
 
