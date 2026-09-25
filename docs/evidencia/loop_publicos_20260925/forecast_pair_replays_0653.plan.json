@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-09-25T06:54:12.517474+00:00",
+  "selections": [
+    "top3_feedback_0653.plan.json",
+    "vq_feedback_0653.plan.json"
+  ],
+  "policies": {
+    "top3": "submission/main_publico_arshs3_vq_top3.py",
+    "vq": "submission/main_publico_arshs3_vq.py"
+  },
+  "games": 16,
+  "rule": "Run each submitted source and the other source on each selected replay seed/seat against the recorded rival. Actual-source control must reproduce all actions and states; reconcile both cash ledgers. Capture forecast calls, first action differences, shops, escapes, final cash. No variant selection or competitive WLT inference: rival tape cannot adapt and counterfactual shops may differ."
+}

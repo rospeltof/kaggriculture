@@ -1,0 +1,379 @@
+[
+  {
+    "step": 385,
+    "market_before": [
+      [
+        "SELL",
+        "FERTILIZER",
+        9
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "BUY_PRODUCT",
+        "FERTILIZER",
+        1
+      ]
+    ],
+    "market_after": [
+      [
+        "SELL",
+        "WOOL",
+        5
+      ],
+      [
+        "SELL",
+        "FERTILIZER",
+        9
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ],
+      [
+        "BUY_PRODUCT",
+        "FERTILIZER",
+        1
+      ]
+    ],
+    "shed": {
+      "WHEAT": 24,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 8,
+      "MILK": 0,
+      "WOOL": 5,
+      "FERTILIZER": 11,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    },
+    "inventory": {
+      "WHEAT": 9820,
+      "CARROT": 9883,
+      "TOMATO": 9983,
+      "STRAWBERRY": 9834,
+      "MELON": 10127,
+      "EGG": 9997,
+      "MILK": 9974,
+      "WOOL": 10057,
+      "FERTILIZER": 10262
+    },
+    "top": 1,
+    "raw_next_two": [
+      {
+        "MILK": 0,
+        "WOOL": 5,
+        "STRAWBERRY": 0,
+        "EGG": 0,
+        "MELON": 0
+      }
+    ]
+  },
+  {
+    "step": 511,
+    "market_before": [
+      [
+        "SELL",
+        "WHEAT",
+        5
+      ],
+      [
+        "BUY_SEED",
+        "WHEAT",
+        1
+      ]
+    ],
+    "market_after": [
+      [
+        "SELL",
+        "WOOL",
+        4
+      ],
+      [
+        "SELL",
+        "WHEAT",
+        5
+      ],
+      [
+        "BUY_SEED",
+        "WHEAT",
+        1
+      ]
+    ],
+    "shed": {
+      "WHEAT": 8,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 9,
+      "MILK": 0,
+      "WOOL": 4,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    },
+    "inventory": {
+      "WHEAT": 9860,
+      "CARROT": 9754,
+      "TOMATO": 9978,
+      "STRAWBERRY": 9906,
+      "MELON": 10122,
+      "EGG": 10055,
+      "MILK": 9986,
+      "WOOL": 10058,
+      "FERTILIZER": 10372
+    },
+    "top": 1,
+    "raw_next_two": [
+      {
+        "MILK": 0,
+        "WOOL": 4,
+        "STRAWBERRY": 0,
+        "EGG": 0,
+        "MELON": 0
+      }
+    ]
+  },
+  {
+    "step": 535,
+    "market_before": [],
+    "market_after": [
+      [
+        "SELL",
+        "WOOL",
+        2
+      ]
+    ],
+    "shed": {
+      "WHEAT": 8,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 9,
+      "MILK": 0,
+      "WOOL": 2,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    },
+    "inventory": {
+      "WHEAT": 9879,
+      "CARROT": 9729,
+      "TOMATO": 9977,
+      "STRAWBERRY": 9951,
+      "MELON": 10121,
+      "EGG": 10062,
+      "MILK": 9985,
+      "WOOL": 10059,
+      "FERTILIZER": 10388
+    },
+    "top": 1,
+    "raw_next_two": [
+      {
+        "MILK": 0,
+        "WOOL": 8,
+        "STRAWBERRY": 0,
+        "EGG": 0,
+        "MELON": 0
+      }
+    ]
+  },
+  {
+    "step": 536,
+    "market_before": [],
+    "market_after": [
+      [
+        "SELL",
+        "WOOL",
+        3
+      ]
+    ],
+    "shed": {
+      "WHEAT": 8,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 9,
+      "MILK": 0,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    },
+    "inventory": {
+      "WHEAT": 9879,
+      "CARROT": 9729,
+      "TOMATO": 9977,
+      "STRAWBERRY": 9951,
+      "MELON": 10121,
+      "EGG": 10062,
+      "MILK": 9985,
+      "WOOL": 10059,
+      "FERTILIZER": 10388
+    },
+    "top": 1,
+    "raw_next_two": [
+      {
+        "MILK": 0,
+        "WOOL": 8,
+        "STRAWBERRY": 0,
+        "EGG": 0,
+        "MELON": 0
+      }
+    ]
+  },
+  {
+    "step": 566,
+    "market_before": [
+      [
+        "SELL",
+        "STRAWBERRY",
+        4
+      ],
+      [
+        "BUY_SEED",
+        "WHEAT",
+        1
+      ]
+    ],
+    "market_after": [
+      [
+        "SELL",
+        "WOOL",
+        1
+      ],
+      [
+        "SELL",
+        "STRAWBERRY",
+        4
+      ],
+      [
+        "BUY_SEED",
+        "WHEAT",
+        1
+      ]
+    ],
+    "shed": {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 0,
+      "MELON": 0,
+      "EGG": 3,
+      "MILK": 0,
+      "WOOL": 1,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    },
+    "inventory": {
+      "WHEAT": 9906,
+      "CARROT": 9696,
+      "TOMATO": 9976,
+      "STRAWBERRY": 9958,
+      "MELON": 10120,
+      "EGG": 10087,
+      "MILK": 9974,
+      "WOOL": 10059,
+      "FERTILIZER": 10406
+    },
+    "top": 1,
+    "raw_next_two": [
+      {
+        "MILK": 0,
+        "WOOL": 9,
+        "STRAWBERRY": 0,
+        "EGG": 0,
+        "MELON": 0
+      }
+    ]
+  },
+  {
+    "step": 687,
+    "market_before": [
+      [
+        "SELL",
+        "WHEAT",
+        1000
+      ],
+      [
+        "SELL",
+        "CARROT",
+        1000
+      ]
+    ],
+    "market_after": [
+      [
+        "SELL",
+        "STRAWBERRY",
+        20
+      ],
+      [
+        "SELL",
+        "MILK",
+        8
+      ],
+      [
+        "SELL",
+        "WHEAT",
+        1000
+      ],
+      [
+        "SELL",
+        "CARROT",
+        1000
+      ]
+    ],
+    "shed": {
+      "WHEAT": 0,
+      "CARROT": 0,
+      "TOMATO": 0,
+      "STRAWBERRY": 20,
+      "MELON": 0,
+      "EGG": 3,
+      "MILK": 8,
+      "WOOL": 0,
+      "FERTILIZER": 0,
+      "GOOSE": 0,
+      "COW": 0,
+      "SHEEP": 0
+    },
+    "inventory": {
+      "WHEAT": 9978,
+      "CARROT": 9725,
+      "TOMATO": 9971,
+      "STRAWBERRY": 9929,
+      "MELON": 10115,
+      "EGG": 10123,
+      "MILK": 9949,
+      "WOOL": 10035,
+      "FERTILIZER": 10474
+    },
+    "top": 1,
+    "raw_next_two": [
+      {
+        "MILK": 0,
+        "WOOL": 0,
+        "STRAWBERRY": 0,
+        "EGG": 0,
+        "MELON": 0
+      }
+    ]
+  }
+]

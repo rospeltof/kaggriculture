@@ -1,0 +1,1032 @@
+{
+  "passed": true,
+  "development_games": 42,
+  "noop_exact_turns": 4314,
+  "source_archive": "extra_forecast_smoke.sources.tgz",
+  "candidate_hashes": {
+    "extra_rank2": "d9f520c9312d6304f74e60a03566662fe7d88ef65a403f9eab1a08cfbfebb931",
+    "extra_quorum": "2a8680a8e4ab4aec169df0fa75ad26fb155a5fb330f0891f45a840217fcb0707",
+    "extra_half": "20a844695162c53a6740ab95eb310275f8e146eb337712a4f2ae22289e5f6e84",
+    "extra_short12": "9f67610b54927d1be7927bfc1b533afdc1c6091f3762671a73436f90c36340b0"
+  },
+  "max_turn_ms": 292.36358401249163,
+  "note": "Actual FEED consumes one WHEAT; these development games validate implementation, not competitive benefit.",
+  "summary": [
+    {
+      "seed": 1051000,
+      "seat": 0,
+      "arm": "extra_rank2",
+      "changed_action_turns": 101,
+      "feed_skips": 68,
+      "feed_base": {
+        "FEED:SHEEP": 210,
+        "FEED:COW": 96
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 212,
+        "FEED:COW": 96
+      },
+      "harvested_base": {
+        "WHEAT": 488,
+        "WOOL": 247,
+        "MILK": 148,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 194
+      },
+      "harvested_candidate": {
+        "WHEAT": 470,
+        "WOOL": 255,
+        "MILK": 148,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 209
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 13,
+        "CARROT": 7,
+        "STRAWBERRY": 10,
+        "WOOL": 4,
+        "FERTILIZER": 7
+      },
+      "losses_candidate": {
+        "WHEAT": 13,
+        "CARROT": 7,
+        "STRAWBERRY": 8,
+        "WOOL": 4,
+        "FERTILIZER": 5
+      }
+    },
+    {
+      "seed": 1051000,
+      "seat": 0,
+      "arm": "extra_quorum",
+      "changed_action_turns": 110,
+      "feed_skips": 66,
+      "feed_base": {
+        "FEED:SHEEP": 210,
+        "FEED:COW": 96
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 214,
+        "FEED:COW": 96
+      },
+      "harvested_base": {
+        "WHEAT": 488,
+        "WOOL": 247,
+        "MILK": 148,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 194
+      },
+      "harvested_candidate": {
+        "WHEAT": 470,
+        "WOOL": 255,
+        "MILK": 148,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 209
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 13,
+        "CARROT": 7,
+        "STRAWBERRY": 10,
+        "WOOL": 4,
+        "FERTILIZER": 7
+      },
+      "losses_candidate": {
+        "WHEAT": 13,
+        "CARROT": 7,
+        "STRAWBERRY": 8,
+        "WOOL": 4,
+        "FERTILIZER": 5
+      }
+    },
+    {
+      "seed": 1051000,
+      "seat": 0,
+      "arm": "extra_half",
+      "changed_action_turns": 48,
+      "feed_skips": 71,
+      "feed_base": {
+        "FEED:SHEEP": 210,
+        "FEED:COW": 96
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 209,
+        "FEED:COW": 96
+      },
+      "harvested_base": {
+        "WHEAT": 488,
+        "WOOL": 247,
+        "MILK": 148,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 194
+      },
+      "harvested_candidate": {
+        "WHEAT": 488,
+        "WOOL": 244,
+        "MILK": 148,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 194
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 13,
+        "CARROT": 7,
+        "STRAWBERRY": 10,
+        "WOOL": 4,
+        "FERTILIZER": 7
+      },
+      "losses_candidate": {
+        "WHEAT": 13,
+        "CARROT": 7,
+        "STRAWBERRY": 10,
+        "WOOL": 4,
+        "FERTILIZER": 7
+      }
+    },
+    {
+      "seed": 1051000,
+      "seat": 0,
+      "arm": "extra_short12",
+      "changed_action_turns": 100,
+      "feed_skips": 67,
+      "feed_base": {
+        "FEED:SHEEP": 210,
+        "FEED:COW": 96
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 213,
+        "FEED:COW": 96
+      },
+      "harvested_base": {
+        "WHEAT": 488,
+        "WOOL": 247,
+        "MILK": 148,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 194
+      },
+      "harvested_candidate": {
+        "WHEAT": 470,
+        "WOOL": 256,
+        "MILK": 148,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 209
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 13,
+        "CARROT": 7,
+        "STRAWBERRY": 10,
+        "WOOL": 4,
+        "FERTILIZER": 7
+      },
+      "losses_candidate": {
+        "WHEAT": 13,
+        "CARROT": 7,
+        "STRAWBERRY": 8,
+        "WOOL": 4,
+        "FERTILIZER": 5
+      }
+    },
+    {
+      "seed": 1051000,
+      "seat": 1,
+      "arm": "extra_rank2",
+      "changed_action_turns": 101,
+      "feed_skips": 68,
+      "feed_base": {
+        "FEED:SHEEP": 210,
+        "FEED:COW": 96
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 212,
+        "FEED:COW": 96
+      },
+      "harvested_base": {
+        "WHEAT": 488,
+        "WOOL": 247,
+        "MILK": 148,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 194
+      },
+      "harvested_candidate": {
+        "WHEAT": 470,
+        "WOOL": 255,
+        "MILK": 148,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 209
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 13,
+        "CARROT": 7,
+        "STRAWBERRY": 10,
+        "WOOL": 4,
+        "FERTILIZER": 7
+      },
+      "losses_candidate": {
+        "WHEAT": 13,
+        "CARROT": 7,
+        "STRAWBERRY": 8,
+        "WOOL": 4,
+        "FERTILIZER": 5
+      }
+    },
+    {
+      "seed": 1051000,
+      "seat": 1,
+      "arm": "extra_quorum",
+      "changed_action_turns": 110,
+      "feed_skips": 66,
+      "feed_base": {
+        "FEED:SHEEP": 210,
+        "FEED:COW": 96
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 214,
+        "FEED:COW": 96
+      },
+      "harvested_base": {
+        "WHEAT": 488,
+        "WOOL": 247,
+        "MILK": 148,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 194
+      },
+      "harvested_candidate": {
+        "WHEAT": 470,
+        "WOOL": 255,
+        "MILK": 148,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 209
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 13,
+        "CARROT": 7,
+        "STRAWBERRY": 10,
+        "WOOL": 4,
+        "FERTILIZER": 7
+      },
+      "losses_candidate": {
+        "WHEAT": 13,
+        "CARROT": 7,
+        "STRAWBERRY": 8,
+        "WOOL": 4,
+        "FERTILIZER": 5
+      }
+    },
+    {
+      "seed": 1051000,
+      "seat": 1,
+      "arm": "extra_half",
+      "changed_action_turns": 48,
+      "feed_skips": 71,
+      "feed_base": {
+        "FEED:SHEEP": 210,
+        "FEED:COW": 96
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 209,
+        "FEED:COW": 96
+      },
+      "harvested_base": {
+        "WHEAT": 488,
+        "WOOL": 247,
+        "MILK": 148,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 194
+      },
+      "harvested_candidate": {
+        "WHEAT": 488,
+        "WOOL": 244,
+        "MILK": 148,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 194
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 13,
+        "CARROT": 7,
+        "STRAWBERRY": 10,
+        "WOOL": 4,
+        "FERTILIZER": 7
+      },
+      "losses_candidate": {
+        "WHEAT": 13,
+        "CARROT": 7,
+        "STRAWBERRY": 10,
+        "WOOL": 4,
+        "FERTILIZER": 7
+      }
+    },
+    {
+      "seed": 1051000,
+      "seat": 1,
+      "arm": "extra_short12",
+      "changed_action_turns": 100,
+      "feed_skips": 67,
+      "feed_base": {
+        "FEED:SHEEP": 210,
+        "FEED:COW": 96
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 213,
+        "FEED:COW": 96
+      },
+      "harvested_base": {
+        "WHEAT": 488,
+        "WOOL": 247,
+        "MILK": 148,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 194
+      },
+      "harvested_candidate": {
+        "WHEAT": 470,
+        "WOOL": 256,
+        "MILK": 148,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 209
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "WHEAT": 13,
+        "CARROT": 7,
+        "STRAWBERRY": 10,
+        "WOOL": 4,
+        "FERTILIZER": 7
+      },
+      "losses_candidate": {
+        "WHEAT": 13,
+        "CARROT": 7,
+        "STRAWBERRY": 8,
+        "WOOL": 4,
+        "FERTILIZER": 5
+      }
+    },
+    {
+      "seed": 1326447728,
+      "seat": 0,
+      "arm": "extra_rank2",
+      "changed_action_turns": 39,
+      "feed_skips": 45,
+      "feed_base": {
+        "FEED:SHEEP": 279,
+        "FEED:COW": 142
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 282,
+        "FEED:COW": 142
+      },
+      "harvested_base": {
+        "WHEAT": 602,
+        "WOOL": 322,
+        "MILK": 205,
+        "MELON": 72,
+        "STRAWBERRY": 251,
+        "CARROT": 95
+      },
+      "harvested_candidate": {
+        "WHEAT": 602,
+        "WOOL": 328,
+        "MILK": 201,
+        "MELON": 72,
+        "STRAWBERRY": 251,
+        "CARROT": 95
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "FERTILIZER": 8,
+        "WOOL": 3
+      },
+      "losses_candidate": {
+        "FERTILIZER": 8,
+        "WOOL": 1
+      }
+    },
+    {
+      "seed": 1326447728,
+      "seat": 0,
+      "arm": "extra_quorum",
+      "changed_action_turns": 47,
+      "feed_skips": 44,
+      "feed_base": {
+        "FEED:SHEEP": 279,
+        "FEED:COW": 142
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 282,
+        "FEED:COW": 143
+      },
+      "harvested_base": {
+        "WHEAT": 602,
+        "WOOL": 322,
+        "MILK": 205,
+        "MELON": 72,
+        "STRAWBERRY": 251,
+        "CARROT": 95
+      },
+      "harvested_candidate": {
+        "WHEAT": 602,
+        "WOOL": 328,
+        "MILK": 202,
+        "MELON": 72,
+        "STRAWBERRY": 251,
+        "CARROT": 95
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "FERTILIZER": 8,
+        "WOOL": 3
+      },
+      "losses_candidate": {
+        "FERTILIZER": 7,
+        "WOOL": 1
+      }
+    },
+    {
+      "seed": 1326447728,
+      "seat": 0,
+      "arm": "extra_half",
+      "changed_action_turns": 46,
+      "feed_skips": 45,
+      "feed_base": {
+        "FEED:SHEEP": 279,
+        "FEED:COW": 142
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 282,
+        "FEED:COW": 142
+      },
+      "harvested_base": {
+        "WHEAT": 602,
+        "WOOL": 322,
+        "MILK": 205,
+        "MELON": 72,
+        "STRAWBERRY": 251,
+        "CARROT": 95
+      },
+      "harvested_candidate": {
+        "WHEAT": 602,
+        "WOOL": 328,
+        "MILK": 201,
+        "MELON": 72,
+        "STRAWBERRY": 251,
+        "CARROT": 95
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "FERTILIZER": 8,
+        "WOOL": 3
+      },
+      "losses_candidate": {
+        "FERTILIZER": 8,
+        "WOOL": 1
+      }
+    },
+    {
+      "seed": 1326447728,
+      "seat": 0,
+      "arm": "extra_short12",
+      "changed_action_turns": 38,
+      "feed_skips": 45,
+      "feed_base": {
+        "FEED:SHEEP": 279,
+        "FEED:COW": 142
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 281,
+        "FEED:COW": 143
+      },
+      "harvested_base": {
+        "WHEAT": 602,
+        "WOOL": 322,
+        "MILK": 205,
+        "MELON": 72,
+        "STRAWBERRY": 251,
+        "CARROT": 95
+      },
+      "harvested_candidate": {
+        "WHEAT": 602,
+        "WOOL": 327,
+        "MILK": 202,
+        "MELON": 72,
+        "STRAWBERRY": 251,
+        "CARROT": 95
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "FERTILIZER": 8,
+        "WOOL": 3
+      },
+      "losses_candidate": {
+        "FERTILIZER": 7,
+        "WOOL": 2
+      }
+    },
+    {
+      "seed": 1326447728,
+      "seat": 1,
+      "arm": "extra_rank2",
+      "changed_action_turns": 39,
+      "feed_skips": 45,
+      "feed_base": {
+        "FEED:SHEEP": 279,
+        "FEED:COW": 142
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 282,
+        "FEED:COW": 142
+      },
+      "harvested_base": {
+        "WHEAT": 602,
+        "WOOL": 322,
+        "MILK": 205,
+        "MELON": 72,
+        "STRAWBERRY": 251,
+        "CARROT": 95
+      },
+      "harvested_candidate": {
+        "WHEAT": 602,
+        "WOOL": 328,
+        "MILK": 201,
+        "MELON": 72,
+        "STRAWBERRY": 251,
+        "CARROT": 95
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "FERTILIZER": 8,
+        "WOOL": 3
+      },
+      "losses_candidate": {
+        "FERTILIZER": 8,
+        "WOOL": 1
+      }
+    },
+    {
+      "seed": 1326447728,
+      "seat": 1,
+      "arm": "extra_quorum",
+      "changed_action_turns": 47,
+      "feed_skips": 44,
+      "feed_base": {
+        "FEED:SHEEP": 279,
+        "FEED:COW": 142
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 282,
+        "FEED:COW": 143
+      },
+      "harvested_base": {
+        "WHEAT": 602,
+        "WOOL": 322,
+        "MILK": 205,
+        "MELON": 72,
+        "STRAWBERRY": 251,
+        "CARROT": 95
+      },
+      "harvested_candidate": {
+        "WHEAT": 602,
+        "WOOL": 328,
+        "MILK": 202,
+        "MELON": 72,
+        "STRAWBERRY": 251,
+        "CARROT": 95
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "FERTILIZER": 8,
+        "WOOL": 3
+      },
+      "losses_candidate": {
+        "FERTILIZER": 7,
+        "WOOL": 1
+      }
+    },
+    {
+      "seed": 1326447728,
+      "seat": 1,
+      "arm": "extra_half",
+      "changed_action_turns": 46,
+      "feed_skips": 45,
+      "feed_base": {
+        "FEED:SHEEP": 279,
+        "FEED:COW": 142
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 282,
+        "FEED:COW": 142
+      },
+      "harvested_base": {
+        "WHEAT": 602,
+        "WOOL": 322,
+        "MILK": 205,
+        "MELON": 72,
+        "STRAWBERRY": 251,
+        "CARROT": 95
+      },
+      "harvested_candidate": {
+        "WHEAT": 602,
+        "WOOL": 328,
+        "MILK": 201,
+        "MELON": 72,
+        "STRAWBERRY": 251,
+        "CARROT": 95
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "FERTILIZER": 8,
+        "WOOL": 3
+      },
+      "losses_candidate": {
+        "FERTILIZER": 8,
+        "WOOL": 1
+      }
+    },
+    {
+      "seed": 1326447728,
+      "seat": 1,
+      "arm": "extra_short12",
+      "changed_action_turns": 38,
+      "feed_skips": 45,
+      "feed_base": {
+        "FEED:SHEEP": 279,
+        "FEED:COW": 142
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 281,
+        "FEED:COW": 143
+      },
+      "harvested_base": {
+        "WHEAT": 602,
+        "WOOL": 322,
+        "MILK": 205,
+        "MELON": 72,
+        "STRAWBERRY": 251,
+        "CARROT": 95
+      },
+      "harvested_candidate": {
+        "WHEAT": 602,
+        "WOOL": 327,
+        "MILK": 202,
+        "MELON": 72,
+        "STRAWBERRY": 251,
+        "CARROT": 95
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {
+        "FERTILIZER": 8,
+        "WOOL": 3
+      },
+      "losses_candidate": {
+        "FERTILIZER": 7,
+        "WOOL": 2
+      }
+    },
+    {
+      "seed": 1418183474,
+      "seat": 0,
+      "arm": "extra_rank2",
+      "changed_action_turns": 2,
+      "feed_skips": 34,
+      "feed_base": {
+        "FEED:SHEEP": 82,
+        "FEED:COW": 199,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 82,
+        "FEED:COW": 199,
+        "FEED:GOOSE": 52
+      },
+      "harvested_base": {
+        "WHEAT": 562,
+        "WOOL": 87,
+        "MILK": 266,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 141
+      },
+      "harvested_candidate": {
+        "WHEAT": 562,
+        "WOOL": 87,
+        "MILK": 266,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 141
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {},
+      "losses_candidate": {}
+    },
+    {
+      "seed": 1418183474,
+      "seat": 0,
+      "arm": "extra_quorum",
+      "changed_action_turns": 3,
+      "feed_skips": 34,
+      "feed_base": {
+        "FEED:SHEEP": 82,
+        "FEED:COW": 199,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 82,
+        "FEED:COW": 199,
+        "FEED:GOOSE": 52
+      },
+      "harvested_base": {
+        "WHEAT": 562,
+        "WOOL": 87,
+        "MILK": 266,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 141
+      },
+      "harvested_candidate": {
+        "WHEAT": 562,
+        "WOOL": 87,
+        "MILK": 266,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 141
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {},
+      "losses_candidate": {}
+    },
+    {
+      "seed": 1418183474,
+      "seat": 0,
+      "arm": "extra_half",
+      "changed_action_turns": 12,
+      "feed_skips": 34,
+      "feed_base": {
+        "FEED:SHEEP": 82,
+        "FEED:COW": 199,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 82,
+        "FEED:COW": 199,
+        "FEED:GOOSE": 52
+      },
+      "harvested_base": {
+        "WHEAT": 562,
+        "WOOL": 87,
+        "MILK": 266,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 141
+      },
+      "harvested_candidate": {
+        "WHEAT": 562,
+        "WOOL": 87,
+        "MILK": 266,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 141
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {},
+      "losses_candidate": {}
+    },
+    {
+      "seed": 1418183474,
+      "seat": 0,
+      "arm": "extra_short12",
+      "changed_action_turns": 7,
+      "feed_skips": 34,
+      "feed_base": {
+        "FEED:SHEEP": 82,
+        "FEED:COW": 199,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 82,
+        "FEED:COW": 199,
+        "FEED:GOOSE": 52
+      },
+      "harvested_base": {
+        "WHEAT": 562,
+        "WOOL": 87,
+        "MILK": 266,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 141
+      },
+      "harvested_candidate": {
+        "WHEAT": 562,
+        "WOOL": 87,
+        "MILK": 266,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 141
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {},
+      "losses_candidate": {}
+    },
+    {
+      "seed": 1418183474,
+      "seat": 1,
+      "arm": "extra_rank2",
+      "changed_action_turns": 2,
+      "feed_skips": 34,
+      "feed_base": {
+        "FEED:SHEEP": 82,
+        "FEED:COW": 199,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 82,
+        "FEED:COW": 199,
+        "FEED:GOOSE": 52
+      },
+      "harvested_base": {
+        "WHEAT": 562,
+        "WOOL": 87,
+        "MILK": 266,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 141
+      },
+      "harvested_candidate": {
+        "WHEAT": 562,
+        "WOOL": 87,
+        "MILK": 266,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 141
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {},
+      "losses_candidate": {}
+    },
+    {
+      "seed": 1418183474,
+      "seat": 1,
+      "arm": "extra_quorum",
+      "changed_action_turns": 3,
+      "feed_skips": 34,
+      "feed_base": {
+        "FEED:SHEEP": 82,
+        "FEED:COW": 199,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 82,
+        "FEED:COW": 199,
+        "FEED:GOOSE": 52
+      },
+      "harvested_base": {
+        "WHEAT": 562,
+        "WOOL": 87,
+        "MILK": 266,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 141
+      },
+      "harvested_candidate": {
+        "WHEAT": 562,
+        "WOOL": 87,
+        "MILK": 266,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 141
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {},
+      "losses_candidate": {}
+    },
+    {
+      "seed": 1418183474,
+      "seat": 1,
+      "arm": "extra_half",
+      "changed_action_turns": 12,
+      "feed_skips": 34,
+      "feed_base": {
+        "FEED:SHEEP": 82,
+        "FEED:COW": 199,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 82,
+        "FEED:COW": 199,
+        "FEED:GOOSE": 52
+      },
+      "harvested_base": {
+        "WHEAT": 562,
+        "WOOL": 87,
+        "MILK": 266,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 141
+      },
+      "harvested_candidate": {
+        "WHEAT": 562,
+        "WOOL": 87,
+        "MILK": 266,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 141
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {},
+      "losses_candidate": {}
+    },
+    {
+      "seed": 1418183474,
+      "seat": 1,
+      "arm": "extra_short12",
+      "changed_action_turns": 7,
+      "feed_skips": 34,
+      "feed_base": {
+        "FEED:SHEEP": 82,
+        "FEED:COW": 199,
+        "FEED:GOOSE": 52
+      },
+      "feed_candidate": {
+        "FEED:SHEEP": 82,
+        "FEED:COW": 199,
+        "FEED:GOOSE": 52
+      },
+      "harvested_base": {
+        "WHEAT": 562,
+        "WOOL": 87,
+        "MILK": 266,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 141
+      },
+      "harvested_candidate": {
+        "WHEAT": 562,
+        "WOOL": 87,
+        "MILK": 266,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 141
+      },
+      "same_shops": true,
+      "escapes": [],
+      "losses_base": {},
+      "losses_candidate": {}
+    }
+  ]
+}

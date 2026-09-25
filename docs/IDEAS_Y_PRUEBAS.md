@@ -8,8 +8,9 @@ autorizado. Leer `research/ESTADO_INVESTIGACION.md` y la cola actual en
 son históricas. Confirm10 terminó inerte y biblioteca11sin mejora W/L/T;
 piloto12 terminó sin seleccionadas. Confirm13 terminó delta0 pese a
 107/86acciones distintas; no enviar. Piloto14sin seleccionadas: dar más alimento
-perjudica en este panel. Corre15;16/18/19en cola. Loop20nuevas reventas está en
-cola tras19:30juegos validan146compras/cierres. Loop17
+perjudica en este panel.15sin seleccionadas: reserva de caja no garantiza
+conversión rentable. Corre16;18/19/20en cola. Loop21modera señales extra
+del forecast, con VQcomo control y rivales nuevos. Loop20validó146compras/cierres. Loop17
 se detuvo por confundir stock actual con stock nocturno: una cosecha intermedia
 libera capacidad y hace valiosa la alimentación omitida. No repetir ese modelo.
 Loop18 compara dos fuentes públicas nuevas con entradas verificadas.

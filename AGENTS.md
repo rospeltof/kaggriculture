@@ -4,8 +4,8 @@
 > Desde el 2026-09-21 el usuario autorizó un loop autónomo de investigación que
 > incluye submissions experimentales ("También tienes capacidad para crear y
 > subir submissions reales. Usa ambas cosas"). Referencias reales activas:
-> **VQ56535264** y **top3 56537205**, ambas COMPLETE. Snapshot06:26UTC:
-> 2294,3/85episodios y2084,7/73 respectivamente; incluyen validación.
+> **VQ56535264** y **top3 56537205**, ambas COMPLETE. Snapshot06:52UTC:
+> 2289,1/88episodios y2094,7/75 respectivamente; incluyen validación.
 > No volver al campeón histórico de1180. Creencias con evidencia:
 > `docs/research/RESEARCH_BELIEFS.md`; historial reproducible de envíos:
 > `docs/research/SUBMISSION_HISTORY.json`; qué métrica local predice el ladder:
@@ -26,7 +26,7 @@ y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_almacen.py`, `continuar_loop_alimentacion.py` y
 `continuar_loop_caja_alimento.py`, `continuar_loop_rebano_inicial.py` y
 `continuar_loop_publicos_0548.py`, `continuar_loop_trigo_reventa.py` y
-`continuar_loop_reventa_town.py` encadenan bloques
+`continuar_loop_reventa_town.py` y `continuar_loop_senales_extra.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
 terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
 (una de64 partidas cambia, +1,5625pp). Confirm5 tomate−21,591pp: REJECTED.
@@ -44,7 +44,9 @@ Piloto13 completo1.248/noop256: inputs1/2+4,6875pp. Confirm13completa1.600,
 noop416/416: ambas delta0sin cambiosW/L/T, pese a107/86acciones distintas.
 No seleccionadas ni enviadas; no son inertes. Piloto14terminó1.248/noop256,
 half−12,5pp(inconcluso), double−26,5625, keep_sheep−50,78125, all−64,84375
-(últimas tres REJECTED). Sin confirmación. Corre15desde06:36UTC;16/18/19en cola. Doce diagnósticos validan reducción de pérdidas,
+(últimas tres REJECTED). Sin confirmación. Piloto15terminó1.568/noop288:
+night/24−12,5pp(inconcluso),48/all24inertes128/128; ninguna seleccionada.
+Corre16desde06:55UTC;18/19/20en cola. Doce diagnósticos validan reducción de pérdidas,
 pero una celda neutral omite3FEEDposteriores: no garantiza preservar producción.
 Loop14 modifica sólo filtro económico FEED:36juegos/noop4.314turnos,
 consumo/producción aceptados comprobados; todas activas128/128en piloto.
@@ -70,8 +72,8 @@ fallan alimentaciones y escapan tres vacas239. Próxima hipótesis requiere
 reserva de insumos futuros. Loop15 validado: cuatro reservas, control antiguo,
 42diagnósticos/noop4.314, max294ms. Night/24evitan los escapes del caso adverso
 y permiten conversión en el solvente;48/all24inertes en desarrollo. Piloto1.568
-corriendo tras14. Loop16 mezcla inicial:48juegos/noop5.752, max329ms,
-cantidades/costes físicos comprobados;2.496piloto detrás de15. Sheep2pierde
+completo, sin seleccionadas. Loop16 mezcla inicial:48juegos/noop5.752, max329ms,
+cantidades/costes físicos comprobados;2.496piloto corriendo. Sheep2pierde
 una vaca215en1272457736; registrar escapes, no ocultarlos. Total71variantes.
 Doce replays muestran33MILKtruncadas por banco excesivo antes del primer yield
 con inventario previo0. Loop17 probó valor marginal limitado:24juegos válidos
@@ -91,6 +93,12 @@ producción y tiendas iguales a base en tres mundos; cero escapes/stock final.
 1.920piloto tras19. Sonda400escenarios/800piernas exactas refuta beneficio
 garantizado sin modelar rival.79variantes construidas;
 ver protocolo/REVENTA_TOWN. No cambiar fuentes congeladas de otros bloques.
+Loop21validado/encolado: señales adicionales del forecast, conserva regla del
+patrón principal;42juegos/noop4.314/max293ms, todas activas en tres mundos.
+Alimento/cosecha cambian en dos: es efecto total. Piloto2.016tras20con VQcomo
+control y dos rivales públicos nuevos. No inferir debilidad de top3sólo por rating:8replays recientes
+reproducidos exactamente,7/8mejoran margen top3contra cinta rival fija; no
+prueba efecto contra rival reactivo.83variantes construidas más2prototipos.
 
 ## Estado y autorización
 

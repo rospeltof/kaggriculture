@@ -1,11 +1,17 @@
 # Fronteras después de loops7–10
 
-Estado06:49UTC: loops12–14completos, sin seleccionadas. Confirm13delta0pese
-al mecanismo activo; alimentación14negativa. Corre15reservas de caja;
-16composición inicial,18fuentes nuevas,19compras nativas y20reventas nuevas
-están validados/en cola.17detenido por modelo temporal erróneo. No duplicar
-corridas.79variantes construidas más2prototipos detenidos. Leer estado y
-scorecards actuales antes de usar las propuestas históricas de abajo.
+Estado07:09UTC:15completo, night/24−12,5pp(inconcluso),48/all24inertes.
+Corre16composición inicial;18fuentes nuevas,19compras nativas,20reventas nuevas
+y21señales extra están validados/en cola.17detenido por modelo temporal erróneo.
+No duplicar corridas.83variantes construidas más2prototipos detenidos. Leer
+estado y scorecards actuales antes de usar las propuestas históricas de abajo.
+
+Nueva frontera21: moderar sólo señales de patrones secundarios, mantener
+la regla del principal.42juegos/noop4.314/max293ms, cuatro brazos activos en
+tres mundos; cambian alimento/cosecha en dos, sin escapes. Piloto2.016incluye
+VQcomo control y dos fuentes nuevas escogidas antes de su piloto18. Confirmar
+contra13rivales con ≥3ppvs top3y≥0vs VQ, además de guardas previas. La muestra
+real emparejada7/8márgenes favorables a top3usa rival grabado: no prueba fuerza.
 
 Nueva frontera20: crear compras en pulsos de consumo observable del pueblo.
 30juegos/noop4.314/max358ms,146compras/cierres y7.862unidades verificados.
@@ -36,7 +42,7 @@ y reserva de todas las obligaciones24h.42diagnósticos antes del piloto1.568
 (1034000–015), control antiguo incluido sólo para atribuir reparación. No
 acredita ingresos futuros ni cambia alimento/rutas.42diagnósticos válidos,
 noop4.314, max294ms:night/24evitan escapes en el caso adverso y permiten
-conversión en el solvente;48/all24inertes en desarrollo. Piloto1.568corriendo.
+conversión en el solvente;48/all24inertes en desarrollo. Piloto1.568completo, sin seleccionadas: leer el diagnóstico de rentabilidad15.
 Consultar protocolo15, no presentar estas sondas como ganancia competitiva.
 
 Las tres parejas D3/D6 fueron idénticas128/128por pareja; no contarlas como

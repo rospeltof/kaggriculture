@@ -9,10 +9,17 @@ esta prueba. Los rivales emparentados limitan la diversidad efectiva del panel.
 
 Top3sobreVQ confirmó+10,795pp local (ICdos vías[−0,115;21,706]) y se envió
 56537205. VQ56535264se conserva; el original56511619ya fue desplazado. Snapshot
-06:26UTC:top32084,7/73episodios listados yVQ2294,3/85, ambasCOMPLETE; incluyen
+06:52UTC:top32094,7/75episodios listados yVQ2289,1/88, ambasCOMPLETE; incluyen
 validación. No es comparación causal ni rankings sincronizados por edad/rivales.
 Los conteos y lecturas fechadas están en SUBMISSION_HISTORY. La ventaja local
 todavía no demuestra superioridad real; no redefinir el gate según estos ratings.
+
+Ocho replays posteriores seleccionados por recencia (cuatro por fuente):
+los códigos enviados reproducen719acciones/720estados exactos. Contrafactual
+con rival grabado favorece margen top3en7/8, sin garantizar respuesta adaptativa
+ni estimar fuerza. No basta comparar ratings para culpar una capa. Loop21
+incluye VQcomo control local y dos fuentes públicas nuevas, definidas antes
+de conocer su torneo18; no altera los paneles de bloques ya registrados.
 
 En loop11, nuevos streams cambiaron18/256acciones sin cambiar W/L/T; datos más
 recientes no equivalen a mejora. En loop12, tomate inicial−80,469pp y paquete

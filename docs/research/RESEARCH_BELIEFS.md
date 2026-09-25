@@ -4,6 +4,20 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, loop15] Reparar financiación no garantiza inversión rentable.**
+  Piloto1.568/noop288: night/24−12,5pp(inconcluso), legacy−18,75;48/all24inertes.
+  En1034015nightcompra4trigos en191y evita tres escapes, frente a0de legacy.
+  En1034010todos compran8sin escapes, pero la conversión vende324lanas por
+ 45.380frente a278por50.174y pierde54leches. Margen+1.619→−3.173; la caja no
+  era el cuello ahí. Ocho diagnósticos reproducen hashes/rewards/caja exactos.
+
+- **[2026-09-25, VQ/top3 real] Rating distinto no identifica el mecanismo.**
+  Ocho controles de fuente enviada reproducen cada estado/acción;16juegos
+  emparejados con rival grabado favorecen margen top3en7/8. Mismas tiendas,
+  sin escapes propios. No estiman W/L/T contra rivales reactivos ni refutan
+  diferencia real de fuerza. No usar ratings o dinero propio como sustitutos
+  de esa prueba. Ver `FEEDBACK_PAREADO_0653_2026-09-25.md`.
+
 - **[2026-09-25, loop14] Conservar más FEED no mejora por sí solo.**
   1.248episodios/noop256, todas activas128/128. Double−26,5625pp, ovino−50,78125
   yall−64,84375con ICdos vías negativos. Half−12,5pero intervalo cruza0: no

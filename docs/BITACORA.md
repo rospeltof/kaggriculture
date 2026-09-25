@@ -1,5 +1,30 @@
 # Bitácora de experimentos
 
+## 2026-09-25, 07:09 UTC — Caja15cerrada, feedback pareado y señales21
+
+Piloto15terminó1.568episodios/noop288, cero errores. Night/24−12,5pp con ICdos
+vías[−36,221;11,221], inertes48/all24, legacy−18,75sólo control. Sin seleccionadas.
+Ocho diagnósticos reproducen hashes/rewards/caja: en1034015night compra4trigos
+y evita tres escapes de legacy; en1034010hay trigo8para todos y cero escapes,
+pero más lana produce menos ingresos y sustituye54leches. Reparar financiación
+no garantiza rentabilidad.16arrancó06:55:12UTC;18/19/20siguen en cola.
+
+API06:52:55UTC:VQ2289,1/88episodios, top32094,7/75; COMPLETE, incluyen validación.
+Cuatro replays más recientes por fuente seleccionados antes de leer rewards.
+Ocho controles reproducen719acciones/720estados exactamente;16juegos sumando
+contrafactual de la otra fuente, caja conciliada/mismas tiendas/max348ms,
+sin escapes propios. Top3mejora margen7/8contra rival grabado, no reactivo.
+Caso Duvor: caja propia+16pero rival+480(460lana), margen−464. No culpar al
+forecast por rating ni adoptar por dinero propio; no es comparación causal.
+
+Loop21preregistrado: rank2/quorum/half/short12 sólo para señales secundarias,
+conserva regla del patrón principal.42juegos/noop4.314/max293ms, todas activas
+en tres mundos; cambian alimento/cosecha en dos, cero errores/escapes/stock final.
+Piloto2.0161052000–015en cola tras20, VQcontrol y dos rivales nuevos0548incluidos
+antes de conocer su piloto18. Confirmación1053000–015contra13rivales, ≥3ppvs
+top3y≥0vsVQ además de guardas previas.83variantes construidas más2prototipos.
+Sin nuevo envío; objetivo continuo activo. Datos y replays reproducibles archivados.
+
 ## 2026-09-25, 06:49 UTC — Alimentación14negativa; nuevas reventas20
 
 Piloto14completo1.248/noop256, cero errores. Half−12,5pp(inconcluso), double

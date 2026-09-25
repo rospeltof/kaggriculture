@@ -1,0 +1,76 @@
+{
+  "agentes": {
+    "base": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "noop": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "cash_food_night": {
+      "ruta": "results/caja_alimento_20260925/cash_food_night.py",
+      "sha256": "60d8ad69567fc541dcd0d2ff21c26cda944a07e16fdd4e1c18e27eff923b01df"
+    },
+    "cash_food_24": {
+      "ruta": "results/caja_alimento_20260925/cash_food_24.py",
+      "sha256": "57bb9a03dad3d177db4f52c8dd7a28c15512c0677864c2ea8230b9425eb5558f"
+    },
+    "cash_food_48": {
+      "ruta": "results/caja_alimento_20260925/cash_food_48.py",
+      "sha256": "bbc04390907dc59210bbf49cf3ea4f942a5f70ba95e5ad6948ea0982aefbbeef"
+    },
+    "cash_all_24": {
+      "ruta": "results/caja_alimento_20260925/cash_all_24.py",
+      "sha256": "bd7ab4df304baa49fe01192597fb3d1646de9838847c1412224f48e9a002a89c"
+    },
+    "legacy": {
+      "ruta": "results/vacas_tempranas_20260925/cow_d3_y1_m100.py",
+      "sha256": "c5feb3ddf0c508b9cbbd19aa829dd9d8ba0cf71d1b0f80e1fe4bc29bd9b85b9a"
+    },
+    "tds": {
+      "ruta": "submission/main_publico_tds_tetsutani.py",
+      "sha256": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a"
+    },
+    "hybu": {
+      "ruta": "results/publicos/wzhengbiao_kaggriculture-hybu-submit/main.py",
+      "sha256": "f6175fd1bc3850f74185e7a813bb5a87d54e7e15212c874133dafc6e1ce91d34"
+    },
+    "ars40": {
+      "ruta": "results/publicos/arsgorynich_kaggriculture-v40-challenger/main.py",
+      "sha256": "d5a192fac67f00da31fe2bc7b747b8c33766bf1024780c53e49f2292a97db2de"
+    },
+    "arshs3": {
+      "ruta": "submission/main_publico_arshs3_arsgorynich.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    }
+  },
+  "seeds": [
+    1034000,
+    1034001,
+    1034002,
+    1034003,
+    1034004,
+    1034005,
+    1034006,
+    1034007,
+    1034008,
+    1034009,
+    1034010,
+    1034011,
+    1034012,
+    1034013,
+    1034014,
+    1034015
+  ],
+  "vs": "base,noop,cash_food_night,cash_food_24,cash_food_48,cash_all_24,legacy",
+  "inicio": "2026-09-25 01:36:09",
+  "state": "complete",
+  "expected_episodes": 1568,
+  "workers": 8,
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "cc2c653a1cce243e55d3d30effd5985405bb9db28bde7622cecc400a7298b025",
+  "completed_episodes": 1568,
+  "fin": "2026-09-25 01:55:08"
+}

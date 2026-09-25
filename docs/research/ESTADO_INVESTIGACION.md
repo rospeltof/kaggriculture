@@ -145,15 +145,21 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   noop4.314, max294ms. En caso adverso:night permite una oveja, compra4trigos
   y evita tres escapes; resto conserva base. En caso solvente:night/24permiten
   dos ovejas,48/all24inertes. No seleccionar por esos rewards. Piloto1.568
-  con control antiguo, semillas1034000–015, **corriendo desde06:36:09UTC**.
-  Total67variantes construidas.
+  con control antiguo, semillas1034000–015, **completo**:1.568episodios/noop288,
+  cero errores. Night/24−12,5pp(ICdos vías[−36,221;11,221]),48/all24inertes128/128,
+  legacy−18,75como control. Sin seleccionadas/confirmación. Night/24cambian40/32
+  acciones; coinciden entre sí en104/128partidas(ambas acciones/rewards).
+  Ocho diagnósticos: reserva evita tres escapes en1034015, pero1034010pierde
+  sin escasez de trigo: más lana vendida por menos dinero, menos leche. Caja
+  suficiente es necesaria, no criterio de rentabilidad. Total67variantes al registro.
 - Loop16 validado/encolado: cuatro mezclas iniciales (1/2vacas→ovejas o viceversa),
   sin más peones/rutas.48juegos/noop5.752turnos, max329ms, compras/colocaciones
   y costes±100/200aceptados, crédito0al día1. Todas cambian acciones en4mundos.
   Cambiar caja inicial altera cultivos y tiendas: es efecto total, no sólo lana
   por leche. Sheep2pierde una vaca215en1272457736;1036000tiene escapes tardíos
   en base/cow1. Se conservan, no ocultarlos. Piloto2.496con32semillas1037000–031,
-  confirmación32semillas1038000–031, detrás de15. Total71variantes construidas.
+  confirmación32semillas1038000–031. **Piloto16corriendo desde06:55:12UTC**.
+  Total71variantes construidas.
 - Auditoría de12replays top3:3CARROTpor decay,1por sequía y4MILKen campo final.
   33MILKtruncadas con inventario previo0son exceso de cuidado antes de primer
   yield; no se arreglan cosechando antes.14EGGcon cap sí requerirían ruta/entrega.
@@ -191,6 +197,18 @@ continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
   78pérdidas pese a pronóstico positivo sin rival. No seleccionar por caja.
   Total79variantes construidas más2prototipos detenidos.
   Ver `REVENTA_TOWN_2026-09-25.md`; no afirmar beneficio por spread anunciado.
+- Loop21validado/encolado: cuatro reglas para señales adicionales del forecast
+  (rango2, consenso, mitad, horizonte12), conserva regla del patrón1.42juegos,
+  noop4.314turnos, max293ms, cero errores/escapes/producto final. Todas activas
+  en tres mundos; cambia comida/cosecha en dos, mismas tiendas. No seleccionar
+  por rewards. Piloto2.0161052000–015tras20, controlVQen ambos bloques y dos
+  rivales públicos0548añadidos antes de conocer su piloto18; confirmación
+ 1053000–015contra13rivales, gate adicional≥0vsVQ. Total83variantes construidas
+  más2prototipos detenidos. Ver protocolo21.
+  Ocho replays reales recientes, cuatro por fuente, reproducidos por código
+  enviado:719acciones/720estados exactos;16juegos con contrafactualVQ/top3,
+  caja conciliada/max348ms/sin escapes propios. Top3mejora margen7/8pero
+  rival grabado no reacciona: no es estimación competitiva. Ver FEEDBACK_PAREADO_0653.
 - Fuentes públicas nuevas: MasterEngine actualizado es tds25 byte exacto,
   excluido. MarketShock12ad317e diferente; loader elegía instalador. Corrección
   de entrada1c94b979 probada idéntica al `module.agent` del autor en8juegos.
@@ -213,6 +231,11 @@ Sonda posterior en bucle cerrado (mismo seed del fallo, ambos asientos, rival
 arshs3 reactivo): reparación inerte en asiento 0; recupera planta y −671→+53 en
 asiento 1, con tiendas diferentes. Caso dirigido, no estimación poblacional.
 La prueba de cobertura quedó registrada y encolada como loop4.
+
+Snapshot nuevo06:52:55UTC (sufijo0653): VQ**2289,1/88episodios listados**,
+top3**2094,7/75**, ambasCOMPLETE. Incluyen validación. No nuevo envío. Las
+cuatro partidas recientes por fuente se seleccionaron antes de leer rewards.
+Diagnóstico8replays/16reproducciones en `FEEDBACK_PAREADO_0653_2026-09-25.md`.
 
 Líder actual consultado 01:36 UTC: DSM 3128,7, submission 56518845. Cuatro replays
 recientes reproducidos exactamente; compra cuarta tierra día 10 y cultiva más

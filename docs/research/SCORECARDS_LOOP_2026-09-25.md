@@ -738,3 +738,51 @@ no generalizar esa ausencia de interferencia. Rentas por juego/asiento:
 mecánico, no criterio de selección ni efecto competitivo probado. No elegir80
 por esos ingresos. Piloto1.920/32semillas1049000–031en cola tras19; confirmación
 condicional1050000–031. Total79variantes competitivas más2prototipos17detenidos.
+
+
+## Piloto15completo: financiación reparada no basta
+
+1.568episodios1034000–015, noop288/288, cero errores/fuentes/cobertura válidas.
+Base96,875%. Night/24−12,5pp, ICdos vías[−36,221;11,221], no seleccionadas;
+48/all24delta0, inertes128/128. Legacy−18,75(ICcruza0), sólo control diagnóstico.
+Night/24mejoran6,25ppcontra legacy pero no pasan criterio primario vs base.
+Night/24cambian40/32partidas propias, en5/4semillas; iguales entre sí104/128
+partidas por ambos hashes/rewards. No son réplicas independientes ni equivalentes
+por tener el mismo W/L/T. Sin confirmación/envío.16arrancó06:55:12UTC.
+
+Ocho diagnósticos: primera celda ordenada dañada vsbase y primera reparada
+vslegacy, todos enars40/asiento0, cuatro brazos por caso. Hashpropio/rewards
+exactos del torneo, caja conciliada; tiendas iguales a base.
+
+- 1034010 daño: base+1.619; legacy/night/24−3.173. Compran8trigos en191y ningún
+ escape. DosCOW→SHEEP; WOOLvendida278→324pero50.174→45.380monedas; MILK191→137
+ y35.962→27.989. No atribuir esta derrota a escasez de alimento.
+- 1034015 reparación: base+845; legacy−25.130, trigo191=0y tresCOWescapan239;
+ night+2.102, una conversión/trigo4/ceroescapes;24conserva base/trigo7. Night
+ cambia producción, sin promesa de preservar leche; repair es caso dirigido.
+
+Evidencia `pilot15.physical.*`,16ledgers de mercado/unidades y plan de selección.
+Diagnósticos no agregan muestras estadísticas; no rescatar por caso favorable.
+
+
+## Loop21: señales adicionales, VQ control y fuentes nuevas
+
+42 partidas en tres mundos y ambos asientos; noop idéntico en 4.314 turnos,
+fuentes verificadas, 720 estados DONE y caja conciliada. Máximo 292,36 ms,
+sin errores, escapes ni producto privado al final. Los cuatro brazos cambian
+acciones en los tres mundos. Se verificaron apoyo, cantidad y horizonte de
+las señales emitidas y las ventas reales frente a las órdenes finales.
+
+En 1051000, rank2/quorum/short12 cambian 101/110/100 turnos por asiento y
+sustituyen 18 unidades de trigo cosechado por 15 zanahorias; lana +8/+8/+9.
+Half cambia 48 turnos y cosecha tres lanas menos. En 1326447728, los cuatro
+cambian 38–47 turnos, con lana +5/+6 y leche −3/−4. En 1418183474 cambian
+2/3/12/7 turnos, sin diferencias de comida/cosecha. Tiendas preservadas en
+todos. Son efectos del estado y precios posteriores, no una promesa de que
+un cambio de ventas conserve todas las decisiones productivas.
+
+No se seleccionaron brazos por estos rewards. Piloto de 2.016 partidas en
+1052000–015 en cola tras20; confirmación disjunta1053000–015. VQ control
+ineligible, seis rivales piloto/trece confirmación, gate adicional ≥0 frente
+al VQ del mismo bloque. Fuentes en `extra_forecast_smoke.sources.tgz`;
+validación `extra_forecast_validation.json`. Total83variantes más2prototipos.

@@ -498,9 +498,9 @@
     },
     "reason": "VQ validada contra copias; arshs3 transfiere al ladder (2292.5 vs v13 1857.9). Desplaza v13, preserva arshs3 como referencia activa.",
     "leaderboard": {
-      "score": 2294.3,
+      "score": 2289.1,
       "rank": null,
-      "episodes": 85,
+      "episodes": 88,
       "lecturas": [
         [
           "initial",
@@ -564,15 +564,20 @@
           "2026-09-25T06:26:02.269547+00:00",
           2294.3,
           85
+        ],
+        [
+          "2026-09-25T06:52:55.181043+00:00",
+          2289.1,
+          88
         ]
       ],
       "status": "SubmissionStatus.COMPLETE"
     },
     "delta_vs_champion_ladder": null,
-    "observed": "COMPLETE, snapshot 2026-09-25T06:26:02.269547+00:00: score2294.3, 85 episodios listados (incluye validación). La ventaja local de top3 aún no demuestra superioridad real; comparación no causal entre VQ/top3.",
+    "observed": "COMPLETE, snapshot 2026-09-25T06:52:55.181043+00:00: score2289.1, 88 episodios listados (incluye validación). Comparación de ratings no causal. Ocho replays recientes reproducen fuente enviada exactamente; diagnóstico contra rival grabado favorece margen top3 en7/8, no es WLT reactivo.",
     "conclusion": "REAL_WORLD_CANDIDATE; ventaja local específica contra copias, sin promoción automática",
-    "next_action": "Confirm13 terminó delta0 con cambios de acciones; no enviar. Corre piloto14;15/16/18/19en cola,19con32semillas tras enmienda de cobertura previa. Conservar evidencia de VQ como control y revisar ambos activos antes de justificar otro envío.",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0628.json"
+    "next_action": "Piloto15sin seleccionadas,16corriendo;18/19/20en cola. Loop21modera señales adicionales, incorpora controlVQy dos fuentes nuevas. Conservar VQ como referencia real y revisar gate/riesgo de desplazamiento antes de otro envío.",
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0653.json"
   },
   {
     "submission_id": 56537205,
@@ -708,8 +713,8 @@
     },
     "reason": "Cumple gate registrado: delta>=3pp, ningún rival<-20pp, cero errores, revisión de mecanismos y runtime. Prueba real autorizada.",
     "leaderboard": {
-      "score": 2084.7,
-      "episodes": 73,
+      "score": 2094.7,
+      "episodes": 75,
       "status": "SubmissionStatus.COMPLETE",
       "lecturas": [
         [
@@ -751,15 +756,20 @@
           "2026-09-25T06:26:02.269547+00:00",
           2084.7,
           73
+        ],
+        [
+          "2026-09-25T06:52:55.181043+00:00",
+          2094.7,
+          75
         ]
       ]
     },
-    "observed": "COMPLETE, snapshot 2026-09-25T06:26:02.269547+00:00: score2084.7, 73 episodios listados (incluye validación). La ventaja local de top3 aún no demuestra superioridad real; comparación no causal entre VQ/top3.",
+    "observed": "COMPLETE, snapshot 2026-09-25T06:52:55.181043+00:00: score2094.7, 75 episodios listados (incluye validación). Comparación de ratings no causal. Ocho replays recientes reproducen fuente enviada exactamente; diagnóstico contra rival grabado favorece margen top3 en7/8, no es WLT reactivo.",
     "conclusion": "REAL_WORLD_CANDIDATE; no CHAMPION",
-    "next_action": "Confirm13 terminó delta0 con cambios de acciones; no enviar. Corre piloto14;15/16/18/19en cola,19con32semillas tras enmienda de cobertura previa. Conservar evidencia de VQ como control y revisar ambos activos antes de justificar otro envío.",
+    "next_action": "Piloto15sin seleccionadas,16corriendo;18/19/20en cola. Loop21modera señales adicionales, incorpora controlVQy dos fuentes nuevas. Conservar VQ como referencia real y revisar gate/riesgo de desplazamiento antes de otro envío.",
     "replaces_submission": 56511619,
     "preserves_submission": 56535264,
     "evidence": "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",
-    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0628.json"
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/ladder_snapshot_0653.json"
   }
 ]

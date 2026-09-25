@@ -1,0 +1,18 @@
+  (extra, no entra en la estimacion) base vs cash_all_24: 50.0% (32 ep)
+  (extra, no entra en la estimacion) legacy vs cash_all_24: 40.6% (32 ep)
+  (extra, no entra en la estimacion) base vs cash_food_24: 50.0% (32 ep)
+  (extra, no entra en la estimacion) legacy vs cash_food_24: 40.6% (32 ep)
+  (extra, no entra en la estimacion) base vs cash_food_48: 50.0% (32 ep)
+  (extra, no entra en la estimacion) legacy vs cash_food_48: 40.6% (32 ep)
+  (extra, no entra en la estimacion) base vs cash_food_night: 53.1% (32 ep)
+  (extra, no entra en la estimacion) legacy vs cash_food_night: 46.9% (32 ep)
+  (extra, no entra en la estimacion) base vs noop: 50.0% (32 ep)
+  (extra, no entra en la estimacion) legacy vs noop: 40.6% (32 ep)
+legacy - base: 4 rivales x 16 semillas = 64 celdas; ref 96.9%
+  delta -18.75 pts | IC95 semilla [-40.23; +2.73] | dos vias [-46.74; +9.24]
+  celdas cambiadas 12/64: 0 a favor, 12 en contra
+    vs    ars40  -18.8
+    vs   arshs3  -18.8
+    vs     hybu  -18.8
+    vs      tds  -18.8
+  directo legacy vs base: 40.6% (32 ep)
