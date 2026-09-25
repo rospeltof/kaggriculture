@@ -4,6 +4,13 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, cota rival] Una señal imposible puede ser irrelevante para la acción.**
+  La cota pública de stock animal pasa12.942checks de inventario y otros12.942
+  de ventas futuras en seis controles. Descarta31cantidades de biblioteca,
+  pero25son huevo deshabilitado y las seis restantes no tienen stock propio
+  vendible. No construir otra variante por conteos internos sin acción útil.
+  Auditoría cerrada sin piloto: COTA_STOCK_RIVAL_2026-09-25.md.
+
 - **[2026-09-25, loop20 piloto] Reventa nueva: señal positiva, todavía incierta.**
   Tres tamaños+3,125pp en1.920episodios, ICdos vías[−4,647;10,897]; cuatro
   celdas mejores en tres semillas. IgualesW/L/T no implica acciones iguales.

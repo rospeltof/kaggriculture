@@ -1,0 +1,5 @@
+{
+  "error": "KeyError MILK at initial zero-stock observation",
+  "classification": "Audit output dictionary omitted zero-count keys; no bound violation measured.",
+  "candidate_built": false
+}

@@ -13,7 +13,8 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 
 ## Índice y huellas de los documentos
 
-- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `fb59a0d5399ddb5ea4e715c1df5ab95f3b95f59803b2881c67b1fe6c0a618db7`
+- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `ddb1081d93e3cddae09e7b15b4a54b68fa98366115090b6fe37955c5e36a70bd`
+- `docs/research/COTA_STOCK_RIVAL_2026-09-25.md` — SHA-256 `ab26e518d08965ce2b2c31254bfa415333b7424adb9d2c54f12c47686582f70a`
 - `docs/research/FEEDBACK_1003_2026-09-25.md` — SHA-256 `d81253c6b9cc999bc787c8f3080ef34465900661b8b45bcf570cd05bb7aed464`
 - `docs/research/CENSURA_FORECAST_2026-09-25.md` — SHA-256 `5ee815fd4f67cc8a1f65e8883981fe6abc04acacea0f5dca2020ac20de0806a6`
 - `docs/research/PREREG_LOOP28_CENSURA_2026-09-25.md` — SHA-256 `b48b0e48bdb988029c84a7d08e78a39d7aac2270163e499b9d3f52e5911ed454`
@@ -70,7 +71,7 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 - `docs/research/LIDER_Y_FUENTES_2026-09-25.md` — SHA-256 `f940d574bb7e3d43785ee31a100204a8c3a7c7587009f9fcbb02b1ef8df07daf`
 - `docs/research/DECISION_ENVIO_TOP3_2026-09-25.md` — SHA-256 `a17b15f6d0db894ec64c3dbd25ce08ac2553f25d2528682b129a1f4a779cbde6`
 - `docs/research/RESULTADOS_2026-09-25.md` — SHA-256 `98349e7d3065ae9fb91d396d089c4aa95f1841d5c8b844242add6ba3e8e6965c`
-- `docs/research/RESEARCH_BELIEFS.md` — SHA-256 `e815205dcce333ef373347abe50896fc8439fb16522afa4054cfd1b2ed64a066`
+- `docs/research/RESEARCH_BELIEFS.md` — SHA-256 `bc39365ca6744ca92538ae21e48a43b50c61165260b8fd483fc5b3802a0daa06`
 - `docs/research/HARNESS_VS_LEADERBOARD.md` — SHA-256 `49b3cfbdb4cc97efbb3c4e31590d153bda48f3426b3d606c9a3bbbc66d246a05`
 - `docs/research/SUBMISSION_HISTORY.json` — SHA-256 `faf30028103fa0c16f291915b69a204478011693bfd5ca207ab76a9a0c4916e6`
 - `docs/research/PREREG_VQ_2026-09-24.md` — SHA-256 `7f4b6b42db6dbeeb3981cd0fa56fbf071f4b4f6eec121ceeb292b2b0ca6ebab5`
@@ -99,6 +100,16 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 ## SOURCE: docs/research/ESTADO_INVESTIGACION.md
 
 # Estado de investigación — leer primero para continuar
+
+## Nota 10:15 UTC — cota rival auditada; sin nueva variante
+
+`COTA_STOCK_RIVAL_2026-09-25.md` cierra una auditoría offline:12.942checks de
+stock y12.942de ventas futuras cumplen cota pública conservadora.31señales
+crudas imposibles;25sonEGGdeshabilitado, otras6MILKsin producto propio disponible.
+No cambian una orden observada: no construir ni encolar30con esta evidencia.
+V1falló clave vacía del auditor, archivada;v2válida. No se agregaron juegos.
+Confirm20avanza (2.408/3.200a10:15UTC);21–29siguen vivos en cola. Total99
+variantes más2prototipos, sin nuevo envío. No duplicar/reiniciar procesos.
 
 ## Corte operativo 10:08 UTC — 29 validado y feedback real actualizado
 
@@ -876,6 +887,56 @@ efectos ≥ ~7 puntos. Buscar cambios GRANDES, no micro.
 - **H3 (HIGH / LOW):** el rival explota a la cinta de forma identificable en los
   replays reales (p. ej. inunda el producto que la cinta vende tarde). Si es así,
   una capa reactiva mínima (ventas) sobre la cinta lo corrige.
+
+
+
+---
+
+## SOURCE: docs/research/COTA_STOCK_RIVAL_2026-09-25.md
+
+# Cota pública del stock rival: mecánica válida, cobertura útil sin demostrar
+
+Hipótesis investigada después de validar29: usar producción visible para
+descartar previsiones imposibles de ventas animales. No es el bonus de alimento
+del loop17, ni la censura de observaciones28. No se construyó una política30.
+
+El auditor usa exclusivamente granja/posiciones públicas, inventario de mercado,
+tiendas y nuestras órdenes finales anteriores. Suma posibles cosechas visibles
+y resta sólo una cota inferior de ventas rivales: incremento visible del mercado
+menos todas nuestras unidades solicitadas. No identifica ventas al mínimo.
+Por la noche permite cosechas ocultas por nueva producción; ignora pérdidas
+de inventario para mantener una cota superior conservadora. Si el mercado está
+vacío no supone que el pueblo haya podido consumir toda su demanda.
+
+Para los siguientes cuatro turnos añade todo producto visible aún en animales
+y sus máximos por animal si se cruza una noche. No supone rutas o inventario
+privado. El stock y ledger privado del replay sólo se leen fuera del estimador
+para contrastarlo con la verdad. Los productos MILK/WOOL/EGG no pueden comprarse;
+animales recién colocados no producen en un horizonte de cuatro turnos.
+
+Plan previo al análisis: los seis controles exactos0914, sin filtro por resultado.
+12.942 pares producto/turno cumplen cota≥stock rival real; en8.047 es exacta.
+Otras12.942 comprobaciones cumplen cota futura≥ventas aceptadas en los cuatro
+turnos siguientes. No hay nuevas simulaciones ni modificación de las fuentes.
+
+De670 cantidades de biblioteca que alcanzarían el umbral4, la cota descartaría31:
+25 deEGG, que el predictor nativo NO utiliza, y seis deMILK. El nombre histórico
+`native_signals` en el JSON cuenta cantidades crudas de `_hp_quantity` en los
+tres productos auditados; no cuenta órdenes emitidas. En las31, nuestra
+mercancía disponible tras proyectar las unidades es0 y no hay una orden final
+de ese producto. No se ha demostrado que la cota cambie una acción útil.
+
+Decisión: conservar el auditor, no crear ni encolar una candidata con esta
+motivación todavía. No es una refutación de todo uso futuro de la señal ni
+prueba de inercia universal: sólo se revisaron estos seis replays y los275
+turnos de actualización del ranking de cada uno. Antes de gastar un piloto,
+hace falta una cobertura mecánica prospectiva que cambie acciones.
+
+La primera versión falló al consultar una claveMILK ausente en el contador
+inicial vacío. Fuente, plan y traceback se archivan como v1; fue un fallo de
+salida del auditor, no violación de la cota. V2 devuelve ceros explícitos y pasa
+todos los checks. `auditar_cota_stock_rival.py` y `revisar_cota_stock_rival.py`
+reproducen análisis y contraste de acciones; evidencia `rival_stock_bound_*`.
 
 
 
@@ -5969,6 +6030,13 @@ Las fuentes exactas están en `.sources.tgz`; los replays originales siguen en
 Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nueva sube o baja la creencia.
 
 ## HIGH CONFIDENCE
+
+- **[2026-09-25, cota rival] Una señal imposible puede ser irrelevante para la acción.**
+  La cota pública de stock animal pasa12.942checks de inventario y otros12.942
+  de ventas futuras en seis controles. Descarta31cantidades de biblioteca,
+  pero25son huevo deshabilitado y las seis restantes no tienen stock propio
+  vendible. No construir otra variante por conteos internos sin acción útil.
+  Auditoría cerrada sin piloto: COTA_STOCK_RIVAL_2026-09-25.md.
 
 - **[2026-09-25, loop20 piloto] Reventa nueva: señal positiva, todavía incierta.**
   Tres tamaños+3,125pp en1.920episodios, ICdos vías[−4,647;10,897]; cuatro

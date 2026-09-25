@@ -1,5 +1,15 @@
 # Estado de investigación — leer primero para continuar
 
+## Nota 10:15 UTC — cota rival auditada; sin nueva variante
+
+`COTA_STOCK_RIVAL_2026-09-25.md` cierra una auditoría offline:12.942checks de
+stock y12.942de ventas futuras cumplen cota pública conservadora.31señales
+crudas imposibles;25sonEGGdeshabilitado, otras6MILKsin producto propio disponible.
+No cambian una orden observada: no construir ni encolar30con esta evidencia.
+V1falló clave vacía del auditor, archivada;v2válida. No se agregaron juegos.
+Confirm20avanza (2.408/3.200a10:15UTC);21–29siguen vivos en cola. Total99
+variantes más2prototipos, sin nuevo envío. No duplicar/reiniciar procesos.
+
 ## Corte operativo 10:08 UTC — 29 validado y feedback real actualizado
 
 Confirm20 continúa (3.200episodios previstos);21–29esperan en secuencia.
