@@ -1,5 +1,35 @@
 # Bitácora de experimentos
 
+## Corte operativo 11:01 UTC — confirm21 activa, prioridad31 validada y en cola
+
+Piloto21 cerró 2.016 partidas/noop352 a10:49:39UTC. Sólo `extra_half` pasa a
+confirmación: +0,5208pp vs top3, ICdos vías [−8,3859;9,4275], +23,4375vsVQ.
+Rank2 −5,2083 inconclusa; quorum −21,875 y short12 −10,4167 rechazadas en este
+panel. Todas activas en16semillas. **Confirm21 corre 1.856 partidas**, no mirar
+resultados parciales ni reiniciar;22–31 esperan en secuencia. Un torneo principal.
+
+Loop31 validado:48partidas/noop8.628, máximo364ms,162compras/cierres y8.100unidades
+exactas. Preserva cola nativa al cerrar town50. Ambas capas activas4/6; caso dirigido
+recupera369de margen y dos derrotas pasan a victorias, sin cambio de producción.
+Son desarrollos; piloto1.568 con semillas nuevas pendiente tras30. Analizador de
+tres referencias validado con fixture1.920/noop448. Fuentes congeladas y runner31
+vivo. Total103variantes competitivas más2prototipos17detenidos. Leer PRIORIDAD_CIERRE.
+
+Otra auditoría explica cinco escapes preexistentes en1080001: venta de trigo
+antes de recogidas5/2/2, almacén vacío y FEED fallidos. Un control exacto y dos
+perturbaciones válidas: conservar trigo evita1escape; conservar y comprar9 evita5,
+con cambios de cosechas y margen+120, aún victoria. Un brazo sólo compra fue
+inválido por once órdenes; archivado, no usar su resultado. **Preregistro32 escrito;
+candidatas NO construidas ni runner32**. Siguiente trabajo: implementar protección
+de déficit para recogidas nativas y validar36partidas antes de encolar tras31.
+
+API10:48:09UTC: VQ2291,5/101, top32138,5/91, COMPLETE. Seis nuevos controles
+1050 reproducen719acciones/720estados/caja; seis alternativas con rival fijo,
+ningún cambioW/L/T. Hallazgo separado: replay113252591 conserva una vaca comprada
+sin colocar; DIG33quita maleza pero no reconstruye pasto, PLACE69falla. Auditoría
+ofline exacta, reparación todavía no diseñada ni probada. Leer FEEDBACK_1050 y
+TRIGO_RUTA_TARDIA. No nuevo envío; cuota antigua no es vigente.
+
 ## Corte operativo 10:36 UTC — confirm20 cerrada, 21 activo, nueva prioridad31
 
 Confirm20 terminó10:25:05UTC:3.200episodios/noop832. Town20+0,2841pp,

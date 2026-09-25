@@ -4,12 +4,28 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, trigo de ruta] Una venta puede invalidar recogidas nativas.**
+  En1080001, R127se abstiene porque ya hay SELLWHEAT; queda0para demandas5/2/2.
+  Conservar1trigo evita un escape; conservar y comprar9evita cinco, añade7FEED,
+  pero también cambia cultivos. Margen+120, W/L/Tidéntico. Un tercer brazo fue
+  inválido por once órdenes y no aporta resultado. Loop32preinscrito, no construido.
+- **[2026-09-25, vaca sin pasto] Una reparación parcial deja infraestructura pendiente.**
+  Replay113252591 exacto: DIG33quita maleza donde debía construir pasto; el
+  trabajador sale34y PLACE_COW69falla en terreno vacío. Una vaca termina en
+  almacén sin escape/error registrado. No atribuir todo el déficit4616a esto;
+  reparación aún no probada. Evidenciafeedback_1050.unplaced_cow.
+- **[2026-09-25, piloto21] Reducir patrones secundarios en bloque suele perjudicar aquí.**
+  Quorum y horizonte12 tienen ICdos vías negativos; rank2es inconcluso.
+  Half+0,5208pp tiene intervalo amplio y sólo pasa a confirmación, no adopción.
+  Todas cambian acciones en16semillas; no resumirlas como inertes.
+
 - **[2026-09-25, confirm20] Un ciclo rentable puede perjudicar otra venta simultánea.**
   3.200partidas/noop832:20unidades+0,284pp y50+1,136pp, ICcruzan0, no envío.
   En la pérdida compartida, la reventa gana25/69pero anteponer trigo retrasa
   leche:−198propias,+171rivales. Dos fases de mercado con el mismo estado
   aíslan369de margen recuperable al preservar leche primero. No extrapolar
-  ese resultado a una política completa; preregistro31, aún por construir.
+  ese resultado a fuerza global. Desarrollo31ya reproduce+369en partida
+  completa con ambos padres; pilotos nuevos pendientes, fuentes congeladas.
 - **[2026-09-25, apertura30] Stock idéntico no significa caja o W/L/T iguales.**
   Q12/SELL7preserva cinco trigos y toda producción en48desarrollos, pero contra
   mirrorVQpierde2monedas de margen y convierte cuatro empates en derrotas.

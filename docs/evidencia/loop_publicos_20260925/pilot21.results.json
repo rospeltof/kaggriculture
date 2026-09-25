@@ -1,0 +1,480 @@
+{
+  "results": {
+    "extra_rank2": {
+      "reference": "base",
+      "candidate": "extra_rank2",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "public_hs4",
+        "public_v7",
+        "tds"
+      ],
+      "seeds": [
+        1052000,
+        1052001,
+        1052002,
+        1052003,
+        1052004,
+        1052005,
+        1052006,
+        1052007,
+        1052008,
+        1052009,
+        1052010,
+        1052011,
+        1052012,
+        1052013,
+        1052014,
+        1052015
+      ],
+      "base_wr": 85.41666666666666,
+      "candidate_wr": 80.20833333333333,
+      "delta_points": -5.208333333333333,
+      "ci95_seed": [
+        -11.46195602570588,
+        1.0452893590392147
+      ],
+      "ci95_2way": [
+        -14.523365705563453,
+        4.106699038896788
+      ],
+      "opponent_breakdown": {
+        "ars40": 0.0,
+        "arshs3": 6.25,
+        "hybu": 0.0,
+        "public_hs4": -6.25,
+        "public_v7": -12.5,
+        "tds": -18.75
+      },
+      "better_cells": 2,
+      "worse_cells": 7,
+      "equal_cells": 87,
+      "status": "INCONCLUSIVE_NOT_SELECTED",
+      "versus_vq": {
+        "reference": "vq",
+        "candidate": "extra_rank2",
+        "rivals": [
+          "ars40",
+          "arshs3",
+          "hybu",
+          "public_hs4",
+          "public_v7",
+          "tds"
+        ],
+        "seeds": [
+          1052000,
+          1052001,
+          1052002,
+          1052003,
+          1052004,
+          1052005,
+          1052006,
+          1052007,
+          1052008,
+          1052009,
+          1052010,
+          1052011,
+          1052012,
+          1052013,
+          1052014,
+          1052015
+        ],
+        "base_wr": 62.5,
+        "candidate_wr": 80.20833333333333,
+        "delta_points": 17.708333333333332,
+        "ci95_seed": [
+          9.460433711137036,
+          25.95623295552963
+        ],
+        "ci95_2way": [
+          -2.928992629941913,
+          38.345659296608574
+        ],
+        "opponent_breakdown": {
+          "ars40": 6.25,
+          "arshs3": -12.5,
+          "hybu": 18.75,
+          "public_hs4": 50.0,
+          "public_v7": 25.0,
+          "tds": 18.75
+        },
+        "better_cells": 20,
+        "worse_cells": 3,
+        "equal_cells": 73
+      }
+    },
+    "extra_quorum": {
+      "reference": "base",
+      "candidate": "extra_quorum",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "public_hs4",
+        "public_v7",
+        "tds"
+      ],
+      "seeds": [
+        1052000,
+        1052001,
+        1052002,
+        1052003,
+        1052004,
+        1052005,
+        1052006,
+        1052007,
+        1052008,
+        1052009,
+        1052010,
+        1052011,
+        1052012,
+        1052013,
+        1052014,
+        1052015
+      ],
+      "base_wr": 85.41666666666666,
+      "candidate_wr": 63.54166666666666,
+      "delta_points": -21.875,
+      "ci95_seed": [
+        -35.9054501596941,
+        -7.8445498403059
+      ],
+      "ci95_2way": [
+        -42.662938780076225,
+        -1.0870612199237755
+      ],
+      "opponent_breakdown": {
+        "ars40": 0.0,
+        "arshs3": -6.25,
+        "hybu": -18.75,
+        "public_hs4": -43.75,
+        "public_v7": -37.5,
+        "tds": -25.0
+      },
+      "better_cells": 4,
+      "worse_cells": 25,
+      "equal_cells": 67,
+      "status": "REJECTED",
+      "versus_vq": {
+        "reference": "vq",
+        "candidate": "extra_quorum",
+        "rivals": [
+          "ars40",
+          "arshs3",
+          "hybu",
+          "public_hs4",
+          "public_v7",
+          "tds"
+        ],
+        "seeds": [
+          1052000,
+          1052001,
+          1052002,
+          1052003,
+          1052004,
+          1052005,
+          1052006,
+          1052007,
+          1052008,
+          1052009,
+          1052010,
+          1052011,
+          1052012,
+          1052013,
+          1052014,
+          1052015
+        ],
+        "base_wr": 62.5,
+        "candidate_wr": 63.541666666666664,
+        "delta_points": 1.0416666666666667,
+        "ci95_seed": [
+          -8.937160677207286,
+          11.020494010540618
+        ],
+        "ci95_2way": [
+          -15.657916080049025,
+          17.74124941338236
+        ],
+        "opponent_breakdown": {
+          "ars40": 6.25,
+          "arshs3": -25.0,
+          "hybu": 0.0,
+          "public_hs4": 12.5,
+          "public_v7": 0.0,
+          "tds": 12.5
+        },
+        "better_cells": 6,
+        "worse_cells": 5,
+        "equal_cells": 85
+      }
+    },
+    "extra_half": {
+      "reference": "base",
+      "candidate": "extra_half",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "public_hs4",
+        "public_v7",
+        "tds"
+      ],
+      "seeds": [
+        1052000,
+        1052001,
+        1052002,
+        1052003,
+        1052004,
+        1052005,
+        1052006,
+        1052007,
+        1052008,
+        1052009,
+        1052010,
+        1052011,
+        1052012,
+        1052013,
+        1052014,
+        1052015
+      ],
+      "base_wr": 85.41666666666666,
+      "candidate_wr": 85.93749999999999,
+      "delta_points": 0.5208333333333334,
+      "ci95_seed": [
+        -5.646802088647301,
+        6.688468755313967
+      ],
+      "ci95_2way": [
+        -8.38586972464112,
+        9.427536391307788
+      ],
+      "opponent_breakdown": {
+        "ars40": 6.25,
+        "arshs3": 12.5,
+        "hybu": -3.125,
+        "public_hs4": 0.0,
+        "public_v7": -6.25,
+        "tds": -6.25
+      },
+      "better_cells": 3,
+      "worse_cells": 3,
+      "equal_cells": 90,
+      "status": "PROMISING",
+      "versus_vq": {
+        "reference": "vq",
+        "candidate": "extra_half",
+        "rivals": [
+          "ars40",
+          "arshs3",
+          "hybu",
+          "public_hs4",
+          "public_v7",
+          "tds"
+        ],
+        "seeds": [
+          1052000,
+          1052001,
+          1052002,
+          1052003,
+          1052004,
+          1052005,
+          1052006,
+          1052007,
+          1052008,
+          1052009,
+          1052010,
+          1052011,
+          1052012,
+          1052013,
+          1052014,
+          1052015
+        ],
+        "base_wr": 62.5,
+        "candidate_wr": 85.9375,
+        "delta_points": 23.4375,
+        "ci95_seed": [
+          12.295569870940712,
+          34.57943012905929
+        ],
+        "ci95_2way": [
+          0.6495232180156876,
+          46.22547678198431
+        ],
+        "opponent_breakdown": {
+          "ars40": 12.5,
+          "arshs3": -6.25,
+          "hybu": 15.625,
+          "public_hs4": 56.25,
+          "public_v7": 31.25,
+          "tds": 31.25
+        },
+        "better_cells": 25,
+        "worse_cells": 3,
+        "equal_cells": 68
+      }
+    },
+    "extra_short12": {
+      "reference": "base",
+      "candidate": "extra_short12",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "public_hs4",
+        "public_v7",
+        "tds"
+      ],
+      "seeds": [
+        1052000,
+        1052001,
+        1052002,
+        1052003,
+        1052004,
+        1052005,
+        1052006,
+        1052007,
+        1052008,
+        1052009,
+        1052010,
+        1052011,
+        1052012,
+        1052013,
+        1052014,
+        1052015
+      ],
+      "base_wr": 85.41666666666666,
+      "candidate_wr": 74.99999999999999,
+      "delta_points": -10.416666666666666,
+      "ci95_seed": [
+        -18.91961489055774,
+        -1.9137184427755933
+      ],
+      "ci95_2way": [
+        -19.040294115552342,
+        -1.7930392177809882
+      ],
+      "opponent_breakdown": {
+        "ars40": -12.5,
+        "arshs3": -6.25,
+        "hybu": -6.25,
+        "public_hs4": -6.25,
+        "public_v7": -25.0,
+        "tds": -6.25
+      },
+      "better_cells": 2,
+      "worse_cells": 12,
+      "equal_cells": 82,
+      "status": "REJECTED",
+      "versus_vq": {
+        "reference": "vq",
+        "candidate": "extra_short12",
+        "rivals": [
+          "ars40",
+          "arshs3",
+          "hybu",
+          "public_hs4",
+          "public_v7",
+          "tds"
+        ],
+        "seeds": [
+          1052000,
+          1052001,
+          1052002,
+          1052003,
+          1052004,
+          1052005,
+          1052006,
+          1052007,
+          1052008,
+          1052009,
+          1052010,
+          1052011,
+          1052012,
+          1052013,
+          1052014,
+          1052015
+        ],
+        "base_wr": 62.5,
+        "candidate_wr": 75.0,
+        "delta_points": 12.5,
+        "ci95_seed": [
+          1.9918120290141204,
+          23.00818797098588
+        ],
+        "ci95_2way": [
+          -14.757385800851363,
+          39.75738580085137
+        ],
+        "opponent_breakdown": {
+          "ars40": -6.25,
+          "arshs3": -25.0,
+          "hybu": 12.5,
+          "public_hs4": 50.0,
+          "public_v7": 12.5,
+          "tds": 31.25
+        },
+        "better_cells": 20,
+        "worse_cells": 8,
+        "equal_cells": 68
+      }
+    },
+    "vq": {
+      "reference": "base",
+      "candidate": "vq",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "hybu",
+        "public_hs4",
+        "public_v7",
+        "tds"
+      ],
+      "seeds": [
+        1052000,
+        1052001,
+        1052002,
+        1052003,
+        1052004,
+        1052005,
+        1052006,
+        1052007,
+        1052008,
+        1052009,
+        1052010,
+        1052011,
+        1052012,
+        1052013,
+        1052014,
+        1052015
+      ],
+      "base_wr": 85.41666666666666,
+      "candidate_wr": 62.499999999999986,
+      "delta_points": -22.916666666666668,
+      "ci95_seed": [
+        -34.5527494465464,
+        -11.280583886786934
+      ],
+      "ci95_2way": [
+        -51.235129818559635,
+        5.401796485226299
+      ],
+      "opponent_breakdown": {
+        "ars40": -6.25,
+        "arshs3": 18.75,
+        "hybu": -18.75,
+        "public_hs4": -56.25,
+        "public_v7": -37.5,
+        "tds": -37.5
+      },
+      "better_cells": 4,
+      "worse_cells": 26,
+      "equal_cells": 66,
+      "status": "DIAGNOSTIC_CONTROL_ONLY"
+    }
+  },
+  "selected_for_confirmation": [
+    "extra_half"
+  ]
+}

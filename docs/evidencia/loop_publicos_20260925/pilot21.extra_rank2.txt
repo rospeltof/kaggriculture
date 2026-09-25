@@ -1,0 +1,20 @@
+  (extra, no entra en la estimacion) base vs extra_half: 75.0% (32 ep)
+  (extra, no entra en la estimacion) extra_rank2 vs extra_half: 25.0% (32 ep)
+  (extra, no entra en la estimacion) base vs extra_quorum: 81.2% (32 ep)
+  (extra, no entra en la estimacion) extra_rank2 vs extra_quorum: 75.0% (32 ep)
+  (extra, no entra en la estimacion) base vs extra_short12: 90.6% (32 ep)
+  (extra, no entra en la estimacion) extra_rank2 vs extra_short12: 50.0% (32 ep)
+  (extra, no entra en la estimacion) base vs noop: 50.0% (32 ep)
+  (extra, no entra en la estimacion) extra_rank2 vs noop: 12.5% (32 ep)
+  (extra, no entra en la estimacion) base vs vq: 75.0% (32 ep)
+  (extra, no entra en la estimacion) extra_rank2 vs vq: 84.4% (32 ep)
+extra_rank2 - base: 6 rivales x 16 semillas = 96 celdas; ref 85.4%
+  delta -5.21 pts | IC95 semilla [-11.46; +1.05] | dos vias [-14.52; +4.11]
+  celdas cambiadas 9/96: 2 a favor, 7 en contra
+    vs    ars40   +0.0
+    vs   arshs3   +6.2
+    vs     hybu   +0.0
+    vs public_hs4   -6.2
+    vs public_v7  -12.5
+    vs      tds  -18.8
+  directo extra_rank2 vs base: 12.5% (32 ep)

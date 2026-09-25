@@ -1,0 +1,171 @@
+{
+  "passed": true,
+  "full_games": 1,
+  "exact_both_action_hashes": [
+    "898864a7e15d3f16921e599145a6a11a67102c606581aa3afd56ae16eb78faff",
+    "c0e775a83a02104d83c48c1fb6eb00fa5c40b9f9be4a422cb33f093226867a6c"
+  ],
+  "rewards": [
+    78045.0,
+    76774.0
+  ],
+  "actions_traced": 95,
+  "source_sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976",
+  "escapes": [
+    [
+      {
+        "step": 695,
+        "x": 3,
+        "y": 2,
+        "animal": "GOOSE"
+      },
+      {
+        "step": 695,
+        "x": 4,
+        "y": 2,
+        "animal": "COW"
+      },
+      {
+        "step": 695,
+        "x": 6,
+        "y": 2,
+        "animal": "SHEEP"
+      },
+      {
+        "step": 695,
+        "x": 3,
+        "y": 3,
+        "animal": "SHEEP"
+      },
+      {
+        "step": 695,
+        "x": 4,
+        "y": 3,
+        "animal": "COW"
+      }
+    ],
+    [
+      {
+        "step": 647,
+        "x": 3,
+        "y": 2,
+        "animal": "GOOSE"
+      }
+    ]
+  ],
+  "reports": {
+    "_R85_REPORT": {
+      "feed_skips": 20,
+      "fert_sale_turns": 0,
+      "fert_sale_units": 0,
+      "economic_overlay_errors": 0,
+      "parent_input_guard_turns": 0,
+      "parent_input_guard_extra_units": 0,
+      "parent_input_requests": 0,
+      "parent_input_confirmed": 0,
+      "parent_input_shortfalls": 0,
+      "parent_input_errors": 0,
+      "parent_input_capacity_declines": 0,
+      "warehouse_changed_turns": 0,
+      "warehouse_extra_sales": 0,
+      "warehouse_projected_unresolved": 18,
+      "warehouse_errors": 0,
+      "input_hire_requests": 3,
+      "input_confirmed_hires": 3,
+      "input_hire_errors": 0,
+      "input_purchase_requests": 21,
+      "input_loaded_units": 21,
+      "input_stock_shortfalls": 0,
+      "input_application_requests": 20,
+      "input_confirmed_applications": 20,
+      "input_application_errors": 0,
+      "input_errors": 0,
+      "input_forecast_wheat": 14,
+      "input_forecast_carrot": 14,
+      "sale_reserved_units": 167,
+      "sale_reservations": 21,
+      "sale_errors": 0,
+      "commitments": 0,
+      "hire_requests": 0,
+      "confirmed_workers": 0,
+      "hire_shortfalls": 0,
+      "plant_requests": 0,
+      "confirmed_plants": 0,
+      "water_requests": 0,
+      "fertilize_requests": 0,
+      "harvest_requests": 0,
+      "confirmed_harvest_units": 0,
+      "drop_requests": 0,
+      "tomato_sale_requests": 0,
+      "budget_declines": 0,
+      "lost_plants": 0,
+      "extra_fertilizer_days": 0,
+      "reordered_market_turns": 83,
+      "errors": 0,
+      "cattle_confirmed": 0,
+      "cattle_reserved": 0,
+      "cattle_requested": 0,
+      "cattle_failed_purchase_units": 0,
+      "cattle_picked": 0,
+      "cattle_placed": 0,
+      "cattle_failed_placements": 0,
+      "cattle_extra_milk_harvested": 0,
+      "cattle_extra_milk_sale_requests": 0,
+      "cattle_milk_credit": 0,
+      "cattle_carried_pending": 0,
+      "quote_reordered_turns": 21,
+      "three_turn_calls": 312,
+      "nocturne_errors": 0,
+      "probe_matches": 1,
+      "probe_four_turn_calls": 283,
+      "probe_errors": 0,
+      "release_errors": 0,
+      "sheep_commit_requests": 0,
+      "sheep_committed": 0,
+      "sheep_hire_requests": 0,
+      "sheep_workers_confirmed": 0,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 0,
+      "sheep_wool_harvested": 0,
+      "sheep_fert_collected": 0,
+      "sheep_extra_wool_sales": 0,
+      "sheep_extra_fert_sales": 0,
+      "sheep_rescue_feed_requests": 0,
+      "labor_requests": 0,
+      "labor_hires_avoided": 0,
+      "labor_spawn_errors": 0,
+      "labor_confirmed": 0,
+      "labor_day26": 0,
+      "labor_day27": 0,
+      "labor_day28": 0
+    },
+    "_V233_REPORT": {
+      "sheep_commit_requests": 0,
+      "sheep_committed": 0,
+      "sheep_hire_requests": 0,
+      "sheep_workers_confirmed": 0,
+      "sheep_hire_shortfalls": 0,
+      "sheep_budget_declines": 0,
+      "sheep_capacity_declines": 0,
+      "sheep_purchase_shortfalls": 0,
+      "sheep_feed_buy_requests": 0,
+      "sheep_wool_harvested": 0,
+      "sheep_fert_collected": 0,
+      "sheep_extra_wool_sales": 0,
+      "sheep_extra_fert_sales": 0,
+      "sheep_rescue_feed_requests": 0
+    },
+    "_VQ_REPORT": {
+      "changed_turns": 75,
+      "holes_removed": 136,
+      "dead_sales": 26,
+      "dead_land": 0,
+      "shifted_orders": 57,
+      "shifted_slots": 77,
+      "errors": 0
+    }
+  }
+}

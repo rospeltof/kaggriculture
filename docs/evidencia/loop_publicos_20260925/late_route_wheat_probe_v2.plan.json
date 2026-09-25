@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-09-25T10:56:15.137884+00:00",
+  "control": {
+    "created_at": "2026-09-25T10:52:07.353241+00:00",
+    "seed": 1080001,
+    "seat": 0,
+    "reason": "Five own animals escape at695 in every one of the eight loop31 development arms. Reproduce the base once; explain the existing event before considering a change. No new policy or causal benefit claim.",
+    "source": {
+      "path": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "opponent": {
+      "path": "submission/main_publico_v13_thomastschinkel.py",
+      "sha256": "9d63494603f88219857a3101d7dc19cc750ded04e5886732ee428580326967d9"
+    },
+    "expected_rewards": [
+      78045.0,
+      76774.0
+    ],
+    "expected_hashes": [
+      "898864a7e15d3f16921e599145a6a11a67102c606581aa3afd56ae16eb78faff",
+      "c0e775a83a02104d83c48c1fb6eb00fa5c40b9f9be4a422cb33f093226867a6c"
+    ]
+  },
+  "step": 649,
+  "quantity": 9,
+  "arms": [
+    "drop_sale_buy9"
+  ],
+  "reason": "At650 three native workers request5+2+2 wheat and receive zero after the sale at649. Execute only the preregistered combined intervention. v1 completed drop_sale, then correctly failed buy9 because it would exceed ten orders; preserve that failure. This combined arm removes one sale before adding one buy, so it has ten. No repeat of the completed control or drop_sale. Not deployable, no population WLT estimate."
+}

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "new_simulations": 0,
+  "fixture": "pilot20 relabelled only in a temporary copy",
+  "fixture_episodes": 1920,
+  "fixture_noop_exact": 448,
+  "all_three_comparisons_exclude_controls": true,
+  "old_control_never_eligible": true,
+  "manual_third_reference_and_changed_seeds_verified": true,
+  "gate_edges_passed": true,
+  "analysis_source_sha256": "9e5f4067a08a6d73d986b0fb3219e70f66ea684455eef146de92a4af3ed7da08"
+}

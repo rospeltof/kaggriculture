@@ -1,0 +1,90 @@
+{
+  "agentes": {
+    "base": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "noop": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "extra_rank2": {
+      "ruta": "results/senales_extra_20260925/extra_rank2.py",
+      "sha256": "d9f520c9312d6304f74e60a03566662fe7d88ef65a403f9eab1a08cfbfebb931"
+    },
+    "extra_quorum": {
+      "ruta": "results/senales_extra_20260925/extra_quorum.py",
+      "sha256": "2a8680a8e4ab4aec169df0fa75ad26fb155a5fb330f0891f45a840217fcb0707"
+    },
+    "extra_half": {
+      "ruta": "results/senales_extra_20260925/extra_half.py",
+      "sha256": "20a844695162c53a6740ab95eb310275f8e146eb337712a4f2ae22289e5f6e84"
+    },
+    "extra_short12": {
+      "ruta": "results/senales_extra_20260925/extra_short12.py",
+      "sha256": "9f67610b54927d1be7927bfc1b533afdc1c6091f3762671a73436f90c36340b0"
+    },
+    "vq": {
+      "ruta": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "tds": {
+      "ruta": "submission/main_publico_tds_tetsutani.py",
+      "sha256": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a"
+    },
+    "hybu": {
+      "ruta": "results/publicos/wzhengbiao_kaggriculture-hybu-submit/main.py",
+      "sha256": "f6175fd1bc3850f74185e7a813bb5a87d54e7e15212c874133dafc6e1ce91d34"
+    },
+    "ars40": {
+      "ruta": "results/publicos/arsgorynich_kaggriculture-v40-challenger/main.py",
+      "sha256": "d5a192fac67f00da31fe2bc7b747b8c33766bf1024780c53e49f2292a97db2de"
+    },
+    "arshs3": {
+      "ruta": "submission/main_publico_arshs3_arsgorynich.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    },
+    "public_v7": {
+      "ruta": "results/publicos_0548_20260925/haideptry_the-2965-master-hybrid-engine/main.py",
+      "sha256": "cda529cb6b359fc4a9ab124d4d7950d5912bd5de846dcec4be70ca83b7150b2d"
+    },
+    "public_hs4": {
+      "ruta": "results/publicos_0548_20260925/haideptry_the-shepherds-ledger-herd-safe-sovereign/main.py",
+      "sha256": "8378f73c82db7624ce5d0369cf896aa0761a662af147b119f67254f1f8634c56"
+    }
+  },
+  "seeds": [
+    1052000,
+    1052001,
+    1052002,
+    1052003,
+    1052004,
+    1052005,
+    1052006,
+    1052007,
+    1052008,
+    1052009,
+    1052010,
+    1052011,
+    1052012,
+    1052013,
+    1052014,
+    1052015
+  ],
+  "vs": "base,noop,extra_rank2,extra_quorum,extra_half,extra_short12,vq",
+  "inicio": "2026-09-25 05:25:10",
+  "state": "complete",
+  "expected_episodes": 2016,
+  "workers": 8,
+  "runtime": {
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+    "multiprocessing_start_method": "spawn",
+    "python_hash_seed": "0",
+    "wheat_hash": 8460755321718155249
+  },
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "27916eb54d67d769f87081c03b067c64afdb4a55faf6cf4ab1bed78d7dfe0c52",
+  "completed_episodes": 2016,
+  "fin": "2026-09-25 05:49:39"
+}

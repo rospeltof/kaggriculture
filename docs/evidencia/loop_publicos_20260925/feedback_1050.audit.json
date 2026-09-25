@@ -1,0 +1,2899 @@
+{
+  "plan": {
+    "created_at": "2026-09-25T10:48:24.900427+00:00",
+    "rule": "Latest four completed public episodes by endTime per active policy, then exclude all previously planned source-control feedback before downloading or seeing rewards. Recency evidence, not population WR.",
+    "selected": [
+      {
+        "policy": "top3",
+        "submission_id": 56537205,
+        "id": 113246377,
+        "createTime": "2026-09-25T10:22:06.889000",
+        "endTime": "2026-09-25T10:26:51.496000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      {
+        "policy": "top3",
+        "submission_id": 56537205,
+        "id": 113241474,
+        "createTime": "2026-09-25T10:06:05.891000",
+        "endTime": "2026-09-25T10:11:07.393000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      {
+        "policy": "top3",
+        "submission_id": 56537205,
+        "id": 113242063,
+        "createTime": "2026-09-25T10:06:07.085000",
+        "endTime": "2026-09-25T10:10:37.592000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      {
+        "policy": "vq",
+        "submission_id": 56535264,
+        "id": 113252591,
+        "createTime": "2026-09-25T10:42:21.792000",
+        "endTime": "2026-09-25T10:46:34.309000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      {
+        "policy": "vq",
+        "submission_id": 56535264,
+        "id": 113244583,
+        "createTime": "2026-09-25T10:14:10.645000",
+        "endTime": "2026-09-25T10:17:49.415000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      },
+      {
+        "policy": "vq",
+        "submission_id": 56535264,
+        "id": 113244584,
+        "createTime": "2026-09-25T10:14:10.646000",
+        "endTime": "2026-09-25T10:16:17.208000",
+        "state": "EpisodeState.COMPLETED",
+        "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+      }
+    ]
+  },
+  "results": [
+    {
+      "episode": 113246377,
+      "policy": "top3",
+      "opponent": "Miz",
+      "seed": 886880132,
+      "seat": 0,
+      "source_sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
+      "replay_sha256": "fbc4568187c10150a2b500df7de944596d646236f31b047f238a781864acea5d",
+      "own_actions_exact": 719,
+      "states_exact": 720,
+      "max_turn_ms": 111.24445800669491,
+      "empty_wheat_pickups": [],
+      "reports": {
+        "_VQ_REPORT": {
+          "changed_turns": 54,
+          "holes_removed": 98,
+          "dead_sales": 17,
+          "dead_land": 0,
+          "shifted_orders": 48,
+          "shifted_slots": 50,
+          "errors": 0
+        },
+        "_V92_P_REPORT": {
+          "pred_units": 65,
+          "pred_fires": 8,
+          "pred_errors": 0
+        },
+        "_V233_REPORT": {
+          "sheep_commit_requests": 0,
+          "sheep_committed": 0,
+          "sheep_hire_requests": 0,
+          "sheep_workers_confirmed": 0,
+          "sheep_hire_shortfalls": 0,
+          "sheep_budget_declines": 0,
+          "sheep_capacity_declines": 0,
+          "sheep_purchase_shortfalls": 0,
+          "sheep_feed_buy_requests": 0,
+          "sheep_wool_harvested": 0,
+          "sheep_fert_collected": 0,
+          "sheep_extra_wool_sales": 0,
+          "sheep_extra_fert_sales": 0,
+          "sheep_rescue_feed_requests": 0
+        },
+        "_R85_REPORT": {
+          "feed_skips": 17,
+          "fert_sale_turns": 0,
+          "fert_sale_units": 0,
+          "economic_overlay_errors": 0,
+          "parent_input_guard_turns": 0,
+          "parent_input_guard_extra_units": 0,
+          "parent_input_requests": 0,
+          "parent_input_confirmed": 0,
+          "parent_input_shortfalls": 0,
+          "parent_input_errors": 0,
+          "parent_input_capacity_declines": 0,
+          "warehouse_changed_turns": 0,
+          "warehouse_extra_sales": 0,
+          "warehouse_projected_unresolved": 18,
+          "warehouse_errors": 0,
+          "input_hire_requests": 5,
+          "input_confirmed_hires": 5,
+          "input_hire_errors": 0,
+          "input_purchase_requests": 32,
+          "input_loaded_units": 32,
+          "input_stock_shortfalls": 0,
+          "input_application_requests": 31,
+          "input_confirmed_applications": 31,
+          "input_application_errors": 0,
+          "input_errors": 0,
+          "input_forecast_wheat": 58,
+          "input_forecast_carrot": 3,
+          "sale_reserved_units": 400,
+          "sale_reservations": 51,
+          "sale_errors": 0,
+          "commitments": 0,
+          "hire_requests": 0,
+          "confirmed_workers": 0,
+          "hire_shortfalls": 0,
+          "plant_requests": 0,
+          "confirmed_plants": 0,
+          "water_requests": 0,
+          "fertilize_requests": 0,
+          "harvest_requests": 0,
+          "confirmed_harvest_units": 0,
+          "drop_requests": 0,
+          "tomato_sale_requests": 0,
+          "budget_declines": 0,
+          "lost_plants": 0,
+          "extra_fertilizer_days": 0,
+          "reordered_market_turns": 131,
+          "errors": 0,
+          "cattle_confirmed": 0,
+          "cattle_reserved": 0,
+          "cattle_requested": 0,
+          "cattle_failed_purchase_units": 0,
+          "cattle_picked": 0,
+          "cattle_placed": 0,
+          "cattle_failed_placements": 0,
+          "cattle_extra_milk_harvested": 0,
+          "cattle_extra_milk_sale_requests": 0,
+          "cattle_milk_credit": 0,
+          "cattle_carried_pending": 0,
+          "quote_reordered_turns": 31,
+          "three_turn_calls": 312,
+          "nocturne_errors": 0,
+          "probe_matches": 1,
+          "probe_four_turn_calls": 283,
+          "probe_errors": 0,
+          "release_errors": 0,
+          "sheep_commit_requests": 0,
+          "sheep_committed": 0,
+          "sheep_hire_requests": 0,
+          "sheep_workers_confirmed": 0,
+          "sheep_hire_shortfalls": 0,
+          "sheep_budget_declines": 0,
+          "sheep_capacity_declines": 0,
+          "sheep_purchase_shortfalls": 0,
+          "sheep_feed_buy_requests": 0,
+          "sheep_wool_harvested": 0,
+          "sheep_fert_collected": 0,
+          "sheep_extra_wool_sales": 0,
+          "sheep_extra_fert_sales": 0,
+          "sheep_rescue_feed_requests": 0,
+          "labor_requests": 0,
+          "labor_hires_avoided": 0,
+          "labor_spawn_errors": 0,
+          "labor_confirmed": 0,
+          "labor_day26": 0,
+          "labor_day27": 0,
+          "labor_day28": 0
+        }
+      },
+      "rewards": [
+        138933.0,
+        139130.0
+      ],
+      "margin": -197.0,
+      "cashflow": [
+        [
+          {
+            "op": "BUY_PRODUCT",
+            "item": "WHEAT",
+            "units": 122,
+            "cash": -4396
+          },
+          {
+            "op": "SELL",
+            "item": "WHEAT",
+            "units": 389,
+            "cash": 16430
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "WHEAT",
+            "units": 164,
+            "cash": -1640
+          },
+          {
+            "op": "HIRE",
+            "item": null,
+            "units": 268,
+            "cash": -4397.0
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "COW",
+            "units": 8,
+            "cash": -3200
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "SHEEP",
+            "units": 6,
+            "cash": -3000
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "MELON",
+            "units": 12,
+            "cash": -960
+          },
+          {
+            "op": "SELL",
+            "item": "FERTILIZER",
+            "units": 338,
+            "cash": 15761
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "STRAWBERRY",
+            "units": 33,
+            "cash": -3300
+          },
+          {
+            "op": "SELL",
+            "item": "WOOL",
+            "units": 136,
+            "cash": 11553
+          },
+          {
+            "op": "BUY_LAND",
+            "item": null,
+            "units": 2,
+            "cash": -3000.0
+          },
+          {
+            "op": "BUY_PRODUCT",
+            "item": "FERTILIZER",
+            "units": 98,
+            "cash": -3207
+          },
+          {
+            "op": "SELL",
+            "item": "MILK",
+            "units": 245,
+            "cash": 46461
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "GOOSE",
+            "units": 3,
+            "cash": -900
+          },
+          {
+            "op": "SELL",
+            "item": "MELON",
+            "units": 72,
+            "cash": 14267
+          },
+          {
+            "op": "SELL",
+            "item": "EGG",
+            "units": 89,
+            "cash": 3935
+          },
+          {
+            "op": "SELL",
+            "item": "STRAWBERRY",
+            "units": 247,
+            "cash": 52064
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "CARROT",
+            "units": 31,
+            "cash": -620
+          },
+          {
+            "op": "SELL",
+            "item": "CARROT",
+            "units": 97,
+            "cash": 4082
+          }
+        ],
+        [
+          {
+            "op": "BUY_PRODUCT",
+            "item": "WHEAT",
+            "units": 122,
+            "cash": -4396
+          },
+          {
+            "op": "SELL",
+            "item": "WHEAT",
+            "units": 389,
+            "cash": 16430
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "WHEAT",
+            "units": 164,
+            "cash": -1640
+          },
+          {
+            "op": "HIRE",
+            "item": null,
+            "units": 268,
+            "cash": -4397.0
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "COW",
+            "units": 8,
+            "cash": -3200
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "SHEEP",
+            "units": 6,
+            "cash": -3000
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "MELON",
+            "units": 12,
+            "cash": -960
+          },
+          {
+            "op": "SELL",
+            "item": "FERTILIZER",
+            "units": 338,
+            "cash": 15746
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "STRAWBERRY",
+            "units": 33,
+            "cash": -3300
+          },
+          {
+            "op": "SELL",
+            "item": "WOOL",
+            "units": 136,
+            "cash": 11864
+          },
+          {
+            "op": "BUY_LAND",
+            "item": null,
+            "units": 2,
+            "cash": -3000.0
+          },
+          {
+            "op": "BUY_PRODUCT",
+            "item": "FERTILIZER",
+            "units": 98,
+            "cash": -3213
+          },
+          {
+            "op": "SELL",
+            "item": "MILK",
+            "units": 245,
+            "cash": 46496
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "GOOSE",
+            "units": 3,
+            "cash": -900
+          },
+          {
+            "op": "SELL",
+            "item": "MELON",
+            "units": 72,
+            "cash": 14267
+          },
+          {
+            "op": "SELL",
+            "item": "EGG",
+            "units": 89,
+            "cash": 3935
+          },
+          {
+            "op": "SELL",
+            "item": "STRAWBERRY",
+            "units": 247,
+            "cash": 51936
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "CARROT",
+            "units": 31,
+            "cash": -620
+          },
+          {
+            "op": "SELL",
+            "item": "CARROT",
+            "units": 97,
+            "cash": 4082
+          }
+        ]
+      ],
+      "escapes": [
+        [],
+        []
+      ],
+      "final_composition": [
+        {
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6,
+          "COOP": 1
+        },
+        {
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6,
+          "COOP": 1
+        }
+      ],
+      "terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "episode": 113241474,
+      "policy": "top3",
+      "opponent": "willam wu",
+      "seed": 1992305918,
+      "seat": 1,
+      "source_sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
+      "replay_sha256": "d17dda3c8d9ad102a1ccf6f8e0700abf917abe974fea56473fa50d02545e63d3",
+      "own_actions_exact": 719,
+      "states_exact": 720,
+      "max_turn_ms": 105.65733298426494,
+      "empty_wheat_pickups": [],
+      "reports": {
+        "_VQ_REPORT": {
+          "changed_turns": 65,
+          "holes_removed": 116,
+          "dead_sales": 20,
+          "dead_land": 0,
+          "shifted_orders": 45,
+          "shifted_slots": 47,
+          "errors": 0
+        },
+        "_V92_P_REPORT": {
+          "pred_units": 117,
+          "pred_fires": 23,
+          "pred_errors": 0
+        },
+        "_V233_REPORT": {
+          "sheep_commit_requests": 0,
+          "sheep_committed": 0,
+          "sheep_hire_requests": 0,
+          "sheep_workers_confirmed": 0,
+          "sheep_hire_shortfalls": 0,
+          "sheep_budget_declines": 0,
+          "sheep_capacity_declines": 0,
+          "sheep_purchase_shortfalls": 0,
+          "sheep_feed_buy_requests": 0,
+          "sheep_wool_harvested": 0,
+          "sheep_fert_collected": 0,
+          "sheep_extra_wool_sales": 0,
+          "sheep_extra_fert_sales": 0,
+          "sheep_rescue_feed_requests": 0
+        },
+        "_R85_REPORT": {
+          "feed_skips": 66,
+          "fert_sale_turns": 0,
+          "fert_sale_units": 0,
+          "economic_overlay_errors": 0,
+          "parent_input_guard_turns": 0,
+          "parent_input_guard_extra_units": 0,
+          "parent_input_requests": 0,
+          "parent_input_confirmed": 0,
+          "parent_input_shortfalls": 0,
+          "parent_input_errors": 0,
+          "parent_input_capacity_declines": 0,
+          "warehouse_changed_turns": 0,
+          "warehouse_extra_sales": 0,
+          "warehouse_projected_unresolved": 0,
+          "warehouse_errors": 0,
+          "input_hire_requests": 4,
+          "input_confirmed_hires": 4,
+          "input_hire_errors": 0,
+          "input_purchase_requests": 26,
+          "input_loaded_units": 26,
+          "input_stock_shortfalls": 0,
+          "input_application_requests": 25,
+          "input_confirmed_applications": 25,
+          "input_application_errors": 0,
+          "input_errors": 0,
+          "input_forecast_wheat": 46,
+          "input_forecast_carrot": 3,
+          "sale_reserved_units": 387,
+          "sale_reservations": 56,
+          "sale_errors": 0,
+          "commitments": 0,
+          "hire_requests": 0,
+          "confirmed_workers": 0,
+          "hire_shortfalls": 0,
+          "plant_requests": 0,
+          "confirmed_plants": 0,
+          "water_requests": 0,
+          "fertilize_requests": 0,
+          "harvest_requests": 0,
+          "confirmed_harvest_units": 0,
+          "drop_requests": 0,
+          "tomato_sale_requests": 0,
+          "budget_declines": 0,
+          "lost_plants": 0,
+          "extra_fertilizer_days": 0,
+          "reordered_market_turns": 131,
+          "errors": 0,
+          "cattle_confirmed": 0,
+          "cattle_reserved": 0,
+          "cattle_requested": 0,
+          "cattle_failed_purchase_units": 0,
+          "cattle_picked": 0,
+          "cattle_placed": 0,
+          "cattle_failed_placements": 0,
+          "cattle_extra_milk_harvested": 0,
+          "cattle_extra_milk_sale_requests": 0,
+          "cattle_milk_credit": 0,
+          "cattle_carried_pending": 0,
+          "quote_reordered_turns": 25,
+          "three_turn_calls": 312,
+          "nocturne_errors": 0,
+          "probe_matches": 1,
+          "probe_four_turn_calls": 283,
+          "probe_errors": 0,
+          "release_errors": 0,
+          "sheep_commit_requests": 0,
+          "sheep_committed": 0,
+          "sheep_hire_requests": 0,
+          "sheep_workers_confirmed": 0,
+          "sheep_hire_shortfalls": 0,
+          "sheep_budget_declines": 0,
+          "sheep_capacity_declines": 0,
+          "sheep_purchase_shortfalls": 0,
+          "sheep_feed_buy_requests": 0,
+          "sheep_wool_harvested": 0,
+          "sheep_fert_collected": 0,
+          "sheep_extra_wool_sales": 0,
+          "sheep_extra_fert_sales": 0,
+          "sheep_rescue_feed_requests": 0,
+          "labor_requests": 0,
+          "labor_hires_avoided": 0,
+          "labor_spawn_errors": 0,
+          "labor_confirmed": 0,
+          "labor_day26": 0,
+          "labor_day27": 0,
+          "labor_day28": 0
+        }
+      },
+      "rewards": [
+        106374.0,
+        106590.0
+      ],
+      "margin": 216.0,
+      "cashflow": [
+        [
+          {
+            "op": "BUY_PRODUCT",
+            "item": "WHEAT",
+            "units": 122,
+            "cash": -4402
+          },
+          {
+            "op": "SELL",
+            "item": "WHEAT",
+            "units": 419,
+            "cash": 16907
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "WHEAT",
+            "units": 162,
+            "cash": -1620
+          },
+          {
+            "op": "HIRE",
+            "item": null,
+            "units": 267,
+            "cash": -4253.0
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "COW",
+            "units": 8,
+            "cash": -3200
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "SHEEP",
+            "units": 6,
+            "cash": -3000
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "MELON",
+            "units": 12,
+            "cash": -960
+          },
+          {
+            "op": "SELL",
+            "item": "FERTILIZER",
+            "units": 341,
+            "cash": 15528
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "STRAWBERRY",
+            "units": 33,
+            "cash": -3300
+          },
+          {
+            "op": "SELL",
+            "item": "WOOL",
+            "units": 99,
+            "cash": 5488
+          },
+          {
+            "op": "BUY_LAND",
+            "item": null,
+            "units": 2,
+            "cash": -3000.0
+          },
+          {
+            "op": "BUY_PRODUCT",
+            "item": "FERTILIZER",
+            "units": 92,
+            "cash": -2971
+          },
+          {
+            "op": "SELL",
+            "item": "MILK",
+            "units": 207,
+            "cash": 16087
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "GOOSE",
+            "units": 3,
+            "cash": -900
+          },
+          {
+            "op": "SELL",
+            "item": "MELON",
+            "units": 72,
+            "cash": 14267
+          },
+          {
+            "op": "SELL",
+            "item": "EGG",
+            "units": 89,
+            "cash": 5291
+          },
+          {
+            "op": "SELL",
+            "item": "STRAWBERRY",
+            "units": 249,
+            "cash": 53565
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "CARROT",
+            "units": 35,
+            "cash": -700
+          },
+          {
+            "op": "SELL",
+            "item": "CARROT",
+            "units": 105,
+            "cash": 4763
+          }
+        ],
+        [
+          {
+            "op": "BUY_PRODUCT",
+            "item": "WHEAT",
+            "units": 122,
+            "cash": -4402
+          },
+          {
+            "op": "SELL",
+            "item": "WHEAT",
+            "units": 419,
+            "cash": 16901
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "WHEAT",
+            "units": 162,
+            "cash": -1620
+          },
+          {
+            "op": "HIRE",
+            "item": null,
+            "units": 267,
+            "cash": -4253.0
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "COW",
+            "units": 8,
+            "cash": -3200
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "SHEEP",
+            "units": 6,
+            "cash": -3000
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "MELON",
+            "units": 12,
+            "cash": -960
+          },
+          {
+            "op": "SELL",
+            "item": "FERTILIZER",
+            "units": 341,
+            "cash": 15531
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "STRAWBERRY",
+            "units": 33,
+            "cash": -3300
+          },
+          {
+            "op": "SELL",
+            "item": "WOOL",
+            "units": 99,
+            "cash": 5484
+          },
+          {
+            "op": "BUY_LAND",
+            "item": null,
+            "units": 2,
+            "cash": -3000.0
+          },
+          {
+            "op": "BUY_PRODUCT",
+            "item": "FERTILIZER",
+            "units": 92,
+            "cash": -2963
+          },
+          {
+            "op": "SELL",
+            "item": "MILK",
+            "units": 207,
+            "cash": 15868
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "GOOSE",
+            "units": 3,
+            "cash": -900
+          },
+          {
+            "op": "SELL",
+            "item": "MELON",
+            "units": 72,
+            "cash": 14267
+          },
+          {
+            "op": "SELL",
+            "item": "EGG",
+            "units": 89,
+            "cash": 5295
+          },
+          {
+            "op": "SELL",
+            "item": "STRAWBERRY",
+            "units": 249,
+            "cash": 53563
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "CARROT",
+            "units": 35,
+            "cash": -700
+          },
+          {
+            "op": "SELL",
+            "item": "CARROT",
+            "units": 105,
+            "cash": 4763
+          }
+        ]
+      ],
+      "escapes": [
+        [],
+        []
+      ],
+      "final_composition": [
+        {
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6,
+          "COOP": 1
+        },
+        {
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6,
+          "COOP": 1
+        }
+      ],
+      "terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 3,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "episode": 113242063,
+      "policy": "top3",
+      "opponent": "Dhruv #2",
+      "seed": 1576659541,
+      "seat": 0,
+      "source_sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
+      "replay_sha256": "ab75e6dfce2ec586de647ddc4ecfe70af0da59bfc58d5ea51727e4f3e9b70ea6",
+      "own_actions_exact": 719,
+      "states_exact": 720,
+      "max_turn_ms": 146.77279198076576,
+      "empty_wheat_pickups": [],
+      "reports": {
+        "_VQ_REPORT": {
+          "changed_turns": 79,
+          "holes_removed": 140,
+          "dead_sales": 29,
+          "dead_land": 0,
+          "shifted_orders": 62,
+          "shifted_slots": 70,
+          "errors": 0
+        },
+        "_V92_P_REPORT": {
+          "pred_units": 219,
+          "pred_fires": 36,
+          "pred_errors": 0
+        },
+        "_V233_REPORT": {
+          "sheep_commit_requests": 0,
+          "sheep_committed": 0,
+          "sheep_hire_requests": 0,
+          "sheep_workers_confirmed": 0,
+          "sheep_hire_shortfalls": 0,
+          "sheep_budget_declines": 0,
+          "sheep_capacity_declines": 0,
+          "sheep_purchase_shortfalls": 0,
+          "sheep_feed_buy_requests": 0,
+          "sheep_wool_harvested": 0,
+          "sheep_fert_collected": 0,
+          "sheep_extra_wool_sales": 0,
+          "sheep_extra_fert_sales": 0,
+          "sheep_rescue_feed_requests": 0
+        },
+        "_R85_REPORT": {
+          "feed_skips": 56,
+          "fert_sale_turns": 0,
+          "fert_sale_units": 0,
+          "economic_overlay_errors": 0,
+          "parent_input_guard_turns": 0,
+          "parent_input_guard_extra_units": 0,
+          "parent_input_requests": 20,
+          "parent_input_confirmed": 20,
+          "parent_input_shortfalls": 0,
+          "parent_input_errors": 0,
+          "parent_input_capacity_declines": 1,
+          "warehouse_changed_turns": 0,
+          "warehouse_extra_sales": 0,
+          "warehouse_projected_unresolved": 4,
+          "warehouse_errors": 0,
+          "input_hire_requests": 3,
+          "input_confirmed_hires": 3,
+          "input_hire_errors": 0,
+          "input_purchase_requests": 22,
+          "input_loaded_units": 22,
+          "input_stock_shortfalls": 0,
+          "input_application_requests": 22,
+          "input_confirmed_applications": 22,
+          "input_application_errors": 0,
+          "input_errors": 0,
+          "input_forecast_wheat": 42,
+          "input_forecast_carrot": 1,
+          "sale_reserved_units": 263,
+          "sale_reservations": 38,
+          "sale_errors": 0,
+          "commitments": 1,
+          "hire_requests": 18,
+          "confirmed_workers": 18,
+          "hire_shortfalls": 0,
+          "plant_requests": 10,
+          "confirmed_plants": 10,
+          "water_requests": 80,
+          "fertilize_requests": 20,
+          "harvest_requests": 40,
+          "confirmed_harvest_units": 80,
+          "drop_requests": 0,
+          "tomato_sale_requests": 70,
+          "budget_declines": 0,
+          "lost_plants": 0,
+          "extra_fertilizer_days": 0,
+          "reordered_market_turns": 102,
+          "errors": 0,
+          "cattle_confirmed": 0,
+          "cattle_reserved": 0,
+          "cattle_requested": 0,
+          "cattle_failed_purchase_units": 0,
+          "cattle_picked": 0,
+          "cattle_placed": 0,
+          "cattle_failed_placements": 0,
+          "cattle_extra_milk_harvested": 0,
+          "cattle_extra_milk_sale_requests": 0,
+          "cattle_milk_credit": 0,
+          "cattle_carried_pending": 0,
+          "quote_reordered_turns": 22,
+          "three_turn_calls": 312,
+          "nocturne_errors": 0,
+          "probe_matches": 1,
+          "probe_four_turn_calls": 283,
+          "probe_errors": 0,
+          "release_errors": 0,
+          "sheep_commit_requests": 0,
+          "sheep_committed": 0,
+          "sheep_hire_requests": 0,
+          "sheep_workers_confirmed": 0,
+          "sheep_hire_shortfalls": 0,
+          "sheep_budget_declines": 0,
+          "sheep_capacity_declines": 0,
+          "sheep_purchase_shortfalls": 0,
+          "sheep_feed_buy_requests": 0,
+          "sheep_wool_harvested": 0,
+          "sheep_fert_collected": 0,
+          "sheep_extra_wool_sales": 0,
+          "sheep_extra_fert_sales": 0,
+          "sheep_rescue_feed_requests": 0,
+          "labor_requests": 2,
+          "labor_hires_avoided": 2,
+          "labor_spawn_errors": 0,
+          "labor_confirmed": 2,
+          "labor_day26": 0,
+          "labor_day27": 1,
+          "labor_day28": 1
+        }
+      },
+      "rewards": [
+        73626.0,
+        72400.0
+      ],
+      "margin": 1226.0,
+      "cashflow": [
+        [
+          {
+            "op": "BUY_PRODUCT",
+            "item": "WHEAT",
+            "units": 122,
+            "cash": -4371
+          },
+          {
+            "op": "SELL",
+            "item": "WHEAT",
+            "units": 326,
+            "cash": 13233
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "WHEAT",
+            "units": 140,
+            "cash": -1400
+          },
+          {
+            "op": "HIRE",
+            "item": null,
+            "units": 284,
+            "cash": -7557.0
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "COW",
+            "units": 8,
+            "cash": -3200
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "SHEEP",
+            "units": 6,
+            "cash": -3000
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "MELON",
+            "units": 12,
+            "cash": -960
+          },
+          {
+            "op": "SELL",
+            "item": "FERTILIZER",
+            "units": 334,
+            "cash": 15906
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "STRAWBERRY",
+            "units": 33,
+            "cash": -3300
+          },
+          {
+            "op": "SELL",
+            "item": "WOOL",
+            "units": 99,
+            "cash": 5473
+          },
+          {
+            "op": "BUY_LAND",
+            "item": null,
+            "units": 3,
+            "cash": -7000.0
+          },
+          {
+            "op": "BUY_PRODUCT",
+            "item": "FERTILIZER",
+            "units": 108,
+            "cash": -3485
+          },
+          {
+            "op": "SELL",
+            "item": "MILK",
+            "units": 215,
+            "cash": 13979
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "GOOSE",
+            "units": 3,
+            "cash": -900
+          },
+          {
+            "op": "SELL",
+            "item": "MELON",
+            "units": 72,
+            "cash": 14267
+          },
+          {
+            "op": "SELL",
+            "item": "EGG",
+            "units": 89,
+            "cash": 4361
+          },
+          {
+            "op": "SELL",
+            "item": "STRAWBERRY",
+            "units": 249,
+            "cash": 17781
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "TOMATO",
+            "units": 10,
+            "cash": -500
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "CARROT",
+            "units": 58,
+            "cash": -1160
+          },
+          {
+            "op": "SELL",
+            "item": "CARROT",
+            "units": 175,
+            "cash": 10790
+          },
+          {
+            "op": "SELL",
+            "item": "TOMATO",
+            "units": 80,
+            "cash": 11669
+          }
+        ],
+        [
+          {
+            "op": "BUY_PRODUCT",
+            "item": "WHEAT",
+            "units": 137,
+            "cash": -4847
+          },
+          {
+            "op": "SELL",
+            "item": "WHEAT",
+            "units": 370,
+            "cash": 14846
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "WHEAT",
+            "units": 146,
+            "cash": -1460
+          },
+          {
+            "op": "HIRE",
+            "item": null,
+            "units": 284,
+            "cash": -7557.0
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "COW",
+            "units": 8,
+            "cash": -3200
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "SHEEP",
+            "units": 6,
+            "cash": -3000
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "MELON",
+            "units": 12,
+            "cash": -960
+          },
+          {
+            "op": "SELL",
+            "item": "FERTILIZER",
+            "units": 333,
+            "cash": 15858
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "STRAWBERRY",
+            "units": 33,
+            "cash": -3300
+          },
+          {
+            "op": "SELL",
+            "item": "WOOL",
+            "units": 99,
+            "cash": 5478
+          },
+          {
+            "op": "BUY_PRODUCT",
+            "item": "FERTILIZER",
+            "units": 106,
+            "cash": -3394
+          },
+          {
+            "op": "BUY_LAND",
+            "item": null,
+            "units": 3,
+            "cash": -7000.0
+          },
+          {
+            "op": "SELL",
+            "item": "MILK",
+            "units": 215,
+            "cash": 13252
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "GOOSE",
+            "units": 3,
+            "cash": -900
+          },
+          {
+            "op": "SELL",
+            "item": "MELON",
+            "units": 72,
+            "cash": 14267
+          },
+          {
+            "op": "SELL",
+            "item": "EGG",
+            "units": 84,
+            "cash": 4138
+          },
+          {
+            "op": "SELL",
+            "item": "STRAWBERRY",
+            "units": 249,
+            "cash": 17722
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "TOMATO",
+            "units": 10,
+            "cash": -500
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "CARROT",
+            "units": 49,
+            "cash": -980
+          },
+          {
+            "op": "SELL",
+            "item": "CARROT",
+            "units": 150,
+            "cash": 9223
+          },
+          {
+            "op": "SELL",
+            "item": "TOMATO",
+            "units": 80,
+            "cash": 11714
+          }
+        ]
+      ],
+      "escapes": [
+        [],
+        [
+          {
+            "step": 647,
+            "x": 3,
+            "y": 2,
+            "animal": "GOOSE"
+          }
+        ]
+      ],
+      "final_composition": [
+        {
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6,
+          "TOMATO": 10,
+          "COOP": 1
+        },
+        {
+          "GOOSE": 2,
+          "COOP": 2,
+          "COW": 8,
+          "SHEEP": 6,
+          "TOMATO": 10,
+          "WEED": 2
+        }
+      ],
+      "terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "episode": 113252591,
+      "policy": "vq",
+      "opponent": "ctree4113",
+      "seed": 2146809967,
+      "seat": 0,
+      "source_sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976",
+      "replay_sha256": "78533457e900ee3b0e997715da8f4e1bd062bc9c448b186ab0da16fba82c4748",
+      "own_actions_exact": 719,
+      "states_exact": 720,
+      "max_turn_ms": 138.2092499989085,
+      "empty_wheat_pickups": [],
+      "reports": {
+        "_VQ_REPORT": {
+          "changed_turns": 62,
+          "holes_removed": 108,
+          "dead_sales": 22,
+          "dead_land": 0,
+          "shifted_orders": 63,
+          "shifted_slots": 78,
+          "errors": 0
+        },
+        "_V92_P_REPORT": {
+          "pred_units": 84,
+          "pred_fires": 12,
+          "pred_errors": 0
+        },
+        "_V233_REPORT": {
+          "sheep_commit_requests": 0,
+          "sheep_committed": 0,
+          "sheep_hire_requests": 0,
+          "sheep_workers_confirmed": 0,
+          "sheep_hire_shortfalls": 0,
+          "sheep_budget_declines": 0,
+          "sheep_capacity_declines": 0,
+          "sheep_purchase_shortfalls": 0,
+          "sheep_feed_buy_requests": 0,
+          "sheep_wool_harvested": 0,
+          "sheep_fert_collected": 0,
+          "sheep_extra_wool_sales": 0,
+          "sheep_extra_fert_sales": 0,
+          "sheep_rescue_feed_requests": 0
+        },
+        "_R85_REPORT": {
+          "feed_skips": 53,
+          "fert_sale_turns": 0,
+          "fert_sale_units": 0,
+          "economic_overlay_errors": 0,
+          "parent_input_guard_turns": 0,
+          "parent_input_guard_extra_units": 0,
+          "parent_input_requests": 0,
+          "parent_input_confirmed": 0,
+          "parent_input_shortfalls": 0,
+          "parent_input_errors": 0,
+          "parent_input_capacity_declines": 0,
+          "warehouse_changed_turns": 0,
+          "warehouse_extra_sales": 0,
+          "warehouse_projected_unresolved": 2,
+          "warehouse_errors": 0,
+          "input_hire_requests": 3,
+          "input_confirmed_hires": 3,
+          "input_hire_errors": 0,
+          "input_purchase_requests": 19,
+          "input_loaded_units": 19,
+          "input_stock_shortfalls": 0,
+          "input_application_requests": 18,
+          "input_confirmed_applications": 18,
+          "input_application_errors": 0,
+          "input_errors": 0,
+          "input_forecast_wheat": 32,
+          "input_forecast_carrot": 3,
+          "sale_reserved_units": 401,
+          "sale_reservations": 60,
+          "sale_errors": 0,
+          "commitments": 0,
+          "hire_requests": 0,
+          "confirmed_workers": 0,
+          "hire_shortfalls": 0,
+          "plant_requests": 0,
+          "confirmed_plants": 0,
+          "water_requests": 0,
+          "fertilize_requests": 0,
+          "harvest_requests": 0,
+          "confirmed_harvest_units": 0,
+          "drop_requests": 0,
+          "tomato_sale_requests": 0,
+          "budget_declines": 0,
+          "lost_plants": 0,
+          "extra_fertilizer_days": 0,
+          "reordered_market_turns": 131,
+          "errors": 0,
+          "cattle_confirmed": 0,
+          "cattle_reserved": 0,
+          "cattle_requested": 0,
+          "cattle_failed_purchase_units": 0,
+          "cattle_picked": 0,
+          "cattle_placed": 0,
+          "cattle_failed_placements": 0,
+          "cattle_extra_milk_harvested": 0,
+          "cattle_extra_milk_sale_requests": 0,
+          "cattle_milk_credit": 0,
+          "cattle_carried_pending": 0,
+          "quote_reordered_turns": 28,
+          "three_turn_calls": 312,
+          "nocturne_errors": 0,
+          "probe_matches": 1,
+          "probe_four_turn_calls": 141,
+          "probe_errors": 0,
+          "release_errors": 0,
+          "sheep_commit_requests": 0,
+          "sheep_committed": 0,
+          "sheep_hire_requests": 0,
+          "sheep_workers_confirmed": 0,
+          "sheep_hire_shortfalls": 0,
+          "sheep_budget_declines": 0,
+          "sheep_capacity_declines": 0,
+          "sheep_purchase_shortfalls": 0,
+          "sheep_feed_buy_requests": 0,
+          "sheep_wool_harvested": 0,
+          "sheep_fert_collected": 0,
+          "sheep_extra_wool_sales": 0,
+          "sheep_extra_fert_sales": 0,
+          "sheep_rescue_feed_requests": 0,
+          "labor_requests": 0,
+          "labor_hires_avoided": 0,
+          "labor_spawn_errors": 0,
+          "labor_confirmed": 0,
+          "labor_day26": 0,
+          "labor_day27": 0,
+          "labor_day28": 0
+        }
+      },
+      "rewards": [
+        104055.0,
+        108671.0
+      ],
+      "margin": -4616.0,
+      "cashflow": [
+        [
+          {
+            "op": "BUY_PRODUCT",
+            "item": "WHEAT",
+            "units": 113,
+            "cash": -4024
+          },
+          {
+            "op": "SELL",
+            "item": "WHEAT",
+            "units": 417,
+            "cash": 15999
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "WHEAT",
+            "units": 164,
+            "cash": -1640
+          },
+          {
+            "op": "HIRE",
+            "item": null,
+            "units": 266,
+            "cash": -4164.0
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "COW",
+            "units": 8,
+            "cash": -3200
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "SHEEP",
+            "units": 6,
+            "cash": -3000
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "MELON",
+            "units": 12,
+            "cash": -960
+          },
+          {
+            "op": "SELL",
+            "item": "FERTILIZER",
+            "units": 316,
+            "cash": 14811
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "STRAWBERRY",
+            "units": 33,
+            "cash": -3300
+          },
+          {
+            "op": "SELL",
+            "item": "WOOL",
+            "units": 99,
+            "cash": 5457
+          },
+          {
+            "op": "BUY_LAND",
+            "item": null,
+            "units": 2,
+            "cash": -3000.0
+          },
+          {
+            "op": "BUY_PRODUCT",
+            "item": "FERTILIZER",
+            "units": 85,
+            "cash": -2862
+          },
+          {
+            "op": "SELL",
+            "item": "MILK",
+            "units": 199,
+            "cash": 14563
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "GOOSE",
+            "units": 3,
+            "cash": -900
+          },
+          {
+            "op": "SELL",
+            "item": "MELON",
+            "units": 72,
+            "cash": 14267
+          },
+          {
+            "op": "SELL",
+            "item": "EGG",
+            "units": 91,
+            "cash": 5517
+          },
+          {
+            "op": "SELL",
+            "item": "STRAWBERRY",
+            "units": 243,
+            "cash": 54572
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "CARROT",
+            "units": 31,
+            "cash": -620
+          },
+          {
+            "op": "SELL",
+            "item": "CARROT",
+            "units": 97,
+            "cash": 3539
+          }
+        ],
+        [
+          {
+            "op": "BUY_PRODUCT",
+            "item": "WHEAT",
+            "units": 122,
+            "cash": -4421
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "WHEAT",
+            "units": 164,
+            "cash": -1640
+          },
+          {
+            "op": "HIRE",
+            "item": null,
+            "units": 266,
+            "cash": -4164.0
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "COW",
+            "units": 8,
+            "cash": -3200
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "SHEEP",
+            "units": 6,
+            "cash": -3000
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "MELON",
+            "units": 12,
+            "cash": -960
+          },
+          {
+            "op": "SELL",
+            "item": "FERTILIZER",
+            "units": 339,
+            "cash": 15982
+          },
+          {
+            "op": "SELL",
+            "item": "WHEAT",
+            "units": 402,
+            "cash": 15404
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "STRAWBERRY",
+            "units": 33,
+            "cash": -3300
+          },
+          {
+            "op": "SELL",
+            "item": "WOOL",
+            "units": 99,
+            "cash": 5506
+          },
+          {
+            "op": "BUY_LAND",
+            "item": null,
+            "units": 2,
+            "cash": -3000.0
+          },
+          {
+            "op": "BUY_PRODUCT",
+            "item": "FERTILIZER",
+            "units": 85,
+            "cash": -2852
+          },
+          {
+            "op": "SELL",
+            "item": "MILK",
+            "units": 232,
+            "cash": 17398
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "GOOSE",
+            "units": 3,
+            "cash": -900
+          },
+          {
+            "op": "SELL",
+            "item": "MELON",
+            "units": 72,
+            "cash": 14267
+          },
+          {
+            "op": "SELL",
+            "item": "EGG",
+            "units": 93,
+            "cash": 5654
+          },
+          {
+            "op": "SELL",
+            "item": "STRAWBERRY",
+            "units": 249,
+            "cash": 55978
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "CARROT",
+            "units": 31,
+            "cash": -620
+          },
+          {
+            "op": "SELL",
+            "item": "CARROT",
+            "units": 97,
+            "cash": 3539
+          }
+        ]
+      ],
+      "escapes": [
+        [],
+        []
+      ],
+      "final_composition": [
+        {
+          "GOOSE": 3,
+          "COW": 7,
+          "SHEEP": 6,
+          "COOP": 1
+        },
+        {
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6,
+          "COOP": 1
+        }
+      ],
+      "terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 1,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "episode": 113244583,
+      "policy": "vq",
+      "opponent": "Mforg",
+      "seed": 1350265675,
+      "seat": 1,
+      "source_sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976",
+      "replay_sha256": "f260c7f7bb6a906993b9df169e6c636a20c8307e2ebcb81b6222ed23cc9652fa",
+      "own_actions_exact": 719,
+      "states_exact": 720,
+      "max_turn_ms": 183.94458401598968,
+      "empty_wheat_pickups": [],
+      "reports": {
+        "_VQ_REPORT": {
+          "changed_turns": 66,
+          "holes_removed": 118,
+          "dead_sales": 20,
+          "dead_land": 0,
+          "shifted_orders": 52,
+          "shifted_slots": 64,
+          "errors": 0
+        },
+        "_V92_P_REPORT": {
+          "pred_units": 118,
+          "pred_fires": 22,
+          "pred_errors": 0
+        },
+        "_V233_REPORT": {
+          "sheep_commit_requests": 0,
+          "sheep_committed": 0,
+          "sheep_hire_requests": 0,
+          "sheep_workers_confirmed": 0,
+          "sheep_hire_shortfalls": 0,
+          "sheep_budget_declines": 0,
+          "sheep_capacity_declines": 0,
+          "sheep_purchase_shortfalls": 0,
+          "sheep_feed_buy_requests": 0,
+          "sheep_wool_harvested": 0,
+          "sheep_fert_collected": 0,
+          "sheep_extra_wool_sales": 0,
+          "sheep_extra_fert_sales": 0,
+          "sheep_rescue_feed_requests": 0
+        },
+        "_R85_REPORT": {
+          "feed_skips": 60,
+          "fert_sale_turns": 0,
+          "fert_sale_units": 0,
+          "economic_overlay_errors": 0,
+          "parent_input_guard_turns": 0,
+          "parent_input_guard_extra_units": 0,
+          "parent_input_requests": 0,
+          "parent_input_confirmed": 0,
+          "parent_input_shortfalls": 0,
+          "parent_input_errors": 0,
+          "parent_input_capacity_declines": 0,
+          "warehouse_changed_turns": 0,
+          "warehouse_extra_sales": 0,
+          "warehouse_projected_unresolved": 12,
+          "warehouse_errors": 0,
+          "input_hire_requests": 5,
+          "input_confirmed_hires": 5,
+          "input_hire_errors": 0,
+          "input_purchase_requests": 32,
+          "input_loaded_units": 32,
+          "input_stock_shortfalls": 0,
+          "input_application_requests": 31,
+          "input_confirmed_applications": 31,
+          "input_application_errors": 0,
+          "input_errors": 0,
+          "input_forecast_wheat": 58,
+          "input_forecast_carrot": 3,
+          "sale_reserved_units": 334,
+          "sale_reservations": 49,
+          "sale_errors": 0,
+          "commitments": 0,
+          "hire_requests": 0,
+          "confirmed_workers": 0,
+          "hire_shortfalls": 0,
+          "plant_requests": 0,
+          "confirmed_plants": 0,
+          "water_requests": 0,
+          "fertilize_requests": 0,
+          "harvest_requests": 0,
+          "confirmed_harvest_units": 0,
+          "drop_requests": 0,
+          "tomato_sale_requests": 0,
+          "budget_declines": 0,
+          "lost_plants": 0,
+          "extra_fertilizer_days": 0,
+          "reordered_market_turns": 120,
+          "errors": 0,
+          "cattle_confirmed": 0,
+          "cattle_reserved": 0,
+          "cattle_requested": 0,
+          "cattle_failed_purchase_units": 0,
+          "cattle_picked": 0,
+          "cattle_placed": 0,
+          "cattle_failed_placements": 0,
+          "cattle_extra_milk_harvested": 0,
+          "cattle_extra_milk_sale_requests": 0,
+          "cattle_milk_credit": 0,
+          "cattle_carried_pending": 0,
+          "quote_reordered_turns": 22,
+          "three_turn_calls": 312,
+          "nocturne_errors": 0,
+          "probe_matches": 1,
+          "probe_four_turn_calls": 283,
+          "probe_errors": 0,
+          "release_errors": 0,
+          "sheep_commit_requests": 0,
+          "sheep_committed": 0,
+          "sheep_hire_requests": 0,
+          "sheep_workers_confirmed": 0,
+          "sheep_hire_shortfalls": 0,
+          "sheep_budget_declines": 0,
+          "sheep_capacity_declines": 0,
+          "sheep_purchase_shortfalls": 0,
+          "sheep_feed_buy_requests": 0,
+          "sheep_wool_harvested": 0,
+          "sheep_fert_collected": 0,
+          "sheep_extra_wool_sales": 0,
+          "sheep_extra_fert_sales": 0,
+          "sheep_rescue_feed_requests": 0,
+          "labor_requests": 0,
+          "labor_hires_avoided": 0,
+          "labor_spawn_errors": 0,
+          "labor_confirmed": 0,
+          "labor_day26": 0,
+          "labor_day27": 0,
+          "labor_day28": 0
+        }
+      },
+      "rewards": [
+        97619.0,
+        97001.0
+      ],
+      "margin": -618.0,
+      "cashflow": [
+        [
+          {
+            "op": "BUY_PRODUCT",
+            "item": "WHEAT",
+            "units": 122,
+            "cash": -4392
+          },
+          {
+            "op": "SELL",
+            "item": "WHEAT",
+            "units": 433,
+            "cash": 17826
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "WHEAT",
+            "units": 164,
+            "cash": -1640
+          },
+          {
+            "op": "HIRE",
+            "item": null,
+            "units": 268,
+            "cash": -4397.0
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "COW",
+            "units": 8,
+            "cash": -3200
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "SHEEP",
+            "units": 6,
+            "cash": -3000
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "MELON",
+            "units": 12,
+            "cash": -960
+          },
+          {
+            "op": "SELL",
+            "item": "FERTILIZER",
+            "units": 339,
+            "cash": 15759
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "STRAWBERRY",
+            "units": 33,
+            "cash": -3300
+          },
+          {
+            "op": "SELL",
+            "item": "WOOL",
+            "units": 138,
+            "cash": 11577
+          },
+          {
+            "op": "BUY_LAND",
+            "item": null,
+            "units": 2,
+            "cash": -3000.0
+          },
+          {
+            "op": "BUY_PRODUCT",
+            "item": "FERTILIZER",
+            "units": 98,
+            "cash": -3214
+          },
+          {
+            "op": "SELL",
+            "item": "MILK",
+            "units": 164,
+            "cash": 11907
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "GOOSE",
+            "units": 3,
+            "cash": -900
+          },
+          {
+            "op": "SELL",
+            "item": "MELON",
+            "units": 72,
+            "cash": 14267
+          },
+          {
+            "op": "SELL",
+            "item": "EGG",
+            "units": 86,
+            "cash": 5036
+          },
+          {
+            "op": "SELL",
+            "item": "STRAWBERRY",
+            "units": 248,
+            "cash": 42332
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "CARROT",
+            "units": 31,
+            "cash": -620
+          },
+          {
+            "op": "SELL",
+            "item": "CARROT",
+            "units": 97,
+            "cash": 3920
+          }
+        ],
+        [
+          {
+            "op": "BUY_PRODUCT",
+            "item": "WHEAT",
+            "units": 137,
+            "cash": -4868
+          },
+          {
+            "op": "SELL",
+            "item": "WHEAT",
+            "units": 448,
+            "cash": 18247
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "WHEAT",
+            "units": 163,
+            "cash": -1630
+          },
+          {
+            "op": "HIRE",
+            "item": null,
+            "units": 268,
+            "cash": -4397.0
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "COW",
+            "units": 8,
+            "cash": -3200
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "SHEEP",
+            "units": 6,
+            "cash": -3000
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "MELON",
+            "units": 12,
+            "cash": -960
+          },
+          {
+            "op": "SELL",
+            "item": "FERTILIZER",
+            "units": 337,
+            "cash": 15692
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "STRAWBERRY",
+            "units": 33,
+            "cash": -3300
+          },
+          {
+            "op": "SELL",
+            "item": "WOOL",
+            "units": 138,
+            "cash": 12381
+          },
+          {
+            "op": "BUY_PRODUCT",
+            "item": "FERTILIZER",
+            "units": 96,
+            "cash": -3158
+          },
+          {
+            "op": "BUY_LAND",
+            "item": null,
+            "units": 2,
+            "cash": -3000.0
+          },
+          {
+            "op": "SELL",
+            "item": "MILK",
+            "units": 164,
+            "cash": 12007
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "GOOSE",
+            "units": 3,
+            "cash": -900
+          },
+          {
+            "op": "SELL",
+            "item": "MELON",
+            "units": 72,
+            "cash": 14267
+          },
+          {
+            "op": "SELL",
+            "item": "EGG",
+            "units": 88,
+            "cash": 5159
+          },
+          {
+            "op": "SELL",
+            "item": "STRAWBERRY",
+            "units": 248,
+            "cash": 41977
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "CARROT",
+            "units": 31,
+            "cash": -620
+          },
+          {
+            "op": "SELL",
+            "item": "CARROT",
+            "units": 97,
+            "cash": 3922
+          }
+        ]
+      ],
+      "escapes": [
+        [],
+        []
+      ],
+      "final_composition": [
+        {
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6,
+          "COOP": 1
+        },
+        {
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6,
+          "COOP": 1
+        }
+      ],
+      "terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "episode": 113244584,
+      "policy": "vq",
+      "opponent": "Hai Dang",
+      "seed": 1529717695,
+      "seat": 1,
+      "source_sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976",
+      "replay_sha256": "097cbbc69046feae7f3a6083e41747844d237eb077bf92bac6ed4c2e47a4a476",
+      "own_actions_exact": 719,
+      "states_exact": 720,
+      "max_turn_ms": 174.01824999251403,
+      "empty_wheat_pickups": [],
+      "reports": {
+        "_VQ_REPORT": {
+          "changed_turns": 64,
+          "holes_removed": 117,
+          "dead_sales": 22,
+          "dead_land": 0,
+          "shifted_orders": 42,
+          "shifted_slots": 52,
+          "errors": 0
+        },
+        "_V92_P_REPORT": {
+          "pred_units": 103,
+          "pred_fires": 18,
+          "pred_errors": 0
+        },
+        "_V233_REPORT": {
+          "sheep_commit_requests": 0,
+          "sheep_committed": 0,
+          "sheep_hire_requests": 0,
+          "sheep_workers_confirmed": 0,
+          "sheep_hire_shortfalls": 0,
+          "sheep_budget_declines": 0,
+          "sheep_capacity_declines": 0,
+          "sheep_purchase_shortfalls": 0,
+          "sheep_feed_buy_requests": 0,
+          "sheep_wool_harvested": 0,
+          "sheep_fert_collected": 0,
+          "sheep_extra_wool_sales": 0,
+          "sheep_extra_fert_sales": 0,
+          "sheep_rescue_feed_requests": 0
+        },
+        "_R85_REPORT": {
+          "feed_skips": 53,
+          "fert_sale_turns": 0,
+          "fert_sale_units": 0,
+          "economic_overlay_errors": 0,
+          "parent_input_guard_turns": 0,
+          "parent_input_guard_extra_units": 0,
+          "parent_input_requests": 0,
+          "parent_input_confirmed": 0,
+          "parent_input_shortfalls": 0,
+          "parent_input_errors": 0,
+          "parent_input_capacity_declines": 0,
+          "warehouse_changed_turns": 0,
+          "warehouse_extra_sales": 0,
+          "warehouse_projected_unresolved": 0,
+          "warehouse_errors": 0,
+          "input_hire_requests": 3,
+          "input_confirmed_hires": 3,
+          "input_hire_errors": 0,
+          "input_purchase_requests": 20,
+          "input_loaded_units": 20,
+          "input_stock_shortfalls": 0,
+          "input_application_requests": 18,
+          "input_confirmed_applications": 18,
+          "input_application_errors": 0,
+          "input_errors": 0,
+          "input_forecast_wheat": 30,
+          "input_forecast_carrot": 5,
+          "sale_reserved_units": 410,
+          "sale_reservations": 62,
+          "sale_errors": 0,
+          "commitments": 0,
+          "hire_requests": 0,
+          "confirmed_workers": 0,
+          "hire_shortfalls": 0,
+          "plant_requests": 0,
+          "confirmed_plants": 0,
+          "water_requests": 0,
+          "fertilize_requests": 0,
+          "harvest_requests": 0,
+          "confirmed_harvest_units": 0,
+          "drop_requests": 0,
+          "tomato_sale_requests": 0,
+          "budget_declines": 0,
+          "lost_plants": 0,
+          "extra_fertilizer_days": 0,
+          "reordered_market_turns": 128,
+          "errors": 0,
+          "cattle_confirmed": 1,
+          "cattle_reserved": 0,
+          "cattle_requested": 1,
+          "cattle_failed_purchase_units": 0,
+          "cattle_picked": 1,
+          "cattle_placed": 1,
+          "cattle_failed_placements": 0,
+          "cattle_extra_milk_harvested": 19,
+          "cattle_extra_milk_sale_requests": 19,
+          "cattle_milk_credit": 0,
+          "cattle_carried_pending": 0,
+          "quote_reordered_turns": 23,
+          "three_turn_calls": 247,
+          "nocturne_errors": 0,
+          "probe_matches": 1,
+          "probe_four_turn_calls": 218,
+          "probe_errors": 0,
+          "release_errors": 0,
+          "sheep_commit_requests": 0,
+          "sheep_committed": 0,
+          "sheep_hire_requests": 0,
+          "sheep_workers_confirmed": 0,
+          "sheep_hire_shortfalls": 0,
+          "sheep_budget_declines": 0,
+          "sheep_capacity_declines": 0,
+          "sheep_purchase_shortfalls": 0,
+          "sheep_feed_buy_requests": 0,
+          "sheep_wool_harvested": 0,
+          "sheep_fert_collected": 0,
+          "sheep_extra_wool_sales": 0,
+          "sheep_extra_fert_sales": 0,
+          "sheep_rescue_feed_requests": 0,
+          "labor_requests": 0,
+          "labor_hires_avoided": 0,
+          "labor_spawn_errors": 0,
+          "labor_confirmed": 0,
+          "labor_day26": 0,
+          "labor_day27": 0,
+          "labor_day28": 0
+        }
+      },
+      "rewards": [
+        114195.0,
+        114756.0
+      ],
+      "margin": 561.0,
+      "cashflow": [
+        [
+          {
+            "op": "BUY_PRODUCT",
+            "item": "WHEAT",
+            "units": 122,
+            "cash": -4219
+          },
+          {
+            "op": "SELL",
+            "item": "WHEAT",
+            "units": 345,
+            "cash": 13073
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "WHEAT",
+            "units": 150,
+            "cash": -1500
+          },
+          {
+            "op": "HIRE",
+            "item": null,
+            "units": 266,
+            "cash": -4164.0
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "COW",
+            "units": 9,
+            "cash": -3600
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "SHEEP",
+            "units": 5,
+            "cash": -2500
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "MELON",
+            "units": 12,
+            "cash": -960
+          },
+          {
+            "op": "SELL",
+            "item": "FERTILIZER",
+            "units": 340,
+            "cash": 15240
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "STRAWBERRY",
+            "units": 33,
+            "cash": -3300
+          },
+          {
+            "op": "SELL",
+            "item": "WOOL",
+            "units": 87,
+            "cash": 5445
+          },
+          {
+            "op": "BUY_LAND",
+            "item": null,
+            "units": 2,
+            "cash": -3000.0
+          },
+          {
+            "op": "BUY_PRODUCT",
+            "item": "FERTILIZER",
+            "units": 86,
+            "cash": -2646
+          },
+          {
+            "op": "SELL",
+            "item": "MILK",
+            "units": 240,
+            "cash": 24948
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "GOOSE",
+            "units": 3,
+            "cash": -900
+          },
+          {
+            "op": "SELL",
+            "item": "MELON",
+            "units": 72,
+            "cash": 14267
+          },
+          {
+            "op": "SELL",
+            "item": "EGG",
+            "units": 93,
+            "cash": 4902
+          },
+          {
+            "op": "SELL",
+            "item": "STRAWBERRY",
+            "units": 249,
+            "cash": 54233
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "CARROT",
+            "units": 48,
+            "cash": -960
+          },
+          {
+            "op": "SELL",
+            "item": "CARROT",
+            "units": 147,
+            "cash": 7397
+          }
+        ],
+        [
+          {
+            "op": "BUY_PRODUCT",
+            "item": "WHEAT",
+            "units": 129,
+            "cash": -4416
+          },
+          {
+            "op": "SELL",
+            "item": "WHEAT",
+            "units": 388,
+            "cash": 14553
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "WHEAT",
+            "units": 158,
+            "cash": -1580
+          },
+          {
+            "op": "HIRE",
+            "item": null,
+            "units": 267,
+            "cash": -4308.0
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "COW",
+            "units": 9,
+            "cash": -3600
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "SHEEP",
+            "units": 5,
+            "cash": -2500
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "MELON",
+            "units": 12,
+            "cash": -960
+          },
+          {
+            "op": "SELL",
+            "item": "FERTILIZER",
+            "units": 338,
+            "cash": 15137
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "STRAWBERRY",
+            "units": 33,
+            "cash": -3300
+          },
+          {
+            "op": "SELL",
+            "item": "WOOL",
+            "units": 87,
+            "cash": 5500
+          },
+          {
+            "op": "BUY_PRODUCT",
+            "item": "FERTILIZER",
+            "units": 91,
+            "cash": -2632
+          },
+          {
+            "op": "BUY_LAND",
+            "item": null,
+            "units": 2,
+            "cash": -3000.0
+          },
+          {
+            "op": "SELL",
+            "item": "MILK",
+            "units": 240,
+            "cash": 24813
+          },
+          {
+            "op": "BUY_ANIMAL",
+            "item": "GOOSE",
+            "units": 3,
+            "cash": -900
+          },
+          {
+            "op": "SELL",
+            "item": "MELON",
+            "units": 72,
+            "cash": 14267
+          },
+          {
+            "op": "SELL",
+            "item": "EGG",
+            "units": 93,
+            "cash": 4914
+          },
+          {
+            "op": "SELL",
+            "item": "STRAWBERRY",
+            "units": 249,
+            "cash": 54027
+          },
+          {
+            "op": "BUY_SEED",
+            "item": "CARROT",
+            "units": 40,
+            "cash": -800
+          },
+          {
+            "op": "SELL",
+            "item": "CARROT",
+            "units": 124,
+            "cash": 5980
+          }
+        ]
+      ],
+      "escapes": [
+        [],
+        []
+      ],
+      "final_composition": [
+        {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5,
+          "COOP": 1
+        },
+        {
+          "GOOSE": 3,
+          "COW": 9,
+          "SHEEP": 5,
+          "COOP": 1
+        }
+      ],
+      "terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Source controls only. Recency sample is not population WR. Zero requests require state/mechanism interpretation."
+}

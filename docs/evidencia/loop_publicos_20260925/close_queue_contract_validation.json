@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "cases": 7,
+  "source_sha256": "2c7a4b2cee38a404a9bce43ce2cfb71635bd1056969986ed99761b92a91ef8b5",
+  "tested": [
+    "absent native wheat appends",
+    "existing wheat retains first slot",
+    "duplicate wheat removed",
+    "other BUY unchanged",
+    "zero quantity untouched",
+    "ten slots legal",
+    "eleven slots rejected"
+  ]
+}

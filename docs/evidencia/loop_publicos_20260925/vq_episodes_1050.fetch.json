@@ -1,0 +1,12 @@
+{
+  "started_at": "2026-09-25T10:48:09.444287+00:00",
+  "completed_at": "2026-09-25T10:48:10.234614+00:00",
+  "command": [
+    "competitions",
+    "episodes",
+    "56535264",
+    "--format",
+    "json"
+  ],
+  "sha256": "26581f28b7cffd83e03044923b19f51cbcec67bf815b11a116f4894d83c5d170"
+}
