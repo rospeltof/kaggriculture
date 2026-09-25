@@ -1,0 +1,102 @@
+{
+  "tds25": {
+    "reference": "base",
+    "candidate": "tds25",
+    "rivals": [
+      "ars40",
+      "guru6",
+      "h2965",
+      "hsov",
+      "hybu",
+      "obr",
+      "tds",
+      "v13"
+    ],
+    "seeds": [
+      992000,
+      992001,
+      992002,
+      992003,
+      992004,
+      992005,
+      992006,
+      992007
+    ],
+    "base_wr": 92.1875,
+    "candidate_wr": 84.375,
+    "delta_points": -7.8125,
+    "ci95_seed": [
+      -28.666317902950116,
+      13.041317902950116
+    ],
+    "ci95_2way": [
+      -27.29097551323443,
+      11.665975513234429
+    ],
+    "opponent_breakdown": {
+      "ars40": 0.0,
+      "guru6": 0.0,
+      "h2965": -25.0,
+      "hsov": -25.0,
+      "hybu": -12.5,
+      "obr": 0.0,
+      "tds": 0.0,
+      "v13": 0.0
+    },
+    "better_cells": 3,
+    "worse_cells": 8,
+    "equal_cells": 53,
+    "decision": "INCONCLUSIVE_NOT_SELECTED",
+    "confirmation_gate_passed": false
+  },
+  "hl25": {
+    "reference": "base",
+    "candidate": "hl25",
+    "rivals": [
+      "ars40",
+      "guru6",
+      "h2965",
+      "hsov",
+      "hybu",
+      "obr",
+      "tds",
+      "v13"
+    ],
+    "seeds": [
+      992000,
+      992001,
+      992002,
+      992003,
+      992004,
+      992005,
+      992006,
+      992007
+    ],
+    "base_wr": 92.1875,
+    "candidate_wr": 82.8125,
+    "delta_points": -9.375,
+    "ci95_seed": [
+      -29.707981985188873,
+      10.957981985188873
+    ],
+    "ci95_2way": [
+      -29.793057595193115,
+      11.043057595193115
+    ],
+    "opponent_breakdown": {
+      "ars40": 0.0,
+      "guru6": 0.0,
+      "h2965": -25.0,
+      "hsov": -25.0,
+      "hybu": 12.5,
+      "obr": -12.5,
+      "tds": -25.0,
+      "v13": 0.0
+    },
+    "better_cells": 3,
+    "worse_cells": 11,
+    "equal_cells": 50,
+    "decision": "INCONCLUSIVE_NOT_SELECTED",
+    "confirmation_gate_passed": false
+  }
+}

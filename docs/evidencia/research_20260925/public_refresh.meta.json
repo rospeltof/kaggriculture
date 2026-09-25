@@ -1,0 +1,72 @@
+{
+  "agentes": {
+    "base": {
+      "ruta": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "noop": {
+      "ruta": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "tds25": {
+      "ruta": "results/publicos_20260925/tds/main.py",
+      "sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652"
+    },
+    "hl25": {
+      "ruta": "results/publicos_20260925/hl/main.py",
+      "sha256": "1dfd463070024f85879d642fc294e1848ccfab00aad3f3980a04b0a8eca37fdd"
+    },
+    "tds": {
+      "ruta": "submission/main_publico_tds_tetsutani.py",
+      "sha256": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a"
+    },
+    "hybu": {
+      "ruta": "results/publicos/wzhengbiao_kaggriculture-hybu-submit/main.py",
+      "sha256": "f6175fd1bc3850f74185e7a813bb5a87d54e7e15212c874133dafc6e1ce91d34"
+    },
+    "ars40": {
+      "ruta": "results/publicos/arsgorynich_kaggriculture-v40-challenger/main.py",
+      "sha256": "d5a192fac67f00da31fe2bc7b747b8c33766bf1024780c53e49f2292a97db2de"
+    },
+    "hsov": {
+      "ruta": "results/publicos/haideptry_the-shepherds-ledger-herd-safe-sovereign/main.py",
+      "sha256": "5f2b51a2beaf5e08cb73e82f0e03e02e56de601563b28344e49b7058e371b247"
+    },
+    "v13": {
+      "ruta": "submission/main_publico_v13_thomastschinkel.py",
+      "sha256": "9d63494603f88219857a3101d7dc19cc750ded04e5886732ee428580326967d9"
+    },
+    "obr": {
+      "ruta": "results/publicos/arsgorynich_order-book-v3-response-improvement/main.py",
+      "sha256": "8045c8872406044cb0b6bf9f80e440f07c250e325618894f4a91141af6d3b6ad"
+    },
+    "h2965": {
+      "ruta": "results/publicos/haideptry_the-2965-master-hybrid-engine/main.py",
+      "sha256": "a58ee3a1e78dbbd0e5a27a37eb7d3ae16cc3064f5101d7b955608f23719e9dba"
+    },
+    "guru6": {
+      "ruta": "results/publicos/guruprasaathas111_kaggriculture-master-engine-v3/main.py",
+      "sha256": "ffbb800db22f6f0d390415b1bd7188c2df1ad41d5b7f6f33ca43d6513ba673fe"
+    }
+  },
+  "seeds": [
+    992000,
+    992001,
+    992002,
+    992003,
+    992004,
+    992005,
+    992006,
+    992007
+  ],
+  "vs": "base,noop,tds25,hl25",
+  "inicio": "2026-09-24 19:39:05",
+  "state": "complete",
+  "expected_episodes": 608,
+  "workers": 8,
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "cc2c653a1cce243e55d3d30effd5985405bb9db28bde7622cecc400a7298b025",
+  "completed_episodes": 608,
+  "fin": "2026-09-24 19:47:21"
+}

@@ -1,0 +1,602 @@
+[
+  {
+    "id": 113067348,
+    "source": "arshs3",
+    "reconstructed_action_differences": 1,
+    "events": [
+      {
+        "step": 291,
+        "item": "WOOL",
+        "qty": 1,
+        "prior_count": 5,
+        "prior_hits": 4,
+        "future_net_sale_4": true
+      },
+      {
+        "step": 292,
+        "item": "WOOL",
+        "qty": 6,
+        "prior_count": 3,
+        "prior_hits": 3,
+        "future_net_sale_4": true
+      },
+      {
+        "step": 426,
+        "item": "MILK",
+        "qty": 4,
+        "prior_count": 14,
+        "prior_hits": 11,
+        "future_net_sale_4": true
+      },
+      {
+        "step": 449,
+        "item": "MILK",
+        "qty": 9,
+        "prior_count": 14,
+        "prior_hits": 10,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 491,
+        "item": "STRAWBERRY",
+        "qty": 6,
+        "prior_count": 10,
+        "prior_hits": 7,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 555,
+        "item": "STRAWBERRY",
+        "qty": 13,
+        "prior_count": 18,
+        "prior_hits": 8,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 568,
+        "item": "STRAWBERRY",
+        "qty": 8,
+        "prior_count": 19,
+        "prior_hits": 8,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 572,
+        "item": "MILK",
+        "qty": 3,
+        "prior_count": 18,
+        "prior_hits": 11,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 576,
+        "item": "WOOL",
+        "qty": 8,
+        "prior_count": 24,
+        "prior_hits": 20,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 577,
+        "item": "STRAWBERRY",
+        "qty": 18,
+        "prior_count": 20,
+        "prior_hits": 8,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 587,
+        "item": "MILK",
+        "qty": 6,
+        "prior_count": 17,
+        "prior_hits": 9,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 594,
+        "item": "WOOL",
+        "qty": 9,
+        "prior_count": 23,
+        "prior_hits": 19,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 613,
+        "item": "WOOL",
+        "qty": 11,
+        "prior_count": 19,
+        "prior_hits": 14,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 615,
+        "item": "STRAWBERRY",
+        "qty": 7,
+        "prior_count": 21,
+        "prior_hits": 8,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 619,
+        "item": "STRAWBERRY",
+        "qty": 7,
+        "prior_count": 22,
+        "prior_hits": 8,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 624,
+        "item": "WOOL",
+        "qty": 3,
+        "prior_count": 21,
+        "prior_hits": 16,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 639,
+        "item": "MILK",
+        "qty": 9,
+        "prior_count": 16,
+        "prior_hits": 8,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 642,
+        "item": "WOOL",
+        "qty": 12,
+        "prior_count": 21,
+        "prior_hits": 16,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 645,
+        "item": "STRAWBERRY",
+        "qty": 18,
+        "prior_count": 20,
+        "prior_hits": 5,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 655,
+        "item": "MILK",
+        "qty": 12,
+        "prior_count": 17,
+        "prior_hits": 9,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 668,
+        "item": "STRAWBERRY",
+        "qty": 6,
+        "prior_count": 19,
+        "prior_hits": 4,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 690,
+        "item": "WOOL",
+        "qty": 12,
+        "prior_count": 24,
+        "prior_hits": 14,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 691,
+        "item": "STRAWBERRY",
+        "qty": 20,
+        "prior_count": 19,
+        "prior_hits": 4,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 691,
+        "item": "MILK",
+        "qty": 8,
+        "prior_count": 19,
+        "prior_hits": 9,
+        "future_net_sale_4": false
+      }
+    ],
+    "forecast_stats": {
+      "pred_units": 216,
+      "pred_fires": 24,
+      "pred_errors": 0
+    },
+    "hp_stats": {
+      "extension_signals": 60,
+      "rejected_signals": 61
+    }
+  },
+  {
+    "id": 113065174,
+    "source": "arshs3",
+    "reconstructed_action_differences": 0,
+    "events": [
+      {
+        "step": 384,
+        "item": "WOOL",
+        "qty": 5,
+        "prior_count": 9,
+        "prior_hits": 7,
+        "future_net_sale_4": true
+      },
+      {
+        "step": 511,
+        "item": "WOOL",
+        "qty": 8,
+        "prior_count": 9,
+        "prior_hits": 5,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 535,
+        "item": "WOOL",
+        "qty": 4,
+        "prior_count": 9,
+        "prior_hits": 4,
+        "future_net_sale_4": true
+      },
+      {
+        "step": 536,
+        "item": "WOOL",
+        "qty": 4,
+        "prior_count": 9,
+        "prior_hits": 4,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 549,
+        "item": "MILK",
+        "qty": 2,
+        "prior_count": 24,
+        "prior_hits": 24,
+        "future_net_sale_4": true
+      },
+      {
+        "step": 552,
+        "item": "MILK",
+        "qty": 24,
+        "prior_count": 24,
+        "prior_hits": 24,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 566,
+        "item": "WOOL",
+        "qty": 4,
+        "prior_count": 10,
+        "prior_hits": 5,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 687,
+        "item": "STRAWBERRY",
+        "qty": 20,
+        "prior_count": 32,
+        "prior_hits": 27,
+        "future_net_sale_4": true
+      },
+      {
+        "step": 687,
+        "item": "MILK",
+        "qty": 8,
+        "prior_count": 20,
+        "prior_hits": 17,
+        "future_net_sale_4": true
+      }
+    ],
+    "forecast_stats": {
+      "pred_units": 79,
+      "pred_fires": 9,
+      "pred_errors": 0
+    },
+    "hp_stats": {
+      "extension_signals": 79,
+      "rejected_signals": 23
+    }
+  },
+  {
+    "id": 113061732,
+    "source": "arshs3",
+    "reconstructed_action_differences": 0,
+    "events": [
+      {
+        "step": 303,
+        "item": "MILK",
+        "qty": 6,
+        "prior_count": 6,
+        "prior_hits": 4,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 358,
+        "item": "MILK",
+        "qty": 3,
+        "prior_count": 13,
+        "prior_hits": 9,
+        "future_net_sale_4": true
+      },
+      {
+        "step": 384,
+        "item": "WOOL",
+        "qty": 14,
+        "prior_count": 11,
+        "prior_hits": 9,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 393,
+        "item": "MILK",
+        "qty": 6,
+        "prior_count": 19,
+        "prior_hits": 14,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 434,
+        "item": "WOOL",
+        "qty": 15,
+        "prior_count": 9,
+        "prior_hits": 8,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 443,
+        "item": "MILK",
+        "qty": 3,
+        "prior_count": 17,
+        "prior_hits": 15,
+        "future_net_sale_4": true
+      },
+      {
+        "step": 464,
+        "item": "WOOL",
+        "qty": 8,
+        "prior_count": 11,
+        "prior_hits": 8,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 512,
+        "item": "WOOL",
+        "qty": 12,
+        "prior_count": 16,
+        "prior_hits": 9,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 529,
+        "item": "WOOL",
+        "qty": 4,
+        "prior_count": 14,
+        "prior_hits": 10,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 544,
+        "item": "STRAWBERRY",
+        "qty": 3,
+        "prior_count": 25,
+        "prior_hits": 20,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 548,
+        "item": "MILK",
+        "qty": 2,
+        "prior_count": 27,
+        "prior_hits": 19,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 557,
+        "item": "MILK",
+        "qty": 6,
+        "prior_count": 28,
+        "prior_hits": 20,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 577,
+        "item": "STRAWBERRY",
+        "qty": 21,
+        "prior_count": 27,
+        "prior_hits": 23,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 588,
+        "item": "MILK",
+        "qty": 7,
+        "prior_count": 20,
+        "prior_hits": 12,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 590,
+        "item": "WOOL",
+        "qty": 7,
+        "prior_count": 17,
+        "prior_hits": 10,
+        "future_net_sale_4": true
+      },
+      {
+        "step": 592,
+        "item": "WOOL",
+        "qty": 8,
+        "prior_count": 17,
+        "prior_hits": 10,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 604,
+        "item": "STRAWBERRY",
+        "qty": 5,
+        "prior_count": 31,
+        "prior_hits": 23,
+        "future_net_sale_4": true
+      },
+      {
+        "step": 605,
+        "item": "STRAWBERRY",
+        "qty": 4,
+        "prior_count": 31,
+        "prior_hits": 23,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 608,
+        "item": "MILK",
+        "qty": 12,
+        "prior_count": 20,
+        "prior_hits": 10,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 628,
+        "item": "MILK",
+        "qty": 8,
+        "prior_count": 20,
+        "prior_hits": 8,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 639,
+        "item": "STRAWBERRY",
+        "qty": 21,
+        "prior_count": 30,
+        "prior_hits": 21,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 663,
+        "item": "MILK",
+        "qty": 12,
+        "prior_count": 20,
+        "prior_hits": 7,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 691,
+        "item": "STRAWBERRY",
+        "qty": 20,
+        "prior_count": 31,
+        "prior_hits": 17,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 691,
+        "item": "MILK",
+        "qty": 8,
+        "prior_count": 21,
+        "prior_hits": 7,
+        "future_net_sale_4": false
+      }
+    ],
+    "forecast_stats": {
+      "pred_units": 215,
+      "pred_fires": 24,
+      "pred_errors": 0
+    },
+    "hp_stats": {
+      "extension_signals": 63,
+      "rejected_signals": 62
+    }
+  },
+  {
+    "id": 113056789,
+    "source": "arshs3",
+    "reconstructed_action_differences": 0,
+    "events": [
+      {
+        "step": 478,
+        "item": "MILK",
+        "qty": 3,
+        "prior_count": 25,
+        "prior_hits": 4,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 536,
+        "item": "WOOL",
+        "qty": 3,
+        "prior_count": 19,
+        "prior_hits": 7,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 540,
+        "item": "STRAWBERRY",
+        "qty": 13,
+        "prior_count": 25,
+        "prior_hits": 16,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 591,
+        "item": "WOOL",
+        "qty": 1,
+        "prior_count": 22,
+        "prior_hits": 9,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 592,
+        "item": "STRAWBERRY",
+        "qty": 8,
+        "prior_count": 36,
+        "prior_hits": 18,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 592,
+        "item": "WOOL",
+        "qty": 8,
+        "prior_count": 22,
+        "prior_hits": 9,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 600,
+        "item": "WOOL",
+        "qty": 4,
+        "prior_count": 22,
+        "prior_hits": 9,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 639,
+        "item": "STRAWBERRY",
+        "qty": 21,
+        "prior_count": 38,
+        "prior_hits": 17,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 668,
+        "item": "STRAWBERRY",
+        "qty": 6,
+        "prior_count": 38,
+        "prior_hits": 16,
+        "future_net_sale_4": false
+      },
+      {
+        "step": 668,
+        "item": "MILK",
+        "qty": 7,
+        "prior_count": 28,
+        "prior_hits": 8,
+        "future_net_sale_4": false
+      }
+    ],
+    "forecast_stats": {
+      "pred_units": 74,
+      "pred_fires": 10,
+      "pred_errors": 0
+    },
+    "hp_stats": {
+      "extension_signals": 11,
+      "rejected_signals": 91
+    }
+  }
+]

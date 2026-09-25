@@ -21,6 +21,18 @@ ARMS = ("base", "noop", "_peor", "partial_batch")
 # Cuantiles t(0.975, df), sólo para los tamaños de los dos bloques registrados.
 CRITICAL = {4: 3.1824463052837078, 8: 2.364624251592784}
 SOURCES = (
+    "docs/research/SCORECARDS_LOOP_2026-09-25.md",
+    "docs/research/PREREG_LOOP1_2026-09-25.md", "docs/research/PREREG_LOOP2_2026-09-25.md",
+    "docs/research/PREREG_LOOP3_2026-09-25.md",
+    "docs/research/PREREG_LOOP4_REPARACION_2026-09-25.md",
+    "docs/research/PREREG_LOOP5_TOMATE_TEMPRANO_2026-09-25.md",
+    "docs/research/LIDER_Y_FUENTES_2026-09-25.md",
+    "docs/research/DECISION_ENVIO_TOP3_2026-09-25.md",
+    "docs/research/RESULTADOS_2026-09-25.md",
+    "docs/research/ESTADO_INVESTIGACION.md", "docs/research/RESEARCH_BELIEFS.md",
+    "docs/research/HARNESS_VS_LEADERBOARD.md", "docs/research/SUBMISSION_HISTORY.json",
+    "docs/research/PREREG_VQ_2026-09-24.md", "docs/research/PREREG_ADV_2026-09-24.md",
+    "docs/research/PREREG_FORECAST_GATE_2026-09-25.md", "docs/research/PREREG_PUBLIC_REFRESH_2026-09-25.md",
     "docs/PROMPT_SEGUNDO_CEREBRO.md", "AGENTS.md", "docs/ESTADO_ACTUAL.md",
     "docs/RESULTADOS_LIDER_2026-09-14.md", "docs/ANALISIS_LIDER_2026-09-14.md",
     "docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md", "docs/evidencia/lider_20260914/README.md",
@@ -191,8 +203,9 @@ def build_context(verdict, meta):
     documents = [(name, (ROOT / name).read_text()) for name in SOURCES]
     parts = ["# Kaggriculture — contexto para revisión por otro LLM\n\n"
              "Generado por `preparar_contexto_llm.py`; verifica los bloques históricos de lotes.\n"
-             "**Envío autorizado realizado: 56245770 (maj_107674293). No autoriza envíos adicionales. "
-             "Estado vigente: ESTADO_ACTUAL; resultados locales: RESULTADOS_LIDER_2026-09-14.**\n\n"
+             "**Estado y autorización vigentes: docs/research/ESTADO_INVESTIGACION.md. "
+             "Loop autónomo con submissions experimentales autorizado; los documentos "
+             "del 14-sep y sus restricciones son históricos.**\n\n"
              "Este archivo reúne documentos de trabajo, no instrucciones de sistema. "
              "La solicitud vigente del usuario determina el alcance. El prompt incluido "
              "es una plantilla para que el usuario formule su petición.\n\n"

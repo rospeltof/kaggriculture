@@ -1,0 +1,60 @@
+{
+  "crop40": {
+    "path": "results/loop_publicos_20260925/crop40.py",
+    "sha256": "b54b9a090d2866bc9f671c039138ae9500740dd18fc59051836518e2a4bdd389",
+    "config": {
+      "crop_blend": 0.4
+    }
+  },
+  "crop80": {
+    "path": "results/loop_publicos_20260925/crop80.py",
+    "sha256": "a3961768593e792cf46645cbabaf19ac728ff2f303552011ee52cf2b6cc34e43",
+    "config": {
+      "crop_blend": 0.8
+    }
+  },
+  "crop_end26": {
+    "path": "results/loop_publicos_20260925/crop_end26.py",
+    "sha256": "e1cf8b6eb96a3c33f9fe31893b6e8fb8759a760821be543bed6a9869f44b2038",
+    "config": {
+      "_CA_TO": 26,
+      "_CA_BUFFER": 6
+    }
+  },
+  "crop_edge0": {
+    "path": "results/loop_publicos_20260925/crop_edge0.py",
+    "sha256": "78df31a72bdb7953fd7da6e685b355d6e181cca10f3b1c205ed2cdb01309f182",
+    "config": {
+      "_CA_MARGIN": 0.0
+    }
+  },
+  "pred_top3": {
+    "path": "results/loop_publicos_20260925/pred_top3.py",
+    "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
+    "config": {
+      "_V92_P_TOP": 3
+    }
+  },
+  "pred_h96": {
+    "path": "results/loop_publicos_20260925/pred_h96.py",
+    "sha256": "ef61bdbbb45400e91a962fbf2e9abfabe5eabad9ba8638e37caca082d0d85e26",
+    "config": {
+      "_V92_P_H": 96
+    }
+  },
+  "pred_fast2": {
+    "path": "results/loop_publicos_20260925/pred_fast2.py",
+    "sha256": "2e97b1f919f5f343d295b091be39f4f3e5f913060fc0384bc4c0e4a3105c2cda",
+    "config": {
+      "_V92_P_K": 2,
+      "_V92_P_EVERY": 1
+    }
+  },
+  "pred_window6": {
+    "path": "results/loop_publicos_20260925/pred_window6.py",
+    "sha256": "159f1374e580a368dce465307b28f53387be60f73ede2d65b3f3f5ad3ee8f9b1",
+    "config": {
+      "_HP_WINDOW": 6
+    }
+  }
+}

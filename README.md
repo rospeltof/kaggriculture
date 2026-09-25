@@ -4,19 +4,23 @@ Planner determinista de Python para una simulación de granja 1v1. No usa un
 LLM durante la partida. Este repositorio contiene el agente, el aparato de
 medición y el registro de experimentos.
 
-**Estado actual, 2026-09-14:** `maj_107674293` enviada con autorización expresa,
-submission **56245770** (inicialmente PENDING). `submission/main.py` contiene esa
-cinta; HOZ sigue como referencia local. Leer [el estado actual](docs/ESTADO_ACTUAL.md),
-los [resultados](docs/RESULTADOS_LIDER_2026-09-14.md),
-el [análisis del líder](docs/ANALISIS_LIDER_2026-09-14.md) y el
-[pre-registro](docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md) antes de actuar.
+**Estado vigente, 2026-09-25 UTC:** mejor referencia real **arshs3 56511619**
+(2292,5 @148 partidas); variante **VQ 56535264** enviada y validada por Kaggle.
+El loop autónomo permite investigación y submissions experimentales. Leer primero
+[ESTADO_INVESTIGACION](docs/research/ESTADO_INVESTIGACION.md),
+[creencias](docs/research/RESEARCH_BELIEFS.md) y
+[registro de envíos](docs/research/SUBMISSION_HISTORY.json).
+`submission/main.py` conserva arshs3 original; el archivo enviado como VQ fue
+`submission/main_publico_arshs3_vq.py`. Los informes del 14-sep son históricos.
 
 ## Para retomar con otro LLM
 
 1. Darle acceso al repo y pedir que lea [AGENTS.md](AGENTS.md), o generar el
    archivo único de contexto con el comando de abajo.
-2. Copiar la [petición de revisión de esta ronda](docs/REVISION_LIDER_PARA_LLM.md).
-3. Pedir revisión de evidencia y **una** siguiente prueba, antes de ejecutar.
+2. Compartir los [resultados de la ronda actual](docs/research/RESULTADOS_2026-09-25.md).
+3. Revisar el historial y registrar una hipótesis nueva antes de ejecutarla,
+   dentro del loop autónomo autorizado. El prompt `REVISION_LIDER_PARA_LLM.md`
+   corresponde a la ronda histórica del 14 de septiembre.
 
 ```bash
 python3 preparar_contexto_llm.py
@@ -25,7 +29,14 @@ python3 preparar_contexto_llm.py
 El generador usa sólo biblioteca estándar: verifica hashes, controles y deltas
 históricos de lotes guardados, y escribe [docs/CONTEXTO_LLM.md](docs/CONTEXTO_LLM.md). No usa la red,
 no simula partidas ni genera o envía un `main.py`.
-La evidencia nueva se comprueba aparte con `./.venv/bin/python verificar_lider.py`.
+Los torneos actuales se verifican sin simular con:
+
+```bash
+./.venv/bin/python validar_torneo.py docs/evidencia/research_20260925/forecast_pilot
+./.venv/bin/python validar_torneo.py docs/evidencia/research_20260925/public_refresh
+```
+
+`verificar_lider.py` comprueba por separado la ronda histórica del 14 de septiembre.
 
 ## Ruta de lectura
 

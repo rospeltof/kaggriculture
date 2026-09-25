@@ -1,14 +1,28 @@
 # Entrada para agentes que trabajan en este repositorio
 
-> **Estado vigente (2026-09-23): leer primero `docs/research/ESTADO_INVESTIGACION.md`.**
+> **Estado vigente (2026-09-25 UTC): leer primero `docs/research/ESTADO_INVESTIGACION.md`.**
 > Desde el 2026-09-21 el usuario autorizó un loop autónomo de investigación que
 > incluye submissions experimentales ("También tienes capacidad para crear y
-> subir submissions reales. Usa ambas cosas"). Champion en ladder:
-> `107570947 + guardias` (56449108). Creencias con evidencia:
+> subir submissions reales. Usa ambas cosas"). Mejor referencia real:
+> **arshs3 (56511619), 2292,5 @148 episodios**; VQ experimental **56535264**
+> enviada y COMPLETE. No volver al campeón histórico de 1180. Creencias con evidencia:
 > `docs/research/RESEARCH_BELIEFS.md`; historial reproducible de envíos:
 > `docs/research/SUBMISSION_HISTORY.json`; qué métrica local predice el ladder:
 > `docs/research/HARNESS_VS_LEADERBOARD.md`. Lo que sigue abajo es el estado
 > del 2026-09-14 y se conserva como historia.
+
+## Loop continuo vigente
+
+El 2026-09-25 UTC el usuario pidió explícitamente investigar y probar muchas
+variantes en un loop continuo: **no parar al cerrar cada ronda**. Objetivo
+persistente activo. Leer `docs/evidencia/loop_publicos_20260925/pipeline_state.json`
+y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
+`continuar_loop_publicos.py`, `continuar_loop_herd.py`,
+`continuar_loop_recuperacion.py` y `continuar_loop_tomate.py` encadenan bloques
+registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
+terminó: top3 +10,795 pp, candidata real; loop3 de animales está corriendo.
+Al completar los bloques, revisar resultados y seguir con la siguiente hipótesis
+o submission justificada. Cierre de bloque no equivale a cierre de investigación.
 
 ## Estado y autorización
 

@@ -1,0 +1,27 @@
+{
+  "seed": 1004000,
+  "seats": [
+    0,
+    1
+  ],
+  "opponent": "submission/main_publico_arshs3_arsgorynich.py",
+  "rule": "Fixed first development seed; execution and calendar validation, not population performance or pilot selection.",
+  "agents": {
+    "base": {
+      "path": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "calendar_noop": {
+      "path": "results/tomate_temprano_20260925/calendar_noop.py",
+      "sha256": "26f46cbcf79abc279f681fc8a1cf75d15f6d771cc09f1fed2854ef271b33536a"
+    },
+    "early12_6k": {
+      "path": "results/tomate_temprano_20260925/early12_6k.py",
+      "sha256": "2cfc157ddcf153ccee17885cbc1f99545f45576a436714a9d3bff8b740e427da"
+    },
+    "late18_6k": {
+      "path": "results/tomate_temprano_20260925/late18_6k.py",
+      "sha256": "15cc7a7ebd7285081648862fe18aa6a70bdd10c9cf03fd2fc820c0ae087ac4d9"
+    }
+  }
+}

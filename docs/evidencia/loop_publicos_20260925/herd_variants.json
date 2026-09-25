@@ -1,0 +1,34 @@
+{
+  "herd_future": {
+    "path": "results/herd_loop_20260925/herd_future.py",
+    "sha256": "010664ca28fa1efd38e9fad8d05cccd7ad6d3f8dd09f8066e08bea7bc4e824be",
+    "config": {
+      "expected_future_shop_weight": 1.0,
+      "gain_for_two_animals": null
+    }
+  },
+  "herd_ev600": {
+    "path": "results/herd_loop_20260925/herd_ev600.py",
+    "sha256": "ead7bd1e6b863460030323c50c4119e9cf9140367a36f4bdf666c77b485762b1",
+    "config": {
+      "expected_future_shop_weight": 0.0,
+      "gain_for_two_animals": 600
+    }
+  },
+  "herd_ev1500": {
+    "path": "results/herd_loop_20260925/herd_ev1500.py",
+    "sha256": "b6c7bfd55fde804f5d2044f179b39d05dd90b799db4dda7e9de2a12e58a9e8e3",
+    "config": {
+      "expected_future_shop_weight": 0.0,
+      "gain_for_two_animals": 1500
+    }
+  },
+  "herd_ev_future": {
+    "path": "results/herd_loop_20260925/herd_ev_future.py",
+    "sha256": "61714441f5d0ac855f21b21fb8eec282bee5b81274a3fa017c64413093222315",
+    "config": {
+      "expected_future_shop_weight": 1.0,
+      "gain_for_two_animals": 600
+    }
+  }
+}

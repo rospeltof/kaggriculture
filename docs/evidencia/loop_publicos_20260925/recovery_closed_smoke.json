@@ -1,0 +1,129 @@
+[
+  {
+    "candidate": "base",
+    "seat": 0,
+    "rewards": [
+      106389.0,
+      105624.0
+    ],
+    "stats": null,
+    "shops": {
+      "unlocked_shops": [
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "tile_day10": {
+      "kind": "PLANT",
+      "crop": "STRAWBERRY",
+      "planted_day": 7,
+      "watered_today": false,
+      "consecutive_unwatered": 0,
+      "yield_units": 0,
+      "max_lifespan_step": -1,
+      "fertilized_until_day": -1
+    }
+  },
+  {
+    "candidate": "recover_now",
+    "seat": 0,
+    "rewards": [
+      106389.0,
+      105624.0
+    ],
+    "stats": {
+      "intents": 0,
+      "planted": 0,
+      "shifted": 0,
+      "expired": 0,
+      "unsafe_suffix": 0
+    },
+    "shops": {
+      "unlocked_shops": [
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "tile_day10": {
+      "kind": "PLANT",
+      "crop": "STRAWBERRY",
+      "planted_day": 7,
+      "watered_today": false,
+      "consecutive_unwatered": 0,
+      "yield_units": 0,
+      "max_lifespan_step": -1,
+      "fertilized_until_day": -1
+    }
+  },
+  {
+    "candidate": "base",
+    "seat": 1,
+    "rewards": [
+      106342.0,
+      105671.0
+    ],
+    "stats": null,
+    "shops": {
+      "unlocked_shops": [
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "tile_day10": null
+  },
+  {
+    "candidate": "recover_now",
+    "seat": 1,
+    "rewards": [
+      82303.0,
+      82356.0
+    ],
+    "stats": {
+      "intents": 1,
+      "planted": 1,
+      "shifted": 5,
+      "expired": 0,
+      "unsafe_suffix": 0
+    },
+    "shops": {
+      "unlocked_shops": [
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "tile_day10": {
+      "kind": "PLANT",
+      "crop": "STRAWBERRY",
+      "planted_day": 7,
+      "watered_today": false,
+      "consecutive_unwatered": 0,
+      "yield_units": 0,
+      "max_lifespan_step": -1,
+      "fertilized_until_day": -1
+    }
+  }
+]

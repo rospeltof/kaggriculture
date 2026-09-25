@@ -1,5 +1,10 @@
 # Estado actual — leer primero
 
+> **Este archivo conserva el traspaso del 14-sep.** Para decisiones vigentes,
+> leer [ESTADO_INVESTIGACION](research/ESTADO_INVESTIGACION.md): loop autónomo
+> autorizado, referencia arshs3 56511619 y VQ 56535264. No relanzar ni bloquear
+> trabajo por las autorizaciones históricas que siguen.
+
 ## Envío autorizado — 2026-09-14, 23:52 America/Bogota
 
 El usuario pidió «Subela a kaggle pa que coja calle». Se envió **`maj_107674293`**

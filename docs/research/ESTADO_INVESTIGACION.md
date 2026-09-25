@@ -1,5 +1,125 @@
 # Estado de investigación — leer primero para continuar
 
+## Loop activo desde 2026-09-25 01:02 UTC
+
+El usuario pidió explícitamente seguir investigando y probando en un **loop
+continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
+
+- Loop1: ocho variantes sobre VQ, producción/forecast, 1.000 episodios completos.
+  PROMISING: pred_top3 +9,375 pp; pred_fast2 +3,125. Ambas a confirmación.
+  Protocolo `PREREG_LOOP1_2026-09-25.md`; semilla 995000–995003.
+- Loop2: recuperación de siembras + inversión en tomates, cinco variantes,
+  616 episodios completos; ninguna señal agregada positiva. Reparaciones
+  y dos variantes de tomate no se activaron en estas cuatro semillas.
+  Protocolo `PREREG_LOOP2_2026-09-25.md`; semilla 998000–998003.
+- `continuar_loop_publicos.py` encadena esos pilotos, verifica controles,
+  selecciona según reglas fijadas y ejecuta confirmaciones disjuntas. Usa
+  `torneo.py` y `pareado_torneo.py`; no es otro harness. NO subir automáticamente.
+- **Confirm1 completa**, 1.600 episodios, noop416/416, cero errores. Top3
+  **+10,795 pp**, IC95 dos vías [−0,115;21,706], cumple gate de prueba real;
+  fast2 +2,841 pp, no cumple gate. Top3 máximo757ms, mecanismo de mejora y
+  única celda de daño reproducidos. Decisión en `DECISION_ENVIO_TOP3_2026-09-25.md`.
+- **En curso loop3**: cuatro variantes de elección económica de animales, 504 episodios;
+  `continuar_loop_herd.py` espera al pipeline anterior y luego ejecuta piloto y
+  confirmación según `PREREG_LOOP3_2026-09-25.md`.
+- Loop4: cobertura de recover_now en 32 semillas nuevas, 384 episodios;
+  `continuar_loop_recuperacion.py` espera a loop3. Protocolo separado después
+  de evidencia nueva del mecanismo, no reinterpretación del gate de loop2.
+- Loop5: cinco variantes de tomate temprano/tardío, 616 episodios y hasta dos
+  confirmaciones; `continuar_loop_tomate.py` espera a loop4. Ocho diagnósticos
+  previos: noop exacto, diez plantas/60 unidades en el brazo temprano, cero
+  errores, derrota en ese mundo. No elegir por esas partidas de desarrollo.
+  Total: 22 variantes diferentes preparadas, además de controles.
+- Scorecards actualizadas: `SCORECARDS_LOOP_2026-09-25.md`.
+- Estado máquina: `docs/evidencia/loop_publicos_20260925/pipeline_state.json`.
+  Logs: `results/loop_publicos_20260925_pipeline.log` y los logs de cada bloque.
+  No modificar `torneo.py`, ni agentes de un bloque mientras corre. No lanzar
+  otro torneo de ocho workers mientras el pipeline ocupe el equipo.
+- Sonda nueva: falta una fresa tras DIG por maleza en replay 113061732. Reparación
+  con reintento entre trabajadores no actúa por falta de riego el mismo día;
+  inserción en un sufijo con turno final redundante sí recupera planta. Cambia
+  tiendas/RNG, así que la sonda frente a replay NO mide ganancia competitiva.
+
+Sonda posterior en bucle cerrado (mismo seed del fallo, ambos asientos, rival
+arshs3 reactivo): reparación inerte en asiento 0; recupera planta y −671→+53 en
+asiento 1, con tiendas diferentes. Caso dirigido, no estimación poblacional.
+La prueba de cobertura quedó registrada y encolada como loop4.
+
+Líder actual consultado 01:36 UTC: DSM 3128,7, submission 56518845. Cuatro replays
+recientes reproducidos exactamente; compra cuarta tierra día 10 y cultiva más
+tomates, con diferencias grandes de composición por mundo. No inferir causalidad
+ni algoritmo del score. Informe: `LIDER_Y_FUENTES_2026-09-25.md`. Dos notebooks
+con nombre nuevo eran copias de tds25: se deduplicaron sin repetir torneo.
+
+Último snapshot real: VQ56535264 **2319,5 /24 episodios listados**, original
+56511619 **2275,7**. VQ aún joven, no afirmar superioridad por este rating.
+Top3 empaquetado byte exacto de confirmación, sha9668e30a; envío experimental
+en preparación. Desplazará al original y conservará VQ, su padre, como control.
+
+Lo siguiente es el cierre de la ronda anterior; no significa parar este loop.
+
+## Estado vigente — 2026-09-25 UTC / 2026-09-24 America/Bogota
+
+Esta sección sustituye los planes y estados «en curso» históricos de abajo.
+Consulta API archivada en `docs/evidencia/research_20260925/`:
+
+| Agente | Submission | Score observado | Episodios | Estado |
+|---|---:|---:|---:|---|
+| arshs3 público original | 56511619 | 2292,5 | 148 | Mejor referencia real, activa |
+| v13 público | 56511611 | 1857,9 | 136 | Desplazada por VQ |
+| arshs3 + VQ | 56535264 | 810 inicial | sin actualizar | REAL_WORLD_CANDIDATE, COMPLETE |
+
+VQ se envió desde `submission/main_publico_arshs3_vq.py`, commit a9f59ee,
+sha 9b463dfb, usando la evidencia ya existente (40-0 espejo y otros bloques,
+0 cambios W/L/T en el pool). No se repitió el barrido VQ ni ADV. La CLI confirmó
+4 envíos restantes tras subirla. Arshs3 original queda activa para comparar;
+otro envío desplazaría a esa referencia. `submission/main.py` aún es el original;
+el archivo efectivamente enviado está identificado en SUBMISSION_HISTORY.
+
+**Hallazgos nuevos:** muestra fija por recencia, 16 partidas arshs3 y 8 v13,
+sin seleccionar por resultado. Arshs3 4V/11D/1E, cero escapes, inventario terminal
+propio cero. No es su WR histórico. Cuatro partidas se usan para diagnosticar
+el predictor: la primera sonda contó 12/67 coincidencias, pero omitía ventas
+simultáneas. **CORRECCIÓN:** cuatro reproducciones exactas con ledger dan 50/67
+en t..t+4, 42 en el mismo turno. Una acción reconstruida del agente difiere de
+la real (SELL WHEAT en step 623); el ledger se validó contra las acciones reales,
+sin esa discrepancia. No atribuir causalidad a cada coincidencia.
+
+**TERMINADO:** `forecast_pilot` (608 episodios), noop exacto 160/160. Gate
+**−51,56** puntos (IC dos vías [−78,92; −24,20]); off **−68,75**
+([−89,57; −47,93]). REJECTED ambos; no se ejecuta confirmación ni se suben.
+Sonda causal de fallo: primeras acciones distintas step 440, mismas cantidades
+totales vendidas, peor timing y +89 monedas pasa a −78. Protocolo inalterado:
+`PREREG_FORECAST_GATE_2026-09-25.md`; resultados `forecast_results.json`.
+
+**TERMINADO:** `public_refresh` (608 episodios), noop exacto 160/160.
+Las versiones nuevas tds25 / hl25 (sha 127ed3e6 / 1dfd4630) obtienen **−7,81**
+y **−9,38** puntos vs VQ. IC dos vías [−27,29; +11,67] y [−29,79; +11,04]:
+inconcluso, sin señal agregada de mejora; ninguna cumple el criterio registrado.
+No se ejecuta confirmación ni otro envío. No rescatar tds25 por su 10/16 en directo.
+Protocolo `PREREG_PUBLIC_REFRESH_2026-09-25.md`; `public_refresh_results.json`.
+
+**Cierre de esta ronda:** 1.216 partidas de torneo + ocho diagnósticas; todos
+los procesos terminaron. Consulta final: original 2288,6; VQ 1198,5 con apenas
+media hora de vida, sin actualizar episodios. No compararlos por ese rating.
+El informe completo es [RESULTADOS_2026-09-25.md](RESULTADOS_2026-09-25.md).
+Siguiente frontera: aprender de pérdidas actuales y separar producción de precios
+realmente ejecutados; preservar el predictor y dejar que VQ reúna evidencia real.
+No hay monitoreo automático programado ni candidato nuevo pendiente de envío.
+
+Se endureció el mismo `torneo.py`: no sobrescribir, abortar ante inválidos o
+cambios de fuentes, comprobar cobertura, archivar fuentes y capturar acciones
+antes del motor. La sonda comparó el wrapper con el loader oficial: 1.438 acciones
+y rewards idénticos (dos episodios). No usar `pareado_torneo.py` sin comprobar
+antes que el bloque está completo y que cada celda contiene ambos asientos.
+
+La autorización autónoma de investigación y submissions continúa. No hay una
+aprobación pendiente para los agentes públicos ya enviados. Las restricciones
+anteriores y las listas de procesos de septiembre 21–24 se conservan abajo sólo
+como historial; no relanzar sus comandos por leerlos aquí.
+
+## Historial previo a esta revisión
+
 Actualizado: 2026-09-23 20:45 (America/Bogota) = 2026-09-24 01:45 UTC. Deadline 2026-09-30 23:59 UTC.
 Loop autónomo autorizado por el usuario (mensaje del 2026-09-21): harness + ladder
 como evidencia complementaria, submissions como instrumento (5/día).

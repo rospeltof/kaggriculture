@@ -1,0 +1,28 @@
+  (extra, no entra en la estimacion) base vs crop40: 25.0% (8 ep)
+  (extra, no entra en la estimacion) pred_window6 vs crop40: 100.0% (8 ep)
+  (extra, no entra en la estimacion) base vs crop80: 50.0% (8 ep)
+  (extra, no entra en la estimacion) pred_window6 vs crop80: 100.0% (8 ep)
+  (extra, no entra en la estimacion) base vs crop_edge0: 50.0% (8 ep)
+  (extra, no entra en la estimacion) pred_window6 vs crop_edge0: 100.0% (8 ep)
+  (extra, no entra en la estimacion) base vs crop_end26: 75.0% (8 ep)
+  (extra, no entra en la estimacion) pred_window6 vs crop_end26: 100.0% (8 ep)
+  (extra, no entra en la estimacion) base vs noop: 50.0% (8 ep)
+  (extra, no entra en la estimacion) pred_window6 vs noop: 100.0% (8 ep)
+  (extra, no entra en la estimacion) base vs pred_fast2: 0.0% (8 ep)
+  (extra, no entra en la estimacion) pred_window6 vs pred_fast2: 75.0% (8 ep)
+  (extra, no entra en la estimacion) base vs pred_h96: 50.0% (8 ep)
+  (extra, no entra en la estimacion) pred_window6 vs pred_h96: 100.0% (8 ep)
+  (extra, no entra en la estimacion) base vs pred_top3: 0.0% (8 ep)
+  (extra, no entra en la estimacion) pred_window6 vs pred_top3: 25.0% (8 ep)
+pred_window6 - base: 8 rivales x 4 semillas = 32 celdas; ref 87.5%
+  delta -6.25 pts | IC95 semilla [-40.70; +28.20] | dos vias [-40.70; +28.20]
+  celdas cambiadas 4/32: 1 a favor, 3 en contra
+    vs    ars40   +0.0
+    vs    guru6   +0.0
+    vs    h2965  -25.0
+    vs     hsov  -25.0
+    vs     hybu   +0.0
+    vs      obr  -25.0
+    vs      tds  +25.0
+    vs      v13   +0.0
+  directo pred_window6 vs base: 100.0% (8 ep)

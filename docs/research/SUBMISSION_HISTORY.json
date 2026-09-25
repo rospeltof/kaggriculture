@@ -398,13 +398,19 @@
   {
     "local_harness_cadena": "torneo_rr1: bucle cerrado, motor oficial 1.32.7, cargado como Kaggle (ultimo callable), 10 seeds 910000-009 x 2 asientos, 9 agentes, 720 partidas, 0 errores",
     "leaderboard": {
-      "score": null,
-      "episodes": 0,
+      "score": 1857.9,
+      "episodes": 136,
       "rank": null,
-      "lecturas": []
+      "lecturas": [
+        [
+          136,
+          1857.9
+        ]
+      ],
+      "observed_at": "2026-09-25T00:22:13.462952+00:00"
     },
     "observed": null,
-    "conclusion": "PENDIENTE",
+    "conclusion": "Desactivada por VQ; rendimiento inferior a arshs3 en esta lectura",
     "autorizacion": "usuario 2026-09-24 (AskUserQuestion): 'arshs3 + v13 (Recomendado)'",
     "submission_id": 56511611,
     "timestamp": "2026-09-24T04:28:30Z",
@@ -426,18 +432,24 @@
       "nota": "semillas A>B por pareja en torneo_rr1.txt; cambio de asiento casi repite la partida: unidad efectiva = semilla"
     },
     "reason": "Salto de nivel absoluto (publicos 2500-2950 vs nosotros ~1300). Rama cinta+reflejos del autor con mejor registro de ladder documentado (v9/4 2944.7 @201). Diversifica frente a arshs3",
-    "next_action": "Leer W/L a ~30 ep y rating a ~60-100. Predice > 2500. Si queda claramente por debajo de arshs3, primer slot a sustituir"
+    "next_action": "Conservar como familia de control local"
   },
   {
     "local_harness_cadena": "torneo_rr1: bucle cerrado, motor oficial 1.32.7, cargado como Kaggle (ultimo callable), 10 seeds 910000-009 x 2 asientos, 9 agentes, 720 partidas, 0 errores",
     "leaderboard": {
-      "score": null,
-      "episodes": 0,
+      "score": 2292.5,
+      "episodes": 148,
       "rank": null,
-      "lecturas": []
+      "lecturas": [
+        [
+          148,
+          2292.5
+        ]
+      ],
+      "observed_at": "2026-09-25T00:22:13.462277+00:00"
     },
     "observed": null,
-    "conclusion": "PENDIENTE",
+    "conclusion": "Mejor referencia real observada; sigue activa y se compara con VQ",
     "autorizacion": "usuario 2026-09-24 (AskUserQuestion): 'arshs3 + v13 (Recomendado)'",
     "submission_id": 56511619,
     "timestamp": "2026-09-24T04:28:57Z",
@@ -458,6 +470,57 @@
       }
     },
     "reason": "Campeon del torneo en bucle cerrado contra el pool publico",
-    "next_action": "Leer W/L a ~30 ep y rating a ~60-100. Prediccion: >= v13 si el bucle cerrado intra-familia transfiere; si no, dato para HARNESS_VS_LEADERBOARD"
+    "next_action": "Comparar VQ a edad y rivales comparables"
+  },
+  {
+    "submission_id": 56535264,
+    "timestamp": "2026-09-25T00:22:43.633000Z",
+    "git_commit": "a9f59ee",
+    "experiment_id": "arshs3vq_real",
+    "config": {
+      "file": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976",
+      "layers": [
+        "arshs3",
+        "VQ"
+      ]
+    },
+    "local_harness": {
+      "pool_delta": 0,
+      "ci95_seed": [
+        0,
+        0
+      ],
+      "ci95_2way": null,
+      "opponent_breakdown": "0 cambios WLT en 120 celdas / 12 rivales",
+      "mirror_confirmation": "40-0; bloque posterior 95%",
+      "evidence": "docs/research/PREREG_VQ_2026-09-24.md"
+    },
+    "reason": "VQ validada contra copias; arshs3 transfiere al ladder (2292.5 vs v13 1857.9). Desplaza v13, preserva arshs3 como referencia activa.",
+    "leaderboard": {
+      "score": 1967.9,
+      "rank": null,
+      "episodes": 14,
+      "lecturas": [
+        [
+          "initial",
+          810.0
+        ],
+        [
+          "2026-09-25T00:54:49.768749+00:00",
+          1198.5
+        ],
+        [
+          "2026-09-25T01:22:09.418425+00:00",
+          1967.9,
+          14
+        ]
+      ]
+    },
+    "delta_vs_champion_ladder": null,
+    "observed": "COMPLETE; 1967.9 a 14 episodios en snapshot del loop. Sigue joven; original 2284.3.",
+    "conclusion": "REAL_WORLD_CANDIDATE; ventaja local específica contra copias, sin promoción automática",
+    "next_action": "Leer partidas y comparar contra arshs3 original; no inferir fuerza de rating de arranque",
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/submissions_snapshot.json"
   }
 ]

@@ -10,7 +10,7 @@ Uso:
 contra todo el pool y los brazos entre si; sin --vs, todos contra todos.
 Escribe <out>.jsonl (una fila por episodio) y <out>.meta.json (sha256 de cada fichero).
 """
-import argparse, hashlib, itertools, json, multiprocessing as mp, statistics as st, sys, time
+import argparse, hashlib, itertools, json, math, multiprocessing as mp, statistics as st, sys, time, tarfile
 from pathlib import Path
 
 
@@ -20,8 +20,19 @@ def episodio(job):
     r = dict(a=a, b=b, seed=seed, seat=seat, valid=False)
     try:
         from kaggle_environments import make
+        from kaggle_environments.agent import build_agent
         agents = [None, None]
-        agents[seat], agents[1 - seat] = pa, pb
+        paths=[None,None];paths[seat],paths[1-seat]=pa,pb
+        hashes=[hashlib.sha256(),hashlib.sha256()];counts=[0,0]
+        def traced(path,p):
+            loaded,_=build_agent(path,{},"kaggriculture")
+            def call(obs,config):
+                action=loaded(obs,config)
+                hashes[p].update(json.dumps(action,sort_keys=True,separators=(',',':'),allow_nan=False).encode()+b'\n')
+                counts[p]+=1
+                return action
+            return call
+        agents=[traced(path,p) for p,path in enumerate(paths)]
         env = make("kaggriculture", configuration={"seed": seed, "episodeSteps": 720}, debug=False)
         env.run(agents)
         final = env.steps[-1]
@@ -34,11 +45,14 @@ def episodio(job):
             for p, lg in enumerate(logs or []):
                 if isinstance(lg, dict) and "duration" in lg:
                     dur[p].append(lg["duration"])
+        if not all(isinstance(v,(int,float)) and math.isfinite(v) for v in rew):
+            raise ValueError('Reward no finito')
         mine, theirs = rew[seat], rew[1 - seat]
         r.update(rewards=rew, statuses=stat, n_err=len(errs), errors=errs[:5], steps=len(env.steps),
                  score=1.0 if mine > theirs else 0.0 if mine < theirs else 0.5, margin=mine - theirs,
                  ms=[dict(mean=1000 * st.mean(d), max=1000 * max(d)) if d else None for d in dur])
-        r["valid"] = not errs and stat == ["DONE", "DONE"] and len(env.steps) == 720
+        r.update(action_hashes=[h.hexdigest() for h in hashes],action_counts=counts)
+        r["valid"] = not errs and stat == ["DONE", "DONE"] and len(env.steps) == 720 and counts==[719,719]
     except Exception as exc:
         r["error"] = f"{type(exc).__name__}: {exc}"
     r["seconds"] = time.monotonic() - t0
@@ -86,6 +100,9 @@ def main():
     ap.add_argument("--workers", type=int, default=11)
     ap.add_argument("--vs", default=None)
     args = ap.parse_args()
+    if any(Path(args.out+s).exists() for s in ('.jsonl','.meta.json','.sources.tgz')):
+        sys.exit('No sobrescribir un torneo existente')
+    Path(args.out).parent.mkdir(parents=True,exist_ok=True)
     ag = dict(x.split("=", 1) for x in args.agentes)
     for n, p in ag.items():
         if not Path(p).exists():
@@ -97,19 +114,41 @@ def main():
     if brazos:
         parejas = [(a, b) if a in brazos else (b, a) for a, b in parejas]
     jobs = [(a, ag[a], b, ag[b], s, seat) for a, b in parejas for s in meta["seeds"] for seat in (0, 1)]
+    import importlib
+    from importlib.metadata import version
+    engine=Path(importlib.import_module('kaggle_environments.envs.kaggriculture.kaggriculture').__file__)
+    meta.update(state='running',expected_episodes=len(jobs),workers=args.workers,
+                engine_sha256=hashlib.sha256(engine.read_bytes()).hexdigest(),
+                kaggle_environments=version('kaggle-environments'),
+                runner_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
+    with tarfile.open(args.out+'.sources.tgz','w:gz') as archive:
+        archive.add(__file__,arcname='torneo.py')
+        for name,path in ag.items():archive.add(path,arcname=f'agents/{name}.py')
+    def save():Path(args.out+'.meta.json').write_text(json.dumps(meta,indent=2))
+    save()
     print(f"{len(ag)} agentes, {len(parejas)} parejas, {len(jobs)} episodios", flush=True)
     rows = []
-    with mp.Pool(args.workers) as pool, open(args.out + ".jsonl", "w") as f:
-        for i, r in enumerate(pool.imap_unordered(episodio, jobs), 1):
-            rows.append(r)
-            f.write(json.dumps(r) + "\n"); f.flush()
-            if i % 50 == 0:
-                print(f"  {i}/{len(jobs)}", flush=True)
-    for n, p in ag.items():
-        if hashlib.sha256(Path(p).read_bytes()).hexdigest() != meta["agentes"][n]["sha256"]:
-            print(f"!! {n}: el fichero cambio durante el torneo")
-    meta["fin"] = time.strftime("%Y-%m-%d %H:%M:%S")
-    Path(args.out + ".meta.json").write_text(json.dumps(meta, indent=2))
+    try:
+        with mp.Pool(args.workers) as pool, open(args.out + ".jsonl", "x") as f:
+            for i, r in enumerate(pool.imap_unordered(episodio, jobs), 1):
+                rows.append(r)
+                f.write(json.dumps(r) + "\n"); f.flush()
+                if not r['valid']:raise ValueError(f'Episodio inválido: {r}')
+                if i % 50 == 0:
+                    meta['completed_episodes']=i;save()
+                    print(f"  {i}/{len(jobs)}", flush=True)
+        expected={(a,b,s,p) for a,_,b,_,s,p in jobs}
+        assert len(rows)==len(expected)==len({(r['a'],r['b'],r['seed'],r['seat']) for r in rows})
+        assert {(r['a'],r['b'],r['seed'],r['seat']) for r in rows}==expected
+        for n,p in ag.items():
+            assert hashlib.sha256(Path(p).read_bytes()).hexdigest()==meta['agentes'][n]['sha256'],f'Cambió {n}'
+        assert hashlib.sha256(engine.read_bytes()).hexdigest()==meta['engine_sha256']
+        assert hashlib.sha256(Path(__file__).read_bytes()).hexdigest()==meta['runner_sha256']
+        meta.update(state='complete',completed_episodes=len(rows),fin=time.strftime('%Y-%m-%d %H:%M:%S'))
+        save()
+    except BaseException as exc:
+        meta.update(state='failed',completed_episodes=len(rows),error=str(exc));save()
+        raise
     resumen(rows, list(ag))
 
 

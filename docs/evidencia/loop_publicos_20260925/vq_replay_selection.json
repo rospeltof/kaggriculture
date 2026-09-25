@@ -1,0 +1,35 @@
+{
+  "rule": "Dos primeros y dos \u00faltimos episodios completados del primer snapshot de 14, sin seleccionar por resultado",
+  "observed_at": "2026-09-25T01:20:29.405930+00:00",
+  "submission": 56535264,
+  "episodes": [
+    {
+      "id": 113072354,
+      "createTime": "2026-09-25T00:22:43.962000",
+      "endTime": "2026-09-25T00:25:39.716000",
+      "state": "EpisodeState.COMPLETED",
+      "type": "EpisodeType.EPISODE_TYPE_VALIDATION"
+    },
+    {
+      "id": 113072624,
+      "createTime": "2026-09-25T00:26:00.961000",
+      "endTime": "2026-09-25T00:29:22.569000",
+      "state": "EpisodeState.COMPLETED",
+      "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+    },
+    {
+      "id": 113085318,
+      "createTime": "2026-09-25T01:10:00.642000",
+      "endTime": "2026-09-25T01:13:26",
+      "state": "EpisodeState.COMPLETED",
+      "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+    },
+    {
+      "id": 113086464,
+      "createTime": "2026-09-25T01:14:00.275000",
+      "endTime": "2026-09-25T01:16:24.779000",
+      "state": "EpisodeState.COMPLETED",
+      "type": "EpisodeType.EPISODE_TYPE_PUBLIC"
+    }
+  ]
+}

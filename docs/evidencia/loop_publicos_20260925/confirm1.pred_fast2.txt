@@ -1,0 +1,19 @@
+  (extra, no entra en la estimacion) base vs noop: 50.0% (32 ep)
+  (extra, no entra en la estimacion) pred_fast2 vs noop: 65.6% (32 ep)
+  (extra, no entra en la estimacion) base vs pred_top3: 6.2% (32 ep)
+  (extra, no entra en la estimacion) pred_fast2 vs pred_top3: 37.5% (32 ep)
+pred_fast2 - base: 11 rivales x 16 semillas = 176 celdas; ref 78.4%
+  delta +2.84 pts | IC95 semilla [-2.95; +8.63] | dos vias [-3.92; +9.60]
+  celdas cambiadas 15/176: 10 a favor, 5 en contra
+    vs    ars40   -6.2
+    vs   arshs3  -12.5
+    vs    guru6   -6.2
+    vs    h2965   +6.2
+    vs     hl25   +6.2
+    vs     hsov   +6.2
+    vs     hybu   +6.2
+    vs      obr   +6.2
+    vs      tds   +6.2
+    vs    tds25   +0.0
+    vs      v13  +18.8
+  directo pred_fast2 vs base: 65.6% (32 ep)

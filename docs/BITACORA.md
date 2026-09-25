@@ -1,5 +1,101 @@
 # Bitácora de experimentos
 
+## 2026-09-25 — Confirmación top3 positiva; prueba real preparada
+
+Confirm1 completa: 1.600 episodios, noop416/416, cero errores. Top3 +10,795 pp
+vs VQ, IC95 semilla[1,23;20,36], dos vías[−0,12;21,71]. Peor rival −6,25 pp;
+cumple gate≥3pp/ningún rival<−20. Fast2 +2,841pp queda prometedora pero no
+supera el gate. No rescatarla con el subpanel que sí sale por encima de3.
+
+Se reprodujo además el único mundo de regresión: arshs3/996011, +216→−425,
+24 turnos distintos, tiendas iguales, caja conciliada, sin errores. Maxturn757ms,
+máxima media por episodio4,45ms. Paquete top3 byte exacto sha9668e30a, preparado
+para ladder conservando VQ como control. Snapshot previo VQ2319,5/24episodios
+listados, original2275,7. No comparar todavía ratings como fuerza estable.
+Loop3 ya arrancó; loops4 y5 siguen encolados. Investigación continúa.
+
+## 2026-09-25, 01:50 UTC — Replays actuales, deduplicación y más bloques
+
+Cuatro replays recientes de DSM 56518845 (snapshot3128,7), sin filtro W/L:
+reproducción exacta y caja conciliada. Cuarto cuadrante día10 y más tomate,
+pero la composición varía por mundo y una victoria apenas difiere en tomate.
+Fuentes nuevas CHA22/evgendvorkin son tds25 duplicado; no repetir. El notebook
+GCN publicado no mejora su propio benchmark, queda de prioridad baja.
+
+Loop4 encolado: reparación rara en 32 semillas nuevas, 384 episodios. Es un
+nuevo preregistro tras diagnóstico reactivo que recuperó una planta; no se
+reinterpretó el gate opcional incumplido de loop2.
+
+Loop5 encolado: cinco variantes de campaña tomate temprana/tardía, 616 partidas,
+confirmación condicional. Ocho diagnósticos: noop exacto, diez plantas y 60
+tomates en early12_6k, cero errores, pérdidas en ese mundo. Una novena partida
+diagnóstica aclara por qué el brazo tardío no se activa: **la base ya invierte
+en SE con seis ovejas al día12**. Adelantar tomate desplaza esa inversión;
+es asignación de capital/tierra, no una simple mejora de calendario. Evidencia
+completa y corrección en `research/LIDER_Y_FUENTES_2026-09-25.md`.
+
+Confirmación del predictor sigue en curso; no se selecciona por resultados
+parciales. Loop3 de animales sigue esperando su turno. Objetivo persistente activo.
+
+## 2026-09-25 — Dos pilotos completos, confirmación y tercer piloto encadenados
+
+Loop1: 1.000 episodios, cero errores, noop 128/128. pred_top3 +9,375 pp y
+pred_fast2 +3,125, seleccionados por regla registrada. Top3 mejora en dos de
+cuatro semillas; IC dos vías [−7,86; +26,61], no mejora demostrada todavía.
+Crop40/80 cambian acciones sin W/L/T; pred_h96 no cambia acciones.
+
+Loop2: 616 episodios, cero errores, noop 104/104. tomato6000 −3,125 pp;
+los otros cuatro brazos son inertes en las 64 partidas contra el pool.
+No confundir falta de activación de reparación rara con mecanismo refutado.
+Confirm1 ya corre: 1.600 episodios, 16 semillas nuevas, once rivales. Loop3
+(animales, cuatro variantes) sigue encadenado. Investigación continúa.
+
+## 2026-09-25, 01:02 UTC — Reinicio explícito del loop continuo
+
+El usuario corrigió la parada tras cerrar una ronda: pide muchos experimentos
+encadenados. Loop1 registra ocho variantes de producción y predictor (1.000
+episodios); loop2 registra dos reparaciones de siembra y tres políticas de
+inversión en tomates (616 episodios). Confirmaciones con semillas disjuntas y
+pool expandido, selección fijada antes de medir. Estado actual en
+`research/ESTADO_INVESTIGACION.md` y `evidencia/loop_publicos_20260925/`.
+
+Hallazgo en replay 113061732: DIG por maleza elimina una fresa del plan, pero
+luego se sigue regando la casilla vacía. Primer prototipo no actúa por falta de
+segunda visita el mismo día. Segundo recupera la planta retrasando un turno un
+sufijo de movimientos/riego, absorbido por un turno redundante al final del día.
+La sonda cambia RNG/tiendas; no se interpreta W/L frente a la cinta como mejora.
+
+## 2026-09-25 UTC / 24 septiembre Colombia — VQ enviada, revisión y dos pilotos nuevos
+
+Revisado el trabajo hasta a9f59ee y la investigación reciente en `docs/research/`.
+Arshs3 original: 2292,5 a 148 episodios; v13: 1857,9 a 136. Se envió **VQ
+56535264**, COMPLETE, archivo ya versionado `main_publico_arshs3_vq.py` (9b463dfb).
+Conserva activa arshs3 56511619 y desplaza v13. Se reutilizó la evidencia VQ/ADV
+sin repetir esos experimentos. Última lectura: original 2288,6 y VQ 1198,5;
+VQ recién empieza, por lo que esa diferencia no mide fuerza relativa.
+
+Dos bloques registrados, 608 episodios cada uno, ocho rivales y ambos asientos:
+- Filtro de confianza del predictor: **−51,56 pp**; desactivarlo: **−68,75 pp**,
+  ambos con IC95 dos vías enteramente negativo. REJECTED, sin confirmación.
+- Versiones nuevas tds25 / hl25: **−7,81 / −9,38 pp**; intervalos cruzan cero,
+  ninguna pasa el umbral registrado. Inconclusas, sin confirmación ni envío.
+
+**Error de medición corregido:** 12/67 coincidencias del predictor excluía las
+ventas simultáneas. Cuatro replays reproducidos en 720 estados con ledger de
+ventas aceptadas dan 50/67 en t..t+4, 42 en t. No reutilizar el 12/67 como precisión.
+La sonda de fallo controlada muestra mismas unidades vendidas pero peor timing:
+una victoria por +89 se convierte en derrota por −78 al introducir gate.
+
+24 replays seleccionados por recencia; 1.216 episodios de torneo + ocho
+diagnósticos. Cero errores, noop exacto 160/160 en cada bloque, fuentes archivadas
+con hashes y acciones capturadas antes del motor. El harness aborta ahora ante
+inválidos, cobertura incompleta o fuentes cambiadas. No quedan corridas activas.
+
+Resultados, límites y siguientes hipótesis:
+[RESULTADOS_2026-09-25.md](research/RESULTADOS_2026-09-25.md).
+Estado vigente: [ESTADO_INVESTIGACION.md](research/ESTADO_INVESTIGACION.md).
+Las prohibiciones de envío y bases de comparación en entradas antiguas son historia.
+
 ## 2026-09-14, 23:52 — `maj_107674293` enviada por autorización expresa
 
 Petición: «Subela a kaggle pa que coja calle». Submission **56245770**, recibida

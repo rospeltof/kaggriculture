@@ -1,0 +1,16 @@
+  (extra, no entra en la estimacion) base vs gate: 87.5% (16 ep)
+  (extra, no entra en la estimacion) off vs gate: 25.0% (16 ep)
+  (extra, no entra en la estimacion) base vs noop: 50.0% (16 ep)
+  (extra, no entra en la estimacion) off vs noop: 0.0% (16 ep)
+off - base: 8 rivales x 8 semillas = 64 celdas; ref 76.6%
+  delta -68.75 pts | IC95 semilla [-85.51; -51.99] | dos vias [-89.57; -47.93]
+  celdas cambiadas 44/64: 0 a favor, 44 en contra
+    vs    ars40  -50.0
+    vs    guru6  -87.5
+    vs    h2965  -87.5
+    vs     hsov -100.0
+    vs     hybu  -62.5
+    vs      obr  -75.0
+    vs      tds  -37.5
+    vs      v13  -50.0
+  directo off vs base: 0.0% (16 ep)

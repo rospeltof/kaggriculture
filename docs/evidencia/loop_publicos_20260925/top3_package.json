@@ -1,0 +1,18 @@
+{
+  "candidate": "pred_top3",
+  "path": "submission/main_publico_arshs3_vq_top3.py",
+  "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
+  "bytes": 1042281,
+  "exact_copy_of_confirmed_candidate": true,
+  "source_manifest": "confirm1.meta.json",
+  "episodes_with_candidate": 448,
+  "max_turn_ms": 756.884,
+  "max_episode_mean_ms": 4.448513212795549,
+  "decision": "REAL_WORLD_CANDIDATE",
+  "replaces_submission": 56511619,
+  "preserves_submission": 56535264,
+  "changes": {
+    "_V92_P_TOP": 3
+  },
+  "rule": "Confirmed delta >=3pp and no per-rival regression worse than -20pp; zero errors; runtime and mechanisms inspected."
+}

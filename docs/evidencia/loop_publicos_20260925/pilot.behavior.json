@@ -1,0 +1,42 @@
+{
+  "crop40": {
+    "own_action_changed_episodes": 34,
+    "opponent_action_changed_episodes": 34,
+    "pool_episodes": 64
+  },
+  "crop80": {
+    "own_action_changed_episodes": 50,
+    "opponent_action_changed_episodes": 34,
+    "pool_episodes": 64
+  },
+  "crop_end26": {
+    "own_action_changed_episodes": 36,
+    "opponent_action_changed_episodes": 18,
+    "pool_episodes": 64
+  },
+  "crop_edge0": {
+    "own_action_changed_episodes": 36,
+    "opponent_action_changed_episodes": 34,
+    "pool_episodes": 64
+  },
+  "pred_top3": {
+    "own_action_changed_episodes": 64,
+    "opponent_action_changed_episodes": 62,
+    "pool_episodes": 64
+  },
+  "pred_h96": {
+    "own_action_changed_episodes": 0,
+    "opponent_action_changed_episodes": 0,
+    "pool_episodes": 64
+  },
+  "pred_fast2": {
+    "own_action_changed_episodes": 64,
+    "opponent_action_changed_episodes": 58,
+    "pool_episodes": 64
+  },
+  "pred_window6": {
+    "own_action_changed_episodes": 62,
+    "opponent_action_changed_episodes": 56,
+    "pool_episodes": 64
+  }
+}

@@ -1,0 +1,289 @@
+[
+  {
+    "day": 12,
+    "money": 13089.0,
+    "quadrants": [
+      "NW",
+      "NE",
+      "SW"
+    ],
+    "targets": [
+      "LOCKED",
+      "LOCKED",
+      "LOCKED",
+      "LOCKED",
+      "LOCKED",
+      "LOCKED",
+      "LOCKED",
+      "LOCKED",
+      "LOCKED",
+      "LOCKED"
+    ],
+    "tomato_seed": 0,
+    "tomato_shed": 0,
+    "tomatoes": 0,
+    "future_tomato_or_land": [],
+    "revenue": 8389.0
+  },
+  {
+    "day": 14,
+    "money": 10736.0,
+    "quadrants": [
+      "NW",
+      "NE",
+      "SW",
+      "SE"
+    ],
+    "targets": [
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 0,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 2
+      },
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 0,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 2
+      },
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 0,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 2
+      },
+      null,
+      null,
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 0,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 2
+      },
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 0,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 2
+      },
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 0,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 2
+      },
+      null,
+      null
+    ],
+    "tomato_seed": 0,
+    "tomato_shed": 0,
+    "tomatoes": 0,
+    "future_tomato_or_land": [],
+    "revenue": 8640.0
+  },
+  {
+    "day": 16,
+    "money": 16584.0,
+    "quadrants": [
+      "NW",
+      "NE",
+      "SW",
+      "SE"
+    ],
+    "targets": [
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 0,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 4
+      },
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 0,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 4
+      },
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 0,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 4
+      },
+      null,
+      null,
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 0,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 4
+      },
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 0,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 4
+      },
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 0,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 4
+      },
+      null,
+      null
+    ],
+    "tomato_seed": 0,
+    "tomato_shed": 0,
+    "tomatoes": 0,
+    "future_tomato_or_land": [],
+    "revenue": 8910.0
+  },
+  {
+    "day": 18,
+    "money": 34186.0,
+    "quadrants": [
+      "NW",
+      "NE",
+      "SW",
+      "SE"
+    ],
+    "targets": [
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 6,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 1
+      },
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 6,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 1
+      },
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 6,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 1
+      },
+      null,
+      null,
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 6,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 1
+      },
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 6,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 1
+      },
+      {
+        "kind": "PASTURE",
+        "animal": "SHEEP",
+        "placed_day": 12,
+        "yield_units": 6,
+        "consecutive_unfed": 0,
+        "fed_today": false,
+        "cared_today": false,
+        "fertilizer_available": true,
+        "pending_care_bonus": 1
+      },
+      null,
+      null
+    ],
+    "tomato_seed": 0,
+    "tomato_shed": 0,
+    "tomatoes": 0,
+    "future_tomato_or_land": [],
+    "revenue": 9195.0
+  }
+]

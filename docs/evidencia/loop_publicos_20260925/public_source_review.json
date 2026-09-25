@@ -1,0 +1,21 @@
+{
+  "sources": [
+    {
+      "ref": "abhinav0370/cha22-agent",
+      "decision": "DUPLICATE_NOT_RETESTED",
+      "same_raw_as": "tds25"
+    },
+    {
+      "ref": "evgendvorkin/kaggriculture",
+      "decision": "DUPLICATE_NOT_RETESTED",
+      "same_normalized_and_ast_as": "tds25",
+      "difference": "CRLF versus LF"
+    },
+    {
+      "ref": "djamilabenchikh/graph-reinforcement-learning",
+      "decision": "LOW_PRIORITY_NOT_BENCHMARKED",
+      "main_sha256": "b0bcdb283742dd37470a2fc622111082054b2426ca8a2c70cd7fdce79bda408a",
+      "observed": "Public log: paired mean +0.0, positive pairs 0/4 against V16; trained 18 episodes vs v16/starter/random; objective gate uses coin margin, not WLT. Pure stdlib, no dangerous calls in static main audit. Different name/architecture is not evidence of competitive improvement."
+    }
+  ]
+}

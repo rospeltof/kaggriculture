@@ -25,7 +25,9 @@ def main(path, ref, cand, excluir=""):
     rows = [r for r in rows if r["a"] not in fuera and r["b"] not in fuera]
     bad = [r for r in rows if not r["valid"]]
     if bad:
-        print(f"!! {len(bad)} episodios invalidos: se excluyen sus celdas")
+        raise ValueError(f"{len(bad)} episodios inválidos: no analizar bloque incompleto")
+    keys=[(r['a'],r['b'],r['seed'],r['seat']) for r in rows]
+    if len(set(keys))!=len(keys):raise ValueError('Episodios duplicados')
     cel = defaultdict(list)
     for r in rows:
         if r["valid"] and r["a"] in (ref, cand) and r["b"] not in (ref, cand):
@@ -37,8 +39,8 @@ def main(path, ref, cand, excluir=""):
         fila = []
         for s in semillas:
             x, y = cel.get((ref, b, s)), cel.get((cand, b, s))
-            if not x or not y:
-                sys.exit(f"falta celda {b} {s}")
+            if x is None or y is None or len(x)!=2 or len(y)!=2:
+                sys.exit(f"faltan ambos asientos en celda {b} {s}")
             fila.append(100 * (st.mean(y) - st.mean(x)))
         M.append(fila)
     nr, ns = len(M), len(M[0]); n = nr * ns
@@ -63,6 +65,13 @@ def main(path, ref, cand, excluir=""):
     if directo:
         sc = [r["score"] if r["a"] == cand else 1 - r["score"] for r in directo]
         print(f"  directo {cand} vs {ref}: {100 * st.mean(sc):.1f}% ({len(sc)} ep)")
+    return dict(reference=ref,candidate=cand,rivals=rivales,seeds=semillas,
+                base_wr=100*base,candidate_wr=100*base+mean,delta_points=mean,
+                ci95_seed=[float(mean-m1),float(mean+m1)],
+                ci95_2way=[float(mean-m2),float(mean+m2)] if math.isfinite(m2) else None,
+                opponent_breakdown={b:st.mean(f) for b,f in zip(rivales,M)},
+                better_cells=sum(v>0 for v in flat),worse_cells=sum(v<0 for v in flat),
+                equal_cells=sum(v==0 for v in flat))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,26 @@
+{
+  "purpose": "Mechanism smoke on observed failure; opponent tape fixed, not a competitive estimate",
+  "source_episode": 113061732,
+  "stats": {
+    "intents": 1,
+    "planted": 1,
+    "shifted": 5,
+    "expired": 0,
+    "unsafe_suffix": 0
+  },
+  "rewards": [
+    81571.0,
+    80074.0
+  ],
+  "tile_day10": {
+    "kind": "PLANT",
+    "crop": "STRAWBERRY",
+    "planted_day": 7,
+    "watered_today": false,
+    "consecutive_unwatered": 0,
+    "yield_units": 0,
+    "max_lifespan_step": -1,
+    "fertilized_until_day": -1
+  },
+  "shops_preserved": false
+}

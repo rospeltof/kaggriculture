@@ -1,0 +1,1536 @@
+[
+  {
+    "arm": "base",
+    "seat": 0,
+    "changed_action_turns": 0,
+    "rewards": [
+      93449.0,
+      93239.0
+    ],
+    "report": {
+      "_V219_REPORT": {
+        "commitments": 0,
+        "hire_requests": 0,
+        "confirmed_workers": 0,
+        "hire_shortfalls": 0,
+        "plant_requests": 0,
+        "confirmed_plants": 0,
+        "water_requests": 0,
+        "fertilize_requests": 0,
+        "harvest_requests": 0,
+        "confirmed_harvest_units": 0,
+        "drop_requests": 0,
+        "tomato_sale_requests": 0,
+        "budget_declines": 0,
+        "lost_plants": 0,
+        "extra_fertilizer_days": 0,
+        "reordered_market_turns": 132,
+        "errors": 0
+      },
+      "_CXTB_REPORT": {
+        "cxtb_calls": 1,
+        "cxtb_opened": 0,
+        "cxtb_blocked": 1,
+        "cxtb_errors": 0,
+        "cxtb_features": [
+          {
+            "opened": false,
+            "base": false,
+            "revenue": 9195,
+            "shops": 2,
+            "price": 82,
+            "inventory": 9820,
+            "their_tomatoes": 0
+          }
+        ]
+      },
+      "_R53_LABOR_REPORT": {
+        "labor_requests": 0,
+        "labor_hires_avoided": 0,
+        "labor_spawn_errors": 0,
+        "labor_confirmed": 0,
+        "labor_day26": 0,
+        "labor_day27": 0,
+        "labor_day28": 0
+      },
+      "_V13V_REPORT": {
+        "v_skipped": 0,
+        "v_blocked": 0,
+        "v_errors": 0
+      }
+    },
+    "daily": [
+      {
+        "day": 10,
+        "tomatoes": 0,
+        "births": {},
+        "money": 2220.0
+      },
+      {
+        "day": 11,
+        "tomatoes": 0,
+        "births": {},
+        "money": 14466.0
+      },
+      {
+        "day": 12,
+        "tomatoes": 0,
+        "births": {},
+        "money": 13089.0
+      },
+      {
+        "day": 13,
+        "tomatoes": 0,
+        "births": {},
+        "money": 9471.0
+      },
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "births": {},
+        "money": 10736.0
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "births": {},
+        "money": 14330.0
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "births": {},
+        "money": 16584.0
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "births": {},
+        "money": 25281.0
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "births": {},
+        "money": 34186.0
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "births": {},
+        "money": 47080.0
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "births": {},
+        "money": 51520.0
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "births": {},
+        "money": 57367.0
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "births": {},
+        "money": 65608.0
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "births": {},
+        "money": 66024.0
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "births": {},
+        "money": 67929.0
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "births": {},
+        "money": 69038.0
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "births": {},
+        "money": 70263.0
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "births": {},
+        "money": 72218.0
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "births": {},
+        "money": 78093.0
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "births": {},
+        "money": 84618.0
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "base",
+    "seat": 1,
+    "changed_action_turns": 0,
+    "rewards": [
+      93239.0,
+      93449.0
+    ],
+    "report": {
+      "_V219_REPORT": {
+        "commitments": 0,
+        "hire_requests": 0,
+        "confirmed_workers": 0,
+        "hire_shortfalls": 0,
+        "plant_requests": 0,
+        "confirmed_plants": 0,
+        "water_requests": 0,
+        "fertilize_requests": 0,
+        "harvest_requests": 0,
+        "confirmed_harvest_units": 0,
+        "drop_requests": 0,
+        "tomato_sale_requests": 0,
+        "budget_declines": 0,
+        "lost_plants": 0,
+        "extra_fertilizer_days": 0,
+        "reordered_market_turns": 132,
+        "errors": 0
+      },
+      "_CXTB_REPORT": {
+        "cxtb_calls": 1,
+        "cxtb_opened": 0,
+        "cxtb_blocked": 1,
+        "cxtb_errors": 0,
+        "cxtb_features": [
+          {
+            "opened": false,
+            "base": false,
+            "revenue": 9195,
+            "shops": 2,
+            "price": 82,
+            "inventory": 9820,
+            "their_tomatoes": 0
+          }
+        ]
+      },
+      "_R53_LABOR_REPORT": {
+        "labor_requests": 0,
+        "labor_hires_avoided": 0,
+        "labor_spawn_errors": 0,
+        "labor_confirmed": 0,
+        "labor_day26": 0,
+        "labor_day27": 0,
+        "labor_day28": 0
+      },
+      "_V13V_REPORT": {
+        "v_skipped": 0,
+        "v_blocked": 0,
+        "v_errors": 0
+      }
+    },
+    "daily": [
+      {
+        "day": 10,
+        "tomatoes": 0,
+        "births": {},
+        "money": 2220.0
+      },
+      {
+        "day": 11,
+        "tomatoes": 0,
+        "births": {},
+        "money": 14466.0
+      },
+      {
+        "day": 12,
+        "tomatoes": 0,
+        "births": {},
+        "money": 13089.0
+      },
+      {
+        "day": 13,
+        "tomatoes": 0,
+        "births": {},
+        "money": 9471.0
+      },
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "births": {},
+        "money": 10736.0
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "births": {},
+        "money": 14330.0
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "births": {},
+        "money": 16584.0
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "births": {},
+        "money": 25281.0
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "births": {},
+        "money": 34186.0
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "births": {},
+        "money": 47080.0
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "births": {},
+        "money": 51520.0
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "births": {},
+        "money": 57367.0
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "births": {},
+        "money": 65608.0
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "births": {},
+        "money": 66024.0
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "births": {},
+        "money": 67929.0
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "births": {},
+        "money": 69038.0
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "births": {},
+        "money": 70263.0
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "births": {},
+        "money": 72218.0
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "births": {},
+        "money": 78093.0
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "births": {},
+        "money": 84618.0
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "calendar_noop",
+    "seat": 0,
+    "changed_action_turns": 0,
+    "rewards": [
+      93449.0,
+      93239.0
+    ],
+    "report": {
+      "_V219_REPORT": {
+        "commitments": 0,
+        "hire_requests": 0,
+        "confirmed_workers": 0,
+        "hire_shortfalls": 0,
+        "plant_requests": 0,
+        "confirmed_plants": 0,
+        "water_requests": 0,
+        "fertilize_requests": 0,
+        "harvest_requests": 0,
+        "confirmed_harvest_units": 0,
+        "drop_requests": 0,
+        "tomato_sale_requests": 0,
+        "budget_declines": 0,
+        "lost_plants": 0,
+        "extra_fertilizer_days": 0,
+        "reordered_market_turns": 132,
+        "errors": 0
+      },
+      "_CXTB_REPORT": {
+        "cxtb_calls": 1,
+        "cxtb_opened": 0,
+        "cxtb_blocked": 1,
+        "cxtb_errors": 0,
+        "cxtb_features": [
+          {
+            "opened": false,
+            "base": false,
+            "revenue": 9195,
+            "shops": 2,
+            "price": 82,
+            "inventory": 9820,
+            "their_tomatoes": 0
+          }
+        ]
+      },
+      "_R53_LABOR_REPORT": {
+        "labor_requests": 0,
+        "labor_hires_avoided": 0,
+        "labor_spawn_errors": 0,
+        "labor_confirmed": 0,
+        "labor_day26": 0,
+        "labor_day27": 0,
+        "labor_day28": 0
+      },
+      "_V13V_REPORT": {
+        "v_skipped": 0,
+        "v_blocked": 0,
+        "v_errors": 0
+      }
+    },
+    "daily": [
+      {
+        "day": 10,
+        "tomatoes": 0,
+        "births": {},
+        "money": 2220.0
+      },
+      {
+        "day": 11,
+        "tomatoes": 0,
+        "births": {},
+        "money": 14466.0
+      },
+      {
+        "day": 12,
+        "tomatoes": 0,
+        "births": {},
+        "money": 13089.0
+      },
+      {
+        "day": 13,
+        "tomatoes": 0,
+        "births": {},
+        "money": 9471.0
+      },
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "births": {},
+        "money": 10736.0
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "births": {},
+        "money": 14330.0
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "births": {},
+        "money": 16584.0
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "births": {},
+        "money": 25281.0
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "births": {},
+        "money": 34186.0
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "births": {},
+        "money": 47080.0
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "births": {},
+        "money": 51520.0
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "births": {},
+        "money": 57367.0
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "births": {},
+        "money": 65608.0
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "births": {},
+        "money": 66024.0
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "births": {},
+        "money": 67929.0
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "births": {},
+        "money": 69038.0
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "births": {},
+        "money": 70263.0
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "births": {},
+        "money": 72218.0
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "births": {},
+        "money": 78093.0
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "births": {},
+        "money": 84618.0
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "calendar_noop",
+    "seat": 1,
+    "changed_action_turns": 0,
+    "rewards": [
+      93239.0,
+      93449.0
+    ],
+    "report": {
+      "_V219_REPORT": {
+        "commitments": 0,
+        "hire_requests": 0,
+        "confirmed_workers": 0,
+        "hire_shortfalls": 0,
+        "plant_requests": 0,
+        "confirmed_plants": 0,
+        "water_requests": 0,
+        "fertilize_requests": 0,
+        "harvest_requests": 0,
+        "confirmed_harvest_units": 0,
+        "drop_requests": 0,
+        "tomato_sale_requests": 0,
+        "budget_declines": 0,
+        "lost_plants": 0,
+        "extra_fertilizer_days": 0,
+        "reordered_market_turns": 132,
+        "errors": 0
+      },
+      "_CXTB_REPORT": {
+        "cxtb_calls": 1,
+        "cxtb_opened": 0,
+        "cxtb_blocked": 1,
+        "cxtb_errors": 0,
+        "cxtb_features": [
+          {
+            "opened": false,
+            "base": false,
+            "revenue": 9195,
+            "shops": 2,
+            "price": 82,
+            "inventory": 9820,
+            "their_tomatoes": 0
+          }
+        ]
+      },
+      "_R53_LABOR_REPORT": {
+        "labor_requests": 0,
+        "labor_hires_avoided": 0,
+        "labor_spawn_errors": 0,
+        "labor_confirmed": 0,
+        "labor_day26": 0,
+        "labor_day27": 0,
+        "labor_day28": 0
+      },
+      "_V13V_REPORT": {
+        "v_skipped": 0,
+        "v_blocked": 0,
+        "v_errors": 0
+      }
+    },
+    "daily": [
+      {
+        "day": 10,
+        "tomatoes": 0,
+        "births": {},
+        "money": 2220.0
+      },
+      {
+        "day": 11,
+        "tomatoes": 0,
+        "births": {},
+        "money": 14466.0
+      },
+      {
+        "day": 12,
+        "tomatoes": 0,
+        "births": {},
+        "money": 13089.0
+      },
+      {
+        "day": 13,
+        "tomatoes": 0,
+        "births": {},
+        "money": 9471.0
+      },
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "births": {},
+        "money": 10736.0
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "births": {},
+        "money": 14330.0
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "births": {},
+        "money": 16584.0
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "births": {},
+        "money": 25281.0
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "births": {},
+        "money": 34186.0
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "births": {},
+        "money": 47080.0
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "births": {},
+        "money": 51520.0
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "births": {},
+        "money": 57367.0
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "births": {},
+        "money": 65608.0
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "births": {},
+        "money": 66024.0
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "births": {},
+        "money": 67929.0
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "births": {},
+        "money": 69038.0
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "births": {},
+        "money": 70263.0
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "births": {},
+        "money": 72218.0
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "births": {},
+        "money": 78093.0
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "births": {},
+        "money": 84618.0
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "early12_6k",
+    "seat": 0,
+    "changed_action_turns": 398,
+    "rewards": [
+      115000.0,
+      126439.0
+    ],
+    "report": {
+      "_V219_REPORT": {
+        "commitments": 1,
+        "hire_requests": 17,
+        "confirmed_workers": 17,
+        "hire_shortfalls": 0,
+        "plant_requests": 10,
+        "confirmed_plants": 10,
+        "water_requests": 80,
+        "fertilize_requests": 10,
+        "harvest_requests": 40,
+        "confirmed_harvest_units": 60,
+        "drop_requests": 0,
+        "tomato_sale_requests": 60,
+        "budget_declines": 0,
+        "lost_plants": 0,
+        "extra_fertilizer_days": 0,
+        "reordered_market_turns": 149,
+        "errors": 0
+      },
+      "_CXTB_REPORT": {
+        "cxtb_calls": 1,
+        "cxtb_opened": 1,
+        "cxtb_blocked": 0,
+        "cxtb_errors": 0,
+        "cxtb_features": [
+          {
+            "opened": true,
+            "base": false,
+            "revenue": 6666,
+            "shops": 2,
+            "price": 72,
+            "inventory": 9898,
+            "their_tomatoes": 0
+          }
+        ]
+      },
+      "_R53_LABOR_REPORT": {
+        "labor_requests": 2,
+        "labor_hires_avoided": 2,
+        "labor_spawn_errors": 0,
+        "labor_confirmed": 2,
+        "labor_day26": 0,
+        "labor_day27": 0,
+        "labor_day28": 0,
+        "labor_day20": 1,
+        "labor_day21": 1,
+        "labor_day22": 0
+      },
+      "_V13V_REPORT": {
+        "v_skipped": 3,
+        "v_blocked": 0,
+        "v_errors": 0
+      }
+    },
+    "daily": [
+      {
+        "day": 10,
+        "tomatoes": 0,
+        "births": {},
+        "money": 2220.0
+      },
+      {
+        "day": 11,
+        "tomatoes": 0,
+        "births": {},
+        "money": 14466.0
+      },
+      {
+        "day": 12,
+        "tomatoes": 0,
+        "births": {},
+        "money": 13089.0
+      },
+      {
+        "day": 13,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 12211.0
+      },
+      {
+        "day": 14,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 13524.0
+      },
+      {
+        "day": 15,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 17168.0
+      },
+      {
+        "day": 16,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 19812.0
+      },
+      {
+        "day": 17,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 28617.0
+      },
+      {
+        "day": 18,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 38063.0
+      },
+      {
+        "day": 19,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 43640.0
+      },
+      {
+        "day": 20,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 48835.0
+      },
+      {
+        "day": 21,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 56690.0
+      },
+      {
+        "day": 22,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 65629.0
+      },
+      {
+        "day": 23,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 71533.0
+      },
+      {
+        "day": 24,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 79439.0
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "births": {},
+        "money": 85962.0
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "births": {},
+        "money": 88701.0
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "births": {},
+        "money": 92984.0
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "births": {},
+        "money": 97319.0
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "births": {},
+        "money": 104089.0
+      }
+    ],
+    "tomato_sold": 60,
+    "tomato_revenue": 5176
+  },
+  {
+    "arm": "early12_6k",
+    "seat": 1,
+    "changed_action_turns": 398,
+    "rewards": [
+      126439.0,
+      115000.0
+    ],
+    "report": {
+      "_V219_REPORT": {
+        "commitments": 1,
+        "hire_requests": 17,
+        "confirmed_workers": 17,
+        "hire_shortfalls": 0,
+        "plant_requests": 10,
+        "confirmed_plants": 10,
+        "water_requests": 80,
+        "fertilize_requests": 10,
+        "harvest_requests": 40,
+        "confirmed_harvest_units": 60,
+        "drop_requests": 0,
+        "tomato_sale_requests": 60,
+        "budget_declines": 0,
+        "lost_plants": 0,
+        "extra_fertilizer_days": 0,
+        "reordered_market_turns": 149,
+        "errors": 0
+      },
+      "_CXTB_REPORT": {
+        "cxtb_calls": 1,
+        "cxtb_opened": 1,
+        "cxtb_blocked": 0,
+        "cxtb_errors": 0,
+        "cxtb_features": [
+          {
+            "opened": true,
+            "base": false,
+            "revenue": 6666,
+            "shops": 2,
+            "price": 72,
+            "inventory": 9898,
+            "their_tomatoes": 0
+          }
+        ]
+      },
+      "_R53_LABOR_REPORT": {
+        "labor_requests": 2,
+        "labor_hires_avoided": 2,
+        "labor_spawn_errors": 0,
+        "labor_confirmed": 2,
+        "labor_day26": 0,
+        "labor_day27": 0,
+        "labor_day28": 0,
+        "labor_day20": 1,
+        "labor_day21": 1,
+        "labor_day22": 0
+      },
+      "_V13V_REPORT": {
+        "v_skipped": 3,
+        "v_blocked": 0,
+        "v_errors": 0
+      }
+    },
+    "daily": [
+      {
+        "day": 10,
+        "tomatoes": 0,
+        "births": {},
+        "money": 2220.0
+      },
+      {
+        "day": 11,
+        "tomatoes": 0,
+        "births": {},
+        "money": 14466.0
+      },
+      {
+        "day": 12,
+        "tomatoes": 0,
+        "births": {},
+        "money": 13089.0
+      },
+      {
+        "day": 13,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 12211.0
+      },
+      {
+        "day": 14,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 13524.0
+      },
+      {
+        "day": 15,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 17168.0
+      },
+      {
+        "day": 16,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 19812.0
+      },
+      {
+        "day": 17,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 28617.0
+      },
+      {
+        "day": 18,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 38063.0
+      },
+      {
+        "day": 19,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 43640.0
+      },
+      {
+        "day": 20,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 48835.0
+      },
+      {
+        "day": 21,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 56690.0
+      },
+      {
+        "day": 22,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 65629.0
+      },
+      {
+        "day": 23,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 71533.0
+      },
+      {
+        "day": 24,
+        "tomatoes": 10,
+        "births": {
+          "12": 10
+        },
+        "money": 79439.0
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "births": {},
+        "money": 85962.0
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "births": {},
+        "money": 88701.0
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "births": {},
+        "money": 92984.0
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "births": {},
+        "money": 97319.0
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "births": {},
+        "money": 104089.0
+      }
+    ],
+    "tomato_sold": 60,
+    "tomato_revenue": 5176
+  },
+  {
+    "arm": "late18_6k",
+    "seat": 0,
+    "changed_action_turns": 0,
+    "rewards": [
+      93449.0,
+      93239.0
+    ],
+    "report": {
+      "_V219_REPORT": {
+        "commitments": 0,
+        "hire_requests": 0,
+        "confirmed_workers": 0,
+        "hire_shortfalls": 0,
+        "plant_requests": 0,
+        "confirmed_plants": 0,
+        "water_requests": 0,
+        "fertilize_requests": 0,
+        "harvest_requests": 0,
+        "confirmed_harvest_units": 0,
+        "drop_requests": 0,
+        "tomato_sale_requests": 0,
+        "budget_declines": 0,
+        "lost_plants": 0,
+        "extra_fertilizer_days": 0,
+        "reordered_market_turns": 132,
+        "errors": 0
+      },
+      "_CXTB_REPORT": {
+        "cxtb_calls": 1,
+        "cxtb_opened": 0,
+        "cxtb_blocked": 1,
+        "cxtb_errors": 0,
+        "cxtb_features": [
+          {
+            "opened": false,
+            "base": false,
+            "revenue": 9306,
+            "shops": 2,
+            "price": 82,
+            "inventory": 9820,
+            "their_tomatoes": 0
+          }
+        ]
+      },
+      "_R53_LABOR_REPORT": {
+        "labor_requests": 0,
+        "labor_hires_avoided": 0,
+        "labor_spawn_errors": 0,
+        "labor_confirmed": 0,
+        "labor_day26": 0,
+        "labor_day27": 0,
+        "labor_day28": 0
+      },
+      "_V13V_REPORT": {
+        "v_skipped": 0,
+        "v_blocked": 0,
+        "v_errors": 0
+      }
+    },
+    "daily": [
+      {
+        "day": 10,
+        "tomatoes": 0,
+        "births": {},
+        "money": 2220.0
+      },
+      {
+        "day": 11,
+        "tomatoes": 0,
+        "births": {},
+        "money": 14466.0
+      },
+      {
+        "day": 12,
+        "tomatoes": 0,
+        "births": {},
+        "money": 13089.0
+      },
+      {
+        "day": 13,
+        "tomatoes": 0,
+        "births": {},
+        "money": 9471.0
+      },
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "births": {},
+        "money": 10736.0
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "births": {},
+        "money": 14330.0
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "births": {},
+        "money": 16584.0
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "births": {},
+        "money": 25281.0
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "births": {},
+        "money": 34186.0
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "births": {},
+        "money": 47080.0
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "births": {},
+        "money": 51520.0
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "births": {},
+        "money": 57367.0
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "births": {},
+        "money": 65608.0
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "births": {},
+        "money": 66024.0
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "births": {},
+        "money": 67929.0
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "births": {},
+        "money": 69038.0
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "births": {},
+        "money": 70263.0
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "births": {},
+        "money": 72218.0
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "births": {},
+        "money": 78093.0
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "births": {},
+        "money": 84618.0
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  },
+  {
+    "arm": "late18_6k",
+    "seat": 1,
+    "changed_action_turns": 0,
+    "rewards": [
+      93239.0,
+      93449.0
+    ],
+    "report": {
+      "_V219_REPORT": {
+        "commitments": 0,
+        "hire_requests": 0,
+        "confirmed_workers": 0,
+        "hire_shortfalls": 0,
+        "plant_requests": 0,
+        "confirmed_plants": 0,
+        "water_requests": 0,
+        "fertilize_requests": 0,
+        "harvest_requests": 0,
+        "confirmed_harvest_units": 0,
+        "drop_requests": 0,
+        "tomato_sale_requests": 0,
+        "budget_declines": 0,
+        "lost_plants": 0,
+        "extra_fertilizer_days": 0,
+        "reordered_market_turns": 132,
+        "errors": 0
+      },
+      "_CXTB_REPORT": {
+        "cxtb_calls": 1,
+        "cxtb_opened": 0,
+        "cxtb_blocked": 1,
+        "cxtb_errors": 0,
+        "cxtb_features": [
+          {
+            "opened": false,
+            "base": false,
+            "revenue": 9306,
+            "shops": 2,
+            "price": 82,
+            "inventory": 9820,
+            "their_tomatoes": 0
+          }
+        ]
+      },
+      "_R53_LABOR_REPORT": {
+        "labor_requests": 0,
+        "labor_hires_avoided": 0,
+        "labor_spawn_errors": 0,
+        "labor_confirmed": 0,
+        "labor_day26": 0,
+        "labor_day27": 0,
+        "labor_day28": 0
+      },
+      "_V13V_REPORT": {
+        "v_skipped": 0,
+        "v_blocked": 0,
+        "v_errors": 0
+      }
+    },
+    "daily": [
+      {
+        "day": 10,
+        "tomatoes": 0,
+        "births": {},
+        "money": 2220.0
+      },
+      {
+        "day": 11,
+        "tomatoes": 0,
+        "births": {},
+        "money": 14466.0
+      },
+      {
+        "day": 12,
+        "tomatoes": 0,
+        "births": {},
+        "money": 13089.0
+      },
+      {
+        "day": 13,
+        "tomatoes": 0,
+        "births": {},
+        "money": 9471.0
+      },
+      {
+        "day": 14,
+        "tomatoes": 0,
+        "births": {},
+        "money": 10736.0
+      },
+      {
+        "day": 15,
+        "tomatoes": 0,
+        "births": {},
+        "money": 14330.0
+      },
+      {
+        "day": 16,
+        "tomatoes": 0,
+        "births": {},
+        "money": 16584.0
+      },
+      {
+        "day": 17,
+        "tomatoes": 0,
+        "births": {},
+        "money": 25281.0
+      },
+      {
+        "day": 18,
+        "tomatoes": 0,
+        "births": {},
+        "money": 34186.0
+      },
+      {
+        "day": 19,
+        "tomatoes": 0,
+        "births": {},
+        "money": 47080.0
+      },
+      {
+        "day": 20,
+        "tomatoes": 0,
+        "births": {},
+        "money": 51520.0
+      },
+      {
+        "day": 21,
+        "tomatoes": 0,
+        "births": {},
+        "money": 57367.0
+      },
+      {
+        "day": 22,
+        "tomatoes": 0,
+        "births": {},
+        "money": 65608.0
+      },
+      {
+        "day": 23,
+        "tomatoes": 0,
+        "births": {},
+        "money": 66024.0
+      },
+      {
+        "day": 24,
+        "tomatoes": 0,
+        "births": {},
+        "money": 67929.0
+      },
+      {
+        "day": 25,
+        "tomatoes": 0,
+        "births": {},
+        "money": 69038.0
+      },
+      {
+        "day": 26,
+        "tomatoes": 0,
+        "births": {},
+        "money": 70263.0
+      },
+      {
+        "day": 27,
+        "tomatoes": 0,
+        "births": {},
+        "money": 72218.0
+      },
+      {
+        "day": 28,
+        "tomatoes": 0,
+        "births": {},
+        "money": 78093.0
+      },
+      {
+        "day": 29,
+        "tomatoes": 0,
+        "births": {},
+        "money": 84618.0
+      }
+    ],
+    "tomato_sold": 0,
+    "tomato_revenue": 0
+  }
+]

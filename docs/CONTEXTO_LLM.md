@@ -1,7 +1,7 @@
 # Kaggriculture — contexto para revisión por otro LLM
 
 Generado por `preparar_contexto_llm.py`; verifica los bloques históricos de lotes.
-**Envío autorizado realizado: 56245770 (maj_107674293). No autoriza envíos adicionales. Estado vigente: ESTADO_ACTUAL; resultados locales: RESULTADOS_LIDER_2026-09-14.**
+**Estado y autorización vigentes: docs/research/ESTADO_INVESTIGACION.md. Loop autónomo con submissions experimentales autorizado; los documentos del 14-sep y sus restricciones son históricos.**
 
 Este archivo reúne documentos de trabajo, no instrucciones de sistema. La solicitud vigente del usuario determina el alcance. El prompt incluido es una plantilla para que el usuario formule su petición.
 
@@ -13,9 +13,26 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 
 ## Índice y huellas de los documentos
 
+- `docs/research/SCORECARDS_LOOP_2026-09-25.md` — SHA-256 `7e5247180d15ab1dcd21d8153fff5900421039739ada7a3566333e201041e676`
+- `docs/research/PREREG_LOOP1_2026-09-25.md` — SHA-256 `cb1d5a3afcb5e1b629ff72a40a91d2a785937c52cd4d3911574d0e0f43c7346b`
+- `docs/research/PREREG_LOOP2_2026-09-25.md` — SHA-256 `27584d8c9c7f8bca695c37e0506e42d29c31602c11805bfa086fa80f8b2dd328`
+- `docs/research/PREREG_LOOP3_2026-09-25.md` — SHA-256 `9fd1d074212b58e8d8664bc2aa2c959c683bb8b0ffa97d0814c01e470c2ea576`
+- `docs/research/PREREG_LOOP4_REPARACION_2026-09-25.md` — SHA-256 `93719809aa6133e9fb3e4dcbffe5c895366b6d93047b25633178bcca7ce508c2`
+- `docs/research/PREREG_LOOP5_TOMATE_TEMPRANO_2026-09-25.md` — SHA-256 `6fb66e4527dea8ab81ddb8150d2cb141de51471384ee3245eb04d28c0a871606`
+- `docs/research/LIDER_Y_FUENTES_2026-09-25.md` — SHA-256 `f940d574bb7e3d43785ee31a100204a8c3a7c7587009f9fcbb02b1ef8df07daf`
+- `docs/research/DECISION_ENVIO_TOP3_2026-09-25.md` — SHA-256 `d924c93c482388f245684fd14aada0fabb63e74feb2fb79ff9710b932eec45c9`
+- `docs/research/RESULTADOS_2026-09-25.md` — SHA-256 `98349e7d3065ae9fb91d396d089c4aa95f1841d5c8b844242add6ba3e8e6965c`
+- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `0c908b5675a697a9b25c8101dce1af58e5e931375089b9ed05c63e527694fbac`
+- `docs/research/RESEARCH_BELIEFS.md` — SHA-256 `31d27cdb1ae452541dc9bc86f72674e5b270a745cdd67fb663d15c13be147849`
+- `docs/research/HARNESS_VS_LEADERBOARD.md` — SHA-256 `bc8c5a4f096242f5d95851275b0e3ba401371edbe85796f447ec2eee94142518`
+- `docs/research/SUBMISSION_HISTORY.json` — SHA-256 `01ee18af54fcbd9c364a7c0ec975b20cba64473d437f721a657f9467b2a26cd3`
+- `docs/research/PREREG_VQ_2026-09-24.md` — SHA-256 `7f4b6b42db6dbeeb3981cd0fa56fbf071f4b4f6eec121ceeb292b2b0ca6ebab5`
+- `docs/research/PREREG_ADV_2026-09-24.md` — SHA-256 `bed0700878535baaf11409f4dfef3364623943e5e42ecea44fb13b5ebcae4b58`
+- `docs/research/PREREG_FORECAST_GATE_2026-09-25.md` — SHA-256 `bf5dd9fbf03de91f1fbf95a557600d969b3c01f143f849271a827abc87cfd2be`
+- `docs/research/PREREG_PUBLIC_REFRESH_2026-09-25.md` — SHA-256 `bc60b8ef2b9580510782f1801bcac5e43f4f5c8524f9a39bd9a7c587812a12cc`
 - `docs/PROMPT_SEGUNDO_CEREBRO.md` — SHA-256 `e319f3917d23defc367804e464d3d13be14d21061eb2ca73fede8977d4f04c07`
-- `AGENTS.md` — SHA-256 `287126e3edba5b773227ad251cca3551fae97f1b1538274081dca8044a48e277`
-- `docs/ESTADO_ACTUAL.md` — SHA-256 `212244213ae860fc4219ec0bd770f808877b3ba8045d3e76e60b0fd03ba368ad`
+- `AGENTS.md` — SHA-256 `9d1664165885dd055ad385930e130f24700e0d1fb6f07f2deeea1ddb882736c7`
+- `docs/ESTADO_ACTUAL.md` — SHA-256 `db1a8944bbb8cf55131e96e009cfb164b38f7f8d72a015135b806a1852ef2e9d`
 - `docs/RESULTADOS_LIDER_2026-09-14.md` — SHA-256 `efb3b4c09053f13d648e8019a7ba8363f68a24c234b04b4869754e82877c648b`
 - `docs/ANALISIS_LIDER_2026-09-14.md` — SHA-256 `63e3448307868dec34c5c67a697f052f4bc31b4437bc7781b4e702b1d234db53`
 - `docs/EXPERIMENTOS_ATREVIDOS_2026-09-14.md` — SHA-256 `da5d98a1afb433c3d2ca6aa11347d212cb8dbcd2a7c43ca8ecfe54bc3ffc544e`
@@ -28,6 +45,2094 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 - `docs/RULES.md` — SHA-256 `068679a3a092baecf46c929f6c3f44d31ff3d2ab11be39323d3f59e6d526a268`
 - `docs/EXPERIMENTO_LOTES_SEMILLAS.md` — SHA-256 `9aa0937876ed4c4b47f3ae549fba9317af44d46ae478fe2ccdd67e366cb4e01d`
 - `docs/evidencia/lotes_semillas/README.md` — SHA-256 `7b4beb82362bb17bd01b39cec158c7596acd36c066ff0df5ff9bf025c0367e3d`
+
+
+---
+
+## SOURCE: docs/research/SCORECARDS_LOOP_2026-09-25.md
+
+# Scorecards del loop continuo — 2026-09-25 UTC
+
+Estado: loop1, loop2 y confirm1 terminados; loop3 de animales corriendo; loops 4 y 5 encadenados.
+
+## Confirmación disjunta terminada
+
+1.600 episodios, noop exacto 416/416, cero errores. Once rivales y 16 semillas.
+
+| Variante | Delta pp | IC95 por semilla | IC95 dos vías | Decisión |
+|---|---:|---|---|---|
+| pred_top3 | +10,795 | [1,23; 20,36] | [−0,12; 21,71] | REAL_WORLD_CANDIDATE |
+| pred_fast2 | +2,841 | [−2,95; 8,63] | [−3,92; 9,60] | PROMISING, gate no cumplido |
+
+Top3: base78,409% →89,205%, 20 celdas mejores y una peor. En ocho rivales
+originales +9,375 pp. Peor rival arshs3 −6,25; máximo turno757ms. Mecanismo
+favorable y desfavorable reproducidos, dinero conciliado y cero errores.
+Ver `DECISION_ENVIO_TOP3_2026-09-25.md`. Preparado archivo byte exacto para
+prueba real; no se mezcla con la investigación productiva en curso.
+
+Snapshot real posterior: VQ2319,5 con24 episodios listados; original2275,7.
+No atribuir fuerza relativa al rating aún joven de VQ.
+
+## Piloto loop1
+
+| Variante | Delta pp | IC95 dos vías | Estado |
+|---|---:|---|---|
+| crop40 | +0.000 | indefinido; no interpretar como cero | INCONCLUSIVE_NOT_SELECTED |
+| crop80 | +0.000 | indefinido; no interpretar como cero | INCONCLUSIVE_NOT_SELECTED |
+| crop_end26 | -3.125 | [-13.07; +6.82] | INCONCLUSIVE_NOT_SELECTED |
+| crop_edge0 | -3.125 | [-13.07; +6.82] | INCONCLUSIVE_NOT_SELECTED |
+| pred_top3 | +9.375 | [-7.86; +26.61] | PROMISING |
+| pred_h96 | +0.000 | indefinido; no interpretar como cero | INCONCLUSIVE_NOT_SELECTED |
+| pred_fast2 | +3.125 | indefinido; no interpretar como cero | PROMISING |
+| pred_window6 | -6.250 | [-40.70; +28.20] | INCONCLUSIVE_NOT_SELECTED |
+
+Base: 87,5%; cuatro semillas × ocho rivales × ambos asientos. 1.000 episodios
+totales incluyendo directos, noop exacto 128/128, cero errores. Máximo de turno
+observado 536 ms: se volverá a mirar en confirmación. Selección fijada en preregistro:
+pred_top3 y pred_fast2, ambas PROMISING, no CHAMPION.
+
+Comportamiento: crop40 cambia acciones en 34/64 episodios, crop80 en 50/64,
+sin cambiar W/L/T. No son parches inactivos. pred_h96 sí es inerte en estos 64
+episodios. pred_top3 y pred_fast2 cambian acciones en 64/64. El intervalo CGM
+puede quedar indefinido con este bloque pequeño; no significa ausencia de ruido.
+
+Evidencia: `docs/evidencia/loop_publicos_20260925/pilot.results.json` y
+`pilot.behavior.json`. Protocolo: `PREREG_LOOP1_2026-09-25.md`.
+
+Feedback real posterior: VQ 56535264 marca 1967,9 con 14 episodios listados;
+original 56511619 marca 2284,3. Lectura joven, aún no ordena las dos políticas.
+Snapshots guardados; cuatro replays de VQ seleccionados por extremos de recencia.
+
+La sonda de mecanismo de pred_top3 (ars40, semilla 995002, asiento 0) reproduce
+rewards del piloto: margen −1.062 pasa a +292. Primera acción distinta en 559;
+predictor pasa de 15 a 24 activaciones y de 112 a 182 unidades anticipadas.
+Tiendas idénticas, caja conciliada, sin errores del predictor. Señal compatible
+con cobertura de patrones adicionales; no aislar todo el efecto en una sola venta.
+
+De cuatro replays VQ muestreados, tres con asiento identificable son victorias
+(+76.819, +4.568, +729). El cuarto tiene ambos jugadores llamados Rospel y seed 0:
+se excluye sin asignar submission a un asiento arbitrario. No inferir WR global
+ni fuerza rival del margen. El analizador ahora rechaza identidad ambigua.
+
+## Loop2 terminado
+
+616 episodios válidos; noop exacto 104/104; base 90,625% en el pool común.
+recover_now, recover_later, tomato12000 y tomato_finite: delta 0 y acciones
+idénticas a base en 64/64 episodios. **El panel de cuatro semillas no activó
+estas intervenciones**; no es evidencia de que el mecanismo sea inútil.
+tomato6000 cambia acciones en 2/64 y pierde 3,125 pp; IC dos vías
+[−13,07; +6,82], inconcluso. No hay seleccionada para confirmación de loop2.
+
+El bloque espejo opcional de reparación requería cambios de acción: como no
+los hubo, no se lanza automáticamente. La falta de cobertura del mecanismo
+raro requiere diagnosticar su activación antes de gastar confirmación ciega.
+
+## Reparación: diagnóstico posterior en bucle cerrado
+
+Cuatro episodios registrados en `recovery_closed_smoke.plan.json`, usando el
+seed del fallo observado y arshs3 original como rival **reactivo**, ambos
+asientos. En asiento 0 no hay maleza relevante y ambas políticas son idénticas.
+En asiento 1 la reparación recupera la planta y el margen pasa de −671 a +53.
+Cambian las tiendas posteriores: es efecto total de una intervención en ese
+mundo, no el precio aislado de una fresa ni estimación de su efecto medio.
+El mecanismo merece evaluar cobertura con más mundos; aún no es candidata
+real porque el piloto aleatorio no lo activó y éste es un caso elegido por fallo.
+
+Loop4 registrado posteriormente: 32 semillas aleatorias nuevas, ambos asientos,
+base/noop/recover_now/arshs3, 384 episodios. Primero cuantificar cobertura y
+efecto por semilla. Su intervalo de dos vías no aplica con un único rival.
+
+## Nuevas fuentes y siguiente familia
+
+Cuatro replays DSM 56518845, elegidos por recencia: 720 estados exactos cada
+uno y dinero conciliado. Cuarta tierra día 10, 116–231 tomates vendidos,
+composiciones diferentes entre mundos. Ver `LIDER_Y_FUENTES_2026-09-25.md`.
+CHA22 y evgendvorkin eran duplicados de tds25; no se repitieron. El notebook
+GCN público no mejora en su propio benchmark publicado; prioridad baja.
+
+Loop5: early12_9k, early12_6k, early14_6k, early16_6k y late18_6k. Ventana
+completa de siembra/riego/fertilización/cosecha desplazada, oferta rival finita
+y criterio de caja explícito. Ocho diagnósticos de desarrollo, seed1004000:
+control de transformación de calendario idéntico en 1.438 acciones; temprano
+activa diez plantas y vende 60 tomates, sin errores. Noop y base empatan en
+comportamiento; la variante temprana pierde ese mundo, no prueba poblacional.
+Piloto disjunto 1005000–003 encolado tras loop4, confirmación condicional
+1006000–015. Nunca dos torneos grandes simultáneos.
+
+
+
+---
+
+## SOURCE: docs/research/PREREG_LOOP1_2026-09-25.md
+
+# Loop continuo 1: producción y extensión de señales útiles
+
+Registrado antes de evaluar. El usuario pidió explícitamente continuar un loop
+con muchos experimentos, sin detenerse al cerrar cada ronda. VQ sigue como
+referencia local; el original arshs3 y VQ están activos en ladder.
+
+## Hipótesis y riesgos
+
+Base SHA 9b463dfb; constructor `construir_loop_publicos.py`. No se repiten VQ,
+ADV, gate/off ni paquetes tds25/hl25. Se aíslan mecanismos dentro de VQ:
+
+| Variante | Cambio | Hipótesis | Potencial / confianza | Riesgo |
+|---|---|---|---|---|
+| crop40 | Mezcla 40% precio a tres días | Evitar sembrar para un precio que desaparecerá | HIGH / LOW | Oferta futura sobreestimada |
+| crop80 | Misma estimación, 80% | Mayor respuesta a la saturación visible | HIGH / LOW | Error de modelo amplificado |
+| crop_end26 | Fin de siembra alternativa d26, buffer 6 | Menos capital y semillas que no producen al cierre | MEDIUM / LOW | Perder última cosecha útil |
+| crop_edge0 | Margen mínimo 0 en vez de −15 | No sustituir trigo cuando la zanahoria pierde margen previsto | HIGH / LOW | Modelo omite valor de alimento/rutas |
+| pred_top3 | Tres patrones rivales en vez de uno | Cobertura de políticas con timing variable | HIGH / MEDIUM | Más falsas alarmas |
+| pred_h96 | Venta propia planeada hasta 96 turnos | Aprovechar presión rival aunque la cinta venda más tarde | HIGH / MEDIUM | Renunciar a demanda futura |
+| pred_fast2 | Actualizar cada turno, señal mínima dos unidades | Responder a ventas pequeñas y cambios rápidos | HIGH / MEDIUM | Adelantos excesivos y coste CPU |
+| pred_window6 | Extensión de 4 a 6 turnos, mismo filtro lejano | Ampliar alcance conservando la protección inmediata | MEDIUM / LOW | Predicción lejana imprecisa |
+
+La idea crop proviene del código público Harvest Ledger (sha 1dfd4630), cuyo
+paquete completo no mejoró. Esto aísla valoración, sin adoptar simultáneamente
+sus otros cambios. Forecast ablation reveló gran valor de la capa; expandir su
+cobertura es una dirección distinta de volver a filtrarla o desactivarla.
+
+## Piloto amplio
+
+Base/noop y ocho variantes; ocho rivales congelados: tds viejo, hybu, ars40,
+hsov, v13, obr, h2965, guru6. Semillas **995000–995003**, ambos asientos.
+10 brazos y ocho rivales: 80 cruces con pool + 45 entre brazos, **1.000 episodios**.
+Métrica primaria delta pareado W/L/T vs VQ en los ocho rivales comunes; otros
+brazos excluidos de la estimación. Directos, monedas y hashes son diagnósticos.
+No mirar resultados parciales para cambiar la muestra o las variantes.
+
+Seleccionar hasta tres candidatas con delta >0, ordenadas por delta, desempate
+alfabético; máximo dos de una familia (crop/pred). Si no hay positiva, continuar
+con una nueva hipótesis estructural, sin ampliar este mismo piloto para rescatarlo.
+Intervalos amplios no son rechazo automático. Sin cambios W/L/T pero acciones
+diferentes = neutral en este panel, no parche inactivo.
+
+## Confirmación
+
+Base/noop más seleccionadas; semillas **996000–996015**, disjuntas. Pool expandido
+fijado ahora: los ocho previos + tds25 + hl25 + arshs3 original. Reportar por
+separado ocho rivales comunes y tres adicionales; principal = once equiponderados.
+Con tres candidatas: (55+10) cruces ×32 = **2.080 episodios**; con dos: 1.600;
+con una: 1.152. No cambiar rivales tras ver qué beneficia a cada variante.
+
+Puede justificar REAL_WORLD_CANDIDATE: delta confirmado ≥3 pp y ausencia de
+regresión >20 pp por rival, aunque IC cruce cero. Un resultado con daño claro,
+bugs o exceso de tiempo se rechaza. Ninguna selección local implica CHAMPION.
+Una señal específica grande se documenta para otro experimento, sin cambiar
+retrospectivamente esta regla. Si hay varias candidatas positivas, estudiar
+combinación en un bloque nuevo que incluya A, B y A+B, con semillas nuevas.
+
+## Integridad
+
+Usar `torneo.py`, `validar_torneo.py`, `pareado_torneo.py`; noop exacto, cero
+errores, ambos asientos y fuentes archivadas. No modificar runner/agentes en
+ejecución. Controlar máximo de tiempo por turno. Guardar resultados, mecanismos,
+estado y siguiente hipótesis antes de pasar al bloque siguiente. Este preregistro
+define una ronda del loop, no una razón para detener toda la investigación.
+
+
+
+---
+
+## SOURCE: docs/research/PREREG_LOOP2_2026-09-25.md
+
+# Loop 2: siembras fallidas y régimen de inversión en tomates
+
+Registrado mientras corre loop1, antes de evaluar estas candidatas. Reusar
+torneo.py; no cambiar el bloque anterior ni sus fuentes. Dos mecanismos nuevos:
+
+## Evidencia y candidatas
+
+Replay 113061732 contra Pand: a paso 185, maleza en (8,1) obliga a DIG en lugar
+de PLANT STRAWBERRY. La reparación original abandona el intento al ver un
+movimiento después del riego. El agente continúa regando esa casilla vacía.
+El rival vende seis fresas adicionales y gana por 718. La atribución causal
+exacta debe comprobarse en bucle cerrado, no sólo con este contraste.
+
+Primer prototipo `recover_ongoing` busca otra visita de riego el mismo día;
+detecta la intención pero no actúa en este caso: no hay segunda visita ese día.
+Se conserva como diagnóstico, no se gasta un torneo en el prototipo inerte.
+Nueva reparación inserta PLANT y desplaza un turno un sufijo que contiene sólo
+movimientos, WATER y PASS. Exige que el último turno sea PASS o WATER duplicado:
+ese turno redundante absorbe el retraso antes del reset nocturno. No añade hires.
+Prueba de mecanismo recupera la fresa, pero cambia RNG/tiendas; su W/L contra
+acciones grabadas no es evidencia competitiva.
+
+- **recover_now:** fresas/tomates, recuperar el mismo día. Potencial HIGH,
+  confianza MEDIUM en mecanismo, LOW en W/L. Riesgo: interacción entre capas y
+  posiciones calculadas por la cinta versus acciones finalmente emitidas.
+- **recover_later:** todos los cultivos, máximo dos días de retraso. Potencial
+  HIGH, confianza LOW; riesgo adicional: cosecha planeada demasiado temprana.
+
+La inversión de tomates ya existe y emplea un umbral de ingresos previstos de
+9.000 monedas. Fuente inspeccionada: arshs3, capa shiiin9, Apache-2.0; el
+[Meta Atlas público](https://www.kaggle.com/code/leoprovorov/kaggriculture-public-meta-atlas-v2)
+señala incertidumbre del supuesto de reposición perpetua del rival. Su snapshot
+es 22 septiembre, aunque la ejecución del notebook sea más reciente.
+
+- **tomato6000:** umbral 6.000, estudiar un régimen de inversión más amplio.
+  Potencial VERY HIGH / confianza LOW; riesgo de desplazar trabajo rentable.
+- **tomato12000:** umbral 12.000, reservar inversión para demanda grande.
+  Potencial HIGH / confianza LOW; riesgo de perder oportunidades rentables.
+- **tomato_finite:** 9.000, oferta rival sólo hasta el fin biológico de las
+  plantas visibles, más producto ya acumulado; corregir el próximo unlock
+  esperado de d22 a d21 usando calendario y número de tiendas observado.
+  Potencial HIGH / confianza LOW; riesgo: el rival sí puede replantar.
+
+## Diseño y selección
+
+Base/noop VQ + cinco candidatas, ocho rivales congelados iguales al piloto de
+loop1; **998000–998003**, ambos asientos. 56+21 cruces, **616 episodios**.
+Primario: delta W/L/T en ocho rivales comunes, por celda rival/semilla promediada
+sobre asientos; IC95 por semilla y dos vías. Directos y monedas aparte.
+Noop exacto, cero errores, fuentes archivadas, tiempos por turno.
+
+Hasta dos candidatas con delta >0, máximo una por familia, orden por delta y
+desempate alfabético. Confirmar con **999000–999015**, once rivales fijados: los
+ocho del piloto + tds25 + hl25 + arshs3 original. Dos candidatas: 1.600 episodios;
+una: 1.152. Candidata real si delta confirmado ≥3 pp sin rival <−20 pp; no exige
+que el IC esté completamente sobre cero. No promover CHAMPION automáticamente.
+
+Si una reparación es neutral en W/L/T pero modifica acciones válidas, se permite
+un diagnóstico separado de clones por su mecanismo raro: 32 semillas fijadas
+**1000000–1000031**, base/noop/una reparación (elegir recover_now por prudencia)
+y arshs3 original, todos contra todos, **384 episodios**. Reportar este bloque
+por separado; no presentarlo como confirmación del pool ni seleccionar entre
+variantes después de mirarlo. Una señal espejo puede justificar estudio real
+si conserva W/L/T en el pool y no tiene fallos mecánicos.
+
+Una ronda negativa genera una hipótesis siguiente; no termina el loop solicitado.
+
+
+
+---
+
+## SOURCE: docs/research/PREREG_LOOP3_2026-09-25.md
+
+# Loop 3: elegir animales por valor económico y oferta visible
+
+Registrado antes de correr. Revisión de VQ: `_HD2_FUTURE=0` omite demanda
+esperada de tiendas futuras en el modelo de elección de gansos/vacas/ovejas.
+La capa posterior `_y_target` convierte vacas en ovejas si existe YARN_STORE,
+sin valorar el inventario ni la oferta futura del rival. No es el antiguo
+barrido de tamaño de rebaño de HOZ; se conserva cantidad y logística del agente
+público fuerte y se cambia el criterio de especie en sus compras previstas.
+
+El ledger real 113056789 muestra más leche/lana vendida por nosotros pero
+menores ingresos en ambos productos que el rival. No prueba que estas nuevas
+reglas lo resuelvan: fundamenta medir oferta y precios conjuntamente.
+
+## Hipótesis
+
+Constructor `construir_herd_loop.py`, base VQ 9b463dfb, atribuciones conservadas.
+
+- `herd_future`: demanda esperada de nuevas tiendas con peso 1 en `_hd2_ev`.
+- `herd_ev600`: reemplazar la regla binaria de YARN_STORE por comparación del
+  valor previsto de dos vacas versus dos ovejas, incluyendo oferta de ambos,
+  precio endógeno y coste. Requiere ganancia modelada de 600. Sólo días 8–11
+  y tamaños que la capa heredada ya permitía. Mantiene control de caja y créditos
+  de compras efectivas; no convierte estructuras a tipos nuevos.
+- `herd_ev1500`: mismo mecanismo con umbral 1.500.
+- `herd_ev_future`: EV600 + demanda futura. Factorial parcial permite comparar
+  A, B y A+B en vez de asumir aditividad.
+
+Potencial HIGH, confianza LOW. Riesgos: el modelo supone más cuidado del que
+ofrece la ruta, usa el mismo calendario de cosecha tras cambiar especie, y
+modela imperfectamente reposición/demanda y reacción rival. Diagnosticar cambios
+de compras, producción aceptada y precios si aparece señal o daño.
+
+## Diseño
+
+Base/noop + cuatro candidatas, mismos ocho rivales públicos congelados.
+**1001000–1001003**, ambos asientos: 48+15 cruces, **504 episodios**.
+Primario delta W/L/T pareado; otros brazos excluidos. Noop exacto, cero errores,
+fuentes archivadas y máximo por turno. Ejecutar después del pipeline loop1/2,
+sin añadir ocho workers a corridas ya activas.
+
+Confirmar hasta dos candidatas con delta >0, orden por delta y nombre, en
+**1002000–1002015**, pool fijo expandido a once: ocho originales más tds25,
+hl25 y arshs3 original. Dos candidatas 1.600 episodios, una 1.152. REAL_WORLD_CANDIDATE
+si delta confirmado ≥3 pp sin rival <−20 pp; IC amplio informado, no veto binario.
+Promoción a campeón requiere además evidencia real. Si ninguna mejora, pasar
+a otra familia de mecanismos conservando este resultado.
+
+
+
+---
+
+## SOURCE: docs/research/PREREG_LOOP4_REPARACION_2026-09-25.md
+
+# Loop 4: cobertura de una reparación rara en mundos nuevos
+
+Pregunta: ¿con qué frecuencia se activa recover_now y qué efecto total tiene
+frente a copias reactivas? El piloto de loop2 no activó la reparación en sus
+cuatro semillas; no fue una evaluación informativa de ese mecanismo.
+
+Evidencia nueva posterior: en la semilla del fallo real de 113061732, cuatro
+episodios frente a arshs3 vivo reprodujeron identidad en asiento 0 y recuperaron
+la fresa en asiento 1: margen −671 → +53. Es un caso dirigido y cambia tiendas,
+por lo que no estima efecto promedio ni aísla dinero de la planta. Justifica
+medir frecuencia/efecto en mundos aleatorios nuevos, no promover el parche.
+
+El espejo opcional original de loop2 exigía activación en su piloto y no se
+ejecutará bajo esa regla. Este bloque distinto se registra tras nueva evidencia,
+con una pregunta de cobertura y semillas nuevas; no se sumará al piloto como si
+fuera confirmación prevista allí. No retocar la variante ni elegir semillas
+que contengan maleza después de observarlas.
+
+## Diseño
+
+Base/noop VQ, recover_now congelado de loop2 y arshs3 original. Todos contra
+todos, **1003000–1003031**, ambos asientos: 6 cruces ×64 = **384 episodios**.
+Usar torneo.py y validar_torneo.py; correr tras pipeline1/2 y loop3, sin otro
+torneo grande simultáneo. Primario: delta recover_now vs base contra arshs3,
+por semilla promediando asientos. IC95 t por semilla; IC dos vías no aplica
+con un único rival. Directo contra VQ es diagnóstico aparte.
+
+Registrar hashes de acciones y proporción de episodios cambiados, errores,
+tiempos, número de semillas con mejora/daño y resultados por asiento. Noop exacto.
+No cambiar criterio por un directo favorable ni por dinero.
+
+Delta positivo y al menos dos semillas positivas: PROMISING, estudiar mecanismo
+de cambios y valorar una prueba real o panel amplio según tamaño/daño. Delta cero
+con acciones idénticas: sigue sin cobertura; revisar frecuencia antes de otra
+corrida. Daño con intervalo enteramente negativo: REJECTED. Otros resultados:
+inconclusos. Este bloque de clones no demuestra mejora universal ni nombra campeón.
+
+La reparación merece conservarse como hipótesis separada aunque las variantes
+de predictor mejoren. Cualquier combinación requerirá A, B y A+B en otro bloque.
+
+
+
+---
+
+## SOURCE: docs/research/PREREG_LOOP5_TOMATE_TEMPRANO_2026-09-25.md
+
+# Loop 5: invertir antes en una campaña completa de tomates
+
+Motivación: cuatro replays recientes de DSM muestran cuarta tierra al día 10
+y producción abundante de tomate. Nuestro piloto de umbrales al día 18 apenas
+cambió comportamiento. Probar una fecha productiva distinta, sin copiar las
+acciones grabadas como si fueran una política reactiva.
+
+Constructor `construir_tomate_temprano.py`, padre VQ 9b463dfb. Conserva diez
+tiles de V219, observación de trabajadores realmente contratados y chequeos
+de caja/índices. Cambia campaña completa: siembra, riegos alternos, fertilizante,
+calendario de cuadrillas y cuatro amaneceres productivos. Cesa contratación
+después de última cosecha; respeta fechas absolutas del resto de la granja.
+Modelo de oferta rival finita, futuras tiendas cada tres días, liquidez inicial
+6.000 (más chequeo real de presupuesto y reserva 3.000 del request).
+
+| Variante | Siembra | Ingreso mínimo proyectado |
+|---|---:|---:|
+| early12_9k | 12 | 9.000 |
+| early12_6k | 12 | 6.000 |
+| early14_6k | 14 | 6.000 |
+| early16_6k | 16 | 6.000 |
+| late18_6k | 18 | 6.000 |
+
+late18_6k es comparador de calendario: difiere de tomato6000 de loop2 por
+liquidez y modelo finito, por eso no es una repetición exacta. El primario sigue
+siendo delta W/L/T contra VQ; comparaciones entre brazos son exploratorias.
+
+**Aclaración de desarrollo anterior al piloto:** seed1004000 reveló que otra
+capa reactiva de VQ abre SE para seis ovejas al día 12. No figura en futuras
+cintas. Early12 puede sustituir esa inversión; las fechas tardías ya encuentran
+SE ocupado y no se activan. El experimento mide efecto total de asignación de
+tierra/capital más calendario, no una fecha aislada. No ocultar este coste de
+oportunidad ni declarar mejor inversión por el ingreso bruto de tomates.
+
+Antes del piloto: ocho episodios de desarrollo, seed **1004000**, ambos
+asientos contra arshs3 original, base/noop de transformación de calendario/
+early12_6k/late18_6k. Noop conserva fechas, proyección y liquidez originales;
+debe emitir exactamente las mismas acciones. Comprobar ramas/plantas/cosechas,
+errores y conciliación de caja. Si la intervención no se activa en ese mundo,
+diagnosticar elegibilidad; no usar su W/L/T como criterio de selección. Si hay
+defecto, versionar corrección y repetir solamente validación necesaria antes
+de congelar el piloto, dejando constancia del defecto y los hashes.
+
+Piloto: cinco variantes + base/noop VQ, ocho rivales habituales, **1005000–003**,
+ambos asientos, 616 episodios. Ejecutar tras loop4, sin segundo torneo grande
+simultáneo. Torneo/validación/pareado existentes, fuentes congeladas antes de
+empezar. Reportar activación por hashes y por siembras observadas; no usar
+monedas para rescatar delta W/L/T agregado negativo.
+
+Seleccionar hasta dos brazos de mayor delta estrictamente positivo, sin exigir
+significación en este piloto pequeño. Confirmación **1006000–015**, once rivales
+de confirm1: 1.152 episodios si uno, 1.600 si dos. Semilla como unidad y ambos
+asientos; IC95 por semilla y dos vías si estimable. No elegir rivales a posteriori.
+
+Gate de candidata real: delta confirmado ≥3 pp, ningún rival <−20 pp,
+acciones válidas, runtime admisible y revisión de mecanismo. IC cruzando cero
+se informa como incertidumbre; no convierte una señal útil en CHAMPION ni es
+un veto absoluto a experimentar en ladder. Mantener los registros negativos.
+
+
+
+---
+
+## SOURCE: docs/research/LIDER_Y_FUENTES_2026-09-25.md
+
+# Líder actual y fuentes públicas — 2026-09-25 UTC
+
+Consulta reproducible ~01:36 UTC, separada de los replays históricos del primer
+lugar. DSM figura con **3128,7**, mejor submission **56518845**, 112 episodios
+listados. Su submission más reciente es otra; no confundir fecha de equipo con
+identidad del agente que sostiene el mejor score.
+
+Se eligieron los **cuatro episodios completados más recientes, sin filtrar
+resultado**: 113091953, 113086007, 113079205, 113073385. Dos rivales distintos;
+cuatro victorias no constituyen su WR general. Reproducción oficial de ambas
+cintas: 720 estados exactos en cada replay y dinero conciliado con transacciones
+aceptadas. Hashes, selección y ledgers en
+`docs/evidencia/loop_publicos_20260925/dsm_current_analysis.json` y
+`dsm_*.ledger.jsonl.gz`. Script: `minar_lider_actual.py`.
+
+| Replay | Rival | Margen DSM | Tomate vendido DSM/rival | Ingreso tomate DSM/rival |
+|---|---|---:|---:|---:|
+| 113091953 | 吃白饭的大肥鱼 | +10.333 | 211 / 120 | 16.867 / 9.028 |
+| 113086007 | DECEM | +8.888 | 116 / 68 | 6.308 / 3.626 |
+| 113079205 | 吃白饭的大肥鱼 | +10.096 | 231 / 144 | 15.980 / 9.460 |
+| 113073385 | DECEM | +5.348 | 134 / 136 | 7.354 / 7.200 |
+
+Hallazgos observados:
+
+- Cuarto cuadrante en día 10, con sólo 9–319 monedas restantes a esa altura.
+  Máximo de 12 peones. La inversión productiva es anterior a nuestro módulo
+  opcional de diez tomates del día 18. **Corrección posterior:** nuestra base
+  también tiene una ampliación adaptativa de ovejas al día 12; no afirmar que
+  siempre espera al 18 para abrir tierra. Véase diagnóstico siguiente.
+- Ya tiene 4–10 tomates al día 10; llega a 14–32 según partida y momento.
+  Adapta ganado y cultivos: por ejemplo 18 ovejas frente a DECEM en un mundo,
+  12 vacas y 5 gansos al día 10 en otro. No copiar una composición universal.
+- Los cuatro juegos tienen 5/16/7/8 escapes. Muchos son tardíos; la traza por sí
+  sola no distingue abandono deliberado de fallo. «Cero escapes» no es una
+  función objetivo válida sin valorar cuidados, producción futura y trabajo.
+- Las acciones de unidades difieren en cientos de turnos entre juegos, desde
+  los pasos 25/42/78. Hay rutas/comportamiento diferentes según mundo; esto no
+  revela su algoritmo ni demuestra aprendizaje automático.
+
+Interpretación: estudiar producción y asignación de capital, además del timing
+de ventas. Los tomates explican parte de varias diferencias económicas, pero
+**no se ha identificado causalmente el mecanismo que hace ganar a DSM**. El
+cuarto replay gana con prácticamente igual cantidad de tomates. Una intervención
+local cambia RNG, tiendas, rival reactivo y otros ingresos: medir efecto total.
+
+Primera hipótesis implementable: desplazar coherentemente nuestra campaña
+V219 a días 12/14/16, con su riego, fertilización y ventana finita de cosecha.
+Se limita inicialmente a diez tiles; no replica la explotación completa de DSM.
+Comparar también día 18 con igual modelo económico para separar calendario de
+criterio de inversión. Riesgos: precios todavía bajos, peones marginales caros,
+agotamiento de caja y conflicto con obligaciones del padre.
+
+Diagnóstico posterior `early_tomato_qualification.json`, seed1004000: al día
+12 VQ tiene SE cerrado y 13.089 monedas; al día 14 ya hay seis ovejas allí,
+colocadas el día 12. No aparecen como BUY_LAND en las cintas futuras porque
+provienen de otra capa adaptativa. El chequeo heredado de futuras cintas no
+detecta este coste de oportunidad. El brazo temprano toma ese espacio antes,
+siembra diez tomates y vende 60, pero pierde frente al original en ambos
+asientos de desarrollo. Por tanto, el loop5 mide también sustitución de una
+inversión productiva: no atribuir su efecto sólo a días de cosecha. La versión
+tardía no se activa en ese mundo porque SE ya está abierto y ocupado, aunque
+su ingreso proyectado supere el umbral. Ésta es una razón de cobertura real,
+distinta de una proyección económica demasiado conservadora.
+
+## Fuentes públicas examinadas, sin repetir experimentos
+
+Lista de notebooks recientes y descargas congeladas en el mismo directorio de
+evidencia (`public_notebooks_latest.json`, `public_deduplication.json`,
+`public_source_review.json`). No se ejecutaron notebooks externos.
+
+- [CHA22](https://www.kaggle.com/code/abhinav0370/cha22-agent): main idéntico byte
+  por byte a tds25, ya evaluado. No repetir por el nombre.
+- [evgendvorkin](https://www.kaggle.com/code/evgendvorkin/kaggriculture): mismo
+  texto normalizado y AST que tds25; diferencia CRLF/LF. No repetir.
+- [Graph reinforcement learning](https://www.kaggle.com/code/djamilabenchikh/graph-reinforcement-learning):
+  residual GCN/DQN sobre V16 para aplazar ventas, 18 partidas de entrenamiento.
+  Su salida pública informa media pareada 0,0 y 0/4 pares positivos frente a
+  V16, criterio monetario. Se auditó main sin ejecutarlo: no merece desplazar
+  todavía las pruebas de hipótesis con mecanismo concreto. No se afirma que
+  todo RL sea inútil ni se lo declara refutado sin torneo propio.
+
+
+
+---
+
+## SOURCE: docs/research/DECISION_ENVIO_TOP3_2026-09-25.md
+
+# Decisión de prueba real: VQ + predictor top3
+
+Envío experimental autorizado por el loop autónomo. Archivo exacto de
+confirmación: `submission/main_publico_arshs3_vq_top3.py`, SHA-256
+`9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145`.
+Constructor `construir_loop_publicos.py`, cambio `_V92_P_TOP=3` frente a 1.
+Se conservan avisos de licencia y atribuciones del padre público Apache-2.0.
+
+Piloto: +9,375 pp, cuatro semillas y ocho rivales. Confirmación disjunta:
+16 semillas, once rivales, ambos asientos; base 78,409%, candidato 89,205%,
+**+10,795 pp**. IC95 por semilla [1,234; 20,357], dos vías
+**[−0,115; 21,706]**. 20 celdas rival×semilla mejoran y una empeora. En los
+ocho rivales originales: +9,375 pp, sin regresión por rival. Panel expandido:
+peor rival arshs3 −6,25 pp, mejor tds25 +31,25. No se promete ese salto en Elo.
+
+Cumple gate registrado ≥3 pp y ningún rival <−20 pp. Noop exacto 416/416,
+1.600 episodios completos, cero errores, fuentes archivadas verificadas.
+Máximo local 757 ms por turno con ocho workers; dentro del segundo nominal,
+pero el servidor de Kaggle puede tener rendimiento distinto. Copia byte exacta
+al archivo de envío, sin incorporar ningún experimento posterior.
+
+Mecanismo favorable ya reproducido en piloto: primera diferencia en step559,
+venta de leche anterior a la presión rival; margen −1.062 → +292, tiendas
+iguales y caja conciliada. Se revisó también la única celda negativa de
+confirmación: arshs3, seed996011, asiento0, +216 → −425. Primera venta adelantada
+de leche step392; 24 turnos de acciones distintos, mismas tiendas y cero
+errores. Más cobertura de patrones también causa anticipaciones perjudiciales;
+no se oculta ese intercambio ni se culpa a un fallo de ejecución inexistente.
+
+pred_fast2 queda PROMISING (+2,841 pp), sin superar el gate principal. No se
+redondea a 3 ni se rescata por +4,688 pp en el subpanel original.
+
+Estado real previo al envío: VQ56535264 2319,5 con 24 episodios listados,
+arshs3 original56511619 2275,7. VQ es joven y la lista incluye validación;
+no prueba aún que VQ supere al original. El próximo envío desplaza al original
+y conserva VQ como control activo, que es el padre exacto de top3. Ambas
+políticas quedan archivadas para recuperación. La incertidumbre real se
+resolverá con emparejamientos de ladder, además de seguir investigando.
+
+Evidencia: `confirm1.results.json`, `confirm1.validation.json`,
+`confirm1.pred_top3.mechanism.json`, `pilot.pred_top3.mechanism.json`,
+`top3_package.json` y snapshots API en `docs/evidencia/loop_publicos_20260925/`.
+ID, fecha, commit y lecturas posteriores se registran en SUBMISSION_HISTORY.
+
+
+
+---
+
+## SOURCE: docs/research/RESULTADOS_2026-09-25.md
+
+# Revisión y experimentos — 25 septiembre UTC / 24 septiembre Colombia
+
+**Decisión:** mantener arshs3 original (56511619) y medir en ladder la nueva
+arshs3+VQ (56535264). VQ está COMPLETE. Ninguna de las cuatro candidatas medidas
+en esta ronda justifica otro envío. El próximo trabajo debe aprender de derrotas
+actuales y aislar un mecanismo nuevo, conservando la predicción de ventas.
+
+## Punto de partida y envío
+
+Se revisaron los cambios hasta a9f59ee, el estado de investigación, las creencias,
+el historial de submissions, la bitácora y los protocolos VQ/ADV. La bitácora
+principal terminaba en septiembre 14, mientras la investigación reciente estaba
+en `docs/research/`. Se actualizaron las entradas para evitar seguir planes vencidos.
+
+La primera consulta de esta ronda encontró arshs3 en **2292,5 / 148 episodios**
+y v13 en **1857,9 / 136**. Es evidencia favorable al orden local arshs3 > v13,
+sin calibrar una conversión de victorias locales a Elo ni demostrar superioridad
+contra la cima del ladder.
+
+Se envió el archivo ya guardado y validado
+`submission/main_publico_arshs3_vq.py`, commit **a9f59ee**, SHA-256
+`9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976`.
+Submission **56535264**, 2026-09-25 **00:22:43 UTC**, COMPLETE.
+La CLI informó cuatro envíos restantes. Desplazó a v13 y conservó arshs3 como
+referencia activa. `submission/main.py` sigue siendo el original.
+
+La evidencia previa de VQ se verificó sin repetir sus partidas: 0/120 celdas
+cambian W/L/T en el pool, pero 40-0 en una confirmación espejo y bloques
+adicionales favorables. ADV ya había fallado su confirmación; tampoco se repitió.
+
+Última consulta al cerrar la ronda: original **2288,6**, VQ **1198,5**; edades
+muy distintas y número de episodios sin actualizar en esa consulta. El rating
+inicial de VQ fue 810. No usar estas lecturas tempranas para decidir su fuerza.
+No se programó monitoreo automático.
+
+## Experimentos nuevos
+
+Cada bloque contiene 608 episodios: base/noop/dos candidatas, ocho rivales
+congelados, ocho semillas y ambos asientos. La tabla usa únicamente el panel
+común de ocho rivales, 128 episodios por brazo; los duelos entre brazos se
+informan aparte. Puntuación W/L/T = 1/0/0,5. Delta en puntos porcentuales.
+
+| Bloque / candidata | Base VQ | Candidata | Delta | IC95 dos vías | Decisión |
+|---|---:|---:|---:|---:|---|
+| Forecast / gate | 76,56% | 25,00% | −51,56 | [−78,92; −24,20] | REJECTED |
+| Forecast / off | 76,56% | 7,81% | −68,75 | [−89,57; −47,93] | REJECTED |
+| Públicos / tds25 | 92,19% | 84,38% | −7,81 | [−27,29; +11,67] | Inconcluso, no seleccionado |
+| Públicos / hl25 | 92,19% | 82,81% | −9,38 | [−29,79; +11,04] | Inconcluso, no seleccionado |
+
+Las semillas difieren entre bloques: 990000–990007 y 992000–992007.
+La diferencia entre los porcentajes de la base muestra sensibilidad a la semilla;
+no comparar porcentajes entre bloques como si fueran efectos de una intervención.
+Los intervalos por semilla, desglose por rival y celdas están en los JSON de resultados.
+
+**Forecast:** gate exige un historial mínimo de aciertos también a predicciones
+inmediatas; off desactiva `_v92_predict`. Ambas variantes empeoran claramente
+en este panel. No se ejecutó el bloque de confirmación ni se enviaron.
+
+**Públicos actualizados:** se descargaron versiones distintas de
+[tds](https://www.kaggle.com/code/tetsutani/demand-preserving-turn-sale-timing)
+(SHA 127ed3e6) y
+[Harvest Ledger](https://www.kaggle.com/code/haodou092/kaggriculture-harvest-ledger)
+(SHA 1dfd4630), publicadas el 24 de septiembre. tds cambia sustancialmente su
+paquete de política y colas; HL cambia el cálculo de precios futuros para
+producción y parámetros de siembra. Se conservaron atribuciones Apache-2.0.
+Ninguna supera el umbral registrado de +5 puntos, dos rivales positivos y
+ninguno por debajo de −20. No se gastaron los 864 episodios de confirmación.
+Los intervalos amplios no demuestran una regresión universal de estas versiones.
+
+En directo tds25 gana 10/16 a VQ, pero pierde globalmente frente al pool;
+hl25 gana 6/16. Seleccionar por el directo después de ver el agregado negativo
+cambiaría el criterio registrado. No se hizo.
+
+## Qué aprendimos del agente fuerte y de nuestros errores
+
+Se descargaron 24 replays elegidos por recencia: 16 arshs3 y ocho v13.
+Arshs3 obtiene 4 victorias, 11 derrotas y un empate en esa ventana, sin escapes
+de animales propios y sin stock final propio sin vender. Esta ventana reciente
+no estima su WR histórico ni contiene el Elo de los rivales.
+
+**Corrección de medición:** la primera sonda del predictor contó 12/67 señales
+con flujo rival inferido en t+1..t+4. Omitía las ventas simultáneas del turno t.
+Se reprodujeron cuatro replays con las acciones reales, verificando los **720
+estados** de cada uno y conciliando los flujos de caja de ambos jugadores.
+El ledger de ventas aceptadas da **50/67 coincidencias en t..t+4**, de las cuales
+**42/67 ocurren en t**. La cifra anterior se conserva como evidencia del error,
+no como precisión válida. Una coincidencia no prueba por sí sola el beneficio
+causal de una venta anticipada. La reconstrucción de la política difirió en una
+acción de un replay (SELL WHEAT, paso 623); el ledger usó las acciones grabadas
+y sí reprodujo exactamente los estados.
+
+**Mecanismo local:** primera celda ordenada donde base gana y gate pierde:
+ars40, semilla 990000, asiento 0. Primera divergencia en paso 440: VQ vende dos
+lanas y gate espera; el rival también vende dos lanas ese mismo turno. Se
+reproducen los resultados originales: margen **+89 → −78**. Las cantidades
+totales vendidas por producto son idénticas; cambia el dinero cobrado por timing,
+principalmente después en fresas. No atribuir toda la diferencia a esas primeras
+dos lanas: las decisiones posteriores también divergen.
+
+Esto respalda conservar el predictor y estudiar precios ejecutados y ventas
+simultáneas. La observación de acciones, el flujo neto de inventario y el dinero
+efectivamente recibido responden preguntas diferentes.
+
+## Evidencia, validación y coste
+
+Se reutilizó y reforzó `torneo.py`: captura hashes de acciones antes del motor,
+archiva fuentes, rechaza sobrescritura, errores, cobertura incompleta y cambios
+de fuentes durante el bloque. El wrapper se comparó con el loader oficial:
+1.438 acciones y rewards idénticos en dos episodios. `pareado_torneo.py` ahora
+rechaza episodios inválidos, duplicados y celdas incompletas.
+
+Ambos torneos completos: **160 controles noop exactos por bloque**, cobertura
+y hashes archivados verificados, cero errores, máximo observado menor de 272 ms
+por turno. Coste nuevo: **1.216 episodios de torneo + 8 diagnósticos = 1.224**.
+Los diagnósticos son dos del loader, dos del fallo gate y cuatro reproducciones
+reales; no se mezclan con las muestras de evaluación.
+
+- [Evidencia y comandos de verificación](../evidencia/research_20260925/README.md).
+- [Resultados forecast](../evidencia/research_20260925/forecast_results.json).
+- [Resultados públicos nuevos](../evidencia/research_20260925/public_refresh_results.json).
+- [Protocolo forecast](PREREG_FORECAST_GATE_2026-09-25.md).
+- [Protocolo públicos nuevos](PREREG_PUBLIC_REFRESH_2026-09-25.md).
+
+Los torneos son contra ocho políticas públicas emparentadas, no una muestra
+aleatoria del ladder. No evalúan directamente los mejores rivales privados.
+Las fuentes exactas están en `.sources.tgz`; los replays originales siguen en
+`replays/`, ignorado por Git, con selección, diagnósticos y ledgers conservados.
+
+## Próxima decisión útil
+
+1. Leer partidas de VQ cuando tenga una muestra útil, junto con la referencia
+   original y la fuerza observable de sus rivales. Otro envío desplazaría al
+   original: debe aportar una hipótesis diferente o evidencia favorable nueva.
+2. Investigar pérdidas actuales descomponiendo unidades producidas y precios
+   ejecutados por fase. La predicción simultánea ya mostró valor; no volver a
+   gate/off con los mismos parámetros ni a ajustes agotados del chasis HOZ.
+3. Si aparecen pérdidas por elección de cultivo, aislar sobre VQ una decisión
+   de producción basada en oferta futura visible. La versión HL completa no
+   mejoró, lo cual no aísla ese mecanismo. Antes de ejecutarla, registrar la
+   intervención, los riesgos de alimento/producción y semillas nuevas; todavía
+   no es una candidata implementada ni aprobada por evidencia.
+
+
+
+---
+
+## SOURCE: docs/research/ESTADO_INVESTIGACION.md
+
+# Estado de investigación — leer primero para continuar
+
+## Loop activo desde 2026-09-25 01:02 UTC
+
+El usuario pidió explícitamente seguir investigando y probando en un **loop
+continuo**, sin detenerse al cerrar una ronda. Objetivo persistente activo.
+
+- Loop1: ocho variantes sobre VQ, producción/forecast, 1.000 episodios completos.
+  PROMISING: pred_top3 +9,375 pp; pred_fast2 +3,125. Ambas a confirmación.
+  Protocolo `PREREG_LOOP1_2026-09-25.md`; semilla 995000–995003.
+- Loop2: recuperación de siembras + inversión en tomates, cinco variantes,
+  616 episodios completos; ninguna señal agregada positiva. Reparaciones
+  y dos variantes de tomate no se activaron en estas cuatro semillas.
+  Protocolo `PREREG_LOOP2_2026-09-25.md`; semilla 998000–998003.
+- `continuar_loop_publicos.py` encadena esos pilotos, verifica controles,
+  selecciona según reglas fijadas y ejecuta confirmaciones disjuntas. Usa
+  `torneo.py` y `pareado_torneo.py`; no es otro harness. NO subir automáticamente.
+- **Confirm1 completa**, 1.600 episodios, noop416/416, cero errores. Top3
+  **+10,795 pp**, IC95 dos vías [−0,115;21,706], cumple gate de prueba real;
+  fast2 +2,841 pp, no cumple gate. Top3 máximo757ms, mecanismo de mejora y
+  única celda de daño reproducidos. Decisión en `DECISION_ENVIO_TOP3_2026-09-25.md`.
+- **En curso loop3**: cuatro variantes de elección económica de animales, 504 episodios;
+  `continuar_loop_herd.py` espera al pipeline anterior y luego ejecuta piloto y
+  confirmación según `PREREG_LOOP3_2026-09-25.md`.
+- Loop4: cobertura de recover_now en 32 semillas nuevas, 384 episodios;
+  `continuar_loop_recuperacion.py` espera a loop3. Protocolo separado después
+  de evidencia nueva del mecanismo, no reinterpretación del gate de loop2.
+- Loop5: cinco variantes de tomate temprano/tardío, 616 episodios y hasta dos
+  confirmaciones; `continuar_loop_tomate.py` espera a loop4. Ocho diagnósticos
+  previos: noop exacto, diez plantas/60 unidades en el brazo temprano, cero
+  errores, derrota en ese mundo. No elegir por esas partidas de desarrollo.
+  Total: 22 variantes diferentes preparadas, además de controles.
+- Scorecards actualizadas: `SCORECARDS_LOOP_2026-09-25.md`.
+- Estado máquina: `docs/evidencia/loop_publicos_20260925/pipeline_state.json`.
+  Logs: `results/loop_publicos_20260925_pipeline.log` y los logs de cada bloque.
+  No modificar `torneo.py`, ni agentes de un bloque mientras corre. No lanzar
+  otro torneo de ocho workers mientras el pipeline ocupe el equipo.
+- Sonda nueva: falta una fresa tras DIG por maleza en replay 113061732. Reparación
+  con reintento entre trabajadores no actúa por falta de riego el mismo día;
+  inserción en un sufijo con turno final redundante sí recupera planta. Cambia
+  tiendas/RNG, así que la sonda frente a replay NO mide ganancia competitiva.
+
+Sonda posterior en bucle cerrado (mismo seed del fallo, ambos asientos, rival
+arshs3 reactivo): reparación inerte en asiento 0; recupera planta y −671→+53 en
+asiento 1, con tiendas diferentes. Caso dirigido, no estimación poblacional.
+La prueba de cobertura quedó registrada y encolada como loop4.
+
+Líder actual consultado 01:36 UTC: DSM 3128,7, submission 56518845. Cuatro replays
+recientes reproducidos exactamente; compra cuarta tierra día 10 y cultiva más
+tomates, con diferencias grandes de composición por mundo. No inferir causalidad
+ni algoritmo del score. Informe: `LIDER_Y_FUENTES_2026-09-25.md`. Dos notebooks
+con nombre nuevo eran copias de tds25: se deduplicaron sin repetir torneo.
+
+Último snapshot real: VQ56535264 **2319,5 /24 episodios listados**, original
+56511619 **2275,7**. VQ aún joven, no afirmar superioridad por este rating.
+Top3 empaquetado byte exacto de confirmación, sha9668e30a; envío experimental
+en preparación. Desplazará al original y conservará VQ, su padre, como control.
+
+Lo siguiente es el cierre de la ronda anterior; no significa parar este loop.
+
+## Estado vigente — 2026-09-25 UTC / 2026-09-24 America/Bogota
+
+Esta sección sustituye los planes y estados «en curso» históricos de abajo.
+Consulta API archivada en `docs/evidencia/research_20260925/`:
+
+| Agente | Submission | Score observado | Episodios | Estado |
+|---|---:|---:|---:|---|
+| arshs3 público original | 56511619 | 2292,5 | 148 | Mejor referencia real, activa |
+| v13 público | 56511611 | 1857,9 | 136 | Desplazada por VQ |
+| arshs3 + VQ | 56535264 | 810 inicial | sin actualizar | REAL_WORLD_CANDIDATE, COMPLETE |
+
+VQ se envió desde `submission/main_publico_arshs3_vq.py`, commit a9f59ee,
+sha 9b463dfb, usando la evidencia ya existente (40-0 espejo y otros bloques,
+0 cambios W/L/T en el pool). No se repitió el barrido VQ ni ADV. La CLI confirmó
+4 envíos restantes tras subirla. Arshs3 original queda activa para comparar;
+otro envío desplazaría a esa referencia. `submission/main.py` aún es el original;
+el archivo efectivamente enviado está identificado en SUBMISSION_HISTORY.
+
+**Hallazgos nuevos:** muestra fija por recencia, 16 partidas arshs3 y 8 v13,
+sin seleccionar por resultado. Arshs3 4V/11D/1E, cero escapes, inventario terminal
+propio cero. No es su WR histórico. Cuatro partidas se usan para diagnosticar
+el predictor: la primera sonda contó 12/67 coincidencias, pero omitía ventas
+simultáneas. **CORRECCIÓN:** cuatro reproducciones exactas con ledger dan 50/67
+en t..t+4, 42 en el mismo turno. Una acción reconstruida del agente difiere de
+la real (SELL WHEAT en step 623); el ledger se validó contra las acciones reales,
+sin esa discrepancia. No atribuir causalidad a cada coincidencia.
+
+**TERMINADO:** `forecast_pilot` (608 episodios), noop exacto 160/160. Gate
+**−51,56** puntos (IC dos vías [−78,92; −24,20]); off **−68,75**
+([−89,57; −47,93]). REJECTED ambos; no se ejecuta confirmación ni se suben.
+Sonda causal de fallo: primeras acciones distintas step 440, mismas cantidades
+totales vendidas, peor timing y +89 monedas pasa a −78. Protocolo inalterado:
+`PREREG_FORECAST_GATE_2026-09-25.md`; resultados `forecast_results.json`.
+
+**TERMINADO:** `public_refresh` (608 episodios), noop exacto 160/160.
+Las versiones nuevas tds25 / hl25 (sha 127ed3e6 / 1dfd4630) obtienen **−7,81**
+y **−9,38** puntos vs VQ. IC dos vías [−27,29; +11,67] y [−29,79; +11,04]:
+inconcluso, sin señal agregada de mejora; ninguna cumple el criterio registrado.
+No se ejecuta confirmación ni otro envío. No rescatar tds25 por su 10/16 en directo.
+Protocolo `PREREG_PUBLIC_REFRESH_2026-09-25.md`; `public_refresh_results.json`.
+
+**Cierre de esta ronda:** 1.216 partidas de torneo + ocho diagnósticas; todos
+los procesos terminaron. Consulta final: original 2288,6; VQ 1198,5 con apenas
+media hora de vida, sin actualizar episodios. No compararlos por ese rating.
+El informe completo es [RESULTADOS_2026-09-25.md](RESULTADOS_2026-09-25.md).
+Siguiente frontera: aprender de pérdidas actuales y separar producción de precios
+realmente ejecutados; preservar el predictor y dejar que VQ reúna evidencia real.
+No hay monitoreo automático programado ni candidato nuevo pendiente de envío.
+
+Se endureció el mismo `torneo.py`: no sobrescribir, abortar ante inválidos o
+cambios de fuentes, comprobar cobertura, archivar fuentes y capturar acciones
+antes del motor. La sonda comparó el wrapper con el loader oficial: 1.438 acciones
+y rewards idénticos (dos episodios). No usar `pareado_torneo.py` sin comprobar
+antes que el bloque está completo y que cada celda contiene ambos asientos.
+
+La autorización autónoma de investigación y submissions continúa. No hay una
+aprobación pendiente para los agentes públicos ya enviados. Las restricciones
+anteriores y las listas de procesos de septiembre 21–24 se conservan abajo sólo
+como historial; no relanzar sus comandos por leerlos aquí.
+
+## Historial previo a esta revisión
+
+Actualizado: 2026-09-23 20:45 (America/Bogota) = 2026-09-24 01:45 UTC. Deadline 2026-09-30 23:59 UTC.
+Loop autónomo autorizado por el usuario (mensaje del 2026-09-21): harness + ladder
+como evidencia complementaria, submissions como instrumento (5/día).
+
+## ⚠️ PIVOTE 2026-09-24: el techo real está en los agentes PÚBLICOS
+
+**Leaderboard 2026-09-24 01:02 UTC (9.937 equipos):** #1 3057 · #10 2921 · #100 2715 ·
+#500 2499 · #1000 2308 · #2000 1807 · **nosotros ~1160 = puesto ~3.500**.
+280 equipos ≥ 2600, 1.635 ≥ 2000.
+
+**Causa:** existe un ecosistema de agentes públicos Apache-2.0 (Code tab) —
+cintas de ruta (yhay81) + router por tiendas + capas reactivas (Ahmed Berat Özer
+V25-V48, Thomas Tschinkel v9/4 y v13, familia Herd-Safe de Dmitrii Gluzdov /
+arsgorynich, haideptry...)— que puntúan 2500-2950 en el ladder. El de Thomas
+(v9/4, sub 56269928) documenta **2944,7 con 201 partidas**. Desde el 2026-09-02
+no volvimos a medirnos contra ellos: optimizamos dentro de una familia débil.
+
+**Torneo en bucle cerrado** (`torneo.py`, motor oficial 1.32.7, cargados como Kaggle
+= último callable, 10 semillas 910000-009 × 2 asientos, 720 partidas, 0 errores,
+máx 215 ms/turno). Evidencia: `docs/evidencia/torneo_publicos/torneo_rr1.*`.
+
+| agente | origen | % vs resto | nota |
+|---|---|---|---|
+| **arshs3** | arsgorynich, Herd-Safe v3 forecast4 | **98,8%** | gana a TODOS (ars40 18-2, resto 20-0) |
+| ars40 | arsgorynich, More Wheat v11 | 81,2% | |
+| hsov | haideptry, Shepherds Ledger herd-safe | 76,2% | |
+| h2965 | haideptry, 2965 Master Hybrid (V59) | 67,5% | |
+| guru6 | guruprasaathas111, Master Engine V6 | 47,5% | |
+| v13 | Thomas Tschinkel, Metav4 v13 | 41,2% | gana a v94 20-0 |
+| v94 | Thomas Tschinkel, 2945 Farm (ladder 2944,7) | 25,0% | pierde con toda la familia Herd-Safe |
+| seek+gcal | nuestra activa 56507746 | 8,8% | pierde 0-20 con CADA público, −$12..16k |
+| decem+gcal | nuestra activa 56507747 | 3,8% | idem |
+
+**Rondas 2 y 3** (`torneo_rr2`, `torneo_rr3`; seeds 920000-009 y 930000-009;
+560+560 partidas, 0 errores, máx 291 ms/turno; límite de Kaggle 1 s + reserva):
+
+| agente | rr2 % | rr3 % | directo vs arshs3 |
+|---|---|---|---|
+| arshs3 | 82,9 | 77,1 | — (**invicto: 22/22 cruces en las 3 rondas**) |
+| tds (tetsutani, demand-preserving, 22-sep) | 72,9 | 78,6 | 8-12 / 7-13 (margen −$10..−$14) |
+| hl59 (haodou092, Harvest Ledger V59) | — | 78,6 | 7-13 (≈ tds: 14 empates de 20) |
+| hybu (wzhengbiao) | — | 53,6 | 8-12 |
+| ars40 ≈ dmw (More Wheat) | 50,7 | — | 6-14 |
+| wz15, lp16, obr, ob3, hsov≈hs2700≈st25, bv48 | 26-44 | 5-44 | 1-19 .. 7-13 |
+
+Entre los públicos top los márgenes medios son de decenas de dólares sobre ~$115k:
+las partidas se deciden en el margen.
+
+**Activas desde 2026-09-24 04:28 UTC:** 56511611 (v13) y **56511619 (arshs3)**.
+v13 se mantiene a propósito como segunda familia: su rating frente al de arshs3
+mide si el bucle cerrado intra-público transfiere al ladder.
+
+**Experimentos de capas sobre arshs3 (2026-09-24):**
+- **VQ** (compactación de cola, tetsutani): contra el pool 0/120 celdas cambian
+  (+$20/partida, mínimo −$6) → inerte en W/L; en ESPEJO gana 17-3, 40-0 (20
+  semillas nuevas) y 95% (tercer bloque). `hsov2` (haideptry, 24-sep) ya es copia
+  de arshs3: las copias circulan. **REAL_WORLD_CANDIDATE: arshs3vq** (sha 9b463dfb,
+  `results/exp_publicos/arshs3_vq.py`, construido con `apilar_capa_vq.py` @e43ce1d).
+- **ADV** (adelanto de ventas, Ahmed EXP293): descubrimiento +10 [−10; +30],
+  confirmación −2,1 [−20; +16] → **REJECTED**. Intercambia partidas entre linajes.
+- Derrotas de arshs3: mediana $521 (p25 $257, p75 $1.147); sólo 7/95 < $100.
+  Micro-capas de final de partida no las voltean.
+
+**Plan de envíos (día UTC 2026-09-25; hoy queda 1 envío sin usar a propósito):**
+v13 y arshs3 juntan ~18 h de ladder = prueba de transferencia bucle cerrado →
+ladder (predicción: arshs3 ≫ v13; 20-0 local). Luego: (1) subir arshs3vq, (2)
+subir la segunda según esa lectura (v13 si transfiere mal; si no, tds o hl59,
+el otro linaje top). El envío nuevo siempre desplaza al activo MÁS ANTIGUO.
+
+Ficheros auditados estáticamente (sólo stdlib; `exec` de cadenas constantes sin
+imports peligrosos; `open` sólo tras una variable de entorno de desarrollo o
+`path=None`). Código en `results/publicos/` (gitignored; hashes en el meta).
+
+**Decisión pendiente del usuario:** subir agentes públicos (código de terceros,
+Apache-2.0). Propuesta: arshs3 (campeón en bucle cerrado) + v13 (rama distinta,
+autor con el mejor registro de ladder documentado). Las cintas propias quedan
+superadas por ~+1.500 Elo esperados.
+
+**Limitaciones:** el torneo es intra-familia (forks emparentados); no mide contra
+los top-10 adaptativos (mtmr_s1, feel the agi, DeeperNet), que según Thomas
+abandonan la cinta en d12-18 y le ganaron 36-0 a v9/4. Ranking en ladder entre
+públicos: incierto (±100 de ruido por submission según Thomas).
+
+## BEST_CURRENT_CHAMPION (hasta el 2026-09-23; historia)
+
+**CHAMPION_CANDIDATE: `107570947 + guardias`** — 56449108, commit 6527d3a,
+**1.180 @24 ep, 15-9 (62%)**, 24/24 con 4 manos y 3 cuadrantes, derrotas ajustadas.
+Paquete: `submission/main_107570947_guard.py` (= `submission/main.py`).
+Segunda: `tree_v1+guardias` 56447472, 1.136 @40 (23-17). Ambas activas.
+Champion formal anterior: `maj_107674293` (56245770, 857, 126 ep) — superada.
+
+**Escalera de ratings a episodios comparables:** cinta 857 (126) · tree_v1 1082 (40) ·
+tree_v1+g 1136 (40) · **107570947+g 1180 (24)**.
+
+**Panel FUERTE (80 rivales de Majkel/DSM), la métrica que predice el ladder:**
+guard:107570947 54,8% · 107570947 36,3% · guard:tree_v3 29,5% · tree 20,2% ·
+cinta campeona 17,4% · HOZ 9,5%. **Las guardias valen +15-18 vs fuertes.**
+
+## RESEARCH_FRONTIER (estados)
+
+| id | qué | estado | evidencia |
+|---|---|---|---|
+| `maj+guard6` | cinta campeona + guardia de caja d0 | **VALIDADO en ladder** — 56444505: 32/32 con 4 manos, 17-15 (53%) vs 40% | rating 714 @32 es dinámica de arranque, no rendimiento |
+| `tree_v1` | árbol 4 cintas Majkel, ramas por tienda d3/d6 | **CHAMPION_CANDIDATE** — 56444202: 31-9 (78%), 1082 @40 | local +6..+9 global pero **+10 vs fuertes**; ladder confirma |
+| `tree_v1+guardias` | lo anterior + guard_cash + guard_commitments | **REAL_WORLD_CANDIDATE** — sub **56447472** (2026-09-22 03:10) | combinación de validados (#6); 8/9 derrotas del tree eran manos d1 |
+| `107570947` (cinta sola) | mejor cinta del successive halving | **PROMISING** | compare2: +13,1 global; **+21,5 vs fuertes [5,7; 37,3]**, −0,6 vs débiles. Panel fuerte en curso |
+| `tree_v2` | árbol 30 victorias Majkel, NN sobre tiendas | **PROMISING→REJECTED como está**: +4,8 [−5,0; +14,7], < v1 < cinta | defecto: cambia entre cintas con prefijos distintos (12 prefijos) → estado inconsistente al ramificar. Arreglable: ramificar sólo entre cintas con prefijo idéntico |
+| `mejor cinta sola` | successive halving sobre 30 victorias como cintas fijas | **EN CURSO** — piloto `tapes` 4 seeds (4.096 ep) | compare dice cinta sola > árboles localmente |
+| `tree_v3` | árbol con cintas de DSM/UMG/Vadim (top-3, 2850-2880) | **PENDIENTE** — replays bajando | — |
+| `tree_liquid` | árbol + ventas reactivas | PROMISING (empató con tree en piloto, 0 cambios de W/L/T) | no confirmar solo |
+| `warmstart10` | cinta hasta d10 + HOZ | PROMISING débil (+6,25 piloto, < cinta pura) | baja prioridad |
+| matching por contexto (rival/hierbas) | elegir cinta por más que la tienda | idea, no implementada | LOW confidence |
+
+## REJECTED (resumen; detalle en RESEARCH_BELIEFS.md y BITACORA.md)
+
+Todo el espacio de perillas del chasis (13 barridos), gansos, ventas retenidas,
+fertilizar un corte, superficie, rebaño, plantilla, copiar por piezas, cadencia,
+compete_aware, compra parcial, harvest_76, apertura dentro del planner.
+
+## REGLA REFORZADA (violada dos veces hoy)
+
+**`evaluar_lider.py` hashea sus fuentes (evaluar_lider.py, chassis, arquetipos,
+tape.py, arbol_lider*.py, guardia_cinta.py, clasif json) al inicio y al final.
+NO editar NINGUNO mientras una fase corre.** Preparar ediciones en el scratchpad
+y aplicarlas al terminar. Si se edita por error: `git checkout <fichero>` antes de
+que termine (funcionó el 2026-09-22 05:05).
+
+## PROCESOS EN CURSO (al escribir esto)
+
+- `evaluar_lider.py --phase majkel2 --seeds 4` → `results/majkel2.txt`: 12 cintas de
+  Majkel ACTUAL (vs top-3) + guardias, vs 71 fuertes sin Majkel. Referencia
+  guard:107570947.
+- **Pendiente de lanzar al terminar:** fase `dsm` (27 victorias de DSM, nº1 actual)
+  — la edición está en `scratchpad/evaluar_lider_con_dsm.py`; copiar sobre
+  `evaluar_lider.py` cuando `majkel2` termine.
+- Terminados: compare, compare2, tapes, fuerte; descargas (DSM 40, UMG 30, VADIM 30,
+  MAJTAPE_LADDER 60, TREE1_LADDER 40, GUARD_LADDER 32).
+
+## HALLAZGOS DE HOY (resumen; detalle en RESEARCH_BELIEFS.md)
+
+1. **Manos d1 → resultado** (60 reales): 0-2 manos 0%, 3: 23%, 4: 60%. Guardia
+   `bots/guardia_cinta.py` reserve=6. Sólo d1 (d2 residual 3/60; d3+ ninguno).
+2. **Divergencia harness/ladder**: 71,5% local vs 40% real. Cintas pasivas no
+   mueven el mercado d0.
+3. **Tienda d3 explica derrotas** de la cinta fija: 60% BAKERY … 14% PIZZA.
+4. **DSM vs Majkel 3-6**; cima decidida por 1-5%. Cintas de DSM no son mejor materia.
+5. **compare**: cinta +12,1 > tree +9,0 > tree_v2 +4,8 (vs HOZ). Más cintas mezcladas, peor.
+
+## SESION 2026-09-23 — en curso
+
+**Ladder @13:11:** 56449108 (107570947+g) **1.163,7** @78 ep; 56447472 (tree_v1+g)
+1.131,6 @81 ep. Rank equipo **3.510 / 9.919**. Nuevo nº1: Boey (3.112).
+
+**Fallo de método encontrado:** el evaluador aplicaba las guardias con
+`reserve=6` fijo; 72 de 79 cintas necesitan \$7+ (5 HIRE al alba, usan 4).
+Todas las comparaciones previas entre cintas con guardias se hicieron con la
+guardia a medias. Nuevo prefijo `gcal:` con `reserve_auto` (da 8 para
+107570947 = exactamente la submission). `guard:` se conserva para reproducir.
+
+**En curso:**
+- Piloto `cal1` (`results/cal1.txt`): 111 cintas (Majkel-2652 ×30, Majkel-3075
+  ×12, DSM ×27, UMG ×21, Vadim ×21) con `gcal:`, vs 32 fuertes balanceados
+  (8 por fuente) × 2 seeds × 2 asientos = 14.592 ep.
+- Descargas (`results/bajar_ronda2.txt`): 25 replays de Boey (56309208),
+  M&M&P&Q (56378284), DECEM (56446088), Majkel-nuevo (56407295), Vadim-nuevo
+  (56427964), seek inspiration (56407833).
+
+**Hecho:** `cal1` (111 cintas) → `confirm_cal1` vs 148 rivales NUEVOS (rivales
+del top-13 actual). Ganadora confirmada: **`110304538` (Majkel-3075) + gcal:
++18,9 [−0,5; +38,4] vs 107570947+gcal, positiva vs las 6 fuentes → subida como
+56504082** (17:30). La #1 del piloto (umg_111191811) se desplomó a −11,7.
+
+**Activas en ladder:** 56449108 (107570947+g, 1.164) y 56504082 (110304538+gcal).
+⚠️ La próxima submission desplaza a **56449108**: sólo subir si 56504082 ≥ 56449108
+o si la candidata nueva supera a ambas.
+
+**En curso:** piloto `cal2` (`results/cal2.txt`, centinela `results/cal2.done`):
+93 cintas de Boey/MMPQ/DECEM/Majkel-nuevo/Vadim-nuevo/seek + anclas, vs 32
+rivales de fuentes viejas no usados en cal1, 2 seeds. Filtro grueso → etapa 2
+(~20 brazos, más celdas) → confirmación vs `results/rivales_reserva_confirm2.json`
+(76 rivales nunca usados), siempre con `gcal:110304538` y `gcal:107570947` en el
+mismo bloque.
+
+**Herramientas nuevas:** `comparar_pareado.py` (delta pareado, IC semilla y dos
+vías, desglose por fuente), `extraer_fuente.py` (victorias + rivales de una
+carpeta), fase `spec` del evaluador (brazos/rivales/semillas desde JSON).
+**Lección de infraestructura:** esperar por fichero centinela, nunca por
+`pgrep -f` con un patrón que aparece en el propio comando del bucle.
+
+## CIERRE DE SESION 2026-09-22 — decision: CONSOLIDAR (revisada el 23)
+
+Todas las vias de mejora sobre la cinta estan medidas y cerradas:
+- Mejor cinta fija: 107570947, de ~70 candidatas de Majkel-2652/Majkel-3075/DSM.
+- Guardias (caja d0 + compromisos): +15-18 vs fuertes; 100% mecanicas en real.
+- Arboles: peores que la cinta sola vs fuertes (tree_v3+g 29.5% vs 54.8%).
+- Hibrido cinta+chasis: colapsa al nivel del chasis (10-17% vs 43%).
+- Cierre limpio (0.6%), acciones fallidas ~1%, ocio 4.7% (+2-4% maximo).
+
+**Champion: `107570947 + guardias` (56449108).** Dejar converger. Segundo billete:
+`tree_v1 + guardias` (56447472). El score de equipo es el mejor submission.
+
+## NEXT_EXPERIMENTS (si se retoma; orden)
+
+1. Leer 56449108 y 56447472 a ~100 ep (rating convergido, W/L por rival).
+2. Unica capa barata no probada: dar trabajo a los peones sin orden (4.7% de
+   mano-turnos), p.ej. barrido de riego a partir de h18 y DIG de maleza. +2-4%
+   estimado, riesgo de interferir con la cinta. Medir vs fuertes antes de subir.
+3. Si el ladder converge por debajo de 1150: subir 107570947+g de nuevo como
+   billete adicional NO es investigacion (misma esperanza, mas varianza del max).
+   Solo si el usuario lo pide.
+
+### (historial de la cola)
+
+0. **Leer piloto `dsm`** (`results/dsm.txt`, 27 victorias de DSM nº1 + guardias vs
+   62 fuertes, 4 seeds). Top-3 → `--phase` de confirmación pareada con 8 seeds
+   contra guard:107570947 (añadir fase análoga a `majkel2_confirm`). Si alguna
+   supera con IC dos vías > 0 → subir con guardias (reserve calibrada a sus
+   HIRE del alba: ver `empaquetar_cinta_guard.py --reserve`).
+1. Si DSM no supera: **el enfoque de cinta fija ha llegado a su techo** (~el plan
+   de Majkel-2652). Opciones: (a) consolidar 107570947+g y dejarlo converger;
+   (b) subir 2-3 cintas top en paralelo (5/día) y dejar que el ladder elija;
+   (c) capa reactiva — pero la evidencia dice que el gap con los fuertes es
+   produccion tardía (+5-7% d21-25), no ventas.
+2. `tree_v1+guardias` tiene 3/40 con 3 manos: sus cintas necesitan reserve=8.
+   Sólo relevante si se vuelve a subir un árbol.
+3. Leído majkel2 (hecho): ninguna cinta de Majkel-3075 > 107570947 (+1,85
+   [−26; +30]). El valor de Majkel actual está en la adaptación, no la secuencia.
+
+### (anteriores)
+
+1. Leer piloto `tapes` → top-3 cintas a `--phase confirm` (16 seeds). Si alguna
+   supera a 107674293 con IC dos vías > 0 → nueva cinta base (+guardia) al ladder.
+2. Leer 56444505 (guardia) y 56444202 (tree v1) a ~60 ep → HARNESS_VS_LEADERBOARD.
+   Predicción guardia: claramente > 852,6 si las manos d1 eran la causa dominante.
+3. Si guardia transfiere Y tree v1 ≥ cinta en ladder → `tree_v1 + guard` (combinación
+   de validados, criterio #6).
+4. Arreglar `tree_v2`: ramificar sólo entre cintas con prefijo IDÉNTICO hasta el
+   paso de ramificación (agrupar por hash de prefijo). Medir vs tree v1.
+5. `tree_liquid` (ventas reactivas) al ladder si hay slot: 0 efecto local por
+   rivales pasivos — mismo patrón de divergencia que la guardia.
+6. Ampliar guardia al d1 (until_step=48) si 56444505 muestra déficit residual en d2.
+
+## HARNESS_VS_LEADERBOARD (dataset acumulado)
+
+| exp | local delta (vs HOZ) | ladder | transferencia |
+|---|---|---|---|
+| campeona_grano (seed_stock_aware) | +6,4 | 772 vs hoz 677 | ruido de ladder ±40; no concluyente |
+| campeona_hoz (+harvest_76) | +2,5 (falso: −0,08) | 677–831 según fecha | ruido |
+| **maj_107674293** | **+14,36** | **852,6** | **SÍ: salto grande transfiere** |
+| tree_v1 | +17,97 (piloto) | pendiente | — |
+
+Lección provisional: el ladder sólo resuelve saltos ≥ ~100 Elo; el harness sólo
+efectos ≥ ~7 puntos. Buscar cambios GRANDES, no micro.
+
+## HIGH_UPSIDE_HYPOTHESES
+
+- **H1 (VERY HIGH / MEDIUM):** una cinta fija de un agente de 3075 rinde 852 → el
+  valor está en la adaptación. Cuantas más cintas y mejor matching de contexto,
+  más cerca del agente original. `tree_v2`/`tree_v3` prueban esto.
+- **H2 (HIGH / LOW):** las cintas de los top-3 actuales (≈2870) son mejores
+  materia prima que las de Majkel (sub a 2652).
+- **H3 (HIGH / LOW):** el rival explota a la cinta de forma identificable en los
+  replays reales (p. ej. inunda el producto que la cinta vende tarde). Si es así,
+  una capa reactiva mínima (ventas) sobre la cinta lo corrige.
+
+
+
+---
+
+## SOURCE: docs/research/RESEARCH_BELIEFS.md
+
+# Research beliefs — Kaggriculture
+
+Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nueva sube o baja la creencia.
+
+## HIGH CONFIDENCE
+
+- **[2026-09-25 UTC] PREDICT aporta fuerza en el panel de públicos:** ablarlo
+  sobre VQ pierde **68,75 puntos** (IC dos vías [−89,57; −47,93]); exigir
+  confianza adicional pierde **51,56** ([−78,92; −24,20]). 608 episodios, ocho
+  rivales y ocho semillas, noop exacto 160 veces. No podar una capa rentable
+  sólo porque una métrica de precisión parcial parezca baja.
+- **[2026-09-25 UTC] Corrección de nuestra sonda:** «12/67 aciertos» omitía ventas
+  simultáneas y usaba flujo neto inferido. Reproducción exacta de 720 estados de
+  cada uno de cuatro replays + ledger: **50/67** con venta aceptada rival en
+  t..t+4, **42/67 en t**. Esto no prueba causalidad de cada adelanto, pero invalida
+  la motivación observacional inicial de baja coincidencia. En una celda controlada,
+  mismas cantidades totales vendidas y peor timing convierten +89 monedas en −78.
+
+- **[2026-09-25 UTC] El orden local arshs3 > v13 transfiere en esta lectura real:**
+  2292,5 @148 episodios frente a 1857,9 @136. No convierte 20-0 local en un
+  delta Elo calibrado ni garantiza 2900. VQ ya enviada (56535264); el original
+  continúa activo. Fuente: snapshots API en `docs/evidencia/research_20260925/`.
+- **[2026-09-25 UTC] La cola histórica no es el estado actual.** «Todas las vías
+  cerradas», «subir públicos pendiente» y los viejos procesos en curso quedaron
+  superados por nuevas autorizaciones y datos. No repetir experimentos por notas
+  antiguas, ni convertir un descarte de implementación en imposibilidad general.
+
+- **[2026-09-24] Entre agentes públicos top las partidas se deciden por cientos de dólares, no por decenas**: derrotas de arshs3 mediana $521; una capa que suma +$20/partida (VQ) no voltea ninguna contra el pool, pero decide los espejos (prioridad de slot en lockstep): 17-3, 40-0, 95%.
+- **[2026-09-24] Una capa puede ser un intercambio entre linajes rivales, no una mejora**: ADV sobre arshs3 +25..+30 contra el linaje tds y −20..−30 contra herd-safe/order-book; neto ≈ 0 en confirmación. Evaluar siempre contra un pool con varios linajes, nunca contra el rival que motivó la capa.
+
+- **[2026-09-24] Nuestro nivel absoluto era el problema, no el relativo.** Torneo en bucle cerrado (720 partidas, motor oficial): nuestras dos activas (seek/decem + guardias, "confirmadas" a +22..+28 vs nuestras referencias) pierden 0-20 contra CADA uno de 7 agentes públicos Apache-2.0, por −$12..16k de media. El ladder coincide: públicos 2500-2950, nosotros ~1160. **Lección de método: medirse contra la mejor referencia EXTERNA disponible pronto y de forma continua; un harness que sólo compara variantes propias puede validar mejoras reales dentro de una familia débil.** Última comparación con notebooks públicos: 2026-09-02.
+- **[2026-09-24] Dentro del ecosistema público, la familia Herd-Safe (Dmitrii Gluzdov / arsgorynich) domina en bucle cerrado a la familia cinta+reflejos de Thomas Tschinkel.** arshs3 98,8% (20-0 vs v13 y v94); v94, con 2944,7 documentado en ladder, 25%. Bucle cerrado intra-familia ≠ ladder: queda por ver qué transfiere.
+
+- **[2026-09-23] Calibrar la guardia a la cinta vale +14 puntos vs fuertes** (107570947: reserve 6 -> 39.1%, reserve 8 -> 53.1% en cal1). Todas las comparaciones previas entre cintas con guardias se hicieron con la guardia a medias.
+- **[2026-09-23] Un piloto de ~100 candidatas con 64 celdas por brazo NO ordena.** El 1o de cal1 (umg_111191811, 87.5%, parejo contra 4 fuentes) cae a 31.0% (-11.7) en una poblacion fresca; el 4o (110304538) queda 1o. La unica defensa es confirmar en rivales Y semillas que la seleccion no toco.
+
+- **[2026-09-22] Nuestro chasis adaptativo es peor que la cinta fija de Majkel EN TODAS LAS FASES.** Hibrido (cinta 107570947 hasta d10/d15/d20 + CAMPEONA_HOZ, con guardias) vs 71 fuertes: cinta pura 43.0%, traspaso d20 17.4%, d15 10.6%, d10 10.5%, HOZ solo 9.9%. La ventaja de la cinta se acumula toda la partida. "El valor esta en la adaptacion" es cierto para la adaptacion de MAJKEL, no para la nuestra. **Ultima hipotesis de mejora sobre la cinta, cerrada. Consolidar.**
+
+- **[2026-09-22, 24 partidas REALES de 56449108] La cinta + guardias es una maquina de produccion FIJA (~100-107k) y gana sii el rival produce menos.** Banco identico en V y D en cada dia (d12 9.7k, d16 33k, d29 100-107k). En las derrotas hacemos MAS dinero (107k) que en las victorias (100k); el rival hace 113k vs 73k. Los que nos ganan van al doble en d12 (19k vs 9.7k), los alcanzamos en d18 y nos pasan en d21-25 con ~5-7% mas de produccion tardia. **El techo de una cinta es el plan que copia.** Ya no hay fragilidad mecanica: 24/24 con 4 manos y 3 cuadrantes, derrotas ajustadas.
+
+- **[2026-09-22, 40 partidas REALES] El arbol por tiendas transfiere y CORRIGE el desajuste de tienda.** tree_v1 (56444202): 31-9 (78%), 1082 @40 ep. Gana justo donde la cinta fija perdia: PIZZA 6-1 (cinta 1-6), BRUNCH 5-1 (1-3), SMOOTHIE 4-1 (4-7). Sus 9 derrotas: 8 son fallos de manos del d1 (1-3 manos: 1V-8D; con 4 manos: 30-1).
+- **[2026-09-22, 32 partidas REALES] La guardia de caja funciona mecanicamente (32/32 con 4 manos) y mejora el WR: 53% vs 40% del campeon reciente, margen de dinero en positivo.** Coherente con la aritmetica (+16 esperado, +13 observado). La correlacion manos->resultado era causal al menos en parte.
+- **[2026-09-22] NO leer el rating de una submission joven; leer su W/L y la fuerza de sus rivales.** La guardia estaba en 714 @32 ep con 53% de WR porque una submission nueva juega contra rivales flojos hasta subir; tree_v1 en 1082 @40 con 78%. Casi descarte la guardia por el rating. El rating converge con ~100+ episodios; el W/L es legible desde ~30.
+
+- **[2026-09-21, 60 partidas REALES] Las manos del d1 predicen el resultado de una cinta.** 0-2 manos: 0% WR (12 partidas); 3: 23% (13); 4: 60% (35). Causa: cuatro `BUY_SEED WHEAT 1` en los pasos 18-21 dejan la caja en \$0..\$9 al alba y fib(n) necesita \$7 para 4 manos. Tres catastrofes (\$8k-23k) con trayectoria identica: \$0, 8 HIRE fallidos, 1 mano. **Arreglo: `bots/guardia_cinta.py` reserve=6** (sub 56444505).
+- **[2026-09-21] DIVERGENCIA HARNESS/LADDER identificada: 71.5% local vs 40% real para la misma cinta.** Mecanismo: las cintas pasivas del panel no mueven el mercado del d0; los rivales reales si, y eso decide si hay \$7 en el paso 25. Localmente solo el 15% de partidas cae a <4 manos; en el ladder el 42%. **El panel subestima sistematicamente la fragilidad de las cintas al contexto de mercado temprano.**
+- **[2026-09-21] La tienda del d3 explica las derrotas de una cinta fija.** maj_107674293 (original con YARN_STORE): 56-60% WR con YARN/BAKERY, 14% con PIZZA, 25% BRUNCH, 33% ICE_CREAM. Es desajuste de contexto puro; el arbol por tiendas ataca exactamente esto.
+- **[2026-09-21] En la cima (DSM/Majkel/UMG, ~2850-3075) las partidas se deciden por 1-5%.** DSM vs Majkel 3-6 con margenes de \$300-5.000 sobre ~\$100k. Una cinta que pierde 10-30% por contexto cae a ~850 aunque venga de un agente de 3075.
+
+- **Las cintas del lider transfieren al ladder.** Panel +14.36 -> ladder 852.6 vs 677.5 de HOZ (56245770, 126 ep). Primera vez que panel y ladder coinciden en un salto grande.
+- **Nuestro chasis esta en un optimo local afilado y la busqueda por perillas esta agotada.** 13 barridos (2026-09-03..06), todos negativos salvo `seed_stock_aware` (+6.4, replicado -6.25 en ablacion). Manos 12, animales 8, cuadrantes 3, ventas "tirar todo": cada dimension empeora en AMBOS sentidos.
+- **El Elo es W/L/T; el margen de monedas no compra rating.** `endgame_reap` recupero \$509/partida y midio -0.2. Solo importa CUANDO entra el dinero (compone) y si voltea partidas.
+- **Con 16 semillas el MDE es ~7 puntos; con 8, ~10.** Efectos de +2..+5 son invisibles para el harness aunque sean reales. `harvest_76` (+2.5) y compra parcial (+4.84) se adoptaron/casi con estadistico inflado y dieron 0 al replicar.
+- **El panel es un diseno CRUZADO (40 cintas x N semillas); el estimador correcto es dos vias.** Tratar celdas como independientes infla t (2.96 -> 1.76 en harvest_76).
+- **El rival nos cuesta ~38% de produccion (140.5k aislados vs 87.5k compitiendo).** Es competencia de PRECIO pura (mismas unidades, precios hundidos), concentrada en lana (-65%), melon (-35%), fresa (-19%). Pero los productos fragiles siguen valiendo 4x mas: mover la cesta hacia lo robusto pierde monotonicamente (`compete_aware` -2.5/-8.4/-12.8).
+- **La escalera tiene +-40 de ruido a ~60 episodios.** hoz y grano son identicas en el 92% de episodios y la escalera las separa 30-43 puntos. Diferencias <50 entre submissions propias no informan.
+- **No hay asimetria de asiento** (-0.2 sobre 19.208 episodios). Los paneles estan balanceados.
+- **El 68% de nuestro riego no compra rendimiento, pero cortarlo es catastrofico** (-21.8): el agua es la carga util que amortiza el caminar; sin ella el circuito se dispersa.
+
+## MEDIUM CONFIDENCE
+
+- **[2026-09-25, DSM actual] La siguiente frontera incluye inversión productiva:**
+  cuatro replays recientes, 720 estados exactos cada uno, cuarta tierra día10
+  y 116–231 tomates vendidos. No demuestra que tomate cause su rating.
+  Nuestra base puede ocupar SE con seis ovejas al día12; el módulo tardío de
+  tomates no actúa allí. Adelantarlo cambia la asignación de tierra, no sólo
+  fechas. Diagnóstico temprano ejecuta diez plantas/60 unidades sin errores,
+  pero pierde en ambos asientos del mundo de desarrollo. Loop5 con semillas
+  nuevas debe medir el coste de oportunidad y W/L/T, no el ingreso bruto.
+
+- **[2026-09-25, loop1] Diversificar patrones de rival es REAL_WORLD_CANDIDATE:** top3
+  frente a top1 da +9,375 pp (IC dos vías [−7,86; +26,61]) en cuatro semillas,
+  ocho rivales. La señal aparece en dos semillas y tres rivales. Reproducción
+  causal de una celda: −1.062 → +292, 15→24 activaciones, shops iguales.
+  Confirmación disjunta: +10,795 pp, IC95 semilla [1,23;20,36], dos vías
+  [−0,12;21,71], once rivales/16 semillas. 20 celdas mejores y una peor;
+  arshs3 −6,25 pp. Cumple el gate registrado de envío, sin garantía de ladder.
+  Daño reproducido: +216→−425, tiendas iguales, sin errores. Fast2 +2,841 pp
+  no supera gate; no redondearlo ni cambiar al subpanel favorable.
+- **[2026-09-25] Recuperar siembra exige reservar el riego del mismo día:**
+  persistir el intento entre peones no basta si sólo hay una visita diaria.
+  Insertar PLANT y desplazar un sufijo hasta un turno final redundante sí
+  recuperó una fresa perdida por maleza. El RNG posterior cambió: W/L de esa
+  sonda contra replay no estima mejora frente a la política rival.
+
+- **[2026-09-25 UTC] Fecha nueva de notebook no implica mejora:** tds25/hl25
+  dieron −7,81/−9,38 pp vs VQ, con IC dos vías que cruzan cero. Ninguna pasó
+  el umbral exploratorio; no se confirmaron ni enviaron. 608 episodios, ocho
+  rivales, ocho semillas nuevas, controles exactos. El 10/16 directo de tds25
+  no rescata un criterio global incumplido. No se refutan universalmente sus
+  mecanismos por este resultado. Ver `RESULTADOS_2026-09-25.md`.
+
+- **[2026-09-22] Ninguna de las 27 victorias de DSM (n1, 3174) supera a 107570947 como cinta fija** — ni en piloto (75.5% vs 67.4%), con 27 candidatas contra 1 referencia. Con 30 Majkel-2652 + 12 Majkel-3075 + 27 DSM: **107570947 es la mejor cinta fija de ~70 candidatas de los 3 mejores jugadores. El enfoque de cinta fija ha tocado techo (~1200 Elo).**
+- **[2026-09-22] Lo que Majkel cambio entre 2652 y 3075 (diff de cintas):** 3er cuadrante en d6 en vez de d9; menos animales (14 vs 20 a d12) con menos ovejas (3 vs 9) y mas gansos (4 vs 2); mas zanahoria (72 vs 41) y tomate (10 vs 0); vende huevo (162 vs 0) y casi nada de lana. **Va exactamente hacia los productos que SUBEN con rival (hinge/log) y lejos de la lana (-65%)** — lo que nuestro `compete_aware` intento y el chasis no supo ejecutar. Como cinta fija no supera a 2652: el beneficio esta en ejecutar ese plan REACCIONANDO.
+- **[2026-09-22] La cinta+guardias no deja nada en la mesa que una capa barata recupere:** cierre limpio (\$82 sin vender, \$466 en pie = 0.6%); acciones fallidas por desajuste de campo 0.1-1.0%; unico recurso libre: 4.7% de mano-turnos sin orden (5o peon), +2-4% como mucho y con riesgo de interferir.
+
+- **[2026-09-22] Las cintas de Majkel ACTUAL (3075) NO son mejores cintas fijas que las de Majkel-2652.** Confirmacion pareada (71 fuertes x 8 seeds): mejor +1.85 [-26; +30] vs 107570947. Y sin embargo Majkel actual como AGENTE gana 85% a nuestra cinta por \$30k. Inferencia: **el valor anadido entre versiones esta en la adaptacion al contexto, no en la secuencia.** La siguiente palanca es reactiva (precios/ventas), no mas cintas del mismo autor.
+- **[2026-09-22] Un piloto de 4 semillas sobre N candidatos siempre infla al mejor.** majkel2: +10.7 -> +1.85 al confirmar; tapes: +18.0 -> -3.1. El successive halving con confirmacion pareada en el mismo bloque es obligatorio.
+
+- **[2026-09-22] Segunda clase de filo de navaja: compromisos de capital a paso fijo (BUY_LAND/BUY_ANIMAL) sin recuperacion.** La cinta 107606658 falla el 2o cuadrante por \$193 y toda la expansion muere (\$26-49k). `guard_commitments` (reintento hasta 48 pasos) la lleva a \$61-81k con 3 cuadrantes. En el campeon rara vez actua (57/60 compras reales entraron; cuando actua, +23k neto en 4 partidas locales). Importa mas para las cintas de caja apretada del arbol.
+
+- **Ramificar la cinta por tiendas (arbol) generaliza mejor que una cinta fija.** Piloto: tree = cinta (64.06%). Confirmacion con 16 seeds en curso (compare). Ladder: 56444202 pendiente.
+- **La unica rama estrategica VISIBLE de la politica del lider es la tienda (step 72, 144, ...).** El `town` esta vacio antes; las divergencias en pasos 20-36 son reacciones a la caja (BUY_SEED MELON 2 o no), no ramas.
+- **Una cinta fija de un agente de 3075 rinde ~850 en el ladder.** El valor del agente esta en la adaptacion al contexto (rival, campo, mercado), no en la secuencia. Reducir el desajuste de contexto (mas cintas, mejor matching) deberia acercar el arbol al agente original.
+- **La economia del lider es un PAQUETE coordinado** (2 vacas + 3 ovejas turno 1-2, 12 melones, tierra d6, compra forraje, 13-22 animales) que nuestro chasis no reproduce por piezas: cada pieza probada por separado pierde.
+- **La brecha con el top se abre en d12-d16** (vamos por delante en d12; ratio 0.51 en d16, 0.67 despues). Causa inmediata: plantamos melon 2.6 dias y fresa 4.2 dias tarde. Tres arreglos mecanicos (scorer, forraje, lotes) fallaron; el arbol del lider lo resuelve de raiz.
+
+## LOW CONFIDENCE
+
+- **[2026-09-25 UTC, hipótesis inicial corregida] PREDICT sin filtro inmediato
+  era una posible fuga.** Prueba ejecutada y rechazada: añadir el filtro causa
+  regresión clara. La sonda original omitía competencia simultánea; ver corrección
+  arriba y `forecast_signals_validated.json`. No repetir gate/off con los mismos
+  parámetros ni presentar «12/67» como precisión válida.
+
+- **[2026-09-23] La robustez de una cinta fuera de contexto es sobre todo propiedad de la FUENTE.** Media de las cintas de cada fuente vs 32 fuertes (cal2): DECEM 64.3% (11 de 13 > 55%), seek 46.1%, Boey 39.7%, Majkel-nuevo 31.6%, Vadim-nuevo 15.6%, M&M&P&Q 6.8% (n2 del ladder). El valor de un agente y el de su cinta son cosas distintas.
+- **[2026-09-23] REFUTADA: "las ordenes saturantes (SELL X 50) hacen robusta una cinta".** DECEM 3% saturantes = M&M&P&Q 3%; Vadim-nuevo es la mas saturante (21%) y de las peores. Correlacion debil observada en su lugar: las fuentes robustas emiten mas PASS (DECEM 7.0%, seek 8.0% vs 1-3% el resto) y menos animales (17-19). M&M&P&Q emite 932 ordenes BUY_ANIMAL/partida: insistencia reactiva que la cinta repite a ciegas.
+
+- Mas cintas (30 victorias, tree_v2) > 4 cintas (tree_v1). Se mide ahora.
+- ~~Las cintas de DSM/UMG/Vadim pueden ser mejores materia prima que las de Majkel.~~ **Bajada:** DSM pierde 3-6 contra Majkel en directo; misma liga. Y mezclar politicas rompe la coherencia de prefijos del arbol. Se descarta salvo hueco de cobertura.
+- Matching por mas contexto que la tienda (acciones tempranas del rival, malas hierbas) podria reducir mas el desajuste.
+
+## DISPROVEN
+
+- Gansos/huevos (-49.4). Aguantar producto para vender mejor (gradiente monotona hasta -10). Fertilizar cultivos de un corte (-29.4). Mas superficie / cuarto cuadrante (-8/-14). Rebano 6..16 (todo negativo, optimo 8). Plantilla 9..15 (optimo 12). Copiar composicion del lider por piezas (7 de 7). `hire_by_work` (-17.8). Quitar forraje temprano (-45.6). Cadencia de riego con o sin poda de ruta (-21.8). Reordenar prioridades (mejor +2.5 = ruido). Compra parcial (+0.23 al replicar). harvest_76 (-0.08). compete_aware (-12.8). Asimetria de asiento (0). Optimizar la apertura DENTRO de nuestro planner (techo ~0.6% del dinero final).
+- "Nuestro mejor intento es un replay" NO es una anomalia: el meta de esta escalera (C90-C95) ya eran cintas.
+
+
+
+---
+
+## SOURCE: docs/research/HARNESS_VS_LEADERBOARD.md
+
+# Harness vs leaderboard — qué métrica local predice el ladder
+
+## Lectura nueva — 2026-09-25 UTC
+
+Arshs3 **2292,5 @148 episodios**, v13 **1857,9 @136**, tras aproximadamente 20 h
+activos. Ambos superan las cintas propias (seek 1324,8, decem 1285,9); el orden
+arshs3 > v13 coincide con el torneo cerrado (20-0 directo). Evidencia API:
+`docs/evidencia/research_20260925/*_episodes_snapshot.json` y
+`submissions_after_vq.json`. Ratings observados, no una estimación causal del
+delta ni un ranking actual del equipo; no se consultó ese ranking.
+
+VQ (56535264) separará otra pregunta: 0 efecto contra pool histórico, pero
+ventaja repetida contra copias, ¿sirve en una población real poblada de forks?
+Se conservó arshs3 original como control activo. No comparar el rating de arranque
+de VQ con 148 episodios del original para rechazarla. Muestra descriptiva de 16
+partidas recientes de arshs3: 4V/11D/1E, no su tasa acumulada.
+
+La frase histórica «sólo ≥100 Elo informa» no debe usarse como umbral universal.
+La información depende de episodios, rival, edad y ruido observado. Asimismo,
+muchas cintas/forks emparentados no son muchas familias independientes.
+
+## Historial de calibración
+
+Actualizado: 2026-09-23 18:00. Dataset acumulado y conclusiones provisionales.
+
+## Dataset
+
+| submission | candidato | local: delta global vs HOZ | local: vs FUERTES | ladder | episodios |
+|---|---|---|---|---|---|
+| 55993562 | grano (seed_stock_aware) | +6,4 | — | 772 (vs hoz 677) | 71 |
+| 55994874 | hoz (+harvest_76, refutado) | +2,5 → −0,08 | — | 677–831 según fecha | 68 |
+| 56245770 | **maj_107674293** (cinta fija) | +14,4 / +10,0 | **43,0%** (peor de todos) | **857** | 126 |
+| 56444202 | tree_v1 | +9,0 / +6,1 | 53,1% (+10,2) | **967** @19 ep (TEMPRANO) | 19 |
+| 56444505 | maj+guard6 | ≈ cinta (harness no ve el fallo) | — | 714 @32 ep (53% W/L) | 32 |
+| 56447472 | tree_v1 + guard(6) | +6,1 global | fuerte: tree 20,2% | **1.132** @81 | 81 |
+| 56449108 | **107570947 + guard(8)** | — | fuerte (guard 6): 54,8% · **gcal: 53,1% (cal1)** · 42,7% (rivales r2) | **1.164** @78 | 78 |
+| 56504082 | **110304538 + gcal(8)** | — | cal1 62,5% · **rivales r2 61,6% (+18,9 vs 107570947)** | pendiente | 0 |
+
+## Conclusiones (provisionales, se actualizan con cada lectura)
+
+**1. El WR global del panel de 40 NO predice el ladder; el WR contra el subconjunto
+FUERTE sí (evidencia: compare2, 2026-09-22).** En el mismo bloque, la cinta
+campeona es la mejor vs 40 rivales de ~800 (72,1%) y la PEOR vs 8 rivales reales
+de Majkel (43,0%). tree_v1 es −6,7 vs débiles y +10,2 vs fuertes — y en el ladder
+va a 967 frente a 857. El ladder nos empareja con rivales de nuestro nivel: al
+subir, el subconjunto fuerte es la población relevante.
+
+**2. El harness de cintas pasivas subestima la fragilidad de una secuencia fija
+al contexto.** 71,5% local vs 40% real para la misma cinta (56245770). Mecanismo
+identificado: los rivales reales mueven el mercado del d0 lo justo para dejar la
+caja en \$0 al alba (42% de partidas reales con <4 manos; 15% local).
+
+**3. Los saltos grandes transfieren; los pequeños no se resuelven.** +14 de panel
+→ +175 de ladder (cinta vs hoz). +6,4 y +2,5 → indistinguibles del ruido de
+±40. Con ~60 episodios el ladder sólo resuelve ≥ ~100 Elo.
+
+**4. Positive surprise pendiente de investigar (punto 13/16):** tree_v1 rinde
+mejor en ladder de lo que el panel global predecía. Hipótesis: el ladder ya nos
+enfrenta a rivales más fuertes que el panel `lad_` (rating ~800 → ahora 900+).
+Comprobación: clasificar los replays de 56444202 por rating del rival y por
+tienda d3 cuando pase de 50 episodios.
+
+**5. (2026-09-23) La población de rivales importa más que el tamaño del bloque.**
+La misma cinta de referencia rinde 53,1% contra rivales de Majkel/DSM/UMG/Vadim
+(sep 11-20) y 42,7% contra los rivales del top-13 de esta semana. El campo se
+endurece; confirmar siempre contra la población más reciente disponible.
+
+**6. (2026-09-23) La selección sobre un piloto grande está dominada por ruido.**
+111 candidatas × 64 celdas: el 1º (87,5%) cae a 31,0% en población fresca; el 4º
+sube a 1º. Successive halving en ≥2 etapas + confirmación en rivales y semillas
+disjuntos, siempre.
+
+**7. (2026-09-24) El harness de cintas nunca midió el nivel ABSOLUTO.** Cada
+"confirmación" comparaba variantes propias contra rivales-cinta pasivos. Los
+agentes públicos (2500-2950 en ladder) nos ganan 20-0 en bucle cerrado. Desde
+ahora: toda candidata se mide también en `torneo.py` contra el pool público.
+
+## Regla operativa derivada
+
+- **Métrica primaria local: WR vs panel FUERTE** (80 rivales de Majkel/DSM,
+  `fuerte_*`). El panel `lad_` de 40 se conserva como control de no-regresión
+  contra rivales débiles.
+- Un candidato que gana vs fuertes y pierde poco vs débiles (perfil de
+  `107570947`: +21,5 / −0,6) es preferible a uno que gana vs débiles y pierde vs
+  fuertes (perfil de la cinta campeona).
+
+
+
+---
+
+## SOURCE: docs/research/SUBMISSION_HISTORY.json
+
+[
+  {
+    "submission_id": 56245770,
+    "timestamp": "2026-09-14T23:52:00-05:00",
+    "git_commit": "(sin commit: working tree del 14-sep, ver docs/evidencia/envio_maj_20260914)",
+    "experiment_id": "maj_107674293",
+    "config": "cinta fija de Majkel1337, episodio 107674293 (vs yaki-imo)",
+    "local_harness": {
+      "panel": "40 lad + 8 sepopp, 19 seeds, 2 asientos",
+      "wr": 71.49,
+      "base_wr": 57.13,
+      "delta": 14.36,
+      "ci95_seed": [
+        9.02,
+        19.71
+      ],
+      "ci95_2way": [
+        6.71,
+        22.02
+      ],
+      "opponent_breakdown": {
+        "lad40": "+15.00",
+        "sepopp8": "+11.18"
+      }
+    },
+    "reason": "Mejor candidato del piloto de 14 brazos; +14.36 confirmado. Usuario: 'Subela a kaggle pa que coja calle'",
+    "leaderboard": {
+      "score": 852.6,
+      "episodes": 126,
+      "rank": "~4589/9776 (2026-09-21)"
+    },
+    "delta_vs_champion_ladder": "+175 sobre campeona_hoz (677.5), pero hoz esta en caida y ruido de +-40",
+    "observed": "Converge en ~852. Es la mejor submission que hemos tenido. Nota: Majkel1337 esta en 3075 y su CINTA fija da 852: el valor del agente esta en la adaptacion, no en la secuencia.",
+    "conclusion": "CHAMPION (ladder). Panel +14 -> ladder +175 vs hoz: la direccion transfiere.",
+    "next_action": "Arbol de rutas (ramificar por tiendas) para reducir el desajuste de contexto de una cinta fija."
+  },
+  {
+    "submission_id": 56444202,
+    "timestamp": "2026-09-21T21:53:35-05:00",
+    "git_commit": "f5c2889",
+    "experiment_id": "tree_v1",
+    "config": "arbol de 4 cintas de Majkel1337 (107685970/107692988/107696961/107710951); rama en step 72 por primera tienda y en 144 por YARN_STORE. Paquete: empaquetar_arbol.py, 51413 bytes",
+    "local_harness": {
+      "panel": "piloto 14-sep: 16 rivales x 4 seeds x 2 asientos",
+      "wr": 64.06,
+      "base_wr": 46.09,
+      "delta": 17.97,
+      "ci95_seed": null,
+      "ci95_2way": null,
+      "opponent_breakdown": {
+        "lad8": "62.50",
+        "sepopp8": "65.62"
+      },
+      "nota": "empato con maj_107674293 (64.06) en el piloto; perdio el desempate alfabetico. Confirmacion con potencia: en curso (compare, 16 seeds)",
+      "confirm_compare": {
+        "panel": "48 rivales x 16 seeds x 2 asientos (compare 2026-09-21)",
+        "wr": 65.76,
+        "base_wr": 56.77,
+        "delta": 8.98,
+        "ci95_seed": [
+          4.99,
+          12.98
+        ],
+        "ci95_2way": [
+          -6.09,
+          24.06
+        ],
+        "nota": "en el MISMO bloque la cinta sola dio +12.11 [2.81; 21.41] y tree_v2 +4.82. Local: cinta > tree > tree_v2"
+      }
+    },
+    "reason": "REAL_WORLD_CANDIDATE criterio #3 (estructuralmente distinto: ramifica) y #7 (localmente indistinguible de la cinta; solo el ladder los separa). Verificado identico al arbol local en 6 semillas, DONE",
+    "leaderboard": {
+      "score": 1082.2,
+      "episodes": 40,
+      "rank": null,
+      "lecturas": [
+        [
+          16,
+          914.0
+        ],
+        [
+          19,
+          966.9
+        ],
+        [
+          40,
+          1082.2
+        ]
+      ],
+      "nota": "+225 sobre el campeon (857) a 40 ep: fuera del ruido de arranque. POSITIVE SURPRISE (punto 16): local +6..+9 global, +10 vs fuertes"
+    },
+    "delta_vs_champion_ladder": null,
+    "observed": "Mucho mejor en ladder de lo que el panel global predecia. Coherente con compare2: el arbol gana vs FUERTES (+10.2) y el ladder empareja con rivales de nuestro nivel",
+    "conclusion": "CHAMPION_CANDIDATE (pendiente replay analysis + confirmar a ~60 ep)",
+    "next_action": "Comparar contra maj_107674293 (852.6) cuando pase de ~60 episodios. Mientras: compare panel tree vs tree_v2."
+  },
+  {
+    "submission_id": 56444505,
+    "timestamp": "2026-09-21T22:40:00-05:00",
+    "git_commit": "073fa24",
+    "experiment_id": "maj_107674293+guard6",
+    "config": "cinta maj_107674293 + bots/guardia_cinta.py reserve=6 until_step=24 (descarta BUY_SEED/BUY_PRODUCT del d0 que dejarian la caja bajo $6)",
+    "local_harness": {
+      "panel": "sonda 40 partidas vs lad (no es panel completo)",
+      "wr": 65,
+      "base_wr": 62,
+      "delta": 3,
+      "ci95_seed": null,
+      "ci95_2way": null,
+      "nota": "harness NO reproduce el fallo (15% de partidas <4 manos local vs 42% real). Con guardia: 0% <4 manos. Identica a la cinta en 24/40"
+    },
+    "reason": "REAL_WORLD_CANDIDATE #4: corrige debilidad observada en 60 partidas reales (manos d1 -> WR 0/23/60%). Unico cambio vs champion: la guardia. Aisla su efecto en ladder",
+    "leaderboard": {
+      "score": 713.7,
+      "episodes": 32,
+      "rank": null,
+      "lecturas": [
+        [
+          10,
+          660.7
+        ],
+        [
+          14,
+          709.5
+        ],
+        [
+          32,
+          713.7
+        ]
+      ],
+      "nota": "PLANA en ~710 mientras tree_v1 sube a 1082 en la misma ventana. NEGATIVE SURPRISE (punto 12)"
+    },
+    "delta_vs_champion_ladder": null,
+    "observed": "No mejora al campeon; posible que sea peor. Hipotesis: las manos del d1 eran SINTOMA (rival fuerte hunde precios d0 -> caja 0) y no causa. Correlacion tomada por causalidad",
+    "conclusion": "PROMISING -> en revision; replays bajando para failure analysis",
+    "next_action": "Comparar con 852.6 (56245770) a ~60 ep. Prediccion: si el mecanismo es real, +10..+20 puntos de WR en ladder -> rating claramente > 852. Si queda en ~850, el fallo del d1 no era la causa dominante de las derrotas"
+  },
+  {
+    "submission_id": 56447472,
+    "timestamp": "2026-09-22T03:10:00-05:00",
+    "git_commit": "98f9ea6",
+    "experiment_id": "tree_v1+guards",
+    "config": "arbol de 4 cintas (ramas tienda d3 / YARN d6) + guard_cash reserve=6 + guard_commitments max_retry=48. empaquetar_arbol.py --guard 6. 56583 bytes",
+    "local_harness": {
+      "panel": "tree_v1: compare2 48riv x 16seeds; guardias: sondas",
+      "wr": 63.35,
+      "base_wr": 57.23,
+      "delta": 6.12,
+      "ci95_seed": [
+        1.9,
+        10.34
+      ],
+      "ci95_2way": [
+        -7.13,
+        19.37
+      ],
+      "opponent_breakdown": {
+        "lad40": "-6.72 vs cinta",
+        "sepopp8 (fuertes)": "+10.16 vs cinta"
+      },
+      "nota": "las guardias son inertes cuando la caja alcanza; verificado paquete == local en 12 partidas"
+    },
+    "reason": "Criterio 6: combinacion de dos mejoras validadas POR SEPARADO en ladder. tree_v1 31-9 (78%) con 8/9 derrotas por manos d1 (con 4 manos 30-1); guardia 32/32 con 4 manos, 53% vs 40%",
+    "leaderboard": {
+      "score": 1131.6,
+      "episodes": 81,
+      "lecturas": [
+        [
+          28,
+          1118.9
+        ],
+        [
+          40,
+          1136.1
+        ],
+        [
+          51,
+          1183.5
+        ],
+        [
+          81,
+          1131.6
+        ]
+      ],
+      "rank": "3368/9792 (equipo)"
+    },
+    "delta_vs_champion_ladder": null,
+    "observed": "23-17 (58%) a rating mas alto que tree_v1; +54 Elo vs tree_v1 solo a 40 ep. 3/40 con 3 manos (reserve=6 corto para sus cintas; deberia ser 8)",
+    "conclusion": "PROMISING; desactivada 2026-09-23 al subir 56504082 (1131.6 @81 ep, congelada)",
+    "next_action": "Prediccion: >= tree_v1 (1082 @40ep) y con menos derrotas catastroficas. Si a ~40 ep supera 1082 -> CHAMPION. Desactiva a tree_v1 (56444202, 40 ep, ya leido)"
+  },
+  {
+    "submission_id": 56449108,
+    "timestamp": "2026-09-22T04:30:00-05:00",
+    "git_commit": "6527d3a",
+    "experiment_id": "107570947+guards8",
+    "config": "cinta top_majkel1337_107570947 (Majkel vs Q.Ai, PET_CAFE d3) + guard_cash reserve=8 + guard_commitments. empaquetar_cinta_guard.py. 18345 bytes",
+    "local_harness": {
+      "panel": "FUERTE: 80 rivales de Majkel/DSM x 8 seeds x 2 asientos",
+      "wr": 54.84,
+      "base_wr": 9.53,
+      "delta": 45.31,
+      "ci95_seed": [
+        32.16,
+        58.47
+      ],
+      "ci95_2way": [
+        30.44,
+        60.18
+      ],
+      "opponent_breakdown": {
+        "fuertes80": "54.8% (cinta campeona 17.4%, tree_v3+guard 29.5%, tree 20.2%)",
+        "compare2 lad40 (sin guardias)": "-0.6 vs cinta",
+        "compare2 sepopp8 (sin guardias)": "+21.5 [5.7; 37.3] vs cinta"
+      },
+      "nota": "reserve=8 (no 6): esta cinta pide 5 HIRE al alba, usa 4, necesita \\$7. Sin guardias: 36.3% vs fuertes"
+    },
+    "reason": "CHAMPION_CANDIDATE por evidencia local fuerte en la poblacion que predice el ladder. Una variable vs 56447472 (tree_v1+guards): material de cintas",
+    "leaderboard": {
+      "score": 1156.3,
+      "episodes": 90,
+      "lecturas": [
+        [
+          13,
+          1182.0
+        ],
+        [
+          24,
+          1179.7
+        ],
+        [
+          51,
+          1201.3
+        ],
+        [
+          78,
+          1163.7
+        ],
+        [
+          90,
+          1156.3
+        ]
+      ],
+      "rank": "3368/9792 (equipo)"
+    },
+    "delta_vs_champion_ladder": null,
+    "observed": "15-9 (62%), $100.5k vs $88.1k. 24/24 con 4 manos y 3 cuadrantes. Derrotas ajustadas vs rivales de 93-138k. Banco identico en V y D: produccion fija, gana sii el rival produce menos",
+    "conclusion": "CHAMPION hasta 2026-09-24 00:58 UTC; desactivada al subir 56507746/56507747. Congelada ~1156",
+    "next_action": "Leer W/L (no rating) a ~30 ep. Prediccion: >= tree_v1+guards. Desactiva a 56444505 (guardia, 32 ep, ya leida)"
+  },
+  {
+    "submission_id": 56504082,
+    "timestamp": "2026-09-23T17:30:00-05:00",
+    "git_commit": "3cbaca1",
+    "experiment_id": "110304538+gcal8",
+    "config": "cinta top2_majkel1337_110304538 (Majkel-3075, 2a mitad de sep, vs top-3) + guard_cash reserve_auto=8 + guard_commitments. empaquetar_cinta_guard.py --reserve 8. 19576 bytes",
+    "local_harness": {
+      "panel": "confirm_cal1: 148 rivales NUEVOS (rivales de Boey/MMPQ/DECEM/Majkel-nuevo/Vadim-nuevo/seek) x 4 seeds x 2 asientos",
+      "wr": 61.6,
+      "ref_wr": 42.7,
+      "delta_vs_ref": 18.92,
+      "ci95_seed": [
+        -3.5,
+        41.3
+      ],
+      "ci95_2way": [
+        -0.5,
+        38.4
+      ],
+      "opponent_breakdown": {
+        "boey": "+16.0",
+        "decem": "+25.5",
+        "majkel3": "+17.9",
+        "mmpq": "+21.5",
+        "seek": "+11.0",
+        "vadim2": "+21.6"
+      },
+      "historial": "majkel2_confirm (reserve 6 ambos, 71 fuertes): -0.26 [-25;+24]; cal1 piloto (gcal, 32 fuertes): +9.4",
+      "nota": "ref = gcal:107570947 = la campeona 56449108 exacta"
+    },
+    "reason": "REAL_WORLD_CANDIDATE (criterio 1): point estimate claramente interesante en una poblacion FRESCA y relevante (rivales del top-13 de esta semana), positiva contra las 6 fuentes; IC dos vias roza cero por 4 seeds. Desplaza a la mas debil de las dos activas (tree_v1+g)",
+    "leaderboard": {
+      "score": 1102.3,
+      "episodes": 20,
+      "rank": null,
+      "lecturas": [
+        [
+          20,
+          1096.8
+        ],
+        [
+          "final",
+          1102.3
+        ]
+      ]
+    },
+    "delta_vs_champion_ladder": null,
+    "observed": "20 partidas: 12V 7D 1E (62%), 5-6 manos d1 y 3 cuadrantes en las 20; derrotas ajustadas. = tasa de 107570947+g a igual edad",
+    "conclusion": "Localmente empatada con 107570947 en confirm2 (+0.3 [-5.2;+5.9]); desactivada al subir la pareja seek/decem",
+    "next_action": "Leer W/L a ~30 ep y rating a ~60. Si supera a 56449108 (1164) -> CHAMPION. OJO: la proxima submission desplazaria a 56449108; solo subir otra si 56504082 no es peor"
+  },
+  {
+    "local_harness_cadena": "cal2 (93 cintas, 32 rivales, filtro) -> etapa2 (148 rivales r2, 2 seeds, 592 ep/brazo) -> confirm2 (76 rivales reservados, 6 seeds)",
+    "timestamp": "2026-09-24T00:58:00Z",
+    "submission_id": 56507746,
+    "git_commit": "2555828",
+    "experiment_id": "seek_112344897+gcal8",
+    "config": "cinta top11_seek_112344897 (seek inspiration, sub 56407833) + guard_cash reserve_auto=8 + guard_commitments",
+    "local_harness": {
+      "etapa2": "91.4%, +31.8 vs 110304538 (148 rivales r2)",
+      "confirm2_wr": 78.2,
+      "confirm2_delta_vs_110304538": 27.74,
+      "ci95_seed": [
+        9.4,
+        46.1
+      ],
+      "ci95_2way": [
+        9.7,
+        45.8
+      ],
+      "delta_vs_107570947": 27.41,
+      "ci95_2way_vs_107570947": [
+        12.6,
+        42.2
+      ],
+      "opponent_breakdown": {
+        "dsm": "+38.9",
+        "majkel": "+18.1",
+        "umg": "+33.3",
+        "vadim": "+19.6"
+      },
+      "nota": "max de 5 confirmadas: estimacion encogida ~+18..+20"
+    },
+    "reason": "CHAMPION_CANDIDATE: supera a las dos activas con ambos IC >0 en poblacion fresca. Pareja diversificada (fuente distinta a DECEM)",
+    "leaderboard": {
+      "score": 1324.8,
+      "episodes": 55,
+      "rank": null,
+      "lecturas": [
+        [
+          55,
+          1324.8
+        ]
+      ]
+    },
+    "observed": "1324.8 @55 ep (~3.5 h activa): +160 sobre 107570947+g a igual edad; la mejora relativa del harness SI transfirio",
+    "conclusion": "Superada en nivel absoluto por los agentes publicos (0-20 vs cada uno en torneo_rr1). Desactivada al subir 56511611/56511619",
+    "next_action": "Leer W/L a ~30 ep; comparar con decem. Si una de las dos flojea claramente en el ladder, sustituirla por decem_112007951 o decem_112034117"
+  },
+  {
+    "local_harness_cadena": "cal2 (93 cintas, 32 rivales, filtro) -> etapa2 (148 rivales r2, 2 seeds, 592 ep/brazo) -> confirm2 (76 rivales reservados, 6 seeds)",
+    "timestamp": "2026-09-24T00:58:00Z",
+    "submission_id": 56507747,
+    "git_commit": "1385825",
+    "experiment_id": "decem_112000345+gcal5",
+    "config": "cinta top8_decem_112000345 (DECEM, sub 56446088) + guard_cash reserve_auto=5 + guard_commitments",
+    "local_harness": {
+      "etapa2": "87.8%, +28.2 vs 110304538",
+      "confirm2_wr": 73.1,
+      "confirm2_delta_vs_110304538": 22.7,
+      "ci95_seed": [
+        10.3,
+        35.1
+      ],
+      "ci95_2way": [
+        8.2,
+        37.2
+      ],
+      "delta_vs_107570947": 22.37,
+      "ci95_2way_vs_107570947": [
+        7.9,
+        36.9
+      ],
+      "opponent_breakdown": {
+        "dsm": "+32.6",
+        "majkel": "+13.9",
+        "umg": "+25.0",
+        "vadim": "+18.5"
+      },
+      "nota": "senal de fuente: 4 cintas DECEM confirmadas a +20..+23"
+    },
+    "reason": "CHAMPION_CANDIDATE, pareja de seek; la evidencia de DECEM esta replicada en 4 cintas",
+    "leaderboard": {
+      "score": 1285.9,
+      "episodes": 58,
+      "rank": null,
+      "lecturas": [
+        [
+          58,
+          1285.9
+        ]
+      ]
+    },
+    "observed": "1285.9 @58 ep: +120 sobre 107570947+g; seek > decem, como predijo confirm2 (+27.7 vs +22.7)",
+    "conclusion": "Idem; desactivada",
+    "next_action": "Idem. Si DECEM transfiere mejor que seek, las otras 3 DECEM confirmadas son el banquillo"
+  },
+  {
+    "local_harness_cadena": "torneo_rr1: bucle cerrado, motor oficial 1.32.7, cargado como Kaggle (ultimo callable), 10 seeds 910000-009 x 2 asientos, 9 agentes, 720 partidas, 0 errores",
+    "leaderboard": {
+      "score": 1857.9,
+      "episodes": 136,
+      "rank": null,
+      "lecturas": [
+        [
+          136,
+          1857.9
+        ]
+      ],
+      "observed_at": "2026-09-25T00:22:13.462952+00:00"
+    },
+    "observed": null,
+    "conclusion": "Desactivada por VQ; rendimiento inferior a arshs3 en esta lectura",
+    "autorizacion": "usuario 2026-09-24 (AskUserQuestion): 'arshs3 + v13 (Recomendado)'",
+    "submission_id": 56511611,
+    "timestamp": "2026-09-24T04:28:30Z",
+    "git_commit": "9e724c3",
+    "experiment_id": "publico_v13_thomastschinkel",
+    "config": "main.py publico byte-exacto de thomastschinkel/the-metav4-farm-submission-v13 (Apache-2.0), sha256 9d63494603f88219857a3101d7dc19cc750ded04e5886732ee428580326967d9, entrada agent",
+    "local_harness": {
+      "torneo_rr1_pct_vs_resto": 41.2,
+      "vs": {
+        "v94": "20-0",
+        "arshs3": "0-20",
+        "ars40": "0-20",
+        "hsov": "0-20",
+        "h2965": "0-20",
+        "guru6": "6-14",
+        "seek": "20-0 (+14.4k)",
+        "decem": "20-0 (+15.6k)"
+      },
+      "nota": "semillas A>B por pareja en torneo_rr1.txt; cambio de asiento casi repite la partida: unidad efectiva = semilla"
+    },
+    "reason": "Salto de nivel absoluto (publicos 2500-2950 vs nosotros ~1300). Rama cinta+reflejos del autor con mejor registro de ladder documentado (v9/4 2944.7 @201). Diversifica frente a arshs3",
+    "next_action": "Conservar como familia de control local"
+  },
+  {
+    "local_harness_cadena": "torneo_rr1: bucle cerrado, motor oficial 1.32.7, cargado como Kaggle (ultimo callable), 10 seeds 910000-009 x 2 asientos, 9 agentes, 720 partidas, 0 errores",
+    "leaderboard": {
+      "score": 2292.5,
+      "episodes": 148,
+      "rank": null,
+      "lecturas": [
+        [
+          148,
+          2292.5
+        ]
+      ],
+      "observed_at": "2026-09-25T00:22:13.462277+00:00"
+    },
+    "observed": null,
+    "conclusion": "Mejor referencia real observada; sigue activa y se compara con VQ",
+    "autorizacion": "usuario 2026-09-24 (AskUserQuestion): 'arshs3 + v13 (Recomendado)'",
+    "submission_id": 56511619,
+    "timestamp": "2026-09-24T04:28:57Z",
+    "git_commit": "fd2ce6d",
+    "experiment_id": "publico_arshs3_arsgorynich",
+    "config": "main.py publico byte-exacto de arsgorynich/herd-safe-v3-experimental-risk-aware-feed (Apache-2.0), sha256 4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01, entrada herdsafe_forecast_agent",
+    "local_harness": {
+      "torneo_rr1_pct_vs_resto": 98.8,
+      "vs": {
+        "ars40": "18-2",
+        "v13": "20-0",
+        "v94": "20-0",
+        "h2965": "20-0",
+        "hsov": "20-0",
+        "guru6": "20-0",
+        "seek": "20-0 (+14.6k)",
+        "decem": "20-0 (+16.2k)"
+      }
+    },
+    "reason": "Campeon del torneo en bucle cerrado contra el pool publico",
+    "next_action": "Comparar VQ a edad y rivales comparables"
+  },
+  {
+    "submission_id": 56535264,
+    "timestamp": "2026-09-25T00:22:43.633000Z",
+    "git_commit": "a9f59ee",
+    "experiment_id": "arshs3vq_real",
+    "config": {
+      "file": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976",
+      "layers": [
+        "arshs3",
+        "VQ"
+      ]
+    },
+    "local_harness": {
+      "pool_delta": 0,
+      "ci95_seed": [
+        0,
+        0
+      ],
+      "ci95_2way": null,
+      "opponent_breakdown": "0 cambios WLT en 120 celdas / 12 rivales",
+      "mirror_confirmation": "40-0; bloque posterior 95%",
+      "evidence": "docs/research/PREREG_VQ_2026-09-24.md"
+    },
+    "reason": "VQ validada contra copias; arshs3 transfiere al ladder (2292.5 vs v13 1857.9). Desplaza v13, preserva arshs3 como referencia activa.",
+    "leaderboard": {
+      "score": 1967.9,
+      "rank": null,
+      "episodes": 14,
+      "lecturas": [
+        [
+          "initial",
+          810.0
+        ],
+        [
+          "2026-09-25T00:54:49.768749+00:00",
+          1198.5
+        ],
+        [
+          "2026-09-25T01:22:09.418425+00:00",
+          1967.9,
+          14
+        ]
+      ]
+    },
+    "delta_vs_champion_ladder": null,
+    "observed": "COMPLETE; 1967.9 a 14 episodios en snapshot del loop. Sigue joven; original 2284.3.",
+    "conclusion": "REAL_WORLD_CANDIDATE; ventaja local específica contra copias, sin promoción automática",
+    "next_action": "Leer partidas y comparar contra arshs3 original; no inferir fuerza de rating de arranque",
+    "latest_snapshot": "docs/evidencia/loop_publicos_20260925/submissions_snapshot.json"
+  }
+]
+
+
+
+---
+
+## SOURCE: docs/research/PREREG_VQ_2026-09-24.md
+
+# Pre-registro — arshs3 + compactación de cola (VQ)
+
+Escrito antes de ejecutar. 2026-09-24 ~05:20 UTC.
+
+- **Hipótesis:** quitar órdenes de mercado que seguro no ejecutan adelanta las
+  ejecutables en la resolución en lockstep y voltea partidas decididas por
+  márgenes mínimos (entre agentes públicos top: +$7..+$34 de media).
+- **Mecanismo verificado (sonda, seed 939999 vs tds):** 56 turnos cambiados,
+  36 órdenes adelantadas, 0 errores.
+- **Brazos:** A = arshs3 (sha 4f8637a3); A+VQ = `apilar_capa_vq.py` (sha 9b463dfb).
+- **Pool (12):** tds, hl59, hybu, lp16, ars40, hsov, v13, obr, h2965, guru6, wz15, v94.
+- **Semillas:** 940000-940009 (nuevas), dos asientos. Más A vs A+VQ directo.
+- **Unidad:** celda (rival, semilla) promediando asientos; delta pareado
+  A+VQ − A; IC95 por semilla y dos vías.
+- **Regla:** ambos IC > 0 → REAL_WORLD_CANDIDATE (sustituye a arshs3 en el
+  ladder); punto > 0 con IC que incluye 0 → PROMISING (confirmar con 10 semillas
+  nuevas, sin fusionar bloques); punto ≤ 0 → REJECTED. Directo A vs A+VQ se
+  reporta aparte, no decide.
+
+## Resultado del bloque (torneo_vq1, 500 partidas, 0 errores)
+
+- Pool: **0/120 celdas cambian** (delta 0,00). Dinero propio: +$20,4 medio,
+  225/240 episodios distintos, mínimo −$6. Veredicto por la regla: **no se adopta
+  como mejora de W/L contra el pool** (inerte en resultados, no dañino).
+- Directo (no decide, según lo fijado): arshs3vq 17-3 contra arshs3.
+
+## Pre-registro 2: espejo (escrito tras ver el directo; hipótesis NUEVA)
+
+- **Hipótesis:** en un espejo arshs3 vs arshs3 la compactación da prioridad de
+  slot y gana; en el ladder habrá copias de arshs3 (notebook público del 23-sep).
+- **Prueba:** arshs3vq vs arshs3, seeds 950000-950019 (nuevas), dos asientos.
+  Unidad: semilla (asientos promediados).
+- **Regla:** sustituir arshs3 por arshs3vq en el ladder sólo si el IC95 por
+  semilla de la tasa de victoria excluye 50% por arriba **y** ninguna celda del
+  pool empeoró (ya observado: 0 peores de 120). Si no, se queda arshs3.
+
+
+
+---
+
+## SOURCE: docs/research/PREREG_ADV_2026-09-24.md
+
+# Pre-registro — arshs3vq + ADV (adelanto de ventas, Ahmed Berat Özer EXP293)
+
+Escrito antes de ejecutar. 2026-09-24 ~06:45 UTC.
+
+- **Motivo:** las 95 derrotas de arshs3 en los torneos son por $257 (p25) /
+  $521 (mediana) / $1.147 (p75): no se voltean con micro-ajustes. Sus rivales
+  más duros (tds 23 derrotas, hl59 15) llevan la capa ADV y arshs3 no.
+- **Hipótesis:** vender antes lo que la cinta vendería en ≤4 turnos (si ya está
+  en el cobertizo) gana la carrera del libro de precios a rivales que venden lo
+  mismo; debería ganar partidas sobre todo contra tds/hl59/hybu/lp16.
+- **Brazos:** ref = arshs3vq (sha 9b463dfb, ya confirmado en espejo);
+  cand = arshs3_adv_vq (`apilar_capa_vq.py base tds out adv vq`, sha 2abbca9a).
+- **Pool (12):** tds, hl59, hybu, lp16, ars40, hsov, v13, obr, h2965, guru6, wz15, v94.
+- **Semillas:** 970000-970009 (nuevas), dos asientos, + directo.
+- **Unidad y regla:** como PREREG_VQ. Ambos IC > 0 → candidata a sustituir a
+  arshs3vq; punto > 0 con IC que incluye 0 → PROMISING (confirmar con 10
+  semillas nuevas sin fusionar); punto ≤ 0 → REJECTED. Riesgo específico:
+  choque con la capa PREDICT de arshs3 (ambas adelantan ventas) → vigilar
+  el delta contra rivales donde arshs3 ya ganaba 20-0.
+
+## Resultado del descubrimiento (torneo_adv1, 500 partidas, 0 errores)
+
+delta +10,0 pts (81,2% → 91,2%); IC95 semilla [−10,2; +30,2]; dos vías
+[−10,0; +30,0]; 22 celdas a favor / 10 en contra. Por rival: tds +30, hl59 +30,
+wz15 +25, hybu +20, lp16 +20, h2965 +10, hsov +10, v13 0, v94 0, guru6 −5,
+ars40 −10, obr −10. Directo 10-10. Veredicto: **PROMISING**.
+
+## Regla de confirmación (fijada antes de correrla)
+
+- Semillas 980000-980009, mismos brazos y mismo pool de 12; el bloque se
+  analiza SOLO, sin fusionar con el descubrimiento.
+- Ambos IC > 0 → REAL_WORLD_CANDIDATE firme.
+- Punto > 0 y delta medio > 0 en el subgrupo fijado de antemano del linaje tds
+  (tds, hl59, hybu, lp16, wz15) → REAL_WORLD_CANDIDATE como instrumento (el
+  mandato permite subir con IC que incluye 0 si corrige una debilidad observada).
+- Punto ≤ 0 → REJECTED.
+- Extra (no decide): arshs3 puro y hsov2 (copia de arshs3) como rivales, para
+  comprobar que la ventaja en espejo de VQ se conserva con ADV.
+
+## Resultado de la confirmación (torneo_adv2, 580 partidas, 0 errores)
+
+delta **−2,08** pts; IC95 semilla [−20,2; +16,0]; dos vías [−20,4; +16,2];
+12 a favor / 16 en contra. Por rival: hybu +25, tds +10, hl59 +10, lp16 +5,
+wz15 +5, ars40 0, v13 0, v94 0, guru6 −10, h2965 −20, hsov −20, obr −30.
+**Veredicto: REJECTED** (punto ≤ 0). Lectura: ADV intercambia partidas entre
+linajes (gana al linaje tds, pierde con herd-safe/order-book); neto ≈ 0.
+Extra: arshs3vq y arshs3advvq ganan 95% a arshs3 y a hsov2 (copia de arshs3):
+tercera confirmación de la ventaja de VQ en espejo.
+
+
+
+---
+
+## SOURCE: docs/research/PREREG_FORECAST_GATE_2026-09-25.md
+
+# Forecast gate: controlar confianza del predictor existente
+
+Registrado antes del piloto. Fecha UTC 2026-09-25 (24-sep en Colombia).
+
+## Evidencia y diferencia con lo ya probado
+
+Arshs3: 2292,5 @148 episodios frente a v13 1857,9 @136. La muestra fijada por
+recencia tiene 16 arshs3 y ocho v13; no se eligieron por resultado. Arshs3:
+4V/11D/1E, sin escapes y sin inventario propio terminal sin vender. Son episodios
+recientes, no una estimación de su WR histórico.
+
+El código exige tres aciertos y precisión histórica ≥70% para señales a 3–4
+turnos, pero acepta las señales inmediatas sin ese control. Una sonda en los
+primeros cuatro replays reconstruye todas las acciones salvo una en uno de ellos;
+67 ventas añadidas por PREDICT, 12 coinciden con venta neta rival inferida a 1–4
+turnos. Inferencia de mercado, no ledger causal exacto ni pérdida económica probada.
+
+**Hipótesis:** ese filtro aplicado también a 1–2 turnos evita ventas prematuras
+contra oponentes que no siguen la biblioteca histórica. Upside MEDIUM/HIGH,
+confianza LOW/MEDIUM. Diferente de ADV, que añadía adelantos generales: aquí se
+restringe PREDICT. La ablación compara quitar esta capa, manteniendo las demás.
+
+## Implementaciones y controles
+
+- base y noop: `submission/main_publico_arshs3_vq.py`, sha 9b463dfb.
+- gate: `apilar_forecast_gate.py gate`, exige ≥3 aciertos y ≥70% en ventana
+  pasada de 240 turnos para el producto antes de aceptar la predicción.
+- off: `apilar_forecast_gate.py off`, abla sólo `_v92_predict`; conserva el
+  registro de señales y las demás capas de ventas y producción.
+- No cambiar producción, rutas, cantidades de insumos ni usar futuro real.
+
+## Piloto
+
+Reutilizar `torneo.py`, ambos asientos. Pool de ocho representantes públicos:
+tds, hybu, ars40, hsov, v13, obr, h2965, guru6. Se omite hl59 por duplicación
+conductual con tds; no elegir rivales después de resultados. Semillas
+**990000–990007**, cuatro brazos, 32 cruces contra pool + seis directos:
+**608 episodios**. Una sonda de dos episodios antes valida el wrapper del loader.
+
+Primario: delta gate − base por rival/semilla, asientos promediados. Reportar
+IC95 por semilla y dos vías de `pareado_torneo.py`, desglose por rival y asientos.
+Los directos y off son diagnósticos. No seleccionar off como nuevo ganador de
+esta misma confirmación. Medir acciones emitidas antes del motor; noop idéntico
+en acciones, rewards y estados de finalización; errores invalidan el bloque.
+
+Toreno anterior tenía deficiencias concretas: sobrescribía resultados, omitía
+hashes de acciones y sólo avisaba de cambios de código. Se endurece ese mismo
+harness con manifiesto previo, archivo de fuentes, hashes, cobertura completa,
+fallo ante errores y captura de acciones usando el loader oficial de Kaggle.
+No se crea otro sistema de evaluación.
+
+## Decisión y parada
+
+- Gate ≥+5 puntos y al menos dos rivales positivos, ninguno <−15: PROMISING;
+  confirmar contra los mismos ocho y semillas **991000–991015** (dos brazos,
+  ocho rivales + directo: **544 episodios**). Interpretar IC como incertidumbre.
+- Gate entre 0 y +5: dejar PROMISING débil; sólo continuar si la sonda de mecanismo
+  encuentra corrección clara de un fallo en replays reales. No ampliar por dinero.
+- Gate ≤0: no gastar confirmación en esta variante. Si IC cruza cero, decir
+  ausencia de mejora observada, no prueba de perjuicio ni nulo exacto.
+- Si gate no modifica acciones, parar y revisar activación antes de medir más.
+- Confirmación con punto ≥+5, al menos dos rivales positivos y sin regresión
+  >15 por rival permite REAL_WORLD_CANDIDATE aunque un IC cruce cero; ambos
+  IC positivos fortalecen evidencia, no promueven automáticamente a CHAMPION.
+
+VQ ya fue enviada como **56535264** usando evidencia anterior, antes de este
+piloto. Sigue activa arshs3 original 56511619. Si surge otro envío, considerar
+que desplaza al más antiguo (arshs3); no reemplazar ambos con cambios casi iguales.
+
+
+
+---
+
+## SOURCE: docs/research/PREREG_PUBLIC_REFRESH_2026-09-25.md
+
+# Referencias públicas actualizadas: tds y Harvest Ledger
+
+Registrado antes de medir estas versiones. Es una comparación nueva: ambos
+archivos cambiaron respecto a los hashes de los torneos rr1–rr4.
+
+- [tds](https://www.kaggle.com/code/tetsutani/demand-preserving-turn-sale-timing):
+  última ejecución pública 2026-09-24 16:06 UTC; SHA descargado **127ed3e6**,
+  antes 178ae0f7. Nuevo paquete de aproximadamente 0,5 MB y capas MG/IG de cola;
+  no asumir equivalencia conductual por mantener el título del notebook.
+- [Harvest Ledger](https://www.kaggle.com/code/haodou092/kaggriculture-harvest-ledger):
+  ejecución 2026-09-24 09:18 UTC; nuevo SHA **1dfd4630**, antes 37d284d4.
+  Cambio de producción: precios esperados de trigo/zanahoria a tres días, mezcla
+  80% futuro / 20% observado, siembras hasta d26, buffer de semillas 6. Riesgo:
+  sobreestimar oferta que no se cosechará y perjudicar alimento/producción.
+
+Archivos descargados en `results/publicos_20260925/`, hashes y fecha del listado
+en `docs/evidencia/research_20260925/`. Avisos Apache-2.0 conservados. Auditoría
+estática: stdlib, exec de cadenas constantes; remove sobre listas; único open
+en rama desactivada por path=None. No ejecutar notebooks ni scripts de descarga.
+
+**Hipótesis de alto potencial:** una producción y logística distintas pueden
+superar a arshs3vq donde micro-capas sólo intercambian partidas. Confianza LOW;
+las versiones nuevas son candidatas, no mejoras ya demostradas.
+
+## Diseño
+
+Reutilizar `torneo.py`, sin editarlo durante bloques. Base/noop arshs3vq,
+tds25 y hl25; ocho rivales congelados del piloto forecast: tds anterior, hybu,
+ars40, hsov, v13, obr, h2965, guru6. Semillas **992000–992007**, ambos asientos,
+38 cruces = **608 episodios**. En pares con tds antiguo se mide también cambio
+de versión. Directos entre brazos se reportan aparte. No mezclar rating ajeno
+anunciado con nuestros resultados medidos.
+
+Primario: delta pareado W/L/T vs base por rival/semilla, asientos promediados,
+IC95 semilla y dos vías, desglose por rival. Noop exacto y cero errores.
+
+Selección exploratoria por mayor delta global, desempate alfabético. Si el mejor
+alcanza ≥+5 y al menos dos rivales positivos sin ninguno <−20, PROMISING:
+confirmar únicamente ese candidato frente a base/noop en **993000–993015**, mismo
+pool y ambos asientos (27 cruces ×32 = **864 episodios**). Confirmación no se
+fusiona con piloto ni se amplía al mirar resultados. Si el punto de confirmación
+es ≥+5 y no hay regresión >20 por rival, puede justificar un envío como
+REAL_WORLD_CANDIDATE con incertidumbre explícita. No promover champion sólo por
+esta selección; exige respuesta real. Si no cumple, conservar resultado y causa,
+sin reenviar otra versión casi idéntica a modo de boleto.
+
+Un resultado ≤0 o un IC que cruza cero no prueban inutilidad universal del
+mecanismo: sólo impiden gastar el bloque registrado en estas versiones. Si una
+regresión contiene información de mecanismo útil, investigar esa diferencia en
+otra hipótesis registrada. No lanzar ambos bloques a la vez con 16 workers;
+esperar que termine forecast y conservar su evidencia.
+
 
 
 ---
@@ -103,6 +2208,30 @@ una réplica empírica. Prefiero una objeción verificable a una afirmación con
 ## SOURCE: AGENTS.md
 
 # Entrada para agentes que trabajan en este repositorio
+
+> **Estado vigente (2026-09-25 UTC): leer primero `docs/research/ESTADO_INVESTIGACION.md`.**
+> Desde el 2026-09-21 el usuario autorizó un loop autónomo de investigación que
+> incluye submissions experimentales ("También tienes capacidad para crear y
+> subir submissions reales. Usa ambas cosas"). Mejor referencia real:
+> **arshs3 (56511619), 2292,5 @148 episodios**; VQ experimental **56535264**
+> enviada y COMPLETE. No volver al campeón histórico de 1180. Creencias con evidencia:
+> `docs/research/RESEARCH_BELIEFS.md`; historial reproducible de envíos:
+> `docs/research/SUBMISSION_HISTORY.json`; qué métrica local predice el ladder:
+> `docs/research/HARNESS_VS_LEADERBOARD.md`. Lo que sigue abajo es el estado
+> del 2026-09-14 y se conserva como historia.
+
+## Loop continuo vigente
+
+El 2026-09-25 UTC el usuario pidió explícitamente investigar y probar muchas
+variantes en un loop continuo: **no parar al cerrar cada ronda**. Objetivo
+persistente activo. Leer `docs/evidencia/loop_publicos_20260925/pipeline_state.json`
+y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
+`continuar_loop_publicos.py`, `continuar_loop_herd.py`,
+`continuar_loop_recuperacion.py` y `continuar_loop_tomate.py` encadenan bloques
+registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
+terminó: top3 +10,795 pp, candidata real; loop3 de animales está corriendo.
+Al completar los bloques, revisar resultados y seguir con la siguiente hipótesis
+o submission justificada. Cierre de bloque no equivale a cierre de investigación.
 
 ## Estado y autorización
 
@@ -180,6 +2309,11 @@ fechada; los ratings en documentos son snapshots.
 ## SOURCE: docs/ESTADO_ACTUAL.md
 
 # Estado actual — leer primero
+
+> **Este archivo conserva el traspaso del 14-sep.** Para decisiones vigentes,
+> leer [ESTADO_INVESTIGACION](research/ESTADO_INVESTIGACION.md): loop autónomo
+> autorizado, referencia arshs3 56511619 y VQ 56535264. No relanzar ni bloquear
+> trabajo por las autorizaciones históricas que siguen.
 
 ## Envío autorizado — 2026-09-14, 23:52 America/Bogota
 

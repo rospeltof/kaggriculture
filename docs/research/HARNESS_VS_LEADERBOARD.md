@@ -1,5 +1,26 @@
 # Harness vs leaderboard — qué métrica local predice el ladder
 
+## Lectura nueva — 2026-09-25 UTC
+
+Arshs3 **2292,5 @148 episodios**, v13 **1857,9 @136**, tras aproximadamente 20 h
+activos. Ambos superan las cintas propias (seek 1324,8, decem 1285,9); el orden
+arshs3 > v13 coincide con el torneo cerrado (20-0 directo). Evidencia API:
+`docs/evidencia/research_20260925/*_episodes_snapshot.json` y
+`submissions_after_vq.json`. Ratings observados, no una estimación causal del
+delta ni un ranking actual del equipo; no se consultó ese ranking.
+
+VQ (56535264) separará otra pregunta: 0 efecto contra pool histórico, pero
+ventaja repetida contra copias, ¿sirve en una población real poblada de forks?
+Se conservó arshs3 original como control activo. No comparar el rating de arranque
+de VQ con 148 episodios del original para rechazarla. Muestra descriptiva de 16
+partidas recientes de arshs3: 4V/11D/1E, no su tasa acumulada.
+
+La frase histórica «sólo ≥100 Elo informa» no debe usarse como umbral universal.
+La información depende de episodios, rival, edad y ruido observado. Asimismo,
+muchas cintas/forks emparentados no son muchas familias independientes.
+
+## Historial de calibración
+
 Actualizado: 2026-09-23 18:00. Dataset acumulado y conclusiones provisionales.
 
 ## Dataset

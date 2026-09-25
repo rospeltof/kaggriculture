@@ -1,0 +1,27 @@
+{
+  "recover_now": {
+    "path": "results/recuperacion_turno_20260925/recover_now.py",
+    "sha256": "8b51470bea622add70d20f38030034a99139f3ff184a4a1689ac9657259485dd",
+    "config": {
+      "crops": [
+        "STRAWBERRY",
+        "TOMATO"
+      ],
+      "max_delay_days": 0
+    }
+  },
+  "recover_later": {
+    "path": "results/recuperacion_turno_20260925/recover_later.py",
+    "sha256": "088baa87a51f4f92144a2c0f962fcdbd7cd04aed3634c3c0667ab1e0075132df",
+    "config": {
+      "crops": [
+        "STRAWBERRY",
+        "TOMATO",
+        "WHEAT",
+        "CARROT",
+        "MELON"
+      ],
+      "max_delay_days": 2
+    }
+  }
+}

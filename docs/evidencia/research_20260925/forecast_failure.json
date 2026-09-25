@@ -1,0 +1,456 @@
+{
+  "rule": "Primera celda ordenada por rival/semilla/asiento donde base gana y gate pierde; s\u00f3lo diagn\u00f3stico",
+  "opponent": "ars40",
+  "seed": 990000,
+  "seat": 0,
+  "first_action_difference": 440,
+  "before_market": {
+    "inventory": {
+      "WHEAT": 9731,
+      "CARROT": 9977,
+      "TOMATO": 9905,
+      "STRAWBERRY": 9949,
+      "MELON": 10125,
+      "EGG": 9939,
+      "MILK": 9997,
+      "WOOL": 10057,
+      "FERTILIZER": 10324
+    },
+    "prices": {
+      "WHEAT": 41,
+      "CARROT": 37,
+      "TOMATO": 71,
+      "STRAWBERRY": 180,
+      "MELON": 94,
+      "EGG": 54,
+      "MILK": 175,
+      "WOOL": 11,
+      "FERTILIZER": 35
+    }
+  },
+  "first_actions": [
+    {
+      "farmer": [
+        "EAST"
+      ],
+      "hands": [
+        [
+          "EAST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ]
+      ],
+      "market": [
+        [
+          "SELL",
+          "WOOL",
+          2
+        ]
+      ]
+    },
+    {
+      "farmer": [
+        "EAST"
+      ],
+      "hands": [
+        [
+          "EAST"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "SOUTH"
+        ],
+        [
+          "CARE"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "NORTH"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ]
+      ],
+      "market": []
+    }
+  ],
+  "final_rewards": [
+    [
+      104434.0,
+      104345.0
+    ],
+    [
+      104243.0,
+      104321.0
+    ]
+  ],
+  "changed_action_turns": 16,
+  "daily": [
+    {
+      "day": 6,
+      "money": [
+        [
+          791.0,
+          783.0
+        ],
+        [
+          791.0,
+          783.0
+        ]
+      ]
+    },
+    {
+      "day": 10,
+      "money": [
+        [
+          2301.0,
+          2293.0
+        ],
+        [
+          2301.0,
+          2293.0
+        ]
+      ]
+    },
+    {
+      "day": 15,
+      "money": [
+        [
+          24835.0,
+          24827.0
+        ],
+        [
+          24835.0,
+          24827.0
+        ]
+      ]
+    },
+    {
+      "day": 20,
+      "money": [
+        [
+          52400.0,
+          52388.0
+        ],
+        [
+          52390.0,
+          52392.0
+        ]
+      ]
+    },
+    {
+      "day": 25,
+      "money": [
+        [
+          71024.0,
+          70896.0
+        ],
+        [
+          70966.0,
+          71040.0
+        ]
+      ]
+    },
+    {
+      "day": 29,
+      "money": [
+        [
+          93508.0,
+          93419.0
+        ],
+        [
+          93317.0,
+          93395.0
+        ]
+      ]
+    }
+  ],
+  "sale_summary": [
+    {
+      "WHEAT": [
+        387,
+        14517
+      ],
+      "FERTILIZER": [
+        330,
+        15396
+      ],
+      "WOOL": [
+        127,
+        14602
+      ],
+      "MILK": [
+        245,
+        45134
+      ],
+      "MELON": [
+        72,
+        14267
+      ],
+      "EGG": [
+        85,
+        4518
+      ],
+      "STRAWBERRY": [
+        247,
+        17252
+      ],
+      "CARROT": [
+        96,
+        3857
+      ]
+    },
+    {
+      "WHEAT": [
+        387,
+        14517
+      ],
+      "FERTILIZER": [
+        330,
+        15396
+      ],
+      "WOOL": [
+        127,
+        14607
+      ],
+      "MILK": [
+        245,
+        45192
+      ],
+      "MELON": [
+        72,
+        14267
+      ],
+      "EGG": [
+        85,
+        4517
+      ],
+      "STRAWBERRY": [
+        247,
+        16999
+      ],
+      "CARROT": [
+        96,
+        3857
+      ]
+    }
+  ],
+  "first_commits": [
+    [
+      {
+        "step": 440,
+        "player": 0,
+        "op": "SELL",
+        "item": "WOOL",
+        "value": 11
+      },
+      {
+        "step": 440,
+        "player": 1,
+        "op": "SELL",
+        "item": "WOOL",
+        "value": 11
+      },
+      {
+        "step": 440,
+        "player": 0,
+        "op": "SELL",
+        "item": "WOOL",
+        "value": 1
+      },
+      {
+        "step": 440,
+        "player": 1,
+        "op": "SELL",
+        "item": "WOOL",
+        "value": 1
+      },
+      {
+        "step": 441,
+        "player": 0,
+        "op": "SELL",
+        "item": "FERTILIZER",
+        "value": 35
+      },
+      {
+        "step": 441,
+        "player": 1,
+        "op": "SELL",
+        "item": "FERTILIZER",
+        "value": 35
+      },
+      {
+        "step": 441,
+        "player": 0,
+        "op": "SELL",
+        "item": "FERTILIZER",
+        "value": 35
+      },
+      {
+        "step": 441,
+        "player": 1,
+        "op": "SELL",
+        "item": "FERTILIZER",
+        "value": 35
+      },
+      {
+        "step": 441,
+        "player": 0,
+        "op": "BUY_SEED",
+        "item": "WHEAT",
+        "value": -10
+      },
+      {
+        "step": 441,
+        "player": 1,
+        "op": "BUY_SEED",
+        "item": "WHEAT",
+        "value": -10
+      },
+      {
+        "step": 442,
+        "player": 0,
+        "op": "BUY_SEED",
+        "item": "WHEAT",
+        "value": -10
+      },
+      {
+        "step": 442,
+        "player": 1,
+        "op": "BUY_SEED",
+        "item": "WHEAT",
+        "value": -10
+      }
+    ],
+    [
+      {
+        "step": 440,
+        "player": 1,
+        "op": "SELL",
+        "item": "WOOL",
+        "value": 11
+      },
+      {
+        "step": 440,
+        "player": 1,
+        "op": "SELL",
+        "item": "WOOL",
+        "value": 5
+      },
+      {
+        "step": 441,
+        "player": 0,
+        "op": "SELL",
+        "item": "FERTILIZER",
+        "value": 35
+      },
+      {
+        "step": 441,
+        "player": 1,
+        "op": "SELL",
+        "item": "FERTILIZER",
+        "value": 35
+      },
+      {
+        "step": 441,
+        "player": 0,
+        "op": "SELL",
+        "item": "FERTILIZER",
+        "value": 35
+      },
+      {
+        "step": 441,
+        "player": 1,
+        "op": "SELL",
+        "item": "FERTILIZER",
+        "value": 35
+      },
+      {
+        "step": 441,
+        "player": 0,
+        "op": "BUY_SEED",
+        "item": "WHEAT",
+        "value": -10
+      },
+      {
+        "step": 441,
+        "player": 1,
+        "op": "BUY_SEED",
+        "item": "WHEAT",
+        "value": -10
+      },
+      {
+        "step": 442,
+        "player": 0,
+        "op": "SELL",
+        "item": "WOOL",
+        "value": 1
+      },
+      {
+        "step": 442,
+        "player": 0,
+        "op": "SELL",
+        "item": "WOOL",
+        "value": 1
+      },
+      {
+        "step": 442,
+        "player": 0,
+        "op": "BUY_SEED",
+        "item": "WHEAT",
+        "value": -10
+      },
+      {
+        "step": 442,
+        "player": 1,
+        "op": "BUY_SEED",
+        "item": "WHEAT",
+        "value": -10
+      }
+    ]
+  ]
+}

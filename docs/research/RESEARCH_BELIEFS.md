@@ -1,8 +1,29 @@
 # Research beliefs — Kaggriculture
 
-Actualizado: 2026-09-24. Cada entrada lleva su evidencia; cada evidencia nueva sube o baja la creencia.
+Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nueva sube o baja la creencia.
 
 ## HIGH CONFIDENCE
+
+- **[2026-09-25 UTC] PREDICT aporta fuerza en el panel de públicos:** ablarlo
+  sobre VQ pierde **68,75 puntos** (IC dos vías [−89,57; −47,93]); exigir
+  confianza adicional pierde **51,56** ([−78,92; −24,20]). 608 episodios, ocho
+  rivales y ocho semillas, noop exacto 160 veces. No podar una capa rentable
+  sólo porque una métrica de precisión parcial parezca baja.
+- **[2026-09-25 UTC] Corrección de nuestra sonda:** «12/67 aciertos» omitía ventas
+  simultáneas y usaba flujo neto inferido. Reproducción exacta de 720 estados de
+  cada uno de cuatro replays + ledger: **50/67** con venta aceptada rival en
+  t..t+4, **42/67 en t**. Esto no prueba causalidad de cada adelanto, pero invalida
+  la motivación observacional inicial de baja coincidencia. En una celda controlada,
+  mismas cantidades totales vendidas y peor timing convierten +89 monedas en −78.
+
+- **[2026-09-25 UTC] El orden local arshs3 > v13 transfiere en esta lectura real:**
+  2292,5 @148 episodios frente a 1857,9 @136. No convierte 20-0 local en un
+  delta Elo calibrado ni garantiza 2900. VQ ya enviada (56535264); el original
+  continúa activo. Fuente: snapshots API en `docs/evidencia/research_20260925/`.
+- **[2026-09-25 UTC] La cola histórica no es el estado actual.** «Todas las vías
+  cerradas», «subir públicos pendiente» y los viejos procesos en curso quedaron
+  superados por nuevas autorizaciones y datos. No repetir experimentos por notas
+  antiguas, ni convertir un descarte de implementación en imposibilidad general.
 
 - **[2026-09-24] Entre agentes públicos top las partidas se deciden por cientos de dólares, no por decenas**: derrotas de arshs3 mediana $521; una capa que suma +$20/partida (VQ) no voltea ninguna contra el pool, pero decide los espejos (prioridad de slot en lockstep): 17-3, 40-0, 95%.
 - **[2026-09-24] Una capa puede ser un intercambio entre linajes rivales, no una mejora**: ADV sobre arshs3 +25..+30 contra el linaje tds y −20..−30 contra herd-safe/order-book; neto ≈ 0 en confirmación. Evaluar siempre contra un pool con varios linajes, nunca contra el rival que motivó la capa.
@@ -38,6 +59,37 @@ Actualizado: 2026-09-24. Cada entrada lleva su evidencia; cada evidencia nueva s
 
 ## MEDIUM CONFIDENCE
 
+- **[2026-09-25, DSM actual] La siguiente frontera incluye inversión productiva:**
+  cuatro replays recientes, 720 estados exactos cada uno, cuarta tierra día10
+  y 116–231 tomates vendidos. No demuestra que tomate cause su rating.
+  Nuestra base puede ocupar SE con seis ovejas al día12; el módulo tardío de
+  tomates no actúa allí. Adelantarlo cambia la asignación de tierra, no sólo
+  fechas. Diagnóstico temprano ejecuta diez plantas/60 unidades sin errores,
+  pero pierde en ambos asientos del mundo de desarrollo. Loop5 con semillas
+  nuevas debe medir el coste de oportunidad y W/L/T, no el ingreso bruto.
+
+- **[2026-09-25, loop1] Diversificar patrones de rival es REAL_WORLD_CANDIDATE:** top3
+  frente a top1 da +9,375 pp (IC dos vías [−7,86; +26,61]) en cuatro semillas,
+  ocho rivales. La señal aparece en dos semillas y tres rivales. Reproducción
+  causal de una celda: −1.062 → +292, 15→24 activaciones, shops iguales.
+  Confirmación disjunta: +10,795 pp, IC95 semilla [1,23;20,36], dos vías
+  [−0,12;21,71], once rivales/16 semillas. 20 celdas mejores y una peor;
+  arshs3 −6,25 pp. Cumple el gate registrado de envío, sin garantía de ladder.
+  Daño reproducido: +216→−425, tiendas iguales, sin errores. Fast2 +2,841 pp
+  no supera gate; no redondearlo ni cambiar al subpanel favorable.
+- **[2026-09-25] Recuperar siembra exige reservar el riego del mismo día:**
+  persistir el intento entre peones no basta si sólo hay una visita diaria.
+  Insertar PLANT y desplazar un sufijo hasta un turno final redundante sí
+  recuperó una fresa perdida por maleza. El RNG posterior cambió: W/L de esa
+  sonda contra replay no estima mejora frente a la política rival.
+
+- **[2026-09-25 UTC] Fecha nueva de notebook no implica mejora:** tds25/hl25
+  dieron −7,81/−9,38 pp vs VQ, con IC dos vías que cruzan cero. Ninguna pasó
+  el umbral exploratorio; no se confirmaron ni enviaron. 608 episodios, ocho
+  rivales, ocho semillas nuevas, controles exactos. El 10/16 directo de tds25
+  no rescata un criterio global incumplido. No se refutan universalmente sus
+  mecanismos por este resultado. Ver `RESULTADOS_2026-09-25.md`.
+
 - **[2026-09-22] Ninguna de las 27 victorias de DSM (n1, 3174) supera a 107570947 como cinta fija** — ni en piloto (75.5% vs 67.4%), con 27 candidatas contra 1 referencia. Con 30 Majkel-2652 + 12 Majkel-3075 + 27 DSM: **107570947 es la mejor cinta fija de ~70 candidatas de los 3 mejores jugadores. El enfoque de cinta fija ha tocado techo (~1200 Elo).**
 - **[2026-09-22] Lo que Majkel cambio entre 2652 y 3075 (diff de cintas):** 3er cuadrante en d6 en vez de d9; menos animales (14 vs 20 a d12) con menos ovejas (3 vs 9) y mas gansos (4 vs 2); mas zanahoria (72 vs 41) y tomate (10 vs 0); vende huevo (162 vs 0) y casi nada de lana. **Va exactamente hacia los productos que SUBEN con rival (hinge/log) y lejos de la lana (-65%)** — lo que nuestro `compete_aware` intento y el chasis no supo ejecutar. Como cinta fija no supera a 2652: el beneficio esta en ejecutar ese plan REACCIONANDO.
 - **[2026-09-22] La cinta+guardias no deja nada en la mesa que una capa barata recupere:** cierre limpio (\$82 sin vender, \$466 en pie = 0.6%); acciones fallidas por desajuste de campo 0.1-1.0%; unico recurso libre: 4.7% de mano-turnos sin orden (5o peon), +2-4% como mucho y con riesgo de interferir.
@@ -54,6 +106,12 @@ Actualizado: 2026-09-24. Cada entrada lleva su evidencia; cada evidencia nueva s
 - **La brecha con el top se abre en d12-d16** (vamos por delante en d12; ratio 0.51 en d16, 0.67 despues). Causa inmediata: plantamos melon 2.6 dias y fresa 4.2 dias tarde. Tres arreglos mecanicos (scorer, forraje, lotes) fallaron; el arbol del lider lo resuelve de raiz.
 
 ## LOW CONFIDENCE
+
+- **[2026-09-25 UTC, hipótesis inicial corregida] PREDICT sin filtro inmediato
+  era una posible fuga.** Prueba ejecutada y rechazada: añadir el filtro causa
+  regresión clara. La sonda original omitía competencia simultánea; ver corrección
+  arriba y `forecast_signals_validated.json`. No repetir gate/off con los mismos
+  parámetros ni presentar «12/67» como precisión válida.
 
 - **[2026-09-23] La robustez de una cinta fuera de contexto es sobre todo propiedad de la FUENTE.** Media de las cintas de cada fuente vs 32 fuertes (cal2): DECEM 64.3% (11 de 13 > 55%), seek 46.1%, Boey 39.7%, Majkel-nuevo 31.6%, Vadim-nuevo 15.6%, M&M&P&Q 6.8% (n2 del ladder). El valor de un agente y el de su cinta son cosas distintas.
 - **[2026-09-23] REFUTADA: "las ordenes saturantes (SELL X 50) hacen robusta una cinta".** DECEM 3% saturantes = M&M&P&Q 3%; Vadim-nuevo es la mas saturante (21%) y de las peores. Correlacion debil observada en su lugar: las fuentes robustas emiten mas PASS (DECEM 7.0%, seek 8.0% vs 1-3% el resto) y menos animales (17-19). M&M&P&Q emite 932 ordenes BUY_ANIMAL/partida: insistencia reactiva que la cinta repite a ciegas.
