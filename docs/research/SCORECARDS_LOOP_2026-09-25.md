@@ -1,9 +1,9 @@
 # Scorecards del loop continuo — 2026-09-25 UTC
 
-Estado08:44UTC:pilotos1–16/18/19y confirm1/5/7/8/10/13completos.
+Estado09:11UTC:pilotos1–16/18/19y confirm1/5/7/8/10/13completos.
 Confirm19original completo pero INVÁLIDO por cuatro noops de hash rival.
 Confirm19_fixedhash0corre; mismo diseño, runtime fijado, no muestra adicional.
-20–25validados/encolados;17detenido. Objetivo activo.
+20–26validados/encolados;17detenido. Objetivo activo.
 
 48reproducciones/4hashseeds identifican orden de ventas rival dependiente del
 hash, mismos720estados económicos/acciones propias/rewards en seis celdas.
@@ -17,6 +17,15 @@ Piloto1.920 y confirmación1.920/2.560 pendientes; no hay resultados nuevos aún
 Analizador comprobado con fixture de1.920partidas históricas: +2,734375ppcontra
 primera referencia y0contra segunda selecciona ninguna. Noop448exacto, cero
 simulaciones nuevas. No cambiar los gates/resultados históricos de otros paneles.
+
+## Loop26 en espera: semillas por cultivo y reposición
+
+40desarrollos, noop5.752turnos, máximo327ms; seed_kind activa2/8celdas y
+seed_jit8/8.76modificaciones de compra aceptadas exactas; campo, siembras,
+alimentación, cosechas, tiendas, escapes y pérdidas conservados en desarrollo.
+Ahorro0–20monedas, ceroW/L/Tcambiados; no estimación competitiva. Piloto960
+tras25contra panel cercano, ambas referencias reales; total91variantes y
+2prototipos detenidos. Ver informe/preregistro26; no hay resultados de piloto.
 
 ## Confirmación disjunta terminada
 

@@ -24,6 +24,8 @@ SOURCES = (
     "docs/research/ESTADO_INVESTIGACION.md",
     "docs/research/REPARACION_HASH_RUNTIME_2026-09-25.md",
     "docs/research/SCORECARDS_LOOP_2026-09-25.md",
+    "docs/research/PREREG_LOOP26_SEMILLAS_2026-09-25.md",
+    "docs/research/SEMILLAS_TARDIAS_2026-09-25.md",
     "docs/research/PREREG_LOOP25_PANEL_CERCANO_2026-09-25.md",
     "docs/research/SIMILITUD_RIVALES_2026-09-25.md",
     "docs/research/FEEDBACK_0828_2026-09-25.md",

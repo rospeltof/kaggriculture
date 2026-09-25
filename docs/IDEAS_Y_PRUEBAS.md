@@ -30,6 +30,12 @@ públicas recientes, fijadas antes de resultados pendientes. Motiva similitud
 de campo observada en15replays, no supuesto de código idéntico. Mantener intactos
 los paneles19–24. Preregistro25 y manifiesto `close_panel_manifest.json`.
 
+Loop26valida semillasWHEATpor cultivo/reposición:40juegos/noop5.752,
+76compras aceptadas, conserva campo y producción en cuatro mundos. Ahorro
+0–20sin cambiosW/L/T; no adoptar por dinero. En cola tras25,960piloto, padres
+VQy top3control; no repetir una guarda terminal genérica porqueE402ya existe.
+91variantes competitivas más2prototipos detenidos. Leer informe/preregistro26.
+
 ## Ronda vigente — 2026-09-14
 
 El usuario autorizó los experimentos locales de la ronda del líder. Consultar

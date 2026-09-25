@@ -1,0 +1,38 @@
+{
+  "seeds": [
+    1065000,
+    1065001,
+    102886466,
+    1943089929
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "expected_games": 40,
+  "opponent": "submission/main_publico_arshs3_arsgorynich.py",
+  "runtime_hash_seed": "0",
+  "agents": {
+    "base": {
+      "path": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "seed_kind": {
+      "path": "results/semillas_tardias_20260925/seed_kind.py",
+      "sha256": "ac36e98c1cd9059e07ba543ffea4405535f8157a71c9949b002f04bf9c62a510"
+    },
+    "seed_jit": {
+      "path": "results/semillas_tardias_20260925/seed_jit.py",
+      "sha256": "68433a06df1a7eea7e5e2cedc7335dd8b9aac65458511ead4acba5077c6383cd"
+    },
+    "seed_noop": {
+      "path": "results/semillas_tardias_20260925/seed_noop.py",
+      "sha256": "7a9f94a664a599316ad1c8f1b05f45e475a2a4e043070120f88b0f0910f27a16"
+    },
+    "top3": {
+      "path": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    }
+  },
+  "purpose": "Registered seed commitment development, accepted mechanics and preservation checks; rewards do not select arms."
+}

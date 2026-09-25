@@ -1,5 +1,18 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte operativo 09:11 UTC — loop26 validado, confirmación principal activa
+
+Confirm19_fixedhash0 continúa con sus3.200celdas registradas; no reiniciar ni
+leer deltas parciales para ajustar variantes.20–26esperan en secuencia, un solo
+torneo principal.91variantes competitivas construidas más2prototipos detenidos.
+Loop26: dos políticas de semillas sobreVQ,40desarrollos/noop5.752/max327ms,
+76compras modificadas verificadas. Kind activa2/8celdas, JIT8/8; conserva campo,
+siembras/alimento/cosecha/tiendas/escapes y pérdidas en los cuatro mundos.
+Ahorra0–20monedas sin cambiarW/L/T. No se ha demostrado ventaja competitiva.
+Piloto960contra panel cercano tras25, confirmación disjunta si procede.
+Leer `SEMILLAS_TARDIAS_2026-09-25.md` y preregistro26. La consulta pública09:01
+no encontró cambios en las50entradas consultadas; sin nueva descarga/envío.
+
 ## Corte operativo 08:44 UTC — confirmación repetida por control inválido
 
 Piloto19completo: tres variantes+2,734375pp, señal en2/32semillas; ambas

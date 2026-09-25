@@ -13,9 +13,11 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 
 ## Índice y huellas de los documentos
 
-- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `28909d5fb5e07a75ab5c8311c076668fe8e90ddad9b17ac768cd274bc81e05c6`
+- `docs/research/ESTADO_INVESTIGACION.md` — SHA-256 `5e6efe3f893ee8481f29dde7a3715f3dfb6137c4216d256ed64a79f47d2a7b9b`
 - `docs/research/REPARACION_HASH_RUNTIME_2026-09-25.md` — SHA-256 `31eae1a445a120d27abb9cb46d7b79d9bff0902059a649d4eecf9acd26287b6d`
-- `docs/research/SCORECARDS_LOOP_2026-09-25.md` — SHA-256 `cad39961c2bcc6681d45b63e942196109bab518138d85c9bf39a5ea2e6471271`
+- `docs/research/SCORECARDS_LOOP_2026-09-25.md` — SHA-256 `7ccfff89f253fcdd393d41d2c1dcd7eb2cb41abe7cb675d2b06d764af85597cd`
+- `docs/research/PREREG_LOOP26_SEMILLAS_2026-09-25.md` — SHA-256 `ac981a6d48761a788afce6e01f3f1c48925eb8a956a61a6607cd8c3514a54e8f`
+- `docs/research/SEMILLAS_TARDIAS_2026-09-25.md` — SHA-256 `4ce2d168fe07ddf2c2d8c8e06d40527c1755be8c1e29d6b489c956b08ce70d46`
 - `docs/research/PREREG_LOOP25_PANEL_CERCANO_2026-09-25.md` — SHA-256 `593e3b4f5507f93ade4055da758c87666a706b3f9c0152f9a681eb3a04db9f56`
 - `docs/research/SIMILITUD_RIVALES_2026-09-25.md` — SHA-256 `80bdd1e4c26375fb3599cbb3f12ca499d64a0093d97009d58cd944b3cbae1277`
 - `docs/research/FEEDBACK_0828_2026-09-25.md` — SHA-256 `cf976ee23c56488b84dacf642bf6941850216cc87128a1abeaed190ad171c5ac`
@@ -53,12 +55,12 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 - `docs/research/FUENTES_PUBLICAS_0548_2026-09-25.md` — SHA-256 `d0841f7cb1b02e1e179dfa841638bae1eac6c8aba33910aea878b18332a70d1b`
 - `docs/research/AUDITORIA_PERDIDAS_CAMPO_2026-09-25.md` — SHA-256 `ebc47150559215861e814a9a0f306155e01121994940277ebebdb4055dcb1ebb`
 - `docs/research/FUENTES_PUBLICAS_0400_2026-09-25.md` — SHA-256 `6618b2cc3e28935153ee5e8f6a60bc989a9663820473828cce90e6c40c6cd2b2`
-- `docs/research/IDEAS_VIVAS_2026-09-25.md` — SHA-256 `19da81f8c2192c9ac538b7f9a431a9726f37b3e5af3f1f889b9030976dd488f1`
+- `docs/research/IDEAS_VIVAS_2026-09-25.md` — SHA-256 `40d885123e007c5a7180faff682219953cf4588fb36dde384533f27eec3f4498`
 - `docs/research/FEEDBACK_TOP3_2026-09-25.md` — SHA-256 `1b05c27fc6f3c9309f7d63a1b7d5ee39509bb0a7e475c2e4f6bb8668504e0a5d`
 - `docs/research/LIDER_Y_FUENTES_2026-09-25.md` — SHA-256 `f940d574bb7e3d43785ee31a100204a8c3a7c7587009f9fcbb02b1ef8df07daf`
 - `docs/research/DECISION_ENVIO_TOP3_2026-09-25.md` — SHA-256 `a17b15f6d0db894ec64c3dbd25ce08ac2553f25d2528682b129a1f4a779cbde6`
 - `docs/research/RESULTADOS_2026-09-25.md` — SHA-256 `98349e7d3065ae9fb91d396d089c4aa95f1841d5c8b844242add6ba3e8e6965c`
-- `docs/research/RESEARCH_BELIEFS.md` — SHA-256 `d0ceca7890b23b1d949a0a9bf0b44cc090efd62731250bd0bebedda5a67d7909`
+- `docs/research/RESEARCH_BELIEFS.md` — SHA-256 `3ff889e30fe2f7448527f0bf5fa14100c1a2ce15b89c98484b6895ecb92fd7be`
 - `docs/research/HARNESS_VS_LEADERBOARD.md` — SHA-256 `49b3cfbdb4cc97efbb3c4e31590d153bda48f3426b3d606c9a3bbbc66d246a05`
 - `docs/research/SUBMISSION_HISTORY.json` — SHA-256 `5c16ab6cc2104612e5feb744df44a821f86835e5018b939315a714ecd1ac423c`
 - `docs/research/PREREG_VQ_2026-09-24.md` — SHA-256 `7f4b6b42db6dbeeb3981cd0fa56fbf071f4b4f6eec121ceeb292b2b0ca6ebab5`
@@ -66,7 +68,7 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 - `docs/research/PREREG_FORECAST_GATE_2026-09-25.md` — SHA-256 `bf5dd9fbf03de91f1fbf95a557600d969b3c01f143f849271a827abc87cfd2be`
 - `docs/research/PREREG_PUBLIC_REFRESH_2026-09-25.md` — SHA-256 `bc60b8ef2b9580510782f1801bcac5e43f4f5c8524f9a39bd9a7c587812a12cc`
 - `docs/PROMPT_SEGUNDO_CEREBRO.md` — SHA-256 `e319f3917d23defc367804e464d3d13be14d21061eb2ca73fede8977d4f04c07`
-- `AGENTS.md` — SHA-256 `4198320b223793bf552a388089057041cff9dbce95fea57661951871306ca6c1`
+- `AGENTS.md` — SHA-256 `50b07891294b8088ff02610baf1050805bd7f454e2ddf56356f0c6c37246b52a`
 - `docs/ESTADO_ACTUAL.md` — SHA-256 `cb368cef5250eede256fee3eecc4a6c87da87bf8644981c884ffff1a2ef01948`
 - `docs/RESULTADOS_LIDER_2026-09-14.md` — SHA-256 `efb3b4c09053f13d648e8019a7ba8363f68a24c234b04b4869754e82877c648b`
 - `docs/ANALISIS_LIDER_2026-09-14.md` — SHA-256 `63e3448307868dec34c5c67a697f052f4bc31b4437bc7781b4e702b1d234db53`
@@ -76,7 +78,7 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 - `docs/BRIEFING.md` — SHA-256 `450b8b70d8959deedb39a3907ab18ddb5715fa07c92cc24789f07fb4a581ef3d`
 - `docs/AUDITORIA_LLM.md` — SHA-256 `f5637e70de4bd1f6427f68b8d4bdfc43b914c16572f005a663a9c813e4a180f0`
 - `docs/METODO.md` — SHA-256 `f3dba1825cb10bc6c7d3a668da2c5220f8b198f83a8384a1af7732c55e3231c0`
-- `docs/IDEAS_Y_PRUEBAS.md` — SHA-256 `88897345a01ea8d3b8782db03e5cbc3cbbd4a9d0caf9a56e89a69132a9bdbcb1`
+- `docs/IDEAS_Y_PRUEBAS.md` — SHA-256 `f129cf0e12c8252dc038d0311cd2e5459d96f67061ec90d22d8b40e289b295aa`
 - `docs/RULES.md` — SHA-256 `068679a3a092baecf46c929f6c3f44d31ff3d2ab11be39323d3f59e6d526a268`
 - `docs/EXPERIMENTO_LOTES_SEMILLAS.md` — SHA-256 `9aa0937876ed4c4b47f3ae549fba9317af44d46ae478fe2ccdd67e366cb4e01d`
 - `docs/evidencia/lotes_semillas/README.md` — SHA-256 `7b4beb82362bb17bd01b39cec158c7596acd36c066ff0df5ff9bf025c0367e3d`
@@ -87,6 +89,19 @@ Los enlaces se conservan como en cada fuente; las rutas junto a SOURCE indican d
 ## SOURCE: docs/research/ESTADO_INVESTIGACION.md
 
 # Estado de investigación — leer primero para continuar
+
+## Corte operativo 09:11 UTC — loop26 validado, confirmación principal activa
+
+Confirm19_fixedhash0 continúa con sus3.200celdas registradas; no reiniciar ni
+leer deltas parciales para ajustar variantes.20–26esperan en secuencia, un solo
+torneo principal.91variantes competitivas construidas más2prototipos detenidos.
+Loop26: dos políticas de semillas sobreVQ,40desarrollos/noop5.752/max327ms,
+76compras modificadas verificadas. Kind activa2/8celdas, JIT8/8; conserva campo,
+siembras/alimento/cosecha/tiendas/escapes y pérdidas en los cuatro mundos.
+Ahorra0–20monedas sin cambiarW/L/T. No se ha demostrado ventaja competitiva.
+Piloto960contra panel cercano tras25, confirmación disjunta si procede.
+Leer `SEMILLAS_TARDIAS_2026-09-25.md` y preregistro26. La consulta pública09:01
+no encontró cambios en las50entradas consultadas; sin nueva descarga/envío.
 
 ## Corte operativo 08:44 UTC — confirmación repetida por control inválido
 
@@ -874,10 +889,10 @@ sonda de localización `confirm19.order_origin.*`, bajo
 
 # Scorecards del loop continuo — 2026-09-25 UTC
 
-Estado08:44UTC:pilotos1–16/18/19y confirm1/5/7/8/10/13completos.
+Estado09:11UTC:pilotos1–16/18/19y confirm1/5/7/8/10/13completos.
 Confirm19original completo pero INVÁLIDO por cuatro noops de hash rival.
 Confirm19_fixedhash0corre; mismo diseño, runtime fijado, no muestra adicional.
-20–25validados/encolados;17detenido. Objetivo activo.
+20–26validados/encolados;17detenido. Objetivo activo.
 
 48reproducciones/4hashseeds identifican orden de ventas rival dependiente del
 hash, mismos720estados económicos/acciones propias/rewards en seis celdas.
@@ -891,6 +906,15 @@ Piloto1.920 y confirmación1.920/2.560 pendientes; no hay resultados nuevos aún
 Analizador comprobado con fixture de1.920partidas históricas: +2,734375ppcontra
 primera referencia y0contra segunda selecciona ninguna. Noop448exacto, cero
 simulaciones nuevas. No cambiar los gates/resultados históricos de otros paneles.
+
+## Loop26 en espera: semillas por cultivo y reposición
+
+40desarrollos, noop5.752turnos, máximo327ms; seed_kind activa2/8celdas y
+seed_jit8/8.76modificaciones de compra aceptadas exactas; campo, siembras,
+alimentación, cosechas, tiendas, escapes y pérdidas conservados en desarrollo.
+Ahorro0–20monedas, ceroW/L/Tcambiados; no estimación competitiva. Piloto960
+tras25contra panel cercano, ambas referencias reales; total91variantes y
+2prototipos detenidos. Ver informe/preregistro26; no hay resultados de piloto.
 
 ## Confirmación disjunta terminada
 
@@ -1746,6 +1770,171 @@ VQbase y top3control en piloto2.560/32semillas pendiente tras23.89variantes
 construidas más2prototipos detenidos. Reproducción rivalgrabadoGrimReaper
 −3070→313; no estima WRreactivo. Sonda384escenarios/1152piernas exactas explica
 interacción con horario rival/consumo; no selección por dinero sintético.
+
+
+
+---
+
+## SOURCE: docs/research/PREREG_LOOP26_SEMILLAS_2026-09-25.md
+
+# Loop26: presupuesto de semillas por cultivo y compra justo antes de sembrar
+
+Registrado antes de construir o ejecutar las candidatas. Auditoría de18replays
+ya seleccionados por recencia, fuentes reales reproducidas:54semillasWHEAT
+residuales en16partidas y7CARROTen2. Desde624se compraron99WHEAT/255CARROT.
+Manteniendo congeladas las acciones observadas y respetando validación atómica
+dePLANT, se podrían omitir42comprasWHEATy7CARROT. Es un diagnóstico con futuro
+conocido, no una política desplegable ni una estimación de mejora competitiva.
+
+La guardaE402ya limita compras desde624: suma todos losPLANTfuturosWHEATyCARROT
+y usa esa misma cota para cada cultivo. No repetir una guarda terminal genérica.
+La conversiónCApuede cambiarWHEATaCARROThasta día28; no usar una cota de zanahoria
+que ignore futuras conversiones. No volver a crop_end26, que modificaba siembra.
+
+## Dos políticas sobre VQ, referencia real de mayor rating observado
+
+- `seed_kind`: conservar sólo compras deWHEATnecesarias para el número de
+  PLANTWHEATen la cinta propia restante, más todas las solicitudesWHEATpendientes
+  de reparación. Misma ventana624–718. Disponibles: semillas actuales menos
+  todas las solicitudesPLANTWHEATde este turno, como cota conservadora.
+  Recortar cantidades, conservar posición de todas las demás órdenes y usar
+  `[]` para cero. No tocarCARROTni agregar compras.
+- `seed_jit`: desde624, sustituir comprasWHEATpor la necesidad del siguiente
+  turno nativo más todos losPLANTWHEATpendientes, descontando semillas tras
+  acciones actuales proyectadas con `_r127_fields`. Puede añadir una compra
+  donde el padre no compra: usar su primer slotWHEATsi existe, un slot vacío
+  o el final de la cola si hay espacio. No mover otras órdenes. Presupuesto
+  conservador `_r97_budget`, sin acreditar ventas actuales. Si falta slot o
+  fondos, conservar la acción padre completa y registrar rechazo. Nunca
+  omitir una compra parcial del padre y luego fallar la reposición.
+
+Ambas reciben sólo observación actual y planes propios existentes. Sin acceso
+a semillas de episodios, replay futuro ni acciones privadas rivales. JIT
+necesita probar explícitamente reposición y validación atómica: una semilla
+no utilizada puede ser necesaria para que otra siembra del mismo turno pase
+el control de cantidad total solicitado. No inferir seguridad por stock final.
+
+## Desarrollo y criterios de integridad
+
+Cuatro mundos fijados:1065000/1065001 nuevos,102886466 (residual observado) y
+1943089929 (sin sobrante observado). Ambos asientos contra arshs3reactivo,
+VQ/noopVQ/top3control/seed_kind/seed_jit:40partidas. RuntimePYTHONHASHSEED0.
+Noop5.752turnos exactos; fuentes y órdenes antes del motor archivadas, caja
+conciliada y720DONE. Compras/siembras efectivamente aceptadas, reservas antes
+de cadaPLANT, unidades en bolsas y semillas finales. Registrar slots, fondos,
+modificaciones, errores, tiempo y escapes. Candidato con menos siembras,
+alimentación, cosecha o cambios de rutas no explicados queda detenido antes
+del piloto; no aprobarlo por ahorrar dinero. No elegir brazos por rewards
+de desarrollo. Si es necesario reparar implementación, conservar versiones.
+
+## Evaluación nueva, panel cercano explícito
+
+Usar el harness existente, un torneo grande tras25. Piloto1066000–1066015,
+ambos asientos contra cuatro fuentes congeladas: mirrorVQ, mirrorTop3, V7yHS4
+del panel25. Cinco brazos contando base/noop/top3:960partidas. Ambas candidatas
+se comparan con VQy top3en los mismos rivales, excluyendo cruces entre brazos.
+Hasta dos con delta>0frente a ambas referencias, orden por menor delta y nombre.
+
+Confirmación1067000–1067031, mismos cuatro rivales más Harvest68y arshs3,
+1.920/2.560partidas para una/dos seleccionadas. Gate≥3ppfrente aVQy≥0frente
+atop3, peor rival≥−20ppfrente a ambas, acciones propias distintas en≥2semillas,
+controles exactos, mecanismo y tiempo. Intervalos por semilla y dos vías;
+copias/forks no se convierten en familias independientes por tener otro nombre.
+Reportar dinero sólo como diagnóstico. Sin selección positiva, continuar otra
+hipótesis; sin envío automático. Antes de enviar, sensibilidad a hashes alternativos
+y revisión del agente activo que sería desplazado según la adenda de runtime.
+
+Esta población es distinta del panel antiguo; no reescribe sus resultados ni
+las decisiones previas. Los bloques19–25 conservan fuentes y diseños.
+
+
+
+---
+
+## SOURCE: docs/research/SEMILLAS_TARDIAS_2026-09-25.md
+
+# Semillas tardías: auditoría y desarrollo del loop26
+
+Corte: 2026-09-25, 09:11 UTC. Dos políticas nuevas sobre VQ, todavía sin
+resultados competitivos. El loop26 espera al bloque25; no hay otro torneo
+principal ejecutándose. Registro previo: `PREREG_LOOP26_SEMILLAS_2026-09-25.md`.
+
+## Evidencia que motivó la prueba
+
+`auditar_semillas_tardias.py` concilia 18 replays ya elegidos por recencia en
+0653/0742/0828, sin escoger victorias o derrotas. Fuentes exactas reproducidas
+anteriormente, compras aceptadas en ledger y consumo de semillas por turno.
+Quedaron 54 semillas de trigo en 16 partidas y 7 de zanahoria en dos. Después
+del paso624 se compraron 99 de trigo y 255 de zanahoria.
+
+Una auditoría con órdenes futuras congeladas permite quitar 42 compras de
+trigo (420 monedas) y 7 de zanahoria (140 monedas), respetando la validación
+atómica de PLANT: no basta con conservar el consumo realizado, porque el motor
+puede exigir todas las semillas solicitadas para aceptar una acción. Esto es
+un diagnóstico con futuro conocido, no una política desplegable ni beneficio
+competitivo demostrado.
+
+La guarda E402 ya recorta compras tardías, pero utiliza la suma de PLANT de
+trigo y zanahoria como cota para cada cultivo. La conversión CA puede cambiar
+trigo por zanahoria hasta el día28. Se mantiene intacta la compra de zanahoria.
+
+## Políticas congeladas y desarrollo
+
+- `seed_kind`, SHA ac36e98c1cd9059e07ba543ffea4405535f8157a71c9949b002f04bf9c62a510:
+  recorta trigo usando sólo PLANT WHEAT restantes y reparaciones pendientes.
+- `seed_jit`, SHA 68433a06df1a7eea7e5e2cedc7335dd8b9aac65458511ead4acba5077c6383cd:
+  reserva semillas para el próximo turno nativo y todas las reparaciones
+  pendientes; proyecta las acciones actuales y puede reponer donde el padre
+  no compra. Rechazo por fondos/slots conserva la acción padre completa.
+
+Ambas operan desde624 hasta718, con observación y planes propios disponibles.
+No alteran comandos de campo ni acceden a futuro rival o a la semilla del mundo.
+El total construido pasa a 91 variantes competitivas y dos prototipos17
+retenidos; estos últimos siguen sin piloto.
+
+40 juegos de desarrollo: cuatro mundos, ambos asientos contra arshs3 reactivo,
+VQ/noopVQ/top3 y las dos variantes. Runtime fijo PYTHONHASHSEED=0. Noop exacto
+5.752 turnos; máximo327,19ms. Se archivan fuentes, ledger y eventos físicos de
+unidades antes/después de la aplicación del motor. Validación PASS.
+
+| Mundo | Trigo comprado base/kind/JIT | Semillas finales base/kind/JIT | Ahorro kind/JIT | Turnos de mercado cambiados kind/JIT |
+|---|---|---|---|---|
+|1065000|164 / 163 / 163|1 / 0 / 0|10 / 10|1 / 11|
+|1065001|166 / 166 / 166|0 / 0 / 0|0 / 0|0 / 10|
+|102886466|160 / 160 / 158|5 / 5 / 3|0 / 20|0 / 6|
+|1943089929|166 / 166 / 166|0 / 0 / 0|0 / 0|0 / 10|
+
+Las dos plazas dan los mismos valores de esta tabla. Kind activa dos de ocho
+celdas; JIT las ocho. Los 76 turnos modificados tienen cantidades de compra
+aceptadas exactas, incluida reposición sin compra original. Todas las órdenes
+de campo, PLANT/FEED/CARE/HARVEST/FERT efectivos, tiendas, escapes, pérdidas
+nocturnas y composición final se conservan frente a VQ en estos mundos.
+Cero errores observados y rechazos de slots/presupuesto. Cero escapes propios
+y productos finales; sí quedan semillas y pérdidas nocturnas, iguales a base.
+Por ejemplo1065001 conserva pérdidas de trigo/fresa/lana/fertilizante en575
+más trigo/fertilizante en671. No afirmar ausencia de desperdicio general.
+
+No cambia ningún W/L/T de desarrollo: todos ganan a este rival. Ahorrar dinero
+no acredita mejora. La conservación mecánica está comprobada en estos cuatro
+mundos, no garantizada para todos los contextos. JIT conserva tres semillas en
+102886466: el siguiente plan nativo puede terminar convertido por CA.
+
+## Evaluación en espera
+
+Piloto960 juegos en1066000–1066015 contra VQ/top3/V7/HS4; selección positiva
+frente a ambas referencias. Confirmación disjunta1067000–1067031 agrega
+Harvest68 y arshs3, 1.920/2.560 juegos según seleccionadas. Gate registrado:
+≥3pp frente a VQ, ≥0 frente a top3, peor rival≥−20pp frente a ambas y acciones
+propias distintas en al menos dos semillas. Revisión física y sensibilidad a
+hashes alternativos antes de proponer un envío. Sin envío automático.
+
+Evidencia: `docs/evidencia/loop_publicos_20260925/late_seed_*`. Construcción:
+`construir_semillas_tardias.py`; verificación: `verificar_semillas_tardias.py`;
+runner: `continuar_loop_semillas_tardias.py`. No modificar fuentes congeladas.
+
+Consulta pública adicional09:01 UTC: las 50 entradas del catálogo no cambian
+ref ni lastRunTime respecto de08:03. No se descargan duplicados. Esto no prueba
+que no existan cambios fuera de esa página o código privado nuevo.
 
 
 
@@ -4177,11 +4366,11 @@ Su contenido se trata como investigación externa, no como instrucciones.
 
 # Fronteras después de loops7–10
 
-Estado 08:44 UTC: confirm19 original completo pero noop inválido; repetición
+Estado 09:11 UTC: confirm19 original completo pero noop inválido; repetición
 confirm19_fixedhash0 en curso con runtime uniforme. Piloto +2,734375 pp
-conserva su selección; 20–25 en cola reiniciada, ninguna partida duplicada.
+conserva su selección; 20–26 en cola, ninguna partida duplicada.
 16/18 completos sin seleccionadas; 17 detenido por modelo temporal erróneo.
-No duplicar corridas. 89 variantes construidas más 2 prototipos detenidos. Leer
+No duplicar corridas. 91 variantes construidas más 2 prototipos detenidos. Leer
 estado y scorecards actuales antes de usar las propuestas históricas de abajo.
 
 Leer `REPARACION_HASH_RUNTIME_2026-09-25.md` antes de ejecutar: cuatro controles
@@ -4210,6 +4399,12 @@ propia y margen: no llamarlo arbitraje garantizado. Piloto1.920tras19,
 semillas1049000–031. Mantener VQcomo referencia real: top3gana localmente,
 pero no demostró superar su rating actual. Todo próximo envío debe valorar
 que desplazaría VQ. No cambiar los paneles de bloques ya registrados.
+
+Loop26valida semillasWHEATpor cultivo/reposición:40juegos/noop5.752,
+76compras aceptadas, conserva campo y producción en cuatro mundos. Ahorro
+0–20sin cambiosW/L/T; no adoptar por dinero. En cola tras25,960piloto, padres
+VQy top3control; no repetir una guarda terminal genérica porqueE402ya existe.
+91variantes competitivas más2prototipos detenidos. Leer informe/preregistro26.
 
 ## Nueva prioridad: financiar alimento antes de cambiar vacas por ovejas
 
@@ -4995,6 +5190,13 @@ Las fuentes exactas están en `.sources.tgz`; los replays originales siguen en
 Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nueva sube o baja la creencia.
 
 ## HIGH CONFIDENCE
+
+- **[2026-09-25, semillas tardías] La reserva terminal existente mezcla cultivos.**
+  E402 usa PLANT de trigo+zanahoria como cota de compra de cada uno;18replays
+  conservan54semillasWHEATy7CARROT. Dos políticas nuevas sólo de trigo conservan
+  acciones y ejecución de campo en40desarrollos/noop5.752, ahorran0–20monedas
+  sin cambiosW/L/T. Hay que respetar PLANT atómico y conversionesCA. No prueba
+  ventaja global ni ausencia de pérdidas nocturnas. Ver SEMILLAS_TARDIAS.
 
 - **[2026-09-25, confirm19] Hashes de proceso distintos pueden alterar la
   acción emitida por la misma fuente externa.** Cuatro noops difieren sólo
@@ -6547,7 +6749,8 @@ y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_publicos_0548.py`, `continuar_loop_trigo_reventa.py` y
 `continuar_loop_reventa_town.py`, `continuar_loop_senales_extra.py` y
 `continuar_loop_harvest68.py`, `continuar_loop_suministro_ovino.py` y
-`continuar_loop_adelanto_trigo.py` y `continuar_loop_panel_cercano.py` encadenan bloques
+`continuar_loop_adelanto_trigo.py`, `continuar_loop_panel_cercano.py` y
+`continuar_loop_semillas_tardias.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
 terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
 (una de64 partidas cambia, +1,5625pp). Confirm5 tomate−21,591pp: REJECTED.
@@ -6651,6 +6854,12 @@ ni productos finales. Activa en1/3mundos; cambia una cosecha3CARROT→3WHEATy
 permite adelantar ventas. Piloto2560tras23con VQbase/top3control; no mezclar19/20.
 89variantes más2prototipos. Sonda384escenariosde mercado separa compra/venta;
 no hay mejora garantizada sin considerar rival. Catálogo08:02sin cambios.
+
+Loop26valida semillasWHEATpor cultivo/reposición:40juegos/noop5.752,
+76compras aceptadas, conserva campo y producción en cuatro mundos. Ahorro
+0–20sin cambiosW/L/T; no adoptar por dinero. En cola tras25,960piloto, padres
+VQy top3control; no repetir una guarda terminal genérica porqueE402ya existe.
+91variantes competitivas más2prototipos detenidos. Leer informe/preregistro26.
 
 ## Estado y autorización
 
@@ -8013,6 +8222,12 @@ Loop25: prueba separada de cinco fuentes existentes contra VQ/top3 y fuentes
 públicas recientes, fijadas antes de resultados pendientes. Motiva similitud
 de campo observada en15replays, no supuesto de código idéntico. Mantener intactos
 los paneles19–24. Preregistro25 y manifiesto `close_panel_manifest.json`.
+
+Loop26valida semillasWHEATpor cultivo/reposición:40juegos/noop5.752,
+76compras aceptadas, conserva campo y producción en cuatro mundos. Ahorro
+0–20sin cambiosW/L/T; no adoptar por dinero. En cola tras25,960piloto, padres
+VQy top3control; no repetir una guarda terminal genérica porqueE402ya existe.
+91variantes competitivas más2prototipos detenidos. Leer informe/preregistro26.
 
 ## Ronda vigente — 2026-09-14
 

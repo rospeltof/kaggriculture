@@ -4,6 +4,13 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-25, semillas tardías] La reserva terminal existente mezcla cultivos.**
+  E402 usa PLANT de trigo+zanahoria como cota de compra de cada uno;18replays
+  conservan54semillasWHEATy7CARROT. Dos políticas nuevas sólo de trigo conservan
+  acciones y ejecución de campo en40desarrollos/noop5.752, ahorran0–20monedas
+  sin cambiosW/L/T. Hay que respetar PLANT atómico y conversionesCA. No prueba
+  ventaja global ni ausencia de pérdidas nocturnas. Ver SEMILLAS_TARDIAS.
+
 - **[2026-09-25, confirm19] Hashes de proceso distintos pueden alterar la
   acción emitida por la misma fuente externa.** Cuatro noops difieren sólo
   en hash rival;48reproducciones/4hashseeds reproducen ambas trazas, mismas

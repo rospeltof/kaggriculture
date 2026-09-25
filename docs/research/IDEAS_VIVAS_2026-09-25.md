@@ -1,10 +1,10 @@
 # Fronteras después de loops7–10
 
-Estado 08:44 UTC: confirm19 original completo pero noop inválido; repetición
+Estado 09:11 UTC: confirm19 original completo pero noop inválido; repetición
 confirm19_fixedhash0 en curso con runtime uniforme. Piloto +2,734375 pp
-conserva su selección; 20–25 en cola reiniciada, ninguna partida duplicada.
+conserva su selección; 20–26 en cola, ninguna partida duplicada.
 16/18 completos sin seleccionadas; 17 detenido por modelo temporal erróneo.
-No duplicar corridas. 89 variantes construidas más 2 prototipos detenidos. Leer
+No duplicar corridas. 91 variantes construidas más 2 prototipos detenidos. Leer
 estado y scorecards actuales antes de usar las propuestas históricas de abajo.
 
 Leer `REPARACION_HASH_RUNTIME_2026-09-25.md` antes de ejecutar: cuatro controles
@@ -33,6 +33,12 @@ propia y margen: no llamarlo arbitraje garantizado. Piloto1.920tras19,
 semillas1049000–031. Mantener VQcomo referencia real: top3gana localmente,
 pero no demostró superar su rating actual. Todo próximo envío debe valorar
 que desplazaría VQ. No cambiar los paneles de bloques ya registrados.
+
+Loop26valida semillasWHEATpor cultivo/reposición:40juegos/noop5.752,
+76compras aceptadas, conserva campo y producción en cuatro mundos. Ahorro
+0–20sin cambiosW/L/T; no adoptar por dinero. En cola tras25,960piloto, padres
+VQy top3control; no repetir una guarda terminal genérica porqueE402ya existe.
+91variantes competitivas más2prototipos detenidos. Leer informe/preregistro26.
 
 ## Nueva prioridad: financiar alimento antes de cambiar vacas por ovejas
 

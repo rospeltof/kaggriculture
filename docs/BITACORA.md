@@ -1,5 +1,21 @@
 # Bitácora de experimentos
 
+## 2026-09-25, 09:11 UTC — Semillas tardías validadas y loop26 en espera
+
+Auditoría18replays de recencia concilia compras/consumo:54semillasWHEATy7CARROT
+residuales; quitar42/7compras sería factible con órdenes futuras congeladas,
+no una política desplegable. E402ya recorta compras con cota combinada de ambos
+cultivos. Dos reglas nuevas sobreVQ separan cotaWHEAT y reposición por turno.
+
+40desarrollos/noop5.752/max327,19ms válidos,76ediciones de compras aceptadas,
+órdenes de campo/siembra/alimento/cosecha/tiendas/pérdidas/escapes preservados.
+Kind activa2/8celdas yJIT8/8; ahorros0–20monedas, ningúnW/L/Tnuevo. No usar
+ahorro como criterio ni confundir cero productos finales con cero pérdidas.
+91variantes competitivas más2prototipos detenidos. Loop26espera25, piloto960,
+confirmación nueva si ambas referencias superadas. Ver SEMILLAS_TARDIAS y
+preregistro26. Confirm19_fixedhash0sigue activo; no duplicarlo. Catálogo09:01
+sin cambios en50entradas, sin descargar fuentes repetidas.
+
 ## 2026-09-25, 08:44 UTC — Fallo noop identificado y confirmación recuperada
 
 Confirm19cerró3.200episodios08:35UTC. El verificador abortó por4/832noops:

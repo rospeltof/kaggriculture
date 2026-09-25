@@ -28,7 +28,8 @@ y `docs/research/SCORECARDS_LOOP_2026-09-25.md` antes de lanzar corridas.
 `continuar_loop_publicos_0548.py`, `continuar_loop_trigo_reventa.py` y
 `continuar_loop_reventa_town.py`, `continuar_loop_senales_extra.py` y
 `continuar_loop_harvest68.py`, `continuar_loop_suministro_ovino.py` y
-`continuar_loop_adelanto_trigo.py` y `continuar_loop_panel_cercano.py` encadenan bloques
+`continuar_loop_adelanto_trigo.py`, `continuar_loop_panel_cercano.py` y
+`continuar_loop_semillas_tardias.py` encadenan bloques
 registrados; no duplicar procesos ni alterar sus agentes en ejecución. Confirm1
 terminó: top3 +10,795 pp, candidata real; loop3 sin mejoras, loop4 inconcluso
 (una de64 partidas cambia, +1,5625pp). Confirm5 tomate−21,591pp: REJECTED.
@@ -132,6 +133,12 @@ ni productos finales. Activa en1/3mundos; cambia una cosecha3CARROT→3WHEATy
 permite adelantar ventas. Piloto2560tras23con VQbase/top3control; no mezclar19/20.
 89variantes más2prototipos. Sonda384escenariosde mercado separa compra/venta;
 no hay mejora garantizada sin considerar rival. Catálogo08:02sin cambios.
+
+Loop26valida semillasWHEATpor cultivo/reposición:40juegos/noop5.752,
+76compras aceptadas, conserva campo y producción en cuatro mundos. Ahorro
+0–20sin cambiosW/L/T; no adoptar por dinero. En cola tras25,960piloto, padres
+VQy top3control; no repetir una guarda terminal genérica porqueE402ya existe.
+91variantes competitivas más2prototipos detenidos. Leer informe/preregistro26.
 
 ## Estado y autorización
 

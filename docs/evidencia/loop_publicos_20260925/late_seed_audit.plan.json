@@ -1,0 +1,151 @@
+{
+  "created_at": "2026-09-25T08:52:25.770297+00:00",
+  "inputs": [
+    {
+      "episode": 113181522,
+      "policy": "top3",
+      "seat": 1,
+      "path": "replays/top3_feedback_0653/episode-113181522-replay.json",
+      "replay_sha256": "cbee41fa6515153a9b03eb5d72b0da9226651a56268ef7622e9b9868d304ce3d",
+      "ledger": "docs/evidencia/loop_publicos_20260925/forecast_pair_replays_0653.113181522.top3.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113181570,
+      "policy": "top3",
+      "seat": 1,
+      "path": "replays/top3_feedback_0653/episode-113181570-replay.json",
+      "replay_sha256": "c24ba8ef9753bfe468cdbde0aa3471ef1f8dc8022e45d6521374ce84813b9252",
+      "ledger": "docs/evidencia/loop_publicos_20260925/forecast_pair_replays_0653.113181570.top3.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113174624,
+      "policy": "top3",
+      "seat": 0,
+      "path": "replays/top3_feedback_0653/episode-113174624-replay.json",
+      "replay_sha256": "be83a6423b0a152abc8497c814847f37e8b4b6c0e9bd58891ac58c73225cd5df",
+      "ledger": "docs/evidencia/loop_publicos_20260925/forecast_pair_replays_0653.113174624.top3.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113168442,
+      "policy": "top3",
+      "seat": 1,
+      "path": "replays/top3_feedback_0653/episode-113168442-replay.json",
+      "replay_sha256": "60640c03084cf35ab79b5d87946ebd212b0931773b2a9c31b28ec5b61d6698f1",
+      "ledger": "docs/evidencia/loop_publicos_20260925/forecast_pair_replays_0653.113168442.top3.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113181013,
+      "policy": "vq",
+      "seat": 1,
+      "path": "replays/vq_feedback_0653/episode-113181013-replay.json",
+      "replay_sha256": "9feef5259e9d6f1a76c6e348c9b855c827550641dca0083c0cc2b46cddd24d7d",
+      "ledger": "docs/evidencia/loop_publicos_20260925/forecast_pair_replays_0653.113181013.vq.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113180865,
+      "policy": "vq",
+      "seat": 0,
+      "path": "replays/vq_feedback_0653/episode-113180865-replay.json",
+      "replay_sha256": "d4bf333e0e124b0ccb6e13b37832c8171a8aa7ebd9cc89cb9dcd3b818a5e5e5e",
+      "ledger": "docs/evidencia/loop_publicos_20260925/forecast_pair_replays_0653.113180865.vq.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113176293,
+      "policy": "vq",
+      "seat": 0,
+      "path": "replays/vq_feedback_0653/episode-113176293-replay.json",
+      "replay_sha256": "3ef0e77e29008863dab8841617a7c321d4fef493b7df4509e1f4aca18459d453",
+      "ledger": "docs/evidencia/loop_publicos_20260925/forecast_pair_replays_0653.113176293.vq.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113173184,
+      "policy": "vq",
+      "seat": 0,
+      "path": "replays/vq_feedback_0653/episode-113173184-replay.json",
+      "replay_sha256": "ea26d8398f92e6283678f494e1a37634a3e5631bd54f6e5ed139d6d6ad09a5a3",
+      "ledger": "docs/evidencia/loop_publicos_20260925/forecast_pair_replays_0653.113173184.vq.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113197940,
+      "policy": "top3",
+      "seat": 0,
+      "path": "replays/top3_feedback_0742/episode-113197940-replay.json",
+      "replay_sha256": "04b5fc32e9ae7f5bf7e41e41b231bc82f887671c6284acdbc9a25a0fd0c4aaa4",
+      "ledger": "docs/evidencia/loop_publicos_20260925/feedback_0742.113197940.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113191143,
+      "policy": "top3",
+      "seat": 0,
+      "path": "replays/top3_feedback_0742/episode-113191143-replay.json",
+      "replay_sha256": "87a76d02bd387a2cf80d77c544fb643565bcdbf0c8893344f1547e32abbf8984",
+      "ledger": "docs/evidencia/loop_publicos_20260925/feedback_0742.113191143.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113186794,
+      "policy": "top3",
+      "seat": 0,
+      "path": "replays/top3_feedback_0742/episode-113186794-replay.json",
+      "replay_sha256": "7f7f5fde6f369ab1be75b50d13a551894a273f6a32f5d78b884d49b5205e2dae",
+      "ledger": "docs/evidencia/loop_publicos_20260925/feedback_0742.113186794.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113187263,
+      "policy": "top3",
+      "seat": 0,
+      "path": "replays/top3_feedback_0742/episode-113187263-replay.json",
+      "replay_sha256": "6004da4e4b264d1285e6c062e030318de24bc88b13fd86c6a4bbac7443dba889",
+      "ledger": "docs/evidencia/loop_publicos_20260925/feedback_0742.113187263.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113198597,
+      "policy": "vq",
+      "seat": 0,
+      "path": "replays/vq_feedback_0742/episode-113198597-replay.json",
+      "replay_sha256": "0a3235de778ea8b6277491cc3651c6caf55d7776cb0964fea685e612a38a45f6",
+      "ledger": "docs/evidencia/loop_publicos_20260925/feedback_0742.113198597.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113194322,
+      "policy": "vq",
+      "seat": 1,
+      "path": "replays/vq_feedback_0742/episode-113194322-replay.json",
+      "replay_sha256": "22f97e95cef9c6f4ba2872ea451c7aad3bcde3d351c73e75a413109247b4c883",
+      "ledger": "docs/evidencia/loop_publicos_20260925/feedback_0742.113194322.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113187518,
+      "policy": "vq",
+      "seat": 1,
+      "path": "replays/vq_feedback_0742/episode-113187518-replay.json",
+      "replay_sha256": "e2f3fa9c2420ef1db2ca2cdf745e6e10b3e537dfed44ff89db4c5fea458728c0",
+      "ledger": "docs/evidencia/loop_publicos_20260925/feedback_0742.113187518.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113205258,
+      "policy": "top3",
+      "seat": 0,
+      "path": "replays/top3_feedback_0828/episode-113205258-replay.json",
+      "replay_sha256": "b14b05b68ab9338f051dc0e0059a6145b31610feac49219489873292c5d57502",
+      "ledger": "docs/evidencia/loop_publicos_20260925/feedback_0828.113205258.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113205022,
+      "policy": "top3",
+      "seat": 1,
+      "path": "replays/top3_feedback_0828/episode-113205022-replay.json",
+      "replay_sha256": "362bb666fd83c57122ffd293eafba881a815bdee7871652d4a5c34647df1b522",
+      "ledger": "docs/evidencia/loop_publicos_20260925/feedback_0828.113205022.ledger.jsonl.gz"
+    },
+    {
+      "episode": 113206011,
+      "policy": "vq",
+      "seat": 0,
+      "path": "replays/vq_feedback_0828/episode-113206011-replay.json",
+      "replay_sha256": "3f3e441743148bb1055fb84e70fd52a6a5a4b49d51eb3e7f388589d24d01ef29",
+      "ledger": "docs/evidencia/loop_publicos_20260925/feedback_0828.113206011.ledger.jsonl.gz"
+    }
+  ],
+  "late_from": 624,
+  "rule": "All18 already recency-selected source controls, no outcome filter. Seed accounting from accepted market ledger and consecutive observations. Frozen-command removal diagnostic only; not a deployable policy or causal profit estimate."
+}

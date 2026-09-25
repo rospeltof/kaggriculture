@@ -1,0 +1,18 @@
+{
+  "seed_kind": {
+    "path": "results/semillas_tardias_20260925/seed_kind.py",
+    "sha256": "ac36e98c1cd9059e07ba543ffea4405535f8157a71c9949b002f04bf9c62a510",
+    "config": {
+      "mode": "kind",
+      "enabled": true
+    }
+  },
+  "seed_jit": {
+    "path": "results/semillas_tardias_20260925/seed_jit.py",
+    "sha256": "68433a06df1a7eea7e5e2cedc7335dd8b9aac65458511ead4acba5077c6383cd",
+    "config": {
+      "mode": "jit",
+      "enabled": true
+    }
+  }
+}
