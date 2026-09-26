@@ -1,0 +1,86 @@
+{
+  "agentes": {
+    "top3cc": {
+      "ruta": "submission/main_publico_top3cc.py",
+      "sha256": "e60ec15ceec28e46fd547bd7135ce6f0a580040352757adbc487f5d6f72c04f0"
+    },
+    "top3cc3": {
+      "ruta": "results/exp_0926/top3cc3.py",
+      "sha256": "b1ed83e60ad995390e3695a9ef5ae49ca6ea4299c74e5a29434fbaefcdddf98a"
+    },
+    "cha22": {
+      "ruta": "submission/main_publico_cha22.py",
+      "sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652"
+    },
+    "cha22sfko": {
+      "ruta": "submission/main_publico_cha22_sfko.py",
+      "sha256": "b887ea035d84aa2e7f310206e20636cffa8d4ca12895afdb03611eef4d16aa29"
+    },
+    "arshs3": {
+      "ruta": "results/publicos/arsgorynich_herd-safe-v3-experimental-risk-aware-feed/main.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    },
+    "guru4": {
+      "ruta": "results/publicos_0926/guruprasaathas111_kaggriculture-top-2-master-engine-v4/main.py",
+      "sha256": "701c0157cb5f73fa9a4ce653847b9b5373dd3029b36db0f4fa5653996fb7e43e"
+    },
+    "hl74": {
+      "ruta": "results/publicos_0926/haodou092_kaggriculture-harvest-ledger/main.py",
+      "sha256": "b55ff467ed0ff9d157d79863241a61230a1376bb8fc4b1ddb2d9ae46f26f3b81"
+    },
+    "lynni": {
+      "ruta": "results/publicos_0926/lynnsakurai_farmer-john-and-the-idle-seller/main.py",
+      "sha256": "59a1ef9b43cdd8fb7a44dfed6db0b74a9a3e028a93247b92cdfeca20d9359c3f"
+    },
+    "vq": {
+      "ruta": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "tds22": {
+      "ruta": "results/publicos/tetsutani_demand-preserving-turn-sale-timing/main.py",
+      "sha256": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a"
+    }
+  },
+  "seeds": [
+    3700000,
+    3700001,
+    3700002,
+    3700003,
+    3700004,
+    3700005,
+    3700006,
+    3700007,
+    3700008,
+    3700009,
+    3700010,
+    3700011,
+    3700012,
+    3700013,
+    3700014,
+    3700015,
+    3700016,
+    3700017,
+    3700018,
+    3700019,
+    3700020,
+    3700021,
+    3700022,
+    3700023
+  ],
+  "vs": "top3cc,top3cc3",
+  "inicio": "2026-09-26 16:17:18",
+  "state": "complete",
+  "expected_episodes": 816,
+  "workers": 11,
+  "runtime": {
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+    "multiprocessing_start_method": "spawn",
+    "python_hash_seed": null,
+    "wheat_hash": 7646530285251123713
+  },
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "5b5d9de23fcff8e68444692c00f6b948a12aa280db53e8856e6c6f9e5828e9f2",
+  "completed_episodes": 816,
+  "fin": "2026-09-26 16:25:40"
+}
