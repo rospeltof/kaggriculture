@@ -1,0 +1,45 @@
+10 agentes, 17 parejas, 544 episodios
+  50/544
+  100/544
+  150/544
+  200/544
+  250/544
+  300/544
+  350/544
+  400/544
+  450/544
+  500/544
+episodios validos 544/544; con error: 0
+
+         A          B  W-L-T de A   %A    margen medio A   semillas A>B
+     cha22     arshs3   30-  2- 0   93.8        +992   15/16
+     cha22  cha22sfko    1- 29- 2    6.2         -21   0/16
+     cha22      field   28-  4- 0   87.5       +1949   14/16
+     cha22      guru4   30-  2- 0   93.8        +898   15/16
+     cha22       hl74   32-  0- 0  100.0       +1409   16/16
+     cha22      lynni   32-  0- 0  100.0       +2101   16/16
+     cha22      tds22   30-  2- 0   93.8        +837   15/16
+     cha22       top3   16- 16- 0   50.0          -0   8/16
+     cha22         vq   28-  4- 0   87.5        +952   14/16
+ cha22sfko     arshs3   30-  2- 0   93.8       +1014   15/16
+ cha22sfko      field   28-  4- 0   87.5       +1971   14/16
+ cha22sfko      guru4   30-  2- 0   93.8        +919   15/16
+ cha22sfko       hl74   32-  0- 0  100.0       +1430   16/16
+ cha22sfko      lynni   32-  0- 0  100.0       +2122   16/16
+ cha22sfko      tds22   30-  2- 0   93.8        +857   15/16
+ cha22sfko       top3   16- 16- 0   50.0         +21   8/16
+ cha22sfko         vq   30-  2- 0   93.8        +974   15/16
+
+Puntuacion media contra todos los demas:
+   cha22sfko  89.6%  (288 ep)
+       cha22  79.2%  (288 ep)
+        top3  50.0%  (64 ep)
+       field  12.5%  (64 ep)
+          vq   9.4%  (64 ep)
+      arshs3   6.2%  (64 ep)
+       guru4   6.2%  (64 ep)
+       tds22   6.2%  (64 ep)
+        hl74   0.0%  (64 ep)
+       lynni   0.0%  (64 ep)
+
+ms max por turno (peor episodio): cha22sfko 158, cha22 249, top3 316, vq 178, arshs3 144, guru4 161, hl74 146, lynni 160, field 358, tds22 140

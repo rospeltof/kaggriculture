@@ -1,5 +1,34 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-26 20:15 UTC — cha22 sustituye a VQ; rompe-espejos en prueba
+
+**Contexto.** Desde el 25 a las 11:00 UTC no hubo actividad (sin procesos vivos;
+los runners 21–33 del loop anterior quedaron detenidos, no relanzar a ciegas).
+Leaderboard 19:37 UTC: #1 Boey 3069,9 · #10 2896 · #100 2637 · #500 2373 ·
+**nosotros #965, 2182,7** (top3). Deadline 30-sep 23:59 UTC; el ladder sigue hasta ~15-oct.
+
+**Ladder (40 partidas recientes por activa):** top3 20V-20D (equilibrio ~2185);
+VQ 17V-23D (2153). arshs3 se retiró en 2275,7 y v13 en 1853 → el torneo en bucle
+cerrado SÍ predijo el orden en el ladder.
+
+**Frontera pública (torneo_0926a, 9 agentes, 720 partidas, 0 errores):** cha22
+(tetsutani 26-sep = Abhinav0370 #689 en 2287; también flexonafft, haideptry,
+lynnsakurai-wheat) 82,5% · top3 78,8% · VQ 51,2% · guru4 (41 rutas) 51,2% ·
+Harvest Ledger V74 31% · idle-seller 30% · god's mode 23% · Fieldcraft 19%.
+cha22–top3 10-10; **top3–VQ 20-0; cha22–VQ 16-4**.
+
+**Envío:** 56587658 = cha22 byte-exacto (19:51 UTC), desplaza a VQ. Activas:
+**top3 56537205 + cha22 56587658** (dos linajes distintos en el techo público).
+
+**En curso:** `PREREG_CHA22_FIN_2026-09-26.md` — cha22 + recortes de fin de partida
+de tds (semillas inútiles desde el día 27, fertilizante desde el paso 696) como
+rompe-espejos (copias de cha22 empatan entre sí). Bloque `torneo_cha22fin`.
+
+**Lectura honesta del objetivo "top 1":** los 10 primeros (2896-3070) son agentes
+privados adaptativos; los públicos más fuertes rinden ~2200-2300 hoy. Con 4 días,
+lo alcanzable es exprimir el techo público (+50..+150) y vigilar publicaciones nuevas.
+
+
 ## Corte operativo 11:01 UTC — confirm21 activa, prioridad31 validada y en cola
 
 Piloto21 cerró 2.016 partidas/noop352 a10:49:39UTC. Sólo `extra_half` pasa a
