@@ -12,7 +12,9 @@ grande del rival en 1-2 turnos. La biblioteca publica son partidas del top-30 de
    mismo formato binario (uint16 n; por episodio uint16 m; eventos delta/255+abs,
    item, cantidad), y escribe top3 con _V92_P_BLOB/_V92_P_INDEX sustituidos.
 
-Uso: construir_biblioteca_cc.py <top3.py> <cha22.py> <salida.py> <seed0> <nseeds>
+Uso: construir_biblioteca_cc.py <top3.py> <rivales> <salida.py> <seed0> <nseeds>
+     <rivales> = una ruta, o varias separadas por comas (cada rival juega nseeds semillas
+     distintas y consecutivas a partir de seed0, en ambos asientos).
 """
 import base64, hashlib, json, multiprocessing as mp, sys, zlib
 from pathlib import Path
@@ -87,7 +89,9 @@ def main(top3, cha22, salida, seed0, nseeds):
     blob, index = codificar(lib)
     assert decodificar({"_V92_P_BLOB": blob, "_V92_P_INDEX": index}) == lib, "codec no reproduce la biblioteca"
     antes = sum(len(v) for v in lib.values())
-    jobs = [(top3, cha22, s, seat) for s in range(seed0, seed0 + nseeds) for seat in (0, 1)]
+    rivales = cha22.split(",")
+    jobs = [(top3, riv, seed0 + k * nseeds + s, seat) for k, riv in enumerate(rivales)
+            for s in range(nseeds) for seat in (0, 1)]
     with mp.Pool(11) as pool:
         res = pool.map(jugar, jobs)
     Path(salida + ".episodios.json").write_text(json.dumps(res))
@@ -100,7 +104,7 @@ def main(top3, cha22, salida, seed0, nseeds):
         lib[(a, b)].append({(t, i): q for t, i, q in r["ev"]}); nuevos += 1
     blob, index = codificar(lib)
     extra = (f"\n\n# ==== Biblioteca PREDICT contra-cha22 (kaggriculture local, 2026-09-26) ====\n"
-             f"# {antes} episodios originales + {nuevos} de top3 vs cha22 (semillas {seed0}-{seed0 + nseeds - 1}).\n"
+             f"# {antes} episodios previos + {nuevos} nuevos vs {[Path(r).parent.name for r in rivales]} (semillas desde {seed0}).\n"
              f"_V92_P_BLOB = {blob!r}\n_V92_P_INDEX = {index!r}\n_V92_P_RAW = None\n_V92_P_LIB = None\n")
     Path(salida).write_bytes(Path(top3).read_bytes() + extra.encode())
     cubiertos = sum(1 for k, v in lib.items() if v)
