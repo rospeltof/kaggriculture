@@ -1,0 +1,5 @@
+{"fuente": "pesos_censo_0926.json con el peso del linaje cha22 entero en cha22 (cha22sfko es brazo de referencia)",
+ "linajes": {"cha22": {"cha22": 0.54},
+             "arshs3": {"arshs3": 0.0375, "vq": 0.0375},
+             "harvest": {"hl74": 0.125},
+             "resto": {"guru4": 0.0867, "tds22": 0.0867, "lynni": 0.0866}}}
