@@ -1,0 +1,45 @@
+10 agentes, 17 parejas, 544 episodios
+  50/544
+  100/544
+  150/544
+  200/544
+  250/544
+  300/544
+  350/544
+  400/544
+  450/544
+  500/544
+episodios validos 544/544; con error: 0
+
+         A          B  W-L-T de A   %A    margen medio A   semillas A>B
+      top3     arshs3   30-  2- 0   93.8        +729   14/16
+      top3      cha22   13- 19- 0   40.6        -621   6/16
+      top3  cha22sfko   13- 19- 0   40.6        -642   6/16
+      top3      guru4   23-  9- 0   71.9        +448   11/16
+      top3       hl74   30-  2- 0   93.8       +1312   14/16
+      top3      lynni   31-  1- 0   96.9       +1849   15/16
+      top3      tds22   23-  9- 0   71.9        +444   11/16
+      top3     top3cc   10- 20- 2   34.4        -153   4/16
+      top3         vq   30-  2- 0   93.8        +676   14/16
+    top3cc     arshs3   26-  6- 0   81.2        +607   12/16
+    top3cc      cha22   22- 10- 0   68.8          +6   10/16
+    top3cc  cha22sfko   22- 10- 0   68.8         -16   10/16
+    top3cc      guru4   28-  4- 0   87.5        +624   13/16
+    top3cc       hl74   31-  1- 0   96.9       +1296   15/16
+    top3cc      lynni   31-  1- 0   96.9       +1788   15/16
+    top3cc      tds22   28-  4- 0   87.5        +678   13/16
+    top3cc         vq   24-  8- 0   75.0        +552   11/16
+
+Puntuacion media contra todos los demas:
+      top3cc  80.9%  (288 ep)
+        top3  70.8%  (288 ep)
+       cha22  45.3%  (64 ep)
+   cha22sfko  45.3%  (64 ep)
+       guru4  20.3%  (64 ep)
+       tds22  20.3%  (64 ep)
+          vq  15.6%  (64 ep)
+      arshs3  12.5%  (64 ep)
+        hl74   4.7%  (64 ep)
+       lynni   3.1%  (64 ep)
+
+ms max por turno (peor episodio): top3cc 237, top3 260, cha22 260, cha22sfko 242, arshs3 224, guru4 181, hl74 241, lynni 214, vq 220, tds22 267
