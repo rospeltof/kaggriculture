@@ -1,5 +1,31 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-26 21:15 UTC — censo de linajes y contra-biblioteca
+
+**Censo (`censo_linajes.py`, 80 partidas reales de top3/VQ, franja ~2200):** 42% de
+los rivales son cha22 exacto o casi (+10% parcial), 9% Harvest Ledger, 8% arshs3.
+top3 perdía 3-10 contra cha22 y sus casi-copias. Las "casi-copias" difieren sobre
+todo en el ORDEN de ventas: deriva de `sorted(set())` según la semilla de hash del
+proceso (en Kaggle cada agente tiene la suya) → espejos con ruido.
+**Franja 2350-2750 (dataset público, 25-sep madrugada, 45 partidas):** 52% arshs3
+exacto, 14% cha22 exacto, 4% ars40; el resto disperso.
+
+**Adoptado y enviado:**
+- `cha22sfko` (56587842): cha22 + recortes de fin de partida → 29-1-2 vs cha22.
+- `top3cc` (56588419): top3 + 330 episodios de cha22 en la biblioteca PREDICT →
+  ponderado por población +28,3 pp [+15,4; +41,2]; vs cha22 44-4 (bloque 2) y
+  30-18 (otro conjunto de semillas); vs arshs3 83%; gana 37-11 a cha22sfko.
+**Rechazados (regla pre-registrada):** top3cc2 (biblioteca con 7 linajes más,
++0,7 [−6,4; +7,8]); cha22cc (cha22sfko + PREDICT, −3,5 [−11,5; +4,5]).
+**En curso:** top3cc3 (doble cobertura de cha22), `PREREG_TOP3CC3_2026-09-26.md`.
+
+**Herramientas nuevas:** `censo_linajes.py` + `resumir_censo.py` (linaje de cada
+rival por reproducción exacta de acciones), `construir_biblioteca_cc.py`,
+`construir_cha22cc.py`, `apilar_fin_partida.py`, `pareado_ponderado.py` (delta
+pareado ponderado por la composición real), `torneo.py --fresco`.
+**Lección:** con `> fichero` el shell trunca antes de que el script compruebe nada:
+verificar `test -e` antes de lanzar con un nombre de salida.
+
 ## Corte 2026-09-26 20:15 UTC — cha22 sustituye a VQ; rompe-espejos en prueba
 
 **Contexto.** Desde el 25 a las 11:00 UTC no hubo actividad (sin procesos vivos;
