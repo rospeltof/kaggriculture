@@ -1,0 +1,67 @@
+9 agentes, 36 parejas, 720 episodios
+  50/720
+  100/720
+  150/720
+  200/720
+  250/720
+  300/720
+  350/720
+  400/720
+  450/720
+  500/720
+  550/720
+  600/720
+  650/720
+  700/720
+episodios validos 720/720; con error: 0
+
+         A          B  W-L-T de A   %A    margen medio A   semillas A>B
+     cha22      field   18-  2- 0   90.0       +1824   9/10
+     cha22        god   20-  0- 0  100.0       +2320   10/10
+     cha22      guru4   18-  2- 0   90.0       +1146   9/10
+     cha22       hl74   20-  0- 0  100.0       +1779   10/10
+     cha22      lynni   20-  0- 0  100.0       +2350   10/10
+     cha22      lynnw    0-  0-20   50.0          +0   0/10
+     field        god    7- 13- 0   35.0        -960   3/10
+     field      lynni    4- 16- 0   20.0       -1419   2/10
+     field      lynnw    2- 18- 0   10.0       -1824   1/10
+     guru4      field   18-  2- 0   90.0       +2362   9/10
+     guru4        god   16-  4- 0   80.0       +1863   8/10
+     guru4       hl74   20-  0- 0  100.0       +1083   10/10
+     guru4      lynni   14-  6- 0   70.0       +1363   7/10
+     guru4      lynnw    2- 18- 0   10.0       -1146   1/10
+      hl74      field   16-  4- 0   80.0       +2046   8/10
+      hl74        god   12-  8- 0   60.0        +880   6/10
+      hl74      lynni   16-  4- 0   80.0       +1074   8/10
+      hl74      lynnw    0- 20- 0    0.0       -1779   0/10
+     lynni        god   16-  4- 0   80.0        +336   8/10
+     lynnw        god   20-  0- 0  100.0       +2320   10/10
+     lynnw      lynni   20-  0- 0  100.0       +2350   10/10
+      top3      cha22   10- 10- 0   50.0        -676   5/10
+      top3      field   16-  4- 0   80.0       +1859   8/10
+      top3        god   16-  4- 0   80.0       +1679   8/10
+      top3      guru4   18-  2- 0   90.0       +1014   9/10
+      top3       hl74   18-  2- 0   90.0       +1481   9/10
+      top3      lynni   18-  2- 0   90.0       +1954   9/10
+      top3      lynnw   10- 10- 0   50.0        -676   5/10
+      top3         vq   20-  0- 0  100.0       +1205   10/10
+        vq      cha22    4- 16- 0   20.0       -1385   2/10
+        vq      field   14-  6- 0   70.0       +1712   7/10
+        vq        god   16-  4- 0   80.0       +1468   8/10
+        vq      guru4   12-  8- 0   60.0        -169   6/10
+        vq       hl74   16-  4- 0   80.0       +1065   8/10
+        vq      lynni   16-  4- 0   80.0       +1156   8/10
+        vq      lynnw    4- 16- 0   20.0       -1385   2/10
+
+Puntuacion media contra todos los demas:
+       cha22  82.5%  (160 ep)
+       lynnw  82.5%  (160 ep)
+        top3  78.8%  (160 ep)
+          vq  51.2%  (160 ep)
+       guru4  51.2%  (160 ep)
+        hl74  31.2%  (160 ep)
+       lynni  30.0%  (160 ep)
+         god  23.1%  (160 ep)
+       field  19.4%  (160 ep)
+
+ms max por turno (peor episodio): vq 212, top3 191, cha22 183, guru4 202, hl74 146, field 385, lynnw 171, lynni 169, god 142

@@ -100,6 +100,7 @@ def main():
     ap.add_argument("--seed0", type=int, default=910000)
     ap.add_argument("--workers", type=int, default=11)
     ap.add_argument("--vs", default=None)
+    ap.add_argument("--fresco", action="store_true", help="un proceso nuevo por partida (agentes multi-fichero con estado en modulos importados)")
     args = ap.parse_args()
     if any(Path(args.out+s).exists() for s in ('.jsonl','.meta.json','.sources.tgz')):
         sys.exit('No sobrescribir un torneo existente')
@@ -132,7 +133,7 @@ def main():
     print(f"{len(ag)} agentes, {len(parejas)} parejas, {len(jobs)} episodios", flush=True)
     rows = []
     try:
-        with mp.Pool(args.workers) as pool, open(args.out + ".jsonl", "x") as f:
+        with mp.Pool(args.workers, maxtasksperchild=1 if args.fresco else None) as pool, open(args.out + ".jsonl", "x") as f:
             for i, r in enumerate(pool.imap_unordered(episodio, jobs), 1):
                 rows.append(r)
                 f.write(json.dumps(r) + "\n"); f.flush()
