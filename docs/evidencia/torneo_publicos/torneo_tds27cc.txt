@@ -1,0 +1,51 @@
+10 agentes, 17 parejas, 816 episodios
+  50/816
+  100/816
+  150/816
+  200/816
+  250/816
+  300/816
+  350/816
+  400/816
+  450/816
+  500/816
+  550/816
+  600/816
+  650/816
+  700/816
+  750/816
+  800/816
+episodios validos 816/816; con error: 0
+
+         A          B  W-L-T de A   %A    margen medio A   semillas A>B
+   tds27cc     arshs3   29- 19- 0   60.4        +218   14/24
+   tds27cc      cha22   39-  9- 0   81.2        +836   19/24
+   tds27cc  cha22sfko   39-  9- 0   81.2        +817   19/24
+   tds27cc      guru4   40-  8- 0   83.3       +2302   20/24
+   tds27cc       hl74   43-  5- 0   89.6       +1278   21/24
+   tds27cc      tds22   42-  6- 0   87.5        +996   21/24
+   tds27cc      tds27   24- 18- 6   56.2          +2   11/24
+   tds27cc     top3cc   38- 10- 0   79.2        +378   19/24
+ tds27top3     arshs3   35- 13- 0   72.9        +340   17/24
+ tds27top3      cha22   42-  6- 0   87.5        +789   21/24
+ tds27top3  cha22sfko   42-  6- 0   87.5        +770   21/24
+ tds27top3      guru4   42-  6- 0   87.5       +2374   21/24
+ tds27top3       hl74   43-  5- 0   89.6       +1246   21/24
+ tds27top3      tds22   44-  4- 0   91.7       +1065   22/24
+ tds27top3      tds27   24- 16- 8   58.3         +16   11/24
+ tds27top3    tds27cc   23- 15-10   58.3          +4   11/24
+ tds27top3     top3cc   42-  6- 0   87.5        +522   21/24
+
+Puntuacion media contra todos los demas:
+   tds27top3  80.1%  (432 ep)
+     tds27cc  73.4%  (432 ep)
+       tds27  42.7%  (96 ep)
+      arshs3  33.3%  (96 ep)
+      top3cc  16.7%  (96 ep)
+       cha22  15.6%  (96 ep)
+   cha22sfko  15.6%  (96 ep)
+       guru4  14.6%  (96 ep)
+        hl74  10.4%  (96 ep)
+       tds22  10.4%  (96 ep)
+
+ms max por turno (peor episodio): tds27cc 407, tds27top3 381, tds27 325, cha22 158, cha22sfko 233, arshs3 213, hl74 241, tds22 219, top3cc 215, guru4 235

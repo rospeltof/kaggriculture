@@ -16,8 +16,25 @@ con la semilla de hash. tds27sfko inerte (su cierre ya evita esas compras).
 **Censo franja 2350-2450 (26-27 sep, 56 partidas):** linaje cha22 ~44%, privados 19%,
 Harvest ~15%, tds27 3% (asomando), **arshs3 0%** (52% el día 25).
 
-**En curso:** tds27cc (tds27top3 + episodios de tds27 y cha22 en la biblioteca),
-`PREREG_TDS27CC_2026-09-27.md`, pesos anticipados `pesos_anticipados_0927.json`.
+**tds27cc REJECTED** (−4,8 pp): la contra-biblioteca no ayuda a una base que ya
+integra PREDICT. tds27top3 gana 42-6 a cha22 y a top3cc. top3cc se mantiene como
+segundo slot (otro linaje; cobertura si tds27top3 falla en el hardware de Kaggle).
+
+### Procedimiento que está funcionando (repetir cuando la frontera pública se mueva)
+
+1. **Rastrear** notebooks nuevos (`kaggle kernels list --competition kaggriculture
+   --sort-by dateRun`); extraer sin ejecutar (`extraer2.py`, variantes con
+   tar/lzma/b85 por AST) y auditar (`auditar.py`); comprobar la entrada con
+   `get_last_callable`.
+2. **Torneo** contra nuestras activas y los linajes del censo (`torneo.py`, comprobar
+   con `test -e` que la salida no exista).
+3. Si un público nuevo nos gana: tomarlo como base y probar **rompe-espejos**
+   (determinista con la semilla de hash; `_V92_P_TOP=3` si trae PREDICT;
+   `apilar_fin_partida.py` si no tiene cierre propio). Pre-registrar: directo con IC
+   por semilla > 50% y pool sin daño (límite dos vías > −5 pp).
+4. **Censo** de las partidas reales (`bajar_lider.py` + `censo_linajes.py` +
+   `resumir_censo.py`) para ponderar por la población real (`pareado_ponderado.py`).
+5. Recordar el orden de activas: el envío nuevo desplaza a la activa MÁS ANTIGUA.
 
 
 ## Corte 2026-09-26 21:15 UTC — censo de linajes y contra-biblioteca
