@@ -905,12 +905,18 @@
   },
   {
     "leaderboard": {
-      "score": null,
-      "episodes": 0,
+      "score": 2178.3,
+      "episodes": 88,
       "rank": null,
-      "lecturas": []
+      "lecturas": [
+        [
+          "2026-09-27T02:26Z",
+          2178.3,
+          88
+        ]
+      ]
     },
-    "observed": null,
+    "observed": "60 partidas recientes 34V-26D (57%). Censo: cha22 exacta 23-2 (rompe-espejos confirmado), casi 3-4; harvest 1-4; resto publico 7-12; privados 0-3; arshs3 parcial 0-1.",
     "conclusion": "PENDIENTE",
     "submission_id": 56587842,
     "timestamp": "2026-09-26T20:02:37Z",
@@ -953,12 +959,18 @@
     },
     "reason": "Censo de 80 partidas reales: 54% de rivales son linaje cha22 y top3 perdia 3-10 contra ellos. Contra-biblioteca adoptada por regla ponderada pre-registrada.",
     "leaderboard": {
-      "score": null,
-      "episodes": 0,
+      "score": 2059.0,
+      "episodes": 84,
       "rank": null,
-      "lecturas": []
+      "lecturas": [
+        [
+          "2026-09-27T02:26Z",
+          2059.0,
+          84
+        ]
+      ]
     },
-    "observed": null,
+    "observed": "60 partidas recientes 46V-14D (77%). Censo: cha22 exacta 6-2, casi 3-0, parcial 1-0; arshs3 4-0; harvest 8-1; resto publico 24-9; privados 0-2.",
     "conclusion": "PENDIENTE",
     "next_action": "Leer W/L a ~30 ep por linaje del rival (censo_linajes.py sobre sus replays). Prediccion: gana la mayoria contra cha22."
   }
