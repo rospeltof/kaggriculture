@@ -1,5 +1,27 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-27 16:30 UTC — pareja estable; la familia tds27 ocupa lo público
+
+**Ladder 16:04 UTC:** tds27top3 **2293,2** @109 (equipo #~648 a las 09:40 con 2280);
+top3cc 2074,9 @144. Censo de 60 partidas de tds27top3: 47-13; linaje cha22 28-7;
+tds27 exacto 1-0 (+$19); privados 0-3 (−$8,2k de media; ganan la segunda mitad).
+
+**Frontera pública del día:** todas las versiones nuevas son la familia tds27 en la
+práctica: tetsutani 02:50 (= tds27), guru v4 y kunaldesale ttv1 (= tds27 + arreglo de
+órdenes vacías), Harvest Ledger 14:23 y haideptry-2965 (+ `_CA_MARGIN=-22`),
+lynnsakurai step1010 (41 pasadas → punto fijo; juega idéntico a tds27).
+tds27top3: 10-8-2 vs Harvest 14:23, 10-8-2 vs tds27, 18-2 vs haideptry-shepherds.
+lucky-boy-2552 (leoprovorov) = arshs3 + parche de router (ruta 0 en 10 pares de
+tiendas): base débil frente a tds27, no evaluado.
+
+**Rechazados hoy:** tds27sfko (inerte), tds27cc (−4,8), barrido TOP2/TOP5/K3/EVERY1
+(ninguno pasa; TOP5 gana el espejo a TOP3 pero −5,8 en pool).
+
+**Decisión:** no gastar envíos en cambios marginales; seguir la frontera pública
+(procedimiento abajo) y reevaluar si aparece una versión que gane a tds27top3.
+Herramienta nueva: `extraer_publico.py` (todos los empaquetados vistos).
+
+
 ## Corte 2026-09-27 04:15 UTC — tds27 aparece; pareja tds27top3 + top3cc
 
 **Ladder 02:26 UTC:** top3cc 2059 @84 (60 recientes 46-14), cha22sfko 2178 @88 (34-26).
