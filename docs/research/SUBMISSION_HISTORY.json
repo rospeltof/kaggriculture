@@ -964,14 +964,19 @@
     },
     "reason": "Censo de 80 partidas reales: 54% de rivales son linaje cha22 y top3 perdia 3-10 contra ellos. Contra-biblioteca adoptada por regla ponderada pre-registrada.",
     "leaderboard": {
-      "score": 2059.0,
-      "episodes": 84,
+      "score": 2082.6,
+      "episodes": 119,
       "rank": null,
       "lecturas": [
         [
           "2026-09-27T02:26Z",
           2059.0,
           84
+        ],
+        [
+          "2026-09-27T09:33Z",
+          2082.6,
+          119
         ]
       ]
     },
@@ -998,12 +1003,18 @@
     },
     "reason": "Agente publico nuevo y mas fuerte (tds27) + rompe-espejos TOP=3 para sus copias. Sustituye a cha22sfko.",
     "leaderboard": {
-      "score": null,
-      "episodes": 0,
-      "rank": null,
-      "lecturas": []
+      "score": 2280.3,
+      "episodes": 83,
+      "rank": "648/10070 (equipo, 09:40 UTC)",
+      "lecturas": [
+        [
+          "2026-09-27T09:33Z",
+          2280.3,
+          83
+        ]
+      ]
     },
-    "observed": null,
+    "observed": "60 partidas recientes 47V-13D (78%). Censo: linaje cha22 28-7 (exacta 11-3, casi 10-3, parcial 7-1); harvest 4-0; arshs3 parcial 2-0; resto publico 12-3; tds27 exacta 1-0 (+19: rompe-espejos TOP=3 en real); privados 0-3 (margen medio -8222: c0nrad, Andrew Reed, Michael Timbs). Los privados nos pasan en la segunda mitad (tomate, zanahoria, gansos, a veces 4 cuadrantes).",
     "conclusion": "PENDIENTE",
     "next_action": "Leer W/L por linaje a ~60 ep (censo). Vigilar la difusion de tds27."
   }
