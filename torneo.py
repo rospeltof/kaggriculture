@@ -49,6 +49,10 @@ def episodio(job):
         if not all(isinstance(v,(int,float)) and math.isfinite(v) for v in rew):
             raise ValueError('Reward no finito')
         mine, theirs = rew[seat], rew[1 - seat]
+        try:
+            r["shops2"] = list(env.steps[-1][0]["observation"]["town"]["unlocked_shops"][:2])
+        except Exception:
+            r["shops2"] = None
         r.update(rewards=rew, statuses=stat, n_err=len(errs), errors=errs[:5], steps=len(env.steps),
                  score=1.0 if mine > theirs else 0.0 if mine < theirs else 0.5, margin=mine - theirs,
                  ms=[dict(mean=1000 * st.mean(d), max=1000 * max(d)) if d else None for d in dur])
