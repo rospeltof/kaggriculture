@@ -11,3 +11,11 @@ Escrito antes de evaluar. 2026-09-27 ~03:50 UTC.
   cha22, top3, arshs3, hl74, guru4, tds22.
 - **Regla:** adoptar si (a) directo tds27top3 vs tds27 con IC95 por semilla > 50%,
   y (b) pool con punto ≥ 0 y límite inferior dos vías > −5 pp.
+
+## Resultado (torneo_tds27top3, 544 partidas, 0 errores)
+
+- (a) Directo tds27top3 vs tds27: 18-4-10 (71,9%), **IC95 por semilla [52,5; 91,3]**. Cumple.
+- (b) Pool: **+3,12 pp**, IC95 semilla [−1,43; +7,68], dos vías [−2,84; +9,09];
+  4/128 celdas cambian, las 4 a favor (guru4 +12,5, tds22 +12,5). Cumple.
+- Tiempo: 2,9 ms medio por turno, máximo 336 ms (11 procesos en paralelo).
+- **Veredicto: ADOPTAR tds27top3** (sha fb31fb24).
