@@ -1,5 +1,25 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-27 04:15 UTC — tds27 aparece; pareja tds27top3 + top3cc
+
+**Ladder 02:26 UTC:** top3cc 2059 @84 (60 recientes 46-14), cha22sfko 2178 @88 (34-26).
+Censo de sus 120 partidas: rompe-espejos **23-2 contra cha22 exacto** (confirmado en
+real); top3cc 10-2 contra el linaje cha22, 8-1 Harvest, 24-9 otras variantes;
+cha22sfko 7-12 contra otras variantes y 1-4 contra Harvest.
+
+**tds27** (tetsutani 27-sep 00:38, "step1009...fixedsell_closure"): cha22 + PREDICT
++ más cambios. Gana **30-2 a top3cc y 24-8 a cha22sfko** (84% global). Determinista
+con la semilla de hash. tds27sfko inerte (su cierre ya evita esas compras).
+**tds27top3** (TOP=3) adoptada por pre-registro: 18-4-10 vs tds27 [52,5; 91,3], pool
++3,1 pp. **Enviada 56596228**, desplazando a cha22sfko. Activas: tds27top3 + top3cc.
+
+**Censo franja 2350-2450 (26-27 sep, 56 partidas):** linaje cha22 ~44%, privados 19%,
+Harvest ~15%, tds27 3% (asomando), **arshs3 0%** (52% el día 25).
+
+**En curso:** tds27cc (tds27top3 + episodios de tds27 y cha22 en la biblioteca),
+`PREREG_TDS27CC_2026-09-27.md`, pesos anticipados `pesos_anticipados_0927.json`.
+
+
 ## Corte 2026-09-26 21:15 UTC — censo de linajes y contra-biblioteca
 
 **Censo (`censo_linajes.py`, 80 partidas reales de top3/VQ, franja ~2200):** 42% de
