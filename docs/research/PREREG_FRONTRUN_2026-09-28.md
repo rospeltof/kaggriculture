@@ -36,3 +36,9 @@ t+1 con 20 ≤ N < 1000; retira esas ventas en t+1). Sonda: +685, +2.437, +2.346
 semillas y rivales (tds27, cha22, hl836), dos asientos. Adoptar si delta W/L/T ≥ 0 y margen
 medio > 0 con IC95 por semilla del margen > 0 (en estas partidas el W/L ya está casi
 saturado; el margen es el diagnóstico relevante para partidas más apretadas).
+
+## Resultado pre-venta (torneo_frps1, 516 partidas, 0 errores)
+
+W/L +1,55 pp [−0,64; +3,74] (ref 97,7%; 2/129 celdas, ambas a favor); **margen +$1.934 por
+partida, IC95 por semilla [+$1.500; +$2.368]**. **ADOPTAR la pre-venta.**
+Candidata final: combo + cam22 (colina) + FR + pre-venta = `submission/main_publico_final_frps.py`.
