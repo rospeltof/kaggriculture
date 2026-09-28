@@ -1,5 +1,21 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-28 04:00 UTC — final_xc1 enviada; ladder = campeonato de espejos
+
+**Activas:** **56628181 final_xc1** (03:55, PENDING al enviar) + **56626892 final_frps**.
+Cuota del 28-sep agotada (5/5); el 29 y el 30 hay 5 cada día.
+- final_xc1 = final_frps + un pase `_cxd_reorder` antes de FR (`apilar_pases.py ... 1 --cxd`).
+  PROMETEDORA: margen vs tds27 +80 [+51; +110], W/L +0,31 pp (PREREG_XC).
+- Hallazgo: 29/40 partidas reales de tds27top3 se decidieron por < $1.000 (espejos de la
+  familia tds27; 9/40 por < $80). Las palancas son la carrera de ventas: vender antes
+  (LOOK) y en índice menor (XC). Comprar primero pierde (empuja las ventas atrás).
+- Criba_b sin candidatas: S738 con trigo/fertilizante pierde; ml8/ml10 casi inertes; BF pierde.
+- Nuevos públicos (0928b): Harvest Ledger 02:23 = tds27 + LOOK 7 si detecta espejo
+  (`results/exp_0928b/rival_hl0928.py`, añadido a los paneles); Master Engine V5 (me5)
+  de otro linaje; God's mode (manipular la RNG de tiendas, impacto desconocido).
+- Censo de partidas reales recientes en cola (`results/cola_0928d.sh` → censo_0928b).
+
+
 ## Corte 2026-09-28 03:15 UTC — candidata final en el ladder
 
 **Activas:** **56626892 final_frps** (02:52) + **56626140 combo_fr** (02:14). Queda 1 envío hoy.
