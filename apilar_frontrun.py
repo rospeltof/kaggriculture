@@ -16,7 +16,7 @@ Esta capa, al final de la cadena:
 Deteccion: rival_compra(s) = -(dInv - dPropio + consumo) con el consumo del pueblo del
 motor (cada 4 pasos 1 por tienda con trigo, 1 extra cada 24).
 
-Uso: apilar_frontrun.py <base.py> <salida.py> [--sin-ataque]
+Uso: apilar_frontrun.py <base.py> <salida.py> [--sin-ataque] [--preventa]
 """
 import hashlib, sys
 from pathlib import Path
@@ -26,9 +26,10 @@ CAPA = '''
 # ==== Capa FR: adelantarse a las compras de trigo de la cinta (kaggriculture local, 2026-09-28) ====
 _FR_PARENT = [v for v in list(globals().values()) if callable(v)][-1]
 _FR_ATAQUE = {ataque}
+_FR_PREVENTA = {preventa}
 _FR_MIN = 20
 _FR_STATE = {{}}
-_FR_REPORT = dict(prebuys=0, prebuy_units=0, spec_buys=0, spec_units=0, spec_sells=0, hits=0, misses=0, errors=0)
+_FR_REPORT = dict(presells=0, presell_units=0, prebuys=0, prebuy_units=0, spec_buys=0, spec_units=0, spec_sells=0, hits=0, misses=0, errors=0)
 _FR_WHEAT_SHOPS = {{'BAKERY': 1, 'PIZZA_SHOP': 1, 'BRUNCH_SPOT': 1, 'ICE_CREAM_SHOP': 1, 'FARMERS_MARKET': 1}}
 
 
@@ -53,10 +54,10 @@ def _fr_draw(shops, step):
 def frontrun_agent(observation, configuration=None):
     step = int(observation.get('step', 0)); player = int(observation.get('player', 0))
     if step == 0:
-        _FR_STATE[player] = dict(pending={{}}, own={{}}, prev=None, score=0, hist=[])
+        _FR_STATE[player] = dict(pending={{}}, own={{}}, sold={{}}, prev=None, score=0, hist=[])
         for k in _FR_REPORT:
             _FR_REPORT[k] = 0
-    st = _FR_STATE.setdefault(player, dict(pending={{}}, own={{}}, prev=None, score=0, hist=[]))
+    st = _FR_STATE.setdefault(player, dict(pending={{}}, own={{}}, sold={{}}, prev=None, score=0, hist=[]))
     action = _FR_PARENT(observation, configuration)
     try:
         native = _IMPL.chassis.players.get(player) or {{}}
@@ -86,6 +87,17 @@ def frontrun_agent(observation, configuration=None):
                     continue
                 nuevo.append(o)
             market = nuevo
+        vendido = st['sold'].pop(step, 0)
+        if vendido:
+            restante = vendido; nuevo = []
+            for o in market:
+                if restante > 0 and len(o) > 2 and o[:2] == ['SELL', 'WHEAT'] and 20 <= int(o[2]) < 1000:
+                    q = max(0, int(o[2])); quita = min(q, restante); restante -= quita
+                    if q - quita > 0:
+                        nuevo.append(['SELL', 'WHEAT', q - quita])
+                    continue
+                nuevo.append(o)
+            market = nuevo
         x = st['pending'].pop(step, 0)
         if x > 0:
             if len(market) <= 9:
@@ -93,6 +105,18 @@ def frontrun_agent(observation, configuration=None):
                     market.append(['SELL', 'WHEAT', 0])
                 market.append(['SELL', 'WHEAT', x])
                 _FR_REPORT['spec_sells'] += 1
+        # --- mirar t+1: venta de la cinta propia (20..999; 1000 = vender todo) -> adelantarla
+        if _FR_PREVENTA and 144 <= step < 700 and not x:
+            t1 = step + 1
+            tape1 = _IMPL.chassis.routes.get(2 if t1 >= 648 else native.get('route')) or []
+            nv = sum(max(0, int(o[2])) for o in ((tape1[t1].get('market') or []) if t1 < len(tape1) else []) if o and len(o) > 2 and o[:2] == ['SELL', 'WHEAT'] and 20 <= int(o[2]) < 1000)
+            disp = int(observation['private']['shed'].get('WHEAT', 0)) - sum(max(0, int(o[2])) for o in market if len(o) > 2 and o[:2] == ['SELL', 'WHEAT'])
+            nv = min(nv, max(0, disp))
+            if nv > 0 and len(market) <= 9:
+                while len(market) < 9:
+                    market.append(['SELL', 'WHEAT', 0])
+                market.append(['SELL', 'WHEAT', nv])
+                st['sold'][t1] = nv; _FR_REPORT['presells'] += 1; _FR_REPORT['presell_units'] += nv
         # --- mirar t+1: compra de la cinta propia
         n = _fr_tape_wheat_buy(native, step + 1) if 144 <= step < 700 else 0
         compra = 0
@@ -134,8 +158,9 @@ frontrun_agent.telemetry = _FR_REPORT
 
 def main(base, salida, *flags):
     ataque = "--sin-ataque" not in flags
+    preventa = "--preventa" in flags
     b = Path(base).read_bytes()
-    Path(salida).write_bytes(b + CAPA.format(ataque=ataque).encode())
+    Path(salida).write_bytes(b + CAPA.format(ataque=ataque, preventa=preventa).encode())
     print(salida, "ataque" if ataque else "solo-defensa", hashlib.sha256(Path(salida).read_bytes()).hexdigest()[:12])
 
 

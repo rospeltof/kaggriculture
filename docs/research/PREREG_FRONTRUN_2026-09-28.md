@@ -27,3 +27,12 @@ frente a especuladores tipo Jun_value/David Goldrajch.
 - Oráculo de ventas con la cinta propia en PREDICT (`apilar_predict_cinta.py`): inerte; la
   cinta queda entre el 9º y el 32º de 49 candidatos (tds27 se aparta de su cinta al vender).
 - "Trigo primero" (orden de mercado): +0,62 pp [−0,65; +1,90], no adoptado.
+
+## Pre-registro 2: pre-venta (antes de evaluar)
+
+frps = combo + FR + `--preventa` (vende en t, índice 9, las ventas de trigo de la cinta de
+t+1 con 20 ≤ N < 1000; retira esas ventas en t+1). Sonda: +685, +2.437, +2.346 sobre fr en
+3 semillas. Evaluación `torneo_frps1`: ref = combo_fr (activa 56626140) vs frps, mismas 43
+semillas y rivales (tds27, cha22, hl836), dos asientos. Adoptar si delta W/L/T ≥ 0 y margen
+medio > 0 con IC95 por semilla del margen > 0 (en estas partidas el W/L ya está casi
+saturado; el margen es el diagnóstico relevante para partidas más apretadas).
