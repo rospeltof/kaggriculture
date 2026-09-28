@@ -4,6 +4,13 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-28, espejos] En la franja ~2300 la mayoría de partidas son espejos de la
+  familia tds27 decididos por menos de $1.000.** 29/40 partidas reales de tds27top3;
+  los forks ganan con retoques de la carrera de ventas (vender antes, mejor índice).
+  Implicación: priorizar ventajas pequeñas y sistemáticas contra espejos (margen medio
+  vs familia tds27) sobre cambios de producción. Evidencia: `resumen_ladder.py` sobre
+  `replays/TDS27TOP3_LADDER_0928`; `criba_b` (compras primero pierde; ventas mandan).
+
 - **[2026-09-25, trigo de ruta] Una venta puede invalidar recogidas nativas.**
   En1080001, R127se abstiene porque ya hay SELLWHEAT; queda0para demandas5/2/2.
   Conservar1trigo evita un escape; conservar y comprar9evita cinco, añade7FEED,

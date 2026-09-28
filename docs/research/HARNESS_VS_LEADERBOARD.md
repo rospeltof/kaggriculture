@@ -1,5 +1,27 @@
 # Harness vs leaderboard — qué métrica local predice el ladder
 
+## Lectura 2026-09-28 ~04:00 UTC — el ladder de ~2300 es un campeonato de espejos
+
+- 40 partidas reales de tds27top3 (56596228, `replays/TDS27TOP3_LADDER_0928`,
+  `resumen_ladder.py`): 19 W, 17 L, 4 T. **29/40 se deciden por menos de $1.000**;
+  4 empates exactos (rival idéntico) y 15 más son copias que divergen tarde
+  (primera acción distinta en el paso ≥ 100). Pérdidas por $30-190 frente a forks de
+  tds27 con un retoque: venden un producto un paso antes (yuuuki1111, zanahoria en 673),
+  ponen la fresa en el índice 0 (test_money, paso 624) o compran trigo antes de
+  contratar (Ryu Sonoda).
+- Consecuencia para el harness: contra el tds27 base ganamos el 75-80%, pero los forks
+  reales llevan sus propios retoques de carrera de ventas. El margen medio contra la
+  familia tds27 es una métrica sensible y válida para estas partidas (el W/L es la
+  función umbral de ese margen), siempre que el W/L no empeore.
+- **El índice de las ventas vale más que el de las compras:** adelantar BUY_PRODUCT al
+  índice 0 (capa BF) empuja las ventas detrás de las del espejo y pierde $400-1.000 por
+  partida en 18/18 celdas (`criba_b`): la curva de trigo/fertilizante es plana
+  (~$0,2/unidad) y la de leche/lana/fresa empinada (~$2/unidad).
+- Un pase más del contrario D (`_cxd_reorder`, mejor respuesta de orden contra un espejo
+  que juega nuestra lista) gana +$60-81 de margen medio contra tds27/hl836 y 4/80 celdas
+  W/L a favor en el piloto (`PREREG_XC`); dos pases se pasan de nivel (+$16-24).
+
+
 ## Lectura nueva — 2026-09-25 UTC
 
 Estado operativo actual del loop: comparar contra políticas públicas reactivas
