@@ -34,3 +34,11 @@ recientes y cada envío nuevo desplaza a la activa más antigua.
 
 Criterio: si tras ≥ 60 partidas reales final_29 gana claramente más que final_xc1 en la misma
 franja, el segundo hueco pasa a un bot con MS (fila 2 o 3); si no, se queda final_xc1.
+
+## Lectura 28-sep 22:40 UTC (antes del envío de final_29)
+
+final_xc1: 123 partidas reales, 73W-50L (59%); las últimas 45 (ya a ~2350) 15W-30L y el rating
+baja a 2318: su equilibrio está hacia 2320-2350. De esas 30 derrotas, 21 son por menos de
+$1.000 (8 en pares YARN) — lo que atacan SA y MS — y 9 por más de $1.000; las más grandes
+(−$22.600 weense, −$11.000 Yaroslav) son de producción: el rival cultiva mucho tomate (21 y
+11 casillas) y lo vende en lotes de 20-56. No hay defensa rápida para eso.
