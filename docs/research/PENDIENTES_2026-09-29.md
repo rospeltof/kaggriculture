@@ -60,3 +60,6 @@
 Son los mismos tipos de retoque que ya tenemos (XC para el orden, LOOK 6 y MS para la carrera
 de venta/compra). No hay nada nuevo que adoptar. Herramienta: `diff_fork.py <replay> <asiento>
 <candidato.py> [N]`.
+- S758 con huevos (como el fork naniwazu): criba q en 12 semillas "duras" (margen de final_29
+  < $700 contra la familia tds27 en torneo_f29): +$6-8 de media, signos mezclados (−$227 a
+  +$275), sin cambios de W/L. No se sigue.
