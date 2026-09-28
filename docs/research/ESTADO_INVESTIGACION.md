@@ -1,5 +1,27 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-28 02:35 UTC — dos mejoras confirmadas y enviadas
+
+**Activas:** **56626140 combo_fr** (02:14) + **56625348 combo** (01:36). Quedan 2 envíos hoy.
+
+1. **Combo** (`_S738_LOOK` 4→6 + `_SR_MARGIN` 8→12, sustitución en su línea): +8,4 pp
+   [+4,3; +12,5]; **contra la familia tds27 +19,4 pp**. La familia tds27 pasó del 2% al
+   ~50% de nuestros rivales reales en un día (censo de 40 partidas del 28-sep).
+2. **FR — adelantarse a las compras de trigo de la cinta** (`apilar_frontrun.py`): hallado en
+   replays reales. Rivales privados (Jun_value, David Goldrajch) copian la producción de la
+   cinta y compran en t−1 el trigo que la cinta compra en t (rutas 103/104/112/124, jugador
+   original = comerciante de trigo), vendiéndolo en t en el índice 9: +$8-11k contra nosotros.
+   FR pre-compra un paso antes (defensa) y, si el rival es seguidor de cinta, especula.
+   **+37,2 pp [+26,3; +48,2] en esas partidas, 51/51 celdas a favor** (~11% de partidas).
+   Mecánica del motor: órdenes por índice; en cada índice lockstep por unidad entre los dos
+   jugadores; `SELL X 0` ocupa hueco sin efecto; las compras se cotizan a inventario−1.
+3. **Rechazados hoy:** router por pares y rutas EXP240 en YARN, zanahoria (dosis), capas
+   trasplantadas (inertes), oráculo de ventas con la cinta en PREDICT (inerte), trigo-primero.
+
+**En curso:** colina2 (hp6, cam22, sr10 sobre combo; 48 semillas) → pre-venta FR (`--preventa`,
+sonda +$0,7-2,4k más por partida en rutas de trigo).
+
+
 ## Corte 2026-09-28 00:55 UTC — ofensiva de 3 días (usuario: "darle y darle")
 
 **Activas:** tds27top3 **56596228** (2301 @150) + **56624199** tds27top3_cam22 (00:44 UTC,
