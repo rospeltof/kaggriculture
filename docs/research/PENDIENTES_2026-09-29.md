@@ -28,3 +28,13 @@
   +$95/+$135 contra cha22/fcast2; sin S758 −$190 contra la familia tds27. Esas capas ganan
   la carrera contra espejos; se mantienen. (Idea no probada: apagar S948 solo si el rival no
   es de la familia tds27; ganancia ponderada estimada ~+$30.)
+
+## Exploración 12:30 UTC del 28-sep
+
+- Harvest Ledger 12:01 (`results/exp_0928b/rival_hld.py`, sha 8cffc452): quita la inclinación
+  de zanahoria con PET_CAFE y añade una guarda "fail-closed" (acción PASS si el padre falla);
+  juego = tds27. final_29 16-0 (+$906), final_xc1 16-0 (+$385).
+- flexonafft multi-route 10:57 (`rival_mroute2.py`, sha 489f5d19, 75 KB): trayectoria
+  destilada de un episodio (Lev Neganov) con controlador; código embebido auditado
+  estáticamente (solo stdlib, sin llamadas sensibles). final_29 y final_xc1 16-0 (+$33.000).
+- Ladder 12:30: final_xc1 2368, final_frps 1453.
