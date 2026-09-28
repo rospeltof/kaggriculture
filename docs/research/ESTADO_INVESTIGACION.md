@@ -1,5 +1,19 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-28 09:00 UTC — candidata del 29: final_29 (sha cf129189)
+
+- **Envío previsto 29-sep 00:00 UTC:** `submission/main_publico_final_29.py` = final_xc1 + SA +
+  BP + MS (X≤90, también con 9 órdenes) + MSS (X≤90). Desplaza a final_frps; par activo:
+  final_xc1 (≈2380; 58W-20L en 78 partidas reales) + final_29.
+- Evidencia acumulada sobre final_xc1: SA (13/13 celdas a favor), BP (PROMETEDORA), MS
+  (ADOPTADA, +3,44 pp [+0,95; +5,92]), extensiones MS (PROMETEDORAS, +$22-52). Pruebas amplias
+  contra 26 públicos: sin ningún rival que empeore; margen +$300-775.
+- Nuevo público 08:46: Harvest Ledger quita el LOOK 7 de espejo y añade CA −22 solo con
+  PET_CAFE (`results/exp_0928b/rival_hlc.py`); no es una amenaza nueva (fork tds27).
+- Pendiente 29-sep: vigilar las partidas reales de final_29 (≈15/hora); si rinde como el
+  harness, decidir si el segundo hueco pasa de final_xc1 a otra variante fuerte.
+
+
 ## Corte 2026-09-28 08:13 UTC — MS adoptada; candidata del 29: final_xc1_sa_bp_ms90
 
 - **Envío previsto 29-sep 00:00 UTC:** `submission/main_publico_final_xc1_sa_bp_ms90.py`

@@ -27,3 +27,9 @@ Ambas **PROMETEDORAS** (y extensiones del mecanismo ya adoptado). Por el desempa
 (mayor margen contra la familia tds27): **msb90b_mss** entra en la candidata del 29-sep:
 `submission/main_publico_final_29.py` = xc1 + SA + BP + MS(X≤90, también con 9 órdenes) +
 MSS(X≤90).
+
+## Prueba amplia de la candidata (amplio_f29, 832 partidas, 0 errores; 26 agentes públicos)
+
+final_xc1 → final_29 en semillas 5090000-007 (fáciles: final_xc1 ya gana el 99%): 99,0% →
+100%; margen +$300-775 contra 25 de 26 rivales (mínimo por celda positivo; graphrl +$87 de
+media con 14 celdas levemente negativas). Máximo 360 ms por turno.
