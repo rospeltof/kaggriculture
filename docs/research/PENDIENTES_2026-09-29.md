@@ -38,3 +38,14 @@
   destilada de un episodio (Lev Neganov) con controlador; código embebido auditado
   estáticamente (solo stdlib, sin llamadas sensibles). final_29 y final_xc1 16-0 (+$33.000).
 - Ladder 12:30: final_xc1 2368, final_frps 1453.
+
+## Exploración 18:30 UTC del 28-sep
+
+- tetsutani re-ejecutó su notebook a las 17:41: mismo main.py (55be5d5f = tds27). Sin cambios.
+- God's mode (leoprovorov, 16:31; agente multifichero: base tipo tds + capa de predicción de
+  tiendas), decodificado y auditado sin ejecutar (`results/publicos_0928e/godsmode_agent/`):
+  final_29 12-0 (+$1.761), final_xc1 12-0 (+$1.080).
+- Tiempo por turno: con `--fresco` y 11 procesos arrancando a la vez los máximos suben a
+  1,4-2 s por contención de carga (también en el rival); sin contención final_29 y final_xc1
+  tienen máximo ~90 ms y media ~1,7 ms (`tiempo_f29`). Sin problema de tiempo.
+- Ladder 18:30: final_xc1 2345, final_frps 1496.
