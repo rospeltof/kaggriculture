@@ -13,3 +13,10 @@ Escrito antes de evaluar. 2026-09-28 ~00:50 UTC.
 - **Regla:** adoptar el brazo con mayor punto si su delta ponderado tiene IC95 por
   semilla > 0 y ningún linaje con IC entero < −10 pp. Si cam22 lo cumple, pasa a
   sustituir a tds27top3 en el slot 1; si lo cumple cam30/cam40, a probar en real.
+
+## Resultado (torneo_zanahoria, 1.280 partidas, 0 errores, semillas 4630000-031)
+
+cam22 **−0,23** [−6,09; +5,62]; cam30 −1,25 [−8,08; +5,58]; **cam40 −11,02 [−20,20; −1,83]**
+(peor, IC excluye 0). Ningún brazo se adopta. "Más zanahoria" no es palanca: óptimo
+cerca de −15..−22; cam22 ≈ neutro en tres bloques (+3,1 / +5,0 / −0,2). La submission
+56624199 (cam22) queda como segunda tirada del mismo nivel que tds27top3.
