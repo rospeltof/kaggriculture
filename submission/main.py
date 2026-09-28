@@ -5125,7 +5125,7 @@ agent = globals().pop('agent')
 # Claude SHEDROOM layer: sell shed goods before the night drop overflows. Own implementation.
 # Built by tools/claude_build_shedroom.py (derivation there).
 # ---------------------------------------------------------------------------
-_SR_MARGIN = 8
+_SR_MARGIN = 12
 _SR_HOURS = (21, 22, 23)
 _SR_PRODUCTS = ("WHEAT", "CARROT", "TOMATO", "STRAWBERRY", "MELON", "EGG", "MILK", "WOOL", "FERTILIZER")
 _SR_REPORT = {"sr_turns": 0, "sr_units": 0, "sr_errors": 0}
@@ -7502,7 +7502,7 @@ kaggle_submission_agent = step734_post_seed_local_closure_agent
 # not production, and never fires on dawn-closing turns or when BUY_PRODUCT is
 # already present in the current market list.
 _S738_PARENT = step734_post_seed_local_closure_agent
-_S738_LOOK = 4
+_S738_LOOK = 6
 _S738_FROM = 144
 _S738_TO = 718
 _S738_ITEMS = ('STRAWBERRY','WOOL','EGG','MILK','MELON','CARROT','TOMATO')
@@ -10139,7 +10139,3 @@ kaggle_submission_agent=agent
 
 # ==== kaggriculture local 2026-09-27: _V92_P_TOP 1 -> 3 (como top3 sobre VQ) ====
 _V92_P_TOP = 3
-
-
-# ==== barrido 2026-09-28: _CA_MARGIN = -22.0 ====
-_CA_MARGIN = -22.0
