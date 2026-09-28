@@ -23,3 +23,14 @@ recientes y cada envío nuevo desplaza a la activa más antigua.
    - Comprobar que ambas activas están en COMPLETE; reservar al menos 2 envíos del 30 para
      reenviar si alguna falla la validación.
 4. **Después de las ~20:00 UTC del 30:** ningún envío salvo para reparar una validación fallida.
+
+## Opciones para el segundo hueco (decidir el 30 con datos reales de final_29)
+
+| par final | a favor | en contra |
+|---|---|---|
+| final_29 + final_xc1 | cobertura real: final_xc1 ya probada (~2345-2385) y sin SA/BP/MS | final_xc1 es 7,5 pp peor en el harness |
+| final_29 + final_xc1_sa_bp_ms90 | los dos con MS (confirmada); cubre solo las extensiones MSB | casi sin diversidad |
+| final_29 + final_29 (reenvío) | dos sorteos independientes del mejor bot | ninguna cobertura |
+
+Criterio: si tras ≥ 60 partidas reales final_29 gana claramente más que final_xc1 en la misma
+franja, el segundo hueco pasa a un bot con MS (fila 2 o 3); si no, se queda final_xc1.
