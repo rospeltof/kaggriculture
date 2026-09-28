@@ -1,5 +1,21 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-28 05:30 UTC — SA (lana antes que fertilizante) en piloto; WF rechazada
+
+- **Activas:** 56628181 final_xc1 (1748 @ ~1 h) + 56626892 final_frps (1280). Cuota del
+  28-sep agotada; próximo envío a las 00:00 UTC del 29.
+- **WF rechazada** en confirmación (−2,8 pp, 9/10 celdas en contra) pese a margen medio +107:
+  vender cantidades extra cuesta en partidas cerradas. El margen medio no sustituye al W/L
+  cuando se cambian cantidades.
+- **Hallazgo SA:** tds27 añadió COLLECT_FERTILIZER a la lista de tareas del peón de ovejas
+  (capa V233, línea `elif tile['fertilizer_available']...`); cha22 y mroute no lo tienen y
+  entregan la lana 3 pasos antes (carrera de la lana en pares YARN, −$1.800 a −$6.300).
+  Criba g (10 semillas YARN): con lana en las manos entregar primero = +$1.800-2.450 de
+  margen, 30 → 80% contra cha22/mroute, sin ninguna celda negativa. Pilotos `torneo_sa1`
+  (xc1_sa, xc1_sb vs final_xc1) y `torneo_sc1` (xc1_sa2, xc1_sc vs xc1_sa) en curso
+  (PREREG_SA). Panel con fcast2 y pesos `pesos_censo_0928c.json`.
+
+
 ## Corte 2026-09-28 04:30 UTC — XC replicada; WF (vender primero) en piloto
 
 - **Réplica XC con pesos del censo** (`torneo_xcr`, 768 partidas): final_xc1 − final_frps
