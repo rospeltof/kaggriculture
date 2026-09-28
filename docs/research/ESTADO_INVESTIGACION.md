@@ -1,5 +1,19 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-28 07:15 UTC — candidata del 29: final_xc1_sa_bp
+
+- **Plan 29-sep 00:00 UTC:** enviar `submission/main_publico_final_xc1_sa_bp.py` (sha 054c58fd)
+  = final_xc1 + SA (peón de ovejas entrega antes de recoger fertilizante) + BP (compras tras
+  las ventas, antes de las órdenes fijas). Desplaza a final_frps; par activo: final_xc1
+  (2385 a las 07:03, probada en el ladder) + final_xc1_sa_bp.
+- Evidencia: SA 13/13 celdas cambiadas a favor y 0/1.120 márgenes negativos (PREREG_SA);
+  BP PROMETEDORA, 5/5 a favor, margen +$13-19 con IC>0 contra todos (PREREG_BP); prueba
+  amplia contra 26 agentes públicos: 86,8% → 92,1%, ningún rival empeora.
+- Ladder: final_xc1 2385; final_frps 1418 (47W-6L; emparejamientos bajos).
+- Decisión del par final (30-sep): por defecto final_xc1_sa_bp + final_xc1 (cobertura);
+  alternativa: dos copias de la mejor si su resultado real lo respalda.
+
+
 ## Corte 2026-09-28 07:30 UTC — SA lista para el 29; BP en confirmación
 
 - **Ladder:** final_xc1 (56628181) **2360** a las 06:26 (supera ya a tds27top3); final_frps
