@@ -65,3 +65,12 @@ dos etapas y sobre todo contra la familia tds27 (40% de los rivales reales el 28
 `torneo_combo1`: ref vs combo, mismos 5 rivales y pesos, semillas 4640000-4640047 (48
 nuevas), dos asientos. Adoptar (slot 1 o 2) si delta ponderado con IC95 por semilla > 0
 y ningún linaje con IC entero < −10 pp.
+
+## Resultado combinación (torneo_combo1, 960 partidas, 0 errores, semillas 4640000-047)
+
+**+8,39 pp, IC95 por semilla [+4,31; +12,46]**. Linajes: **tds27 +19,40 [+9,22; +29,59]**;
+cha22 0,00; harvest +2,08 [−2,11; +6,27]; resto +4,17 [−1,70; +10,03]. Ningún linaje con
+daño. **Veredicto: ADOPTAR** tds27top3 + _S738_LOOK=6 + _SR_MARGIN=12 (sustitución en su
+línea). Mecanismos: la capa step738 adelanta ventas hasta 6 turnos (antes 4) y SHEDROOM
+reserva más hueco en el cobertizo (margen 12): ambos ganan la carrera de ventas contra
+la familia tds27 (espejos casi exactos, ~50% de los rivales reales del 28-sep).
