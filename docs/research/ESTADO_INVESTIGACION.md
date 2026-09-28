@@ -1,5 +1,27 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-28 00:55 UTC — ofensiva de 3 días (usuario: "darle y darle")
+
+**Activas:** tds27top3 **56596228** (2301 @150) + **56624199** tds27top3_cam22 (00:44 UTC,
+instrumento en slot 2; sustituye a top3cc, que convergió en ~2090).
+
+**Hecho esta noche (todo pre-registrado):**
+- Frontera pública sin cambios: las versiones nuevas son la familia tds27 (arreglo de
+  órdenes vacías; `_CA_MARGIN=-22`; step1010 = 41 pasadas → punto fijo, juega idéntico).
+- Router (`forzar_ruta.py`, `analizar_rutas.py`): ruta 0 global −26 pp; 4 pares
+  seleccionados (~6% de partidas, efecto dependiente del rival) → confirmación aplazada;
+  EXP240 en pares YARN −38,8 pp → REJECTED. Las tablas de tds27 están bien afinadas.
+- Desempates en espejo tds27 (16% de empates exactos): SF/KO, VQ y ADV inertes en tds27;
+  cobertizos vacíos al final; los animales no se venden (el motor solo vende 9 productos).
+- Huellas del rival en el paso 2: todas las familias públicas dan (1042|1038, 9989).
+- **Barrido de parámetros** (eliminación sucesiva): 24 variantes al final del módulo
+  (18 inertes) + criba de inercia en su línea (1b: 3 activas de 18; 2: 9 activas de 40).
+  Etapa 2: cam22 +5,0 [−2,3; +12,3] (positivo en todos los linajes), hp6 +1,7, ff12 +0,4,
+  hp3 −2,1. **Mecanismo cam22:** más conversión trigo→zanahoria (lo que hacen los privados).
+- **En curso:** etapa 1b (12 activas) → dosis-respuesta `_CA_MARGIN` −22/−30/−40
+  (`PREREG_ZANAHORIA_2026-09-28.md`), encadenadas.
+
+
 ## Corte 2026-09-27 16:30 UTC — pareja estable; la familia tds27 ocupa lo público
 
 **Ladder 16:04 UTC:** tds27top3 **2293,2** @109 (equipo #~648 a las 09:40 con 2280);
