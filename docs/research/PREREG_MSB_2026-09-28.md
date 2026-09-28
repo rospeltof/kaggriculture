@@ -13,3 +13,17 @@ Escrito antes de la confirmación. 2026-09-28 ~09:00 UTC.
   linaje dañado; PROMETEDORA si punto ≥ 0, ningún linaje dañado y margen vs familia tds27
   con IC > 0 (para una extensión del mismo mecanismo ya adoptado, PROMETEDORA basta para
   incluirla en el envío).
+
+## Resultado confirmación (torneo_msb1, 2.016 partidas, 0 errores, semillas 5080000-047)
+
+Referencia final_xc1_sa_bp_ms90 (gana el 96,6%, casi saturado).
+
+| brazo | ponderado | celdas | margen familia tds27 | margen resto | celdas < 0 |
+|---|---|---|---|---|---|
+| msb90b | +0,31 [−0,32; +0,94] | 1/336, a favor | +22,6 [+20,4; +24,8] | +22 (IC > 0 en todos) | 0/672 (mín +4) |
+| msb90b_mss | +0,31 [−0,32; +0,94] | 1/336, a favor | **+30,3 [+27,0; +33,7]** | +43-52 (IC > 0 en todos) | 4/672 (mín −130) |
+
+Ambas **PROMETEDORAS** (y extensiones del mecanismo ya adoptado). Por el desempate fijado
+(mayor margen contra la familia tds27): **msb90b_mss** entra en la candidata del 29-sep:
+`submission/main_publico_final_29.py` = xc1 + SA + BP + MS(X≤90, también con 9 órdenes) +
+MSS(X≤90).

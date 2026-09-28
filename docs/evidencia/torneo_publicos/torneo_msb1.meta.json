@@ -1,0 +1,110 @@
+{
+  "agentes": {
+    "ref": {
+      "ruta": "submission/main_publico_final_xc1_sa_bp_ms90.py",
+      "sha256": "a0ffcd24a9c3e0aa8b36e7449457539aa6b9d9a34dd7fccbc444bff0da7ebf96"
+    },
+    "msb90b": {
+      "ruta": "results/exp_0928b/sbp_msb90b.py",
+      "sha256": "aea8a6bb6846b300cdce1585e2cc769b72b888af5668c1ed4ec837e453c960c2"
+    },
+    "msb90b_mss": {
+      "ruta": "results/exp_0928b/sbp_msb90b_mss.py",
+      "sha256": "cf1291895bb95b07fc629719601078cb17b28db5d6616b579f6c5bfe7e0d6c5c"
+    },
+    "tds27": {
+      "ruta": "results/publicos_0927/tetsutani/main.py",
+      "sha256": "55be5d5f124c8daaaa63c1a29ba4aab096004909666f04748007603c67b7d2a8"
+    },
+    "hl836": {
+      "ruta": "results/publicos_0927c/haodou092_kaggriculture-harvest-ledger/main.py",
+      "sha256": "a00aa3c766ac837b11535c3048e3fbc8781c6da06417e98343fe708359c8c320"
+    },
+    "hl0928": {
+      "ruta": "results/exp_0928b/rival_hl0928.py",
+      "sha256": "531a423a43184bc5864714189595ec1dbbe3c873de48691b0ebd32fa0a2359bb"
+    },
+    "top3cc": {
+      "ruta": "submission/main_publico_top3cc.py",
+      "sha256": "e60ec15ceec28e46fd547bd7135ce6f0a580040352757adbc487f5d6f72c04f0"
+    },
+    "fcast2": {
+      "ruta": "results/publicos_0926/leoprovorov_four-turn-forecast-notebook-version-2/main.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    },
+    "cha22": {
+      "ruta": "submission/main_publico_cha22.py",
+      "sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652"
+    },
+    "hl74": {
+      "ruta": "results/publicos_0926/haodou092_kaggriculture-harvest-ledger/main.py",
+      "sha256": "b55ff467ed0ff9d157d79863241a61230a1376bb8fc4b1ddb2d9ae46f26f3b81"
+    }
+  },
+  "seeds": [
+    5080000,
+    5080001,
+    5080002,
+    5080003,
+    5080004,
+    5080005,
+    5080006,
+    5080007,
+    5080008,
+    5080009,
+    5080010,
+    5080011,
+    5080012,
+    5080013,
+    5080014,
+    5080015,
+    5080016,
+    5080017,
+    5080018,
+    5080019,
+    5080020,
+    5080021,
+    5080022,
+    5080023,
+    5080024,
+    5080025,
+    5080026,
+    5080027,
+    5080028,
+    5080029,
+    5080030,
+    5080031,
+    5080032,
+    5080033,
+    5080034,
+    5080035,
+    5080036,
+    5080037,
+    5080038,
+    5080039,
+    5080040,
+    5080041,
+    5080042,
+    5080043,
+    5080044,
+    5080045,
+    5080046,
+    5080047
+  ],
+  "vs": "ref,msb90b,msb90b_mss",
+  "inicio": "2026-09-28 03:23:56",
+  "state": "complete",
+  "expected_episodes": 2016,
+  "workers": 11,
+  "runtime": {
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+    "multiprocessing_start_method": "spawn",
+    "python_hash_seed": null,
+    "wheat_hash": -7365268245236369808
+  },
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "aa6fd55717f48b92095ac0b35c2d2ef4a5414678b4edde45581163b2dae37f9d",
+  "completed_episodes": 2016,
+  "fin": "2026-09-28 03:48:09"
+}
