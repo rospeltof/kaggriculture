@@ -10139,3 +10139,7 @@ kaggle_submission_agent=agent
 
 # ==== kaggriculture local 2026-09-27: _V92_P_TOP 1 -> 3 (como top3 sobre VQ) ====
 _V92_P_TOP = 3
+
+
+# ==== barrido 2026-09-28: _CA_MARGIN = -22.0 ====
+_CA_MARGIN = -22.0
