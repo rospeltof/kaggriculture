@@ -1008,7 +1008,7 @@
     },
     "reason": "Agente publico nuevo y mas fuerte (tds27) + rompe-espejos TOP=3 para sus copias. Sustituye a cha22sfko.",
     "leaderboard": {
-      "score": 2301.3,
+      "score": 2316.1,
       "episodes": 83,
       "rank": "648/10070 (equipo, 09:40 UTC)",
       "lecturas": [
@@ -1021,11 +1021,16 @@
           "2026-09-28T00:45Z",
           2301.3,
           150
+        ],
+        [
+          "2026-09-28T01:37Z",
+          2316.1,
+          null
         ]
       ]
     },
     "observed": "60 partidas recientes 47V-13D (78%). Censo: linaje cha22 28-7 (exacta 11-3, casi 10-3, parcial 7-1); harvest 4-0; arshs3 parcial 2-0; resto publico 12-3; tds27 exacta 1-0 (+19: rompe-espejos TOP=3 en real); privados 0-3 (margen medio -8222: c0nrad, Andrew Reed, Michael Timbs). Los privados nos pasan en la segunda mitad (tomate, zanahoria, gansos, a veces 4 cuadrantes).",
-    "conclusion": "PENDIENTE",
+    "conclusion": "Desactivada 2026-09-28 01:36 UTC por la combo (adoptada). Maximo del equipo ~2316 (#~536). Censo 28-sep: familia tds27 ~50% de rivales; 6V-7D-3E contra ella.",
     "next_action": "Leer W/L por linaje a ~60 ep (censo). Vigilar la difusion de tds27."
   },
   {
@@ -1053,5 +1058,35 @@
     "observed": null,
     "conclusion": "PENDIENTE",
     "next_action": "Confirmacion local con 48 semillas nuevas; comparar rating con tds27top3 a ~100 ep."
+  },
+  {
+    "submission_id": 56625348,
+    "timestamp": "2026-09-28T01:36:54Z",
+    "git_commit": "d5fb34a",
+    "experiment_id": "tds27top3_combo_s738l6_sr12",
+    "config": {
+      "file": "submission/main_publico_tds27top3_combo.py",
+      "base": "tds27top3 (fb31fb24)",
+      "cambios": {
+        "_S738_LOOK": "4 -> 6",
+        "_SR_MARGIN": "8 -> 12"
+      },
+      "metodo": "sustitucion en su linea"
+    },
+    "local_harness": {
+      "prereg": "docs/research/PREREG_BARRIDO_PARAMS_2026-09-28.md",
+      "etapas": "s738l6 +3.1/+4.5; sr12 +5.0/+2.6",
+      "confirmacion": "+8.39 pp [+4.31; +12.46] ponderado; tds27 +19.40 [+9.22; +29.59]; cha22 0; harvest +2.1; resto +4.2 (960 partidas, 48 semillas nuevas)"
+    },
+    "reason": "Primera mejora del barrido con IC > 0; ataca la familia tds27, que paso del 2% al ~50% de nuestros rivales en un dia.",
+    "leaderboard": {
+      "score": null,
+      "episodes": 0,
+      "rank": null,
+      "lecturas": []
+    },
+    "observed": null,
+    "conclusion": "PENDIENTE",
+    "next_action": "Censo a ~60 ep: resultado contra familia tds27 (prediccion: >60%). Seguir subiendo la colina alrededor de los parametros ganadores."
   }
 ]
