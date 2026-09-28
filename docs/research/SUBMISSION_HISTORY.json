@@ -964,7 +964,7 @@
     },
     "reason": "Censo de 80 partidas reales: 54% de rivales son linaje cha22 y top3 perdia 3-10 contra ellos. Contra-biblioteca adoptada por regla ponderada pre-registrada.",
     "leaderboard": {
-      "score": 2082.6,
+      "score": 2087.2,
       "episodes": 119,
       "rank": null,
       "lecturas": [
@@ -977,11 +977,16 @@
           "2026-09-27T09:33Z",
           2082.6,
           119
+        ],
+        [
+          "2026-09-28T00:45Z",
+          2087.2,
+          185
         ]
       ]
     },
     "observed": "60 partidas recientes 46V-14D (77%). Censo: cha22 exacta 6-2, casi 3-0, parcial 1-0; arshs3 4-0; harvest 8-1; resto publico 24-9; privados 0-2.",
-    "conclusion": "PENDIENTE",
+    "conclusion": "Desactivada 2026-09-28 00:44 UTC (slot 2 para tds27top3_cam22). Converge en ~2090: la contra-biblioteca vs cha22 funciono (10-2 en real) pero tds27 le gana 30-2.",
     "next_action": "Leer W/L a ~30 ep por linaje del rival (censo_linajes.py sobre sus replays). Prediccion: gana la mayoria contra cha22."
   },
   {
@@ -1003,7 +1008,7 @@
     },
     "reason": "Agente publico nuevo y mas fuerte (tds27) + rompe-espejos TOP=3 para sus copias. Sustituye a cha22sfko.",
     "leaderboard": {
-      "score": 2280.3,
+      "score": 2301.3,
       "episodes": 83,
       "rank": "648/10070 (equipo, 09:40 UTC)",
       "lecturas": [
@@ -1011,11 +1016,42 @@
           "2026-09-27T09:33Z",
           2280.3,
           83
+        ],
+        [
+          "2026-09-28T00:45Z",
+          2301.3,
+          150
         ]
       ]
     },
     "observed": "60 partidas recientes 47V-13D (78%). Censo: linaje cha22 28-7 (exacta 11-3, casi 10-3, parcial 7-1); harvest 4-0; arshs3 parcial 2-0; resto publico 12-3; tds27 exacta 1-0 (+19: rompe-espejos TOP=3 en real); privados 0-3 (margen medio -8222: c0nrad, Andrew Reed, Michael Timbs). Los privados nos pasan en la segunda mitad (tomate, zanahoria, gansos, a veces 4 cuadrantes).",
     "conclusion": "PENDIENTE",
     "next_action": "Leer W/L por linaje a ~60 ep (censo). Vigilar la difusion de tds27."
+  },
+  {
+    "submission_id": 56624199,
+    "timestamp": "2026-09-28T00:44:35Z",
+    "git_commit": "95dd38d",
+    "experiment_id": "tds27top3_cam22",
+    "config": {
+      "file": "submission/main_publico_tds27top3_cam22.py",
+      "base": "tds27top3 (fb31fb24)",
+      "cambio": "_CA_MARGIN = -22.0 (asignacion al final del modulo; activa)"
+    },
+    "local_harness": {
+      "prereg": "docs/research/PREREG_BARRIDO_PARAMS_2026-09-28.md",
+      "etapa1": "+3.12 pp [-4.26; +10.51]",
+      "etapa2": "+5.00 pp [-2.26; +12.26] (cha22 +4.2, tds27 +7.8, harvest 0, resto +2.1)"
+    },
+    "reason": "PROMISING no adoptada por la regla (IC incluye 0) pero signo positivo en ambas etapas y todos los linajes; slot 2 (top3cc) no aportaba al maximo. Instrumento autorizado por el mandato.",
+    "leaderboard": {
+      "score": null,
+      "episodes": 0,
+      "rank": null,
+      "lecturas": []
+    },
+    "observed": null,
+    "conclusion": "PENDIENTE",
+    "next_action": "Confirmacion local con 48 semillas nuevas; comparar rating con tds27top3 a ~100 ep."
   }
 ]
