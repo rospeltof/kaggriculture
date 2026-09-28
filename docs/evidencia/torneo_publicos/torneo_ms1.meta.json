@@ -1,0 +1,82 @@
+{
+  "agentes": {
+    "ref": {
+      "ruta": "submission/main_publico_final_xc1_sa_bp.py",
+      "sha256": "054c58fd75c1bff0c22d07053b75c815b47f5bc9cb557c04eb3919689516b25d"
+    },
+    "msb40": {
+      "ruta": "results/exp_0928b/sbp_msb40.py",
+      "sha256": "7b7bd4d6df728261ea734c285035dbf9335f7843333051ab103e7e09364005b5"
+    },
+    "msb60": {
+      "ruta": "results/exp_0928b/sbp_msb60.py",
+      "sha256": "df4f08a155e8bb4a6744618f96c53c46a6782719e435317983f333f35e12d2db"
+    },
+    "msb90": {
+      "ruta": "results/exp_0928b/sbp_msb90.py",
+      "sha256": "a0ffcd24a9c3e0aa8b36e7449457539aa6b9d9a34dd7fccbc444bff0da7ebf96"
+    },
+    "tds27": {
+      "ruta": "results/publicos_0927/tetsutani/main.py",
+      "sha256": "55be5d5f124c8daaaa63c1a29ba4aab096004909666f04748007603c67b7d2a8"
+    },
+    "hl836": {
+      "ruta": "results/publicos_0927c/haodou092_kaggriculture-harvest-ledger/main.py",
+      "sha256": "a00aa3c766ac837b11535c3048e3fbc8781c6da06417e98343fe708359c8c320"
+    },
+    "hl0928": {
+      "ruta": "results/exp_0928b/rival_hl0928.py",
+      "sha256": "531a423a43184bc5864714189595ec1dbbe3c873de48691b0ebd32fa0a2359bb"
+    },
+    "top3cc": {
+      "ruta": "submission/main_publico_top3cc.py",
+      "sha256": "e60ec15ceec28e46fd547bd7135ce6f0a580040352757adbc487f5d6f72c04f0"
+    },
+    "fcast2": {
+      "ruta": "results/publicos_0926/leoprovorov_four-turn-forecast-notebook-version-2/main.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    },
+    "cha22": {
+      "ruta": "submission/main_publico_cha22.py",
+      "sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652"
+    },
+    "hl74": {
+      "ruta": "results/publicos_0926/haodou092_kaggriculture-harvest-ledger/main.py",
+      "sha256": "b55ff467ed0ff9d157d79863241a61230a1376bb8fc4b1ddb2d9ae46f26f3b81"
+    }
+  },
+  "seeds": [
+    5020000,
+    5020001,
+    5020002,
+    5020003,
+    5020004,
+    5020005,
+    5020006,
+    5020007,
+    5020008,
+    5020009,
+    5020010,
+    5020011,
+    5020012,
+    5020013,
+    5020014,
+    5020015
+  ],
+  "vs": "ref,msb40,msb60,msb90",
+  "inicio": "2026-09-28 02:21:00",
+  "state": "complete",
+  "expected_episodes": 896,
+  "workers": 11,
+  "runtime": {
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+    "multiprocessing_start_method": "spawn",
+    "python_hash_seed": null,
+    "wheat_hash": 3881610380639625973
+  },
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "aa6fd55717f48b92095ac0b35c2d2ef4a5414678b4edde45581163b2dae37f9d",
+  "completed_episodes": 896,
+  "fin": "2026-09-28 02:32:31"
+}
