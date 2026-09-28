@@ -1,0 +1,102 @@
+{
+  "agentes": {
+    "ref": {
+      "ruta": "submission/main_publico_tds27top3.py",
+      "sha256": "fb31fb24525cca10dc7f77e5c1f89c3c478176d34a44ea1fe78d5de5338c9f39"
+    },
+    "cr15": {
+      "ruta": "results/exp_0928/barrido1b/cr15.py",
+      "sha256": "14d6f08b535144acd01a912d625b3ca2ee3ff89cd633d1596244c39427573ac0"
+    },
+    "ff16": {
+      "ruta": "results/exp_0928/barrido1b/ff16.py",
+      "sha256": "4b2ca62a38ab3519f2d0297e222fbade189473621d16b8273336562b1a60d310"
+    },
+    "hw200": {
+      "ruta": "results/exp_0928/barrido1b/hw200.py",
+      "sha256": "96f079c883331a2a5c722cd72ada905cd79be09dc5c6325a1d7c1ffb705b5ff2"
+    },
+    "cab5": {
+      "ruta": "results/exp_0928/barrido2/cab5.py",
+      "sha256": "8cc976ba93c12e06922b0143a66f64c56e75c5ed1ed78e9454effb41d90ab4e4"
+    },
+    "cxo15": {
+      "ruta": "results/exp_0928/barrido2/cxo15.py",
+      "sha256": "68228a9a40d6d83a89a3a596fa4071b95ee3946af040fbed93423cd006286492"
+    },
+    "cxr12": {
+      "ruta": "results/exp_0928/barrido2/cxr12.py",
+      "sha256": "5361e2999bb1d4d7b9a99fe83c0d836d01bd003bbd7e4b5315336f182026c2e7"
+    },
+    "or2m16": {
+      "ruta": "results/exp_0928/barrido2/or2m16.py",
+      "sha256": "958519dfdb23e6167b6cf3eabdd4944b9047599a1d93a575e1b296ffc356abfa"
+    },
+    "s731b": {
+      "ruta": "results/exp_0928/barrido2/s731b.py",
+      "sha256": "522f5bb7286a64018ce0b069b03a305f3c29bcbb0802f9b0bc8cbee2e1771d26"
+    },
+    "s738l3": {
+      "ruta": "results/exp_0928/barrido2/s738l3.py",
+      "sha256": "266ce4c06be91c341e413869923bb918f09fffe09c90f23f92a28703360175d4"
+    },
+    "s738l6": {
+      "ruta": "results/exp_0928/barrido2/s738l6.py",
+      "sha256": "403e673c4c4d2e4daf3fa253aaf691230302ddc7828877fe4fb7e3329266a215"
+    },
+    "sr12": {
+      "ruta": "results/exp_0928/barrido2/sr12.py",
+      "sha256": "f1eb86db4305f879686d6fa916e73b250f0f63b0d83393ed6c5cd270e491f9fb"
+    },
+    "sr4": {
+      "ruta": "results/exp_0928/barrido2/sr4.py",
+      "sha256": "3400f18260ddc6b7bee6a0314871f0a38e04e6f02bd0fcb6735a44cf79ea0a1a"
+    },
+    "tds27": {
+      "ruta": "results/publicos_0927/tetsutani/main.py",
+      "sha256": "55be5d5f124c8daaaa63c1a29ba4aab096004909666f04748007603c67b7d2a8"
+    },
+    "cha22": {
+      "ruta": "submission/main_publico_cha22.py",
+      "sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652"
+    },
+    "hl836": {
+      "ruta": "results/publicos_0927c/haodou092_kaggriculture-harvest-ledger/main.py",
+      "sha256": "a00aa3c766ac837b11535c3048e3fbc8781c6da06417e98343fe708359c8c320"
+    },
+    "top3cc": {
+      "ruta": "submission/main_publico_top3cc.py",
+      "sha256": "e60ec15ceec28e46fd547bd7135ce6f0a580040352757adbc487f5d6f72c04f0"
+    },
+    "hl74": {
+      "ruta": "results/publicos_0926/haodou092_kaggriculture-harvest-ledger/main.py",
+      "sha256": "b55ff467ed0ff9d157d79863241a61230a1376bb8fc4b1ddb2d9ae46f26f3b81"
+    }
+  },
+  "seeds": [
+    4600000,
+    4600001,
+    4600002,
+    4600003,
+    4600004,
+    4600005,
+    4600006,
+    4600007
+  ],
+  "vs": "ref,cr15,ff16,hw200,cab5,cxo15,cxr12,or2m16,s731b,s738l3,s738l6,sr12,sr4",
+  "inicio": "2026-09-27 19:43:54",
+  "state": "complete",
+  "expected_episodes": 1040,
+  "workers": 11,
+  "runtime": {
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+    "multiprocessing_start_method": "spawn",
+    "python_hash_seed": null,
+    "wheat_hash": 6614273987436526515
+  },
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "86f0fea6c8fa27023e8c4536c47219cc174c91f8697bce69b07bb7d8e28819fe",
+  "completed_episodes": 1040,
+  "fin": "2026-09-27 19:56:23"
+}

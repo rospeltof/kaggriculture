@@ -46,3 +46,9 @@ hp3 −2,08 [−7,35; +3,19] (regresión desde +8,1); hp6 +1,67 [−0,72; +4,05]
 se adopta** por la regla. cam22 queda PROMISING (signo positivo en ambas etapas y en todos
 los linajes; mismo ajuste elegido por haodou092) → se usa como **instrumento en el slot 2**
 (el mandato lo permite; slot 2 era top3cc, sin aporte al máximo) y se sigue confirmando.
+
+## Resultado etapa 1b (torneo_barrido_p1b, 1.040 partidas, 0 errores)
+
+sr12 +5,00 [−6,82; +16,82]; s738l6 +3,12 [−4,26; +10,51]; 0,00 (activas en acciones, sin
+cambio de resultado): sr4, or2m16, hw200, ff16, cxr12, cxo15, cr15; −3,12: s738l3, s731b,
+cab5. Pasan a etapa 2b (punto > 0): **sr12, s738l6** (semillas 4620000-4620023).
