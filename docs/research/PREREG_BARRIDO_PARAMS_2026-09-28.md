@@ -52,3 +52,16 @@ los linajes; mismo ajuste elegido por haodou092) → se usa como **instrumento e
 sr12 +5,00 [−6,82; +16,82]; s738l6 +3,12 [−4,26; +10,51]; 0,00 (activas en acciones, sin
 cambio de resultado): sr4, or2m16, hw200, ff16, cxr12, cxo15, cr15; −3,12: s738l3, s731b,
 cab5. Pasan a etapa 2b (punto > 0): **sr12, s738l6** (semillas 4620000-4620023).
+
+## Resultado etapa 2b (torneo_barrido_p2b, 720 partidas, 0 errores, semillas 4620000-023)
+
+sr12 +2,60 [−1,20; +6,41] (tds27 +5,5; harvest +4,2); s738l6 +4,48 [−2,32; +11,28]
+(tds27 +9,1; harvest +4,2; resto +4,2). Ninguna se adopta sola; ambas positivas en las
+dos etapas y sobre todo contra la familia tds27 (40% de los rivales reales el 28-sep).
+
+## Pre-registro: combinación s738l6 + sr12 (antes de evaluar)
+
+`results/exp_0928/combo_s738l6_sr12.py` (sustitución en su línea de ambas). Evaluación
+`torneo_combo1`: ref vs combo, mismos 5 rivales y pesos, semillas 4640000-4640047 (48
+nuevas), dos asientos. Adoptar (slot 1 o 2) si delta ponderado con IC95 por semilla > 0
+y ningún linaje con IC entero < −10 pp.
