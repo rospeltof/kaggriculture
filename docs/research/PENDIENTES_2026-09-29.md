@@ -18,3 +18,13 @@
 5. Ideas pequeñas no probadas: MS con segundo hueco para trigo cuando también se compra
    fertilizante; MSS cuando MS ya actuó (índice 8). Descartadas: WF, FG, BF, MS-siempre,
    guardia de hueco estricta, courier, presupuesto de reordenación.
+
+## Cribas extra del 28-sep (tarde), sin cambios en final_29
+
+- MS con dos productos (trigo y fertilizante en el mismo paso, índices 8 y 9): inerte en
+  200 partidas (criba o).
+- Ablaciones de capas de venta de tds27 sobre final_29 (criba p, 8 semillas × 2 asientos):
+  sin S928 −$48/−$66 contra la familia tds27; sin S948 −$82 contra la familia tds27 pero
+  +$95/+$135 contra cha22/fcast2; sin S758 −$190 contra la familia tds27. Esas capas ganan
+  la carrera contra espejos; se mantienen. (Idea no probada: apagar S948 solo si el rival no
+  es de la familia tds27; ganancia ponderada estimada ~+$30.)
