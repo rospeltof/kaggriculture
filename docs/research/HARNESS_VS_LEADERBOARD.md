@@ -1,5 +1,15 @@
 # Harness vs leaderboard — qué métrica local predice el ladder
 
+## Lectura 2026-09-28 ~08:40 UTC — derrotas reales de final_xc1 (≈2380)
+
+78 partidas reales (`replays/FINALXC1_LADDER_0928c`): 58W-20L (74,4%); 47 espejos (< $1.000,
+31W-16L), 38 copias que divergen tarde (29W-9L). De las 19 derrotas contra otros equipos,
+**16 son por menos de $600** y **7 son en pares con YARN**. Son justo los patrones que atacan
+SA (carrera de la lana en YARN) y MS (+$390-570 de margen medio en el harness contra todos
+los linajes). Predicción comprobable: final_xc1_sa_bp_ms90 debería ganar bastante más del
+74% en la misma franja.
+
+
 ## Lectura 2026-09-28 ~04:00 UTC — el ladder de ~2300 es un campeonato de espejos
 
 - 40 partidas reales de tds27top3 (56596228, `replays/TDS27TOP3_LADDER_0928`,
