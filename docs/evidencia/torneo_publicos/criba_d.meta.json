@@ -1,0 +1,65 @@
+{
+  "agentes": {
+    "xc1": {
+      "ruta": "submission/main_publico_final_xc1.py",
+      "sha256": "db6f1b0eb3350304479a4b01e0931947a2ccfb0dc34ddde06088fe10d2b48581"
+    },
+    "wf75": {
+      "ruta": "results/exp_0928b/wf75.py",
+      "sha256": "bdc91643df8e06b8019c1dc377d3162a2a8fb4f63f67b575d58ffcff2bbc4cde"
+    },
+    "wf90": {
+      "ruta": "results/exp_0928b/wf90.py",
+      "sha256": "09736857c3531be46661334ceb5b9f546378b985fedfc04884ddaebfdb3041d6"
+    },
+    "wf60": {
+      "ruta": "results/exp_0928b/wf60.py",
+      "sha256": "d26d5528075064682cf5820448671d15e303ced160e5a9eb9ff41af81854f980"
+    },
+    "wfa75": {
+      "ruta": "results/exp_0928b/wfa75.py",
+      "sha256": "d8a062cb063a8f1a79928c2de7eb51124acf4c5deb0b12a972812cb7a100996f"
+    },
+    "tds27": {
+      "ruta": "results/publicos_0927/tetsutani/main.py",
+      "sha256": "55be5d5f124c8daaaa63c1a29ba4aab096004909666f04748007603c67b7d2a8"
+    },
+    "hl0928": {
+      "ruta": "results/exp_0928b/rival_hl0928.py",
+      "sha256": "531a423a43184bc5864714189595ec1dbbe3c873de48691b0ebd32fa0a2359bb"
+    },
+    "cha22": {
+      "ruta": "submission/main_publico_cha22.py",
+      "sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652"
+    },
+    "top3cc": {
+      "ruta": "submission/main_publico_top3cc.py",
+      "sha256": "e60ec15ceec28e46fd547bd7135ce6f0a580040352757adbc487f5d6f72c04f0"
+    }
+  },
+  "seeds": [
+    4810003,
+    4820008,
+    4820042,
+    4700023,
+    4700003,
+    4820015,
+    4820023
+  ],
+  "vs": "xc1,wf75,wf90,wf60,wfa75",
+  "inicio": "2026-09-27 23:18:29",
+  "state": "complete",
+  "expected_episodes": 280,
+  "workers": 11,
+  "runtime": {
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+    "multiprocessing_start_method": "spawn",
+    "python_hash_seed": null,
+    "wheat_hash": -3607477772243967319
+  },
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "aa6fd55717f48b92095ac0b35c2d2ef4a5414678b4edde45581163b2dae37f9d",
+  "completed_episodes": 280,
+  "fin": "2026-09-27 23:23:07"
+}
