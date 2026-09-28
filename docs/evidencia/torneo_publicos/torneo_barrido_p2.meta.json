@@ -1,0 +1,86 @@
+{
+  "agentes": {
+    "ref": {
+      "ruta": "submission/main_publico_tds27top3.py",
+      "sha256": "fb31fb24525cca10dc7f77e5c1f89c3c478176d34a44ea1fe78d5de5338c9f39"
+    },
+    "hp3": {
+      "ruta": "results/exp_0928/barrido/hp3.py",
+      "sha256": "0358def04db5eaf137959e5bddd260e1eb1f0bcfd147c9ae1949984c6378ad56"
+    },
+    "hp6": {
+      "ruta": "results/exp_0928/barrido/hp6.py",
+      "sha256": "4067229e5d659e2f6e0c9b496502aeebed85d313d4ea5e8c8b000cbef563d582"
+    },
+    "cam22": {
+      "ruta": "results/exp_0928/barrido/cam22.py",
+      "sha256": "0a6333d7609faced7699b109ae64ef685efecb72793169b9f2bb3cb6c089dc9b"
+    },
+    "ff12": {
+      "ruta": "results/exp_0928/barrido/ff12.py",
+      "sha256": "83c177c2d2bea3d511c39374dbe700188ee3149a730c5782b0e4e57534174f7c"
+    },
+    "tds27": {
+      "ruta": "results/publicos_0927/tetsutani/main.py",
+      "sha256": "55be5d5f124c8daaaa63c1a29ba4aab096004909666f04748007603c67b7d2a8"
+    },
+    "cha22": {
+      "ruta": "submission/main_publico_cha22.py",
+      "sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652"
+    },
+    "hl836": {
+      "ruta": "results/publicos_0927c/haodou092_kaggriculture-harvest-ledger/main.py",
+      "sha256": "a00aa3c766ac837b11535c3048e3fbc8781c6da06417e98343fe708359c8c320"
+    },
+    "top3cc": {
+      "ruta": "submission/main_publico_top3cc.py",
+      "sha256": "e60ec15ceec28e46fd547bd7135ce6f0a580040352757adbc487f5d6f72c04f0"
+    },
+    "hl74": {
+      "ruta": "results/publicos_0926/haodou092_kaggriculture-harvest-ledger/main.py",
+      "sha256": "b55ff467ed0ff9d157d79863241a61230a1376bb8fc4b1ddb2d9ae46f26f3b81"
+    }
+  },
+  "seeds": [
+    4610000,
+    4610001,
+    4610002,
+    4610003,
+    4610004,
+    4610005,
+    4610006,
+    4610007,
+    4610008,
+    4610009,
+    4610010,
+    4610011,
+    4610012,
+    4610013,
+    4610014,
+    4610015,
+    4610016,
+    4610017,
+    4610018,
+    4610019,
+    4610020,
+    4610021,
+    4610022,
+    4610023
+  ],
+  "vs": "ref,hp3,hp6,cam22,ff12",
+  "inicio": "2026-09-27 19:26:57",
+  "state": "complete",
+  "expected_episodes": 1200,
+  "workers": 11,
+  "runtime": {
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+    "multiprocessing_start_method": "spawn",
+    "python_hash_seed": null,
+    "wheat_hash": -7092517548264468409
+  },
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "86f0fea6c8fa27023e8c4536c47219cc174c91f8697bce69b07bb7d8e28819fe",
+  "completed_episodes": 1200,
+  "fin": "2026-09-27 19:43:41"
+}
