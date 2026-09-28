@@ -4,6 +4,16 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-28, MS] Las compras rutinarias de trigo/fertilizante del rival son una opción
+  gratis.** El motor cotiza la compra al inventario−1: comprar X y revender X en el mismo paso
+  da $0 exacto si nadie opera en medio. Como todos los agentes de ruta compran en los mismos
+  pasos, comprar X de más temprano y revender en el índice 9 gana +$390-570 por partida contra
+  todos los linajes probados, sin una sola celda negativa en 672 (confirmación +3,44 pp con IC
+  > 0). Evidencia: PREREG_MS, `apilar_mini_spec.py`.
+- **[2026-09-28, orden] Contra espejos, los cambios que solo reordenan (XC, BP) o añaden
+  opciones de coste cero (MS) dan ventajas consistentes; los que cambian cantidades vendidas
+  (WF, FG) fallan en partidas cerradas.**
+
 - **[2026-09-28, lana] En pares YARN la partida se decide en la carrera de la lana, y la
   pierde la logística, no la decisión de venta.** La curva de WOOL cae de $230 a $1 en ~100
   unidades; quien deja la lana en el cobertizo primero cobra el tramo alto. tds27 (y todos

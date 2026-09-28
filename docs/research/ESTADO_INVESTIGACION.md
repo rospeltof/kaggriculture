@@ -1,5 +1,19 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-28 08:13 UTC — MS adoptada; candidata del 29: final_xc1_sa_bp_ms90
+
+- **Envío previsto 29-sep 00:00 UTC:** `submission/main_publico_final_xc1_sa_bp_ms90.py`
+  (sha a0ffcd24) = final_xc1 + SA + BP + MS(X≤90). Desplaza a final_frps; par activo:
+  final_xc1 (≈2380) + final_xc1_sa_bp_ms90.
+- **MS** (PREREG_MS): comprar X≤90 de más en nuestra compra de trigo/fertilizante (índice
+  temprano gracias a BP) y revender X en el índice 9. Ida y vuelta = $0 exacto contra un
+  mercado sin cambios (la compra se cotiza al inventario−1); si el rival compra en medio,
+  ganamos nosotros y él paga más. Confirmación **+3,44 pp [+0,95; +5,92]**, 13/13 celdas a
+  favor, margen +$388-572 contra todos, 0/672 celdas negativas. Prueba amplia 26 agentes:
+  90,1% → 94,7%.
+- Cadena de capas al final del módulo: FR → MS → BP → XP(cxd) → step1009 (+ SA en su línea).
+
+
 ## Corte 2026-09-28 07:15 UTC — candidata del 29: final_xc1_sa_bp
 
 - **Plan 29-sep 00:00 UTC:** enviar `submission/main_publico_final_xc1_sa_bp.py` (sha 054c58fd)
