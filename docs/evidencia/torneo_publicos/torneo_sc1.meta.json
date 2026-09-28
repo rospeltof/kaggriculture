@@ -1,0 +1,78 @@
+{
+  "agentes": {
+    "ref": {
+      "ruta": "results/exp_0928b/xc1_sa.py",
+      "sha256": "70259aa3025bc308a702e261e42e088eb8562f28309dece3d5929ef932a8e79a"
+    },
+    "xc1_sa2": {
+      "ruta": "results/exp_0928b/xc1_sa2.py",
+      "sha256": "1b2ff0b8635d00532dc32e590d215db9b34968d8ebd51af42524a948ed000cf4"
+    },
+    "xc1_sc": {
+      "ruta": "results/exp_0928b/xc1_sc.py",
+      "sha256": "945c9115bf30324c6d927034abd5848b54dcf68699b25230985237317f9e24ba"
+    },
+    "tds27": {
+      "ruta": "results/publicos_0927/tetsutani/main.py",
+      "sha256": "55be5d5f124c8daaaa63c1a29ba4aab096004909666f04748007603c67b7d2a8"
+    },
+    "hl836": {
+      "ruta": "results/publicos_0927c/haodou092_kaggriculture-harvest-ledger/main.py",
+      "sha256": "a00aa3c766ac837b11535c3048e3fbc8781c6da06417e98343fe708359c8c320"
+    },
+    "hl0928": {
+      "ruta": "results/exp_0928b/rival_hl0928.py",
+      "sha256": "531a423a43184bc5864714189595ec1dbbe3c873de48691b0ebd32fa0a2359bb"
+    },
+    "top3cc": {
+      "ruta": "submission/main_publico_top3cc.py",
+      "sha256": "e60ec15ceec28e46fd547bd7135ce6f0a580040352757adbc487f5d6f72c04f0"
+    },
+    "fcast2": {
+      "ruta": "results/publicos_0926/leoprovorov_four-turn-forecast-notebook-version-2/main.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    },
+    "cha22": {
+      "ruta": "submission/main_publico_cha22.py",
+      "sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652"
+    },
+    "hl74": {
+      "ruta": "results/publicos_0926/haodou092_kaggriculture-harvest-ledger/main.py",
+      "sha256": "b55ff467ed0ff9d157d79863241a61230a1376bb8fc4b1ddb2d9ae46f26f3b81"
+    }
+  },
+  "seeds": [
+    4920000,
+    4920001,
+    4920002,
+    4920003,
+    4920004,
+    4920005,
+    4920006,
+    4920007,
+    4920008,
+    4920009,
+    4920010,
+    4920011,
+    4920012,
+    4920013,
+    4920014,
+    4920015
+  ],
+  "vs": "ref,xc1_sa2,xc1_sc",
+  "inicio": "2026-09-28 00:22:58",
+  "state": "complete",
+  "expected_episodes": 672,
+  "workers": 11,
+  "runtime": {
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+    "multiprocessing_start_method": "spawn",
+    "python_hash_seed": null,
+    "wheat_hash": 3343469244056137889
+  },
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "aa6fd55717f48b92095ac0b35c2d2ef4a5414678b4edde45581163b2dae37f9d",
+  "completed_episodes": 672,
+  "fin": "2026-09-28 00:40:42"
+}
