@@ -4,6 +4,18 @@ Actualizado: 2026-09-25 UTC. Cada entrada lleva su evidencia; cada evidencia nue
 
 ## HIGH CONFIDENCE
 
+- **[2026-09-28, lana] En pares YARN la partida se decide en la carrera de la lana, y la
+  pierde la logística, no la decisión de venta.** La curva de WOOL cae de $230 a $1 en ~100
+  unidades; quien deja la lana en el cobertizo primero cobra el tramo alto. tds27 (y todos
+  sus forks) hace que el peón de ovejas recoja fertilizante en cada casilla antes de
+  entregar: 3 pasos de retraso frente a cha22/mroute. Real (40 partidas a ~2300): YARN 5W-7L
+  frente a 14W-10L en el resto. Criba g: entregar primero +$1.800-2.450, cha22/mroute
+  30 → 80%. Evidencia: `sonda_acciones3.py`, PREREG_SA.
+- **[2026-09-28, WF] Cambiar CANTIDADES de venta contra espejos es peligroso aunque suba el
+  margen medio.** WF (vender todo lo que queda sobre un suelo) +$107 de margen medio pero
+  −2,8 pp (9/10 celdas en contra) en confirmación. Cambios solo de orden (XC) no tuvieron
+  ese problema. Evidencia: PREREG_WF.
+
 - **[2026-09-28, espejos] En la franja ~2300 la mayoría de partidas son espejos de la
   familia tds27 decididos por menos de $1.000.** 29/40 partidas reales de tds27top3;
   los forks ganan con retoques de la carrera de ventas (vender antes, mejor índice).
