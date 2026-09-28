@@ -1,0 +1,53 @@
+{
+  "agentes": {
+    "final": {
+      "ruta": "submission/main_publico_final_frps.py",
+      "sha256": "c5707f9c23d8baeb2c433a7fb2c2204c7f93947d52aeb6f1c1e68d26c332f5e0"
+    },
+    "xp1": {
+      "ruta": "results/exp_0928b/xp1.py",
+      "sha256": "a876ca7bff2ec78ca4e6e3961a7b4aeea94b132ab269c9166b33c865faeea5e7"
+    },
+    "xp2": {
+      "ruta": "results/exp_0928b/xp2.py",
+      "sha256": "0e512362fac83505626f7621a7e04839d0ca85049d8aba9a749422f970ba046f"
+    },
+    "xp4": {
+      "ruta": "results/exp_0928b/xp4.py",
+      "sha256": "eb2cf201bca66d3602f58224b6c17770db6b01404c84b51c829f6bfb80e34362"
+    },
+    "xc1": {
+      "ruta": "results/exp_0928b/xc1.py",
+      "sha256": "db6f1b0eb3350304479a4b01e0931947a2ccfb0dc34ddde06088fe10d2b48581"
+    },
+    "tds27": {
+      "ruta": "results/publicos_0927/tetsutani/main.py",
+      "sha256": "55be5d5f124c8daaaa63c1a29ba4aab096004909666f04748007603c67b7d2a8"
+    },
+    "cha22": {
+      "ruta": "submission/main_publico_cha22.py",
+      "sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652"
+    }
+  },
+  "seeds": [
+    4800000,
+    4800001,
+    4800002
+  ],
+  "vs": "final,xp1,xp2,xp4,xc1",
+  "inicio": "2026-09-27 22:10:30",
+  "state": "complete",
+  "expected_episodes": 60,
+  "workers": 11,
+  "runtime": {
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+    "multiprocessing_start_method": "spawn",
+    "python_hash_seed": null,
+    "wheat_hash": 383058925779619549
+  },
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "aa6fd55717f48b92095ac0b35c2d2ef4a5414678b4edde45581163b2dae37f9d",
+  "completed_episodes": 60,
+  "fin": "2026-09-27 22:11:23"
+}
