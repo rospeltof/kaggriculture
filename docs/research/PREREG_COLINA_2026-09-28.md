@@ -9,3 +9,8 @@ Escrito antes de evaluar. 2026-09-28 ~01:45 UTC.
   Pasan las 3 con mayor punto (> 0).
 - **Confirmación:** semillas 4670000-4670047 (48 nuevas). Adoptar si IC95 por semilla > 0
   y ningún linaje con IC entero < −10 pp.
+
+## Resultado piloto (torneo_colina1, 1.080 partidas, 0 errores)
+
+hp6 +5,00 [−0,90; +10,90]; cam22 +4,58 [+0,20; +8,96]; sr10 +3,33 [−4,00; +10,67];
+l5 −0,42; l8 −0,83; l7, sr14, sr16 inertes. Pasan a confirmación: **hp6, cam22, sr10**.

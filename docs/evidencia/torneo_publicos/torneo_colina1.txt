@@ -1,0 +1,30 @@
+14 agentes, 45 parejas, 1080 episodios
+  50/1080
+  100/1080
+  150/1080
+  200/1080
+  250/1080
+  300/1080
+  350/1080
+  400/1080
+  450/1080
+  500/1080
+  550/1080
+  600/1080
+  650/1080
+  700/1080
+  750/1080
+  800/1080
+  850/1080
+  900/1080
+  950/1080
+  1000/1080
+  1050/1080
+Traceback (most recent call last):
+  File "/Users/rospel/Desktop/kaggriculture/torneo.py", line 167, in <module>
+    if __name__ == "__main__":
+        ^^^^^^
+  File "/Users/rospel/Desktop/kaggriculture/torneo.py", line 157, in main
+    assert hashlib.sha256(engine.read_bytes()).hexdigest()==meta['engine_sha256']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

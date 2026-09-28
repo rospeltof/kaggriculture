@@ -104,6 +104,8 @@ def main():
     ap.add_argument("--seed0", type=int, default=910000)
     ap.add_argument("--workers", type=int, default=11)
     ap.add_argument("--vs", default=None)
+    ap.add_argument("--lista-semillas", default=None, help="semillas explicitas separadas por comas (ignora --seeds/--seed0)")
+    ap.add_argument("--sin-cruces", action="store_true", help="con --vs: no jugar brazo contra brazo")
     ap.add_argument("--fresco", action="store_true", help="un proceso nuevo por partida (agentes multi-fichero con estado en modulos importados)")
     args = ap.parse_args()
     if any(Path(args.out+s).exists() for s in ('.jsonl','.meta.json','.sources.tgz')):
@@ -114,11 +116,13 @@ def main():
         if not Path(p).exists():
             sys.exit(f"no existe {p}")
     meta = dict(agentes={n: dict(ruta=p, sha256=hashlib.sha256(Path(p).read_bytes()).hexdigest()) for n, p in ag.items()},
-                seeds=list(range(args.seed0, args.seed0 + args.seeds)), vs=args.vs, inicio=time.strftime("%Y-%m-%d %H:%M:%S"))
+                seeds=[int(x) for x in args.lista_semillas.split(',')] if args.lista_semillas else list(range(args.seed0, args.seed0 + args.seeds)), vs=args.vs, inicio=time.strftime("%Y-%m-%d %H:%M:%S"))
     brazos = args.vs.split(",") if args.vs else None
     parejas = [(a, b) for a, b in itertools.combinations(ag, 2) if brazos is None or a in brazos or b in brazos]
     if brazos:
         parejas = [(a, b) if a in brazos else (b, a) for a, b in parejas]
+        if args.sin_cruces:
+            parejas = [(a, b) for a, b in parejas if b not in brazos]
     jobs = [(a, ag[a], b, ag[b], s, seat) for a, b in parejas for s in meta["seeds"] for seat in (0, 1)]
     import importlib
     from importlib.metadata import version
