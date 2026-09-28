@@ -1,0 +1,48 @@
+9 agentes, 14 parejas, 896 episodios
+  50/896
+  100/896
+  150/896
+  200/896
+  250/896
+  300/896
+  350/896
+  400/896
+  450/896
+  500/896
+  550/896
+  600/896
+  650/896
+  700/896
+  750/896
+  800/896
+  850/896
+episodios validos 896/896; con error: 0
+
+         A          B  W-L-T de A   %A    margen medio A   semillas A>B
+       ref      cha22   47- 17- 0   73.4         +90   23/32
+       ref     fcast2   50- 14- 0   78.1        +437   25/32
+       ref     hl0928   47- 17- 0   73.4        +229   23/32
+       ref       hl74   46- 18- 0   71.9        +432   22/32
+       ref      hl836   61-  3- 0   95.3        +259   30/32
+       ref      tds27   51- 13- 0   79.7        +239   25/32
+       ref     top3cc   56-  8- 0   87.5        +696   28/32
+    xc1_sa      cha22   51- 13- 0   79.7        +461   25/32
+    xc1_sa     fcast2   54- 10- 0   84.4        +834   27/32
+    xc1_sa     hl0928   47- 17- 0   73.4        +651   23/32
+    xc1_sa       hl74   49- 15- 0   76.6        +791   24/32
+    xc1_sa      hl836   61-  3- 0   95.3        +684   30/32
+    xc1_sa      tds27   51- 13- 0   79.7        +664   25/32
+    xc1_sa     top3cc   58-  6- 0   90.6       +1067   29/32
+
+Puntuacion media contra todos los demas:
+      xc1_sa  82.8%  (448 ep)
+         ref  79.9%  (448 ep)
+      hl0928  26.6%  (128 ep)
+        hl74  25.8%  (128 ep)
+       cha22  23.4%  (128 ep)
+       tds27  20.3%  (128 ep)
+      fcast2  18.8%  (128 ep)
+      top3cc  10.9%  (128 ep)
+       hl836   4.7%  (128 ep)
+
+ms max por turno (peor episodio): tds27 290, ref 370, hl836 317, hl0928 311, top3cc 243, fcast2 256, cha22 229, hl74 223, xc1_sa 312
