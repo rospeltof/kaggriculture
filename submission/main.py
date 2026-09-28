@@ -10275,3 +10275,31 @@ def frontrun_agent(observation, configuration=None):
 
 
 frontrun_agent.telemetry = _FR_REPORT
+
+
+# ==== Capa XP: 1 pase(s) extra de _cxd_reorder antes de FR (kaggriculture local, 2026-09-28) ====
+_XP_N = 1
+_XP_REPORT = dict(calls=0, changed=0, errors=0)
+def _xp_fabrica(padre):
+    def pases(observation, configuration=None):
+        action = padre(observation, configuration)
+        try:
+            step = int(observation.get('step', 0))
+            if step == 0:
+                _XP_REPORT.update(calls=0, changed=0, errors=0)
+            _XP_REPORT['calls'] += 1
+            res = action
+            for _ in range(_XP_N):
+                res = _cxd_reorder(observation, res)
+            if _s834_key(res) != _s834_key(action):
+                _XP_REPORT['changed'] += 1
+                st = _RACE_STATE.get(int(observation.get('player', 0)))
+                if st is not None and st.get('prev_action') is not None and st.get('step') == step:
+                    st['prev_action'] = res
+            return res
+        except Exception:
+            _XP_REPORT['errors'] += 1
+            return action
+    return pases
+_FR_PARENT = _xp_fabrica(_FR_PARENT)
+del _xp_fabrica
