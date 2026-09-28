@@ -14,3 +14,9 @@ Escrito antes de evaluar. 2026-09-28 ~01:45 UTC.
 
 hp6 +5,00 [−0,90; +10,90]; cam22 +4,58 [+0,20; +8,96]; sr10 +3,33 [−4,00; +10,67];
 l5 −0,42; l8 −0,83; l7, sr14, sr16 inertes. Pasan a confirmación: **hp6, cam22, sr10**.
+
+## Resultado confirmación (torneo_colina2, 1.920 partidas, 0 errores; reanudado tras cierre de la app en 1.138 con `torneo.py --reanudar`, mismos agentes y semillas)
+
+hp6 −2,24 [−6,22; +1,74]; **cam22 +5,31 [+1,17; +9,46]** (tds27 **+12,50 [+4,86; +20,14]**,
+cha22 0,00, harvest +3,12, resto 0,00); sr10 −0,52. **ADOPTAR cam22 sobre la combo.**
+(Sobre tds27top3 sola cam22 era neutra: interacción con s738l6/sr12.)

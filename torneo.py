@@ -106,10 +106,13 @@ def main():
     ap.add_argument("--vs", default=None)
     ap.add_argument("--lista-semillas", default=None, help="semillas explicitas separadas por comas (ignora --seeds/--seed0)")
     ap.add_argument("--sin-cruces", action="store_true", help="con --vs: no jugar brazo contra brazo")
+    ap.add_argument("--reanudar", action="store_true", help="continuar un torneo interrumpido: mismos agentes (hash) y semillas; solo juega las partidas que faltan")
     ap.add_argument("--fresco", action="store_true", help="un proceso nuevo por partida (agentes multi-fichero con estado en modulos importados)")
     args = ap.parse_args()
-    if any(Path(args.out+s).exists() for s in ('.jsonl','.meta.json','.sources.tgz')):
+    if not args.reanudar and any(Path(args.out+s).exists() for s in ('.jsonl','.meta.json','.sources.tgz')):
         sys.exit('No sobrescribir un torneo existente')
+    if args.reanudar and not (Path(args.out+'.jsonl').exists() and Path(args.out+'.meta.json').exists()):
+        sys.exit('Nada que reanudar')
     Path(args.out).parent.mkdir(parents=True,exist_ok=True)
     ag = dict(x.split("=", 1) for x in args.agentes)
     for n, p in ag.items():
@@ -133,23 +136,37 @@ def main():
                 engine_sha256=hashlib.sha256(engine.read_bytes()).hexdigest(),
                 kaggle_environments=version('kaggle-environments'),
                 runner_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
-    with tarfile.open(args.out+'.sources.tgz','w:gz') as archive:
-        archive.add(__file__,arcname='torneo.py')
-        for name,path in ag.items():archive.add(path,arcname=f'agents/{name}.py')
+    previas = []
+    if args.reanudar:
+        vieja = json.loads(Path(args.out+'.meta.json').read_text())
+        assert vieja['seeds'] == meta['seeds'], 'semillas distintas'
+        assert {n: v['sha256'] for n, v in vieja['agentes'].items()} == {n: v['sha256'] for n, v in meta['agentes'].items()}, 'agentes distintos'
+        previas = [json.loads(l) for l in open(args.out+'.jsonl') if l.strip()]
+        previas = [r for r in previas if r.get('valid')]
+        hechas = {(r['a'], r['b'], r['seed'], r['seat']) for r in previas}
+        todas = jobs
+        jobs = [j for j in jobs if (j[0], j[2], j[4], j[5]) not in hechas]
+        meta.update(inicio=vieja.get('inicio'), reanudado=dict(en=time.strftime('%Y-%m-%d %H:%M:%S'), previas=len(previas),
+                    runner_anterior=vieja.get('runner_sha256')), expected_episodes=len(todas))
+        Path(args.out+'.jsonl').write_text(''.join(json.dumps(r) + '\n' for r in previas))
+    else:
+        with tarfile.open(args.out+'.sources.tgz','w:gz') as archive:
+            archive.add(__file__,arcname='torneo.py')
+            for name,path in ag.items():archive.add(path,arcname=f'agents/{name}.py')
     def save():Path(args.out+'.meta.json').write_text(json.dumps(meta,indent=2))
     save()
     print(f"{len(ag)} agentes, {len(parejas)} parejas, {len(jobs)} episodios", flush=True)
-    rows = []
+    rows = list(previas)
     try:
-        with mp.Pool(args.workers, maxtasksperchild=1 if args.fresco else None) as pool, open(args.out + ".jsonl", "x") as f:
-            for i, r in enumerate(pool.imap_unordered(episodio, jobs), 1):
+        with mp.Pool(args.workers, maxtasksperchild=1 if args.fresco else None) as pool, open(args.out + ".jsonl", "a" if args.reanudar else "x") as f:
+            for i, r in enumerate(pool.imap_unordered(episodio, jobs), len(previas) + 1):
                 rows.append(r)
                 f.write(json.dumps(r) + "\n"); f.flush()
                 if not r['valid']:raise ValueError(f'Episodio inválido: {r}')
                 if i % 50 == 0:
                     meta['completed_episodes']=i;save()
                     print(f"  {i}/{len(jobs)}", flush=True)
-        expected={(a,b,s,p) for a,_,b,_,s,p in jobs}
+        expected={(a,b,s,p) for a,_,b,_,s,p in (todas if args.reanudar else jobs)}
         assert len(rows)==len(expected)==len({(r['a'],r['b'],r['seed'],r['seat']) for r in rows})
         assert {(r['a'],r['b'],r['seed'],r['seat']) for r in rows}==expected
         for n,p in ag.items():

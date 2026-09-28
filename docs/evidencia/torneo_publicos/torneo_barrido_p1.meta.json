@@ -1,0 +1,150 @@
+{
+  "agentes": {
+    "ref": {
+      "ruta": "submission/main_publico_tds27top3.py",
+      "sha256": "fb31fb24525cca10dc7f77e5c1f89c3c478176d34a44ea1fe78d5de5338c9f39"
+    },
+    "cam22": {
+      "ruta": "results/exp_0928/barrido/cam22.py",
+      "sha256": "0a6333d7609faced7699b109ae64ef685efecb72793169b9f2bb3cb6c089dc9b"
+    },
+    "cam8": {
+      "ruta": "results/exp_0928/barrido/cam8.py",
+      "sha256": "4c34875e1f7b15f5f96f15ea10943b2515ed2c7440dfa62829d9586b583caf54"
+    },
+    "cb28": {
+      "ruta": "results/exp_0928/barrido/cb28.py",
+      "sha256": "63bf30d89bfa6b92a55497dcfa247725375bf00247dd45bb784332eb8fa41d68"
+    },
+    "cb45": {
+      "ruta": "results/exp_0928/barrido/cb45.py",
+      "sha256": "12ef7bd9c22e45fb4c6bb25f4b21fe51a3355184db6f234ffefcde11045438ef"
+    },
+    "cr15": {
+      "ruta": "results/exp_0928/barrido/cr15.py",
+      "sha256": "6964cd0fa2b17c0f9561c2eba025ef6352d6c20135550b5051d777ef86fa87c8"
+    },
+    "cr22": {
+      "ruta": "results/exp_0928/barrido/cr22.py",
+      "sha256": "f3d94cb1059da464b15a9927fb422f6ae6ebd0d4b4c64cc9d4d5fe6b12c6a2b0"
+    },
+    "ff12": {
+      "ruta": "results/exp_0928/barrido/ff12.py",
+      "sha256": "83c177c2d2bea3d511c39374dbe700188ee3149a730c5782b0e4e57534174f7c"
+    },
+    "ff16": {
+      "ruta": "results/exp_0928/barrido/ff16.py",
+      "sha256": "d501bba65ba0c00458b1bdb51b66d3817e8b8224b52d82b56bc5bb542c06d792"
+    },
+    "hd115": {
+      "ruta": "results/exp_0928/barrido/hd115.py",
+      "sha256": "2b1fc07f0eccb4ec116a01ddd758ceb248a25b047db92db4da43032046ab8747"
+    },
+    "hd15": {
+      "ruta": "results/exp_0928/barrido/hd15.py",
+      "sha256": "a5984d525be919e1956a4ba02ac89e268a3a2f107d95ca91635bb387186793b6"
+    },
+    "hm12": {
+      "ruta": "results/exp_0928/barrido/hm12.py",
+      "sha256": "5c69a06bc8e6bee4cf97bc94602902a1bc1681f9dc528184428814380c809803"
+    },
+    "hm36": {
+      "ruta": "results/exp_0928/barrido/hm36.py",
+      "sha256": "73a6e65713620b4e5f5378407c10b00e57f6ab8fd6f5a00911fa2a3dbd62974c"
+    },
+    "hp3": {
+      "ruta": "results/exp_0928/barrido/hp3.py",
+      "sha256": "0358def04db5eaf137959e5bddd260e1eb1f0bcfd147c9ae1949984c6378ad56"
+    },
+    "hp6": {
+      "ruta": "results/exp_0928/barrido/hp6.py",
+      "sha256": "4067229e5d659e2f6e0c9b496502aeebed85d313d4ea5e8c8b000cbef563d582"
+    },
+    "hw100": {
+      "ruta": "results/exp_0928/barrido/hw100.py",
+      "sha256": "2f222114afc85b6b1b201f44c65b68c2c2d5a0ffea00b57d439c9459e50a71d7"
+    },
+    "hw200": {
+      "ruta": "results/exp_0928/barrido/hw200.py",
+      "sha256": "44aa61e5939b7ea3e610a78dc2002bca586459370c7fa421e19e373518d284b4"
+    },
+    "ph32": {
+      "ruta": "results/exp_0928/barrido/ph32.py",
+      "sha256": "ffca399870455156adbfbe5976f85d52082e3a602757bb93f0ad3defb2e443ce"
+    },
+    "ph64": {
+      "ruta": "results/exp_0928/barrido/ph64.py",
+      "sha256": "01ec80fde45730c827fee8100a1eca934a11708c65b005f7a7e93d7bd7d32dad"
+    },
+    "rd36": {
+      "ruta": "results/exp_0928/barrido/rd36.py",
+      "sha256": "e706d17bd1800db8a045a5a281945e8f1538b0e246bdf383a3c9b52c1622d8ad"
+    },
+    "rd48": {
+      "ruta": "results/exp_0928/barrido/rd48.py",
+      "sha256": "bed7f044557f252ef34a503306e7023120bd3a1b915136ab03e6074f1ab52121"
+    },
+    "rm16": {
+      "ruta": "results/exp_0928/barrido/rm16.py",
+      "sha256": "eae6f7528be522668a9eafb2aae87d1596d87bf35786ce7ac4fc582cd8d92297"
+    },
+    "rm8": {
+      "ruta": "results/exp_0928/barrido/rm8.py",
+      "sha256": "5351216ca2a93a926771b329b7502250876da63ae5bd0593f61fdcb126dc6eb3"
+    },
+    "rw20": {
+      "ruta": "results/exp_0928/barrido/rw20.py",
+      "sha256": "ac1ddb51c97d615429a5f06eccab26b11740de0a25ca2aa88915baa4673fb3b5"
+    },
+    "rw40": {
+      "ruta": "results/exp_0928/barrido/rw40.py",
+      "sha256": "0ede83ed827664bb88dcc2faf35c4e2d4eeec7faae59afac3aadad3b91df4b85"
+    },
+    "tds27": {
+      "ruta": "results/publicos_0927/tetsutani/main.py",
+      "sha256": "55be5d5f124c8daaaa63c1a29ba4aab096004909666f04748007603c67b7d2a8"
+    },
+    "cha22": {
+      "ruta": "submission/main_publico_cha22.py",
+      "sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652"
+    },
+    "hl836": {
+      "ruta": "results/publicos_0927c/haodou092_kaggriculture-harvest-ledger/main.py",
+      "sha256": "a00aa3c766ac837b11535c3048e3fbc8781c6da06417e98343fe708359c8c320"
+    },
+    "top3cc": {
+      "ruta": "submission/main_publico_top3cc.py",
+      "sha256": "e60ec15ceec28e46fd547bd7135ce6f0a580040352757adbc487f5d6f72c04f0"
+    },
+    "hl74": {
+      "ruta": "results/publicos_0926/haodou092_kaggriculture-harvest-ledger/main.py",
+      "sha256": "b55ff467ed0ff9d157d79863241a61230a1376bb8fc4b1ddb2d9ae46f26f3b81"
+    }
+  },
+  "seeds": [
+    4600000,
+    4600001,
+    4600002,
+    4600003,
+    4600004,
+    4600005,
+    4600006,
+    4600007
+  ],
+  "vs": "ref,cam22,cam8,cb28,cb45,cr15,cr22,ff12,ff16,hd115,hd15,hm12,hm36,hp3,hp6,hw100,hw200,ph32,ph64,rd36,rd48,rm16,rm8,rw20,rw40",
+  "inicio": "2026-09-27 19:01:37",
+  "state": "complete",
+  "expected_episodes": 2000,
+  "workers": 11,
+  "runtime": {
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+    "multiprocessing_start_method": "spawn",
+    "python_hash_seed": null,
+    "wheat_hash": 8921479094506253300
+  },
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "86f0fea6c8fa27023e8c4536c47219cc174c91f8697bce69b07bb7d8e28819fe",
+  "completed_episodes": 2000,
+  "fin": "2026-09-27 19:26:08"
+}
