@@ -1050,13 +1050,19 @@
     },
     "reason": "PROMISING no adoptada por la regla (IC incluye 0) pero signo positivo en ambas etapas y todos los linajes; slot 2 (top3cc) no aportaba al maximo. Instrumento autorizado por el mandato.",
     "leaderboard": {
-      "score": null,
-      "episodes": 0,
+      "score": 1518.8,
+      "episodes": null,
       "rank": null,
-      "lecturas": []
+      "lecturas": [
+        [
+          "2026-09-28T02:14Z",
+          1518.8,
+          null
+        ]
+      ]
     },
     "observed": null,
-    "conclusion": "PENDIENTE",
+    "conclusion": "Desactivada a las ~1.5 h (aun subiendo) al subir combo_fr. cam22 neutro en tres bloques locales.",
     "next_action": "Confirmacion local con 48 semillas nuevas; comparar rating con tds27top3 a ~100 ep."
   },
   {
@@ -1088,5 +1094,31 @@
     "observed": null,
     "conclusion": "PENDIENTE",
     "next_action": "Censo a ~60 ep: resultado contra familia tds27 (prediccion: >60%). Seguir subiendo la colina alrededor de los parametros ganadores."
+  },
+  {
+    "submission_id": 56626140,
+    "timestamp": "2026-09-28T02:14:07Z",
+    "git_commit": "c4edb73",
+    "experiment_id": "tds27top3_combo_fr",
+    "config": {
+      "file": "submission/main_publico_tds27top3_combo_fr.py",
+      "base": "combo (tds27top3 + _S738_LOOK=6 + _SR_MARGIN=12)",
+      "capa": "apilar_frontrun.py (con ataque)"
+    },
+    "local_harness": {
+      "prereg": "docs/research/PREREG_FRONTRUN_2026-09-28.md",
+      "resultado": "+37.21 pp [+26.25; +48.17] en 43 semillas con rutas de compra de trigo (103/104/112/124); 51/51 celdas a favor; cha22 +44.2, hl836 +46.5, tds27 +20.9",
+      "margenes": "vs tds27 +110 -> +5135; vs hl836 -16 -> +5001; vs cha22 -421 -> +1740"
+    },
+    "reason": "Mecanismo hallado en replays reales: especuladores privados compraban en t-1 el trigo que nuestra cinta compra en t (-8/11k por partida). La pre-compra neutraliza ese ataque y hace pagar la subida a los rivales de ruta.",
+    "leaderboard": {
+      "score": null,
+      "episodes": 0,
+      "rank": null,
+      "lecturas": []
+    },
+    "observed": null,
+    "conclusion": "PENDIENTE",
+    "next_action": "Censo a ~60 ep; revisar partidas en rutas 103/104/112/124 (telemetria FR en el replay: compras un paso antes)."
   }
 ]
