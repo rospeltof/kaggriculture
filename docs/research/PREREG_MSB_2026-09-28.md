@@ -33,3 +33,12 @@ MSS(X≤90).
 final_xc1 → final_29 en semillas 5090000-007 (fáciles: final_xc1 ya gana el 99%): 99,0% →
 100%; margen +$300-775 contra 25 de 26 rivales (mínimo por celda positivo; graphrl +$87 de
 media con 14 celdas levemente negativas). Máximo 360 ms por turno.
+
+## Nota: guardia de hueco más estricta (criba n) — no se adopta
+
+Variante f29_safe: el hueco de MS descuenta todas las entradas al cobertizo de la lista
+(todas las BUY_PRODUCT y BUY_ANIMAL), no solo la compra del mismo producto. 12 semillas × 2
+asientos vs 5 rivales: **−$24 a −$88 de margen medio** (celdas hasta −$801), sin cambios de
+W/L: recorta X justo en los pasos más rentables. El riesgo teórico de desbordar el cobertizo
+en final_29 no aparece en los datos (0/768 celdas negativas frente a final_xc1). Se mantiene
+final_29 tal cual.
