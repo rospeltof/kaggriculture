@@ -1,5 +1,21 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-28 04:30 UTC — XC replicada; WF (vender primero) en piloto
+
+- **Réplica XC con pesos del censo** (`torneo_xcr`, 768 partidas): final_xc1 − final_frps
+  **+7,30 pp [+1,38; +13,23]**, 17/17 celdas a favor (tds27 71,9→85,9%, hl836 65,6→84,4%,
+  hl0928 68,8→81,2%). final_xc1 es la primera candidata del par final.
+- **Censo 0928b** (`pesos_censo_0928b.json`): a ~2300 la familia tds27 es el 50% (muchas
+  copias EXACTAS de tds27/hl836), linaje top3/arshs3 22,5%, cha22 20%. El panel del harness
+  representa bien a la mitad de la población.
+- **WF** (`apilar_lana_primero.py`): vender ya el stock libre de lana/leche/fresa mientras
+  precio ≥ fracción·base. Criba d: wfa75 +$180 vs tds27/hl0928, W/L 71→100% en 7 semillas.
+  Piloto `torneo_wf1` (PREREG_WF) en curso. Las pérdidas grandes contra cha22 en pares YARN
+  son de logística (su lana llega antes al cobertizo), no de la decisión de venta.
+- Descartado hoy: BF (compras primero), S738 con trigo/fertilizante, mirror-LOOK 8/10,
+  quitar compras tardías (fertilizante/contrataciones sí se recuperan).
+
+
 ## Corte 2026-09-28 04:00 UTC — final_xc1 enviada; ladder = campeonato de espejos
 
 **Activas:** **56628181 final_xc1** (03:55, PENDING al enviar) + **56626892 final_frps**.
