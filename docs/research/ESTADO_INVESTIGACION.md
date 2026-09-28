@@ -1,5 +1,15 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-28 03:15 UTC — candidata final en el ladder
+
+**Activas:** **56626892 final_frps** (02:52) + **56626140 combo_fr** (02:14). Queda 1 envío hoy.
+final_frps = tds27top3 + combo (`_S738_LOOK=6`, `_SR_MARGIN=12`) + `_CA_MARGIN=-22` + FR con
+pre-venta. Cada pieza confirmada por separado (ver PREREG_BARRIDO_PARAMS, PREREG_COLINA,
+PREREG_FRONTRUN); la combinación no muestra interacción negativa (+2,2 pp vs combo_fr).
+La app se cerró a mitad de colina2: `torneo.py --reanudar` completó el bloque con los mismos
+agentes y semillas; las colas largas se lanzan ahora con `nohup` (`results/cola_*.sh`).
+
+
 ## Corte 2026-09-28 02:35 UTC — dos mejoras confirmadas y enviadas
 
 **Activas:** **56626140 combo_fr** (02:14) + **56625348 combo** (01:36). Quedan 2 envíos hoy.

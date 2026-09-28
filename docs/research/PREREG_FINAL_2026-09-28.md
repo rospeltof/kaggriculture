@@ -7,3 +7,8 @@ final_frps (activa 56626892), rivales tds27, cha22, hl836, top3cc, hl74; semilla
   ambos brazos y la pre-venta solo actúa en ~11% de las partidas).
 - **Regla:** si el punto es < −3 pp o algún linaje tiene IC95 entero < −10 pp → interacción
   negativa: mañana se reemplaza final_frps. Si no → se mantiene.
+
+## Resultado (torneo_final1, 640 partidas, 0 errores)
+
+final vs combo_fr: **+2,19 pp [−3,15; +7,53]**; cha22 +1,56; tds27 +3,12; harvest −3,12
+[−14,28; +8,03]; resto +6,25. Sin interacción negativa según la regla → **se mantiene final_frps**.
