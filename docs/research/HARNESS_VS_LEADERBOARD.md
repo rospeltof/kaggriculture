@@ -1,5 +1,15 @@
 # Harness vs leaderboard — qué métrica local predice el ladder
 
+## Censo a ~2380 (censo_0928d, 78 partidas reales de final_xc1, 28-sep tarde)
+
+Control positivo: nuestro asiento = final_xc1 exacta en todas. Rivales (77 asientos):
+familia tds27 52% (tds27 exacta 25%, casi/parcial 12%, hl836 9%, hl0928 6%), cha22 13%,
+top3/fcast2 12%, hl74 6,5%, me5 5%, otros (privados) 10% — estos últimos, 8 de 8 ganadas.
+Las derrotas son sobre todo contra forks de tds27 (casi/parcial 6 de 9) y hl74 (4 de 5).
+La población sigue siendo de agentes de ruta que compran trigo/fertilizante en los mismos
+pasos: el mecanismo de MS sigue aplicando en esta franja.
+
+
 ## Lectura 2026-09-28 ~08:40 UTC — derrotas reales de final_xc1 (≈2380)
 
 78 partidas reales (`replays/FINALXC1_LADDER_0928c`): 58W-20L (74,4%); 47 espejos (< $1.000,
