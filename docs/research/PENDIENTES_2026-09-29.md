@@ -49,3 +49,14 @@
   1,4-2 s por contención de carga (también en el rival); sin contención final_29 y final_xc1
   tienen máximo ~90 ms y media ~1,7 ms (`tiempo_f29`). Sin problema de tiempo.
 - Ladder 18:30: final_xc1 2345, final_frps 1496.
+
+## Forks casi-tds27 que ganaron a final_xc1 (diff_fork.py, 28-sep ~20:00 UTC)
+
+- naniwazu (ep 114550917): vende más leche/huevo y antes (MILK 6 en vez de 3; EGG a la hora 2).
+- JezzLynn (ep 114566714): otro orden de ventas (leche y fresa antes que trigo; fertilizante
+  primero) y lana 5 en el paso 600: carrera de índice, lo mismo que ataca XC.
+- Nagahama (ep 114599272): vende más fresa (20 en vez de 10) y más fertilizante/trigo en pasos
+  concretos.
+Son los mismos tipos de retoque que ya tenemos (XC para el orden, LOOK 6 y MS para la carrera
+de venta/compra). No hay nada nuevo que adoptar. Herramienta: `diff_fork.py <replay> <asiento>
+<candidato.py> [N]`.
