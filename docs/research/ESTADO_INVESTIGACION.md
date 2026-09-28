@@ -1,5 +1,21 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-28 07:30 UTC — SA lista para el 29; BP en confirmación
+
+- **Ladder:** final_xc1 (56628181) **2360** a las 06:26 (supera ya a tds27top3); final_frps
+  1413 (47W-6L en 53 partidas; sube lento por emparejamientos bajos).
+- **SA** (peón de ovejas entrega la lana antes de recoger fertilizante): confirmación +2,19
+  pp (6/6 celdas a favor), prueba dirigida YARN +2,54 (7/7 a favor); 0 de 1.120 celdas
+  pierden margen; inerte fuera de YARN. No cumple el umbral pre-registrado; se envía como
+  instrumento a las 00:00 UTC del 29 (`submission/main_publico_final_xc1_sa.py`).
+- **BP** (compras de producto tras las ventas y antes de HIRE/BUY_SEED/BUY_ANIMAL/BUY_LAND):
+  criba +$18-28 de margen, 80/80 celdas ≥ 0. Confirmación `torneo_bp1` en curso (PREREG_BP).
+- Descartados hoy: FG (no vender a precio de suelo: −$1.000 a −$3.400), WF, courier,
+  presupuesto de reordenación, compras tardías, BF.
+- Tras XC+SA, las derrotas contra la familia tds27 sin YARN son de $6-66 (monedas al aire):
+  cualquier ventaja sistemática de ~$30 las voltea.
+
+
 ## Corte 2026-09-28 05:30 UTC — SA (lana antes que fertilizante) en piloto; WF rechazada
 
 - **Activas:** 56628181 final_xc1 (1748 @ ~1 h) + 56626892 final_frps (1280). Cuota del
