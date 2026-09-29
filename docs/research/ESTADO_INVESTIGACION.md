@@ -25,6 +25,12 @@
      (191 cintas de xc1): 12 disparos, 1 falso positivo (−73), +142 $/partida, 1 L→W, 0 W→L.
      Confirmación local en curso (PREREG_GUARDA_2026-09-29.md). Los copiadores usan código
      privado: ningún notebook público nuevo lo contiene (revisados 13 kernels del 28-29).
+     **f29g CONFIRMADA 22:04 UTC** (+44,9 pp contra copiadores, 0/672 celdas distintas sin
+     copiador): es la propuesta del segundo hueco si la regla del 30 se cumple.
+     Fase 2 (23:36): contra-copia ccF tras el disparo (BUY FERT X idx0 / SELL X idx1, compra
+     base al 9): +2.600-4.000 contra 3 copiadores, 6 L→W en 20 cintas reales; REFUTADA por el
+     revisor contra un copiador en escalera (porosyonok: −1.650/partida, 2 W→L). Fase 3 en curso:
+     ccF + apagado propio por pérdida medida (f29g3), con cp_esc en el criterio.
   2. Linaje privado A1 con apertura de vaca (6 % del pool, sube desde 1,3 %): f29 y xc1 van
      1-7; segunda tierra en el paso 195-202 (nosotros 266), 10-27 casillas de trigo en el 240,
      más gansos/tomate; 79 % del margen perdido por f29. Es de producción: sin arreglo rápido.
