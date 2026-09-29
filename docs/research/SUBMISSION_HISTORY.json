@@ -1181,5 +1181,38 @@
    56628181,
    56626892
   ]
+ },
+ {
+  "submission_id": 56655371,
+  "timestamp": "2026-09-29T00:00:49Z",
+  "git_commit": "6f3c476",
+  "experiment_id": "final_29",
+  "config": {
+   "file": "submission/main_publico_final_29.py",
+   "sha256": "cf1291895bb9",
+   "base": "final_xc1 (56628181, db6f1b0e)",
+   "capas": [
+    "SA: peon de ovejas V233 no recoge fertilizante con lana en las manos (entrega antes)",
+    "BP: BUY_PRODUCT tras las ventas y antes de HIRE/BUY_SEED/BUY_ANIMAL/BUY_LAND (apilar_compra_tras_ventas.py)",
+    "MS: X<=90 extra en nuestra compra de trigo/fertilizante y reventa en el indice 9; tambien con 9 ordenes (apilar_mini_spec.py)",
+    "MSS: lado venta, X<=90 del stock libre y recompra en el indice 9 (apilar_mini_spec_venta.py)"
+   ]
+  },
+  "local_harness": {
+   "efecto_total": "torneo_f29: +7.55 pp [+3.80; +11.31] ponderado (censo 0928c) vs final_xc1; 29/29 celdas a favor; margen +855..1022 vs todos; 0/768 celdas negativas",
+   "prereg": [
+    "PREREG_SA_2026-09-28.md",
+    "PREREG_BP_2026-09-28.md",
+    "PREREG_MS_2026-09-28.md",
+    "PREREG_MSB_2026-09-28.md",
+    "PREREG_F29_2026-09-28.md"
+   ],
+   "amplio": "26 agentes publicos: ningun rival empeora; autojuego sin errores"
+  },
+  "reason": "Mejor bot confirmado; primer envio del 29-sep segun CALENDARIO_ENVIOS.md (desplaza a final_frps). Par activo: final_xc1 + final_29.",
+  "active_pair_after": [
+   56655371,
+   56628181
+  ]
  }
 ]
