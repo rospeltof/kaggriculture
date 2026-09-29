@@ -19,7 +19,12 @@
 - **Problemas nuevos:**
   1. Copiadores de MS (8 rivales en el último tercio: compran X extra en el índice 0 y
      revenden en 2-6, antes de nuestro 9): −383 a −5.914 $/partida; perdimos las 8, MS decide
-     2. En curso: workflow `guarda-copiadores-ms` (detección en línea + apagar MS/MSS).
+     2. Guardia f29g construida (workflow `guarda-copiadores-ms`, 6 agentes, 2 revisores
+     aptos): bytes de final_29 + capa que simula el mercado contra un rival benigno y apaga
+     MS/MSS al detectar compra-reventa delante de nosotros. Resimulación fuera de muestra
+     (191 cintas de xc1): 12 disparos, 1 falso positivo (−73), +142 $/partida, 1 L→W, 0 W→L.
+     Confirmación local en curso (PREREG_GUARDA_2026-09-29.md). Los copiadores usan código
+     privado: ningún notebook público nuevo lo contiene (revisados 13 kernels del 28-29).
   2. Linaje privado A1 con apertura de vaca (6 % del pool, sube desde 1,3 %): f29 y xc1 van
      1-7; segunda tierra en el paso 195-202 (nosotros 266), 10-27 casillas de trigo en el 240,
      más gansos/tomate; 79 % del margen perdido por f29. Es de producción: sin arreglo rápido.
