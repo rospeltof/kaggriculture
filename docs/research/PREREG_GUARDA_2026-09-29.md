@@ -58,3 +58,8 @@ cp_dd 28 → 124 (+4.716); cp_fin6 6 → 147 (+9.302); cp_ady_p35 34 → 104,5 (
 sintéticos no reactivos (dos de ellos reproducen casi exactamente a rivales reales); fuera de
 muestra, 1 falso positivo de ~179 rivales reales no copiadores, con coste −73.
 Evidencia: docs/evidencia/torneo_publicos/confirm_guarda_{cp,panel}.jsonl y confirm_guarda.txt.
+
+## Comprobación posterior (no pre-registrada), 2026-09-30 00:10 UTC
+Copiador en escalera cp_esc (patrón real de porosyonok, sha 4ee3c199), semillas 5360000-015 × 2
+asientos (`results/guarda_esc/f29g_vs_esc.jsonl`): puntos f29 4 → f29g 15 de 32; Δmargen medio
++3.744 (mínimo +2.374), guardia disparada en 32/32. f29g también protege contra este patrón.
