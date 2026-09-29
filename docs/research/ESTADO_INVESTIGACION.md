@@ -1,5 +1,16 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-29 00:05 UTC — final_29 enviada y validada
+
+- **Activas:** **56655371 final_29** (enviada 00:00:49, COMPLETE, empieza en 600) +
+  **56628181 final_xc1** (≈2320; 73W-50L en 123 partidas reales). final_frps desplazada.
+- Envíos restantes hoy: 4. Regla del usuario (CALENDARIO_ENVIOS.md): al cierre, las dos activas
+  deben ser nuestros dos mejores bots; nada de experimentos en los envíos finales.
+- Siguiente: bajar partidas reales de final_29 cuando pase de ~40-60 (carpetas nuevas por
+  tanda), compararla con final_xc1 en la misma franja y decidir el segundo hueco el 30 antes
+  de las ~18:00 UTC.
+
+
 ## Corte 2026-09-28 09:00 UTC — candidata del 29: final_29 (sha cf129189)
 
 - **Envío previsto 29-sep 00:00 UTC:** `submission/main_publico_final_29.py` = final_xc1 + SA +
