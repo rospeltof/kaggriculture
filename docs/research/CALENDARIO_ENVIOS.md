@@ -42,3 +42,38 @@ baja a 2318: su equilibrio está hacia 2320-2350. De esas 30 derrotas, 21 son po
 $1.000 (8 en pares YARN) — lo que atacan SA y MS — y 9 por más de $1.000; las más grandes
 (−$22.600 weense, −$11.000 Yaroslav) son de producción: el rival cultiva mucho tomate (21 y
 11 casillas) y lo vende en lotes de 20-56. No hay defensa rápida para eso.
+
+## Regla del par final para el 30-sep (fijada 2026-09-29 18:40 UTC, antes de ver datos nuevos)
+
+Datos a las 18:18-18:34 UTC (workflow `par-final-datos-reales`, 8 agentes, 3 escépticos):
+final_29 2209-2215 con 141 partidas públicas (105-36); final_xc1 2211 con 200 (100-100).
+Desde las 12:00 UTC: f29 23-15, xc1 8-26, +37 pp [+14; +55]. Modelo logístico con el rating
+actual de cada rival: f29 − xc1 = +92 a +135 puntos (IC inferior > 0 en todas las variantes
+salvo una contaminada por partidas del 28). Los 8 episodios ERRORED de f29 (04:14-06:34 UTC)
+son una caída de la plataforma: otros equipos tienen ERRORED en el mismo tramo y Kaggle no
+deja bajar esos replays (403).
+
+Comprobación: `./.venv/bin/python revisar_par_final.py --desde 2026-09-29T18:40` entre las
+12:00 y las 13:00 UTC del 30 (solo lectura). **Se propone al usuario reenviar la copia exacta
+de final_29** (`submission/main_publico_final_29.py`, sha cf129189, descripción «copia exacta
+de 56655371») para que sustituya a final_xc1 si se cumplen (a) y (b) y (c):
+
+- (a) basta una: (a1) rating f29 − rating xc1 ≥ +40; o (a2) solo partidas públicas creadas
+  después de 2026-09-29T18:40Z, ≥ 30 por bot, xc1 gana ≤ 40 % y f29 gana ≥ 45 %.
+  (Corrige la regla del workflow: el % en un tramo ya visto mide cuánto va cada rating por
+  detrás de su equilibrio, no la fuerza; con bots iguales pasaba el 65 % de las veces.)
+- (b) f29 gana ≥ 45 % de sus últimas 30 y, desde el corte, no tiene 3 o más ERRORED que xc1.
+- (c) rating f29 ≥ rating xc1 − 25.
+
+El usuario tiene que aprobarlo en el chat en ese momento; la regla no es una aprobación.
+Si falla cualquiera, no se toca nada: el par final es final_29 + final_xc1.
+
+Envío y fallos (corrección del tercer escéptico):
+1. Enviar al principio de la ventana (12:00-13:00 UTC) para tener margen.
+2. Tras enviar, listar las submissions y comprobar el estado de la copia.
+3. Si la copia queda en ERROR: si final_xc1 sigue listada como activa y juega partidas nuevas,
+   el ERROR no ocupó hueco y se puede reintentar una vez con el mismo archivo. Si final_xc1 ya
+   no juega, el ERROR ocupó su hueco: **no reintentar** (otro envío desplazaría a final_29) y
+   el par final queda en final_29 sola.
+4. Nunca usar final_xc1_sa_bp_ms90 ni variantes nuevas en este hueco, salvo que pasen su propio
+   pre-registro completo y el usuario lo apruebe (ver PREREG_GUARDA si existe).
