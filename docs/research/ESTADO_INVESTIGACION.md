@@ -1,5 +1,33 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-29 18:45 UTC — datos reales: final_29 > final_xc1; regla del par final fijada
+
+- **Activas:** 56655371 final_29 (2215, 105-36 en 141 públicas) + 56628181 final_xc1 (2211,
+  100-100 en 200). Envíos restantes hoy: 4. Hoy no se envía nada.
+- **Comparación real** (workflow `par-final-datos-reales`, 8 agentes, 3 escépticos): desde las
+  12:00 UTC f29 23-15 y xc1 8-26, +37 pp [+14; +55]; modelo logístico con el rating actual de
+  cada rival: f29 − xc1 ≈ +92 a +135 puntos. xc1 lleva desde el 28 ~08:00 ganando el 34 %: su
+  rating va con retraso. Censo 0929a: f29 64-8 contra la familia tds27 (xc1 31-10).
+- **Regla del 30** (CALENDARIO_ENVIOS.md, fijada 18:40 UTC antes de ver datos nuevos): con
+  `revisar_par_final.py`, entre 12:00 y 13:00 UTC se propone reenviar la copia exacta de
+  final_29 en lugar de final_xc1 si (a1: rating +40, o a2: partidas nuevas xc1 ≤ 40 % y f29
+  ≥ 45 %) y (b) y (c). Siempre con aprobación del usuario en ese momento; si falla, par =
+  final_29 + final_xc1. Reglas de reintento si la validación falla (no desplazar a f29).
+- **Mecanismos en real (132 partidas f29):** sin ERROR/TIMEOUT propios (los 8 ERRORED de
+  04:14-06:34 UTC son una caída de la plataforma que afecta a otros equipos); SA 6-0 en
+  proyectos de 6 ovejas y YARN 65-17; BP sin fallos; MS/MSS +154 $/partida estático.
+- **Problemas nuevos:**
+  1. Copiadores de MS (8 rivales en el último tercio: compran X extra en el índice 0 y
+     revenden en 2-6, antes de nuestro 9): −383 a −5.914 $/partida; perdimos las 8, MS decide
+     2. En curso: workflow `guarda-copiadores-ms` (detección en línea + apagar MS/MSS).
+  2. Linaje privado A1 con apertura de vaca (6 % del pool, sube desde 1,3 %): f29 y xc1 van
+     1-7; segunda tierra en el paso 195-202 (nosotros 266), 10-27 casillas de trigo en el 240,
+     más gansos/tomate; 79 % del margen perdido por f29. Es de producción: sin arreglo rápido.
+  3. Copias parciales de cha22 3-8 contra f29 (xc1 4-1).
+  4. Hueco de MS no descuenta otras compras de la misma lista (t=575): salió a favor; la
+     versión estricta ya se descartó (criba n, −$24 a −$88).
+  5. Desborde nativo al final del día (t=575, t=623): ~$296/partida en f29, $400 en xc1.
+
 ## Corte 2026-09-29 00:05 UTC — final_29 enviada y validada
 
 - **Activas:** **56655371 final_29** (enviada 00:00:49, COMPLETE, empieza en 600) +
