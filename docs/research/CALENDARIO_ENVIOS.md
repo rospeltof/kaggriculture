@@ -77,3 +77,17 @@ Envío y fallos (corrección del tercer escéptico):
    el par final queda en final_29 sola.
 4. Nunca usar final_xc1_sa_bp_ms90 ni variantes nuevas en este hueco, salvo que pasen su propio
    pre-registro completo y el usuario lo apruebe (ver PREREG_GUARDA si existe).
+
+### Enmienda 2026-09-29 22:10 UTC — f29g confirmada (PREREG_GUARDA)
+
+La regla (a)/(b)/(c) no cambia. Cambia solo el fichero que se propone si se cumple:
+**`results/guarda_0929/f29g.py` (sha a77f667c)** = bytes de final_29 + guardia contra copiadores
+de MS. Confirmación: 0/672 celdas distintas de final_29 sin copiador; +44,9 pp [+38; +51]
+contra copiadores; fuera de muestra (191 cintas reales) +142 $/partida, 1 L→W, 0 W→L.
+Par resultante: final_29 (asentada) + f29g. Descripción del envío: «f29g = final_29 (sha
+cf129189) + guardia GS contra copiadores de MS; confirmación PREREG_GUARDA».
+
+Fallo de validación de f29g: si final_xc1 sigue activa, el único reintento se hace con la
+**copia exacta de final_29** (sha cf129189, ya validada en Kaggle), no con f29g. Si final_xc1 ya
+no juega, no se reintenta (par final = final_29 sola), como arriba.
+Antes de enviar: copiar f29g a `submission/main.py` y comprobar el sha a77f667c.

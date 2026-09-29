@@ -40,3 +40,21 @@ Uso si queda confirmada: sustituye a la «copia exacta de final_29» en la regla
 de CALENDARIO_ENVIOS.md. Si la regla del 30 se cumple, se propone al usuario enviar f29g, en
 lugar de la copia, para sustituir a final_xc1; el par sería final_29 + f29g. Siempre con
 aprobación explícita del usuario en ese momento. Si no queda confirmada, no se usa.
+
+## Resultado (2026-09-29 22:04 UTC, 2.880 partidas, `evaluar_guarda.py`)
+
+| condición | resultado | |
+|---|---|---|
+| 1. inválidas/errores | 0 de 2.880 | ✔ |
+| 2. panel: hash propio distinto | 0/672 celdas (0 %) contra los 7 rivales; Δmargen 0 exacto | ✔ |
+| 3. copiadores: ΔW/L pareado | **+44,86 pp [+38,22; +51,17]**; disparo en 768/768 celdas | ✔ |
+| 4. ms máximo por turno | f29g 1.588 frente a f29 1.831 (máquina compartida; medianas 205/195) | ✔ |
+
+Por copiador (puntos f29 → f29g sobre 192; Δmargen medio): cp_xl 34 → 71 (+3.348, mín −418);
+cp_dd 28 → 124 (+4.716); cp_fin6 6 → 147 (+9.302); cp_ady_p35 34 → 104,5 (+2.524).
+
+**f29g CONFIRMADA.** Pasa a ser la propuesta del segundo hueco en la regla del 30-sep
+(CALENDARIO_ENVIOS.md), en lugar de la copia exacta de final_29. Salvedades: copiadores
+sintéticos no reactivos (dos de ellos reproducen casi exactamente a rivales reales); fuera de
+muestra, 1 falso positivo de ~179 rivales reales no copiadores, con coste −73.
+Evidencia: docs/evidencia/torneo_publicos/confirm_guarda_{cp,panel}.jsonl y confirm_guarda.txt.
