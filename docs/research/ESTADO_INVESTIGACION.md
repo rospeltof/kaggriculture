@@ -1,5 +1,19 @@
 # Estado de investigación — leer primero para continuar
 
+## Corte 2026-09-30 03:20 UTC — PAR FINAL: final_29 + f29g (enviada y validada)
+
+- **56695702 f29g** enviada 03:12:39 UTC con aprobación del usuario ("Si hazlo"), COMPLETE a las
+  03:17; validación 115556595 DONE/DONE, 720 pasos, rewards 72217/72879 (idénticas a final_29).
+  Desplaza a final_xc1 (56628181, 2101). **Activas: 56655371 final_29 (2199) + 56695702 f29g.**
+- La regla del par final (CALENDARIO_ENVIOS.md) se cumplía entera a las 03:10: rating +97,3;
+  desde 18:40 xc1 23-49 y f29 31-35; sin ERRORED propios. Se adelantó de las 12:00 a las 03:12
+  para tener margen ante fallos de validación.
+- Envíos restantes hoy (los últimos de la competición): 4. **No usar salvo para reparar**: si
+  f29g diera errores en partidas reales, reenviar la copia exacta de final_29 (sha cf129189);
+  eso desplazaría a final_29 (la más antigua) y dejaría dos copias de final_29. Nada de
+  experimentos (regla del usuario).
+- Pendiente: vigilar las primeras partidas públicas de f29g (errores, disparos de la guardia).
+
 ## Corte 2026-09-29 18:45 UTC — datos reales: final_29 > final_xc1; regla del par final fijada
 
 - **Activas:** 56655371 final_29 (2215, 105-36 en 141 públicas) + 56628181 final_xc1 (2211,
