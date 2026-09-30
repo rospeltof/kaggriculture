@@ -1214,5 +1214,32 @@
    56655371,
    56628181
   ]
+ },
+ {
+  "submission_id": 56695702,
+  "timestamp": "2026-09-30T03:12:39Z",
+  "git_commit": "962b233",
+  "experiment_id": "f29g",
+  "config": {
+   "file": "submission/main_publico_f29g.py",
+   "sha256": "a77f667c767d",
+   "base": "final_29 (56655371, cf129189) byte a byte",
+   "capas": [
+    "GS: tras cada paso con firma MS/MSS simula exactamente el mercado contra un rival benigno; si el dinero queda por debajo del minimo benigno (gap > 150, o 2 golpes > 20 en MS / > 60 en MSS) apaga MS y MSS el resto de la partida (apilar_guarda_ms.py)"
+   ]
+  },
+  "local_harness": {
+   "efecto_total": "confirm_guarda (2.880 partidas, semillas 5310000-095): copiadores +44.86 pp [+38.22; +51.17]; panel 0/672 celdas distintas de final_29",
+   "prereg": [
+    "PREREG_GUARDA_2026-09-29.md"
+   ],
+   "amplio": "30 agentes publicos: 480/480 celdas identicas a final_29; 13 tipos de copiador: mejora en todos; 191 cintas reales de xc1: +142/partida, 1 L->W, 0 W->L, 1 falso positivo (-73)"
+  },
+  "reason": "Regla del par final (CALENDARIO_ENVIOS.md, fijada 29-sep 18:40 + enmienda 22:10) cumplida a las 03:10 UTC: rating f29 - xc1 = +97.3; desde 18:40 xc1 23-49 (31.9 %), f29 31-35 (47 %); sin ERRORED propios. Aprobado por el usuario en el chat ('Si hazlo'). Desplaza a final_xc1 (56628181).",
+  "validation": "COMPLETE 03:17 UTC; episodio 115556595 DONE/DONE, 720 pasos, rewards 72217/72879 (identicas a la validacion de final_29)",
+  "active_pair_after": [
+   56695702,
+   56655371
+  ]
  }
 ]
