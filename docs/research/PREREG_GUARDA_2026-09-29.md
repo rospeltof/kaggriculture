@@ -63,3 +63,8 @@ Evidencia: docs/evidencia/torneo_publicos/confirm_guarda_{cp,panel}.jsonl y conf
 Copiador en escalera cp_esc (patrón real de porosyonok, sha 4ee3c199), semillas 5360000-015 × 2
 asientos (`results/guarda_esc/f29g_vs_esc.jsonl`): puntos f29 4 → f29g 15 de 32; Δmargen medio
 +3.744 (mínimo +2.374), guardia disparada en 32/32. f29g también protege contra este patrón.
+Segunda comprobación posterior (01:20 UTC): 8 copiadores nuevos (5 inventados por el revisor de la
+fase 3 para romper la contra-copia, 2 escaleras con otros trozos, cp_ady01x90), semillas
+5370000-011 × 2 asientos (`guarda_f29g_vs_extra.jsonl`): f29g mejora a final_29 en **192/192
+celdas** (Δmargen mínimo +882); puntos 4 → 91 de 192. En total f29g ≥ final_29 contra los 13
+tipos de copiador probados.
