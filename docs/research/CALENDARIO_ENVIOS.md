@@ -91,3 +91,14 @@ Fallo de validación de f29g: si final_xc1 sigue activa, el único reintento se 
 **copia exacta de final_29** (sha cf129189, ya validada en Kaggle), no con f29g. Si final_xc1 ya
 no juega, no se reintenta (par final = final_29 sola), como arriba.
 Antes de enviar: copiar f29g a `submission/main.py` y comprobar el sha a77f667c.
+
+### Procedimiento del 30-sep (preparado 01:40 UTC)
+1. 12:00 UTC: `./.venv/bin/python revisar_par_final.py --desde 2026-09-29T18:40` (solo lectura).
+2. Si la regla se cumple → pedir aprobación explícita al usuario en el chat. Sin ella, nada.
+3. Con aprobación: `cp submission/main_publico_f29g.py submission/main.py`; comprobar sha
+   a77f667c; `kaggle competitions submit -c kaggriculture -f submission/main.py -m "f29g = final_29
+   (sha cf129189) + guardia GS contra copiadores de MS; PREREG_GUARDA: +44,9 pp [+38; +51] contra
+   copiadores, 0/1.152 celdas distintas de final_29 sin copiador. Apache-2.0: tetsutani et al."`
+4. Vigilar hasta COMPLETE; comprobar que las activas son 56655371 y la nueva; si ERROR, seguir la
+   regla de fallos (reintento solo con la copia exacta de final_29 y solo si xc1 sigue activa).
+5. Registrar en SUBMISSION_HISTORY.json y en ESTADO_INVESTIGACION.md; commit.

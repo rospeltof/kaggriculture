@@ -68,3 +68,8 @@ fase 3 para romper la contra-copia, 2 escaleras con otros trozos, cp_ady01x90), 
 5370000-011 × 2 asientos (`guarda_f29g_vs_extra.jsonl`): f29g mejora a final_29 en **192/192
 celdas** (Δmargen mínimo +882); puntos 4 → 91 de 192. En total f29g ≥ final_29 contra los 13
 tipos de copiador probados.
+Tercera comprobación posterior (01:37 UTC), prueba amplia: f29g y final_29 contra 30 agentes
+públicos (incluidos los nuevos del 29: Harvest Ledger V89 y step1010) + cruce f29g–final_29,
+semillas 5380000-007 × 2 asientos, 944 partidas, 0 inválidas: **480/480 celdas idénticas** a
+final_29 (0 disparos falsos) y el cruce f29g–final_29 empata exacto (margen 0 en 16/16).
+Fichero listo para enviar: `submission/main_publico_f29g.py` (sha a77f667c).
