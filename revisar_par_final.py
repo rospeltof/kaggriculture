@@ -125,7 +125,7 @@ def main():
     print(f'(b)  últimas 30 de f29 {w30}-{l30}, ERRORED desde --desde f29 {len(ef)} / xc1 {len(ex)}: {b}')
     print(f'(c)  rating f29 >= xc1 - 25: {c}')
     ok = (a1 or a2) and b and c
-    print('\nREGLA:', 'se cumple -> proponer al usuario reenviar la copia exacta de final_29 (sha cf129189)'
+    print('\nREGLA:', 'se cumple -> proponer al usuario enviar f29g (submission/main_publico_f29g.py, sha a77f667c; enmienda 22:10)'
           if ok else 'no se cumple -> el par se queda final_29 + final_xc1')
     os.makedirs(os.path.dirname(a.guardar) or '.', exist_ok=True)
     salida = f'{a.guardar}_{ahora[:16].replace(":", "")}.json'
