@@ -1,7 +1,0 @@
-{
-  "status": "PROBE_ASSERTION_TOO_STRICT",
-  "completed_games": 4,
-  "public_games": 0,
-  "reason": "Official last callable and nominal wrapper need not be the same function object. Both nominal wrappers directly call the actual last callable; verify action equivalence.",
-  "source_agents_unchanged": true
-}

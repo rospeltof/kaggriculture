@@ -1,9 +1,0 @@
-{
-  "pair": [
-    "library_ladder",
-    "library_all"
-  ],
-  "pool_episodes": 256,
-  "identical_both_actions_and_rewards": 256,
-  "note": "Observed equivalence on this completed pool, not independent replications or universal equivalence."
-}

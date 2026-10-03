@@ -1,8 +1,0 @@
-{
-  "status": "diagnostic_script_error",
-  "completed_development_games": 1,
-  "error": "Local variable path was overwritten with the gzip ledger path; the second seat tried to compile compressed ledger bytes.",
-  "candidate_sources_changed": false,
-  "retry": "sheep_space_smoke_v2",
-  "source_archive": "sheep_space_smoke.sources.tgz"
-}

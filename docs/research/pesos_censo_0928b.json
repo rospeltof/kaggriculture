@@ -1,2 +1,0 @@
-{"fuente": "Censo 2026-09-28 04:05 UTC (censo_0928b.json), 40 partidas reales de tds27top3 a ~2300 (TDS27TOP3_LADDER_0928): familia tds27 50% (tds27 exacta/casi/parcial 15, hl836 exacta 3, hl0928 casi 2), linaje top3/arshs3 22,5% (parcial top3cc 9), linaje cha22 20% (casi cha22 4, parcial cha22sfko 4), otro 7,5%. Fijados antes de usarlos en ningun torneo.",
- "linajes": {"tds27": {"tds27": 0.375, "hl836": 0.075, "hl0928": 0.05}, "top3": {"top3cc": 0.225}, "cha22": {"cha22": 0.20}, "resto": {"hl74": 0.075}}}

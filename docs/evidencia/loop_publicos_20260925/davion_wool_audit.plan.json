@@ -1,8 +1,0 @@
-{
-  "episode": 113174624,
-  "seed": 1578791335,
-  "seat": 0,
-  "rule": "Only top3 loss in the four recent episodes already selected by date; physical attribution only, no new population sample.",
-  "source_sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
-  "replay_sha256": "be83a6423b0a152abc8497c814847f37e8b4b6c0e9bd58891ac58c73225cd5df"
-}

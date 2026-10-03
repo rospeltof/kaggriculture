@@ -1,4 +1,0 @@
-{
-  "error": "Capture count0: run() inserts its ledger market wrapper between interpreter and capture hook.",
-  "scope": "One complete control run passed run-level DONE/cash checks. Isolated market phase was not executed. Instrumentation failure, not candidate failure."
-}

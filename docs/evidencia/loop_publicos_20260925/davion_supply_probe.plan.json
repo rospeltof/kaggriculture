@@ -1,7 +1,0 @@
-{
-  "seed": 1578791335,
-  "seat": 0,
-  "source_sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
-  "rule": "Directed mechanism probe only. At known starving-worker episode step601 increase the one existing BUY_PRODUCT WHEAT from6 to11. Reactive own policy, recorded rival. This hardcoded intervention is not a candidate or estimate of population effect.",
-  "games": 2
-}

@@ -1,2 +1,0 @@
-{"fuente": "Censo refinado 2026-09-28 ~05:00 UTC (censo_0928b + censo_0928c con fcast2/mroute/shep27/idle como candidatos). Franja ~2300 (TDS27TOP3_LADDER_0928, 40 partidas): familia tds27 20/40, linaje top3/arshs3 9/40 (6 parcial top3cc, 3 parcial fcast2), cha22 8/40, otro 3/40. Fijados antes de usarlos.",
- "linajes": {"tds27": {"tds27": 0.375, "hl836": 0.075, "hl0928": 0.05}, "top3": {"top3cc": 0.15, "fcast2": 0.075}, "cha22": {"cha22": 0.20}, "resto": {"hl74": 0.075}}}

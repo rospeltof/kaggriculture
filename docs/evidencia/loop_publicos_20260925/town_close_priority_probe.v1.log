@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/rospel/Desktop/kaggriculture/sonda_prioridad_cierre_town.py", line 77, in <module>
-    if __name__=='__main__':main()
-                            ~~~~^^
-  File "/Users/rospel/Desktop/kaggriculture/sonda_prioridad_cierre_town.py", line 41, in main
-    assert len(captured)==1
-           ^^^^^^^^^^^^^^^^
-AssertionError

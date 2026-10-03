@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/rospel/Desktop/kaggriculture/auditar_cota_stock_rival.py", line 105, in <module>
-    if __name__=='__main__':main()
-                            ~~~~^^
-  File "/Users/rospel/Desktop/kaggriculture/auditar_cota_stock_rival.py", line 89, in main
-    assert supply[item]>=sold,(episode,step,item,supply[item],sold)
-           ~~~~~~^^^^^^
-KeyError: 'MILK'

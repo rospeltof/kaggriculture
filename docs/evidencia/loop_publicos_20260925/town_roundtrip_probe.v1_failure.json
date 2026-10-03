@@ -1,5 +1,0 @@
-{
-  "status": "PROBE_ATTRIBUTE_CACHE_BUG",
-  "reason": "Direct engine calls mutate dict keys; Struct scalar attributes retain previous values until re-structification. Money read via farm.money was stale. No agent or tournament source affected.",
-  "error": "Traceback (most recent call last):\n  File \"/Users/rospel/Desktop/kaggriculture/sonda_reventa_town.py\", line 86, in <module>\n    if __name__ == '__main__': main()\n                               ~~~~^^\n  File \"/Users/rospel/Desktop/kaggriculture/sonda_reventa_town.py\", line 57, in main\n    assert actual == list(model), (inventory, drain, scenario, quantity, leg, model, actual)\n           ^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (10100, 0, 'passive', 10, 0, (-210.0, 0.0), [0, 0])\n"
-}
