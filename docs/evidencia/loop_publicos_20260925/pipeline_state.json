@@ -1,0 +1,31 @@
+{
+  "phase": "pilot28",
+  "updated_at": "2026-09-25T14:58:00.620266+00:00",
+  "state": "running",
+  "command": [
+    "/Users/rospel/Desktop/kaggriculture/.venv/bin/python",
+    "-u",
+    "torneo.py",
+    "--out",
+    "docs/evidencia/loop_publicos_20260925/pilot28",
+    "--seeds",
+    "16",
+    "--seed0",
+    "1072000",
+    "--workers",
+    "8",
+    "--vs",
+    "base,noop,censor_native_vq,censor_floor_vq,censor_native_top3,censor_floor_top3,top3",
+    "base=submission/main_publico_arshs3_vq.py",
+    "noop=submission/main_publico_arshs3_vq.py",
+    "censor_native_vq=results/censura_forecast_20260925/censor_native_vq.py",
+    "censor_floor_vq=results/censura_forecast_20260925/censor_floor_vq.py",
+    "censor_native_top3=results/censura_forecast_20260925/censor_native_top3.py",
+    "censor_floor_top3=results/censura_forecast_20260925/censor_floor_top3.py",
+    "top3=submission/main_publico_arshs3_vq_top3.py",
+    "mirror_vq=submission/main_publico_arshs3_vq.py",
+    "mirror_top3=submission/main_publico_arshs3_vq_top3.py",
+    "public_v7=results/publicos_0548_20260925/haideptry_the-2965-master-hybrid-engine/main.py",
+    "public_hs4=results/publicos_0548_20260925/haideptry_the-shepherds-ledger-herd-safe-sovereign/main.py"
+  ]
+}

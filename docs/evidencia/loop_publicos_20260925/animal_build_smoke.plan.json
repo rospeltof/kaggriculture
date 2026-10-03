@@ -1,0 +1,60 @@
+{
+  "seeds": [
+    1086000,
+    1086001,
+    2146809967
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "expected_games": 36,
+  "runtime_hash_seed": "0",
+  "opponent": {
+    "path": "submission/main_publico_arshs3_vq.py",
+    "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+  },
+  "agents": {
+    "base": {
+      "path": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "top3": {
+      "path": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "animal_build_vq": {
+      "path": "results/reparar_pasto_20260925/animal_build_vq.py",
+      "sha256": "86616da10bcfb20fd57ed9f73f8f8b9c2599f1903b571ae0e3684aa39e3f4785",
+      "config": {
+        "enabled": true
+      },
+      "behavior_reference": "base"
+    },
+    "animal_noop_vq": {
+      "path": "results/reparar_pasto_20260925/animal_noop_vq.py",
+      "sha256": "40f056395a576247e621df2276a8447d7fb1e627ff95deb5435600f3f6154dd3",
+      "config": {
+        "enabled": false
+      },
+      "behavior_reference": "base"
+    },
+    "animal_build_top3": {
+      "path": "results/reparar_pasto_20260925/animal_build_top3.py",
+      "sha256": "3fdee5e6a90f2437f7176b5643adfc429524dedf11bd3965e9498f2226323569",
+      "config": {
+        "enabled": true
+      },
+      "behavior_reference": "top3"
+    },
+    "animal_noop_top3": {
+      "path": "results/reparar_pasto_20260925/animal_noop_top3.py",
+      "sha256": "cae50aedd903850a4f6c1e8431eab293f96a39e94f4279e976eb3aa46b870187",
+      "config": {
+        "enabled": false
+      },
+      "behavior_reference": "top3"
+    }
+  },
+  "purpose": "Complete missing animal structures using only native PLACE/CARE/PASS windows. Exact noops and official physical execution, no reward selection."
+}

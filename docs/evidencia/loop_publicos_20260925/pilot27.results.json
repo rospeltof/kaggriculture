@@ -1,0 +1,250 @@
+{
+  "results": {
+    "sales_sync_vq": {
+      "reference": "base",
+      "candidate": "sales_sync_vq",
+      "rivals": [
+        "mirror_top3",
+        "mirror_vq",
+        "public_hs4",
+        "public_v7"
+      ],
+      "seeds": [
+        1069000,
+        1069001,
+        1069002,
+        1069003,
+        1069004,
+        1069005,
+        1069006,
+        1069007,
+        1069008,
+        1069009,
+        1069010,
+        1069011,
+        1069012,
+        1069013,
+        1069014,
+        1069015
+      ],
+      "base_wr": 36.71875,
+      "candidate_wr": 33.59375,
+      "delta_points": -3.125,
+      "ci95_seed": [
+        -9.325848561537278,
+        3.0758485615372786
+      ],
+      "ci95_2way": [
+        -14.233415221533022,
+        7.983415221533022
+      ],
+      "opponent_breakdown": {
+        "mirror_top3": 0.0,
+        "mirror_vq": 0.0,
+        "public_hs4": -12.5,
+        "public_v7": 0.0
+      },
+      "better_cells": 1,
+      "worse_cells": 3,
+      "equal_cells": 60,
+      "status": "INCONCLUSIVE_NOT_SELECTED",
+      "versus_top3": {
+        "reference": "top3",
+        "candidate": "sales_sync_vq",
+        "rivals": [
+          "mirror_top3",
+          "mirror_vq",
+          "public_hs4",
+          "public_v7"
+        ],
+        "seeds": [
+          1069000,
+          1069001,
+          1069002,
+          1069003,
+          1069004,
+          1069005,
+          1069006,
+          1069007,
+          1069008,
+          1069009,
+          1069010,
+          1069011,
+          1069012,
+          1069013,
+          1069014,
+          1069015
+        ],
+        "base_wr": 72.65625,
+        "candidate_wr": 33.59375,
+        "delta_points": -39.0625,
+        "ci95_seed": [
+          -48.44293403855882,
+          -29.68206596144118
+        ],
+        "ci95_2way": [
+          -58.2476831888799,
+          -19.877316811120103
+        ],
+        "opponent_breakdown": {
+          "mirror_top3": -50.0,
+          "mirror_vq": -50.0,
+          "public_hs4": -28.125,
+          "public_v7": -28.125
+        },
+        "better_cells": 1,
+        "worse_cells": 42,
+        "equal_cells": 21
+      }
+    },
+    "sales_sync_top3": {
+      "reference": "base",
+      "candidate": "sales_sync_top3",
+      "rivals": [
+        "mirror_top3",
+        "mirror_vq",
+        "public_hs4",
+        "public_v7"
+      ],
+      "seeds": [
+        1069000,
+        1069001,
+        1069002,
+        1069003,
+        1069004,
+        1069005,
+        1069006,
+        1069007,
+        1069008,
+        1069009,
+        1069010,
+        1069011,
+        1069012,
+        1069013,
+        1069014,
+        1069015
+      ],
+      "base_wr": 36.71875,
+      "candidate_wr": 74.21875,
+      "delta_points": 37.5,
+      "ci95_seed": [
+        28.399642269384174,
+        46.600357730615826
+      ],
+      "ci95_2way": [
+        11.6056140025132,
+        63.3943859974868
+      ],
+      "opponent_breakdown": {
+        "mirror_top3": 53.125,
+        "mirror_vq": 50.0,
+        "public_hs4": 15.625,
+        "public_v7": 31.25
+      },
+      "better_cells": 41,
+      "worse_cells": 2,
+      "equal_cells": 21,
+      "status": "PROMISING",
+      "versus_top3": {
+        "reference": "top3",
+        "candidate": "sales_sync_top3",
+        "rivals": [
+          "mirror_top3",
+          "mirror_vq",
+          "public_hs4",
+          "public_v7"
+        ],
+        "seeds": [
+          1069000,
+          1069001,
+          1069002,
+          1069003,
+          1069004,
+          1069005,
+          1069006,
+          1069007,
+          1069008,
+          1069009,
+          1069010,
+          1069011,
+          1069012,
+          1069013,
+          1069014,
+          1069015
+        ],
+        "base_wr": 72.65625,
+        "candidate_wr": 74.21875,
+        "delta_points": 1.5625,
+        "ci95_seed": [
+          -3.2252371589716393,
+          6.350237158971639
+        ],
+        "ci95_2way": [
+          -1.519399832178261,
+          4.6443998321782605
+        ],
+        "opponent_breakdown": {
+          "mirror_top3": 3.125,
+          "mirror_vq": 0.0,
+          "public_hs4": 0.0,
+          "public_v7": 3.125
+        },
+        "better_cells": 3,
+        "worse_cells": 2,
+        "equal_cells": 59
+      }
+    },
+    "top3": {
+      "reference": "base",
+      "candidate": "top3",
+      "rivals": [
+        "mirror_top3",
+        "mirror_vq",
+        "public_hs4",
+        "public_v7"
+      ],
+      "seeds": [
+        1069000,
+        1069001,
+        1069002,
+        1069003,
+        1069004,
+        1069005,
+        1069006,
+        1069007,
+        1069008,
+        1069009,
+        1069010,
+        1069011,
+        1069012,
+        1069013,
+        1069014,
+        1069015
+      ],
+      "base_wr": 36.71875,
+      "candidate_wr": 72.65625,
+      "delta_points": 35.9375,
+      "ci95_seed": [
+        27.55620251244303,
+        44.31879748755697
+      ],
+      "ci95_2way": [
+        10.776492923087748,
+        61.098507076912256
+      ],
+      "opponent_breakdown": {
+        "mirror_top3": 50.0,
+        "mirror_vq": 50.0,
+        "public_hs4": 15.625,
+        "public_v7": 28.125
+      },
+      "better_cells": 42,
+      "worse_cells": 2,
+      "equal_cells": 20,
+      "status": "DIAGNOSTIC_CONTROL_ONLY"
+    }
+  },
+  "selected_for_confirmation": [
+    "sales_sync_top3"
+  ]
+}

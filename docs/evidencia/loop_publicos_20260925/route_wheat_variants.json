@@ -1,0 +1,18 @@
+{
+  "route_wheat_vq": {
+    "path": "results/trigo_ruta_20260925/route_wheat_vq.py",
+    "sha256": "257c54fcc84ef25d47bacd0c2f2cf4a4dcb0235700a4c6a78e32b6756a16284f",
+    "config": {
+      "enabled": true
+    },
+    "behavior_reference": "base"
+  },
+  "route_wheat_top3": {
+    "path": "results/trigo_ruta_20260925/route_wheat_top3.py",
+    "sha256": "d651c1637bf447a890c3ec59f9f02d64cbb6e4213762ce31105f52fc9752eb1d",
+    "config": {
+      "enabled": true
+    },
+    "behavior_reference": "top3"
+  }
+}

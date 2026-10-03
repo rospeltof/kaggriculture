@@ -15,8 +15,10 @@ el indice 0; si ya habia venta de ese producto se suma y se mueve al 0) todas la
 del cobertizo que no esten ya en venta mientras el precio marginal de la siguiente unidad
 se mantenga >= suelo = fraccion * precio base. Las unidades por debajo del suelo esperan.
 
-Uso: apilar_lana_primero.py <base.py> <salida.py> <fraccion> <ITEM> [ITEM ...]
+Uso: apilar_lana_primero.py <base.py> <salida.py> <fraccion> <ITEM> [ITEM ...] [--rival]
   ej.: apilar_lana_primero.py base.py out.py 0.75 WOOL
+  --rival: solo para productos que la granja rival produce (ovejas → lana, vacas → leche,
+  plantas del cultivo); contra quien no compite en ese producto, vender despacio rinde mas.
 """
 import hashlib, sys
 from pathlib import Path
@@ -27,6 +29,8 @@ CAPA = '''
 _WF_ITEMS = {items!r}
 _WF_FRAC = {frac}
 _WF_FROM = 144
+_WF_RIVAL = {rival}
+_WF_SOURCE = {{'WOOL': 'SHEEP', 'MILK': 'COW', 'EGG': 'GOOSE'}}
 _WF_REPORT = dict(calls=0, fires=0, units=0, errors=0)
 def _wf_fabrica(padre):
     def lana_primero(observation, configuration=None):
@@ -43,7 +47,19 @@ def _wf_fabrica(padre):
             stock = projected_shed(dict(action, market=market), FarmView(observation))
             inv_all = observation['market']['inventory']
             cambio = False
+            rival_prod = None
+            if _WF_RIVAL:
+                rival_prod = set()
+                for row in observation['farms'][1 - player].get('tiles') or []:
+                    for tl in row:
+                        if isinstance(tl, dict):
+                            if tl.get('animal'):
+                                rival_prod.add(tl.get('animal'))
+                            if tl.get('crop'):
+                                rival_prod.add(tl.get('crop'))
             for item in _WF_ITEMS:
+                if rival_prod is not None and _WF_SOURCE.get(item, item) not in rival_prod:
+                    continue
                 if any(o[0] == 'BUY_PRODUCT' and len(o) > 1 and o[1] == item for o in market):
                     continue
                 vendiendo = sum(max(0, int(o[2])) for o in market if o[0] == 'SELL' and len(o) > 2 and o[1] == item)
@@ -78,9 +94,11 @@ del _wf_fabrica
 
 
 def main(base, salida, frac, *items):
+    rival = "--rival" in items
+    items = [i for i in items if not i.startswith("--")]
     b = Path(base).read_bytes()
     assert b"_FR_PARENT" in b
-    Path(salida).write_bytes(b + CAPA.format(items=tuple(items), frac=float(frac)).encode())
+    Path(salida).write_bytes(b + CAPA.format(items=tuple(items), frac=float(frac), rival=rival).encode())
     print(salida, frac, items, hashlib.sha256(Path(salida).read_bytes()).hexdigest()[:12])
 
 

@@ -1,0 +1,21 @@
+  (extra, no entra en la estimacion) base vs noop: 50.0% (32 ep)
+  (extra, no entra en la estimacion) extra_half vs noop: 12.5% (32 ep)
+  (extra, no entra en la estimacion) base vs vq: 78.1% (32 ep)
+  (extra, no entra en la estimacion) extra_half vs vq: 81.2% (32 ep)
+extra_half - base: 13 rivales x 16 semillas = 208 celdas; ref 81.0%
+  delta -0.24 pts | IC95 semilla [-4.37; +3.89] | dos vias [-4.27; +3.79]
+  celdas cambiadas 10/208: 5 a favor, 5 en contra
+    vs    ars40   +0.0
+    vs   arshs3   +3.1
+    vs    guru6   +0.0
+    vs    h2965   +0.0
+    vs     hl25   +0.0
+    vs     hsov   +0.0
+    vs     hybu  -12.5
+    vs      obr   +0.0
+    vs public_hs4   +6.2
+    vs public_v7   +6.2
+    vs      tds   -6.2
+    vs    tds25   +0.0
+    vs      v13   +0.0
+  directo extra_half vs base: 12.5% (32 ep)

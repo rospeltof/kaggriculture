@@ -1,0 +1,14 @@
+  (extra, no entra en la estimacion) base vs noop: 50.0% (64 ep)
+  (extra, no entra en la estimacion) sales_sync_top3 vs noop: 82.8% (64 ep)
+  (extra, no entra en la estimacion) base vs top3: 20.3% (64 ep)
+  (extra, no entra en la estimacion) sales_sync_top3 vs top3: 43.8% (64 ep)
+sales_sync_top3 - base: 6 rivales x 32 semillas = 192 celdas; ref 49.7%
+  delta +20.57 pts | IC95 semilla [+11.32; +29.83] | dos vias [-0.82; +41.96]
+  celdas cambiadas 98/192: 79 a favor, 19 en contra
+    vs   arshs3  -10.9
+    vs mirror_top3  +23.4
+    vs mirror_vq  +32.8
+    vs public_hs4  +43.8
+    vs public_v7  +25.0
+    vs recent_harvest68   +9.4
+  directo sales_sync_top3 vs base: 82.8% (64 ep)

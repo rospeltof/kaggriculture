@@ -1,0 +1,74 @@
+{
+  "agentes": {
+    "base": {
+      "ruta": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "noop": {
+      "ruta": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "seed_kind": {
+      "ruta": "results/semillas_tardias_20260925/seed_kind.py",
+      "sha256": "ac36e98c1cd9059e07ba543ffea4405535f8157a71c9949b002f04bf9c62a510"
+    },
+    "seed_jit": {
+      "ruta": "results/semillas_tardias_20260925/seed_jit.py",
+      "sha256": "68433a06df1a7eea7e5e2cedc7335dd8b9aac65458511ead4acba5077c6383cd"
+    },
+    "top3": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "mirror_vq": {
+      "ruta": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "mirror_top3": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "public_v7": {
+      "ruta": "results/publicos_0548_20260925/haideptry_the-2965-master-hybrid-engine/main.py",
+      "sha256": "cda529cb6b359fc4a9ab124d4d7950d5912bd5de846dcec4be70ca83b7150b2d"
+    },
+    "public_hs4": {
+      "ruta": "results/publicos_0548_20260925/haideptry_the-shepherds-ledger-herd-safe-sovereign/main.py",
+      "sha256": "8378f73c82db7624ce5d0369cf896aa0761a662af147b119f67254f1f8634c56"
+    }
+  },
+  "seeds": [
+    1066000,
+    1066001,
+    1066002,
+    1066003,
+    1066004,
+    1066005,
+    1066006,
+    1066007,
+    1066008,
+    1066009,
+    1066010,
+    1066011,
+    1066012,
+    1066013,
+    1066014,
+    1066015
+  ],
+  "vs": "base,noop,seed_kind,seed_jit,top3",
+  "inicio": "2026-09-25 09:11:32",
+  "state": "complete",
+  "expected_episodes": 960,
+  "workers": 8,
+  "runtime": {
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+    "multiprocessing_start_method": "spawn",
+    "python_hash_seed": "0",
+    "wheat_hash": 8460755321718155249
+  },
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "27916eb54d67d769f87081c03b067c64afdb4a55faf6cf4ab1bed78d7dfe0c52",
+  "completed_episodes": 960,
+  "fin": "2026-09-25 09:23:09"
+}

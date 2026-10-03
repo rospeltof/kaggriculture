@@ -1,0 +1,81 @@
+{
+  "agentes": {
+    "base": {
+      "ruta": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "noop": {
+      "ruta": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "censor_native_vq": {
+      "ruta": "results/censura_forecast_20260925/censor_native_vq.py",
+      "sha256": "bb52c26a2011878e46135cc57553b476c3ead0bda1d08a607f13926619b83b5f"
+    },
+    "censor_floor_vq": {
+      "ruta": "results/censura_forecast_20260925/censor_floor_vq.py",
+      "sha256": "86b4a857d7724472dad3ebf756e5f2e7ffb76d452946594fa2851cafe407ffee"
+    },
+    "censor_native_top3": {
+      "ruta": "results/censura_forecast_20260925/censor_native_top3.py",
+      "sha256": "d4a8074e41e2484e384f2c4cb94cb40028adf9ef2f116da0c291f7b54a41ea19"
+    },
+    "censor_floor_top3": {
+      "ruta": "results/censura_forecast_20260925/censor_floor_top3.py",
+      "sha256": "ba531a69a53f3b3ca33dcb739e39b0332ad7f9b79a291b38a2e60fff3be019e7"
+    },
+    "top3": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "mirror_vq": {
+      "ruta": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "mirror_top3": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "public_v7": {
+      "ruta": "results/publicos_0548_20260925/haideptry_the-2965-master-hybrid-engine/main.py",
+      "sha256": "cda529cb6b359fc4a9ab124d4d7950d5912bd5de846dcec4be70ca83b7150b2d"
+    },
+    "public_hs4": {
+      "ruta": "results/publicos_0548_20260925/haideptry_the-shepherds-ledger-herd-safe-sovereign/main.py",
+      "sha256": "8378f73c82db7624ce5d0369cf896aa0761a662af147b119f67254f1f8634c56"
+    }
+  },
+  "seeds": [
+    1072000,
+    1072001,
+    1072002,
+    1072003,
+    1072004,
+    1072005,
+    1072006,
+    1072007,
+    1072008,
+    1072009,
+    1072010,
+    1072011,
+    1072012,
+    1072013,
+    1072014,
+    1072015
+  ],
+  "vs": "base,noop,censor_native_vq,censor_floor_vq,censor_native_top3,censor_floor_top3,top3",
+  "inicio": "2026-09-25 09:58:00",
+  "state": "running",
+  "expected_episodes": 1568,
+  "workers": 8,
+  "runtime": {
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+    "multiprocessing_start_method": "spawn",
+    "python_hash_seed": "0",
+    "wheat_hash": 8460755321718155249
+  },
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "27916eb54d67d769f87081c03b067c64afdb4a55faf6cf4ab1bed78d7dfe0c52",
+  "completed_episodes": 250
+}

@@ -1,0 +1,3162 @@
+{
+  "passed": true,
+  "competitive_ready": true,
+  "games": 36,
+  "noop_exact_turns": 8628,
+  "max_turn_ms": 272.5127500016242,
+  "activated_cells": {
+    "animal_build_vq": 1,
+    "animal_build_top3": 1
+  },
+  "builds": {
+    "animal_build_vq": 1,
+    "animal_build_top3": 1
+  },
+  "placements": {
+    "animal_build_vq": 1,
+    "animal_build_top3": 1
+  },
+  "cares": {
+    "animal_build_vq": 1,
+    "animal_build_top3": 1
+  },
+  "aborts": {
+    "animal_build_vq": 0,
+    "animal_build_top3": 0
+  },
+  "candidate_hashes": {
+    "animal_build_vq": "86616da10bcfb20fd57ed9f73f8f8b9c2599f1903b571ae0e3684aa39e3f4785",
+    "animal_build_top3": "3fdee5e6a90f2437f7176b5643adfc429524dedf11bd3965e9498f2226323569"
+  },
+  "base_hash": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976",
+  "control_hash": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145",
+  "summary": [
+    {
+      "arm": "animal_build_vq",
+      "seed": 1086000,
+      "seat": 0,
+      "changed_own_turns": 0,
+      "same_shops": true,
+      "same_losses": true,
+      "base_harvest": {
+        "WHEAT": 606,
+        "WOOL": 212,
+        "MILK": 174,
+        "MELON": 72,
+        "EGG": 74,
+        "STRAWBERRY": 247,
+        "CARROT": 97
+      },
+      "candidate_harvest": {
+        "WHEAT": 606,
+        "WOOL": 212,
+        "MILK": 174,
+        "MELON": 72,
+        "EGG": 74,
+        "STRAWBERRY": 247,
+        "CARROT": 97
+      },
+      "base_work": {
+        "PICKUP:None": 15,
+        "BUILD_PASTURE:None": 17,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 15,
+        "PLANT:None": 239,
+        "CARE:COW": 151,
+        "PICKUP:COW": 102,
+        "FEED:SHEEP": 174,
+        "CARE:SHEEP": 193,
+        "FEED:COW": 122,
+        "PLACE:COW": 51,
+        "HARVEST:WHEAT": 163,
+        "HARVEST:SHEEP": 53,
+        "BUILD_COOP:None": 2,
+        "PLACE:COOP": 3,
+        "FEED:GOOSE": 42,
+        "CARE:GOOSE": 47,
+        "PICKUP:GOOSE": 68,
+        "PLACE:GOOSE": 21,
+        "HARVEST:COW": 57,
+        "PLACE:None": 2,
+        "HARVEST:MELON": 12,
+        "HARVEST:GOOSE": 22,
+        "PICKUP:STRAWBERRY": 22,
+        "FERTILIZE:WHEAT": 43,
+        "FERTILIZE:STRAWBERRY": 60,
+        "HARVEST:STRAWBERRY": 130,
+        "PLACE:STRAWBERRY": 3,
+        "FERTILIZE:CARROT": 13,
+        "HARVEST:CARROT": 31
+      },
+      "candidate_work": {
+        "PICKUP:None": 15,
+        "BUILD_PASTURE:None": 17,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 15,
+        "PLANT:None": 239,
+        "CARE:COW": 151,
+        "PICKUP:COW": 102,
+        "FEED:SHEEP": 174,
+        "CARE:SHEEP": 193,
+        "FEED:COW": 122,
+        "PLACE:COW": 51,
+        "HARVEST:WHEAT": 163,
+        "HARVEST:SHEEP": 53,
+        "BUILD_COOP:None": 2,
+        "PLACE:COOP": 3,
+        "FEED:GOOSE": 42,
+        "CARE:GOOSE": 47,
+        "PICKUP:GOOSE": 68,
+        "PLACE:GOOSE": 21,
+        "HARVEST:COW": 57,
+        "PLACE:None": 2,
+        "HARVEST:MELON": 12,
+        "HARVEST:GOOSE": 22,
+        "PICKUP:STRAWBERRY": 22,
+        "FERTILIZE:WHEAT": 43,
+        "FERTILIZE:STRAWBERRY": 60,
+        "HARVEST:STRAWBERRY": 130,
+        "PLACE:STRAWBERRY": 3,
+        "FERTILIZE:CARROT": 13,
+        "HARVEST:CARROT": 31
+      },
+      "base_escapes": [
+        [],
+        []
+      ],
+      "candidate_escapes": [
+        [],
+        []
+      ],
+      "base_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "candidate_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "base_margin": 0.0,
+      "candidate_margin": 0.0,
+      "repairs": []
+    },
+    {
+      "arm": "animal_build_vq",
+      "seed": 1086000,
+      "seat": 1,
+      "changed_own_turns": 0,
+      "same_shops": true,
+      "same_losses": true,
+      "base_harvest": {
+        "WHEAT": 606,
+        "WOOL": 212,
+        "MILK": 174,
+        "MELON": 72,
+        "EGG": 74,
+        "STRAWBERRY": 247,
+        "CARROT": 97
+      },
+      "candidate_harvest": {
+        "WHEAT": 606,
+        "WOOL": 212,
+        "MILK": 174,
+        "MELON": 72,
+        "EGG": 74,
+        "STRAWBERRY": 247,
+        "CARROT": 97
+      },
+      "base_work": {
+        "PICKUP:None": 15,
+        "BUILD_PASTURE:None": 17,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 15,
+        "PLANT:None": 239,
+        "CARE:COW": 151,
+        "PICKUP:COW": 102,
+        "FEED:SHEEP": 174,
+        "CARE:SHEEP": 193,
+        "FEED:COW": 122,
+        "PLACE:COW": 51,
+        "HARVEST:WHEAT": 163,
+        "HARVEST:SHEEP": 53,
+        "BUILD_COOP:None": 2,
+        "PLACE:COOP": 3,
+        "FEED:GOOSE": 42,
+        "CARE:GOOSE": 47,
+        "PICKUP:GOOSE": 68,
+        "PLACE:GOOSE": 21,
+        "HARVEST:COW": 57,
+        "PLACE:None": 2,
+        "HARVEST:MELON": 12,
+        "HARVEST:GOOSE": 22,
+        "PICKUP:STRAWBERRY": 22,
+        "FERTILIZE:WHEAT": 43,
+        "FERTILIZE:STRAWBERRY": 60,
+        "HARVEST:STRAWBERRY": 130,
+        "PLACE:STRAWBERRY": 3,
+        "FERTILIZE:CARROT": 13,
+        "HARVEST:CARROT": 31
+      },
+      "candidate_work": {
+        "PICKUP:None": 15,
+        "BUILD_PASTURE:None": 17,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 15,
+        "PLANT:None": 239,
+        "CARE:COW": 151,
+        "PICKUP:COW": 102,
+        "FEED:SHEEP": 174,
+        "CARE:SHEEP": 193,
+        "FEED:COW": 122,
+        "PLACE:COW": 51,
+        "HARVEST:WHEAT": 163,
+        "HARVEST:SHEEP": 53,
+        "BUILD_COOP:None": 2,
+        "PLACE:COOP": 3,
+        "FEED:GOOSE": 42,
+        "CARE:GOOSE": 47,
+        "PICKUP:GOOSE": 68,
+        "PLACE:GOOSE": 21,
+        "HARVEST:COW": 57,
+        "PLACE:None": 2,
+        "HARVEST:MELON": 12,
+        "HARVEST:GOOSE": 22,
+        "PICKUP:STRAWBERRY": 22,
+        "FERTILIZE:WHEAT": 43,
+        "FERTILIZE:STRAWBERRY": 60,
+        "HARVEST:STRAWBERRY": 130,
+        "PLACE:STRAWBERRY": 3,
+        "FERTILIZE:CARROT": 13,
+        "HARVEST:CARROT": 31
+      },
+      "base_escapes": [
+        [],
+        []
+      ],
+      "candidate_escapes": [
+        [],
+        []
+      ],
+      "base_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "candidate_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "base_margin": 0.0,
+      "candidate_margin": 0.0,
+      "repairs": []
+    },
+    {
+      "arm": "animal_build_top3",
+      "seed": 1086000,
+      "seat": 0,
+      "changed_own_turns": 0,
+      "same_shops": true,
+      "same_losses": true,
+      "base_harvest": {
+        "WHEAT": 606,
+        "WOOL": 210,
+        "MILK": 174,
+        "MELON": 72,
+        "EGG": 74,
+        "STRAWBERRY": 247,
+        "CARROT": 97
+      },
+      "candidate_harvest": {
+        "WHEAT": 606,
+        "WOOL": 210,
+        "MILK": 174,
+        "MELON": 72,
+        "EGG": 74,
+        "STRAWBERRY": 247,
+        "CARROT": 97
+      },
+      "base_work": {
+        "PICKUP:None": 15,
+        "BUILD_PASTURE:None": 17,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 15,
+        "PLANT:None": 239,
+        "CARE:COW": 151,
+        "PICKUP:COW": 102,
+        "FEED:SHEEP": 172,
+        "CARE:SHEEP": 193,
+        "FEED:COW": 122,
+        "PLACE:COW": 51,
+        "HARVEST:WHEAT": 163,
+        "HARVEST:SHEEP": 53,
+        "BUILD_COOP:None": 2,
+        "PLACE:COOP": 3,
+        "FEED:GOOSE": 42,
+        "CARE:GOOSE": 47,
+        "PICKUP:GOOSE": 68,
+        "PLACE:GOOSE": 21,
+        "HARVEST:COW": 57,
+        "PLACE:None": 2,
+        "HARVEST:MELON": 12,
+        "HARVEST:GOOSE": 22,
+        "PICKUP:STRAWBERRY": 22,
+        "FERTILIZE:WHEAT": 43,
+        "FERTILIZE:STRAWBERRY": 60,
+        "HARVEST:STRAWBERRY": 130,
+        "PLACE:STRAWBERRY": 3,
+        "FERTILIZE:CARROT": 13,
+        "HARVEST:CARROT": 31
+      },
+      "candidate_work": {
+        "PICKUP:None": 15,
+        "BUILD_PASTURE:None": 17,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 15,
+        "PLANT:None": 239,
+        "CARE:COW": 151,
+        "PICKUP:COW": 102,
+        "FEED:SHEEP": 172,
+        "CARE:SHEEP": 193,
+        "FEED:COW": 122,
+        "PLACE:COW": 51,
+        "HARVEST:WHEAT": 163,
+        "HARVEST:SHEEP": 53,
+        "BUILD_COOP:None": 2,
+        "PLACE:COOP": 3,
+        "FEED:GOOSE": 42,
+        "CARE:GOOSE": 47,
+        "PICKUP:GOOSE": 68,
+        "PLACE:GOOSE": 21,
+        "HARVEST:COW": 57,
+        "PLACE:None": 2,
+        "HARVEST:MELON": 12,
+        "HARVEST:GOOSE": 22,
+        "PICKUP:STRAWBERRY": 22,
+        "FERTILIZE:WHEAT": 43,
+        "FERTILIZE:STRAWBERRY": 60,
+        "HARVEST:STRAWBERRY": 130,
+        "PLACE:STRAWBERRY": 3,
+        "FERTILIZE:CARROT": 13,
+        "HARVEST:CARROT": 31
+      },
+      "base_escapes": [
+        [],
+        []
+      ],
+      "candidate_escapes": [
+        [],
+        []
+      ],
+      "base_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "candidate_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "base_margin": 471.0,
+      "candidate_margin": 471.0,
+      "repairs": []
+    },
+    {
+      "arm": "animal_build_top3",
+      "seed": 1086000,
+      "seat": 1,
+      "changed_own_turns": 0,
+      "same_shops": true,
+      "same_losses": true,
+      "base_harvest": {
+        "WHEAT": 606,
+        "WOOL": 210,
+        "MILK": 174,
+        "MELON": 72,
+        "EGG": 74,
+        "STRAWBERRY": 247,
+        "CARROT": 97
+      },
+      "candidate_harvest": {
+        "WHEAT": 606,
+        "WOOL": 210,
+        "MILK": 174,
+        "MELON": 72,
+        "EGG": 74,
+        "STRAWBERRY": 247,
+        "CARROT": 97
+      },
+      "base_work": {
+        "PICKUP:None": 15,
+        "BUILD_PASTURE:None": 17,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 15,
+        "PLANT:None": 239,
+        "CARE:COW": 151,
+        "PICKUP:COW": 102,
+        "FEED:SHEEP": 172,
+        "CARE:SHEEP": 193,
+        "FEED:COW": 122,
+        "PLACE:COW": 51,
+        "HARVEST:WHEAT": 163,
+        "HARVEST:SHEEP": 53,
+        "BUILD_COOP:None": 2,
+        "PLACE:COOP": 3,
+        "FEED:GOOSE": 42,
+        "CARE:GOOSE": 47,
+        "PICKUP:GOOSE": 68,
+        "PLACE:GOOSE": 21,
+        "HARVEST:COW": 57,
+        "PLACE:None": 2,
+        "HARVEST:MELON": 12,
+        "HARVEST:GOOSE": 22,
+        "PICKUP:STRAWBERRY": 22,
+        "FERTILIZE:WHEAT": 43,
+        "FERTILIZE:STRAWBERRY": 60,
+        "HARVEST:STRAWBERRY": 130,
+        "PLACE:STRAWBERRY": 3,
+        "FERTILIZE:CARROT": 13,
+        "HARVEST:CARROT": 31
+      },
+      "candidate_work": {
+        "PICKUP:None": 15,
+        "BUILD_PASTURE:None": 17,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 15,
+        "PLANT:None": 239,
+        "CARE:COW": 151,
+        "PICKUP:COW": 102,
+        "FEED:SHEEP": 172,
+        "CARE:SHEEP": 193,
+        "FEED:COW": 122,
+        "PLACE:COW": 51,
+        "HARVEST:WHEAT": 163,
+        "HARVEST:SHEEP": 53,
+        "BUILD_COOP:None": 2,
+        "PLACE:COOP": 3,
+        "FEED:GOOSE": 42,
+        "CARE:GOOSE": 47,
+        "PICKUP:GOOSE": 68,
+        "PLACE:GOOSE": 21,
+        "HARVEST:COW": 57,
+        "PLACE:None": 2,
+        "HARVEST:MELON": 12,
+        "HARVEST:GOOSE": 22,
+        "PICKUP:STRAWBERRY": 22,
+        "FERTILIZE:WHEAT": 43,
+        "FERTILIZE:STRAWBERRY": 60,
+        "HARVEST:STRAWBERRY": 130,
+        "PLACE:STRAWBERRY": 3,
+        "FERTILIZE:CARROT": 13,
+        "HARVEST:CARROT": 31
+      },
+      "base_escapes": [
+        [],
+        []
+      ],
+      "candidate_escapes": [
+        [],
+        []
+      ],
+      "base_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "candidate_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "base_margin": 471.0,
+      "candidate_margin": 471.0,
+      "repairs": []
+    },
+    {
+      "arm": "animal_build_vq",
+      "seed": 1086001,
+      "seat": 0,
+      "changed_own_turns": 0,
+      "same_shops": true,
+      "same_losses": true,
+      "base_harvest": {
+        "WHEAT": 431,
+        "WOOL": 263,
+        "MILK": 152,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 207
+      },
+      "candidate_harvest": {
+        "WHEAT": 431,
+        "WOOL": 263,
+        "MILK": 152,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 207
+      },
+      "base_work": {
+        "PICKUP:None": 11,
+        "BUILD_PASTURE:None": 17,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 17,
+        "PLANT:None": 239,
+        "CARE:COW": 151,
+        "PICKUP:COW": 81,
+        "FEED:SHEEP": 216,
+        "CARE:SHEEP": 241,
+        "FEED:COW": 100,
+        "PLACE:COW": 55,
+        "HARVEST:WHEAT": 125,
+        "HARVEST:SHEEP": 65,
+        "PICKUP:SHEEP": 55,
+        "PLACE:SHEEP": 31,
+        "HARVEST:COW": 57,
+        "HARVEST:MELON": 12,
+        "BUILD_COOP:None": 2,
+        "FERTILIZE:STRAWBERRY": 61,
+        "FERTILIZE:WHEAT": 16,
+        "HARVEST:STRAWBERRY": 130,
+        "PICKUP:STRAWBERRY": 8,
+        "PLACE:STRAWBERRY": 4,
+        "HARVEST:CARROT": 68,
+        "FERTILIZE:CARROT": 25,
+        "PLACE:None": 1
+      },
+      "candidate_work": {
+        "PICKUP:None": 11,
+        "BUILD_PASTURE:None": 17,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 17,
+        "PLANT:None": 239,
+        "CARE:COW": 151,
+        "PICKUP:COW": 81,
+        "FEED:SHEEP": 216,
+        "CARE:SHEEP": 241,
+        "FEED:COW": 100,
+        "PLACE:COW": 55,
+        "HARVEST:WHEAT": 125,
+        "HARVEST:SHEEP": 65,
+        "PICKUP:SHEEP": 55,
+        "PLACE:SHEEP": 31,
+        "HARVEST:COW": 57,
+        "HARVEST:MELON": 12,
+        "BUILD_COOP:None": 2,
+        "FERTILIZE:STRAWBERRY": 61,
+        "FERTILIZE:WHEAT": 16,
+        "HARVEST:STRAWBERRY": 130,
+        "PICKUP:STRAWBERRY": 8,
+        "PLACE:STRAWBERRY": 4,
+        "HARVEST:CARROT": 68,
+        "FERTILIZE:CARROT": 25,
+        "PLACE:None": 1
+      },
+      "base_escapes": [
+        [],
+        []
+      ],
+      "candidate_escapes": [
+        [],
+        []
+      ],
+      "base_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "candidate_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "base_margin": 0.0,
+      "candidate_margin": 0.0,
+      "repairs": []
+    },
+    {
+      "arm": "animal_build_vq",
+      "seed": 1086001,
+      "seat": 1,
+      "changed_own_turns": 0,
+      "same_shops": true,
+      "same_losses": true,
+      "base_harvest": {
+        "WHEAT": 431,
+        "WOOL": 263,
+        "MILK": 152,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 207
+      },
+      "candidate_harvest": {
+        "WHEAT": 431,
+        "WOOL": 263,
+        "MILK": 152,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 207
+      },
+      "base_work": {
+        "PICKUP:None": 11,
+        "BUILD_PASTURE:None": 17,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 17,
+        "PLANT:None": 239,
+        "CARE:COW": 151,
+        "PICKUP:COW": 81,
+        "FEED:SHEEP": 216,
+        "CARE:SHEEP": 241,
+        "FEED:COW": 100,
+        "PLACE:COW": 55,
+        "HARVEST:WHEAT": 125,
+        "HARVEST:SHEEP": 65,
+        "PICKUP:SHEEP": 55,
+        "PLACE:SHEEP": 31,
+        "HARVEST:COW": 57,
+        "HARVEST:MELON": 12,
+        "BUILD_COOP:None": 2,
+        "FERTILIZE:STRAWBERRY": 61,
+        "FERTILIZE:WHEAT": 16,
+        "HARVEST:STRAWBERRY": 130,
+        "PICKUP:STRAWBERRY": 8,
+        "PLACE:STRAWBERRY": 4,
+        "HARVEST:CARROT": 68,
+        "FERTILIZE:CARROT": 25,
+        "PLACE:None": 1
+      },
+      "candidate_work": {
+        "PICKUP:None": 11,
+        "BUILD_PASTURE:None": 17,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 17,
+        "PLANT:None": 239,
+        "CARE:COW": 151,
+        "PICKUP:COW": 81,
+        "FEED:SHEEP": 216,
+        "CARE:SHEEP": 241,
+        "FEED:COW": 100,
+        "PLACE:COW": 55,
+        "HARVEST:WHEAT": 125,
+        "HARVEST:SHEEP": 65,
+        "PICKUP:SHEEP": 55,
+        "PLACE:SHEEP": 31,
+        "HARVEST:COW": 57,
+        "HARVEST:MELON": 12,
+        "BUILD_COOP:None": 2,
+        "FERTILIZE:STRAWBERRY": 61,
+        "FERTILIZE:WHEAT": 16,
+        "HARVEST:STRAWBERRY": 130,
+        "PICKUP:STRAWBERRY": 8,
+        "PLACE:STRAWBERRY": 4,
+        "HARVEST:CARROT": 68,
+        "FERTILIZE:CARROT": 25,
+        "PLACE:None": 1
+      },
+      "base_escapes": [
+        [],
+        []
+      ],
+      "candidate_escapes": [
+        [],
+        []
+      ],
+      "base_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "candidate_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "base_margin": 0.0,
+      "candidate_margin": 0.0,
+      "repairs": []
+    },
+    {
+      "arm": "animal_build_top3",
+      "seed": 1086001,
+      "seat": 0,
+      "changed_own_turns": 0,
+      "same_shops": true,
+      "same_losses": true,
+      "base_harvest": {
+        "WHEAT": 415,
+        "WOOL": 261,
+        "MILK": 152,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 219
+      },
+      "candidate_harvest": {
+        "WHEAT": 415,
+        "WOOL": 261,
+        "MILK": 152,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 219
+      },
+      "base_work": {
+        "PICKUP:None": 11,
+        "BUILD_PASTURE:None": 17,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 17,
+        "PLANT:None": 239,
+        "CARE:COW": 151,
+        "PICKUP:COW": 81,
+        "FEED:SHEEP": 218,
+        "CARE:SHEEP": 241,
+        "FEED:COW": 100,
+        "PLACE:COW": 55,
+        "HARVEST:WHEAT": 123,
+        "HARVEST:SHEEP": 65,
+        "PICKUP:SHEEP": 55,
+        "PLACE:SHEEP": 32,
+        "HARVEST:COW": 57,
+        "HARVEST:MELON": 12,
+        "BUILD_COOP:None": 2,
+        "FERTILIZE:STRAWBERRY": 61,
+        "FERTILIZE:WHEAT": 10,
+        "HARVEST:STRAWBERRY": 130,
+        "PICKUP:STRAWBERRY": 8,
+        "PLACE:STRAWBERRY": 4,
+        "HARVEST:CARROT": 70,
+        "FERTILIZE:CARROT": 29,
+        "PLACE:None": 1
+      },
+      "candidate_work": {
+        "PICKUP:None": 11,
+        "BUILD_PASTURE:None": 17,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 17,
+        "PLANT:None": 239,
+        "CARE:COW": 151,
+        "PICKUP:COW": 81,
+        "FEED:SHEEP": 218,
+        "CARE:SHEEP": 241,
+        "FEED:COW": 100,
+        "PLACE:COW": 55,
+        "HARVEST:WHEAT": 123,
+        "HARVEST:SHEEP": 65,
+        "PICKUP:SHEEP": 55,
+        "PLACE:SHEEP": 32,
+        "HARVEST:COW": 57,
+        "HARVEST:MELON": 12,
+        "BUILD_COOP:None": 2,
+        "FERTILIZE:STRAWBERRY": 61,
+        "FERTILIZE:WHEAT": 10,
+        "HARVEST:STRAWBERRY": 130,
+        "PICKUP:STRAWBERRY": 8,
+        "PLACE:STRAWBERRY": 4,
+        "HARVEST:CARROT": 70,
+        "FERTILIZE:CARROT": 29,
+        "PLACE:None": 1
+      },
+      "base_escapes": [
+        [],
+        []
+      ],
+      "candidate_escapes": [
+        [],
+        []
+      ],
+      "base_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "candidate_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "base_margin": 885.0,
+      "candidate_margin": 885.0,
+      "repairs": []
+    },
+    {
+      "arm": "animal_build_top3",
+      "seed": 1086001,
+      "seat": 1,
+      "changed_own_turns": 0,
+      "same_shops": true,
+      "same_losses": true,
+      "base_harvest": {
+        "WHEAT": 415,
+        "WOOL": 261,
+        "MILK": 152,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 219
+      },
+      "candidate_harvest": {
+        "WHEAT": 415,
+        "WOOL": 261,
+        "MILK": 152,
+        "MELON": 72,
+        "STRAWBERRY": 249,
+        "CARROT": 219
+      },
+      "base_work": {
+        "PICKUP:None": 11,
+        "BUILD_PASTURE:None": 17,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 17,
+        "PLANT:None": 239,
+        "CARE:COW": 151,
+        "PICKUP:COW": 81,
+        "FEED:SHEEP": 218,
+        "CARE:SHEEP": 241,
+        "FEED:COW": 100,
+        "PLACE:COW": 55,
+        "HARVEST:WHEAT": 123,
+        "HARVEST:SHEEP": 65,
+        "PICKUP:SHEEP": 55,
+        "PLACE:SHEEP": 32,
+        "HARVEST:COW": 57,
+        "HARVEST:MELON": 12,
+        "BUILD_COOP:None": 2,
+        "FERTILIZE:STRAWBERRY": 61,
+        "FERTILIZE:WHEAT": 10,
+        "HARVEST:STRAWBERRY": 130,
+        "PICKUP:STRAWBERRY": 8,
+        "PLACE:STRAWBERRY": 4,
+        "HARVEST:CARROT": 70,
+        "FERTILIZE:CARROT": 29,
+        "PLACE:None": 1
+      },
+      "candidate_work": {
+        "PICKUP:None": 11,
+        "BUILD_PASTURE:None": 17,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 17,
+        "PLANT:None": 239,
+        "CARE:COW": 151,
+        "PICKUP:COW": 81,
+        "FEED:SHEEP": 218,
+        "CARE:SHEEP": 241,
+        "FEED:COW": 100,
+        "PLACE:COW": 55,
+        "HARVEST:WHEAT": 123,
+        "HARVEST:SHEEP": 65,
+        "PICKUP:SHEEP": 55,
+        "PLACE:SHEEP": 32,
+        "HARVEST:COW": 57,
+        "HARVEST:MELON": 12,
+        "BUILD_COOP:None": 2,
+        "FERTILIZE:STRAWBERRY": 61,
+        "FERTILIZE:WHEAT": 10,
+        "HARVEST:STRAWBERRY": 130,
+        "PICKUP:STRAWBERRY": 8,
+        "PLACE:STRAWBERRY": 4,
+        "HARVEST:CARROT": 70,
+        "FERTILIZE:CARROT": 29,
+        "PLACE:None": 1
+      },
+      "base_escapes": [
+        [],
+        []
+      ],
+      "candidate_escapes": [
+        [],
+        []
+      ],
+      "base_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "candidate_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 4,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "base_margin": 885.0,
+      "candidate_margin": 885.0,
+      "repairs": []
+    },
+    {
+      "arm": "animal_build_vq",
+      "seed": 2146809967,
+      "seat": 0,
+      "changed_own_turns": 146,
+      "same_shops": false,
+      "same_losses": false,
+      "base_harvest": {
+        "WHEAT": 594,
+        "WOOL": 99,
+        "MILK": 202,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 243,
+        "CARROT": 97
+      },
+      "candidate_harvest": {
+        "WHEAT": 618,
+        "WOOL": 99,
+        "MILK": 174,
+        "MELON": 72,
+        "EGG": 89,
+        "STRAWBERRY": 249,
+        "CARROT": 97
+      },
+      "base_work": {
+        "PICKUP:None": 15,
+        "BUILD_PASTURE:None": 13,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 14,
+        "PLANT:None": 239,
+        "CARE:COW": 172,
+        "PICKUP:COW": 169,
+        "FEED:SHEEP": 95,
+        "CARE:SHEEP": 140,
+        "FEED:COW": 148,
+        "PLACE:COW": 74,
+        "HARVEST:WHEAT": 163,
+        "HARVEST:SHEEP": 38,
+        "HARVEST:COW": 62,
+        "PLACE:None": 2,
+        "HARVEST:MELON": 12,
+        "BUILD_COOP:None": 5,
+        "PLACE:COOP": 3,
+        "FEED:GOOSE": 52,
+        "CARE:GOOSE": 53,
+        "PICKUP:STRAWBERRY": 22,
+        "FERTILIZE:WHEAT": 37,
+        "HARVEST:GOOSE": 32,
+        "FERTILIZE:STRAWBERRY": 58,
+        "HARVEST:STRAWBERRY": 130,
+        "PLACE:STRAWBERRY": 3,
+        "FERTILIZE:CARROT": 13,
+        "HARVEST:CARROT": 31
+      },
+      "candidate_work": {
+        "PICKUP:None": 15,
+        "BUILD_PASTURE:None": 14,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 15,
+        "PLANT:None": 239,
+        "CARE:COW": 199,
+        "PICKUP:COW": 170,
+        "FEED:SHEEP": 95,
+        "CARE:SHEEP": 140,
+        "FEED:COW": 133,
+        "PLACE:COW": 75,
+        "HARVEST:WHEAT": 163,
+        "HARVEST:SHEEP": 38,
+        "HARVEST:COW": 72,
+        "PLACE:None": 2,
+        "HARVEST:MELON": 12,
+        "BUILD_COOP:None": 5,
+        "PLACE:COOP": 3,
+        "FEED:GOOSE": 52,
+        "CARE:GOOSE": 53,
+        "PICKUP:STRAWBERRY": 23,
+        "FERTILIZE:WHEAT": 49,
+        "HARVEST:GOOSE": 31,
+        "FERTILIZE:STRAWBERRY": 61,
+        "HARVEST:STRAWBERRY": 130,
+        "PLACE:STRAWBERRY": 3,
+        "FERTILIZE:CARROT": 13,
+        "HARVEST:CARROT": 31
+      },
+      "base_escapes": [
+        [],
+        []
+      ],
+      "candidate_escapes": [
+        [],
+        []
+      ],
+      "base_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 1,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "candidate_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "base_margin": -3551.0,
+      "candidate_margin": 0.0,
+      "repairs": [
+        {
+          "step": 69,
+          "actor": 0,
+          "xy": [
+            4,
+            2
+          ],
+          "animal": "COW",
+          "structure": "PASTURE",
+          "planned_next": [
+            [
+              "CARE"
+            ],
+            [
+              "PASS"
+            ]
+          ],
+          "phases": [
+            {
+              "step": 69,
+              "original": [
+                "PLACE",
+                "COW"
+              ],
+              "emitted": [
+                "BUILD_PASTURE"
+              ],
+              "tile_before": null,
+              "bag_before": {
+                "COW": 1
+              }
+            },
+            {
+              "step": 70,
+              "original": [
+                "CARE"
+              ],
+              "emitted": [
+                "PLACE",
+                "COW"
+              ],
+              "tile_before": {
+                "kind": "PASTURE"
+              },
+              "bag_before": {
+                "COW": 1
+              }
+            },
+            {
+              "step": 71,
+              "original": [
+                "PASS"
+              ],
+              "emitted": [
+                "CARE"
+              ],
+              "tile_before": {
+                "kind": "PASTURE",
+                "animal": "COW",
+                "placed_day": 2,
+                "yield_units": 0,
+                "consecutive_unfed": 0,
+                "fed_today": false,
+                "cared_today": false,
+                "fertilizer_available": false,
+                "pending_care_bonus": 0
+              },
+              "bag_before": {}
+            }
+          ],
+          "all_phases_requested": true
+        }
+      ]
+    },
+    {
+      "arm": "animal_build_vq",
+      "seed": 2146809967,
+      "seat": 1,
+      "changed_own_turns": 0,
+      "same_shops": true,
+      "same_losses": true,
+      "base_harvest": {
+        "WHEAT": 594,
+        "WOOL": 99,
+        "MILK": 235,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 97
+      },
+      "candidate_harvest": {
+        "WHEAT": 594,
+        "WOOL": 99,
+        "MILK": 235,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 97
+      },
+      "base_work": {
+        "PICKUP:None": 15,
+        "BUILD_PASTURE:None": 14,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 15,
+        "PLANT:None": 239,
+        "CARE:COW": 199,
+        "PICKUP:COW": 169,
+        "FEED:SHEEP": 95,
+        "CARE:SHEEP": 140,
+        "FEED:COW": 172,
+        "PLACE:COW": 75,
+        "HARVEST:WHEAT": 163,
+        "HARVEST:SHEEP": 38,
+        "HARVEST:COW": 72,
+        "PLACE:None": 2,
+        "HARVEST:MELON": 12,
+        "BUILD_COOP:None": 5,
+        "PLACE:COOP": 3,
+        "FEED:GOOSE": 52,
+        "CARE:GOOSE": 53,
+        "PICKUP:STRAWBERRY": 22,
+        "FERTILIZE:WHEAT": 37,
+        "HARVEST:GOOSE": 32,
+        "FERTILIZE:STRAWBERRY": 61,
+        "HARVEST:STRAWBERRY": 130,
+        "PLACE:STRAWBERRY": 3,
+        "FERTILIZE:CARROT": 13,
+        "HARVEST:CARROT": 31
+      },
+      "candidate_work": {
+        "PICKUP:None": 15,
+        "BUILD_PASTURE:None": 14,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 15,
+        "PLANT:None": 239,
+        "CARE:COW": 199,
+        "PICKUP:COW": 169,
+        "FEED:SHEEP": 95,
+        "CARE:SHEEP": 140,
+        "FEED:COW": 172,
+        "PLACE:COW": 75,
+        "HARVEST:WHEAT": 163,
+        "HARVEST:SHEEP": 38,
+        "HARVEST:COW": 72,
+        "PLACE:None": 2,
+        "HARVEST:MELON": 12,
+        "BUILD_COOP:None": 5,
+        "PLACE:COOP": 3,
+        "FEED:GOOSE": 52,
+        "CARE:GOOSE": 53,
+        "PICKUP:STRAWBERRY": 22,
+        "FERTILIZE:WHEAT": 37,
+        "HARVEST:GOOSE": 32,
+        "FERTILIZE:STRAWBERRY": 61,
+        "HARVEST:STRAWBERRY": 130,
+        "PLACE:STRAWBERRY": 3,
+        "FERTILIZE:CARROT": 13,
+        "HARVEST:CARROT": 31
+      },
+      "base_escapes": [
+        [],
+        []
+      ],
+      "candidate_escapes": [
+        [],
+        []
+      ],
+      "base_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 1,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "candidate_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 1,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "base_margin": 3551.0,
+      "candidate_margin": 3551.0,
+      "repairs": []
+    },
+    {
+      "arm": "animal_build_top3",
+      "seed": 2146809967,
+      "seat": 0,
+      "changed_own_turns": 161,
+      "same_shops": false,
+      "same_losses": false,
+      "base_harvest": {
+        "WHEAT": 594,
+        "WOOL": 99,
+        "MILK": 198,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 243,
+        "CARROT": 97
+      },
+      "candidate_harvest": {
+        "WHEAT": 618,
+        "WOOL": 99,
+        "MILK": 168,
+        "MELON": 72,
+        "EGG": 91,
+        "STRAWBERRY": 249,
+        "CARROT": 97
+      },
+      "base_work": {
+        "PICKUP:None": 15,
+        "BUILD_PASTURE:None": 13,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 14,
+        "PLANT:None": 239,
+        "CARE:COW": 172,
+        "PICKUP:COW": 169,
+        "FEED:SHEEP": 95,
+        "CARE:SHEEP": 140,
+        "FEED:COW": 142,
+        "PLACE:COW": 74,
+        "HARVEST:WHEAT": 163,
+        "HARVEST:SHEEP": 38,
+        "HARVEST:COW": 62,
+        "PLACE:None": 2,
+        "HARVEST:MELON": 12,
+        "BUILD_COOP:None": 5,
+        "PLACE:COOP": 3,
+        "FEED:GOOSE": 52,
+        "CARE:GOOSE": 53,
+        "PICKUP:STRAWBERRY": 22,
+        "FERTILIZE:WHEAT": 37,
+        "HARVEST:GOOSE": 32,
+        "FERTILIZE:STRAWBERRY": 58,
+        "HARVEST:STRAWBERRY": 130,
+        "PLACE:STRAWBERRY": 3,
+        "FERTILIZE:CARROT": 13,
+        "HARVEST:CARROT": 31
+      },
+      "candidate_work": {
+        "PICKUP:None": 15,
+        "BUILD_PASTURE:None": 14,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 15,
+        "PLANT:None": 239,
+        "CARE:COW": 199,
+        "PICKUP:COW": 170,
+        "FEED:SHEEP": 95,
+        "CARE:SHEEP": 140,
+        "FEED:COW": 131,
+        "PLACE:COW": 75,
+        "HARVEST:WHEAT": 163,
+        "HARVEST:SHEEP": 38,
+        "HARVEST:COW": 72,
+        "PLACE:None": 2,
+        "HARVEST:MELON": 12,
+        "BUILD_COOP:None": 5,
+        "PLACE:COOP": 3,
+        "FEED:GOOSE": 52,
+        "CARE:GOOSE": 52,
+        "PICKUP:STRAWBERRY": 23,
+        "FERTILIZE:WHEAT": 49,
+        "HARVEST:GOOSE": 32,
+        "FERTILIZE:STRAWBERRY": 61,
+        "HARVEST:STRAWBERRY": 130,
+        "PLACE:STRAWBERRY": 3,
+        "FERTILIZE:CARROT": 13,
+        "HARVEST:CARROT": 31
+      },
+      "base_escapes": [
+        [],
+        []
+      ],
+      "candidate_escapes": [
+        [],
+        []
+      ],
+      "base_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 1,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "candidate_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "base_margin": -3753.0,
+      "candidate_margin": 58.0,
+      "repairs": [
+        {
+          "step": 69,
+          "actor": 0,
+          "xy": [
+            4,
+            2
+          ],
+          "animal": "COW",
+          "structure": "PASTURE",
+          "planned_next": [
+            [
+              "CARE"
+            ],
+            [
+              "PASS"
+            ]
+          ],
+          "phases": [
+            {
+              "step": 69,
+              "original": [
+                "PLACE",
+                "COW"
+              ],
+              "emitted": [
+                "BUILD_PASTURE"
+              ],
+              "tile_before": null,
+              "bag_before": {
+                "COW": 1
+              }
+            },
+            {
+              "step": 70,
+              "original": [
+                "CARE"
+              ],
+              "emitted": [
+                "PLACE",
+                "COW"
+              ],
+              "tile_before": {
+                "kind": "PASTURE"
+              },
+              "bag_before": {
+                "COW": 1
+              }
+            },
+            {
+              "step": 71,
+              "original": [
+                "PASS"
+              ],
+              "emitted": [
+                "CARE"
+              ],
+              "tile_before": {
+                "kind": "PASTURE",
+                "animal": "COW",
+                "placed_day": 2,
+                "yield_units": 0,
+                "consecutive_unfed": 0,
+                "fed_today": false,
+                "cared_today": false,
+                "fertilizer_available": false,
+                "pending_care_bonus": 0
+              },
+              "bag_before": {}
+            }
+          ],
+          "all_phases_requested": true
+        }
+      ]
+    },
+    {
+      "arm": "animal_build_top3",
+      "seed": 2146809967,
+      "seat": 1,
+      "changed_own_turns": 0,
+      "same_shops": true,
+      "same_losses": true,
+      "base_harvest": {
+        "WHEAT": 594,
+        "WOOL": 99,
+        "MILK": 229,
+        "MELON": 72,
+        "EGG": 93,
+        "STRAWBERRY": 249,
+        "CARROT": 97
+      },
+      "candidate_harvest": {
+        "WHEAT": 594,
+        "WOOL": 99,
+        "MILK": 229,
+        "MELON": 72,
+        "EGG": 93,
+        "STRAWBERRY": 249,
+        "CARROT": 97
+      },
+      "base_work": {
+        "PICKUP:None": 15,
+        "BUILD_PASTURE:None": 14,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 15,
+        "PLANT:None": 239,
+        "CARE:COW": 199,
+        "PICKUP:COW": 169,
+        "FEED:SHEEP": 95,
+        "CARE:SHEEP": 140,
+        "FEED:COW": 164,
+        "PLACE:COW": 75,
+        "HARVEST:WHEAT": 163,
+        "HARVEST:SHEEP": 38,
+        "HARVEST:COW": 72,
+        "PLACE:None": 2,
+        "HARVEST:MELON": 12,
+        "BUILD_COOP:None": 5,
+        "PLACE:COOP": 3,
+        "FEED:GOOSE": 52,
+        "CARE:GOOSE": 52,
+        "PICKUP:STRAWBERRY": 22,
+        "FERTILIZE:WHEAT": 37,
+        "HARVEST:GOOSE": 33,
+        "FERTILIZE:STRAWBERRY": 61,
+        "HARVEST:STRAWBERRY": 130,
+        "PLACE:STRAWBERRY": 3,
+        "FERTILIZE:CARROT": 13,
+        "HARVEST:CARROT": 31
+      },
+      "candidate_work": {
+        "PICKUP:None": 15,
+        "BUILD_PASTURE:None": 14,
+        "PICKUP:PASTURE": 1,
+        "PLACE:PASTURE": 15,
+        "PLANT:None": 239,
+        "CARE:COW": 199,
+        "PICKUP:COW": 169,
+        "FEED:SHEEP": 95,
+        "CARE:SHEEP": 140,
+        "FEED:COW": 164,
+        "PLACE:COW": 75,
+        "HARVEST:WHEAT": 163,
+        "HARVEST:SHEEP": 38,
+        "HARVEST:COW": 72,
+        "PLACE:None": 2,
+        "HARVEST:MELON": 12,
+        "BUILD_COOP:None": 5,
+        "PLACE:COOP": 3,
+        "FEED:GOOSE": 52,
+        "CARE:GOOSE": 52,
+        "PICKUP:STRAWBERRY": 22,
+        "FERTILIZE:WHEAT": 37,
+        "HARVEST:GOOSE": 33,
+        "FERTILIZE:STRAWBERRY": 61,
+        "HARVEST:STRAWBERRY": 130,
+        "PLACE:STRAWBERRY": 3,
+        "FERTILIZE:CARROT": 13,
+        "HARVEST:CARROT": 31
+      },
+      "base_escapes": [
+        [],
+        []
+      ],
+      "candidate_escapes": [
+        [],
+        []
+      ],
+      "base_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 1,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "candidate_terminal_private": [
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 0,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "shed": {
+            "WHEAT": 0,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0,
+            "EGG": 0,
+            "MILK": 0,
+            "WOOL": 0,
+            "FERTILIZER": 0,
+            "GOOSE": 0,
+            "COW": 1,
+            "SHEEP": 0
+          },
+          "seeds": {
+            "WHEAT": 1,
+            "CARROT": 0,
+            "TOMATO": 0,
+            "STRAWBERRY": 0,
+            "MELON": 0
+          },
+          "inventories": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        }
+      ],
+      "base_margin": 4373.0,
+      "candidate_margin": 4373.0,
+      "repairs": []
+    }
+  ],
+  "note": "Native windows and official BUILD/PLACE/CARE transitions verified. Changes to production, shops, losses, terminal inventory and scores remain diagnostic."
+}

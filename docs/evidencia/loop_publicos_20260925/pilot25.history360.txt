@@ -1,0 +1,20 @@
+  (extra, no entra en la estimacion) base vs advance_vq: 40.6% (32 ep)
+  (extra, no entra en la estimacion) history360 vs advance_vq: 65.6% (32 ep)
+  (extra, no entra en la estimacion) base vs harvest68: 40.6% (32 ep)
+  (extra, no entra en la estimacion) history360 vs harvest68: 53.1% (32 ep)
+  (extra, no entra en la estimacion) base vs noop: 50.0% (32 ep)
+  (extra, no entra en la estimacion) history360 vs noop: 81.2% (32 ep)
+  (extra, no entra en la estimacion) base vs sheep_supply_buy: 18.8% (32 ep)
+  (extra, no entra en la estimacion) history360 vs sheep_supply_buy: 31.2% (32 ep)
+  (extra, no entra en la estimacion) base vs top3: 18.8% (32 ep)
+  (extra, no entra en la estimacion) history360 vs top3: 31.2% (32 ep)
+  (extra, no entra en la estimacion) base vs wheat_front: 15.6% (32 ep)
+  (extra, no entra en la estimacion) history360 vs wheat_front: 28.1% (32 ep)
+history360 - base: 4 rivales x 16 semillas = 64 celdas; ref 35.2%
+  delta +28.91 pts | IC95 semilla [+12.46; +45.35] | dos vias [+1.14; +56.67]
+  celdas cambiadas 32/64: 28 a favor, 4 en contra
+    vs mirror_top3  +12.5
+    vs mirror_vq  +31.2
+    vs public_hs4  +46.9
+    vs public_v7  +25.0
+  directo history360 vs base: 81.2% (32 ep)

@@ -1,0 +1,206 @@
+{
+  "results": {
+    "extra_half": {
+      "reference": "base",
+      "candidate": "extra_half",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "guru6",
+        "h2965",
+        "hl25",
+        "hsov",
+        "hybu",
+        "obr",
+        "public_hs4",
+        "public_v7",
+        "tds",
+        "tds25",
+        "v13"
+      ],
+      "seeds": [
+        1053000,
+        1053001,
+        1053002,
+        1053003,
+        1053004,
+        1053005,
+        1053006,
+        1053007,
+        1053008,
+        1053009,
+        1053010,
+        1053011,
+        1053012,
+        1053013,
+        1053014,
+        1053015
+      ],
+      "base_wr": 81.00961538461539,
+      "candidate_wr": 80.76923076923077,
+      "delta_points": -0.2403846153846154,
+      "ci95_seed": [
+        -4.3712249071626745,
+        3.890455676393444
+      ],
+      "ci95_2way": [
+        -4.2688399065251685,
+        3.788070675755938
+      ],
+      "opponent_breakdown": {
+        "ars40": 0.0,
+        "arshs3": 3.125,
+        "guru6": 0.0,
+        "h2965": 0.0,
+        "hl25": 0.0,
+        "hsov": 0.0,
+        "hybu": -12.5,
+        "obr": 0.0,
+        "public_hs4": 6.25,
+        "public_v7": 6.25,
+        "tds": -6.25,
+        "tds25": 0.0,
+        "v13": 0.0
+      },
+      "better_cells": 5,
+      "worse_cells": 5,
+      "equal_cells": 198,
+      "status": "INCONCLUSIVE_NOT_SELECTED",
+      "versus_vq": {
+        "reference": "vq",
+        "candidate": "extra_half",
+        "rivals": [
+          "ars40",
+          "arshs3",
+          "guru6",
+          "h2965",
+          "hl25",
+          "hsov",
+          "hybu",
+          "obr",
+          "public_hs4",
+          "public_v7",
+          "tds",
+          "tds25",
+          "v13"
+        ],
+        "seeds": [
+          1053000,
+          1053001,
+          1053002,
+          1053003,
+          1053004,
+          1053005,
+          1053006,
+          1053007,
+          1053008,
+          1053009,
+          1053010,
+          1053011,
+          1053012,
+          1053013,
+          1053014,
+          1053015
+        ],
+        "base_wr": 66.58653846153845,
+        "candidate_wr": 80.76923076923076,
+        "delta_points": 14.182692307692308,
+        "ci95_seed": [
+          3.3969774171279212,
+          24.968407198256696
+        ],
+        "ci95_2way": [
+          1.0697204662734858,
+          27.295664149111133
+        ],
+        "opponent_breakdown": {
+          "ars40": 21.875,
+          "arshs3": -6.25,
+          "guru6": 0.0,
+          "h2965": 3.125,
+          "hl25": 9.375,
+          "hsov": 9.375,
+          "hybu": 15.625,
+          "obr": 9.375,
+          "public_hs4": 43.75,
+          "public_v7": 46.875,
+          "tds": 3.125,
+          "tds25": 18.75,
+          "v13": 9.375
+        },
+        "better_cells": 42,
+        "worse_cells": 7,
+        "equal_cells": 159
+      },
+      "registered_submission_gate": false
+    },
+    "vq": {
+      "reference": "base",
+      "candidate": "vq",
+      "rivals": [
+        "ars40",
+        "arshs3",
+        "guru6",
+        "h2965",
+        "hl25",
+        "hsov",
+        "hybu",
+        "obr",
+        "public_hs4",
+        "public_v7",
+        "tds",
+        "tds25",
+        "v13"
+      ],
+      "seeds": [
+        1053000,
+        1053001,
+        1053002,
+        1053003,
+        1053004,
+        1053005,
+        1053006,
+        1053007,
+        1053008,
+        1053009,
+        1053010,
+        1053011,
+        1053012,
+        1053013,
+        1053014,
+        1053015
+      ],
+      "base_wr": 81.00961538461539,
+      "candidate_wr": 66.58653846153847,
+      "delta_points": -14.423076923076923,
+      "ci95_seed": [
+        -25.33221787071293,
+        -3.5139359754409174
+      ],
+      "ci95_2way": [
+        -27.063038154683433,
+        -1.783115691470412
+      ],
+      "opponent_breakdown": {
+        "ars40": -21.875,
+        "arshs3": 9.375,
+        "guru6": 0.0,
+        "h2965": -3.125,
+        "hl25": -9.375,
+        "hsov": -9.375,
+        "hybu": -28.125,
+        "obr": -9.375,
+        "public_hs4": -37.5,
+        "public_v7": -40.625,
+        "tds": -9.375,
+        "tds25": -18.75,
+        "v13": -9.375
+      },
+      "better_cells": 7,
+      "worse_cells": 42,
+      "equal_cells": 159,
+      "status": "DIAGNOSTIC_CONTROL_ONLY"
+    }
+  },
+  "selected_for_confirmation": []
+}

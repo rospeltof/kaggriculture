@@ -1,0 +1,16 @@
+  (extra, no entra en la estimacion) vq vs base: 3.1% (32 ep)
+  (extra, no entra en la estimacion) harvest68_no_ev vs base: 25.0% (32 ep)
+  (extra, no entra en la estimacion) vq vs harvest68: 37.5% (32 ep)
+  (extra, no entra en la estimacion) harvest68_no_ev vs harvest68: 59.4% (32 ep)
+  (extra, no entra en la estimacion) vq vs noop: 3.1% (32 ep)
+  (extra, no entra en la estimacion) harvest68_no_ev vs noop: 25.0% (32 ep)
+harvest68_no_ev - vq: 6 rivales x 16 semillas = 96 celdas; ref 56.2%
+  delta +8.85 pts | IC95 semilla [-14.44; +32.15] | dos vias [-23.37; +41.08]
+  celdas cambiadas 51/96: 33 a favor, 18 en contra
+    vs    ars40  +15.6
+    vs   arshs3  -31.2
+    vs     hybu  +25.0
+    vs public_hs4  +21.9
+    vs public_v7   +3.1
+    vs      tds  +18.8
+  directo harvest68_no_ev vs vq: 68.8% (32 ep)

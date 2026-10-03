@@ -1,0 +1,16 @@
+  (extra, no entra en la estimacion) base vs advance_top3: 7.8% (64 ep)
+  (extra, no entra en la estimacion) advance_vq vs advance_top3: 7.8% (64 ep)
+  (extra, no entra en la estimacion) base vs noop: 50.0% (64 ep)
+  (extra, no entra en la estimacion) advance_vq vs noop: 56.2% (64 ep)
+  (extra, no entra en la estimacion) base vs top3: 7.8% (64 ep)
+  (extra, no entra en la estimacion) advance_vq vs top3: 20.3% (64 ep)
+advance_vq - base: 6 rivales x 32 semillas = 192 celdas; ref 64.6%
+  delta +4.17 pts | IC95 semilla [+0.13; +8.20] | dos vias [-3.45; +11.78]
+  celdas cambiadas 8/192: 8 a favor, 0 en contra
+    vs    ars40   +0.0
+    vs   arshs3   +0.0
+    vs     hybu  +12.5
+    vs public_hs4   +0.0
+    vs public_v7   +0.0
+    vs      tds  +12.5
+  directo advance_vq vs base: 56.2% (64 ep)

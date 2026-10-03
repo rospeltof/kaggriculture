@@ -1,0 +1,16 @@
+  (extra, no entra en la estimacion) vq vs base: 20.3% (64 ep)
+  (extra, no entra en la estimacion) sheep_supply_hold vs base: 50.0% (64 ep)
+  (extra, no entra en la estimacion) vq vs noop: 20.3% (64 ep)
+  (extra, no entra en la estimacion) sheep_supply_hold vs noop: 50.0% (64 ep)
+  (extra, no entra en la estimacion) vq vs sheep_supply_buy: 20.3% (64 ep)
+  (extra, no entra en la estimacion) sheep_supply_hold vs sheep_supply_buy: 50.0% (64 ep)
+sheep_supply_hold - vq: 6 rivales x 32 semillas = 192 celdas; ref 59.9%
+  delta +25.78 pts | IC95 semilla [+16.03; +35.54] | dos vias [+4.68; +46.88]
+  celdas cambiadas 69/192: 60 a favor, 9 en contra
+    vs    ars40  +23.4
+    vs   arshs3   -9.4
+    vs     hybu  +28.1
+    vs public_hs4  +42.2
+    vs public_v7  +40.6
+    vs      tds  +29.7
+  directo sheep_supply_hold vs vq: 79.7% (64 ep)

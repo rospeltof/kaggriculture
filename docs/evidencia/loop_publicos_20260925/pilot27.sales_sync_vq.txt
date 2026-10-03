@@ -1,0 +1,14 @@
+  (extra, no entra en la estimacion) base vs noop: 50.0% (32 ep)
+  (extra, no entra en la estimacion) sales_sync_vq vs noop: 50.0% (32 ep)
+  (extra, no entra en la estimacion) base vs sales_sync_top3: 0.0% (32 ep)
+  (extra, no entra en la estimacion) sales_sync_vq vs sales_sync_top3: 0.0% (32 ep)
+  (extra, no entra en la estimacion) base vs top3: 0.0% (32 ep)
+  (extra, no entra en la estimacion) sales_sync_vq vs top3: 0.0% (32 ep)
+sales_sync_vq - base: 4 rivales x 16 semillas = 64 celdas; ref 36.7%
+  delta -3.12 pts | IC95 semilla [-9.33; +3.08] | dos vias [-14.23; +7.98]
+  celdas cambiadas 4/64: 1 a favor, 3 en contra
+    vs mirror_top3   +0.0
+    vs mirror_vq   +0.0
+    vs public_hs4  -12.5
+    vs public_v7   +0.0
+  directo sales_sync_vq vs base: 50.0% (32 ep)

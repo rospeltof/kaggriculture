@@ -1,0 +1,18 @@
+{
+  "animal_build_vq": {
+    "path": "results/reparar_pasto_20260925/animal_build_vq.py",
+    "sha256": "86616da10bcfb20fd57ed9f73f8f8b9c2599f1903b571ae0e3684aa39e3f4785",
+    "config": {
+      "enabled": true
+    },
+    "behavior_reference": "base"
+  },
+  "animal_build_top3": {
+    "path": "results/reparar_pasto_20260925/animal_build_top3.py",
+    "sha256": "3fdee5e6a90f2437f7176b5643adfc429524dedf11bd3965e9498f2226323569",
+    "config": {
+      "enabled": true
+    },
+    "behavior_reference": "top3"
+  }
+}

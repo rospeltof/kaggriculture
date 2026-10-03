@@ -1,0 +1,17 @@
+{
+  "started_at": "2026-09-25T11:15:25.992556+00:00",
+  "completed_at": "2026-09-25T11:15:27.049840+00:00",
+  "command": [
+    "kernels",
+    "list",
+    "--competition",
+    "kaggriculture",
+    "--sort-by",
+    "dateRun",
+    "--page-size",
+    "50",
+    "--format",
+    "json"
+  ],
+  "sha256": "675178fc7db851bd12eccf55d721db50f25fe8e7dc18d23cb813073767fccda8"
+}

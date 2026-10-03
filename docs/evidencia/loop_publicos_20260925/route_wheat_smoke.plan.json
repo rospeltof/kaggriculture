@@ -1,0 +1,60 @@
+{
+  "seeds": [
+    1083000,
+    1083001,
+    1080001
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "expected_games": 36,
+  "runtime_hash_seed": "0",
+  "opponent": {
+    "path": "submission/main_publico_v13_thomastschinkel.py",
+    "sha256": "9d63494603f88219857a3101d7dc19cc750ded04e5886732ee428580326967d9"
+  },
+  "agents": {
+    "base": {
+      "path": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "top3": {
+      "path": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "route_wheat_vq": {
+      "path": "results/trigo_ruta_20260925/route_wheat_vq.py",
+      "sha256": "257c54fcc84ef25d47bacd0c2f2cf4a4dcb0235700a4c6a78e32b6756a16284f",
+      "config": {
+        "enabled": true
+      },
+      "behavior_reference": "base"
+    },
+    "route_noop_vq": {
+      "path": "results/trigo_ruta_20260925/route_noop_vq.py",
+      "sha256": "ec392c5e2d617a578276c2dc483d8449c1fbdad260b3307c4062acbf6de30a36",
+      "config": {
+        "enabled": false
+      },
+      "behavior_reference": "base"
+    },
+    "route_wheat_top3": {
+      "path": "results/trigo_ruta_20260925/route_wheat_top3.py",
+      "sha256": "d651c1637bf447a890c3ec59f9f02d64cbb6e4213762ce31105f52fc9752eb1d",
+      "config": {
+        "enabled": true
+      },
+      "behavior_reference": "top3"
+    },
+    "route_noop_top3": {
+      "path": "results/trigo_ruta_20260925/route_noop_top3.py",
+      "sha256": "17f67efefc5e6a0902e1d996f74dc094fe2014f62df8fd1013d074cf56fc1f30",
+      "config": {
+        "enabled": false
+      },
+      "behavior_reference": "top3"
+    }
+  },
+  "purpose": "Late native pickup protection, actual fills and work. Two real parents, exact noops, no reward selection."
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "results/publicos_1118/syedtahahassan_kaggriculture-hack/main.py",
+    "sha256": "a2047ebd8ca5720221e1421529655d9c67a7b2fedb74e874c7d3c55a8970ac7e",
+    "bytes": 299348,
+    "method": "Extract writefile or AST literal base64/gzip only; no notebook/source execution."
+  },
+  {
+    "path": "results/publicos_1118/nathanjacob_kaggriculture-pipe18-six-layers/main.py",
+    "sha256": "a4a563c66ea84746cdb5b18341e78d97677ba5a8cef67e9a157afdaf1d6207d7",
+    "bytes": 1022762,
+    "method": "Extract writefile or AST literal base64/gzip only; no notebook/source execution."
+  }
+]

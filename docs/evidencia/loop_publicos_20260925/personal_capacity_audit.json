@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "new_full_games": 0,
+  "official_unit_probes": [
+    {
+      "initial_personal_load": 0,
+      "wheat_in_shed": 20,
+      "requested": 15,
+      "picked": 15,
+      "final_personal_load": 15
+    },
+    {
+      "initial_personal_load": 8,
+      "wheat_in_shed": 20,
+      "requested": 5,
+      "picked": 5,
+      "final_personal_load": 13
+    },
+    {
+      "initial_personal_load": 8,
+      "wheat_in_shed": 20,
+      "requested": 15,
+      "picked": 15,
+      "final_personal_load": 23
+    },
+    {
+      "initial_personal_load": 15,
+      "wheat_in_shed": 3,
+      "requested": 5,
+      "picked": 3,
+      "final_personal_load": 18
+    }
+  ],
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "frozen_loop23_events": [
+    {
+      "tag": "sheep_supply_coverage_public_v7",
+      "arm": "sheep_supply_buy",
+      "seed": 1578791335,
+      "seat": 0,
+      "step": 601,
+      "native_predicted": 5,
+      "native_requested": 5,
+      "native_taken": 5
+    },
+    {
+      "tag": "sheep_supply_coverage_public_v7",
+      "arm": "sheep_supply_buy",
+      "seed": 1578791335,
+      "seat": 1,
+      "step": 601,
+      "native_predicted": 5,
+      "native_requested": 5,
+      "native_taken": 5
+    },
+    {
+      "tag": "sheep_supply_coverage_public_v7",
+      "arm": "sheep_supply_hold",
+      "seed": 1578791335,
+      "seat": 0,
+      "step": 601,
+      "native_predicted": 5,
+      "native_requested": 5,
+      "native_taken": 5
+    },
+    {
+      "tag": "sheep_supply_coverage_public_v7",
+      "arm": "sheep_supply_hold",
+      "seed": 1578791335,
+      "seat": 1,
+      "step": 601,
+      "native_predicted": 5,
+      "native_requested": 5,
+      "native_taken": 5
+    }
+  ],
+  "limitation": "The ten-unit personal capacity assumption in layer23 is wrong. It did not clip demand in its four observed development activations, so existing measured receipts remain valid. Frozen loop23 sources are unchanged; do not generalize that coverage to all future states. Layer32 uses full requested quantities."
+}

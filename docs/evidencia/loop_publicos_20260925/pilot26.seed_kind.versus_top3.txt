@@ -1,0 +1,14 @@
+  (extra, no entra en la estimacion) top3 vs base: 87.5% (32 ep)
+  (extra, no entra en la estimacion) seed_kind vs base: 53.1% (32 ep)
+  (extra, no entra en la estimacion) top3 vs noop: 87.5% (32 ep)
+  (extra, no entra en la estimacion) seed_kind vs noop: 53.1% (32 ep)
+  (extra, no entra en la estimacion) top3 vs seed_jit: 87.5% (32 ep)
+  (extra, no entra en la estimacion) seed_kind vs seed_jit: 21.9% (32 ep)
+seed_kind - top3: 4 rivales x 16 semillas = 64 celdas; ref 62.5%
+  delta -30.47 pts | IC95 semilla [-47.83; -13.10] | dos vias [-52.39; -8.55]
+  celdas cambiadas 41/64: 5 a favor, 36 en contra
+    vs mirror_top3  -37.5
+    vs mirror_vq  -34.4
+    vs public_hs4  -25.0
+    vs public_v7  -25.0
+  directo seed_kind vs top3: 12.5% (32 ep)

@@ -1,0 +1,36 @@
+[
+  {
+    "ref": "syedtahahassan/kaggriculture-hack",
+    "started_at": "2026-09-25T11:16:06.639790+00:00",
+    "completed_at": "2026-09-25T11:16:07.923122+00:00",
+    "files": [
+      {
+        "path": "results/publicos_1118/syedtahahassan_kaggriculture-hack/kaggriculture-hack.ipynb",
+        "sha256": "6c2bd11285b6f5d04d3a688339f83fcd48acc5ed4e0c188fe46921397a7b308c",
+        "bytes": 327212
+      },
+      {
+        "path": "results/publicos_1118/syedtahahassan_kaggriculture-hack/kernel-metadata.json",
+        "sha256": "368860618ba65709eea8e3405c5e359de0025967075caaa00742bcee3ccba674",
+        "bytes": 584
+      }
+    ]
+  },
+  {
+    "ref": "nathanjacob/kaggriculture-pipe18-six-layers",
+    "started_at": "2026-09-25T11:16:06.646760+00:00",
+    "completed_at": "2026-09-25T11:16:08.163777+00:00",
+    "files": [
+      {
+        "path": "results/publicos_1118/nathanjacob_kaggriculture-pipe18-six-layers/kaggriculture-pipe18-six-layers.ipynb",
+        "sha256": "ef5558a1eb0c38d1d2270c7fae00739d76528523e765fe05bfc4b78258367153",
+        "bytes": 925393
+      },
+      {
+        "path": "results/publicos_1118/nathanjacob_kaggriculture-pipe18-six-layers/kernel-metadata.json",
+        "sha256": "3d0b01a4772cff2104d68e114ba3b55d03cf97dc97c9471e0a99a0ec2ec749ac",
+        "bytes": 621
+      }
+    ]
+  }
+]

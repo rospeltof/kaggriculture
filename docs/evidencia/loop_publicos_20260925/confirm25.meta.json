@@ -1,0 +1,94 @@
+{
+  "agentes": {
+    "base": {
+      "ruta": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "noop": {
+      "ruta": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "wheat_front": {
+      "ruta": "results/trigo_reventa_20260925/wheat_front.py",
+      "sha256": "ab5ab19cdc810f5a3f4940a7db31436c4b135b5a56bdcbc7cfa001eb187d56e5"
+    },
+    "top3": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "mirror_vq": {
+      "ruta": "submission/main_publico_arshs3_vq.py",
+      "sha256": "9b463dfb8076b4c63946e1ae4249cd1cfc3cc58b63115cf2bd5b00f96f188976"
+    },
+    "mirror_top3": {
+      "ruta": "submission/main_publico_arshs3_vq_top3.py",
+      "sha256": "9668e30ad08f79d485bd230a3c660d4cc420b9382e87f9387b6908e3c94a5145"
+    },
+    "public_v7": {
+      "ruta": "results/publicos_0548_20260925/haideptry_the-2965-master-hybrid-engine/main.py",
+      "sha256": "cda529cb6b359fc4a9ab124d4d7950d5912bd5de846dcec4be70ca83b7150b2d"
+    },
+    "public_hs4": {
+      "ruta": "results/publicos_0548_20260925/haideptry_the-shepherds-ledger-herd-safe-sovereign/main.py",
+      "sha256": "8378f73c82db7624ce5d0369cf896aa0761a662af147b119f67254f1f8634c56"
+    },
+    "recent_harvest68": {
+      "ruta": "results/publicos_0712_20260925/haodou092_kaggriculture-harvest-ledger/main.py",
+      "sha256": "3b543611448947399c9902e6ca1e45b84e904031156ff012ea675947dc74197e"
+    },
+    "arshs3": {
+      "ruta": "submission/main_publico_arshs3_arsgorynich.py",
+      "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+    }
+  },
+  "seeds": [
+    1064000,
+    1064001,
+    1064002,
+    1064003,
+    1064004,
+    1064005,
+    1064006,
+    1064007,
+    1064008,
+    1064009,
+    1064010,
+    1064011,
+    1064012,
+    1064013,
+    1064014,
+    1064015,
+    1064016,
+    1064017,
+    1064018,
+    1064019,
+    1064020,
+    1064021,
+    1064022,
+    1064023,
+    1064024,
+    1064025,
+    1064026,
+    1064027,
+    1064028,
+    1064029,
+    1064030,
+    1064031
+  ],
+  "vs": "base,noop,wheat_front,top3",
+  "inicio": "2026-09-25 08:48:23",
+  "state": "complete",
+  "expected_episodes": 1920,
+  "workers": 8,
+  "runtime": {
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+    "multiprocessing_start_method": "spawn",
+    "python_hash_seed": "0",
+    "wheat_hash": 8460755321718155249
+  },
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "kaggle_environments": "1.32.7",
+  "runner_sha256": "27916eb54d67d769f87081c03b067c64afdb4a55faf6cf4ab1bed78d7dfe0c52",
+  "completed_episodes": 1920,
+  "fin": "2026-09-25 09:11:27"
+}

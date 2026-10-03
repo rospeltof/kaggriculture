@@ -1,0 +1,20 @@
+  (extra, no entra en la estimacion) base vs advance_vq: 40.6% (32 ep)
+  (extra, no entra en la estimacion) top3 vs advance_vq: 65.6% (32 ep)
+  (extra, no entra en la estimacion) base vs harvest68: 40.6% (32 ep)
+  (extra, no entra en la estimacion) top3 vs harvest68: 46.9% (32 ep)
+  (extra, no entra en la estimacion) base vs history360: 18.8% (32 ep)
+  (extra, no entra en la estimacion) top3 vs history360: 68.8% (32 ep)
+  (extra, no entra en la estimacion) base vs noop: 50.0% (32 ep)
+  (extra, no entra en la estimacion) top3 vs noop: 81.2% (32 ep)
+  (extra, no entra en la estimacion) base vs sheep_supply_buy: 18.8% (32 ep)
+  (extra, no entra en la estimacion) top3 vs sheep_supply_buy: 50.0% (32 ep)
+  (extra, no entra en la estimacion) base vs wheat_front: 15.6% (32 ep)
+  (extra, no entra en la estimacion) top3 vs wheat_front: 40.6% (32 ep)
+top3 - base: 4 rivales x 16 semillas = 64 celdas; ref 35.2%
+  delta +32.81 pts | IC95 semilla [+17.65; +47.98] | dos vias [+13.06; +52.57]
+  celdas cambiadas 39/64: 35 a favor, 4 en contra
+    vs mirror_top3  +31.2
+    vs mirror_vq  +31.2
+    vs public_hs4  +43.8
+    vs public_v7  +25.0
+  directo top3 vs base: 81.2% (32 ep)

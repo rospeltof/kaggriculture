@@ -1,0 +1,16 @@
+  (extra, no entra en la estimacion) base vs arshs3: 95.3% (64 ep)
+  (extra, no entra en la estimacion) wheat_front vs arshs3: 96.9% (64 ep)
+  (extra, no entra en la estimacion) base vs noop: 50.0% (64 ep)
+  (extra, no entra en la estimacion) wheat_front vs noop: 96.9% (64 ep)
+  (extra, no entra en la estimacion) base vs recent_harvest68: 43.8% (64 ep)
+  (extra, no entra en la estimacion) wheat_front vs recent_harvest68: 56.2% (64 ep)
+  (extra, no entra en la estimacion) base vs top3: 3.1% (64 ep)
+  (extra, no entra en la estimacion) wheat_front vs top3: 50.0% (64 ep)
+wheat_front - base: 4 rivales x 32 semillas = 128 celdas; ref 30.9%
+  delta +45.31 pts | IC95 semilla [+35.96; +54.66] | dos vias [+19.43; +71.20]
+  celdas cambiadas 99/128: 94 a favor, 5 en contra
+    vs mirror_top3  +46.9
+    vs mirror_vq  +46.9
+    vs public_hs4  +62.5
+    vs public_v7  +25.0
+  directo wheat_front vs base: 96.9% (64 ep)
